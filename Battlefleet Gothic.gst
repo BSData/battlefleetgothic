@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="1.13b" id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" revision="1" name="Battlefleet Gothic"><profileTypes/><forceTypes><forceType id="Standard###DATA###" name="Standard"><categories>
+    <category id="Fleet Commanders###DATA###" name="Fleet Commanders" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1"><modifiers/></category>
+    <category id="Capital Ships###DATA###" name="Capital Ships" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1"><modifiers/></category>
+    <category id="Escorts###DATA###" name="Escorts" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1"><modifiers/></category>
+    <category id="Special###DATA###" name="Special" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1"><modifiers/></category>
+  </categories></forceType></forceTypes></gameSystem>
