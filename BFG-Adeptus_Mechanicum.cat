@@ -1,8 +1,961 @@
-<?xml version="1.0" encoding="UTF-8"?><catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" battleScribeVersion="1.13b" id="ffc39854-af9f-49f7-aae4-1af7b0d52818" revision="2" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" name="Adeptus Mechanicus Fleet List"><entries><entry categoryId="Capital Ships###DATA###" id="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" name="Ark Mechanicus Omnissiah's Victory" points="415.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false"><entries/><entryGroups><entryGroup id="72089999-c183-4984-9eca-63f073e5bd1b" name="Broadside Armament" defaultEntryId="639ed896-e330-46b1-a539-ddf8dbe43155" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="aa32351a-992c-44df-a34f-613aaad081b8" name="Launch Bays" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="a400d20f-25b7-4475-a3fd-88391c11e0ea" name="Torpedo Bombers" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="639ed896-e330-46b1-a539-ddf8dbe43155" name="Lance Batteries" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules><rule id="Mechanicum Upgrades###DATA###" name="Mechanicum Upgrades" hidden="false"><description>Gifts of the Omnissiah:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" revision="2" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" battleScribeVersion="1.14b" name="Adeptus Mechanicus Fleet List" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entries>
+    <entry id="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" name="Ark Mechanicus Omnissiah&apos;s Victory" points="415.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="72089999-c183-4984-9eca-63f073e5bd1b" name="Broadside Armament" defaultEntryId="639ed896-e330-46b1-a539-ddf8dbe43155" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="aa32351a-992c-44df-a34f-613aaad081b8" name="Launch Bays" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="a400d20f-25b7-4475-a3fd-88391c11e0ea" name="Torpedo Bombers" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="639ed896-e330-46b1-a539-ddf8dbe43155" name="Lance Batteries" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="Mechanicum Upgrades###DATA###" name="Mechanicum Upgrades" hidden="false" page="0">
+          <description>Gifts of the Omnissiah:
 Repulsor Shields
 Augmented Weapon Relays
 
-Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard Launch Bays</description><modifiers/></rule></rules><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="f70184cb-2ad5-4fb5-936a-41f6743b62e6" name="Defiant Light Cruiser" points="130.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="46a6491a-cc09-4857-b05d-02544446bccc" name="Torpedo Bombers" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="749436a4-bbaa-4e6a-b96d-40fa2212b7ea" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="1d87d5fa-713f-4ab5-bf66-e57bcdadc1bb" name="Armour Options" defaultEntryId="f2c8cb4a-7616-484a-9283-5b2371b6431d" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="43a59db7-f6b8-4258-9377-068a384beb6c" name="Armour 6+ front/5+, Turns 45" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="f2c8cb4a-7616-484a-9283-5b2371b6431d" name="Armour 5+, Turns 90" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="a09dfeb2-d8fd-4db2-b5c7-57326b3481d1" name="Dictator Class Cruiser" points="255.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="d2513bc7-b732-452c-b8fe-4c31b8cb114d" name="45cm weapons batteries" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="94d442e2-25a9-44a3-8ba7-3ac7c6c2b5ed" name="Torpedo Bombers" points="40.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="575a7af7-2455-48bf-83f9-720690e9d7c9" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="6db873bd-bf28-41eb-8233-0cb9f282002a" name="Dorsal Lance F/L/R 60cm" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="7aac4681-87df-47e2-8cb5-efbf83d4ccec" name="Prow Weapons" defaultEntryId="bba08b7f-3c0b-4378-b78c-f7ca7b34bbb2" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="ff92c285-ca84-4a49-ad41-96ce7222c3f9" name="Prow Nova Cannon" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="bba08b7f-3c0b-4378-b78c-f7ca7b34bbb2" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="a4c61a2c-e769-4303-b634-213e4e378f1e" name="Refitted Torpedoes" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="43962396-985c-422f-b087-fe7dd3631214" name="Emperor Class Battleship" points="400.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="eb526c39-8806-4a6f-87cd-d6bb3851ac6f" name="Torpedo Bombers" points="80.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="8c53d93f-18d7-45a5-8137-ddc54a5a344e" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="60a020a1-0e17-45b6-b240-88dde04971d6" name="Endeavour Light Cruiser" points="125.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="7f8d800c-4fa7-4e11-8f16-3fa10fe3e79e" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="0bb3e3aa-3c4a-4b1d-9bb6-1f59f57917fb" name="45cm weapons batteries" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="6e171872-8e9f-4b8f-9892-1e31b290dd35" name="Armour Options" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="65ae7d5a-30e6-4791-b0d5-399a22c11019" name="Armour 6+ front/5+, Turns 45" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="6d6c1bec-365e-4ba5-a58a-3e81f141a7e2" name="Armour 5+, Turns 90" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup><entryGroup id="57e4fe73-b725-441b-a3f4-2c0d9ed271f3" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="cc5f65ce-6999-45f3-81d2-364e3a90313b" name="Dorsal Lance F/L/R 30cm" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="9b519021-dd09-4d5a-8236-984826729752" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="bd4aab22-9b3e-42a1-832e-b322da489d21" name="Refitted Torpedoes" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="cdb2cf14-061b-464c-8d24-7f24b74591eb" name="Endurance Light Cruiser" points="125.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="9a5952c5-c244-4df1-bce0-94e55a6e8155" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="421c41f4-90f1-48b7-a3e0-f2c4532b4f2a" name="45cm weapons batteries" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="94ed9b76-80e8-40e9-be1f-aca4fcff8787" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="1d3a141a-2586-4c7a-84a3-5e56176a8099" name="Dorsal Lance F/L/R 30cm" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="9ffea98f-d106-475b-b8e2-67295fa4b82f" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="07716fa8-bcfa-4d07-aad7-04d690073c78" name="Refitted Torpedoes" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup><entryGroup id="ec239765-6edc-429d-92fd-58841cd7fd52" name="Armour Options" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="bf9bab46-25ac-4a25-afba-575dc60f4ef2" name="Armour 6+ front/5+, Turns 45" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="64b90e7e-eabb-4fbc-a8da-1c4e6ba723a2" name="Armour 5+, Turns 90" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="516b0b06-c831-4e9f-96b8-7930234c85a1" name="Escort Squadron" points="0.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="18b9ea8c-d239-470d-a091-bd4d39c3ce74" name="+1 Turret" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="2dfc4923-32d6-4501-84d1-5b94b1992a8d" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="97d6a8c6-6cc7-4db4-9534-b03b89863947" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="5c4c58c2-cd89-4fe6-8fdc-1fa029d93e68" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="74058053-dd80-4048-ba1e-c73f98a143ca" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="2f082777-4bb3-4d2f-90ed-518a010d37bb" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="0b7aaabf-198d-4cd1-82c9-d6eee64ef905" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier><modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="e3221eed-4334-4a11-b33e-7dd66a2ce800" incrementField="selections" incrementValue="1.0"><conditions/><conditionGroups/></modifier></modifiers><rules/><profiles/></entry></entries><entryGroups><entryGroup id="6ea703e0-a9be-43bb-b6de-7cdae75400da" name="Escorts" minSelections="2" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="Escorts###DATA###" id="e3221eed-4334-4a11-b33e-7dd66a2ce800" name="Cobra Destroyer" points="30.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="0b7aaabf-198d-4cd1-82c9-d6eee64ef905" name="Falchion Frigate" points="35.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="2f082777-4bb3-4d2f-90ed-518a010d37bb" name="Firestorm Frigate" points="40.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="74058053-dd80-4048-ba1e-c73f98a143ca" name="Gladius Frigate" points="40.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="5c4c58c2-cd89-4fe6-8fdc-1fa029d93e68" name="Hunter Destroyer" points="35.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="97d6a8c6-6cc7-4db4-9534-b03b89863947" name="Nova Frigate" points="45.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Escorts###DATA###" id="2dfc4923-32d6-4501-84d1-5b94b1992a8d" name="Sword Frigate" points="35.0" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="0f680ea2-4292-45c4-bf61-d1818d767576" name="Gothic Class Cruiser" points="215.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="ec83235b-3b1c-415f-9cbf-bde06d265cc8" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="5c289c1c-bb3f-4a5c-896c-7d5845cab65d" name="Dorsal Lance F/L/R 60cm" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="347639a6-0b9d-4544-8a40-6ada6b4610ae" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="e2f3cc44-f5be-4b2f-bfce-e8d3d5f64f8a" name="Prow Nova Cannon" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="6513b50f-1082-4268-98b5-35e27a89ba4e" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="2da6d910-8854-4ec0-8fa3-f6d57395e66e" name="Refitted Torpedoes" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="c41a84ef-9eec-49f6-a284-494e77254996" name="Lunar Class Cruiser" points="215.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="eda03a98-1aa8-4022-975e-333515a7c6a2" name="45cm weapons batteries" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="e2f77a29-4fbd-4037-8362-dfd5c4db024f" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="e1579628-3ed6-4e79-9aa8-9b0fa20f8648" name="Dorsal Lance F/L/R 60cm" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="1ea8ff73-a5ba-4b44-adb5-66221455fc93" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="961442c5-9c6d-4334-a66e-14007fdef07e" name="Prow Nova Cannon" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="3348dd12-ab82-44eb-94a5-8c4a586cb7c9" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="6f49d5df-e89a-4232-a450-d6565ce0c8f3" name="Refitted Torpedoes" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Fleet Commanders###DATA###" id="59cd178d-0101-4822-95e0-5c2a2f05f281" name="Mechanicus Archmagos" points="0.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false"><entries/><entryGroups><entryGroup id="071ed995-c086-449c-8d1f-8b07f3a5d5d3" name="Rank" defaultEntryId="4dad31fa-8862-49ed-9198-369defeec3d5" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="4dad31fa-8862-49ed-9198-369defeec3d5" name="Explorator" points="50.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="8c623a66-a1a3-4a83-b88d-0881435db66f" name="Veneratus" points="100.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers><modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0"><conditions><condition parentId="roster" childId="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" field="selections" type="equal to" value="1.0"/></conditions><conditionGroups/></modifier></modifiers><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup><entryGroup id="a40bcbe4-321d-4811-bdde-433e9946c16f" name="Re-Rolls" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="5390fd0b-6ce4-41ee-b8a1-5e14bb1cc40c" name="1 Re-Roll" points="50.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="84ef9977-b699-4540-a15b-130a6e76432a" name="2 Re-Rolls" points="125.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers><modifier type="set" field="minInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0"><conditions><condition parentId="roster" childId="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" field="selections" type="equal to" value="1.0"/></conditions><conditionGroups/></modifier></modifiers><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="a9328ba6-afa6-4410-896a-ca8684ac98cf" name="Oberon Class Battleship" points="370.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="8f4b84a1-5b56-431f-9c12-9be30398b493" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="033f21a1-b92f-49cf-88ea-5504d7452cdd" name="Retribution Class Battleship" points="380.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="de18933a-0bf8-4a6c-9371-19389117bf7c" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="61be0c04-d085-49c5-bd2f-54bfe350784b" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="4b7849f9-8ad0-4ae5-841d-d3daf781df39" name="Prow Nova Cannon" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="ed61ee89-512d-491c-86e8-7c70ec899b47" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="add8b6c9-5d49-43e0-8fd2-336d9ee25772" name="Refitted Torpedoes" points="30.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="bd7234ac-e633-4f0e-817e-e142b1bafb00" name="Tyrant Class Cruiser" points="220.0" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="07395a77-e72a-432a-a5da-c1e5b6cad146" name="45cm weapons batteries" points="10.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="112edaf7-5671-4a62-a95a-7c08baa884c7" name="+1 Turret" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="5fba8794-73f5-49ce-8810-8a5d06092afa" name="Dorsal Lance F/L/R 60cm" points="0.0" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="25af9b93-bca8-476e-b5d7-ead11a0355e0" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="51687e25-f4f8-45b2-9f00-1298f64ab73a" name="Prow Nova Cannon" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="d1f6f9f5-91a3-4333-b562-ea4cfc06e5a8" name="Prow Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="fefb851c-c10b-4089-9f70-bc34f9ec3f73" name="Refitted Torpedoes" points="20.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Special###DATA###" id="11a86503-a3ac-4f8c-a36b-34823f833631" name="The Inquisition" points="0.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false"><entries><entry categoryId="Capital Ships###DATA###" id="238f0b9c-62df-4a00-b213-74909f85900a" name="Grey Knights Battlebarge" points="440.0" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="ecc839fc-3760-457b-8055-e383e2c8dc65" name="Grey Knights Strike Cruiser" points="270.0" type="unit" minSelections="0" maxSelections="0" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups><entryGroup id="4ba1548d-2b67-4a18-9e95-569215ed868c" name="Armament Option" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="f68b5f8e-b9fa-41ba-aff3-3b912b12f305" name="Launch Bay" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="663a4c5c-3690-4fb4-9670-eefb37c38ec9" name="Torpedoes" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="eadd1e5b-8b13-490c-aeec-c89cdb4c524a" name="Bombardment Cannon" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers><modifier type="set" field="maxSelections" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0"><conditions><condition parentId="11a86503-a3ac-4f8c-a36b-34823f833631" childId="75940471-1154-40fb-9fc6-aabcfa286e5d" field="selections" type="at least" value="1.0"/></conditions><conditionGroups/></modifier></modifiers><rules/><profiles/></entry><entry categoryId="Special###DATA###" id="52b5327b-9c2a-458d-a710-e244a7a1d527" name="Inquisition Blackship" points="300.0" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="Fleet Commanders###DATA###" id="75940471-1154-40fb-9fc6-aabcfa286e5d" name="Inquisitor Lord" points="75.0" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="6af2cc10-28e6-454c-af96-995e5fb2b46b" name="Additional Re-Roll" points="0.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups><entryGroup id="b9bf87df-4cdb-41fa-a28d-120ecf254c19" name="Ordo" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="06b8cc40-4ba6-4078-9fb7-e963fe9a2d81" name="Ordo Xenos" points="30.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="18bfe6af-f619-4316-bc09-de193863dbba" name="Select Refit" points="5.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="3c85228a-be0d-400d-8e92-73cf1064386c" name="Ordo Hereticus" points="25.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="aedf97a1-205b-4e9d-b952-ab5c0178eef6" name="Ordo Malleus" points="25.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries><entry categoryId="(No Category)" id="644cccb3-9f5e-49e0-bb3d-f75403db7971" name="Grey Knights Terminator Boarding Party" points="50.0" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry><entry categoryId="(No Category)" id="d51318e7-af62-4f59-a797-56a1a364af15" name="Grey Knights Honour Guard" points="10.0" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/></entryGroup></entryGroups><modifiers/><rules/><profiles/></entry><entry categoryId="Capital Ships###DATA###" id="f40d7bbd-860f-4c05-ae9e-cac2ac5765f5" name="Inquisitorial Cruiser" points="270.0" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false"><entries/><entryGroups/><modifiers/><rules/><profiles/></entry></entries><entryGroups/><modifiers/><rules/><profiles/></entry></entries><rules><rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" hidden="false"><description>Leadership
+Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard Launch Bays</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="f70184cb-2ad5-4fb5-936a-41f6743b62e6" name="Defiant Light Cruiser" points="130.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="46a6491a-cc09-4857-b05d-02544446bccc" name="Torpedo Bombers" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="749436a4-bbaa-4e6a-b96d-40fa2212b7ea" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="1d87d5fa-713f-4ab5-bf66-e57bcdadc1bb" name="Armour Options" defaultEntryId="f2c8cb4a-7616-484a-9283-5b2371b6431d" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="43a59db7-f6b8-4258-9377-068a384beb6c" name="Armour 6+ front/5+, Turns 45" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="f2c8cb4a-7616-484a-9283-5b2371b6431d" name="Armour 5+, Turns 90" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="a09dfeb2-d8fd-4db2-b5c7-57326b3481d1" name="Dictator Class Cruiser" points="255.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="d2513bc7-b732-452c-b8fe-4c31b8cb114d" name="45cm weapons batteries" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="94d442e2-25a9-44a3-8ba7-3ac7c6c2b5ed" name="Torpedo Bombers" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="575a7af7-2455-48bf-83f9-720690e9d7c9" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="6db873bd-bf28-41eb-8233-0cb9f282002a" name="Dorsal Lance F/L/R 60cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="7aac4681-87df-47e2-8cb5-efbf83d4ccec" name="Prow Weapons" defaultEntryId="bba08b7f-3c0b-4378-b78c-f7ca7b34bbb2" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="ff92c285-ca84-4a49-ad41-96ce7222c3f9" name="Prow Nova Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="bba08b7f-3c0b-4378-b78c-f7ca7b34bbb2" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="a4c61a2c-e769-4303-b634-213e4e378f1e" name="Refitted Torpedoes" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="43962396-985c-422f-b087-fe7dd3631214" name="Emperor Class Battleship" points="400.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="eb526c39-8806-4a6f-87cd-d6bb3851ac6f" name="Torpedo Bombers" points="80.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="8c53d93f-18d7-45a5-8137-ddc54a5a344e" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="60a020a1-0e17-45b6-b240-88dde04971d6" name="Endeavour Light Cruiser" points="125.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="7f8d800c-4fa7-4e11-8f16-3fa10fe3e79e" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="0bb3e3aa-3c4a-4b1d-9bb6-1f59f57917fb" name="45cm weapons batteries" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="6e171872-8e9f-4b8f-9892-1e31b290dd35" name="Armour Options" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="65ae7d5a-30e6-4791-b0d5-399a22c11019" name="Armour 6+ front/5+, Turns 45" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="6d6c1bec-365e-4ba5-a58a-3e81f141a7e2" name="Armour 5+, Turns 90" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="57e4fe73-b725-441b-a3f4-2c0d9ed271f3" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="cc5f65ce-6999-45f3-81d2-364e3a90313b" name="Dorsal Lance F/L/R 30cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="9b519021-dd09-4d5a-8236-984826729752" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="bd4aab22-9b3e-42a1-832e-b322da489d21" name="Refitted Torpedoes" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="cdb2cf14-061b-464c-8d24-7f24b74591eb" name="Endurance Light Cruiser" points="125.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="9a5952c5-c244-4df1-bce0-94e55a6e8155" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="421c41f4-90f1-48b7-a3e0-f2c4532b4f2a" name="45cm weapons batteries" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="94ed9b76-80e8-40e9-be1f-aca4fcff8787" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="1d3a141a-2586-4c7a-84a3-5e56176a8099" name="Dorsal Lance F/L/R 30cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="9ffea98f-d106-475b-b8e2-67295fa4b82f" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="07716fa8-bcfa-4d07-aad7-04d690073c78" name="Refitted Torpedoes" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="ec239765-6edc-429d-92fd-58841cd7fd52" name="Armour Options" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="bf9bab46-25ac-4a25-afba-575dc60f4ef2" name="Armour 6+ front/5+, Turns 45" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="64b90e7e-eabb-4fbc-a8da-1c4e6ba723a2" name="Armour 5+, Turns 90" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="516b0b06-c831-4e9f-96b8-7930234c85a1" name="Escort Squadron" points="0.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="18b9ea8c-d239-470d-a091-bd4d39c3ce74" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="2dfc4923-32d6-4501-84d1-5b94b1992a8d" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="97d6a8c6-6cc7-4db4-9534-b03b89863947" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="5c4c58c2-cd89-4fe6-8fdc-1fa029d93e68" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="74058053-dd80-4048-ba1e-c73f98a143ca" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="2f082777-4bb3-4d2f-90ed-518a010d37bb" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="0b7aaabf-198d-4cd1-82c9-d6eee64ef905" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="516b0b06-c831-4e9f-96b8-7930234c85a1" incrementChildId="e3221eed-4334-4a11-b33e-7dd66a2ce800" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="6ea703e0-a9be-43bb-b6de-7cdae75400da" name="Escorts" minSelections="2" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="e3221eed-4334-4a11-b33e-7dd66a2ce800" name="Cobra Destroyer" points="30.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="0b7aaabf-198d-4cd1-82c9-d6eee64ef905" name="Falchion Frigate" points="35.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="2f082777-4bb3-4d2f-90ed-518a010d37bb" name="Firestorm Frigate" points="40.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="74058053-dd80-4048-ba1e-c73f98a143ca" name="Gladius Frigate" points="40.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="5c4c58c2-cd89-4fe6-8fdc-1fa029d93e68" name="Hunter Destroyer" points="35.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="97d6a8c6-6cc7-4db4-9534-b03b89863947" name="Nova Frigate" points="45.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="2dfc4923-32d6-4501-84d1-5b94b1992a8d" name="Sword Frigate" points="35.0" categoryId="Escorts###DATA###" type="unit" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="0f680ea2-4292-45c4-bf61-d1818d767576" name="Gothic Class Cruiser" points="215.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="ec83235b-3b1c-415f-9cbf-bde06d265cc8" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="5c289c1c-bb3f-4a5c-896c-7d5845cab65d" name="Dorsal Lance F/L/R 60cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="347639a6-0b9d-4544-8a40-6ada6b4610ae" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="e2f3cc44-f5be-4b2f-bfce-e8d3d5f64f8a" name="Prow Nova Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="6513b50f-1082-4268-98b5-35e27a89ba4e" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="2da6d910-8854-4ec0-8fa3-f6d57395e66e" name="Refitted Torpedoes" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="c41a84ef-9eec-49f6-a284-494e77254996" name="Lunar Class Cruiser" points="215.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="eda03a98-1aa8-4022-975e-333515a7c6a2" name="45cm weapons batteries" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="e2f77a29-4fbd-4037-8362-dfd5c4db024f" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="e1579628-3ed6-4e79-9aa8-9b0fa20f8648" name="Dorsal Lance F/L/R 60cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="1ea8ff73-a5ba-4b44-adb5-66221455fc93" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="961442c5-9c6d-4334-a66e-14007fdef07e" name="Prow Nova Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="3348dd12-ab82-44eb-94a5-8c4a586cb7c9" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="6f49d5df-e89a-4232-a450-d6565ce0c8f3" name="Refitted Torpedoes" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="59cd178d-0101-4822-95e0-5c2a2f05f281" name="Mechanicus Archmagos" points="0.0" categoryId="Fleet Commanders###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="071ed995-c086-449c-8d1f-8b07f3a5d5d3" name="Rank" defaultEntryId="4dad31fa-8862-49ed-9198-369defeec3d5" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="4dad31fa-8862-49ed-9198-369defeec3d5" name="Explorator" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="8c623a66-a1a3-4a83-b88d-0881435db66f" name="Veneratus" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="a40bcbe4-321d-4811-bdde-433e9946c16f" name="Re-Rolls" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="5390fd0b-6ce4-41ee-b8a1-5e14bb1cc40c" name="1 Re-Roll" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="84ef9977-b699-4540-a15b-130a6e76432a" name="2 Re-Rolls" points="125.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="set" field="minInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="92f9cee9-cf3f-4e7c-b51f-3a152e158e48" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="a9328ba6-afa6-4410-896a-ca8684ac98cf" name="Oberon Class Battleship" points="370.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="8f4b84a1-5b56-431f-9c12-9be30398b493" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="033f21a1-b92f-49cf-88ea-5504d7452cdd" name="Retribution Class Battleship" points="380.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="de18933a-0bf8-4a6c-9371-19389117bf7c" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="61be0c04-d085-49c5-bd2f-54bfe350784b" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="4b7849f9-8ad0-4ae5-841d-d3daf781df39" name="Prow Nova Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="ed61ee89-512d-491c-86e8-7c70ec899b47" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="add8b6c9-5d49-43e0-8fd2-336d9ee25772" name="Refitted Torpedoes" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="bd7234ac-e633-4f0e-817e-e142b1bafb00" name="Tyrant Class Cruiser" points="220.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+      <entries>
+        <entry id="07395a77-e72a-432a-a5da-c1e5b6cad146" name="45cm weapons batteries" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="112edaf7-5671-4a62-a95a-7c08baa884c7" name="+1 Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="5fba8794-73f5-49ce-8810-8a5d06092afa" name="Dorsal Lance F/L/R 60cm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="25af9b93-bca8-476e-b5d7-ead11a0355e0" name="Prow Weapons" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="51687e25-f4f8-45b2-9f00-1298f64ab73a" name="Prow Nova Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="d1f6f9f5-91a3-4333-b562-ea4cfc06e5a8" name="Prow Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries>
+                <entry id="fefb851c-c10b-4089-9f70-bc34f9ec3f73" name="Refitted Torpedoes" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="11a86503-a3ac-4f8c-a36b-34823f833631" name="The Inquisition" points="0.0" categoryId="Special###DATA###" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+      <entries>
+        <entry id="238f0b9c-62df-4a00-b213-74909f85900a" name="Grey Knights Battlebarge" points="440.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="ecc839fc-3760-457b-8055-e383e2c8dc65" name="Grey Knights Strike Cruiser" points="270.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="0" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="4ba1548d-2b67-4a18-9e95-569215ed868c" name="Armament Option" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+              <entries>
+                <entry id="f68b5f8e-b9fa-41ba-aff3-3b912b12f305" name="Launch Bay" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="663a4c5c-3690-4fb4-9670-eefb37c38ec9" name="Torpedoes" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="eadd1e5b-8b13-490c-aeec-c89cdb4c524a" name="Bombardment Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="11a86503-a3ac-4f8c-a36b-34823f833631" childId="75940471-1154-40fb-9fc6-aabcfa286e5d" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="52b5327b-9c2a-458d-a710-e244a7a1d527" name="Inquisition Blackship" points="300.0" categoryId="Special###DATA###" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="75940471-1154-40fb-9fc6-aabcfa286e5d" name="Inquisitor Lord" points="75.0" categoryId="Fleet Commanders###DATA###" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries>
+            <entry id="6af2cc10-28e6-454c-af96-995e5fb2b46b" name="Additional Re-Roll" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="b9bf87df-4cdb-41fa-a28d-120ecf254c19" name="Ordo" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+              <entries>
+                <entry id="06b8cc40-4ba6-4078-9fb7-e963fe9a2d81" name="Ordo Xenos" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries>
+                    <entry id="18bfe6af-f619-4316-bc09-de193863dbba" name="Select Refit" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="3c85228a-be0d-400d-8e92-73cf1064386c" name="Ordo Hereticus" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="aedf97a1-205b-4e9d-b952-ab5c0178eef6" name="Ordo Malleus" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                  <entries>
+                    <entry id="644cccb3-9f5e-49e0-bb3d-f75403db7971" name="Grey Knights Terminator Boarding Party" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                    <entry id="d51318e7-af62-4f59-a797-56a1a364af15" name="Grey Knights Honour Guard" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="f40d7bbd-860f-4c05-ae9e-cac2ac5765f5" name="Inquisitorial Cruiser" points="270.0" categoryId="Capital Ships###DATA###" type="unit" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+  </entries>
+  <rules>
+    <rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" hidden="false" page="0">
+      <description>Leadership
 1: Ld 7
 2-3: Ld 8
 4-6: Ld 9
@@ -14,16 +967,16 @@ Quest for Knowledge
 AM capital ships get 1 more repair dice than normal. A fleet that includes AM ships must use an AM sub-plot (see AM pdf for details), in addition to any other sub-plots that would be normally used.
 
 Gifts of the Omnissiah
-All AM capital ships gain +1 turret and get a randomly chosen Mechanicus Gift (see AM pdf for details). If a natural '6' is rolled for the ships' leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly.
+All AM capital ships gain +1 turret and get a randomly chosen Mechanicus Gift (see AM pdf for details). If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly.
 
 Civillian Crew
-Any ship involved in a boarding action against an AM vessel or conducting a Hit &amp; Run attack against an AM vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, re Tyranids). AM ships don't use a-boats or boarding torpedoes.
+Any ship involved in a boarding action against an AM vessel or conducting a Hit &amp; Run attack against an AM vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, re Tyranids). AM ships don&apos;t use a-boats or boarding torpedoes.
 
 Exclusive Tech
 AM vessels may take a leadership check in order to fire upon their own hulked vessels.
 
 Fleet Commander
-In an AM fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships' normal gift. If the one ship gets the same gift twice it may elect to keep this arrangement (presumably the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.
+In an AM fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the one ship gets the same gift twice it may elect to keep this arrangement (presumably the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.
 
 Reserve &amp; Allies
 AM vessels may be used as reserves in SM/IN fleets. IN ships may be used as reserves in an AM fleet. IN CGs and CBs included in an AM fleet as reserves use up cruiser slots. Xenos vessels that can ally with the IN, such as Rogue Traders and Demiurg can likewise ally with the AM.
@@ -31,8 +984,17 @@ SMs may be included as reserves, but only so long as there are no IN/Xenos vesse
 AM vessels may not be placed in squadron with non-AM vessels and AM re-rolls cannot be used on non-AM ships and vice versa. An AM fleet commander must be embarked on an AM ship.
 When used as reserves in other fleets, single AM ships will attempt to disengage when crippled, failing that they will move towards the closest table edge. Capital ship squadrons will only do this when half or more of the ships in the squadron are crippled.
 Escort reserves in an AM fleet are taken without the usual 3:1 ratio restriction, though they must be drawn from the same fleet that any reserve capital ships are drawn from. SM escort reserves also follow the inclusion rules regarding Xenos vessels given above.
-Note: the Omnissiah's Victory may not be taken as a reserve.
+Note: the Omnissiah&apos;s Victory may not be taken as a reserve.
 
 Campaigns
 AM fleets get +1 repair point for every 10 points, or part, of renown of the commander. AM get a +1 modifier when rolling to earn a refit, but a -1 modifier when rolling to appeal for reinforcements or Space Marines. Space Marines may be used as reinforcements only if the AM fleet contains no Xenos vessels.
-Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don't follow the Fleet Commander from one ship to another (though they can still add the amount of refits they've gained to their new flagship, rolled randomly).</description><modifiers/></rule></rules></catalogue>
+Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don&apos;t follow the Fleet Commander from one ship to another (though they can still add the amount of refits they&apos;ve gained to their new flagship, rolled randomly).</description>
+      <modifiers/>
+    </rule>
+  </rules>
+  <links/>
+  <sharedEntries/>
+  <sharedEntryGroups/>
+  <sharedRules/>
+  <sharedProfiles/>
+</catalogue>
