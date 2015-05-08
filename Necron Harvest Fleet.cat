@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" revision="7" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" battleScribeVersion="1.14b" name="Necron Harvest Fleet" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" revision="7" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" battleScribeVersion="1.15" name="Necron Harvest Fleet" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
-    <entry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" points="500.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="0" collective="false" page="0">
+    <entry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" points="500.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="e4e505c4-a871-45c0-9952-cbe668bf0af0" name="Gauss particle whip" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="e4e505c4-a871-45c0-9952-cbe668bf0af0" name="Gauss particle whip" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Gauss particle whip (Cairn)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Gauss particle whip (Cairn)" hidden="false" page="0">
+            <profile id="3a5d-b64a-e51d-310a" profileTypeId="41726d616d656e7423232344415441232323" name="Gauss particle whip (Cairn)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="45cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="6"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Left/front/right"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="45cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="6"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Left/front/right"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="e3a935b3-87b3-40c8-a647-02047f06158b" name="Star pulse generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="e3a935b3-87b3-40c8-a647-02047f06158b" name="Star pulse generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Star pulse generator (Cairn)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Star pulse generator (Cairn)" hidden="false" page="0">
+            <profile id="8f23-5997-35a4-a68f" profileTypeId="41726d616d656e7423232344415441232323" name="Star pulse generator (Cairn)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="20cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="(1 per enemy)"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="20cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="(1 per enemy)"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="4e318403-e5d5-4b59-9f7a-69ccad51a4dd" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="4e318403-e5d5-4b59-9f7a-69ccad51a4dd" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Portal (Cairn)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Cairn)" hidden="false" page="0">
+            <profile id="73a4-a0a3-63c0-9428" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Cairn)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="10cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="3"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="10cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="3"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="9b993d22-6b34-4076-9eb9-c95918edbe8d" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="9b993d22-6b34-4076-9eb9-c95918edbe8d" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Lightning arc (Cairn)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Cairn)" hidden="false" page="0">
+            <profile id="98d2-9693-358e-f64f" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Cairn)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="30cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="20"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Left/front/right"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="30cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="20"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Left/front/right"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="dcf4428b-cd08-429a-966f-f94ebaef77a5" name="Sepulchre" points="50.0" categoryId="4361706974616c20536869707323232344415441232323" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+        <entry id="dcf4428b-cd08-429a-966f-f94ebaef77a5" name="Sepulchre" points="50.0" categoryId="4361706974616c20536869707323232344415441232323" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
-            <rule id="Sepulchre###DATA###" name="Sepulchre" hidden="false" page="0">
+            <rule id="e031-8eae-85a6-1623" name="Sepulchre" hidden="false" page="0">
               <description>A single tombship may be upgraded to carry a Sepulchre. Note that there is no requirement for a Necron fleet to include a Sepulchre and it is actually quite normal for them to consist of Scythes supported by Jackals. Pg. 78 (Harvest Fleets)</description>
               <modifiers/>
             </rule>
           </rules>
           <profiles>
-            <profile id="Sepulchre###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Sepulchre" hidden="false" page="0">
+            <profile id="b20f-c0b2-501f-7df9" profileTypeId="41726d616d656e7423232344415441232323" name="Sepulchre" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="20cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="Leadership"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="20cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="Leadership"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -103,35 +103,35 @@
       </modifiers>
       <rules/>
       <profiles>
-        <profile id="Necron Cairn Class Tomb Ship###DATA###" profileTypeId="556e697423232344415441232323" name="Necron Cairn Class Tomb Ship" hidden="false" page="0">
+        <profile id="8e7c-2360-9eeb-4d4b" profileTypeId="556e697423232344415441232323" name="Necron Cairn Class Tombship" hidden="false">
           <characteristics>
-            <characteristic characteristicId="Type###DATA###" name="Type" value="Battleship"/>
-            <characteristic characteristicId="Hits###DATA###" name="Hits" value="12"/>
-            <characteristic characteristicId="Speed###DATA###" name="Speed" value="20cm"/>
-            <characteristic characteristicId="Turns###DATA###" name="Turns" value="45"/>
-            <characteristic characteristicId="Shields###DATA###" name="Shields" value="4+ Save"/>
-            <characteristic characteristicId="Armour###DATA###" name="Armour" value="6+"/>
-            <characteristic characteristicId="Turrets###DATA###" name="Turrets" value="4"/>
-            <characteristic characteristicId="Pg.###DATA###" name="Pg." value="75 (Harvest Fleets)"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Battleship"/>
+            <characteristic characteristicId="4869747323232344415441232323" name="Hits" value="12"/>
+            <characteristic characteristicId="537065656423232344415441232323" name="Speed" value="20cm"/>
+            <characteristic characteristicId="5475726e7323232344415441232323" name="Turns" value="45"/>
+            <characteristic characteristicId="536869656c647323232344415441232323" name="Shields" value="4+ Save"/>
+            <characteristic characteristicId="41726d6f757223232344415441232323" name="Armour" value="6+"/>
+            <characteristic characteristicId="5475727265747323232344415441232323" name="Turrets" value="4"/>
+            <characteristic characteristicId="50672e23232344415441232323" name="Pg." value="75 (Harvest Fleets)"/>
           </characteristics>
           <modifiers/>
         </profile>
       </profiles>
       <links/>
     </entry>
-    <entry id="ce1d4f76-12cd-477a-b2f6-8f0ed0f972a8" name="Dirge Class Raider" points="40.0" categoryId="4573636f72747323232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="12" collective="false" page="0">
+    <entry id="ce1d4f76-12cd-477a-b2f6-8f0ed0f972a8" name="Dirge Class Raider" points="40.0" categoryId="4573636f72747323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="12" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="e21c7d91-f2c3-416b-9b79-3eaf37deeca5" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="e21c7d91-f2c3-416b-9b79-3eaf37deeca5" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Lightning arc (Dirge)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Dirge)" hidden="false" page="0">
+            <profile id="9081-4db7-c562-4970" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Dirge)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="30cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="3"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Front"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="30cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="3"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Front"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -143,52 +143,52 @@
       <modifiers/>
       <rules/>
       <profiles>
-        <profile id="Dirge Class Raider###DATA###" profileTypeId="556e697423232344415441232323" name="Dirge Class Raider" hidden="false" page="0">
+        <profile id="f1fb-31a1-3bbf-4e89" profileTypeId="556e697423232344415441232323" name="Dirge Class Raider" hidden="false">
           <characteristics>
-            <characteristic characteristicId="Type###DATA###" name="Type" value="Escort"/>
-            <characteristic characteristicId="Hits###DATA###" name="Hits" value="1"/>
-            <characteristic characteristicId="Speed###DATA###" name="Speed" value="50cm"/>
-            <characteristic characteristicId="Turns###DATA###" name="Turns" value="90"/>
-            <characteristic characteristicId="Shields###DATA###" name="Shields" value="6+ Save"/>
-            <characteristic characteristicId="Armour###DATA###" name="Armour" value="6+"/>
-            <characteristic characteristicId="Turrets###DATA###" name="Turrets" value="1"/>
-            <characteristic characteristicId="Pg.###DATA###" name="Pg." value="78 (Harvest Fleets)"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Escort"/>
+            <characteristic characteristicId="4869747323232344415441232323" name="Hits" value="1"/>
+            <characteristic characteristicId="537065656423232344415441232323" name="Speed" value="50cm"/>
+            <characteristic characteristicId="5475726e7323232344415441232323" name="Turns" value="90"/>
+            <characteristic characteristicId="536869656c647323232344415441232323" name="Shields" value="6+ Save"/>
+            <characteristic characteristicId="41726d6f757223232344415441232323" name="Armour" value="6+"/>
+            <characteristic characteristicId="5475727265747323232344415441232323" name="Turrets" value="1"/>
+            <characteristic characteristicId="50672e23232344415441232323" name="Pg." value="78 (Harvest Fleets)"/>
           </characteristics>
           <modifiers/>
         </profile>
       </profiles>
       <links/>
     </entry>
-    <entry id="91a389f5-c318-4c9f-852a-2970877c2d45" name="Jackal Class Raider" points="50.0" categoryId="4573636f72747323232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="12" collective="false" page="0">
+    <entry id="91a389f5-c318-4c9f-852a-2970877c2d45" name="Jackal Class Raider" points="50.0" categoryId="4573636f72747323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="12" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="53707656-ce0a-46e0-a23e-00e35ab678d9" name="Lightning Arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="53707656-ce0a-46e0-a23e-00e35ab678d9" name="Lightning Arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Lightning arc (Jackal)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Jackal)" hidden="false" page="0">
+            <profile id="8912-903d-376d-4128" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning Arc (Jackal)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="30cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="4"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Front"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="30cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="4"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Front"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="3928b455-c32e-4f2a-8517-028f40f3c5e0" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
+        <entry id="3928b455-c32e-4f2a-8517-028f40f3c5e0" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="Portal (Jackal)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Jackal)" hidden="false" page="0">
+            <profile id="d89c-6d4f-1ce8-fc48" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Jackal)" hidden="false">
               <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="10cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="1"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="10cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="1"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -200,159 +200,28 @@
       <modifiers/>
       <rules/>
       <profiles>
-        <profile id="Jackal Class Raider###DATA###" profileTypeId="556e697423232344415441232323" name="Jackal Class Raider" hidden="false" page="0">
+        <profile id="01f2-6165-745b-9540" profileTypeId="556e697423232344415441232323" name="Jackal Class Raider" hidden="false">
           <characteristics>
-            <characteristic characteristicId="Type###DATA###" name="Type" value="Escort"/>
-            <characteristic characteristicId="Hits###DATA###" name="Hits" value="1"/>
-            <characteristic characteristicId="Speed###DATA###" name="Speed" value="40cm"/>
-            <characteristic characteristicId="Turns###DATA###" name="Turns" value="90"/>
-            <characteristic characteristicId="Shields###DATA###" name="Shields" value="6+ Save"/>
-            <characteristic characteristicId="Armour###DATA###" name="Armour" value="6+"/>
-            <characteristic characteristicId="Turrets###DATA###" name="Turrets" value="1"/>
-            <characteristic characteristicId="Pg.###DATA###" name="Pg." value="77 (Harvest Fleets)"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Escort"/>
+            <characteristic characteristicId="4869747323232344415441232323" name="Hits" value="1"/>
+            <characteristic characteristicId="537065656423232344415441232323" name="Speed" value="40cm"/>
+            <characteristic characteristicId="5475726e7323232344415441232323" name="Turns" value="90"/>
+            <characteristic characteristicId="536869656c647323232344415441232323" name="Shields" value="6+ Save"/>
+            <characteristic characteristicId="41726d6f757223232344415441232323" name="Armour" value="6+"/>
+            <characteristic characteristicId="5475727265747323232344415441232323" name="Turrets" value="1"/>
+            <characteristic characteristicId="50672e23232344415441232323" name="Pg." value="77 (Harvest Fleets)"/>
           </characteristics>
           <modifiers/>
         </profile>
       </profiles>
       <links/>
     </entry>
-    <entry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" points="275.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="6" collective="false" page="0">
-      <entries>
-        <entry id="96c8f5fc-0fac-44dc-b74b-30a62e891434" name="Gauss particle whip" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="Gauss particle whip (Scythe)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Gauss particle whip (Scythe)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="45cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="4"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Left/front/right"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="e1f8911a-4642-4dce-b2e3-8f3a49d97a13" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="Lightning arc (Scythe)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Scythe)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="30cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="8"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Left/right"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="69c3084b-5aa4-43e4-97c9-7f41f723fac0" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="Portal (Scythe)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Scythe)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="10cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="2"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="aa72d711-cac7-47a3-9e4d-35d385ead4b3" name="Star pulse generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="Star pulse generator (Scythe)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Star pulse generator (Scythe)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="20cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="(1 per enemy)"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="All around"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles>
-        <profile id="Scythe Class Harvest Ship###DATA###" profileTypeId="556e697423232344415441232323" name="Scythe Class Harvest Ship" hidden="false" page="0">
-          <characteristics>
-            <characteristic characteristicId="Type###DATA###" name="Type" value="Cruiser"/>
-            <characteristic characteristicId="Hits###DATA###" name="Hits" value="8"/>
-            <characteristic characteristicId="Speed###DATA###" name="Speed" value="30cm"/>
-            <characteristic characteristicId="Turns###DATA###" name="Turns" value="45"/>
-            <characteristic characteristicId="Shields###DATA###" name="Shields" value="5+ Save"/>
-            <characteristic characteristicId="Armour###DATA###" name="Armour" value="6+"/>
-            <characteristic characteristicId="Turrets###DATA###" name="Turrets" value="3"/>
-            <characteristic characteristicId="Pg.###DATA###" name="Pg." value="76 (Harvest Fleets)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
-    </entry>
-    <entry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" points="155.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="3" collective="false" page="0">
-      <entries>
-        <entry id="31221d6f-30f3-49ec-9174-60df5698dfa2" name="Lightning Arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="Lightning arc (Shroud)###DATA###" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Shroud)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="Range/Speed###DATA###" name="Range/Speed" value="30cm"/>
-                <characteristic characteristicId="Firepower/Str###DATA###" name="Firepower/Str" value="10"/>
-                <characteristic characteristicId="Fire Arc###DATA###" name="Fire Arc" value="Front/left/right"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles>
-        <profile id="Shroud Class Light Cruiser###DATA###" profileTypeId="556e697423232344415441232323" name="Shroud Class Light Cruiser" hidden="false" page="0">
-          <characteristics>
-            <characteristic characteristicId="Type###DATA###" name="Type" value="Cruiser"/>
-            <characteristic characteristicId="Hits###DATA###" name="Hits" value="4"/>
-            <characteristic characteristicId="Speed###DATA###" name="Speed" value="30cm"/>
-            <characteristic characteristicId="Turns###DATA###" name="Turns" value="45"/>
-            <characteristic characteristicId="Shields###DATA###" name="Shields" value="5+ Save"/>
-            <characteristic characteristicId="Armour###DATA###" name="Armour" value="6+"/>
-            <characteristic characteristicId="Turrets###DATA###" name="Turrets" value="1"/>
-            <characteristic characteristicId="Pg.###DATA###" name="Pg." value="77 (Harvest Fleets)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
-    </entry>
-    <entry id="6ee91504-f516-4fef-a74e-a23482e50201" name="Re-rolls" points="0.0" categoryId="466c65657420436f6d6d616e6465727323232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+    <entry id="6ee91504-f516-4fef-a74e-a23482e50201" name="Re-rolls" points="0.0" categoryId="466c65657420436f6d6d616e6465727323232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="c866f6c1-d218-45aa-a24c-d50f493b5dc9" name="Choose one" defaultEntryId="" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false">
+        <entryGroup id="c866f6c1-d218-45aa-a24c-d50f493b5dc9" name="Choose one" defaultEntryId="" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="c35d5068-f33a-4cbc-9eda-6491bb393ffe" name="One extra re-roll" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+            <entry id="c35d5068-f33a-4cbc-9eda-6491bb393ffe" name="One extra re-roll" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -360,7 +229,7 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="38b8190b-ad0c-4cd0-92b3-cbfccf8aa810" name="Two extra re-rolls" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" page="0">
+            <entry id="38b8190b-ad0c-4cd0-92b3-cbfccf8aa810" name="Two extra re-rolls" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -379,13 +248,144 @@
       <profiles/>
       <links/>
     </entry>
+    <entry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" points="275.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="6" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="96c8f5fc-0fac-44dc-b74b-30a62e891434" name="Gauss particle whip" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="0b15-de71-c0c1-5a37" profileTypeId="41726d616d656e7423232344415441232323" name="Gauss particle whip (Scythe)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="45cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="4"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Left/front/right"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="e1f8911a-4642-4dce-b2e3-8f3a49d97a13" name="Lightning arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="2f9f-755e-c3f8-8f32" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning arc (Scythe)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="30cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="8"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Left/right"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="69c3084b-5aa4-43e4-97c9-7f41f723fac0" name="Portal" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="a918-3785-3402-82b3" profileTypeId="41726d616d656e7423232344415441232323" name="Portal (Scythe)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="10cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="2"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="aa72d711-cac7-47a3-9e4d-35d385ead4b3" name="Star pulse generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="df06-a3df-c506-c3f0" profileTypeId="41726d616d656e7423232344415441232323" name="Star pulse generator (Scythe)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="20cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="(1 per enemy)"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="All around"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="1336-536f-9b28-bd8c" profileTypeId="556e697423232344415441232323" name="Scythe Class Harvest Ship" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Cruiser"/>
+            <characteristic characteristicId="4869747323232344415441232323" name="Hits" value="8"/>
+            <characteristic characteristicId="537065656423232344415441232323" name="Speed" value="30cm"/>
+            <characteristic characteristicId="5475726e7323232344415441232323" name="Turns" value="45"/>
+            <characteristic characteristicId="536869656c647323232344415441232323" name="Shields" value="5+ Save"/>
+            <characteristic characteristicId="41726d6f757223232344415441232323" name="Armour" value="6+"/>
+            <characteristic characteristicId="5475727265747323232344415441232323" name="Turrets" value="3"/>
+            <characteristic characteristicId="50672e23232344415441232323" name="Pg." value="76 (Harvest Fleets)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" points="155.0" categoryId="4361706974616c20536869707323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="3" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="31221d6f-30f3-49ec-9174-60df5698dfa2" name="Lightning Arc" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="3829-4b00-49a5-7b5a" profileTypeId="41726d616d656e7423232344415441232323" name="Lightning Arc (Shroud)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e67652f537065656423232344415441232323" name="Range/Speed" value="30cm"/>
+                <characteristic characteristicId="46697265706f7765722f53747223232344415441232323" name="Firepower/Str" value="10"/>
+                <characteristic characteristicId="466972652041726323232344415441232323" name="Fire Arc" value="Front/left/right"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="7d2d-b1d1-2e1b-0b1f" profileTypeId="556e697423232344415441232323" name="Shroud Class Light Cruiser" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Cruiser"/>
+            <characteristic characteristicId="4869747323232344415441232323" name="Hits" value="4"/>
+            <characteristic characteristicId="537065656423232344415441232323" name="Speed" value="30cm"/>
+            <characteristic characteristicId="5475726e7323232344415441232323" name="Turns" value="45"/>
+            <characteristic characteristicId="536869656c647323232344415441232323" name="Shields" value="5+ Save"/>
+            <characteristic characteristicId="41726d6f757223232344415441232323" name="Armour" value="6+"/>
+            <characteristic characteristicId="5475727265747323232344415441232323" name="Turrets" value="1"/>
+            <characteristic characteristicId="50672e23232344415441232323" name="Pg." value="77 (Harvest Fleets)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
   </entries>
   <rules>
-    <rule id="Leadership (Necron)###DATA###" name="Leadership (Necron)" hidden="false" page="0">
+    <rule id="a11f-a53c-d44f-4480" name="Leadership (Necron)" hidden="false">
       <description>Leadership is determined normally for Necron fleets, except a ship carrying a Sepulchre automatically receives a Leadership of 10. P. 78 (Harvest Fleets)</description>
       <modifiers/>
     </rule>
-    <rule id="Re-rolls (Necron)###DATA###" name="Re-rolls (Necron)" hidden="false" page="0">
+    <rule id="1ce1-8537-5a59-eda7" name="Re-rolls (Necron)" hidden="false">
       <description>The necron fleet gets one re-roll and can purchase extra re-rolls. Necron re-rolls are purchased by the fleet as a whole, rather than being considered Fleet Commander re-rolls. Pg. 78 (Harvest Fleets)</description>
       <modifiers/>
     </rule>

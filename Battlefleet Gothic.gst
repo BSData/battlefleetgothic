@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" revision="5" battleScribeVersion="1.15" name="Battlefleet Gothic">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" revision="6" battleScribeVersion="1.15" name="Battlefleet Gothic" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Standard" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
