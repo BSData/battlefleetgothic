@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="5" battleScribeVersion="2.01" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="6" battleScribeVersion="2.01" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6994,9 +6994,9 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
                 <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="12"/>
                 <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
                 <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-                <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="3"/>
+                <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="4"/>
                 <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="6+"/>
-                <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
+                <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="4"/>
                 <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
               </characteristics>
             </profile>
@@ -7062,6 +7062,13 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <rules/>
               <infoLinks/>
               <modifiers/>
+            </rule>
+            <rule id="0c5a-9603-54fa-b979" name="Chaos Space Marine Battle Barge" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>It may be armed with short-burn torpedoes and/or barrage bombs for +30 points each,</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -8054,9 +8061,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -8067,9 +8072,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -8598,7 +8601,100 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <constraints/>
             </categoryLink>
           </categoryLinks>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="598e-d842-4b06-387c" name="Secondary Shield" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="3858-a795-977b-492f" name="Secondary Shield" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description> Any number of strike cruisers in the fleet may purchase an additional shield (increasing their shields value by +1) for +15 points each</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a344-9327-0cd0-3803" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1327-4231-1344-cd83" name="Replace Launch bays" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="7a8c-707b-cc04-4b08" name="Replace Launch bays" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A Space Marine strike cruiser may replace its prow launch bays with either a torpedo salvo (Speed 30cm, Strength 3, Front) or a bombardment cannon (Range 30cm, Firepower 3, Front) for no change in cost.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f36-7214-8595-9b73" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="77d6-2267-a667-ff70" name="Replace Weapons Battery" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="82aa-d617-d0f4-6b81" name="Replace Weapons Battery" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A Space Marine strike cruiser may replace both its port and starboard weapons batteries with port and starboard launch bays (1 Squadron each), equipped with Thunderhawks (Speed: 20cm) for +15 points.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8844-4352-b829-1ed9" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c0a-89c9-a80f-ea4f" name="Short-burn Torpedos" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="ffb1-7e16-20f9-682a" name="Short-burn Torpedos" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Any strike cruiser with torpedoes may be armed with short-burn torpedoes and/or barrage bombs for +15 points each</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6869-5fe2-e78b-a538" name="Type" hidden="false" collective="false" defaultSelectionEntryId="bbd9-b563-5063-9cc2">
               <profiles/>
@@ -10603,9 +10699,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -10616,9 +10710,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -13674,9 +13766,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -13687,9 +13777,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -16237,9 +16325,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -16250,9 +16336,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -16851,9 +16935,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -16864,9 +16946,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -19240,9 +19320,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -19253,9 +19331,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -19824,9 +19900,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -19837,9 +19911,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -19872,9 +19944,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20074,7 +20144,9 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -20156,7 +20228,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -20220,7 +20294,9 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
-                          <costs/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups/>
@@ -20277,9 +20353,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20290,9 +20364,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20514,7 +20586,9 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -20596,7 +20670,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -20604,7 +20680,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <entryLinks/>
-                      <costs/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
@@ -20647,9 +20725,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20660,9 +20736,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20673,9 +20747,7 @@ Dreadclaws: 30cm"/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
                 <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
                 <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
               </characteristics>
@@ -20922,7 +20994,9 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -20978,7 +21052,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
-                          <costs/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups>
@@ -21002,7 +21078,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -21010,7 +21088,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <entryLinks/>
-                      <costs/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
@@ -21064,7 +21144,9 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
-                          <costs/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups/>
@@ -21297,7 +21379,9 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -21353,7 +21437,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
-                          <costs/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups>
@@ -21377,7 +21463,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
-                              <costs/>
+                              <costs>
+                                <cost name="pts" costTypeId="points" value="0.0"/>
+                              </costs>
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups/>
@@ -21385,7 +21473,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <entryLinks/>
-                      <costs/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
