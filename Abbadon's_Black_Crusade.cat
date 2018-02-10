@@ -1,12 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="6" battleScribeVersion="2.01" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aea1-0e81-109b-d184" name="Abbadon&apos;s Black Crusade" revision="2" battleScribeVersion="2.01" authorName="Tomakokamikaze" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes/>
   <profileTypes/>
-  <categoryEntries/>
-  <forceEntries/>
+  <categoryEntries>
+    <categoryEntry id="1523-c6d2-0462-059a" name="Capital Ships BFGXR" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="a49f-11ce-9d66-3650" name="Escorts BFGXR" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="908e-01cd-dca7-4b93" name="Fleet Commanders BFGXR" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="be0d-aeaf-c94d-1fa8" name="Special BFGXR" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="95f8-5a47-5ccb-2430" name="BFGXR" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="f60c-e7c3-54b7-614b" name="BFGXR" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Fanmade set of rules, check with your oponent if its ok to use them.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a7c-5bac-5cc0-d80c" type="max"/>
+      </constraints>
+      <forceEntries/>
+      <categoryLinks>
+        <categoryLink id="8aa3-b61c-e2df-21fd" name="Capital Ships BFGXR" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7cac-3e26-ded3-6ce6" name="Escorts BFGXR" hidden="false" targetId="a49f-11ce-9d66-3650" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4fb5-68e2-81b5-c991" name="Fleet Commanders BFGXR" hidden="false" targetId="908e-01cd-dca7-4b93" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="2bbb-6881-9df1-0fe4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4089-a792-4108-8c36" name="Special BFGXR" hidden="false" targetId="be0d-aeaf-c94d-1fa8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" book="BFG Rulebook - Armada" page="43" hidden="false" collective="false" type="unit">
       <profiles>
@@ -6966,21 +7046,21 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
     </selectionEntry>
     <selectionEntry id="55dd-5f64-0807-7d05" name="*Allow BFGXR" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules>
-        <rule id="66e7-c05d-9028-d939" name="*Allow BFGXR" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Fanmade set of rules, check with your oponent if its ok to use them.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b22a-2fd8-f7ba-3795" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="eb70-5399-2398-7874" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="956f-a74b-d3b3-42e3" name="Chaos Space Marine Battle Barge" book="BFG Rulebook - Armada" page="22" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -7077,7 +7157,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3746-dbb4-bc7b-7aec" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="5d21-50e2-f92c-d10e" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+            <categoryLink id="c9f4-0b2d-bd95-2b6b" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -7613,7 +7693,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="7cf1-18f9-8053-8b6f" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="99df-76d8-f57d-1045" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8137,7 +8217,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="e783-8c5d-28f8-a292" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="10d9-82fc-767f-f312" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8593,7 +8673,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd42-08c1-c09b-9877" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="8a31-17c3-c3c5-ee54" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+            <categoryLink id="1f74-d43c-c1dc-26d0" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8646,7 +8726,9 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="77d6-2267-a667-ff70" name="Replace Weapons Battery" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -9100,7 +9182,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="d6a3-53ca-8f89-4ce8" hidden="false" targetId="4573636f72747323232344415441232323" primary="true">
+            <categoryLink id="791d-b264-7563-b8f2" name="New CategoryLink" hidden="false" targetId="a49f-11ce-9d66-3650" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -9113,522 +9195,6 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d07c-332d-9646-e78f" name="Abaddon the Despolier" book="BFGXR - Chaos" page="39" hidden="false" collective="false" type="unit">
-          <profiles>
-            <profile id="64a3-f6e6-4d5e-f472" name="Abaddon the Despolier" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="10"/>
-                <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1 per turn"/>
-                <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="4472-97eb-fdef-231a" name="ABADDON AS FLEET COMMANDER" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Abaddon can be chosen to act as fleet commander in any game in which the Chaos fleet is worth 1,000 points or more. You may not place a Chaos Lord on the same ship as Abaddon (you don’t get to be a Chaos Lord by spending lots of time near a bloody-tempered maniac!). He has the following characteristics:</description>
-            </rule>
-            <rule id="fe7c-673a-41b5-b36f" name="&quot;You have failed me for the last time...&quot;" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Abaddon the Despoiler does not tolerate failure, as many of his followers have discovered to their peril. When Abaddon&apos;s re-roll is used for a command check or leadership test and the roll is failed a second time, he will become angry - very, very angry!
-
-If this dreadful failure occurs aboard his own ship, his vesse automatically suffers 1 point of damage as the Black Legion massacre the offending crewmembers (and anyone else in the general vicinity, just to be sure).
-
-Otherwise, in his next shooting phase, his ship must direct at least half of its available firepower and lance strength against the ship or squadron that failed him (assuming the worthless scum are within range and fire arc). Resolve the attack normally, as if the target of Abaddon’s attack were an enemy vessel. The victims of his wrath (assuming they survive) will be suitably chastised and gain a +1 Ld bonus for the rest of the game. This bonus is only applied once per ship or squadron.
-
-If the object of his wrath is not in range or fire arc of any of his weapons, Abaddon will simply leave them to their fate - they do not gain any bonus leadership and may no longer benefit from Abaddon’s re-rolls for the rest of the game.</description>
-            </rule>
-            <rule id="ede5-8bd0-01ff-f978" name="Supreme Leadership" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Abaddon is a terrifying commander that none would dare to disobey. As such, he has a leadership value of 10. In addition, any fleet led by Abaddon may re-roll one command check or leadership test per turn (in the same manner as a fleet commander re-roll). Note that these re-rolls cannot be ‘saved up’ over multiple turns, and replace any normal fleet commander re-rolls he would have (and he cannot be given any additional re-rolls as part of your fleet list).</description>
-            </rule>
-            <rule id="03b4-5b80-ad1e-706e" name="Lord of the Black Legion" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Abaddon is the current head of the Black Legion, the largest Chaos Warband in existence and home to thousands of traitor legionnaires. As such, any vessel he is aboard automatically has a Chaos Space Marine crew for no extra cost. Abaddon is also accompanied by his personal retinue of Black Legion terminators, called the Bringers of Despair. These count as regular Chaos Terminators in all respects and also double the boarding value of Abaddon’s ship.</description>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="c844-be51-e758-302a" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="195.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fb21-87da-84b1-13c6" name="Acheron Class Heavy Cruiser" book="BFGXR - Chaos" page="119" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="2e77-484e-e446-dcf3" name="Acheron Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-                <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-                <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-                <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-                <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-                <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-                <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-                <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-              </characteristics>
-            </profile>
-            <profile id="c3a6-e067-3a33-f59b" name="Acheron Port Lance" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-              </characteristics>
-            </profile>
-            <profile id="f3b8-5c3a-b022-98fa" name="Acheron Starboard Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-              </characteristics>
-            </profile>
-            <profile id="fbe7-54a3-01b4-d519" name="Acheron Dorsal Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-              </characteristics>
-            </profile>
-            <profile id="363f-64fd-0b28-5992" name="Acheron Prow Weapons Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="0d1c-8065-3098-517f" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries/>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="da63-d93a-342d-1667" name="Type" hidden="false" collective="false" defaultSelectionEntryId="755d-3b03-8488-fe38">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc28-1bb9-5d40-e8fc" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2b8-cf61-6d7e-4a2d" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="755d-3b03-8488-fe38" name="Normal" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="765b-6a73-ba13-1bb5" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="e1ba-4bf8-6286-e4e9" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="778b-f41b-e704-1996" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="97e0-3190-1f9c-362d" name="Re-roll" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eefd-cdb3-c16d-e98f" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="a13c-4a49-c336-588c" name="Mark" hidden="false" collective="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa73-1f42-6d3c-6c4a" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries>
-                            <selectionEntry id="da35-7d4e-f5b1-fac1" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="35.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="5f9a-50aa-2d9b-9d38" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="ca56-a468-7b5a-3bd0" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="20.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="5e35-e67f-93d8-e599" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="efbb-c9c4-7a7c-5df0" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="df05-5139-f616-b0f3" name="Chaos Space Marine Crews" book="BFG Rulebook - Armada" page="45" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
-
-Leadership: A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
-
-Boarding &amp; Hit-&amp;-Run: The superior fighting skills of the Chaos Space Marines are most apparent in boarding actions. A ship with a Chaos Space Marine crew adds two to its roll when performing boarding actions and enemy conducting hit &amp; run attacks against them subtract one from their hit &amp; run result. Hit and run attacks launched by boarding torpedoes, Dreadclaws, Thunderhawks or teleportation originating from such a ship add 1 to their result.
-
-Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mission score two Assault Points for every turn they spend landing troops.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf36-b9fa-0ee4-2d54" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="a70a-9ac9-4325-d089" name="Terminators" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules>
-                            <rule id="0908-5bdb-e561-b6e4" name="Terminator Teleport Assault" book="BFG Rulebook - Armada" page="45" hidden="false">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
-                            </rule>
-                          </rules>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c906-a3c7-c53d-a29a" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="10.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="2817-18f6-9a11-865e" name="Mark" hidden="false" collective="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="295b-cea6-2986-016a" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries>
-                            <selectionEntry id="dfed-62d6-5c95-6684" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="35.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="8ab0-8cbc-2eab-b571" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="f404-0a68-ed7f-893e" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="20.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="43f1-3e08-b0e3-8520" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="35.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="111f-b018-6079-10e9" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules>
-                    <rule id="729e-39ff-6616-0425" name="Deamon Crew" book="BFG Rulebook- Armada" page="40" hidden="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <description>A Daemon ship may not be commanded by a Warmaster or a Chaos Lord even if it is the largest ship in the fleet. This is an exception to the normal rule. A Daemon ship may not have a Chaos Space Marine crew. Any number of capital ships can be upgraded to Daemon ships subject to these limitations.
-
-Daemon ships cannot carry Exterminatus weapons and do not score any points for landing troops in a planetary assault (the Daemons are bound within the hull of their vessel, whilst able to board enemy ships normally in the context of a BFG game they would become unstable if holding a planetary objective for any length of time).
-
-Any Daemon ship may have a single Mark of Chaos with the same effects and cost in points as described in the Battlefleet Gothic rulebook.
-
-Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</description>
-                    </rule>
-                  </rules>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77af-0c7e-2f16-2f23" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="367d-a4c1-812d-f31a" name="Mark" hidden="false" collective="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7488-32c1-1041-70d8" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="4612-e995-9fa3-5803" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="35.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="4b6e-36f4-b8ae-5a69" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="f58c-5081-d8d7-770a" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="20.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="6534-d422-20db-2a21" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="190.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9bf6-2a4e-82d0-7a62" name="Carnage Class Cruiser" page="0" hidden="false" collective="false" type="upgrade">
@@ -9710,7 +9276,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="ef70-f3a5-d63d-144b" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="6cdf-fe02-52af-48bd" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10118,7 +9684,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f728-5775-42f9-f5a6" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="5c81-1bf6-8de0-7abc" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true">
+            <categoryLink id="d659-9bbf-269c-c498" name="New CategoryLink" hidden="false" targetId="908e-01cd-dca7-4b93" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10296,7 +9862,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="f2b3-85dc-5d59-2059" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="591c-72b1-9ed3-2547" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10801,7 +10367,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="5d58-fbbf-0e8f-5f5e" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="89db-b40b-7483-8113" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -11281,7 +10847,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="2ecb-23b1-bd57-aaea" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="9f98-e2f6-1142-20c8" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -11746,7 +11312,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
             <cost name="pts" costTypeId="points" value="210.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e023-3483-8b2f-b077" name="Hades class heavy cruiser" book="BFGXR - Chaos" page="18" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e023-3483-8b2f-b077" name="Hades Class Heavy Cruiser" book="BFGXR - Chaos" page="18" hidden="false" collective="false" type="upgrade">
           <profiles>
             <profile id="63c9-8cd0-c8e1-b985" name="Hades Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
               <profiles/>
@@ -11814,7 +11380,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="df8a-70ed-4f9a-526d" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="c64c-3add-50a6-5269" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12247,7 +11813,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="752b-375c-4628-48b2" hidden="false" targetId="4573636f72747323232344415441232323" primary="true">
+            <categoryLink id="5a81-f0bd-71bb-f62f" name="New CategoryLink" hidden="false" targetId="a49f-11ce-9d66-3650" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12308,7 +11874,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="d2e6-1290-06e2-b69f" hidden="false" targetId="4573636f72747323232344415441232323" primary="true">
+            <categoryLink id="7179-8ec1-5dcf-8c15" name="New CategoryLink" hidden="false" targetId="a49f-11ce-9d66-3650" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12388,7 +11954,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="c8d9-b649-2f0e-3373" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="d4e5-d032-3176-e52f" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12862,9 +12428,11 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           </rules>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae44-edd9-cc49-c4c1" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="27f4-27e6-cc12-3cb6" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="e0f4-fb1a-e7b5-a985" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -13319,7 +12887,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="9cb9-a457-b10e-7b16" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="cc22-982d-2609-c747" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -13843,7 +13411,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="d92c-ca1a-4c75-043f" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="e9f3-5025-d754-a2c5" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14418,7 +13986,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="4339-5a3e-dcee-6606" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="7d5d-6108-ee18-8a17" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14865,7 +14433,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="fa2c-a46c-f518-0dd4" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="9e44-8508-dc4c-71aa" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -15394,7 +14962,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="a235-55d3-69f2-4581" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="4c97-6006-3dc6-3e7d" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -15900,7 +15468,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="c312-37fb-477e-5a83" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="7a36-fc20-2f80-b143" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16401,7 +15969,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="7be1-0b2d-b295-2835" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="7e1a-0062-2420-f995" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -17055,7 +16623,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="0f31-49dc-4849-76a1" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="daf6-7eee-e63c-ff80" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -17513,7 +17081,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="6c1e-ee6d-6638-d233" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="f552-4b8e-8523-6ad1" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -17957,7 +17525,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="b3c8-f193-fc3a-022f" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="e92e-375f-af98-81c0" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -18401,7 +17969,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="3ba9-3be8-e354-bdc2" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="33a3-dc9f-890f-8494" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -18845,7 +18413,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="ea26-f120-188c-5789" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="de8a-f06d-6242-7bd0" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -19270,7 +18838,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <modifiers/>
           <constraints/>
           <categoryLinks>
-            <categoryLink id="0906-2742-bfcf-5011" hidden="false" targetId="4573636f72747323232344415441232323" primary="true">
+            <categoryLink id="e341-8120-f941-35b2" name="New CategoryLink" hidden="false" targetId="a49f-11ce-9d66-3650" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -19486,7 +19054,7 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe6-1e7f-d127-1a03" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="2478-bec2-1560-c823" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="b5b2-54cb-15b3-3c2f" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -20038,9 +19606,11 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           </rules>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b5b-2d15-0266-81e5" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="2bb6-aa84-5068-d5fd" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="cb80-05de-4c6e-4f4a" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -20480,9 +20050,11 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           </rules>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a594-8911-f04d-2080" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="3174-b5ed-5a3d-fec8" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="1da1-27c2-ed4d-7070" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -20888,9 +20460,11 @@ When a Stormbird squadron contacts an enemy ship’s base, it will attack it acc
           </rules>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a6-a4e7-d268-12e6" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="8185-c247-3dbd-cd43" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="b653-0b74-13af-4b8b" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -21298,9 +20872,11 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           </rules>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b091-5d15-a6df-80b2" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="83e2-b6ae-c0f1-19a7" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
+            <categoryLink id="d64b-6f51-a130-8d22" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -21499,6 +21075,528 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ef3-c062-14ac-cbee" name="BFGXR Abaddon the Despolier" book="BFGXR - Chaos" page="39" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="dcad-64ce-02db-3c11" name="Abaddon the Despolier" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="10"/>
+            <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1 per turn"/>
+            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="05f0-36c5-a86f-00dd" name="ABADDON AS FLEET COMMANDER" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Abaddon can be chosen to act as fleet commander in any game in which the Chaos fleet is worth 1,000 points or more. You may not place a Chaos Lord on the same ship as Abaddon (you don’t get to be a Chaos Lord by spending lots of time near a bloody-tempered maniac!). He has the following characteristics:</description>
+        </rule>
+        <rule id="b6d2-d3e9-cd87-93f9" name="&quot;You have failed me for the last time...&quot;" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Abaddon the Despoiler does not tolerate failure, as many of his followers have discovered to their peril. When Abaddon&apos;s re-roll is used for a command check or leadership test and the roll is failed a second time, he will become angry - very, very angry!
+
+If this dreadful failure occurs aboard his own ship, his vesse automatically suffers 1 point of damage as the Black Legion massacre the offending crewmembers (and anyone else in the general vicinity, just to be sure).
+
+Otherwise, in his next shooting phase, his ship must direct at least half of its available firepower and lance strength against the ship or squadron that failed him (assuming the worthless scum are within range and fire arc). Resolve the attack normally, as if the target of Abaddon’s attack were an enemy vessel. The victims of his wrath (assuming they survive) will be suitably chastised and gain a +1 Ld bonus for the rest of the game. This bonus is only applied once per ship or squadron.
+
+If the object of his wrath is not in range or fire arc of any of his weapons, Abaddon will simply leave them to their fate - they do not gain any bonus leadership and may no longer benefit from Abaddon’s re-rolls for the rest of the game.</description>
+        </rule>
+        <rule id="00db-cf57-1044-366d" name="Supreme Leadership" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Abaddon is a terrifying commander that none would dare to disobey. As such, he has a leadership value of 10. In addition, any fleet led by Abaddon may re-roll one command check or leadership test per turn (in the same manner as a fleet commander re-roll). Note that these re-rolls cannot be ‘saved up’ over multiple turns, and replace any normal fleet commander re-rolls he would have (and he cannot be given any additional re-rolls as part of your fleet list).</description>
+        </rule>
+        <rule id="7d4c-38b2-1b3f-9b56" name="Lord of the Black Legion" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Abaddon is the current head of the Black Legion, the largest Chaos Warband in existence and home to thousands of traitor legionnaires. As such, any vessel he is aboard automatically has a Chaos Space Marine crew for no extra cost. Abaddon is also accompanied by his personal retinue of Black Legion terminators, called the Bringers of Despair. These count as regular Chaos Terminators in all respects and also double the boarding value of Abaddon’s ship.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="ac6f-9854-ac7f-f45b" name="New CategoryLink" hidden="false" targetId="908e-01cd-dca7-4b93" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="195.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="60ca-39bc-37fd-4cb5" name="BFGXR Acheron Class Heavy Cruiser" book="BFGXR - Chaos" page="119" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="06c8-1819-6e13-c6fd" name="Acheron Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
+            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
+            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
+            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
+            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
+            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
+            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
+            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="3cba-63ff-dcbf-18c6" name="Acheron Port Lance" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
+            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
+            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
+          </characteristics>
+        </profile>
+        <profile id="3c83-f83d-74f2-6acd" name="Acheron Starboard Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
+            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
+            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
+          </characteristics>
+        </profile>
+        <profile id="2bfd-b594-0951-8e41" name="Acheron Dorsal Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
+            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
+            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
+          </characteristics>
+        </profile>
+        <profile id="2328-5d27-1bf5-8cd5" name="Acheron Prow Weapons Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
+            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
+            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="append" field="name" value="0.0">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="fc6d-4ef2-239b-daeb" name="New CategoryLink" hidden="false" targetId="1523-c6d2-0462-059a" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3aee-6fd0-17cc-96c0" name="Type" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a57-40c5-b5f2-0e10" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0232-ea86-d87f-5a8a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="416b-2c1a-1426-f614" name="Normal" page="0" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d24-ecfb-ef71-3700" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries>
+                <selectionEntry id="fcc2-d17b-a55f-4be9" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d489-f6eb-d602-7b96" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries>
+                    <selectionEntry id="4400-bb2e-8f01-a08f" name="Re-roll" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36a5-ac13-1336-6748" type="max"/>
+                      </constraints>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="2fb2-e5c4-0317-29ee" name="Mark" hidden="false" collective="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b593-ef63-68f6-1b77" type="max"/>
+                      </constraints>
+                      <categoryLinks/>
+                      <selectionEntries>
+                        <selectionEntry id="936d-a992-830f-1db1" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="35.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="76a5-f68f-63e3-410f" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="25.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="2846-2ed7-fdbe-c1ea" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="20.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="a6a1-3269-62c6-eb5c" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="25.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="56af-6598-cdfe-bcb0" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules>
+                    <rule id="0ee7-4bba-ed10-7959" name="Chaos Space Marine Crews" book="BFG Rulebook - Armada" page="45" hidden="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
+
+Leadership: A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
+
+Boarding &amp; Hit-&amp;-Run: The superior fighting skills of the Chaos Space Marines are most apparent in boarding actions. A ship with a Chaos Space Marine crew adds two to its roll when performing boarding actions and enemy conducting hit &amp; run attacks against them subtract one from their hit &amp; run result. Hit and run attacks launched by boarding torpedoes, Dreadclaws, Thunderhawks or teleportation originating from such a ship add 1 to their result.
+
+Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mission score two Assault Points for every turn they spend landing troops.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cade-d187-4555-74f9" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries>
+                    <selectionEntry id="d7d2-ff70-fa01-d368" name="Terminators" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules>
+                        <rule id="7333-796c-9c79-8858" name="Terminator Teleport Assault" book="BFG Rulebook - Armada" page="45" hidden="false">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
+                        </rule>
+                      </rules>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ced-585c-9c64-68ad" type="max"/>
+                      </constraints>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="4447-f0ef-d9a4-7280" name="Mark" hidden="false" collective="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37c1-9fe3-60f0-bc8f" type="max"/>
+                      </constraints>
+                      <categoryLinks/>
+                      <selectionEntries>
+                        <selectionEntry id="22a5-c2bb-7b02-848c" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="35.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="ae60-624d-8fc4-2a11" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="25.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="9e55-7851-79be-3383" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="20.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="82ee-0e99-6b8e-bffc" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints/>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="pts" costTypeId="points" value="25.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c0ac-1c0b-8866-96a1" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="b9c4-0d07-7b54-be20" name="Deamon Crew" book="BFG Rulebook- Armada" page="40" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A Daemon ship may not be commanded by a Warmaster or a Chaos Lord even if it is the largest ship in the fleet. This is an exception to the normal rule. A Daemon ship may not have a Chaos Space Marine crew. Any number of capital ships can be upgraded to Daemon ships subject to these limitations.
+
+Daemon ships cannot carry Exterminatus weapons and do not score any points for landing troops in a planetary assault (the Daemons are bound within the hull of their vessel, whilst able to board enemy ships normally in the context of a BFG game they would become unstable if holding a planetary objective for any length of time).
+
+Any Daemon ship may have a single Mark of Chaos with the same effects and cost in points as described in the Battlefleet Gothic rulebook.
+
+Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0915-5924-45b1-a741" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4bf8-a2bc-e5e5-4913" name="Mark" hidden="false" collective="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9c1-4cc5-7ae1-7589" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries>
+                    <selectionEntry id="e469-9c28-e870-5f39" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="35.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0177-b261-6351-0e2c" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b58d-8323-7bd0-f707" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c3f4-54f8-68dc-3ed8" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
