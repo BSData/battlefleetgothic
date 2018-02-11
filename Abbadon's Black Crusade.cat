@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="4" battleScribeVersion="2.01" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="3" battleScribeVersion="2.01" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -8,56 +8,9 @@
   <categoryEntries/>
   <forceEntries/>
   <selectionEntries>
-    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" book="BFG Rulebook - Armada" page="43" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="f196-83c9-6727-34ad" name="Abaddon the Despolier" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="10"/>
-            <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1 per turn"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="8ce7-1b96-9dca-c8cf" name="ABADDON AS FLEET COMMANDER" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Abaddon can be chosen to act as fleet commander in any game in which the Chaos fleet is worth 1,000 points or more. You may not place a Chaos Lord on the same ship as Abaddon (you don’t get to be a Chaos Lord by spending lots of time near a bloody-tempered maniac!). He has the following characteristics:</description>
-        </rule>
-        <rule id="b842-cc30-6f0a-f57e" name="Boarding Actions" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Abaddon is accompanied by his company of Black Legion Traitor Marines aboard the ship he
-is commanding. This, combined with his own abilities, means the ship doubles its value in
-boarding actions and gains an extra +1 Boarding modifier.</description>
-        </rule>
-        <rule id="b7d1-389f-59f2-6f5e" name="Hit-&amp;-Run Attacks" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Abaddon will have his own ship sealed tight against hit-&amp;-run raiders (he knows every trick in the book). Therefore, hit-&amp;-run raids deduct -1 from their dice roll against Abaddon’s ship. If Abaddon’s vessel makes any hit-&amp;-run teleport attacks, add +1 to the dice roll for the attack as it will be undertaken by elite Black Legion Terminators. Boarding torpedoes and assault boats from Abaddon’s ship will be manned by more mundane minions and do not receive this modifier.</description>
-        </rule>
-        <rule id="b6b2-6bee-2bf8-920a" name="&quot;You have failed me for the last time...&quot;" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Abaddon the Despoiler does not tolerate failure, as many of his followers have discovered to their cost. If Abaddon’s re-roll is used for a Command check or Leadership test on another ship or squadron and the test is failed a second time, he will become angry – very, very angry! In the Chaos Shooting phase Abaddon will direct at least half the available firepower and lance strength of the ship he is commanding against the weaklings who have failed him (assuming the worthless scum are within range and fire arc). Resolve the attack as normal, just as if Abaddon’s vessel were an enemy.
-
-The victims of his wrath (assuming they survive) will be suitably chastised and gain a +1 Leadership increase for the remainder of the game. The Leadership bonus will only take effect once (after that the crews are working as hard as they can!). If the object of Abaddon’s wrath is not in range and/or fire arc he will leave them to their fate – Abaddon’s re-rolls may no longer be used on it. This means that no further Commander re-rolls may be used on the ship or squadron unless it is carrying its own Chaos Lord with a Mark of Tzeentch.
-
-Should this dreadful failure occur on Abaddon’s own ship, it will lose one Damage Point as the Black Legion massacre those who failed him. No Leadership increase is gained.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -77,69 +30,8 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" costTypeId="points" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8b6c28f9-a6e1-43b3-9d48-b9b7c300b0d2" name="Acheron Class Heavy Cruiser" book="BFG Rulebook" page="190" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="b068-4b31-38a4-d010" name="Acheron Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="9934-33f6-9750-6989" name="Acheron Port Lance" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="5cd9-af8e-a907-b8f9" name="Acheron Starboard Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="9164-c1a1-8fc9-5989" name="Acheron Dorsal Lance Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="3d1a-c250-f687-177f" name="Acheron Prow Weapons Battery" book="" page="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="8b6c28f9-a6e1-43b3-9d48-b9b7c300b0d2" name="Acheron class heavy cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -155,7 +47,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="70f80df8-9474-49af-9654-4712d5115661" name="Type" hidden="false" collective="false" defaultSelectionEntryId="5e6f28ae-7485-499b-beb8-0d7297615152">
+        <selectionEntryGroup id="70f80df8-9474-49af-9654-4712d5115661" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -488,80 +380,8 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" costTypeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage Class Cruiser" page="0" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="ddf3-4842-5916-0acb" name="Carnage Profile" book="BFG Rulebook" page="124" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="2"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="2ade-4cf4-8e53-806e" name="Carnage 1st Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="2ca7-c34a-0289-9c46" name="Carnage 1st Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="4214-e9b2-46b5-d372" name="Carnage Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="768e-d99f-1c87-746f" name="Carnage 2nd Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="2ec7-d089-ca2d-bf4b" name="Carnage 2nd Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage class cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -577,7 +397,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1ddbc22c-5362-4e47-9017-8eb6e62d2e3a" name="Type" hidden="false" collective="false" defaultSelectionEntryId="2fa2550d-3148-4f86-b41b-d2f9d8ae3a2a">
+        <selectionEntryGroup id="1ddbc22c-5362-4e47-9017-8eb6e62d2e3a" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -910,29 +730,9 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" costTypeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" book="BFG Rulebook - Armada" page="46" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="d1f4-a8eb-dd26-a9c1" name="Chaos Warmaster" book="" page="" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="8"/>
-            <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="c17f-b45b-a51d-67a0" name="Chaos Warmaster" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>You can only include a Chaos Warmaster in your fleet if it includes any capital ships. He must be assigned to the most expensive ship and improves its rolled Leadership by +2, to a maximum of 9.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -1042,7 +842,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" costTypeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e20c980-1798-4508-bd69-d021ff8acabc" name="Desolator Class Battleship" book="BFG Rulebook" page="118" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2e20c980-1798-4508-bd69-d021ff8acabc" name="Desolator class battleship" book="BFG Rulebook" page="118" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="018a-7829-35d9-9c59" name="Desolator Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
           <profiles/>
@@ -1071,48 +871,8 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
           </characteristics>
         </profile>
-        <profile id="0cad-7a9c-5fe1-a0fa" name="Desolator Starboard Lance Battery" book="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="cedb-74ad-81a4-7232" name="Desolator Dorsal Weapons Battery" book="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="1934-24df-68a6-6352" name="Desolator Prow Torpedos" book="" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="9"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="baca-d2f4-967e-7b25" name="May not use the &quot;come to new heading&quot; special order" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -1460,130 +1220,9 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" costTypeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="afc9724e-302d-49d7-80b8-be3f8472b2d5" name="Despoiler Class Battleship" book="BFG Rulebook" page="117" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="7bc0-7697-f37d-84ff" name="Despoiler Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Battleship"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="12"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="4"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="4"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="d589-a547-846a-3b4a" name="Despoiler Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="7701-ba39-4ed3-c9b6" name="Despoiler Port Launch Bay" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4 squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="2b1d-c59f-2610-d199" name="Despoiler Starboard Launch Bay" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4 squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="216b-96e0-6b62-0ff7" name="Despoiler Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="c532-7e0e-44c8-17e9" name="Despoiler Dorsal Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="f90e-5114-6349-96ab" name="Despoiler Prow Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="aa05-b1cf-9ae5-441e" name="Assault Boat&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-        </rule>
-        <rule id="ff69-2d50-9013-94e5" name="Bomber&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="5e01-2166-db5e-918e" name="Fighter&apos;s Rules" book="BFG Rulebook" page="29" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
-        <rule id="9114-b6e0-a126-093b" name="May not use the &quot;come to new heading&quot; special order" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+    <selectionEntry id="afc9724e-302d-49d7-80b8-be3f8472b2d5" name="Despoiler class battleship" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -1596,32 +1235,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="da66-f165-cd45-cfbd" name="The Damnation&apos;s Fury" hidden="false" collective="false" type="unit">
-          <profiles/>
-          <rules>
-            <rule id="735c-13e4-4f2a-1072" name="The Damnation&apos;s Fury" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Replaces its prw lances with Strenght 8 torpedos.</description>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d21854ab-40fb-4f51-8a15-5db3dbd37bac" name="Type" book="" page="" hidden="false" collective="false" defaultSelectionEntryId="e90a483d-99d0-4342-a180-2ab158d3b73e">
+        <selectionEntryGroup id="d21854ab-40fb-4f51-8a15-5db3dbd37bac" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1954,113 +1570,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation class cruiser" book="BFG Rulebook" page="123" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="238c-2d94-8fe0-2060" name="Devastation Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="f595-66db-bf41-1574" name="Devastation Port Launch Bay" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="4dc8-1148-4e5b-a42a" name="Devastation Starboard Launch Bay" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="03ea-79ba-ee49-9112" name="Devastation Port Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="323a-a66a-5b86-68dd" name="Devastation Starboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="712a-8192-0a95-8119" name="Devastation Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="d152-d22b-ac77-be6c" name="Assault Boat&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-        </rule>
-        <rule id="6ff5-deeb-eeb3-0849" name="Bomber&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="90e2-8ea8-7549-2552" name="Fighter&apos;s Rules" book="BFG Rulebook" page="29" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation class cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -2408,69 +1920,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7275a0aa-3916-4885-81c6-4eac0f5fdf80" name="Executor Class Grand Cruiser" book="BFG Rulebook - Armada" page="39" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="9b2d-dd77-4c45-7e3a" name="Executor Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Grand Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="10"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="3"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="b19a-1cea-78b8-fb3f" name="Executor 1st Port Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="0537-17c9-8566-bcbe" name="Executor 2nd Port Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="ba99-d382-cc02-e599" name="Executor 1st Starboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="912c-7fb4-ca08-712b" name="Executor 2st Starboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="7275a0aa-3916-4885-81c6-4eac0f5fdf80" name="Executor class grand cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -2486,7 +1937,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4273c4e5-3bb5-4f23-97aa-8df7f6668ae0" name="Type" hidden="false" collective="false" defaultSelectionEntryId="490c8636-8813-44ca-9efd-91b031cba4f6">
+        <selectionEntryGroup id="4273c4e5-3bb5-4f23-97aa-8df7f6668ae0" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2819,69 +2270,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4160814-9dc5-4aa0-b38a-fe65d9aaf407" name="Hades class heavy cruiser" book="BFG Rulebook" page="121" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="c394-4b84-4f30-0ce0" name="Hades Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="2"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="8c47-ac93-f29a-63a2" name="Hades Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="2de0-aad1-2019-4307" name="Hades Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="ba7a-e7e5-271a-a253" name="Hades Dorsal Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="f005-97ea-f7ab-18e2" name="Hades Prow Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="b4160814-9dc5-4aa0-b38a-fe65d9aaf407" name="Hades class heavy cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -2897,7 +2287,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="31e2cfa1-403f-429d-a3bd-242defae4619" name="Type" hidden="false" collective="false" defaultSelectionEntryId="b56f372c-5079-459b-9c12-9d7f69ce097b">
+        <selectionEntryGroup id="31e2cfa1-403f-429d-a3bd-242defae4619" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3230,36 +2620,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c71de105-b5c9-4094-8b4d-c3ca1ee31267" name="Iconoclast Class Destroyer" book="BFG Rulebook" page="126" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="c441-ee03-0869-5dd1" name="Iconoclast Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Escort"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="1"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="90°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="1"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="4+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="1"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="2a7d-97a4-204b-ca79" name="Iconoclast Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="c71de105-b5c9-4094-8b4d-c3ca1ee31267" name="Iconoclast class destroyer" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -3280,47 +2642,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6b61ca4-b5af-4bc9-b207-9e55cca96c24" name="Idolator Class Raider" book="BFG Rulebook" page="125" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="ea29-972b-75e5-49f0" name="Idolator Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Escort"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="1"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="90°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="1"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="2"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="af45-d84a-dcd9-e048" name="Idolator Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="afdb-109d-fe38-0a0b" name="Idolator Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="1"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="e6b61ca4-b5af-4bc9-b207-9e55cca96c24" name="Idolator class raider" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -3341,47 +2664,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f43bddc9-4d9d-476d-bcb1-695934a875a1" name="Infidel Class Raider" book="BFG Rulebook" page="125" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="a369-231f-db95-a6fb" name="Infidel Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Escort"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="1"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="90°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="1"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="1"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="5d4f-300f-f309-3eed" name="Infidel Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="19c2-82d0-2e40-050a" name="Infidel Torpedos" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="f43bddc9-4d9d-476d-bcb1-695934a875a1" name="Infidel class raider" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -3402,67 +2686,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" book="BFG Rulebook" page="123" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="a01e-9623-9498-a0dc" name="Murder Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="2"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="657f-bb91-521c-0db1" name="Murder Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="2a11-86cf-af75-ac5b" name="MurderStarboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="6a36-c7e6-cb9c-5126" name="Murder Prow Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="e55c-98be-53d1-ccb7" name="Plagueclaw &amp; Despicable Ecstasy" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>The Plagueclaw and Despicable Ecstasy can be armed with Firepower 4 and Strenght 2, 45cm range lances on their gun decks for no extra points.	</description>
-        </rule>
-      </rules>
+    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder class cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -3477,7 +2703,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c754674b-25b4-4365-bc72-21c74b641a06" name="Type" hidden="false" collective="false" defaultSelectionEntryId="9ae49bd3-f15e-497d-bec0-a3f2defc4e14">
+        <selectionEntryGroup id="c754674b-25b4-4365-bc72-21c74b641a06" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3810,99 +3036,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" book="BFG Rulebook - Armada" page="36" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="5e98-2b62-bae5-521d" name="Planet Killer Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Battleship"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="14"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="4"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="5"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="4dfb-12d3-976e-b8e2" name="Planet Killer Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="12"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="ec99-7b8f-ce0b-c019" name="Planet Killer Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="245e-e7a6-f26b-d4a7" name="Planet Killer Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="4c9e-d7ce-61dc-3817" name="Planet Killer Dorsal Lances" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="3796-3281-b8cd-bbd5" name="Planet Killer Prow Torpedos" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="9"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="ce6f-21aa-f1ff-52a6" name="Planet Killer Armageddon Gun" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="90cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="See Rules"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="3a32-9f21-0321-9b73" name="May not use the &quot;come to new heading&quot; special order" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -3917,7 +3053,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="273f3575-f238-4e29-8da7-adbf7f711168" name="Type" hidden="false" collective="false" defaultSelectionEntryId="f2f51ae6-aeef-4111-94c7-83fac9fa90d2">
+        <selectionEntryGroup id="273f3575-f238-4e29-8da7-adbf7f711168" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4250,69 +3386,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="505.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="404d1a2c-1a97-4d26-b209-2c9a816a9827" name="Repulsive Class Grand Cruiser" book="BFG Rulebook" page="119" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="0fcc-6753-eefe-e468" name="Repulsive Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="10"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="14"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="a2de-8541-3f2c-78d7" name="Repulsive Dorsal Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="def6-18ec-cc7f-26c8" name="Repulsive Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="14"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="53db-6c60-52e9-676c" name="Repulsive Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="14"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="c651-b6d7-9259-a708" name="Repulsive Prow Torpedos" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="404d1a2c-1a97-4d26-b209-2c9a816a9827" name="Repulsive class grand cruiser" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -4326,34 +3401,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ac30-1e68-c591-8ba5" name="The Bringer of Despair" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules>
-            <rule id="f0e4-2cbb-396a-446d" name="The Bringer of Despair" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>The Bringer of Despair was equipped with ancient targeting systems which increases the range of its dorsal lances to 45cm at an additiona cost of +10pts.</description>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="595f-7a05-2956-5ba3" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="baba27f5-2f25-4f55-abc2-b60dd99f3a35" name="Type" hidden="false" collective="false" defaultSelectionEntryId="201bebc8-a5f0-4306-99b4-fddd292bd1e2">
+        <selectionEntryGroup id="baba27f5-2f25-4f55-abc2-b60dd99f3a35" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4686,124 +3736,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="13a11172-83f2-40f8-873e-7dcc878cb330" name="Retaliator Class Grand Cruiser" book="BFG Rulebook - Armada" page="38" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="31d5-7896-9c8b-a78b" name="Retaliator Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Grand cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="10"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="3"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="e305-6cd2-5dfa-9b10" name="Retaliator Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="4a10-0d55-db6b-3927" name="Retaliator Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="da97-0399-fdf3-6a6d" name="RetaliatorPort Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="3609-9b66-0caf-a9ba" name="RetaliatorStarboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="7771-2861-d072-3802" name="Retaliator Port Launch Bays" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="70cc-290f-2e93-03ee" name="Retaliator Starboard Launch Bays" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="26b5-9a13-7405-ba57" name="Assault Boat&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-        </rule>
-        <rule id="7c75-1cf7-69c2-f3b0" name="Bomber&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="4f3d-af46-c7c8-f947" name="Fighter&apos;s Rules" book="BFG Rulebook" page="29" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="13a11172-83f2-40f8-873e-7dcc878cb330" name="Retaliator class grand cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -4819,15 +3754,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       <selectionEntries>
         <selectionEntry id="e2cf72b5-1bd2-479b-b0ce-1e93716afba3" name="Foebane" page="0" hidden="false" collective="false" type="upgrade">
           <profiles/>
-          <rules>
-            <rule id="932e-e02e-c6ff-be72" name="Foebane" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>The Forebane has improved thrusters and may move 5D6 when on ALL Ahead Full orders. This costs no extra points.</description>
-            </rule>
-          </rules>
+          <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
@@ -4843,7 +3770,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1dff0fb5-dd0d-4490-bbbc-0fda3b37d1ab" name="Type" hidden="false" collective="false" defaultSelectionEntryId="141b6b63-58c5-47b2-84d0-ccda96c46462">
+        <selectionEntryGroup id="1dff0fb5-dd0d-4490-bbbc-0fda3b37d1ab" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5176,89 +4103,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" book="BFG Rulebook" page="124" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="8abe-caf4-e40b-596e" name="Slaughter Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="2"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="96c9-5fb6-13dd-6afc" name="Slaughter Port Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="9768-275e-409b-dcbb" name="Slaughter Starboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="6736-7244-0139-20c2" name="Slaughter Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="8"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="0ea0-177c-de6e-b459" name="Slaughter Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="8"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="8ee1-dbed-2329-cf57" name="Slaughter Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="f251-9fdf-a5a3-6407" name="Improved Thrusters" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Moves +5D6 on All Ahead Full special orders.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter class cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -5273,7 +4120,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b2218a66-59ed-4b4e-ad35-34eb1e407a11" name="Type" hidden="false" collective="false" defaultSelectionEntryId="0db63c83-8f6c-4ef8-84bc-4f2d380c936b">
+        <selectionEntryGroup id="b2218a66-59ed-4b4e-ad35-34eb1e407a11" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5606,102 +4453,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ede3aece-c9b9-4049-98ae-25199d1e2443" name="Styx Class Heavy Cruiser" page="0" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="18c2-c9a8-8796-d458" name="Styx Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="8"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="25cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="2"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="cfaf-8d57-6a9d-8046" name="Styx Dorsal Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="a913-885c-ddc9-15d4" name="Styx Prow Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-          </characteristics>
-        </profile>
-        <profile id="3257-80e9-1e01-4e4f" name="Styx Starboard Launch Bays" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-        <profile id="4853-7021-fcf4-9883" name="Styx Port Launch Bays" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="ff57-e398-fce6-e326" name="Assault Boat&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-        </rule>
-        <rule id="65f3-e470-d49f-a50e" name="Bomber&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="0646-ae48-222a-3f1d" name="Fighter&apos;s Rules" book="BFG Rulebook" page="29" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="ede3aece-c9b9-4049-98ae-25199d1e2443" name="Styx class heavy cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -5716,7 +4470,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6a397b63-b473-42d3-b187-14119be884e4" name="Type" hidden="false" collective="false" defaultSelectionEntryId="7f1e2dc9-6709-4f44-86cc-7039d1044dc7">
+        <selectionEntryGroup id="6a397b63-b473-42d3-b187-14119be884e4" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6049,69 +4803,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5d4cb17c-92f9-4c90-9af8-0c43f44bce91" name="Vengance Class Grand Cruiser" book="BFG Rulebook - Armada" page="14" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="c119-ff6d-9d6a-0907" name="Vengance Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Grand Cruiser"/>
-            <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="10"/>
-            <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-            <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-            <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="3"/>
-            <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="5+"/>
-            <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="1794-9427-ec8a-80de" name="Vengance Port Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="a74a-f952-bd6c-a8c6" name="Vengance Starboard Lance Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-        <profile id="8039-9504-f794-e45c" name="Vengance Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-          </characteristics>
-        </profile>
-        <profile id="4f3d-d057-1611-c97b" name="Vengance Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="60cm"/>
-            <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="10"/>
-            <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="5d4cb17c-92f9-4c90-9af8-0c43f44bce91" name="Vengance class grand cruiser" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -6127,7 +4820,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1aa755cf-a685-4f9c-a0ed-4251df2a6bbe" name="Type" hidden="false" collective="false" defaultSelectionEntryId="b4ece10b-9d37-4e2b-b64a-29145323fc1f">
+        <selectionEntryGroup id="1aa755cf-a685-4f9c-a0ed-4251df2a6bbe" name="Type" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6460,504 +5153,10 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55dd-5f64-0807-7d05" name="*Allow BFGXR" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="66e7-c05d-9028-d939" name="*Allow BFGXR" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Fanmade set of rules, check with your oponent if its ok to use them.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b22a-2fd8-f7ba-3795" type="max"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries>
-        <selectionEntry id="956f-a74b-d3b3-42e3" name="Chaos Space Marine Battle Barge" book="BFG Rulebook - Armada" page="22" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="8b4b-fc02-e132-aafa" name="Battle Barge Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Battleship"/>
-                <characteristic name="Hits" characteristicTypeId="4869747323232344415441232323" value="12"/>
-                <characteristic name="Speed" characteristicTypeId="537065656423232344415441232323" value="20cm"/>
-                <characteristic name="Turns" characteristicTypeId="5475726e7323232344415441232323" value="45°"/>
-                <characteristic name="Shields" characteristicTypeId="536869656c647323232344415441232323" value="3"/>
-                <characteristic name="Armour" characteristicTypeId="41726d6f757223232344415441232323" value="6+"/>
-                <characteristic name="Turrets" characteristicTypeId="5475727265747323232344415441232323" value="3"/>
-                <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
-              </characteristics>
-            </profile>
-            <profile id="0969-7a9f-513a-ea56" name="Battle Barge Starboard Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="12"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Right"/>
-              </characteristics>
-            </profile>
-            <profile id="677a-52f6-da5e-02e4" name="Battle Barge Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="45cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="12"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left"/>
-              </characteristics>
-            </profile>
-            <profile id="2555-54cb-46f8-7169" name="Battle Barge Prow Launch Bays" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Thunderhawk: 20cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
-              </characteristics>
-            </profile>
-            <profile id="3bd0-fb45-afbe-e314" name="Battle Barge Prow Torpedos" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Speed: 30cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="6"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
-              </characteristics>
-            </profile>
-            <profile id="fcad-ae05-7f38-c25b" name="Battle Barge Dorsal Bombardment Cannon" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
-                <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="8"/>
-                <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Left/Front/Right"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="b45a-9c34-08a8-8af1" name="May not use the &quot;come to new heading&quot; special order" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3746-dbb4-bc7b-7aec" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="5d21-50e2-f92c-d10e" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries/>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="30a3-b8d8-62c8-68fb" name="Type" hidden="false" collective="false" defaultSelectionEntryId="e72b-acd6-a9a3-273c">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c49e-c466-2d1e-64bf" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7903-621a-fae9-2d12" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="e72b-acd6-a9a3-273c" name="Normal" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="240f-d3ea-41f1-e581" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="c55d-ee37-7991-84a8" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c32b-2e83-1baf-839a" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="25ed-2b2a-a71c-5c70" name="Re-roll" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e62-8913-bb94-fabe" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="3f12-8b1c-6e0b-f578" name="Mark" hidden="false" collective="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bdc-e231-48b4-d426" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries>
-                            <selectionEntry id="4f1f-d9bb-e3a4-02e2" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="35.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="7c6b-3d97-879b-d7c7" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="4209-5d33-e2f0-da84" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="20.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="fb9c-80a2-4a65-8ca1" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ccb5-4abe-695c-3292" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20b8-8d51-589c-8b0e" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="da47-5376-54f8-382c" name="Terminators" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7593-91d0-59ca-9be3" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="10.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="c2d2-5d85-a2bb-94b7" name="Mark" hidden="false" collective="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e728-80c5-0ecc-6775" type="max"/>
-                          </constraints>
-                          <categoryLinks/>
-                          <selectionEntries>
-                            <selectionEntry id="8614-2015-e09f-043a" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="35.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="cb55-2ceb-cf46-07d1" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="302b-02a6-846f-733b" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="20.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="6635-90bf-d1cc-29b9" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                              <constraints/>
-                              <categoryLinks/>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="25.0"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a172-52ab-3dab-36b5" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50ec-6130-3ea8-8841" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="2ddd-9c89-25cb-d536" name="Mark" hidden="false" collective="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2ef-28a9-6e41-770f" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries>
-                        <selectionEntry id="eb97-b766-e7c8-043f" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="35.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="9607-cdec-fd93-df9e" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="13b8-dd5b-94c8-f16b" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="20.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="1cac-987a-9446-8e0f" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <constraints/>
-                          <categoryLinks/>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="25.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="440.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </selectionEntries>
   <entryLinks/>
   <sharedSelectionEntries/>
   <sharedSelectionEntryGroups/>
-  <sharedRules>
-    <rule id="0ac1-c91a-f61c-2d4a" name="Fighter&apos;s Rules" book="BFG Rulebook" page="29" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-    </rule>
-    <rule id="4f46-bf97-bc04-410a" name="Bomber&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-    </rule>
-    <rule id="11a3-c296-7b14-8d5e" name="Assault Boat&apos;s Rules" book="BFG Rulebook" page="30" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-    </rule>
-    <rule id="f678-9f91-557b-9ceb" name="May not use the &quot;come to new heading&quot; special order" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-    </rule>
-  </sharedRules>
+  <sharedRules/>
   <sharedProfiles/>
 </catalogue>
