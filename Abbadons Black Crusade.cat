@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="7" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="8" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -9197,142 +9197,13 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="35.0"/>
-                  </costs>
+                  <costs/>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6da8-d2f0-bb59-f823" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules>
-                <rule id="86fa-af4b-fce4-320e" name="Daemon" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>See Deamonships Special Rules.</description>
-                </rule>
-              </rules>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6f0-36a2-a8a3-7307" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="d6fd-6632-698f-b7c2" name="Mark" hidden="false" collective="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d241-08c5-cf39-c28f" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="1ffd-699a-dd56-11b2" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="6994-f1d6-2169-32b0" name="Mark of Nurgle" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The vessel is rank with putrescence and the many plagues of the Lord of Decay. It gains 1 Damage Point and may not be boarded.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="35.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="a2c9-f193-95cf-0e40" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="4813-acc1-f8ca-c438" name="Mark of Tzeentch" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The Captain can call upon the power of precognition as well as formidable magics to control his vessel. This ship has an extra re-roll.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="fa20-79b5-f3b8-168b" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="7454-37d8-29ab-54a5" name="Mark of Khorne" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>Crewed by the homicidal followers of Khorne, the ship is extremely dangerous in boarding actions. It doubles its value in boarding actions.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="20.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="872f-883c-6826-f750" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="6492-2c9d-18a1-4ed9" name="Mark of Slaanesh" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -9524,7 +9395,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="35f6-33d9-7ae0-f733" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+        <categoryLink id="35f6-33d9-7ae0-f733" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9867,133 +9738,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1d40-5cab-f678-0b77" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules>
-                <rule id="376f-bee1-6487-8b2c" name="Daemon" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>See Deamonships Special Rules.</description>
-                </rule>
-              </rules>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bb9-1eb4-c8d6-9bd1" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="3257-a482-4ef2-1691" name="Mark" hidden="false" collective="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b51-6d99-ef0b-f2e6" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="86ee-a168-547e-980f" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="f99e-fda6-115e-79a2" name="Mark of Nurgle" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The vessel is rank with putrescence and the many plagues of the Lord of Decay. It gains 1 Damage Point and may not be boarded.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="35.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="c51b-e585-f5e0-bb3d" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="35af-6b5e-c657-1703" name="Mark of Tzeentch" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The Captain can call upon the power of precognition as well as formidable magics to control his vessel. This ship has an extra re-roll.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f7d6-c32a-88be-bde7" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="81a3-874a-eed2-31a5" name="Mark of Khorne" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>Crewed by the homicidal followers of Khorne, the ship is extremely dangerous in boarding actions. It doubles its value in boarding actions.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="20.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="18fe-f443-a2b9-e506" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules>
-                        <rule id="edc6-fc02-4d56-9a0c" name="Mark of Slaanesh" hidden="false">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                        </rule>
-                      </rules>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -11399,9 +11143,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths:30cm
-Doomfires:20cm
-Dreadclaws:30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths:30cm Doomfires:20cm Dreadclaws:30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -11412,9 +11154,7 @@ Dreadclaws:30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths:30cm
-Doomfires:20cm
-Dreadclaws:30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths:30cm Doomfires:20cm Dreadclaws:30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2 Squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -13336,9 +13076,7 @@ Daemon ship Leadership is rolled as normal (ie,1=6, 2,3=7, 4,5=8, 6=9).</descrip
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -13349,9 +13087,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -13384,9 +13120,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -13853,9 +13587,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -13866,9 +13598,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14279,9 +14009,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14292,9 +14020,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14305,9 +14031,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3 Squadrons"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14785,9 +14509,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14798,9 +14520,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="3"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14811,9 +14531,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="2"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -14929,7 +14647,9 @@ Dreadclaws: 30cm"/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="477d-cb37-3fae-04c2" name="Exchange Broadside Weapon Batteries for Range-30cm, Firepower-10." hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -14943,7 +14663,9 @@ Dreadclaws: 30cm"/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -16564,9 +16286,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
@@ -16599,9 +16319,7 @@ Dreadclaws: 30cm"/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm
-Doomfires: 20cm
-Dreadclaws: 30cm"/>
+            <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm"/>
             <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
             <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="-"/>
           </characteristics>
