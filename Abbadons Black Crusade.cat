@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="11" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="12" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -177,7 +177,27 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="f53d-0691-9f09-32ab" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="0dc6-d60e-31d2-fa21" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="3643-f256-49e3-d774" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -738,7 +758,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="798c-2495-3372-b26b" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="2bc3-4398-2c48-bec7" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="4c46-92bc-dc1d-0eb9" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -1476,7 +1516,27 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="5820-3711-63a1-223f" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="7c33-e0e0-6a78-da11" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="46cc-2f6e-1086-e95a" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -2044,7 +2104,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="1de8-9361-7ca3-62ff" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="13b8-3cb7-f51a-b25e" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="e94c-052d-65c3-f46d" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -2774,7 +2854,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="0ece-0e93-eb63-fd63" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="6246-ed6f-cf83-23f3" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="bcbe-eb12-0096-71be" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -3422,7 +3522,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="7098-2c7c-f51c-54ba" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="6904-02b6-6c8f-de84" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="7136-1679-8bee-0c6d" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -3972,7 +4092,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="3305-b618-9bec-365e" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="6f1b-1f46-c5f0-d773" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="ea0d-1e1f-35cf-1adc" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -4669,7 +4809,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="cf1b-615b-1cc8-f419" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="e7e1-b9e3-9ce7-535d" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="2b76-0f12-b1ce-1c69" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -5372,7 +5532,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="5105-544e-387e-480a" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="de10-38b8-b02c-63d4" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="ae7a-1c93-5253-d09e" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -5903,7 +6083,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="3ac0-a389-b274-c4a6" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="dbbc-68e2-b0a3-8628" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="cbea-54f7-94dc-9bc7" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -6660,7 +6860,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="5762-4a31-d6e3-442b" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="2089-94d8-784c-35b4" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="4ade-dadf-df86-4068" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -7327,7 +7547,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="1b0f-5e89-6f6c-2b9c" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="ac16-f600-40a5-9eaa" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="1468-8c9f-32c3-ad43" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -7877,7 +8117,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="88b6-fe10-d92d-cd30" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="ff5c-e53b-4b3f-6b0d" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="b6c1-a00c-822a-163c" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -8533,7 +8793,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="eb41-c141-7a9e-2303" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="5c10-72ae-bb3e-154f" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="10e5-83b2-852a-3a85" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -9117,7 +9397,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="0612-809d-d8d8-5b37" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="909d-cd70-7cc2-df6c" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="aa70-d6aa-c8f1-fe6e" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -9655,7 +9955,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="d34f-fbc5-868c-dd5d" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="1eff-4aab-8a07-413a" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="55b3-5da2-6195-59f8" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -10175,7 +10495,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="a9fc-2c85-9740-61a2" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="9a8a-aaf6-d930-e562" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="15ad-68d6-0117-855c" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -10763,7 +11103,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="f1d1-3590-e40f-2bfa" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="8e0f-655e-eb4d-ac8d" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="e6f9-53ed-f3a2-c786" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -11433,7 +11793,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="f100-f574-b58c-fbe2" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="acda-f859-a9d6-4264" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="1c2e-4829-02a0-d276" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -12111,7 +12491,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="c8c6-8974-101f-76c3" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="abc9-f114-96e8-5e55" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="ded5-df0a-16f5-b8c7" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -12853,15 +13253,23 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                 </selectionEntry>
                 <selectionEntry id="8099-171c-1e7d-ce9d" name="Chaos Lord" book="BFGXR - Chaos" page="37" hidden="false" collective="false" type="unit">
                   <profiles>
-                    <profile id="7660-fd41-7042-78b4" name="Chaos Lord" book="" page="" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                    <profile id="e0bc-71af-e041-1152" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <characteristics>
-                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="8"/>
-                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1"/>
-                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323"/>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -13453,12 +13861,41 @@ Flagship. If chosen, the Scion of Prospero must be used as the fleet‟s flagshi
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="b228-fd82-565b-d182" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="ced5-742d-8c93-41d1" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="cc7e-c3af-eacc-a906" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab6d-1ad6-f053-1510" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7e-c3af-eacc-a906" type="min"/>
                   </constraints>
                   <categoryLinks/>
                   <selectionEntries>
@@ -13957,12 +14394,41 @@ Flagship: If chosen, the Wage Of Sin must be used as the fleet‟s flagship and 
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="9fb3-860a-817f-b433" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="3c14-e622-9bd6-ba3c" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="d71e-d2a6-2114-2fb0" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d215-56fb-aea4-4d7a" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d71e-d2a6-2114-2fb0" type="min"/>
                   </constraints>
                   <categoryLinks/>
                   <selectionEntries>
@@ -14428,12 +14894,41 @@ Flagship: If chosen, the Terminus Est must be used as the fleet‟s flagship and
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="f669-4d38-9dca-b738" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="5cad-75cf-ffda-d9fa" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="0b56-3c02-554b-c046" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0893-f3da-e59f-d6b5" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b56-3c02-554b-c046" type="min"/>
                   </constraints>
                   <categoryLinks/>
                   <selectionEntries>
@@ -15029,7 +15524,27 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="5b8a-aa95-2284-c7e2" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="b574-53e8-3b27-38c0" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="726b-c488-6682-6b94" name="Chaos Lord" hidden="false">
                       <profiles/>
@@ -15793,7 +16308,27 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="1f57-ed40-ec14-d5d7" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="190e-9ae8-4bcc-9043" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
@@ -16082,7 +16617,27 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
               <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="7fc4-e91f-2d5f-8e60" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
+                  <profiles>
+                    <profile id="dd3b-d2a0-a1e0-6ec7" name="Chaos Lord" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="52652d726f6c6c7323232344415441232323" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32dd-e504-db60-3d40" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="+1 (max of 9)"/>
+                        <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="0"/>
+                        <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules>
                     <rule id="3142-89b5-4ed9-15f5" name="Chaos Lord" hidden="false">
                       <profiles/>
