@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a534fb0d-c5ee-4db8-b73b-d7e39f08c902" name="Iyaden Ghost Fleet List" revision="3" battleScribeVersion="2.01" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a534fb0d-c5ee-4db8-b73b-d7e39f08c902" name="Iyaden Ghost Fleet List" revision="4" battleScribeVersion="2.01" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -42,7 +42,6 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d52d-43f0-9957-5b96" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9909-1377-9786-353e" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -2545,7 +2544,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="65.0"/>
+        <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5519-3ae8-01b8-c39c" name="Aconite Class Frigate" book="BFG Rulebook" page="132" hidden="false" collective="false" type="upgrade">
@@ -2595,7 +2594,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="55.0"/>
+        <cost name="pts" costTypeId="points" value="65.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="61b5-e118-1031-f639" name="Nightshade Class Destroyer" book="BFG Rulebook" page="133" hidden="false" collective="false" type="upgrade">
