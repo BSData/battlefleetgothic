@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="14" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="15" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1402,7 +1402,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" costTypeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e20c980-1798-4508-bd69-d021ff8acabc" name="Battleship -Desolator Class" book="BFG Rulebook" page="118" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2e20c980-1798-4508-bd69-d021ff8acabc" name="Battleship - Desolator Class" book="BFG Rulebook" page="118" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="018a-7829-35d9-9c59" name="Desolator Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
           <profiles/>
@@ -9263,7 +9263,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e5a0-9749-cbad-eae2" name="Batleship - Chaos Space Marine Battle Barge" book="BFG_-_Additional_Ships_Compendium_1.4" page="46" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e5a0-9749-cbad-eae2" name="Battleship - Chaos Space Marine Battle Barge" book="BFG_-_Additional_Ships_Compendium_1.4" page="46" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="0b53-e98a-59b9-b865" name="Battle Barge Profile" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
           <profiles/>
@@ -18311,7 +18311,9 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
