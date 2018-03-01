@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="12" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="13" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -17879,6 +17879,92 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="650.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" book="Battlefkeet Gothic Magazine 14" page="31" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="0c7b-000c-c43a-58e8" name="Ahriman Of The Thousand Sons" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="10"/>
+            <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="1 per turn"/>
+            <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value=""/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="425a-adbf-c0da-4539" name="Ahriman Of The Thousand Sons" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Please note that Ahriman is an unofficial addition to the BFG Game, he may be used with your opponent&apos;s permission in games other than the Cerberus War scenário. He must always be the chief Warmaster of your fleet and placed aboard its most expensive vessel.</description>
+        </rule>
+        <rule id="24aa-1ca9-d513-bfbc" name="&quot;You have failed me for the last time...&quot;" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Ahriman uses the same rule as Abaddon.
+
+Abaddon the Despoiler does not tolerate failure, as many of his followers have discovered to their cost. If Abaddon’s re-roll is used for a Command check or Leadership test on another ship or squadron and the test is failed a second time, he will become angry – very, very angry! In the Chaos Shooting phase Abaddon will direct at least half the available firepower and lance strength of the ship he is commanding against the weaklings who have failed him (assuming the worthless scum are within range and fire arc). Resolve the attack as normal, just as if Abaddon’s vessel were an enemy.
+
+The victims of his wrath (assuming they survive) will be suitably chastised and gain a +1 Leadership increase for the remainder of the game. The Leadership bonus will only take effect once (after that the crews are working as hard as they can!). If the object of Abaddon’s wrath is not in range and/or fire arc he will leave them to their fate – Abaddon’s re-rolls may no longer be used on it. This means that no further Commander re-rolls may be used on the ship or squadron unless it is carrying its own Chaos Lord with a Mark of Tzeentch.
+
+Should this dreadful failure occur on Abaddon’s own ship, it will lose one Damage Point as the Black Legion massacre those who failed him. No Leadership increase is gained.</description>
+        </rule>
+        <rule id="54b8-79c1-d370-c97a" name="Blessing of Tzeench" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All enemy vessels firing at his ship suffer a right column shift on the gunnery table.</description>
+        </rule>
+        <rule id="c5a0-0ee8-2afd-9a6d" name="Ward of Chaos" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All enemy ships within 15cm of his own count as having one Blast Marker on their base.</description>
+        </rule>
+        <rule id="f32b-ce69-efc4-8911" name="Daemonic Horde" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Once per game you may unleash a horde of Tzeenchian deamons against your foes. Roll a D6 and then roll that many dice to hit vs. any one enemy ship&apos;s lowest armour value. The Horde has unlimited range and does not require Line of Sight but Shields do not count against any hits caused. Check for Critical hits as normal. The Horde do not get to re-roll their attacks due to Lock On special orders.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="c772-4b92-0a6e-24e5" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c772-4b92-0a6e-24e5" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c275-96d0-d903-49e9" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
