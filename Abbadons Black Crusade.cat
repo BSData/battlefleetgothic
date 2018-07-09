@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="16" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Abbadon&apos;s Black Crusade" revision="17" battleScribeVersion="2.01" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -15287,7 +15287,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bd84-3440-6134-65e9" name="Chaos Battlebarge Weapons Battery Options" hidden="false" collective="false" defaultSelectionEntryId="6eb0-3c71-8792-e7a2">
+        <selectionEntryGroup id="bd84-3440-6134-65e9" name="Weapons Battery Options" hidden="false" collective="false" defaultSelectionEntryId="6eb0-3c71-8792-e7a2">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -15298,7 +15298,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="3d9e-4b88-9424-e996" name="Exchange Broadside Weapon Batteries for Range 45cm, Firepower 8" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3d9e-4b88-9424-e996" name="Range 45cm, Firepower 8" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="8b72-dd4e-20f8-2abb" name="Battlebarge Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -15337,7 +15337,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="477d-cb37-3fae-04c2" name="Exchange Broadside Weapon Batteries for Range-30cm, Firepower-10." hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="477d-cb37-3fae-04c2" name="Range 30cm, Firepower 10." hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="9760-63e1-53ad-d43e" name="Battlebarge Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -15376,7 +15376,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6eb0-3c71-8792-e7a2" name="Vengeful Spirit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6eb0-3c71-8792-e7a2" name="Range 60cm, Firepower 6 (Vengeful Spirit)" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="34f2-11a6-83ef-dcff" name="Vengeful Spirit Port Weapons Battery" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -15988,7 +15988,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="90ef-748b-59b0-516e" name="Chaos Battlebarge Prow Weapons Options" hidden="false" collective="false" defaultSelectionEntryId="8ee0-7e95-2e30-11b2">
+        <selectionEntryGroup id="90ef-748b-59b0-516e" name="Prow Weapons Options" hidden="false" collective="false" defaultSelectionEntryId="8ee0-7e95-2e30-11b2">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -15999,7 +15999,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="b8f2-1196-e1fe-2af5" name="Torpedo Tubes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b8f2-1196-e1fe-2af5" name="Torpedo Tubes Speed 30cm, Firepower 8." hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="868a-f114-29ab-0c52" name="Chaos Battlebarge Prow Torpedo Tubes" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -16035,17 +16035,17 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8ee0-7e95-2e30-11b2" name="Vengeful Spirit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8ee0-7e95-2e30-11b2" name="Prow Lances Range 30cm, Firepower 4 (Vengeful Spirit)" hidden="false" collective="false" type="upgrade">
               <profiles>
-                <profile id="e4ae-edda-fd16-8595" name="Vengeful Spirit Prow Lances" hidden="false" profileTypeId="436f6d6d616e64657223232344415441232323" profileTypeName="Commander">
+                <profile id="e4ae-edda-fd16-8595" name="Vengeful Spirit Prow Lances" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Leadership" characteristicTypeId="4c65616465727368697023232344415441232323" value="30cm"/>
-                    <characteristic name="Re-rolls" characteristicTypeId="52652d726f6c6c7323232344415441232323" value="4"/>
-                    <characteristic name="Pg." characteristicTypeId="50672e23232344415441232323" value="Front"/>
+                    <characteristic name="Range/Speed" characteristicTypeId="52616e67652f537065656423232344415441232323" value="30cm"/>
+                    <characteristic name="Firepower/Str" characteristicTypeId="46697265706f7765722f53747223232344415441232323" value="4"/>
+                    <characteristic name="Fire Arc" characteristicTypeId="466972652041726323232344415441232323" value="Front"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -16078,7 +16078,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="d30b-e31a-108d-9b19" name="Range 45cm, Strength 4 Lances" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d30b-e31a-108d-9b19" name="Range 45cm, Firepower 4 Lances" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="211b-f112-52e5-3318" name="Dorsal Lances" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -16106,7 +16106,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="243b-1800-8c22-a93b" name="Vengeful Spirit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="243b-1800-8c22-a93b" name="Range 60cm, Firepower 3 Lances" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="25ad-ebdf-c05e-1b24" name="Vengeful Spirit Dorsal Lances" hidden="false" profileTypeId="41726d616d656e7423232344415441232323" profileTypeName="Armament">
                   <profiles/>
@@ -19796,7 +19796,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" costTypeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b19-657c-b771-79cc" name="Battleship - Blasphemer Class Fast" book="Fanatic Magazine Issue 96 - Book of Nemesis" page="10" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2b19-657c-b771-79cc" name="Fast Battleship - Blasphemer Class" book="Fanatic Magazine Issue 96 - Book of Nemesis" page="10" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="a536-2d07-95e9-44eb" name="Blasphemer Profile" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
           <profiles/>
