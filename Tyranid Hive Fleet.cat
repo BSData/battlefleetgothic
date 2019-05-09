@@ -1,873 +1,894 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" revision="2" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" battleScribeVersion="1.15" name="Tyranid Hive Fleet List" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <entries>
-    <entry id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" name="Cruiser" points="80.0" categoryId="4361706974616c20536869707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="bbcf44df-c676-41c8-8c2d-748097fecfb4" name="Bio-Enhancements" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="955f3d6b-ed69-4914-a9ba-551ea810e7aa" name="Solar Vanes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="24ccdff6-3003-4148-aa53-4a536f02f582" name="Adrenaline Sacs" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="8a259e27-1df1-4e39-858f-d095fd30adb3" name="Extra Spore Cyst" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="ccff99c0-c1c6-4988-85ae-6e6760f5ebc8" name="Mucous Membrane" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="b0275b5f-46eb-4c27-ae48-9c1cc721b88f" name="Drone Link" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="38d7efb7-454b-4dc2-beae-54c40c988216" name="Tenacity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="8b311786-c5c8-444e-a08a-b63f114f7735" name="More Discharge Vents" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="c2eba113-71ba-49db-96df-8e8890d81f65" name="Reinforced Carapace" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="95efb502-d711-4fd0-9667-5c5250430eb5" name="Accelerated Healing" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="bbcf44df-c676-41c8-8c2d-748097fecfb4" childId="8a259e27-1df1-4e39-858f-d095fd30adb3" field="selections" type="equal to" value="2.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="bbcf44df-c676-41c8-8c2d-748097fecfb4" incrementChildId="c2eba113-71ba-49db-96df-8e8890d81f65" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="bbcf44df-c676-41c8-8c2d-748097fecfb4" childId="c2eba113-71ba-49db-96df-8e8890d81f65" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="046fcf34-b742-44d7-9f4a-9b08c3516b5b" name="Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups>
-            <entryGroup id="e0ef158a-1d80-4717-8c60-35ac1c546287" name="Prow" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="85bce03f-290f-4e79-9d0d-e221f4187bd9" name="Prow Pyro-acid Battery F/L/R S8" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="f3abe1d7-a921-47c9-94b2-696a259207f8" name="Prow Feeder Tentacles" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="f2ad27bf-4b55-4b90-87b2-f4ffb3478889" name="Prow Torpedoes F S4" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="6ff7fe59-0d65-45c2-808b-ed233c52227c" name="Prow Massive Claws" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="0b9623c3-19d9-4491-bbd4-71ca2d4c883c" name="Thorax" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="17ff7700-2c57-4b7c-9c06-9a1048c3f21f" name="Thorax Feeder Tentacles" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="0df12d64-b864-43a7-a074-c9b068f40ba1" name="Thorax Massive Claws" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="0c2955da-86a5-4618-a7b7-8ff63e09da72" name="Thorax Torpedoes F S4" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="c216e2cf-b26f-43d8-bb8b-064dc820ac0b" name="Port/Starboard" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="85e8fa62-462b-4575-b15c-431a59625bc5" name="Pyro-acid Battery L/R S4" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" name="Bio-Plasma Discharge L/R S2" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
+<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="3" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" name="Cruiser" page="0" hidden="false" collective="false" type="unit">
       <modifiers>
-        <modifier type="increment" field="maxInRoster" value="2.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="62cebb4c-9c2b-408f-98e1-81b27552b625" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups/>
+        <modifier type="increment" field="maxInRoster" value="2.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
+          </repeats>
         </modifier>
       </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46" name="Escort Squadron" points="0.0" categoryId="4573636f72747323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="6a19b54b-5004-4eb6-bb06-2b297f9fce11" name="Escorts" minSelections="1" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="a9d3e88a-10cf-4aed-a976-1f5cb7c01094" name="Vanguard Drone" points="20.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups>
-                <entryGroup id="dee123c7-f2ff-47a0-8dad-bee91ce93c30" name="Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="0514ef69-92c4-4cbb-b978-34ce1ec659f6" name="Feeder Tentacles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="9da361f9-dbf7-48e9-a540-b8e745c05a4b" name="Pyro-acid Battery" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links/>
-                </entryGroup>
-                <entryGroup id="b3a91c03-ab25-4cfa-9597-e99457350427" name="Bio-Enhancements" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="6226353a-3f98-4a75-87f2-cb5c544aefb5" name="Solar Vanes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="8c799e8b-27cb-467c-912b-54905959ea3c" name="Adrenaline Sacs" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="74235b83-081b-4e38-8e8c-feae84c28c92" name="Extra Spore Cyst" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="fd279866-acff-4a2f-a3e3-94aec764b7e5" name="Mucous Membrane" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="d931a8a4-1503-4b2d-8660-649d7cb9d0ef" name="Drone Link" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="e2215923-7952-43d6-a661-613eac2017b5" name="Tenacity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions>
-                        <condition parentId="b3a91c03-ab25-4cfa-9597-e99457350427" childId="74235b83-081b-4e38-8e8c-feae84c28c92" field="selections" type="at least" value="1.0"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="abae8696-547d-4b5f-b4f2-7849a6465760" name="Kraken" points="25.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups>
-                <entryGroup id="1a5590c6-e252-40f5-b001-f3c871fe04cc" name="Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="bd0b35af-571c-4ca1-a41e-28ae00aacec2" name="Feeder Tentacles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="26cbba2f-c655-4c02-bf51-583ec486e41a" name="Pyro-acid Battery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="1f05b2c2-35e2-4669-bea9-35d12bb8f6bb" name="Massive Claws" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="534ce5ce-8747-4816-8146-0bfedd30e39d" name="Torpedoes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="56d12117-21d7-46a4-a32d-9237c704c2d5" name="Bio-Plasma" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links/>
-                </entryGroup>
-                <entryGroup id="ddaa8c5c-1332-4c32-87dc-1089218eb60b" name="Bio-Enhancements" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="c198e4b3-0645-4ec2-9791-bcbb343d34f9" name="Solar Vanes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="8dc8b1f3-814c-4fc4-b918-051f9523df1d" name="Adrenaline Sacs" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="53d6465c-f639-4ca4-82cc-ea8c3536afa9" name="Mucous Membrane" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="057c74c6-67fb-4e92-bb7c-9117bcbb538d" name="Drone Link" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="971dd680-0d62-4a7d-bd38-01e5f8a066c8" name="Tenacity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="6686470f-044d-4823-8f6b-9f50ce3223aa" name="Escort Drone" points="10.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups>
-                <entryGroup id="50443c3f-ef86-480b-be7c-089a807b777c" name="Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="0f8f5097-f356-4625-bc29-0c535197b6d9" name="Feeder Tentacles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="a5dd4e15-b11c-489d-ad72-930822a22ccd" name="Pyro-acid Battery" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="a466d93c-f280-424c-9112-6a0aa59da8fd" name="Bio-Plasma" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="973e861e-0036-49a6-aacf-77a3fead2156" name="Fire Ship" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links/>
-                </entryGroup>
-                <entryGroup id="c32f3cff-20c6-4ba5-91ac-c3c2e37109e5" name="Bio-Enhancements" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="bdd1c988-cfd3-4909-9e7b-c3d10ad14648" name="Solar Vanes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="8e6ce545-9ab4-4f77-84b0-c718e63d8d3f" name="Adrenaline Sacs" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="b5bad465-bc87-42d7-a3ca-dd54a1a90a59" name="Extra Spore Cyst" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="f401966a-9e31-425e-aec6-27201ee63949" name="Mucous Membrane" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="6ca20f5c-153b-4bb0-8350-2f707afccc9c" name="Drone Link" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="b873708d-e73d-4bd8-903d-49a6abd9da3a" name="Tenacity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions>
-                        <condition parentId="c32f3cff-20c6-4ba5-91ac-c3c2e37109e5" childId="b5bad465-bc87-42d7-a3ca-dd54a1a90a59" field="selections" type="at least" value="1.0"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="322e0064-1643-4b0d-ae4c-1313d5448223" name="Hive Mind" points="0.0" categoryId="466c65657420436f6d6d616e6465727323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" name="Hive Mind Imperative" points="40.0" categoryId="466c65657420436f6d6d616e6465727323232344415441232323" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="2.0">
-                  <conditions>
-                    <condition parentId="roster" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="62cebb4c-9c2b-408f-98e1-81b27552b625" incrementField="selections" incrementValue="2.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="8df3fbed-a991-45a6-859b-d85c51302393" name="Hive Mind Influence (re-roll)" points="30.0" categoryId="466c65657420436f6d6d616e6465727323232344415441232323" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="62cebb4c-9c2b-408f-98e1-81b27552b625" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="62cebb4c-9c2b-408f-98e1-81b27552b625" name="Hive Ship" points="200.0" categoryId="4361706974616c20536869707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries>
-        <entry id="4247d750-1a98-40a8-8a2a-2dfd5a2474d9" name="Ld 9" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" name="Bio-Enhancements" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="f0e3ab67-f988-402a-bfcb-7e3963c16eef" name="Solar Vanes" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="99c04a75-42e5-4250-a5ae-f53bc5a62166" name="Adrenaline Sacs" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="f97cabc2-5511-413e-ae08-609163dd6184" name="Extra Spore Cyst" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="cf67f62b-9594-4fd0-824d-9611654de82c" name="Mucous Membrane" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="f84cbb65-fa92-419e-8486-43031377ffac" name="Drone Link" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="9739a26f-5a15-412d-b078-8b4bdf367f36" name="Tenacity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="d098a9a9-cbca-41f9-9c53-e4d8ce97c016" name="Psychic Scream" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="04bc8715-9a8a-4ccd-8127-b22a9f80dcf2" name="More Discharge Vents" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="44c04c77-cf45-4111-99b3-9552dfefee7f" name="Reinforced Carapace" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="b21951ad-46d3-430d-92f9-c4711dec5bc7" name="Accelerated Healing" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f3f1-de1d-d8f0-4005" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bbcf44df-c676-41c8-8c2d-748097fecfb4" name="Bio-Enhancements" hidden="false" collective="false">
           <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="maxSelections" value="1.0">
               <conditions>
-                <condition parentId="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" childId="f97cabc2-5511-413e-ae08-609163dd6184" field="selections" type="equal to" value="2.0"/>
+                <condition field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a259e27-1df1-4e39-858f-d095fd30adb3" type="equalTo"/>
               </conditions>
-              <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" incrementChildId="44c04c77-cf45-4111-99b3-9552dfefee7f" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
+            <modifier type="increment" field="maxSelections" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2eba113-71ba-49db-96df-8e8890d81f65" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="decrement" field="maxSelections" value="1.0">
               <conditions>
-                <condition parentId="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" childId="44c04c77-cf45-4111-99b3-9552dfefee7f" field="selections" type="at least" value="1.0"/>
+                <condition field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2eba113-71ba-49db-96df-8e8890d81f65" type="atLeast"/>
               </conditions>
-              <conditionGroups/>
             </modifier>
           </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="064f37d2-b9cf-42ae-bd0d-8a0e331b8d8e" name="Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups>
-            <entryGroup id="c982df66-b070-44bc-bc7c-c2457aec50aa" name="Prow" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="1937728f-45d2-460b-88bd-59700993b91a" name="Prow Pyro-acid Battery F S8" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff" name="Feeder Tentacles &amp; Massive Claws" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" name="Bio-Plasma Spines F/L/R S4" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="63c3ab82-a266-44ad-b116-7f5891b47e03" name="Torpedoes F S8" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="9746cd00-6ea9-4ae7-8a70-5adc499c50cf" name="Thorax" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" name="Thorax Pyro-acid Battery L/R S8" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="a76d4876-a531-44bb-a951-2d6798b9ed97" name="Thorax Bio-Plasma Discharge F/L/R S4" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="9ed1115a-21f5-4693-9051-ca5afc629b3b" name="Thorax Launch Bay L/R S2" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries>
-                    <entry id="d6a76e0c-421b-46c0-afac-73ae1467e575" name="Mega-Spore Mines" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="016d2627-c685-4c4c-b1a5-101442c27cce" name="Port/Starboard" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="a82c6d18-a780-42c3-8573-ea9004db0495" name="Launch Bay L/R S1" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries>
-                    <entry id="d4e55065-9347-4be1-ae29-8587104ea566" name="Mega-Spore Mines" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery L/R S4" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="a98622bb-ac34-4457-9502-d46e4757b175" name="Bio-Plasma Discharge L/R S2" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c" name="Ordnance Wave" points="0.0" categoryId="5370656369616c23232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries>
-        <entry id="02e29716-8e62-4bef-ac3c-6d7859c83589" name="Assault boats" points="8.0" categoryId="5370656369616c23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="6508bd91-e59c-41fb-94c8-814db7bfc911" name="Boarding Torpedoes" points="12.0" categoryId="5370656369616c23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="033b2628-6071-42cf-bd5a-ff3608aa20c8" name="Fighters" points="7.0" categoryId="5370656369616c23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-  </entries>
-  <rules/>
-  <links/>
-  <sharedEntries/>
-  <sharedEntryGroups/>
-  <sharedRules/>
-  <sharedProfiles/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="955f3d6b-ed69-4914-a9ba-551ea810e7aa" name="Solar Vanes" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="24ccdff6-3003-4148-aa53-4a536f02f582" name="Adrenaline Sacs" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8a259e27-1df1-4e39-858f-d095fd30adb3" name="Extra Spore Cyst" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ccff99c0-c1c6-4988-85ae-6e6760f5ebc8" name="Mucous Membrane" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b0275b5f-46eb-4c27-ae48-9c1cc721b88f" name="Drone Link" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="38d7efb7-454b-4dc2-beae-54c40c988216" name="Tenacity" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8b311786-c5c8-444e-a08a-b63f114f7735" name="More Discharge Vents" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c2eba113-71ba-49db-96df-8e8890d81f65" name="Reinforced Carapace" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="95efb502-d711-4fd0-9667-5c5250430eb5" name="Accelerated Healing" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="046fcf34-b742-44d7-9f4a-9b08c3516b5b" name="Weapons" hidden="false" collective="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e0ef158a-1d80-4717-8c60-35ac1c546287" name="Prow" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="85bce03f-290f-4e79-9d0d-e221f4187bd9" name="Prow Pyro-acid Battery F/L/R S8" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f3abe1d7-a921-47c9-94b2-696a259207f8" name="Prow Feeder Tentacles" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f2ad27bf-4b55-4b90-87b2-f4ffb3478889" name="Prow Torpedoes F S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ff7fe59-0d65-45c2-808b-ed233c52227c" name="Prow Massive Claws" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0b9623c3-19d9-4491-bbd4-71ca2d4c883c" name="Thorax" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="17ff7700-2c57-4b7c-9c06-9a1048c3f21f" name="Thorax Feeder Tentacles" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0df12d64-b864-43a7-a074-c9b068f40ba1" name="Thorax Massive Claws" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0c2955da-86a5-4618-a7b7-8ff63e09da72" name="Thorax Torpedoes F S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c216e2cf-b26f-43d8-bb8b-064dc820ac0b" name="Port/Starboard" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="85e8fa62-462b-4575-b15c-431a59625bc5" name="Pyro-acid Battery L/R S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" name="Bio-Plasma Discharge L/R S2" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46" name="Escort Squadron" page="0" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6a19b54b-5004-4eb6-bb06-2b297f9fce11" name="Escorts" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a9d3e88a-10cf-4aed-a976-1f5cb7c01094" name="Vanguard Drone" page="0" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dee123c7-f2ff-47a0-8dad-bee91ce93c30" name="Weapons" hidden="false" collective="false">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="0514ef69-92c4-4cbb-b978-34ce1ec659f6" name="Feeder Tentacles" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="9da361f9-dbf7-48e9-a540-b8e745c05a4b" name="Pyro-acid Battery" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="b3a91c03-ab25-4cfa-9597-e99457350427" name="Bio-Enhancements" hidden="false" collective="false">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="2.0">
+                      <conditions>
+                        <condition field="selections" scope="b3a91c03-ab25-4cfa-9597-e99457350427" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74235b83-081b-4e38-8e8c-feae84c28c92" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="6226353a-3f98-4a75-87f2-cb5c544aefb5" name="Solar Vanes" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8c799e8b-27cb-467c-912b-54905959ea3c" name="Adrenaline Sacs" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="74235b83-081b-4e38-8e8c-feae84c28c92" name="Extra Spore Cyst" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="fd279866-acff-4a2f-a3e3-94aec764b7e5" name="Mucous Membrane" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="d931a8a4-1503-4b2d-8660-649d7cb9d0ef" name="Drone Link" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="e2215923-7952-43d6-a661-613eac2017b5" name="Tenacity" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="abae8696-547d-4b5f-b4f2-7849a6465760" name="Kraken" page="0" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="1a5590c6-e252-40f5-b001-f3c871fe04cc" name="Weapons" hidden="false" collective="false">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="bd0b35af-571c-4ca1-a41e-28ae00aacec2" name="Feeder Tentacles" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="26cbba2f-c655-4c02-bf51-583ec486e41a" name="Pyro-acid Battery" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="1f05b2c2-35e2-4669-bea9-35d12bb8f6bb" name="Massive Claws" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="534ce5ce-8747-4816-8146-0bfedd30e39d" name="Torpedoes" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="56d12117-21d7-46a4-a32d-9237c704c2d5" name="Bio-Plasma" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="ddaa8c5c-1332-4c32-87dc-1089218eb60b" name="Bio-Enhancements" hidden="false" collective="false">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="c198e4b3-0645-4ec2-9791-bcbb343d34f9" name="Solar Vanes" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8dc8b1f3-814c-4fc4-b918-051f9523df1d" name="Adrenaline Sacs" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="53d6465c-f639-4ca4-82cc-ea8c3536afa9" name="Mucous Membrane" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="057c74c6-67fb-4e92-bb7c-9117bcbb538d" name="Drone Link" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="971dd680-0d62-4a7d-bd38-01e5f8a066c8" name="Tenacity" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6686470f-044d-4823-8f6b-9f50ce3223aa" name="Escort Drone" page="0" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="50443c3f-ef86-480b-be7c-089a807b777c" name="Weapons" hidden="false" collective="false">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="0f8f5097-f356-4625-bc29-0c535197b6d9" name="Feeder Tentacles" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a5dd4e15-b11c-489d-ad72-930822a22ccd" name="Pyro-acid Battery" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a466d93c-f280-424c-9112-6a0aa59da8fd" name="Bio-Plasma" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="973e861e-0036-49a6-aacf-77a3fead2156" name="Fire Ship" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="c32f3cff-20c6-4ba5-91ac-c3c2e37109e5" name="Bio-Enhancements" hidden="false" collective="false">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="2.0">
+                      <conditions>
+                        <condition field="selections" scope="c32f3cff-20c6-4ba5-91ac-c3c2e37109e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5bad465-bc87-42d7-a3ca-dd54a1a90a59" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="bdd1c988-cfd3-4909-9e7b-c3d10ad14648" name="Solar Vanes" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8e6ce545-9ab4-4f77-84b0-c718e63d8d3f" name="Adrenaline Sacs" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b5bad465-bc87-42d7-a3ca-dd54a1a90a59" name="Extra Spore Cyst" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f401966a-9e31-425e-aec6-27201ee63949" name="Mucous Membrane" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="6ca20f5c-153b-4bb0-8350-2f707afccc9c" name="Drone Link" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b873708d-e73d-4bd8-903d-49a6abd9da3a" name="Tenacity" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="322e0064-1643-4b0d-ae4c-1313d5448223" name="Hive Mind" page="0" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="322e0064-1643-4b0d-ae4c-1313d5448223-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" hidden="false" collective="false">
+          <selectionEntries>
+            <selectionEntry id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" name="Hive Mind Imperative" page="0" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="maxSelections" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8df3fbed-a991-45a6-859b-d85c51302393" name="Hive Mind Influence (re-roll)" page="0" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="8df3fbed-a991-45a6-859b-d85c51302393-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="62cebb4c-9c2b-408f-98e1-81b27552b625" name="Hive Ship" page="0" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="62cebb4c-9c2b-408f-98e1-81b27552b625-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4247d750-1a98-40a8-8a2a-2dfd5a2474d9" name="Ld 9" page="0" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" name="Bio-Enhancements" hidden="false" collective="false">
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0">
+              <conditions>
+                <condition field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f97cabc2-5511-413e-ae08-609163dd6184" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="maxSelections" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44c04c77-cf45-4111-99b3-9552dfefee7f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="maxSelections" value="1.0">
+              <conditions>
+                <condition field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44c04c77-cf45-4111-99b3-9552dfefee7f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f0e3ab67-f988-402a-bfcb-7e3963c16eef" name="Solar Vanes" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99c04a75-42e5-4250-a5ae-f53bc5a62166" name="Adrenaline Sacs" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f97cabc2-5511-413e-ae08-609163dd6184" name="Extra Spore Cyst" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf67f62b-9594-4fd0-824d-9611654de82c" name="Mucous Membrane" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f84cbb65-fa92-419e-8486-43031377ffac" name="Drone Link" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9739a26f-5a15-412d-b078-8b4bdf367f36" name="Tenacity" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d098a9a9-cbca-41f9-9c53-e4d8ce97c016" name="Psychic Scream" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="04bc8715-9a8a-4ccd-8127-b22a9f80dcf2" name="More Discharge Vents" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="44c04c77-cf45-4111-99b3-9552dfefee7f" name="Reinforced Carapace" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b21951ad-46d3-430d-92f9-c4711dec5bc7" name="Accelerated Healing" page="0" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="064f37d2-b9cf-42ae-bd0d-8a0e331b8d8e" name="Weapons" hidden="false" collective="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c982df66-b070-44bc-bc7c-c2457aec50aa" name="Prow" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1937728f-45d2-460b-88bd-59700993b91a" name="Prow Pyro-acid Battery F S8" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="30.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff" name="Feeder Tentacles &amp; Massive Claws" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" name="Bio-Plasma Spines F/L/R S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="63c3ab82-a266-44ad-b116-7f5891b47e03" name="Torpedoes F S8" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9746cd00-6ea9-4ae7-8a70-5adc499c50cf" name="Thorax" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" name="Thorax Pyro-acid Battery L/R S8" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="30.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a76d4876-a531-44bb-a951-2d6798b9ed97" name="Thorax Bio-Plasma Discharge F/L/R S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9ed1115a-21f5-4693-9051-ca5afc629b3b" name="Thorax Launch Bay L/R S2" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="d6a76e0c-421b-46c0-afac-73ae1467e575" name="Mega-Spore Mines" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="016d2627-c685-4c4c-b1a5-101442c27cce" name="Port/Starboard" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a82c6d18-a780-42c3-8573-ea9004db0495" name="Launch Bay L/R S1" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="d4e55065-9347-4be1-ae29-8587104ea566" name="Mega-Spore Mines" page="0" hidden="false" collective="false" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery L/R S4" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a98622bb-ac34-4457-9502-d46e4757b175" name="Bio-Plasma Discharge L/R S2" page="0" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c" name="Ordnance Wave" page="0" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="02e29716-8e62-4bef-ac3c-6d7859c83589" name="Assault boats" page="0" hidden="false" collective="false" type="unit">
+          <categoryLinks>
+            <categoryLink id="02e29716-8e62-4bef-ac3c-6d7859c83589-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6508bd91-e59c-41fb-94c8-814db7bfc911" name="Boarding Torpedoes" page="0" hidden="false" collective="false" type="unit">
+          <categoryLinks>
+            <categoryLink id="6508bd91-e59c-41fb-94c8-814db7bfc911-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="12.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="033b2628-6071-42cf-bd5a-ff3608aa20c8" name="Fighters" page="0" hidden="false" collective="false" type="unit">
+          <categoryLinks>
+            <categoryLink id="033b2628-6071-42cf-bd5a-ff3608aa20c8-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
