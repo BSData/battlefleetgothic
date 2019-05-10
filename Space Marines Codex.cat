@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marine Codex Fleet" revision="6" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marine Codex Fleet" revision="7" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e1d46d07--pubN66101" name="BFG Rulebook 1.5"/>
     <publication id="e1d46d07--pubN69324" name="2010 Compendium"/>
@@ -1196,6 +1196,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f0c-45c7-7c2e-e85b" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="2d24-10e4-0db7-b022" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="400.0"/>
               </costs>
@@ -1204,6 +1207,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="788d-e186-cf7b-aeff" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="b14f-6180-1b9d-59b7" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="380.0"/>
               </costs>
@@ -1212,6 +1218,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a76-1060-510c-1234" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="4fad-f6fc-3c0a-1781" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+                <categoryLink id="680f-eca3-af5a-b625" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="7137-9f5e-c0da-7c04" name="Left Column Shift" page="0" hidden="false" collective="false" type="upgrade">
                   <constraints>
@@ -1230,6 +1240,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d334-6be3-0629-5477" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="130d-4a79-4e39-6eac" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="3276-0715-b348-390b" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="ae02-2297-2b00-0cf8" name="Additional Turret" page="0" hidden="false" collective="false" type="upgrade">
                   <constraints>
@@ -1248,6 +1262,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee43-59a6-317a-70a9" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="583a-7b51-61a5-6d92" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="400.0"/>
               </costs>
@@ -1256,6 +1273,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e44-d59f-7292-00a4" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="b9f2-a94b-cb1d-cd70" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="335.0"/>
               </costs>
@@ -1264,6 +1284,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="267d-427d-8979-f171" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="d74a-829f-7f6d-b209" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="335.0"/>
               </costs>
@@ -1272,6 +1295,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca60-9bcd-fdbb-35d3" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="9a94-5b14-ac83-367b" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="f451-231c-dca2-b0b3" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="265.0"/>
               </costs>
@@ -1280,6 +1307,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d8b-ab39-c130-1ef5" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="8eb9-3432-34ae-1345" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="ed0e-0352-85dc-3c0c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+              </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="695a-7742-5c22-958b" name="Weapons Batteries" hidden="false" collective="false">
                   <constraints>
@@ -1314,6 +1345,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ba0-c333-1df3-dfaa" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="ebff-6dbb-301f-d606" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="10b5-bf89-0a72-ee3b" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="280.0"/>
               </costs>
@@ -1322,6 +1357,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c595-46e2-fef0-6699" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="24c5-21cf-4ae7-0b5b" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="42b4-3dea-a730-6cbc" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="310.0"/>
               </costs>
@@ -1330,6 +1369,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f531-dfb6-22e6-26ed" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="9a87-2b56-9c91-6124" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+              </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="017a-9063-5bd3-8b79" name="Broadside Weapons Batteries" hidden="false" collective="false">
                   <constraints>
@@ -1539,7 +1581,8 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="3966-0a68-f980-ae77" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="7eb3-2526-8318-5e77" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="d2e5-81c4-f94a-c156" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -2015,7 +2058,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="46c7-10c3-1bf7-7ea8" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="64f8-ba6f-e28b-5e2d" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="89bd-7629-6843-56d7" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="245.0"/>
@@ -2065,7 +2109,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="810a-9cc1-b701-56a1" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="a0cf-317f-2607-a305" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="eb57-f0ea-962c-0375" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="235.0"/>
@@ -2101,7 +2146,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </rule>
               </rules>
               <categoryLinks>
-                <categoryLink id="f515-7582-f6f8-5bc1" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="63f6-a7da-494c-35d4" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="f0ef-6bf6-ba89-bffa" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c44e-9a44-9b3d-53a3" name="The Bringer of Despair" hidden="false" collective="false">
@@ -2250,7 +2296,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="c980-12a0-0d21-a297" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="4ad4-05ee-3df5-aa64" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="0621-458d-2d7f-6a88" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="bb36-e060-0dd3-7154" name="Ordnance" hidden="false" collective="false">
@@ -2328,7 +2375,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="e680-ca9a-a25c-b281" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="9493-fde5-9e41-9da5" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="3a13-2709-b210-da14" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="8a00-4806-3502-cf46" name="Ordnance" hidden="false" collective="false">
@@ -2411,7 +2459,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </rule>
               </rules>
               <categoryLinks>
-                <categoryLink id="3b70-9f94-e587-2a9d" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+                <categoryLink id="1ba7-4829-7d85-435a" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="4f78-7b0b-0bf7-8f28" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="265.0"/>

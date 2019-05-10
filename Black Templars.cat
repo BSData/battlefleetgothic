@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ea11a1f-cdbd-4f1d-94c1-fbff01f3db6f" name="Space Marine Crusade Fleet 2010" revision="7" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0ec3-6ccc-a1b5-67f9" name="Black Templars" revision="2" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="5ea11a1f--pubN69621" name="BFG Rulebook"/>
     <publication id="5ea11a1f--pubN71965" name="BFG Rulebook - Armada"/>
@@ -12,7 +12,7 @@
   <selectionEntries>
     <selectionEntry id="4675d6dd-be10-44e4-87a2-60ffdf77992a" name="Battlebarge" page="0" hidden="false" collective="false" type="unit">
       <modifiers>
-        <modifier type="decrement" field="maxInRoster" value="1.0">
+        <modifier type="decrement" field="maxInRoster" value="1">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93b6bab8-585a-4567-b343-18113cf2f76c" repeats="1" roundUp="false"/>
           </repeats>
@@ -22,7 +22,19 @@
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="b28c-2d87-e3dc-bbf7" name="Battlebarge profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="b28c-2d87-e3dc-bbf7" name="Battlebarge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="536869656c647323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be3d-0a78-5866-9612" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b11-e1f6-13f3-16c2" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -104,196 +116,25 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="be3d-0a78-5866-9612" name="Extra Shield" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b56-6c0c-10f3-2f7f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4b11-e1f6-13f3-16c2" name="Extra Turret" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c12b-6918-28fd-672a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="425.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fda1dcc0-ba47-45eb-add7-79fd56c576ad" name="Fortress Monastery" page="0" hidden="false" collective="false" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="ed1e-0785-5967-8edd" name="Fortress Monastery Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Defense</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">12 (quadrant)</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">0cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">0°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4 (quadrant)</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4 (quadrant)</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="fda1dcc0-ba47-45eb-add7-79fd56c576ad-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ab203c7a-cdf9-4ea4-b4f7-aa0b88fb25a1" name="Extra Re-Rolls (Max 3)" page="0" hidden="false" collective="false" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3d12-c8a7-6056-fb0a" name="Quadrant Weapons" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea15-3f0d-b02d-5eb5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2820-5475-57e8-b98d" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="2931-6e60-59bd-451a" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">18</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="d984-8cd7-44e3-3011" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0c54-99d2-7d4e-67ef" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons*</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="5659-6c25-9ce1-3134" name="Thunderhawks" hidden="false">
-              <description>Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry id="f789-9d17-d5b7-bd69" name="Thunderhawk Annihilator" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="1372-7a18-4404-5439" name="Thunderhawk Annihilator" hidden="false">
-                  <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
-When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="97fe-e0b2-8f92-ad75" name="Basilica Weapons" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9829-b493-f4ec-a98c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb83-c034-47a1-4679" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4cac-b47c-7033-0058" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3184-520b-30f9-80ee" name="Torpedo Silos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="125e-40e7-9062-251b" name="Honour Guard" page="0" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ea-fdec-352d-c030" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be0-c0e8-a5b7-5c29" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="29b0-46a9-00ad-60bc" name="Honour Guard" hidden="false">
-              <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9225-1304-293e-8158" name="Terminator Boarding Parties" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="742e-ffd4-b7e6-14be" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e77-37ee-bf94-9c20" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="6964-081a-c70e-5208" name="Terminator Boarding Parties" hidden="false">
-              <description>Taken from the elite First Company and wearing the heaviest armor known to man, Terminators are the greatest ship-to-ship fighters in the galaxy. Once per turn a vessel equipped with Terminator boarding parties may use them when conducting a hit and run teleport attack. They roll two dice for its hit and run attack and apply both results, including the normal +1 bonus for being Space Marines. Terminators may be used in addition to a normal teleport attack that turn.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="1000.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="204fe74e-ffcd-4b5a-bb29-3e81b9650ffe" name="Master of the Fleet" page="0" hidden="false" collective="false" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="38ed-767b-96aa-6094" name="Master of the Fleet" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <modifiers>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab4984e5-6f3c-4590-ac40-9dbeee1030e6" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab4984e5-6f3c-4590-ac40-9dbeee1030e6" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="3">
-              <conditions>
-                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab4984e5-6f3c-4590-ac40-9dbeee1030e6" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="204fe74e-ffcd-4b5a-bb29-3e81b9650ffe-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ab4984e5-6f3c-4590-ac40-9dbeee1030e6" name="Extra Re-Rolls (Max 3)" page="0" hidden="false" collective="false" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="818e7121-b439-49e7-81ab-1c752fc79aff" name="Strike Cruiser" page="0" hidden="false" collective="false" type="unit">
@@ -479,7 +320,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
     </selectionEntry>
     <selectionEntry id="93b6bab8-585a-4567-b343-18113cf2f76c" name="Venerable Battlebarge" page="0" hidden="false" collective="false" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="93b6bab8-585a-4567-b343-18113cf2f76c-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -2483,13 +2324,30 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       </costs>
     </selectionEntry>
     <selectionEntry id="5334-fe69-4752-210f" name="Escort Squadron" page="0" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="25ed-1750-2dbb-6f8b" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e861-461e-0260-d4b9" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ed-1750-2dbb-6f8b" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="dcfe-197e-75c1-7cef" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ecb9-b440-be24-dee2" name="Escorts" hidden="false" collective="false">
+          <modifiers>
+            <modifier type="set" field="23d7-ae0a-1d80-5de1" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e861-461e-0260-d4b9" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23d7-ae0a-1d80-5de1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23d7-ae0a-1d80-5de1" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b90-34c2-f42e-3f6e" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2511,6 +2369,11 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="48b8-d0b8-c6f4-7241" name="Less Than Equal" hidden="false">
+                  <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+                </rule>
+              </rules>
               <categoryLinks>
                 <categoryLink id="b04a-62f4-1891-251d" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
@@ -2621,6 +2484,11 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="06f2-a20c-d0c3-805a" name="Less Than Equal" hidden="false">
+                  <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+                </rule>
+              </rules>
               <categoryLinks>
                 <categoryLink id="706e-7ab7-2241-07ff" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
@@ -2646,6 +2514,11 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="d189-9ccb-3e56-36ed" name="Less Than Equal" hidden="false">
+                  <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+                </rule>
+              </rules>
               <categoryLinks>
                 <categoryLink id="808e-21ed-f55b-30db" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
@@ -2819,6 +2692,11 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="6988-47d1-00dd-9636" name="Less Than Equal" hidden="false">
+                  <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+                </rule>
+              </rules>
               <categoryLinks>
                 <categoryLink id="9212-7bc6-46c5-177f" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
@@ -2854,6 +2732,13 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       </costs>
     </selectionEntry>
     <selectionEntry id="6c83-e4d1-69ed-6572" name="Marshal" page="0" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="9cc2-a0a5-45c7-8598" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e861-461e-0260-d4b9" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9cc2-a0a5-45c7-8598" type="max"/>
       </constraints>
@@ -2918,7 +2803,409 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9276-bd51-7e03-4bb4" name="Forgeship" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e42-7704-2d9c-0f5e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2ed2-795e-db43-e664" name="Forgeship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0f0f-e1ef-3fa6-55ab" name="Forgeship Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e111-c0ac-a96c-67ff" name="Forgeship Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6777-d03b-ba0b-0a1c" name="Forgeship" hidden="false">
+          <description>Allows 4 more Thunderhawks to be launched by the fleet than normal</description>
+        </rule>
+        <rule id="cee4-8ae7-b711-0795" name="May Not use &quot;Come To A New Heading&quot; special order." hidden="false"/>
+        <rule id="5c2b-8fae-c452-38d3" name="Less Than Equal" hidden="false">
+          <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="54af-5009-7518-bf54" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="67e1-2783-016e-7527" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6540-b8a5-2134-f22f" name="Assault Strike Cruiser Variant" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e3d0-337d-fd61-94d0" name="Assault Strike Cruiser Variant" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="73f5-f781-bc2b-4d72" name="Prow Bombardment Cannons" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9300-a225-869f-5283" name="Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Thunderhawks</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f676-dd8e-453b-f141" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="769b-b6c0-838f-5503" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d933-ef09-0afa-9c13" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6cd5-a7e7-831e-f9a6" name="Thunderhawk Annihilator" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c840-c881-3a31-e430" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="ad9f-2a5e-8c4d-648c" name="Thunderhawk Annihilator" hidden="false">
+              <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="675f-ae78-ecf9-4f3d" name="Devastator Strike Cruiser Variant" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e25d-b926-3862-9b6f" name="Devastator Strike Cruiser Variant" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fda2-0932-e8d8-29dc" name="Prow Bombardment Cannons" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="96cb-9764-201e-c84d" name="Prow orpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="64e4-6adc-b35f-4c47" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Thunderhawks</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9bdb-13e6-cd21-d481" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5bbc-5cf4-6442-9b8e" name="Thunderhawk Annihilator" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9734-f3e8-1f8f-c80a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="8616-8a49-2c96-5f4e" name="Thunderhawk Annihilator" hidden="false">
+              <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="aef8-8235-1437-40e7" name="Starboard Weapons" hidden="false" collective="false" defaultSelectionEntryId="64d3-9092-061d-9aae">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f8b-5dcb-2f2d-f022" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc9-c999-f695-26a0" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0e81-fc76-0048-0f4e" name="Lance" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e7-1a72-9375-7e49" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="82b3-2b50-b347-8d75" name="Starboard Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="64d3-9092-061d-9aae" name="Weapons Batteries" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7136-2e5a-d882-4776" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2615-80ef-46d5-1449" name="Starboard Weapons Batterie" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="037a-c11f-9cb8-6d50" name="Port Weapons" hidden="false" collective="false" defaultSelectionEntryId="40ce-7128-d709-2a73">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9e-dc23-c954-ad88" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d375-7c60-ea40-d675" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8a77-4f69-1feb-b7e5" name="Lance" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef4-7fd7-4cf7-a2e0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a2c3-6642-f110-c73a" name="Port Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="40ce-7128-d709-2a73" name="Weapons Batteries" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="537c-5eff-d841-0af1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0bf0-158b-044f-2a4e" name="Port Weapons Batterie" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="160.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e861-461e-0260-d4b9" name="Eternal Crusader" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="e846-69c8-eba7-1bd1" value="0.0">
+          <conditions>
+            <condition field="points" scope="force" value="2000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e846-69c8-eba7-1bd1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5a75-d738-efc8-930f" name="Eternal Crusader" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">14</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="be2a-c5fc-f39d-0765" name="Eternal Crusader Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Thunderhawks</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b9f-893b-c600-8a86" name="Eternal Crusader Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="321c-90a7-e5bf-add6" name="Eternal Crusader Dorsal Bombardment Cannons" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b19-4a42-45dc-e483" name="Eternal Crusader Port Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd4d-9bb3-7ca4-ef06" name="Eternal Crusader Starboard Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="130d-6ec5-ad66-f747" name="Eternal Crusader Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Thunderhawks</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1a2e-4284-f447-6d2d" name="Eternal Crusader Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Thunderhawks</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0fb3-f280-ea13-b57c" name="High Marshal" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1 per turn</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="22e4-a066-a99c-e356" name="Double Boarding Value" hidden="false">
+          <description>Double Boarding Value.
+Scores 3 points in a planetary assault rather than 2.</description>
+        </rule>
+        <rule id="dc8e-5b85-ac27-0eac" name="Terminator Teleport" hidden="false">
+          <description>Terminator Teleport Assault (roll 2D6 when conducting H&amp;R teleport attacks and select which one you wish to count).
+(This is the Marshal/Master of the fleet, you can&apos;t have 2!).</description>
+        </rule>
+        <rule id="1a7e-be92-aeb5-9742" name="Sword Brethren" hidden="false">
+          <description>(Normal Space Marine Terminator boarding party AND +1 Boarding Modifier).</description>
+        </rule>
+        <rule id="4b2e-96d1-779f-bc7c" name="Large Fuel Reserves" hidden="false">
+          <description>Roll 4D6cm for the blast radius should the ship explode.</description>
+        </rule>
+        <rule id="02a0-991d-b7af-eabb" name="Thunderhawk Annihilator" hidden="false">
+          <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8397-b3cd-3f80-9f50" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f62e-fe5a-43f8-deca" name="Thunderhawk Annihilator" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec9-05fe-1f78-8db1" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7e58-65cc-6836-a54e" name="Thunderhawk Annihilator" hidden="false">
+              <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="745.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <rules>
+    <rule id="4fa4-1e03-9b79-098f" name="Less Than Equal" hidden="false">
+      <description>Some ships in the fleet are noted as being &apos;less than equal&apos;, this means they have normal leadership, so 6-9 Leadership instead of 8-10, a +1 Boarding modifier instead of +2, and boarding torpedoes, but no Space Marine benefit against or for Hit and Run attacks.</description>
+    </rule>
+    <rule id="134d-054c-028c-fea9" name="Righteous Zeal" hidden="false">
+      <description>The fleet uses an additional Subplot (Blood Bond) to the one(s) it is already using, but without an affect on renown.
+
+Legacies of War, Blood Bond: If a &apos;friendly&apos; capital ship is crippled or destroyed all the other &apos;capital ships&apos; (excluding Forgeships) in the fleet gain +1 leadership in the next turn!
+
+If this is the subplot rolled for randomly, treat the random result as Legacies of War/No Quarter!: Cripple/destroy at least half the points value of the enemy fleet. (+1/-1)
+
+In addition to the subplot Black Templar capital ships (excluding Forgeships), only give the enemy +1 Boarding modifier when crippled instead of +2.</description>
+    </rule>
+    <rule id="7860-5ede-3bf7-fc0e" name="New Rule" hidden="false"/>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e596-5f05-bf21-45cc" name="Thunderhawk Annihilator" hidden="false" collective="false" type="upgrade">
       <constraints>

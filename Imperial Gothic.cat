@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03d34ad6-0e9c-4d04-ba03-afd82bb09f89" name="Segementum Obscurus, Gothic Sector Fleet List" revision="5" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03d34ad6-0e9c-4d04-ba03-afd82bb09f89" name="Segementum Obscurus, Gothic Sector Fleet List" revision="7" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="03d34ad6--pubN65576" name="BFG Rulebook v1.5"/>
     <publication id="03d34ad6--pubN66470" name="BFG Rulebook 1.5"/>
@@ -27,6 +27,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f681-1f91-30de-dcb2" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="c325-5cf2-7e3a-5cb3" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bc9d546e-eeb0-b27e-6ab4-0cd8eab86a9a" name="Famous Ships" hidden="false" collective="false" defaultSelectionEntryId="37a11f4b-2487-fa48-43ed-55a2d54543ee">
@@ -81,6 +82,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c4a6-869a-ac28-72e0" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="62e8-cffd-3785-ee53" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a6e2e865-28be-06e9-099c-e93ec9038d7b" name="Famous Ships" hidden="false" collective="false" defaultSelectionEntryId="313b716a-7669-52ac-4d8e-cf5edcae722a">
@@ -583,10 +585,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fe6f7dd3-f85b-9200-a99e-fa60922c1f6a" name="Cobra Class Destroyer" page="0" hidden="false" collective="false" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
       <profiles>
         <profile id="4254c23d-caf4-ca3e-3492-5107e10b7496" name="Cobra Class Destroyer" publicationId="03d34ad6--pubN66470" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="">
           <characteristics>
