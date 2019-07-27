@@ -1408,6 +1408,9 @@ Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ce27-c712-6ccb-4867" name="Prow Lances" page="0" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -1422,6 +1425,9 @@ Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1525,6 +1531,9 @@ Bombers: 20cm</characteristic>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5498,6 +5507,20 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="2fd2-833b-49ae-fab3" name="Murder Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="77cd-8a6d-218c-7f64" name="Murder Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="edbd-f04e-30d6-2a82" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
@@ -6703,6 +6726,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2498-846a-d79b-d269" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="80d8-427b-14ba-f79d" name="Mimic Engine (Alpha Legion Only)" hidden="true" collective="false" type="upgrade">
               <modifiers>
