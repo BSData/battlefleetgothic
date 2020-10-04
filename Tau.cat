@@ -453,20 +453,15 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="761fbc02-1674-4ea2-a3a0-4d8d70ab9cb8" name="Kir&apos;la (Warden)" page="0" hidden="false" collective="false" import="true" type="unit">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
                     <entryLink id="fd3c-44ca-2881-aac5" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b04-dd5a-c8d5-4270" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="271f-e4b7-f4f9-3423" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76c5-db44-aee8-3ba9" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
