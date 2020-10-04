@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="9" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="2f88b28a--pubN65608" name="BFG Armada"/>
     <publication id="2f88b28a--pubN71593" name="BFG Rulebook"/>
@@ -1204,31 +1204,15 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="-1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ccf4-a422-978b-dfc3" name="Kass&apos;l Orca GunShip" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="e8b3-dc20-ab4f-bf67" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b955-56be-8278-3c88" name="Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="1cc0-80db-3500-5972" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
-      </costs>
-    </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="0ccc-c36b-6908-e46c" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
+      <comment>no points needed should come from shared profile (must have &apos;0&apos; to link points)</comment>
+    </entryLink>
+    <entryLink id="f3dc-a03a-86c4-7165" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry">
+      <comment>Points in linked profile (must have &apos;0&apos; to link)</comment>
+    </entryLink>
+  </entryLinks>
   <rules>
     <rule id="89b7-bee4-1179-4cf3" name="Deflector" page="0" hidden="false">
       <description>The deflector is a specialised shield generally mounted on the prow of the latest Tau ships. It turns the gravitic sheath around the vessel into a dense wedge, which is far more effective against incoming fire. If fired at from the front the deflector augments the passive armour which counts as armour 6. Deflectors are always mounted on the prow and will be disabled if the ship suffers a prow weapons damaged critical. Deflectors are NOT shields and do not count as such for the purpose of boarding, blast markers or other effects which apply to shields.</description>
@@ -1285,6 +1269,41 @@ Boarding strength is half normal for the size of ship.</description>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b117-d104-bf32-d956" name="Kir&apos;la &quot;Warden&quot; Class Gunship" publicationId="5766-7751-d146-0800" page="161" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b6c2-2dc5-1170-96d2" name="Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91f5-8d6f-e924-9e7b" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7912-b0ef-c277-25aa" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a383-d3a5-7da5-c00d" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
