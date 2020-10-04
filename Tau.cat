@@ -462,18 +462,14 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                         <cost name="pts" typeId="points" value="30.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="1bd7b53d-4246-48ef-8dea-bf5ef39357f3" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" import="true" type="unit">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <categoryLinks>
-                        <categoryLink id="1bd7b53d-4246-48ef-8dea-bf5ef39357f3-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-                      </categoryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
                   </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="fd3c-44ca-2881-aac5" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b04-dd5a-c8d5-4270" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
@@ -1255,6 +1251,32 @@ Boarding Actions:
 Boarding strength is half normal for the size of ship.</description>
     </rule>
   </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="7287-5f52-246b-c649" name="Kass&apos;l (Orca) gunship" publicationId="acb7-35d6-a2c5-f4a5" page="105" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="be56-f0ee-7aa6-ac45" name="Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d60-77a5-8872-b762" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="86e1-d53d-b53d-aabe" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="3190-a619-19a4-9ac6" name="Assault Boat&apos;s Rules" publicationId="2f88b28a--pubN71593" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
