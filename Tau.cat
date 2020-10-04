@@ -488,6 +488,29 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
       </costs>
     </selectionEntry>
     <selectionEntry id="493c09d5-8273-4b68-b957-f597b2ae9a45" name="Il&apos;porrui (Emissary) class Cruiser" publicationId="5766-7751-d146-0800" page="163" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4c67-6c10-84ba-1239" name="Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f4c-4a85-0bb2-e170" name="Starbord Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right/Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b90a-6463-5eea-a27a" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Barracudas: 25cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">N/A</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules>
         <rule id="5377-f9a6-8825-9030" name="Prow Deflector" page="0" hidden="false">
           <description>All Emissaries are fitted with a prow deflector to raise their front armour to 6. This is disabled if the ship suffers a Prow critical hit.</description>
