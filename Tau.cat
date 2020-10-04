@@ -673,11 +673,9 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="8f07-d82c-9cbe-118d" name="Prow Deflector" hidden="false">
-          <description>All Lar&apos;Shi are fitted with a prow deflector to raise their front armour to 6. This is disabled if the ship suffers a Prow critical hit.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="d36b-cac9-4f13-26d1" name="Prow Deflector" hidden="false" targetId="faa0-5bf1-5c06-1049" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f691-4ffc-4dfe-1a6c" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
@@ -1332,6 +1330,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
     </rule>
     <rule id="b81d-71a0-d97b-5a64" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
     <rule id="faa0-5bf1-5c06-1049" name="Prow Deflector" publicationId="5766-7751-d146-0800" page="164" hidden="false">
+      <modifiers>
+        <modifier type="append" field="name" value="6+ Front Armor"/>
+      </modifiers>
       <description>This Vessel is be equipped with a deflector that raises its prow armor to 6. This is disabled whenever the vessel suffers a prow critical hit (repairable normally).</description>
     </rule>
   </sharedRules>
