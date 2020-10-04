@@ -962,6 +962,9 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
           <description>The Messenger is an exception to normal Escort rules as it is not always deployed in squadrons, and can function independently. The Skether’qan is equipped with a Tracking System.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="8899-d1d3-a7fb-0fa5" name="Tracking Systems" hidden="false" targetId="e5cd-8957-b343-46ca" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f6ae7eaf-a600-4ab5-9b08-b828cb127c30-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1215,22 +1218,21 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
     </entryLink>
   </entryLinks>
   <rules>
-    <rule id="859e-ea71-ae6d-a06e" name="Tracking Systems" page="0" hidden="false">
-      <description>Tau Messengers boast highly advanced data storage and processing facilities to cope with the vast amounts of information they carry. When linked to ship sensors though this processing power can be used to provide a direct feed to the ships turrets. In fleet actions Messengers can route this data to nearby Tau vessels. Any Tau vessel within 10cm of a ship with tracking systems may re-roll misses when using turrets, and ignores the column shift when firing batteries at ranges above 30cm. Tracking systems continue to function even if a ship is braced for impact.</description>
+    <rule id="3f19-091d-de1a-fc60" name="Tau Ordnance" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="false">
+      <description>
+Tau missiles are drone-guided and are fired in salvos, each point of torpedo strength represents about 10 actual missiles.  In game terms this makes no difference.  Tau missiles are able to alter both their speed and course throughout flight, so may move at any speed  between 20cm and 40cm (i.e. must move at least 20cm, cannot move more than 40cm) each ordnance phase. They are also guided. Each ordnance phase the missiles may change course by 45 degrees at the start of their movement. However, you must roll a dice for each point of missile strength at the start of each ordnance phase, after the first. The salvo is reduced by 1 point for every 6 rolled.
+
+Mantas are bombers, each marker represents a single vessel. They are well shielded and if intercepted by enemy fighters roll a D6, on a roll of 4+ the Manta is not removed. Mantas move 20cm. Whilst Mantas can carry large numbers of troops they are not used to board enemy vessels as boarding is totally contrary to the Tau’s approach to space warfare.
+
+Gravitic launchers launch Tau Missles(Torpedos).
+
+Barracuda Superiority Fighters functiion as standard fighters</description>
     </rule>
-    <rule id="3f19-091d-de1a-fc60" name="Tau Ordnance" page="0" hidden="false">
-      <description>Special Rules: Missiles. Tau missiles are drone-guided and are fired in salvos, each point of torpedo strength represents about 10 actual missiles.  In game terms this makes no difference.  Tau missiles are able to alter both their speed and course throughout flight, so may move at any speed  between 20cm and 40cm (i.e. must move at least 20cm, cannot move more than 40cm) each ordnance phase. They are also guided. Each ordnance phase the missiles may change course by 45 degrees at the start of their movement. However, you must roll a dice for each point of missile strength at the start of each ordnance phase, after the first. The salvo is reduced by 1 point for every 6 rolled.
-
-Mantas. Mantas are bombers, each marker represents a single vessel. They are well shielded and if intercepted by enemy fighters roll a D6, on a roll of 4+ the Manta is not removed. Mantas move 20cm. Whilst Mantas can carry large numbers of troops they are not used to board enemy vessels as boarding is totally contrary to the Tau’s approach to space warfare.
-
-Gravitic launchers count as tau missles.</description>
+    <rule id="8f60-a723-dabe-9c43" name="Tau Boarding Actions" publicationId="acb7-35d6-a2c5-f4a5" page="98" hidden="false">
+      <description>Boarding strength is half normal for the size of ship.</description>
     </rule>
-    <rule id="a819-1954-40c1-1554" name="Tau Special Rules" publicationId="2f88b28a--pubN65608" page="96" hidden="false">
-      <description>Teleport Attacks:
-Tau ships may not conduct teleport hit and run attacks.
-
-Boarding Actions:
-Boarding strength is half normal for the size of ship.</description>
+    <rule id="64af-4d84-627e-e267" name="Tau Teleport Attacks" publicationId="1bc8-5968-21c3-0f27" page="98" hidden="false">
+      <description>Tau ships may not conduct teleport hit and run attacks.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1333,6 +1335,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       <description>This Vessel is be equipped with a deflector that raises its prow armor to 6. This is disabled whenever the vessel suffers a prow critical hit (repairable normally).
 
 The deflector is a specialised shield generally mounted on the prow of the latest Tau ships. It turns the gravitic sheath around the vessel into a dense wedge, which is far more effective against incoming fire. If fired at from the front the deflector augments the passive armour which counts as armour 6. Deflectors are always mounted on the prow and will be disabled if the ship suffers a prow weapons damaged critical. Deflectors are NOT shields and do not count as such for the purpose of boarding, blast markers or other effects which apply to shields.</description>
+    </rule>
+    <rule id="e5cd-8957-b343-46ca" name="Tracking Systems" publicationId="1bc8-5968-21c3-0f27" page="98" hidden="false">
+      <description>Tau Messengers boast highly advanced data storage and processing facilities to cope with the vast amounts of information they carry. When linked to ship sensors though this processing power can be used to provide a direct feed to the ships turrets. In fleet actions Messengers can route this data to nearby Tau vessels. Any Tau vessel within 10cm of a ship with tracking systems may re-roll misses when using turrets, and ignores the column shift when firing batteries at ranges above 30cm. Tracking systems continue to function even if a ship is braced for impact.</description>
     </rule>
   </sharedRules>
 </catalogue>
