@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="28" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="29" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="5766-7751-d146-0800" name="2010 Compendium"/>
     <publication id="789d-522c-ea2d-cbca" name="2010 FAQ"/>
@@ -1672,15 +1672,6 @@ The alien raider will move and shoot at the start of each turn by the player who
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="218c-b43d-bbd2-5c6f" name="Imperial Ordnance" hidden="true" collective="false" import="true" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
