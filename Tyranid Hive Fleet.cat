@@ -1056,5 +1056,149 @@ Fighters: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5dd2-b405-101f-96f2" name="Tyranid Kraken" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8a50-704a-93b2-0416" name="Tyranid Kraken" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">Special</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b580-f9cf-3c2d-fe77" name="Kraken Durability" hidden="false" targetId="3d4f-64b3-fcf4-f155" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="238d-13fc-8904-3597" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e70b-36e9-b4a5-3f9f" name="Tyranid Vanguard Drone Ship" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="05de-bc33-c9ff-f29b" name="Tyranid Vanguard Drone Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1 (Spores)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="678c-1a03-046f-743e" name="Vanguard Senses" hidden="false" targetId="6067-57e3-8fa2-9032" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="669b-537a-ca4c-86b8" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e03f-66d5-3d9a-15ba" name="Tyranid Escort Drone" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3807-9ef7-95a2-600b" name="Tyranid Escort Drone" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1 (Spores)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="701c-4870-c273-91c1" name="Return to the Hive" hidden="false" targetId="1fe4-c983-9d25-b1a9" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9090-4034-981c-a26f" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="80b4-6273-e959-6323" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="28a4-c9d7-b96a-bf56">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ab7-8c1c-c4df-14a7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2531-d9c7-b434-31b5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8b7f-e342-cb2b-5444" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a357-aead-a688-4d06" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3fe9-f112-ce0c-13f2" name="Prow Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="28a4-c9d7-b96a-bf56" name="Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8324-3813-65e2-e759" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f0c4-d1fc-eca9-f2c6" name="Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e240-9d58-6611-9445" name="Bio-plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1428-200e-798b-cad6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="46b1-b299-da8c-377c" name="Bio-plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <sharedRules>
+    <rule id="3d4f-64b3-fcf4-f155" name="Kraken Durability" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
+      <description>Kraken have no spore cysts but are amazingly durable and capable of regenerating damage. As such Kraken count as always being on Brace for Impact special orders when they take damage, receiving a 4+ save against each hit sustained, including those sustained when rolling a 6 for moving through blast markers. This ability in no way affects the Kraken and they may use other special orders as normal.</description>
+    </rule>
+    <rule id="6067-57e3-8fa2-9032" name="Vanguard Senses" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
+      <description>Enemy within 15cm of a Vanguard drone ship can always be targeted by other Tyranid vessels.</description>
+    </rule>
+    <rule id="1fe4-c983-9d25-b1a9" name="Return to the Hive" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
+      <description>Escort drones subject to Instinctive Behaviour case 7 (‘must move towards a planet’) may instead move towards the nearest hive ship.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
