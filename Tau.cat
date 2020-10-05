@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="8" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="2f88b28a--pubN65608" name="BFG Armada"/>
     <publication id="2f88b28a--pubN71593" name="BFG Rulebook"/>
   </publications>
   <selectionEntries>
-    <selectionEntry id="5edd6195-86f8-41d5-9d28-63e6fe25abd2" name="Air Caste Orbital City" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5edd6195-86f8-41d5-9d28-63e6fe25abd2" name="Air Caste Orbital City" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5edd6195-86f8-41d5-9d28-63e6fe25abd2-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c50ea9d8-5263-4059-8cea-26cffd8f759c" name="Launch Bay" hidden="false" collective="false">
+        <selectionEntryGroup id="c50ea9d8-5263-4059-8cea-26cffd8f759c" name="Launch Bay" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="753b29ba-2014-48e7-9942-03d62841421c" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="753b29ba-2014-48e7-9942-03d62841421c" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -30,7 +30,7 @@
         <cost name="pts" typeId="points" value="160.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9ec491f-fd16-41b2-8cd4-e3206780e268" name="Cruiser - Demiurg &apos;Bastion&apos; Commerce Vessel" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="c9ec491f-fd16-41b2-8cd4-e3206780e268" name="Cruiser - Demiurg &apos;Bastion&apos; Commerce Vessel" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1a22-eff7-4c99-9cd9" name="Demiurg &apos;Bastion&apos; Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -69,7 +69,6 @@
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/6+ Prow</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="6ac1-238e-c6ae-79f4" name="Demiurg &apos;Bastion&apos; Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -110,7 +109,7 @@ The dorsal launch bays may launch either attack craft or torpedoes if reloaded b
         <cost name="pts" typeId="points" value="255.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="95fe0032-9fed-4eee-a001-0c955fd77663" name="Battleship - Demiurg &apos;Stronghold&apos; Commerse Vessel" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="95fe0032-9fed-4eee-a001-0c955fd77663" name="Battleship - Demiurg &apos;Stronghold&apos; Commerse Vessel" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6d60-81aa-35bd-666e" name="Battleship - Demiurg &apos;Stronghold&apos; Commerse Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -121,7 +120,6 @@ The dorsal launch bays may launch either attack craft or torpedoes if reloaded b
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/6+ Prow</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="b61e-4b6c-0b5b-9518" name="Demiurg &apos;Stronghold&apos; Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -197,40 +195,40 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="350.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f861bf0-b898-460e-9ac7-3c57d6120e42" name="Fleet Commander" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1f861bf0-b898-460e-9ac7-3c57d6120e42" name="Fleet Commander" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1f861bf0-b898-460e-9ac7-3c57d6120e42-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f4eac755-d6b6-4652-97da-27d606a5ff5c" name="Options" hidden="false" collective="false">
+        <selectionEntryGroup id="f4eac755-d6b6-4652-97da-27d606a5ff5c" name="Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="1f8786a1-a112-4b58-a94a-df7826fa8293">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d5807109-4694-427f-8420-a5de624eb3ea" name="Kor&apos;O" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d5807109-4694-427f-8420-a5de624eb3ea" name="Kor&apos;O" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="80.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1f8786a1-a112-4b58-a94a-df7826fa8293" name="Kor&apos;el" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1f8786a1-a112-4b58-a94a-df7826fa8293" name="Kor&apos;el" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c8c3504f-02ae-4d72-8ea2-57ca4decc8c3" name="Ethereal" hidden="false" collective="false">
+        <selectionEntryGroup id="c8c3504f-02ae-4d72-8ea2-57ca4decc8c3" name="Ethereal" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b2627b3b-d784-4796-94cb-a62498f00419" name="Aun&apos;O (Two extra re-rolls)" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b2627b3b-d784-4796-94cb-a62498f00419" name="Aun&apos;O (Two extra re-rolls)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8ba816c1-d361-4da8-a185-2658ed17f722" name="Aun&apos;el (One extra re-roll)" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8ba816c1-d361-4da8-a185-2658ed17f722" name="Aun&apos;el (One extra re-roll)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -242,7 +240,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="444b2283-1cc4-49fd-b14d-b42267ebe752" name="Battleship - Gal&apos;leath (Explorer) Class" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="444b2283-1cc4-49fd-b14d-b42267ebe752" name="Battleship - Gal&apos;leath (Explorer) Class" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="bf42-53bb-bd49-3047" name="Battleship - Gal&apos;leath (Explorer) Class" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -253,7 +251,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/4+Rear</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">5</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="4158-d914-19f6-7c5e" name="Gal&apos;leath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -289,13 +286,13 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <categoryLink id="444b2283-1cc4-49fd-b14d-b42267ebe752-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f908fea5-2d56-4805-a4ef-b7c72e3d2e62" name="Type" hidden="false" collective="false" defaultSelectionEntryId="8a0b97b1-431f-4ad0-927d-3583f364c89b">
+        <selectionEntryGroup id="f908fea5-2d56-4805-a4ef-b7c72e3d2e62" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a0b97b1-431f-4ad0-927d-3583f364c89b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a95dcffc-5a8d-4db9-8975-cd6f0937a15f" name="Bor&apos;kan" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a95dcffc-5a8d-4db9-8975-cd6f0937a15f" name="Bor&apos;kan" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3267-474a-f217-4804" name="Gal&apos;leath Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -323,7 +320,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8a0b97b1-431f-4ad0-927d-3583f364c89b" name="Vash&apos;ya" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8a0b97b1-431f-4ad0-927d-3583f364c89b" name="Vash&apos;ya" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e616-f6b1-be97-318d" name="Gal&apos;leath Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -351,7 +348,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f439df3a-8cc9-44f5-a53f-90c00c8991e0" name="Cruiser - Il&apos;fannor (Merchant) Class" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f439df3a-8cc9-44f5-a53f-90c00c8991e0" name="Cruiser - Il&apos;fannor (Merchant) Class" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="33e7-aca9-8dac-b644" name="Cruiser - Il&apos;fannor (Merchant) Class" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
@@ -369,7 +366,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="cd56-3656-3885-3211" name="Il&apos;fannor Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -398,7 +394,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <categoryLink id="be82-51a1-534a-7090" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="74f6be52-824e-4fcc-b051-b201a231e4df" name="Upgraded Hull" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="74f6be52-824e-4fcc-b051-b201a231e4df" name="Upgraded Hull" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -408,13 +404,13 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a0c0a9a8-17ec-43ad-8034-f61d7be02638" name="Type" hidden="false" collective="false" defaultSelectionEntryId="351fd1cd-c6cb-4270-b51a-e37bf9fc87d1">
+        <selectionEntryGroup id="a0c0a9a8-17ec-43ad-8034-f61d7be02638" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="351fd1cd-c6cb-4270-b51a-e37bf9fc87d1">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9165ab49-07d4-4460-8e1e-67be5c40c714" name="Dal&apos;yth" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9165ab49-07d4-4460-8e1e-67be5c40c714" name="Dal&apos;yth" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5793-9200-3016-183e" name="Il&apos;fannor Port Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -435,7 +431,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="351fd1cd-c6cb-4270-b51a-e37bf9fc87d1" name="Ke&apos;lshan" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="351fd1cd-c6cb-4270-b51a-e37bf9fc87d1" name="Ke&apos;lshan" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="69af-a1a4-8b92-82d8" name="Il&apos;fannor Port Gravitic Hook" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -453,31 +449,22 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="2d00b1c2-69c7-47ca-9eec-369fa80f0892" name="Grav-hooks" hidden="false" collective="false">
+                <selectionEntryGroup id="2d00b1c2-69c7-47ca-9eec-369fa80f0892" name="Grav-hooks" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="761fbc02-1674-4ea2-a3a0-4d8d70ab9cb8" name="Kir&apos;la (Warden)" page="0" hidden="false" collective="false" type="unit">
+                  <entryLinks>
+                    <entryLink id="fd3c-44ca-2881-aac5" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b04-dd5a-c8d5-4270" type="max"/>
                       </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1bd7b53d-4246-48ef-8dea-bf5ef39357f3" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" type="unit">
+                    </entryLink>
+                    <entryLink id="271f-e4b7-f4f9-3423" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76c5-db44-aee8-3ba9" type="max"/>
                       </constraints>
-                      <categoryLinks>
-                        <categoryLink id="1bd7b53d-4246-48ef-8dea-bf5ef39357f3-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-                      </categoryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="25.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
@@ -491,30 +478,81 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="105.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="493c09d5-8273-4b68-b957-f597b2ae9a45" name="Il&apos;porrui (Emissary) class Cruiser" page="0" hidden="false" collective="false" type="unit">
-      <rules>
-        <rule id="5377-f9a6-8825-9030" name="Prow Deflector" page="0" hidden="false">
-          <description>All Emissaries are fitted with a prow deflector to raise their front armour to 6. This is disabled if the ship suffers a Prow critical hit.</description>
-        </rule>
-      </rules>
+    <selectionEntry id="493c09d5-8273-4b68-b957-f597b2ae9a45" name="Il&apos;porrui (Emissary) class Cruiser" publicationId="5766-7751-d146-0800" page="163" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4c67-6c10-84ba-1239" name="Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f4c-4a85-0bb2-e170" name="Starbord Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right/Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b90a-6463-5eea-a27a" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Barracudas: 25cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">N/A</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1ba5-5ed3-ba3a-4b57" name="Il&apos;porrui (Emissary) class Cruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">4</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="4c43-038a-6752-51aa" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ac826e01-895f-42f8-bb9c-bd2623f6d199" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d049-28c7-362f-f6c2" name="Prow Deflector" publicationId="5766-7751-d146-0800" page="164" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20f1-327a-dc80-467b" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="05a8-3cbc-72d7-e7dc" name="Prow Deflector" publicationId="5766-7751-d146-0800" page="164" hidden="false" targetId="faa0-5bf1-5c06-1049" type="rule"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bd7f-0728-5121-8f84" name="Grav-hooks" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d0-707d-4169-0fbf" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4795-aab0-36a6-2600" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" type="unit">
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f97d-ebe6-435f-d4f9" name="Kir&apos;la (Warden)" hidden="false" collective="false" import="true" type="unit">
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="130.0"/>
+        <cost name="pts" typeId="points" value="110.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9f37ad1-f234-4e93-8cae-91fcb01a71cb" name="Starship - Kir&apos;qath (Defender) Class" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="c9f37ad1-f234-4e93-8cae-91fcb01a71cb" name="Starship - Kir&apos;qath (Defender) Class" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="4a45-a1e4-8bad-ef1b" name="Starship - Kir&apos;qath (Defender) Class" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -525,7 +563,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="b158-f15a-d28e-18b5" name="Kir&apos;qath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -550,7 +587,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01b2067d-4a01-44a8-b5ba-e4bc85460610" name="Kir&apos;shasvre (Castellan) Heavy Escort" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="01b2067d-4a01-44a8-b5ba-e4bc85460610" name="Kir&apos;shasvre (Castellan) Heavy Escort" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="01b2067d-4a01-44a8-b5ba-e4bc85460610-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -558,7 +595,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="72ea18aa-9387-4130-b6f9-147d6b4bd3da" name="Kroot Warsphere" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="72ea18aa-9387-4130-b6f9-147d6b4bd3da" name="Kroot Warsphere" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -572,7 +609,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="1294-3ad1-bdd8-4bee" name="Kroot Warsphere Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -595,7 +631,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f19107a-1458-455e-ad94-5e03231fa0b2" name="Cruiser - Lar&apos;shi (Hero) Class" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2f19107a-1458-455e-ad94-5e03231fa0b2" name="Cruiser - Lar&apos;shi (Hero) Class" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="7ec2-16da-cab9-4840" name="Cruiser - Lar&apos;shi (Hero) Class" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -606,7 +642,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="8e49-8b45-859e-a3cf" name="Lar&apos;shi Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -638,22 +673,20 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="8f07-d82c-9cbe-118d" name="Prow Deflector" hidden="false">
-          <description>All Lar&apos;Shi are fitted with a prow deflector to raise their front armour to 6. This is disabled if the ship suffers a Prow critical hit.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="d36b-cac9-4f13-26d1" name="Prow Deflector" hidden="false" targetId="faa0-5bf1-5c06-1049" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f691-4ffc-4dfe-1a6c" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a0f1c968-0242-4fbd-ae04-1c7d21c3843b" name="Type" hidden="false" collective="false" defaultSelectionEntryId="ba222d3b-9367-4756-b626-1835ab59f311">
+        <selectionEntryGroup id="a0f1c968-0242-4fbd-ae04-1c7d21c3843b" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="ba222d3b-9367-4756-b626-1835ab59f311">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="99c6ea5b-917d-4bbf-8cc9-4b62cb10ea37" name="Tolku" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="99c6ea5b-917d-4bbf-8cc9-4b62cb10ea37" name="Tolku" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1eba-47c2-a712-b6a2" name="Lar&apos;shi Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -671,12 +704,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="0d38eda8-e499-4ae4-8fcd-5f9024794de8" name="Starboard Launch Bay" hidden="false" collective="false">
+                <selectionEntryGroup id="0d38eda8-e499-4ae4-8fcd-5f9024794de8" name="Starboard Launch Bay" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="9e6fedb8-094c-4a42-adfb-2fce92563282" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+                    <selectionEntry id="9e6fedb8-094c-4a42-adfb-2fce92563282" name="Barracudas" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
@@ -684,7 +717,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="c54564a7-86e9-4372-a7c2-c8f3d9d59ff9" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+                    <selectionEntry id="c54564a7-86e9-4372-a7c2-c8f3d9d59ff9" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
@@ -699,7 +732,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ba222d3b-9367-4756-b626-1835ab59f311" name="Vash&apos;ya" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ba222d3b-9367-4756-b626-1835ab59f311" name="Vash&apos;ya" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d03e-2a55-234f-416b" name="Lar&apos;shi Port Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -727,7 +760,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47f80262-a084-41b6-8f6e-f818e1361733" name="Lar&apos;shi&apos;vre (Protector) Cruiser" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="47f80262-a084-41b6-8f6e-f818e1361733" name="Lar&apos;shi&apos;vre (Protector) Cruiser" publicationId="5766-7751-d146-0800" page="162" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="ec54-1534-9bb7-2d45" name="Prow Deflector" page="0" hidden="false">
           <description>All Protectors are fitted with a prow deflector to raise their front armour to 6. This is disabled if the ship suffers a Prow critical hit.</description>
@@ -737,12 +770,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <categoryLink id="a691-dd26-e6ab-a3a0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="eb4a03a8-d781-43aa-9638-5ac275a72522" name="Dorsal Launch Bay" hidden="false" collective="false">
+        <selectionEntryGroup id="eb4a03a8-d781-43aa-9638-5ac275a72522" name="Dorsal Launch Bay" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="15a6b944-e2c2-4d5c-beb9-78a4a1e4c54d" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="15a6b944-e2c2-4d5c-beb9-78a4a1e4c54d" name="Barracudas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -750,7 +783,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b4bcfced-f977-4c25-8d45-14a385f8c44b" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b4bcfced-f977-4c25-8d45-14a385f8c44b" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -762,10 +795,10 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="190.0"/>
+        <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cca97652-6ba8-446a-8949-5fbd3dff1c41" name="Nicassar Dhow" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="cca97652-6ba8-446a-8949-5fbd3dff1c41" name="Nicassar Dhow" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a665-70be-3a87-aedb" name="Nicassar Dhow" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -776,7 +809,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="4e10-9b0d-0fb8-fa72" name="Nicassar Dhow Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -806,7 +838,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea813263-ef6f-4327-a611-53f736ce0a81" name="Or&apos;es El&apos;leath (Custodian) Battleship Class Carrier" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="ea813263-ef6f-4327-a611-53f736ce0a81" name="Or&apos;es El&apos;leath (Custodian) Battleship Class Carrier" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -819,12 +851,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <categoryLink id="ea813263-ef6f-4327-a611-53f736ce0a81-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="038b9d01-110f-4321-8a06-56fa089fbb0f" name="Ventral Grav-hooks" hidden="false" collective="false">
+        <selectionEntryGroup id="038b9d01-110f-4321-8a06-56fa089fbb0f" name="Ventral Grav-hooks" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5f83bfaa-e9b3-4f38-9ab7-e83f2223b247" name="Kir&apos;la (Warden) Escort" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="5f83bfaa-e9b3-4f38-9ab7-e83f2223b247" name="Kir&apos;la (Warden) Escort" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -832,7 +864,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="160a7cdb-d1fc-4843-bc76-2a7f5160659e" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="160a7cdb-d1fc-4843-bc76-2a7f5160659e" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -845,12 +877,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5127b00e-100e-4a30-9d20-580b0438b377" name="Port Launch Bay" hidden="false" collective="false">
+        <selectionEntryGroup id="5127b00e-100e-4a30-9d20-580b0438b377" name="Port Launch Bay" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="be9c2334-fb83-4bb6-9dc5-1b2ced102432" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="be9c2334-fb83-4bb6-9dc5-1b2ced102432" name="Barracudas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -858,7 +890,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a220368a-3dc0-4e35-88c5-1c9775983dc8" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a220368a-3dc0-4e35-88c5-1c9775983dc8" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -868,12 +900,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="92e2e9c1-a2d6-4d25-a2ba-fee84dcaddd2" name="Starboard Launch Bay" hidden="false" collective="false">
+        <selectionEntryGroup id="92e2e9c1-a2d6-4d25-a2ba-fee84dcaddd2" name="Starboard Launch Bay" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4d7c74ae-0ebf-46fa-94d3-a9c66f5754c6" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4d7c74ae-0ebf-46fa-94d3-a9c66f5754c6" name="Barracudas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -881,7 +913,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c045088f-25a6-43b6-8035-290cf4ff378b" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c045088f-25a6-43b6-8035-290cf4ff378b" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -896,7 +928,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="310.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d5ec0e57-8be4-4882-95cc-5210eec2c968" name="Security Orbital" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="d5ec0e57-8be4-4882-95cc-5210eec2c968" name="Security Orbital" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d5ec0e57-8be4-4882-95cc-5210eec2c968-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -904,7 +936,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f6ae7eaf-a600-4ab5-9b08-b828cb127c30" name="Starship - Skether&apos;qan (Messenger) Class" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f6ae7eaf-a600-4ab5-9b08-b828cb127c30" name="Starship - Skether&apos;qan (Messenger) Class" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2832-b638-efcd-570b" name="Starship - Skether&apos;qan (Messenger) Class" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -915,7 +947,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="8ef8-cb22-13e0-23c4" name="Skether&apos;qan Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -931,6 +962,9 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
           <description>The Messenger is an exception to normal Escort rules as it is not always deployed in squadrons, and can function independently. The Skether’qan is equipped with a Tracking System.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="8899-d1d3-a7fb-0fa5" name="Tracking Systems" hidden="false" targetId="e5cd-8957-b343-46ca" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f6ae7eaf-a600-4ab5-9b08-b828cb127c30-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -938,12 +972,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98818560-5a5a-4447-bbc3-9264a808aca6" name="Tau Orbital" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="98818560-5a5a-4447-bbc3-9264a808aca6" name="Tau Orbital" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="98818560-5a5a-4447-bbc3-9264a808aca6-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="25567255-4de3-45b7-ad58-9d10f57a2437" name="Core Module" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="25567255-4de3-45b7-ad58-9d10f57a2437" name="Core Module" page="0" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -990,7 +1024,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-                <characteristic name="Pg." typeId="50672e23232344415441232323"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1000,12 +1033,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="68d4918b-742c-4484-ba23-60371c664e75" name="Modules" hidden="false" collective="false">
+        <selectionEntryGroup id="68d4918b-742c-4484-ba23-60371c664e75" name="Modules" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="92ca3712-3e30-4918-9e3c-13c489c20285" name="Manufacturing&amp; Research Module" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="92ca3712-3e30-4918-9e3c-13c489c20285" name="Manufacturing&amp; Research Module" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -1018,7 +1051,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="235d6b54-be95-4b29-961a-0e60c07c7daa" name="Habitat Module" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="235d6b54-be95-4b29-961a-0e60c07c7daa" name="Habitat Module" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -1028,22 +1061,22 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="fbf32dd3-ee93-48a4-9c0b-3596863c74ba" name="Securtiy Module" hidden="false" collective="false">
+            <selectionEntryGroup id="fbf32dd3-ee93-48a4-9c0b-3596863c74ba" name="Securtiy Module" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5971584c-5cbd-4eb2-b208-0b33ab8c49ff" name="Gravitic Hook" page="0" hidden="false" collective="false" type="unit">
+                <selectionEntry id="5971584c-5cbd-4eb2-b208-0b33ab8c49ff" name="Gravitic Hook" page="0" hidden="false" collective="false" import="true" type="unit">
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <selectionEntryGroups>
-                    <selectionEntryGroup id="348dd610-09de-41ce-a4de-73082162fe65" name="Grav-hook" hidden="false" collective="false">
+                    <selectionEntryGroup id="348dd610-09de-41ce-a4de-73082162fe65" name="Grav-hook" hidden="false" collective="false" import="true">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="b1ea3d4c-254d-425e-b66d-4794ac310984" name="Kir&apos;la (Warden) Escort" page="0" hidden="false" collective="false" type="unit">
+                        <selectionEntry id="b1ea3d4c-254d-425e-b66d-4794ac310984" name="Kir&apos;la (Warden) Escort" page="0" hidden="false" collective="false" import="true" type="unit">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                           </constraints>
@@ -1051,7 +1084,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                             <cost name="pts" typeId="points" value="30.0"/>
                           </costs>
                         </selectionEntry>
-                        <selectionEntry id="c1c057a8-393c-4e31-b72a-2e014d8ca49b" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" type="unit">
+                        <selectionEntry id="c1c057a8-393c-4e31-b72a-2e014d8ca49b" name="Kass&apos;l (Orca) gunship" page="0" hidden="false" collective="false" import="true" type="unit">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                           </constraints>
@@ -1065,7 +1098,6 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                                <characteristic name="Pg." typeId="50672e23232344415441232323"/>
                               </characteristics>
                             </profile>
                           </profiles>
@@ -1083,7 +1115,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f593c374-d4cc-4559-998e-2b6682908a29" name="Ion Cannon Turret" page="0" hidden="false" collective="false" type="unit">
+                <selectionEntry id="f593c374-d4cc-4559-998e-2b6682908a29" name="Ion Cannon Turret" page="0" hidden="false" collective="false" import="true" type="unit">
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1100,7 +1132,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="915dcc95-6396-427f-868e-84c3723ca45f" name="Railgun Battery" page="0" hidden="false" collective="false" type="unit">
+                <selectionEntry id="915dcc95-6396-427f-868e-84c3723ca45f" name="Railgun Battery" page="0" hidden="false" collective="false" import="true" type="unit">
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1117,7 +1149,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5e525911-bb79-4fc6-a060-92315154f6f5" name="Launch Bay" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5e525911-bb79-4fc6-a060-92315154f6f5" name="Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1131,12 +1163,12 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                     </profile>
                   </profiles>
                   <selectionEntryGroups>
-                    <selectionEntryGroup id="e6a013d3-c8ea-48f2-ac93-8bdd5cdbc5d1" name="Launch Bay" hidden="false" collective="false">
+                    <selectionEntryGroup id="e6a013d3-c8ea-48f2-ac93-8bdd5cdbc5d1" name="Launch Bay" hidden="false" collective="false" import="true">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="c78eb6df-fdf6-43f4-97eb-32c0b80eadc8" name="Mantas" page="0" hidden="false" collective="false" type="upgrade">
+                        <selectionEntry id="c78eb6df-fdf6-43f4-97eb-32c0b80eadc8" name="Mantas" page="0" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                           </constraints>
@@ -1144,7 +1176,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
                             <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
-                        <selectionEntry id="62d77dbc-9c4a-4fd4-9cfe-085b2707d616" name="Barracudas" page="0" hidden="false" collective="false" type="upgrade">
+                        <selectionEntry id="62d77dbc-9c4a-4fd4-9cfe-085b2707d616" name="Barracudas" page="0" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                           </constraints>
@@ -1168,7 +1200,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e17af654-3a47-4c5e-be97-27a3b8667223" name="Tau transport" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e17af654-3a47-4c5e-be97-27a3b8667223" name="Tau transport" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="e17af654-3a47-4c5e-be97-27a3b8667223-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1177,28 +1209,104 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="0ccc-c36b-6908-e46c" name="Kass&apos;l (Orca) gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
+      <comment>no points needed should come from shared profile (must have &apos;0&apos; to link points)</comment>
+    </entryLink>
+    <entryLink id="f3dc-a03a-86c4-7165" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry">
+      <comment>Points in linked profile (must have &apos;0&apos; to link)</comment>
+    </entryLink>
+  </entryLinks>
   <rules>
-    <rule id="89b7-bee4-1179-4cf3" name="Deflector" page="0" hidden="false">
-      <description>The deflector is a specialised shield generally mounted on the prow of the latest Tau ships. It turns the gravitic sheath around the vessel into a dense wedge, which is far more effective against incoming fire. If fired at from the front the deflector augments the passive armour which counts as armour 6. Deflectors are always mounted on the prow and will be disabled if the ship suffers a prow weapons damaged critical. Deflectors are NOT shields and do not count as such for the purpose of boarding, blast markers or other effects which apply to shields.</description>
-    </rule>
-    <rule id="859e-ea71-ae6d-a06e" name="Tracking Systems" page="0" hidden="false">
-      <description>Tau Messengers boast highly advanced data storage and processing facilities to cope with the vast amounts of information they carry. When linked to ship sensors though this processing power can be used to provide a direct feed to the ships turrets. In fleet actions Messengers can route this data to nearby Tau vessels. Any Tau vessel within 10cm of a ship with tracking systems may re-roll misses when using turrets, and ignores the column shift when firing batteries at ranges above 30cm. Tracking systems continue to function even if a ship is braced for impact.</description>
-    </rule>
-    <rule id="3f19-091d-de1a-fc60" name="Tau Ordnance" page="0" hidden="false">
-      <description>Special Rules: Missiles. Tau missiles are drone-guided and are fired in salvos, each point of torpedo strength represents about 10 actual missiles.  In game terms this makes no difference.  Tau missiles are able to alter both their speed and course throughout flight, so may move at any speed  between 20cm and 40cm (i.e. must move at least 20cm, cannot move more than 40cm) each ordnance phase. They are also guided. Each ordnance phase the missiles may change course by 45 degrees at the start of their movement. However, you must roll a dice for each point of missile strength at the start of each ordnance phase, after the first. The salvo is reduced by 1 point for every 6 rolled.
+    <rule id="3f19-091d-de1a-fc60" name="Tau Ordnance" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="false">
+      <description>
+Tau missiles are drone-guided and are fired in salvos, each point of torpedo strength represents about 10 actual missiles.  In game terms this makes no difference.  Tau missiles are able to alter both their speed and course throughout flight, so may move at any speed  between 20cm and 40cm (i.e. must move at least 20cm, cannot move more than 40cm) each ordnance phase. They are also guided. Each ordnance phase the missiles may change course by 45 degrees at the start of their movement. However, you must roll a dice for each point of missile strength at the start of each ordnance phase, after the first. The salvo is reduced by 1 point for every 6 rolled.
 
-Mantas. Mantas are bombers, each marker represents a single vessel. They are well shielded and if intercepted by enemy fighters roll a D6, on a roll of 4+ the Manta is not removed. Mantas move 20cm. Whilst Mantas can carry large numbers of troops they are not used to board enemy vessels as boarding is totally contrary to the Tau’s approach to space warfare.
+Mantas are bombers, each marker represents a single vessel. They are well shielded and if intercepted by enemy fighters roll a D6, on a roll of 4+ the Manta is not removed. Mantas move 20cm. Whilst Mantas can carry large numbers of troops they are not used to board enemy vessels as boarding is totally contrary to the Tau’s approach to space warfare.
 
-Gravitic launchers count as tau missles.</description>
+Gravitic launchers launch Tau Missles(Torpedos).
+
+Barracuda Superiority Fighters functiion as standard fighters</description>
     </rule>
-    <rule id="a819-1954-40c1-1554" name="Tau Special Rules" publicationId="2f88b28a--pubN65608" page="96" hidden="false">
-      <description>Teleport Attacks:
-Tau ships may not conduct teleport hit and run attacks.
-
-Boarding Actions:
-Boarding strength is half normal for the size of ship.</description>
+    <rule id="8f60-a723-dabe-9c43" name="Tau Boarding Actions" publicationId="acb7-35d6-a2c5-f4a5" page="98" hidden="false">
+      <description>Boarding strength is half normal for the size of ship.</description>
+    </rule>
+    <rule id="64af-4d84-627e-e267" name="Tau Teleport Attacks" publicationId="1bc8-5968-21c3-0f27" page="98" hidden="false">
+      <description>Tau ships may not conduct teleport hit and run attacks.</description>
     </rule>
   </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="7287-5f52-246b-c649" name="Kass&apos;l (Orca) gunship" publicationId="acb7-35d6-a2c5-f4a5" page="105" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="be56-f0ee-7aa6-ac45" name="Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d60-77a5-8872-b762" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="894e-006a-dd96-7cc6" name="Kass&apos;l (Orca) gunship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="86e1-d53d-b53d-aabe" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b117-d104-bf32-d956" name="Kir&apos;la &quot;Warden&quot; Class Gunship" publicationId="5766-7751-d146-0800" page="161" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b6c2-2dc5-1170-96d2" name="Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91f5-8d6f-e924-9e7b" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7912-b0ef-c277-25aa" name="Kir&apos;la &quot;Warden&quot; Class Gunship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a383-d3a5-7da5-c00d" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="3190-a619-19a4-9ac6" name="Assault Boat&apos;s Rules" publicationId="2f88b28a--pubN71593" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
@@ -1220,5 +1328,16 @@ Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hi
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
     </rule>
     <rule id="b81d-71a0-d97b-5a64" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="faa0-5bf1-5c06-1049" name="Prow Deflector" publicationId="5766-7751-d146-0800" page="164" hidden="false">
+      <modifiers>
+        <modifier type="append" field="name" value="6+ Front Armor"/>
+      </modifiers>
+      <description>This Vessel is be equipped with a deflector that raises its prow armor to 6. This is disabled whenever the vessel suffers a prow critical hit (repairable normally).
+
+The deflector is a specialised shield generally mounted on the prow of the latest Tau ships. It turns the gravitic sheath around the vessel into a dense wedge, which is far more effective against incoming fire. If fired at from the front the deflector augments the passive armour which counts as armour 6. Deflectors are always mounted on the prow and will be disabled if the ship suffers a prow weapons damaged critical. Deflectors are NOT shields and do not count as such for the purpose of boarding, blast markers or other effects which apply to shields.</description>
+    </rule>
+    <rule id="e5cd-8957-b343-46ca" name="Tracking Systems" publicationId="1bc8-5968-21c3-0f27" page="98" hidden="false">
+      <description>Tau Messengers boast highly advanced data storage and processing facilities to cope with the vast amounts of information they carry. When linked to ship sensors though this processing power can be used to provide a direct feed to the ships turrets. In fleet actions Messengers can route this data to nearby Tau vessels. Any Tau vessel within 10cm of a ship with tracking systems may re-roll misses when using turrets, and ignores the column shift when firing batteries at ranges above 30cm. Tracking systems continue to function even if a ship is braced for impact.</description>
+    </rule>
   </sharedRules>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="6" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="7" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="b3939b81--pubN65798" name="BFG Rulebook + 2010 FAQ"/>
     <publication id="b3939b81--pubN65947" name="BFG Rulebook - Armada"/>
@@ -8,7 +8,7 @@
     <publication id="b3939b81--pubN68791" name="BFG_-_Additional_Ships_Compendium_1.4"/>
   </publications>
   <selectionEntries>
-    <selectionEntry id="55733e1a-4a8a-457d-abfd-50280545579b" name="Pirate Prince" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="55733e1a-4a8a-457d-abfd-50280545579b" name="Pirate Prince" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="f5af-f0af-4874-e144" name="Pirate Prince" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
@@ -22,22 +22,22 @@
         <categoryLink id="55733e1a-4a8a-457d-abfd-50280545579b-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6a1f2d9c-e490-4805-8dbf-c9cc5a39e760" name="Fleet Commander Re-rolls" hidden="false" collective="false">
+        <selectionEntryGroup id="6a1f2d9c-e490-4805-8dbf-c9cc5a39e760" name="Fleet Commander Re-rolls" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d0955fd6-515f-4a8c-81ea-5747346709d7" name="2 re-rolls" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="d0955fd6-515f-4a8c-81ea-5747346709d7" name="2 re-rolls" page="0" hidden="false" collective="false" import="true" type="unit">
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8d479436-8f52-4b06-acd1-48d753a61813" name="3 re-rolls" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8d479436-8f52-4b06-acd1-48d753a61813" name="3 re-rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8f966cb9-d230-4b75-b5b4-2574342cc129" name="1 re-roll" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8f966cb9-d230-4b75-b5b4-2574342cc129" name="1 re-roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -49,7 +49,7 @@
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c49-3f2d-1e22-a1fd" name="Aconite Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1c49-3f2d-1e22-a1fd" name="Aconite Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2475-4082-b207-ee7d" name="Aconite Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -60,7 +60,6 @@
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="c650-c613-28bd-b1b1" name="Aconite Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -78,7 +77,7 @@
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="b3939b81--pubN65947" page="51" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="b3939b81--pubN65947" page="51" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="025c-6c6c-1027-8ec5" name="Aurora Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -89,7 +88,6 @@
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="5d68-6d76-a6ac-3eb0" name="Aurora Keel Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -111,12 +109,12 @@
         <categoryLink id="7529-1913-4daf-6dd0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0d2b-eb6e-89b6-be7b" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="0d2b-eb6e-89b6-be7b" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a215-e9f3-d7a5-396f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d7e4-72c9-009d-244f" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d7e4-72c9-009d-244f" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5401-2252-83a6-700a" type="max"/>
               </constraints>
@@ -131,7 +129,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ac13-5624-08f6-769e" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ac13-5624-08f6-769e" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2ad-db07-4a4f-aa3d" type="max"/>
               </constraints>
@@ -151,7 +149,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d531-9cc3-a27f-5287" type="max"/>
       </constraints>
@@ -168,7 +166,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="3a1e-d05d-a960-eee6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="04bb-1896-a417-a071" name="One Re-Roll" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="04bb-1896-a417-a071" name="One Re-Roll" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ffd-011e-f517-7b27" type="max"/>
           </constraints>
@@ -181,7 +179,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4cd-208f-c063-8d54" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a4cd-208f-c063-8d54" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="cc7e-e5d2-9eb1-9892" name="Corsair Class Escort Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -192,7 +190,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="f4dc-eeac-8057-0c6d" name="Corsair Class Escort Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -207,7 +204,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="3c8c-610d-feda-a185" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d200-e173-1f8a-d25a" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d200-e173-1f8a-d25a" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f38e-c888-3b23-ffdc" type="max"/>
           </constraints>
@@ -224,12 +221,12 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f4c4-dd4b-415b-1411" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="f4c4-dd4b-415b-1411" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ca-6979-c892-0ec3" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="16c4-eed6-72ea-fe80" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="16c4-eed6-72ea-fe80" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="0c28-cd80-0f57-a169" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -248,7 +245,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="36c0-862b-d551-d42f" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="36c0-862b-d551-d42f" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5761-4cd3-e24d-e397" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -262,7 +259,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="38c2-1c33-a931-57dd" name="Impaler" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="38c2-1c33-a931-57dd" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="fe4e-7d6f-b2de-0b3a" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -281,7 +278,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5666-2a04-8f79-4796" name="Prow Weapons Batteries" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5666-2a04-8f79-4796" name="Prow Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="40e2-700b-ff84-be84" name="Prow Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -302,7 +299,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8ae-884a-a4f5-e727" name="Dark Eldar Torture Class Cruiser" publicationId="b3939b81--pubN65947" page="56" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f8ae-884a-a4f5-e727" name="Dark Eldar Torture Class Cruiser" publicationId="b3939b81--pubN65947" page="56" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7861-0cda-ed00-f568" name="Torture Class Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -313,7 +310,6 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="793d-0b5b-3f42-8067" name="Torture Class Cruiser Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -328,7 +324,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         <categoryLink id="8f63-3dd7-cd89-0c63" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="730a-a24d-a699-5542" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="730a-a24d-a699-5542" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd0-8e15-37a8-23d4" type="max"/>
           </constraints>
@@ -345,12 +341,12 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8505-af60-4117-ccb8" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="8505-af60-4117-ccb8" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9e-5afa-550a-795a" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="013c-6842-b411-f032" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="013c-6842-b411-f032" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e1c7-fb39-8898-8f75" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -369,7 +365,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2f36-59bb-ab78-d737" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2f36-59bb-ab78-d737" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="4418-6e36-1cef-8872" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -383,7 +379,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3c73-fce9-33e1-989d" name="Impaler" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3c73-fce9-33e1-989d" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1004-a5d9-6ec1-5424" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -402,7 +398,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="32f0-d537-35fd-f848" name="Launch Bays" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="32f0-d537-35fd-f848" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="f653-928f-8d78-4939" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -430,7 +426,7 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e120-b2be-8d6b-4940" name="Dragonship" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e120-b2be-8d6b-4940" name="Dragonship" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="fba5-1346-67db-69e5" name="Dragonship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -441,7 +437,6 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
       </profiles>
@@ -449,12 +444,12 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
         <categoryLink id="8e9a-e5c7-04af-9002" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="476a-4816-8c20-7e99" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="476a-4816-8c20-7e99" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8adf-b11c-8abd-72f2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0147-d8d3-96ed-44c3" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0147-d8d3-96ed-44c3" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da76-48b3-a447-7dfc" type="max"/>
               </constraints>
@@ -469,7 +464,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4e63-86a6-5176-b643" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4e63-86a6-5176-b643" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b64e-ff1b-9895-1cb5" type="max"/>
               </constraints>
@@ -484,13 +479,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dffb-c4b2-43a8-0d51" name="Prow Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="dffb-c4b2-43a8-0d51" name="Prow Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a616-e3b7-af6d-46e1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="318e-2c39-099b-b5d3" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0d22-100f-6367-b9e7" name="Prow Weapons Battery" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0d22-100f-6367-b9e7" name="Prow Weapons Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb1e-bfb0-af0d-aee9" type="max"/>
               </constraints>
@@ -507,7 +502,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1715-3f10-7659-cfe0" name="Prow Pulsar Lance" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1715-3f10-7659-cfe0" name="Prow Pulsar Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e03a-9482-2839-1c4f" type="max"/>
               </constraints>
@@ -526,13 +521,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ee24-1a40-691f-0dce" name="Keel Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="ee24-1a40-691f-0dce" name="Keel Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34b9-426c-21d1-b9de" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7c2-4f25-3c65-d340" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="848d-4166-30c0-9394" name="Keel Launch Bay" page="0" hidden="false" collective="false" type="unit">
+            <selectionEntry id="848d-4166-30c0-9394" name="Keel Launch Bay" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc96-8434-b388-9d90" type="max"/>
               </constraints>
@@ -554,7 +549,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 </rule>
               </rules>
               <selectionEntries>
-                <selectionEntry id="9f02-c1c0-5c69-5772" name="Vampire Raiders" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9f02-c1c0-5c69-5772" name="Vampire Raiders" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6726-ba5d-f54c-c873" type="max"/>
                   </constraints>
@@ -572,7 +567,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ba95-0633-7e16-ca6f" name="Keel Torpedos" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ba95-0633-7e16-ca6f" name="Keel Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75de-4bc1-e074-4279" type="max"/>
               </constraints>
@@ -596,7 +591,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="869e-bef2-6de4-0ca8" name="Eclipse Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -607,7 +602,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="75f9-d2be-2f2d-ce35" name="Eclipse Keel Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -637,12 +631,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="d860-7dd4-c304-538c" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bf45-fa66-346d-c7af" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="bf45-fa66-346d-c7af" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b564-08a4-280a-b823" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2e3c-cf06-d561-954b" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2e3c-cf06-d561-954b" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="911a-6940-f450-e2ce" type="max"/>
               </constraints>
@@ -657,7 +651,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9945-6df8-9e77-780e" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9945-6df8-9e77-780e" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc4e-9bad-d95f-b3f5" type="max"/>
               </constraints>
@@ -677,7 +671,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="b3939b81--pubN68791" page="48" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="b3939b81--pubN68791" page="48" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c2a-be81-09c1-c2a9" type="max"/>
       </constraints>
@@ -691,7 +685,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="0877-0a70-f76b-a276" name="Eldar Craftworld Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -757,12 +750,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="9de5-cc59-2b4d-e395" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3a23-b9a0-a620-abb1" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="3a23-b9a0-a620-abb1" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e80b-f575-66ed-4c81" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a1fb-97a8-3572-27ea" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a1fb-97a8-3572-27ea" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89ef-b485-de01-18b9" type="max"/>
               </constraints>
@@ -777,7 +770,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="eb13-4072-0cf3-5af3" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="eb13-4072-0cf3-5af3" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a5f-fea1-3e0f-3e59" type="max"/>
               </constraints>
@@ -797,7 +790,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="700.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5952-f97f-78e3-8cab" name="Eldar Transport" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5952-f97f-78e3-8cab" name="Eldar Transport" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="80e4-4915-0a81-c15c" name="Eldar Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -808,7 +801,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="9ed5-b8a8-3365-e009" name="Eldar Transport Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -831,7 +823,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74cb-a24c-af6a-10c0" name="Eldar Hero" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="74cb-a24c-af6a-10c0" name="Eldar Hero" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2f6-6e53-8269-3fa7" type="max"/>
       </constraints>
@@ -844,13 +836,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="8a25-9fa1-5a4c-b245" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1e03-5ab0-b458-5f3c" name="Re-Rolls" hidden="false" collective="false">
+        <selectionEntryGroup id="1e03-5ab0-b458-5f3c" name="Re-Rolls" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e64-89aa-f43e-5905" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a7-ea06-5e8b-3a5a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5131-e177-1aa5-dc30" name="One Re-Roll" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5131-e177-1aa5-dc30" name="One Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f54f-267f-e475-0322" type="max"/>
               </constraints>
@@ -858,7 +850,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6dc6-a5be-4c05-2708" name="Three Re-Rolls" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6dc6-a5be-4c05-2708" name="Three Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6888-6091-745e-f9ae" type="max"/>
               </constraints>
@@ -866,7 +858,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="988f-2cc4-4e15-3c77" name="Two Re-Rolls" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="988f-2cc4-4e15-3c77" name="Two Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1508-2e20-d225-96cf" type="max"/>
               </constraints>
@@ -881,7 +873,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63f4-19a4-4ec9-fc07" name="Farseers" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="63f4-19a4-4ec9-fc07" name="Farseers" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5dad-61f0-5fda-5721" type="max"/>
       </constraints>
@@ -898,7 +890,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8565-3257-a04c-b7a4" name="Flame Of Asuryan" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8565-3257-a04c-b7a4" name="Flame Of Asuryan" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7b-9504-2aaa-37fc" type="max"/>
       </constraints>
@@ -912,7 +904,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="33ac-fa11-87d2-9448" name="Flame Of Asuryan Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -962,7 +953,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="320.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2fa3-32ff-3976-698a" name="Haven Space Station" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2fa3-32ff-3976-698a" name="Haven Space Station" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="17ed-4a34-93e2-2cfc" name="Haven Space Station Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -973,7 +964,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="2ac1-5ab9-0d9e-856c" name="Haven Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1016,7 +1006,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4618-80a9-8dbc-c735" name="Hellbore Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4618-80a9-8dbc-c735" name="Hellbore Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c882-b4ea-4b9d-26d3" name="Hellbore Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1027,7 +1017,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="6529-aa5f-e674-b610" name="Hellbore Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1059,7 +1048,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="65.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="00f1-ca98-2af5-1fa0" name="Hemlock Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="00f1-ca98-2af5-1fa0" name="Hemlock Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3d79-affb-9dd3-7543" name="Hemlock Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1070,7 +1059,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="a3c8-dd84-6380-28d3" name="Hemlock Prow Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1093,7 +1081,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be94-d0e2-1bc1-11b6" type="max"/>
       </constraints>
@@ -1110,7 +1098,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="9df6-a7a4-dcf9-66ae" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a090-b33b-3a7e-db3a" name="One Re-Roll" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a090-b33b-3a7e-db3a" name="One Re-Roll" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b7d-9ac9-b897-836f" type="max"/>
           </constraints>
@@ -1123,7 +1111,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b16-7c2a-ad3b-830f" name="Nightshade Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0b16-7c2a-ad3b-830f" name="Nightshade Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3269-2dea-bac3-1e0c" name="Nightshade Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1134,7 +1122,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="861f-4bf7-ec6f-454b" name="Nightshade Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1159,7 +1146,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="decrement" field="points" value="25">
           <conditions>
@@ -1181,7 +1168,7 @@ Prince Yriel must be embarked on a Dragonship equipped with launch bays, even if
         <categoryLink id="3c31-844c-763d-6c1e" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="199a-473b-42b9-deef" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="199a-473b-42b9-deef" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8d7-9f52-9b9e-dd83" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c60-329a-7cd8-7cca" type="min"/>
@@ -1197,7 +1184,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="db04-4ff3-19cd-75dd" name="One Re-Roll" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="db04-4ff3-19cd-75dd" name="One Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb12-94c5-0403-62e3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0741-0056-bd23-da09" type="min"/>
@@ -1208,13 +1195,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d318-d43c-9a93-a596" name="Re-Rolls" hidden="false" collective="false">
+        <selectionEntryGroup id="d318-d43c-9a93-a596" name="Re-Rolls" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1705-ca02-f3e7-e0e2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ae-0858-c9b2-b990" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1bd0-e3ea-f5a6-def7" name="Three Re-Rolls" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1bd0-e3ea-f5a6-def7" name="Three Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4139-27fe-a0b5-5120" type="max"/>
               </constraints>
@@ -1222,7 +1209,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="42df-fbb9-f061-a05c" name="Two Re-Rolls" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="42df-fbb9-f061-a05c" name="Two Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1563-6661-1d43-95b0" type="max"/>
               </constraints>
@@ -1237,7 +1224,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6b7b-971b-3200-45d5" name="Shadow Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1248,7 +1235,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="2811-9256-511e-f47a" name="Shadow Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1270,12 +1256,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="bd28-8fac-6036-ec5e" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ba2a-384a-050b-1d70" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="ba2a-384a-050b-1d70" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aad-bd8c-dee4-e88f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e0d9-1cbf-e785-e8b5" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e0d9-1cbf-e785-e8b5" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dc9-dfd2-b01d-e1b4" type="max"/>
               </constraints>
@@ -1290,7 +1276,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bedc-9574-6b86-22e2" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bedc-9574-6b86-22e2" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a76f-46eb-0a95-2c31" type="max"/>
               </constraints>
@@ -1310,7 +1296,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8991-a9bc-6794-8352" name="Shadowhunter " page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8991-a9bc-6794-8352" name="Shadowhunter " page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ee81-07c2-6acd-7de8" name="Shadowhunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1321,7 +1307,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1334,13 +1319,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="fd5f-da68-0916-6012" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="74d9-ab11-57c7-200b" name="Prow Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="74d9-ab11-57c7-200b" name="Prow Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fff-c956-db29-affe" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6672-c1db-7294-7ace" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="62f8-45e9-dfdf-c6ac" name="Prow Weapons Battery" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="62f8-45e9-dfdf-c6ac" name="Prow Weapons Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f28-091f-f723-868c" type="max"/>
               </constraints>
@@ -1357,7 +1342,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1551-6c29-abff-4499" name="Prow Phantom Lance" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1551-6c29-abff-4499" name="Prow Phantom Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc84-6648-4f94-da43" type="max"/>
               </constraints>
@@ -1381,7 +1366,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="b3939b81--pubN65947" page="52" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="b3939b81--pubN65947" page="52" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6e1d-6a53-8400-4180" name="Solaris Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1392,7 +1377,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofield</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="1276-1657-3df5-9bfa" name="Solaris Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1407,12 +1391,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="1715-64fc-1855-a513" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7d6f-c3ec-f68d-9d00" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="7d6f-c3ec-f68d-9d00" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c53-84fc-db2d-73d5" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b56f-058d-e20c-8904" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b56f-058d-e20c-8904" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="919a-5fa5-e745-33a9" type="max"/>
               </constraints>
@@ -1427,7 +1411,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0b76-5d1c-0ff2-bf33" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0b76-5d1c-0ff2-bf33" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98be-f6bc-a50a-575b" type="max"/>
               </constraints>
@@ -1447,7 +1431,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1458,7 +1442,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
         <profile id="d124-3ab0-77c3-91fd" name="Void Stalker Keel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1468,14 +1451,14 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="98fd-62e9-1e38-c2ef" name="Void Stalker Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="98fd-62e9-1e38-c2ef" name="Void Stalker Prow L Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left</characteristic>
           </characteristics>
         </profile>
-        <profile id="3176-7c28-c179-0136" name="Void Stalker Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="3176-7c28-c179-0136" name="Void Stalker Prow R Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -1487,12 +1470,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="4f12-9a2c-fbbf-fc4a" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d6bd-ff98-9c47-3ca8" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="d6bd-ff98-9c47-3ca8" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba4b-43fd-3563-0822" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f881-ae2b-2ad6-e02e" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f881-ae2b-2ad6-e02e" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2288-e39d-88ac-ab2a" type="max"/>
               </constraints>
@@ -1507,7 +1490,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2c4f-b7b4-3ad6-7bcc" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2c4f-b7b4-3ad6-7bcc" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8c4-b668-a5cd-1a3d" type="max"/>
               </constraints>
@@ -1522,13 +1505,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6f1d-1404-df9f-99e4" name="Prow Weapons Option" hidden="false" collective="false">
+        <selectionEntryGroup id="6f1d-1404-df9f-99e4" name="Prow Weapons Option" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a84-2f9e-a31c-2c0f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a24-f9b2-83cd-88bc" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1de1-af36-fb3a-2f35" name="Keel Launch Bay" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1de1-af36-fb3a-2f35" name="Keel Launch Bay" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7a-1be6-5a47-ef65" type="max"/>
               </constraints>
@@ -1553,7 +1536,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7ba4-0fc3-fc9c-f57e" name="Keel Torpedoes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7ba4-0fc3-fc9c-f57e" name="Keel Torpedoes" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c89b-f805-9331-7d11" type="max"/>
               </constraints>
@@ -1577,7 +1560,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4fa-8dc5-340f-f3ea" name="Wraithship" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="b4fa-8dc5-340f-f3ea" name="Wraithship" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ef76-f9d8-8ec5-b313" name="Wraithship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1588,7 +1571,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1596,13 +1578,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <categoryLink id="9903-50dc-c0b9-3252" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4243-8eb8-3ce4-7f1b" name="Prow Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="4243-8eb8-3ce4-7f1b" name="Prow Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2025-ef21-08ce-4fc2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9503-d405-89b6-e9cf" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="86be-4b38-3155-4fb5" name="Prow Weapons Battery" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="86be-4b38-3155-4fb5" name="Prow Weapons Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a36c-6476-fe1d-ca82" type="max"/>
               </constraints>
@@ -1619,7 +1601,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e327-3c79-3ad8-3e9b" name="Prow Pulsar Lance" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e327-3c79-3ad8-3e9b" name="Prow Pulsar Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4395-a013-3bf7-f355" type="max"/>
               </constraints>
@@ -1638,13 +1620,13 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1296-1936-bb2f-82ca" name="Keel Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="1296-1936-bb2f-82ca" name="Keel Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2650-9ed8-aad4-83e8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2b4-6481-a335-7c60" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0eef-99ce-61c3-619a" name="Keel Launch Bay" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0eef-99ce-61c3-619a" name="Keel Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a15-cef2-f786-0dee" type="max"/>
               </constraints>
@@ -1669,7 +1651,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="db63-f71e-4d0e-662f" name="Keel Torpedos" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="db63-f71e-4d0e-662f" name="Keel Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4884-e2c1-ac1a-0d25" type="max"/>
               </constraints>
@@ -1688,12 +1670,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4bdc-e792-32e7-5919" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="4bdc-e792-32e7-5919" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="030e-72e5-fec1-4787" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="fb85-4da9-82ba-f6ef" name="Aspect Warriors" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fb85-4da9-82ba-f6ef" name="Aspect Warriors" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18bd-1710-8c62-75de" type="max"/>
               </constraints>
@@ -1708,7 +1690,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="43c9-2de7-e49e-bdaa" name="Ghostship" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="43c9-2de7-e49e-bdaa" name="Ghostship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7156-0cf9-1604-9ef0" type="max"/>
               </constraints>

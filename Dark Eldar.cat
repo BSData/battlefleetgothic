@@ -1,315 +1,621 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="5" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <publications>
-    <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
-  </publications>
-  <selectionEntries>
-    <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="false" collective="false" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="e63a-d405-3774-2638" name="Dread Archon" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (to a max of 10)</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="56c3-3f26-420a-cd01" name="Dread Archon" hidden="false">
-          <description>You may include 1 Dread Archon in your fleet, who must be assigned to a ship and adds +2 to its Leadership, to a maximum of 10. If the fleet is worth over 750 points, a Dread Archon must be included to lead it.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="8c9bde99-eedf-4503-84af-ff75ae33b222-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="3d881d86-4334-43b9-97ba-f7a2809bfd7b" name="Fleet Commander Re-rolls" hidden="false" collective="false" defaultSelectionEntryId="bb532834-4016-4588-bdcf-0c007625e4d9">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bb532834-4016-4588-bdcf-0c007625e4d9" name="2 Extra Re-rolls" page="0" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e5fcc617-e09a-4ea3-b058-7f2bde4e49c2" name="1 Extra Re-roll" page="0" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="78f31ff4-6476-4819-b9d9-2cae392912b0" name="3 Extra Re-rolls" page="0" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
+<?xml version="1.0" encoding="UTF-8"?><catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" battleScribeVersion="2.03" id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="5" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="1">
+      
+    <publications>
+            
+        <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
+          
+    </publications>
+      
+    <selectionEntries>
+            
+        <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="false" collective="false" type="unit">
+                  
+            <constraints>
+                        
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+                      
+            </constraints>
+                  
+            <profiles>
+                        
+                <profile id="e63a-d405-3774-2638" name="Dread Archon" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+                              
+                    <characteristics>
+                                    
+                        <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (to a max of 10)</characteristic>
+                                    
+                        <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
+                                    
+                        <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+                                  
+                    </characteristics>
+                            
+                </profile>
+                      
+            </profiles>
+                  
+            <rules>
+                        
+                <rule id="56c3-3f26-420a-cd01" name="Dread Archon" hidden="false">
+                              
+                    <description>You may include 1 Dread Archon in your fleet, who must be assigned to a ship and adds +2 to its Leadership, to a maximum of 10. If the fleet is worth over 750 points, a Dread Archon must be included to lead it.</description>
+                            
+                </rule>
+                      
+            </rules>
+                  
+            <categoryLinks>
+                        
+                <categoryLink id="8c9bde99-eedf-4503-84af-ff75ae33b222-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+                      
+            </categoryLinks>
+                  
+            <selectionEntryGroups>
+                        
+                <selectionEntryGroup id="3d881d86-4334-43b9-97ba-f7a2809bfd7b" name="Fleet Commander Re-rolls" hidden="false" collective="false" defaultSelectionEntryId="bb532834-4016-4588-bdcf-0c007625e4d9">
+                              
+                    <constraints>
+                                    
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                                  
+                    </constraints>
+                              
+                    <selectionEntries>
+                                    
+                        <selectionEntry id="bb532834-4016-4588-bdcf-0c007625e4d9" name="2 Extra Re-rolls" page="0" hidden="false" collective="false" type="upgrade">
+                                          
+                            <constraints>
+                                                
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                                              
+                            </constraints>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="50.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="e5fcc617-e09a-4ea3-b058-7f2bde4e49c2" name="1 Extra Re-roll" page="0" hidden="false" collective="false" type="upgrade">
+                                          
+                            <constraints>
+                                                
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                                              
+                            </constraints>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="25.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="78f31ff4-6476-4819-b9d9-2cae392912b0" name="3 Extra Re-rolls" page="0" hidden="false" collective="false" type="upgrade">
+                                          
+                            <constraints>
+                                                
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                                              
+                            </constraints>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="100.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                  
+                    </selectionEntries>
+                            
+                </selectionEntryGroup>
+                      
+            </selectionEntryGroups>
+                  
+            <costs>
+                        
                 <cost name="pts" typeId="points" value="100.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="acf8-df63-ef72-a10b" name="Torture Class Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="8591-5661-ad9e-eefa" name="Torture Class Cruiser Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4229-c3d7-3ea4-1602" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be82-41c4-09e6-b129" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="a210-6c7d-8f46-f5eb" name="Mimic Engines" hidden="false">
-              <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
+                      
+            </costs>
+                
+        </selectionEntry>
+            
+        <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="false" collective="false" type="upgrade">
+                  
+            <profiles>
+                        
+                <profile id="acf8-df63-ef72-a10b" name="Torture Class Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                              
+                    <characteristics>
+                                    
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+                                    
+                        <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+                                    
+                        <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+                                    
+                        <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                                    
+                        <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
+                                    
+                        <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                                    
+                        <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+                                    
+                        <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+                                  
+                    </characteristics>
+                            
+                </profile>
+                        
+                <profile id="8591-5661-ad9e-eefa" name="Torture Class Cruiser Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                              
+                    <characteristics>
+                                    
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                    
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+                                    
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                  
+                    </characteristics>
+                            
+                </profile>
+                      
+            </profiles>
+                  
+            <categoryLinks>
+                        
+                <categoryLink id="4229-c3d7-3ea4-1602" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+                      
+            </categoryLinks>
+                  
+            <selectionEntries>
+                        
+                <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
+                              
+                    <constraints>
+                                    
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be82-41c4-09e6-b129" type="max"/>
+                                  
+                    </constraints>
+                              
+                    <rules>
+                                    
+                        <rule id="a210-6c7d-8f46-f5eb" name="Mimic Engines" hidden="false">
+                                          
+                            <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
 
 In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy at the start of the game (after making its extra move) it may NOT be targeted by enemy ships at all during the first turn of the game, until it itself has attacked another vessel. In the second and subsequent turns it is assumed that the exchange of information between vessels in the opposing fleet will uncover the impostors, meaning the Dark Eldar can be targeted normally.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e578-c839-e7a4-e5d2" name="Upgrades" hidden="false" collective="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f753-9a88-e13b-cab1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0b0b-186f-9788-8660" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="2318-cfb6-0b47-c83a" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="49d4-b991-fd44-746b" name="Prow Torpedo Tubes" hidden="false">
-                  <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0818-a0b2-d980-5be4" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="26c2-e322-fc14-0a75" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="58df-f334-2f59-769f" name="Impaler" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="07d1-ea41-a91c-87d9" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="f809-411f-cdaa-f5c8" name="Impaler" hidden="false">
-                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c322-4b32-f4c2-74b3" name="Launch Bays" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="4e92-7c2b-02df-be8b" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm Bombers: 20cm Boats: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0413-4c1e-2277-13a0" name="Launch Bays" hidden="false">
-                  <description>Ships with launch bays may launch any mix of Raptor fighters, Razorwing bombers and Slavebringer assault boats.
+                                        
+                        </rule>
+                                  
+                    </rules>
+                              
+                    <costs>
+                                    
+                        <cost name="pts" typeId="points" value="40.0"/>
+                                  
+                    </costs>
+                            
+                </selectionEntry>
+                      
+            </selectionEntries>
+                  
+            <selectionEntryGroups>
+                        
+                <selectionEntryGroup id="e578-c839-e7a4-e5d2" name="Upgrades" hidden="false" collective="false">
+                              
+                    <constraints>
+                                    
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f753-9a88-e13b-cab1" type="max"/>
+                                  
+                    </constraints>
+                              
+                    <selectionEntries>
+                                    
+                        <selectionEntry id="0b0b-186f-9788-8660" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="2318-cfb6-0b47-c83a" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <rules>
+                                                
+                                <rule id="49d4-b991-fd44-746b" name="Prow Torpedo Tubes" hidden="false">
+                                                      
+                                    <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
+                                                    
+                                </rule>
+                                              
+                            </rules>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="20.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="0818-a0b2-d980-5be4" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="26c2-e322-fc14-0a75" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="20.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="58df-f334-2f59-769f" name="Impaler" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="07d1-ea41-a91c-87d9" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <rules>
+                                                
+                                <rule id="f809-411f-cdaa-f5c8" name="Impaler" hidden="false">
+                                                      
+                                    <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
+                                                    
+                                </rule>
+                                              
+                            </rules>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="20.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="c322-4b32-f4c2-74b3" name="Launch Bays" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="4e92-7c2b-02df-be8b" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm Bombers: 20cm Boats: 30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <rules>
+                                                
+                                <rule id="0413-4c1e-2277-13a0" name="Launch Bays" hidden="false">
+                                                      
+                                    <description>Ships with launch bays may launch any mix of Raptor fighters, Razorwing bombers and Slavebringer assault boats.
 
 Raptor fighters have a speed of 30cm and need a 4+ to remain in play after removing ordnance as with Eldar fighters. Razorwing bombers have a speed of 20cm and are hit by turrets only on a D6 roll of 6. Slavebringer assault boats have a speed of 30cm and are hit by turrets only on a D6 roll of 6.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="210.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e568-dbba-5998-d72f" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="d7ac-5190-4a58-02a7" name="Corsair Class Escort Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">40cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="1e2b-738c-9ccc-22da" name="Corsair Class Escort Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="d0d2-cb69-7132-44cc" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ba39-e419-ad8a-c058" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da73-efd0-33eb-b0fe" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="fc29-f757-fccc-ce3d" name="Mimic Engines" hidden="false">
-              <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
+                                                    
+                                </rule>
+                                              
+                            </rules>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="40.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                  
+                    </selectionEntries>
+                            
+                </selectionEntryGroup>
+                      
+            </selectionEntryGroups>
+                  
+            <costs>
+                        
+                <cost name="pts" typeId="points" value="210.0"/>
+                      
+            </costs>
+                
+        </selectionEntry>
+            
+        <selectionEntry id="e568-dbba-5998-d72f" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" type="upgrade">
+                  
+            <profiles>
+                        
+                <profile id="d7ac-5190-4a58-02a7" name="Corsair Class Escort Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                              
+                    <characteristics>
+                                    
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                                    
+                        <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                                    
+                        <characteristic name="Speed" typeId="537065656423232344415441232323">40cm</characteristic>
+                                    
+                        <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                                    
+                        <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
+                                    
+                        <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+                                    
+                        <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+                                    
+                        <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+                                  
+                    </characteristics>
+                            
+                </profile>
+                        
+                <profile id="1e2b-738c-9ccc-22da" name="Corsair Class Escort Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                              
+                    <characteristics>
+                                    
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                    
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                                    
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                  
+                    </characteristics>
+                            
+                </profile>
+                      
+            </profiles>
+                  
+            <categoryLinks>
+                        
+                <categoryLink id="d0d2-cb69-7132-44cc" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+                      
+            </categoryLinks>
+                  
+            <selectionEntries>
+                        
+                <selectionEntry id="ba39-e419-ad8a-c058" name="Mimic Engines" hidden="false" collective="false" type="upgrade">
+                              
+                    <constraints>
+                                    
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da73-efd0-33eb-b0fe" type="max"/>
+                                  
+                    </constraints>
+                              
+                    <rules>
+                                    
+                        <rule id="fc29-f757-fccc-ce3d" name="Mimic Engines" hidden="false">
+                                          
+                            <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
 
 In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy at the start of the game (after making its extra move) it may NOT be targeted by enemy ships at all during the first turn of the game, until it itself has attacked another vessel. In the second and subsequent turns it is assumed that the exchange of information between vessels in the opposing fleet will uncover the impostors, meaning the Dark Eldar can be targeted normally.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
+                                        
+                        </rule>
+                                  
+                    </rules>
+                              
+                    <costs>
+                                    
+                        <cost name="pts" typeId="points" value="20.0"/>
+                                  
+                    </costs>
+                            
+                </selectionEntry>
+                      
+            </selectionEntries>
+                  
+            <selectionEntryGroups>
+                        
+                <selectionEntryGroup id="4a8c-940b-6b8d-5509" name="Upgrades" hidden="false" collective="false">
+                              
+                    <constraints>
+                                    
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456e-4287-29e9-58be" type="max"/>
+                                  
+                    </constraints>
+                              
+                    <selectionEntries>
+                                    
+                        <selectionEntry id="308d-06b4-3fda-98d2" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="0cf2-42d0-9c0b-9ced" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <rules>
+                                                
+                                <rule id="f860-6279-00c7-8bf8" name="Prow Torpedo Tubes" hidden="false">
+                                                      
+                                    <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
+                                                    
+                                </rule>
+                                              
+                            </rules>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="0.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="1ef3-56fe-c12a-e36a" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="ab17-37ff-0aef-c911" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="0.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="e968-a214-b7cb-f814" name="Impaler" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="8527-1136-ad97-87cf" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <rules>
+                                                
+                                <rule id="fbbc-def6-ccbb-eac8" name="Impaler" hidden="false">
+                                                      
+                                    <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
+                                                    
+                                </rule>
+                                              
+                            </rules>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="20.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                    
+                        <selectionEntry id="a196-03f1-b96a-d48f" name="Prow Weapons Batteries" hidden="false" collective="false" type="upgrade">
+                                          
+                            <profiles>
+                                                
+                                <profile id="7baa-aa74-2bf6-4c50" name="Prow Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                                                      
+                                    <characteristics>
+                                                            
+                                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                                                            
+                                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                                                            
+                                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                                                          
+                                    </characteristics>
+                                                    
+                                </profile>
+                                              
+                            </profiles>
+                                          
+                            <costs>
+                                                
+                                <cost name="pts" typeId="points" value="0.0"/>
+                                              
+                            </costs>
+                                        
+                        </selectionEntry>
+                                  
+                    </selectionEntries>
+                            
+                </selectionEntryGroup>
+                      
+            </selectionEntryGroups>
+                  
+            <costs>
+                        
+                <cost name="pts" typeId="points" value="50.0"/>
+                      
+            </costs>
+                
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4a8c-940b-6b8d-5509" name="Upgrades" hidden="false" collective="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456e-4287-29e9-58be" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="308d-06b4-3fda-98d2" name="Prow Torpedo Tubes" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="0cf2-42d0-9c0b-9ced" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="f860-6279-00c7-8bf8" name="Prow Torpedo Tubes" hidden="false">
-                  <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1ef3-56fe-c12a-e36a" name="Prow Phantom Lance" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="ab17-37ff-0aef-c911" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e968-a214-b7cb-f814" name="Impaler" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="8527-1136-ad97-87cf" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="fbbc-def6-ccbb-eac8" name="Impaler" hidden="false">
-                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a196-03f1-b96a-d48f" name="Prow Weapons Batteries" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="7baa-aa74-2bf6-4c50" name="Prow Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+          
+    </selectionEntries>
+    
 </catalogue>

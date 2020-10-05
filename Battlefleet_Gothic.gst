@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="27" battleScribeVersion="2.02" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="29" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="5766-7751-d146-0800" name="2010 Compendium"/>
     <publication id="789d-522c-ea2d-cbca" name="2010 FAQ"/>
@@ -19,7 +19,7 @@
     <publication id="137d-dbad-5653-19f2" name="Unofficial"/>
   </publications>
   <costTypes>
-    <costType id="points" name="pts" defaultCostLimit="0.0"/>
+    <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="556e697423232344415441232323" name="Unit">
@@ -110,7 +110,7 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="3a5f-2343-ba02-7c44" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" type="unit">
+    <selectionEntry id="3a5f-2343-ba02-7c44" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b122-b1bc-c40d-23eb" type="max"/>
       </constraints>
@@ -118,7 +118,7 @@
         <categoryLink id="623a-f321-565a-4c07" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1cbe-5118-2e2d-f1f8" name="Defence Monitor" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" type="unit">
+        <selectionEntry id="1cbe-5118-2e2d-f1f8" name="Defence Monitor" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="b642-3742-b4f2-c743" name="Defence Monitor" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -154,7 +154,7 @@
             <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7cec-c646-6179-df4d" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" type="unit">
+        <selectionEntry id="7cec-c646-6179-df4d" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="699f-9eea-d62d-79e2" name="Fire Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -181,7 +181,7 @@
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed9e-33db-77e8-0e1e" name="Minefields" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" type="unit">
+        <selectionEntry id="ed9e-33db-77e8-0e1e" name="Minefields" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="0f67-c9e9-473e-48a6" name="Minefields" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
               <characteristics>
@@ -198,7 +198,7 @@
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="005a-887c-34b7-c814" name="Orbital Defence Laser Platform" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" type="unit">
+        <selectionEntry id="005a-887c-34b7-c814" name="Orbital Defence Laser Platform" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="a017-1427-b7f1-73ce" name="Orbital Defence Laser Platform" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -227,7 +227,7 @@
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8b5c-728e-c969-5968" name="Orbital Dock" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" type="unit">
+        <selectionEntry id="8b5c-728e-c969-5968" name="Orbital Dock" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="8600-c7b7-5664-63d6" name="Orbital Dock" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -268,7 +268,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="90.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6e86-b8d2-3820-a657" name="Orbital Mine" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" type="unit">
+        <selectionEntry id="6e86-b8d2-3820-a657" name="Orbital Mine" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="ffda-6219-d4b1-912c" name="Orbital Mine" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
               <characteristics>
@@ -284,7 +284,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="784a-1b1d-4c15-5acc" name="Orbital Torpedo Launcher" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" type="unit">
+        <selectionEntry id="784a-1b1d-4c15-5acc" name="Orbital Torpedo Launcher" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="5591-5226-1b9f-1f40" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -316,7 +316,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0ba3-733a-de47-6c98" name="Orbital Weapons Platform" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" type="unit">
+        <selectionEntry id="0ba3-733a-de47-6c98" name="Orbital Weapons Platform" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="0d70-890e-ccca-5667" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -345,7 +345,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ceab-ad69-da38-93e9" name="Space Station" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" type="unit">
+        <selectionEntry id="ceab-ad69-da38-93e9" name="Space Station" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="ab04-7a5f-f5ac-0c6c" name="Space Station" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -398,7 +398,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a459-577d-54a9-4b64" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" type="unit">
+    <selectionEntry id="a459-577d-54a9-4b64" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eda-100b-86df-b27e" type="max"/>
       </constraints>
@@ -406,7 +406,7 @@ Bombers: 20cm</characteristic>
         <categoryLink id="9ecf-c03c-66de-9e48" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="abe4-4598-183b-064a" name="Defence Laser Silo" publicationId="11f0-17d1-e4d2-1018" page="145" hidden="false" collective="false" type="unit">
+        <selectionEntry id="abe4-4598-183b-064a" name="Defence Laser Silo" publicationId="11f0-17d1-e4d2-1018" page="145" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="1ccd-bf89-76af-0676" name="Defence Laser Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -435,7 +435,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8163-67b4-245b-03b7" name="Missile Silo" hidden="false" collective="false" type="unit">
+        <selectionEntry id="8163-67b4-245b-03b7" name="Missile Silo" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="2725-1923-3e90-64bb" name="Missile Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -467,7 +467,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c62f-f3ca-9deb-4bde" name="Air Base" hidden="false" collective="false" type="unit">
+        <selectionEntry id="c62f-f3ca-9deb-4bde" name="Air Base" hidden="false" collective="false" import="true" type="unit">
           <profiles>
             <profile id="a77e-354b-1aca-97a0" name="Air Base" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <characteristics>
@@ -506,7 +506,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82cb-c81e-f648-b362" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" type="unit">
+    <selectionEntry id="82cb-c81e-f648-b362" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd1-e126-1171-a8b2" type="max"/>
       </constraints>
@@ -544,7 +544,7 @@ Usually used as objectives in missions.</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="990e-b7bc-a731-1965" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" type="unit">
+    <selectionEntry id="990e-b7bc-a731-1965" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bcd-fa23-20ac-fadd" type="max"/>
       </constraints>
@@ -599,7 +599,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="099b-f119-c753-012b" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" hidden="false" collective="false" type="unit">
+    <selectionEntry id="099b-f119-c753-012b" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d8-db5a-f964-a8db" type="max"/>
       </constraints>
@@ -680,13 +680,13 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="7726-178a-0ffc-95d0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="51a0-1f41-930e-1848" name="Xenotech Systems (roll a dice)" hidden="false" collective="false">
+        <selectionEntryGroup id="51a0-1f41-930e-1848" name="Xenotech Systems (roll a dice)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d865-c43a-7fe9-851d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eba-b4ff-f596-5555" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="acd6-c6dc-3376-b434" name="1 Long Range Sensors" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="acd6-c6dc-3376-b434" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46cc-2ca7-daf5-45f0" type="max"/>
               </constraints>
@@ -701,7 +701,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dd6b-bb5a-fe97-8d20" name="2 Targeting Matrix" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dd6b-bb5a-fe97-8d20" name="2 Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fc-9db5-2f16-ca4b" type="max"/>
               </constraints>
@@ -716,29 +716,29 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="98b8-e864-f81b-8b16" name="3 Advanced Shielding" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="98b8-e864-f81b-8b16" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4624-7019-bcba-fe58" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="06a2-82b8-fe4f-9793" name="Extra Shield" hidden="false" collective="false" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry"/>
+                <entryLink id="06a2-82b8-fe4f-9793" name="Extra Shield" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2ca4-72dd-4af7-c5e1" name="4 Ship Defence Grid" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2ca4-72dd-4af7-c5e1" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5231-5c13-1439-99f4" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="b3c6-08e8-a106-0990" name="Extra Turret" hidden="false" collective="false" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry"/>
+                <entryLink id="b3c6-08e8-a106-0990" name="Extra Turret" hidden="false" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b448-f53e-434b-4930" name="5 Advanced Drive Technology" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b448-f53e-434b-4930" name="5 Advanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff12-5aea-568d-8a61" type="max"/>
               </constraints>
@@ -746,7 +746,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1a94-72d1-1454-7683" name="6 Pick one at will" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1a94-72d1-1454-7683" name="6 Pick one at will" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1685-89b5-8c48-27c2" type="max"/>
               </constraints>
@@ -756,17 +756,12 @@ The alien raider will move and shoot at the start of each turn by the player who
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="857c-d836-e880-b759" name="Escorts" hidden="false" collective="false">
+        <selectionEntryGroup id="857c-d836-e880-b759" name="Escorts" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fec-f9fe-4b1e-d98c" type="max"/>
-            <constraint field="selections" scope="4573636f72747323232344415441232323" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07dd-7904-759c-b32d" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07dd-7904-759c-b32d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c934-071b-995f-8461" name="Xenos Vessel" hidden="false" collective="false" type="unit">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2267-887b-cf83-faf8" type="min"/>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d9b-4b20-a035-4aff" type="max"/>
-              </constraints>
+            <selectionEntry id="c934-071b-995f-8461" name="Xenos Vessel" hidden="false" collective="false" import="true" type="unit">
               <profiles>
                 <profile id="f3bb-1443-b579-bc3e" name="Xenos Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -801,11 +796,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="60.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="348f-0d5b-8dcb-3b9f" name="Armed Cargo vessel" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5483-285f-b29d-1981" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="339e-0d3c-7b9a-c69b" type="min"/>
-              </constraints>
+            <selectionEntry id="348f-0d5b-8dcb-3b9f" name="Armed Cargo vessel" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="4e05-e485-4a81-7fd7" name="Armed Cargo vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -833,11 +824,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fce9-80e5-3982-df72" name="Recommissioned VVessel" hidden="false" collective="false" type="unit">
-              <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ade-2519-9c92-4f01" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2e9-5b2c-a798-3e75" type="min"/>
-              </constraints>
+            <selectionEntry id="fce9-80e5-3982-df72" name="Recommissioned VVessel" hidden="false" collective="false" import="true" type="unit">
               <profiles>
                 <profile id="ee95-b476-599d-6fec" name="Recommissioned VVessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -876,13 +863,13 @@ The alien raider will move and shoot at the start of each turn by the player who
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c6af-7179-7f68-f289" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" targetId="31d2-20b8-38f3-6048" type="selectionEntryGroup"/>
+        <entryLink id="c6af-7179-7f68-f289" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true" targetId="31d2-20b8-38f3-6048" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="537b-16aa-4ed3-b5e4" name="Q-Ship" hidden="false" collective="false" type="unit">
+    <selectionEntry id="537b-16aa-4ed3-b5e4" name="Q-Ship" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d82b-0074-4b33-0107" name="Q-Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -922,7 +909,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb34-51b1-ed28-f9e6" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fb34-51b1-ed28-f9e6" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="021d-6e07-6b70-1a70" name="Armed Freighter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -955,7 +942,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eff-c2aa-f669-ecab" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5eff-c2aa-f669-ecab" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="8722-d7e9-eb5f-9d71" name="Heavy Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -999,7 +986,7 @@ The alien raider will move and shoot at the start of each turn by the player who
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" type="unit">
+    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="3165-ed3d-0db4-ef6b" name="Acheron Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1045,7 +1032,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="9397-6b1a-5630-44e0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a321-8743-8710-8421" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="a321-8743-8710-8421" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1059,7 +1046,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" type="unit">
+    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1899-7881-3f57-9944" name="Desolator Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1109,7 +1096,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="f9cb-16c6-9867-9ff6" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b749-4b03-2655-8f45" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="b749-4b03-2655-8f45" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1123,7 +1110,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" type="unit">
+    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ef77-d947-5997-b255" name="Despoiler Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1179,13 +1166,13 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="ad8c-6f4d-6292-9456" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d3d9-f168-7067-e18a" name="The Damnation&apos;s Fury" hidden="true" collective="false" defaultSelectionEntryId="2f01-0a6a-a967-2c94">
+        <selectionEntryGroup id="d3d9-f168-7067-e18a" name="The Damnation&apos;s Fury" hidden="true" collective="false" import="true" defaultSelectionEntryId="2f01-0a6a-a967-2c94">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bac-35ad-baa1-163d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e84-9040-6971-fc1e" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="216c-0220-9a42-c0ef" name="The Damnation&apos;s Fury" hidden="true" collective="false" type="unit">
+            <selectionEntry id="216c-0220-9a42-c0ef" name="The Damnation&apos;s Fury" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1212,7 +1199,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2f01-0a6a-a967-2c94" name="Regular Despoiler Class Battleship" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2f01-0a6a-a967-2c94" name="Regular Despoiler Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4570-222d-e99f-3e75" type="max"/>
               </constraints>
@@ -1233,7 +1220,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8897-3d1a-c12f-e2a9" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="8897-3d1a-c12f-e2a9" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1242,7 +1229,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="7709-b1a5-ef1b-f80d" name="Chaos Ordnance" hidden="true" collective="false" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+        <entryLink id="7709-b1a5-ef1b-f80d" name="Chaos Ordnance" hidden="true" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1251,7 +1238,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="d9c2-822a-33fe-d924" name="Imperial Ordnance" hidden="true" collective="false" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
+        <entryLink id="d9c2-822a-33fe-d924" name="Imperial Ordnance" hidden="true" collective="false" import="true" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1265,7 +1252,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="39" hidden="true" collective="false" type="unit">
+    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="39" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="16ab-2405-afa7-a25c" name="Executor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1311,7 +1298,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="65c9-599e-f524-3be8" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="480f-b0b4-45c2-34c6" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="480f-b0b4-45c2-34c6" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1325,7 +1312,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" type="unit">
+    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1538-6bb3-a468-160e" name="Hades Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1371,7 +1358,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="48dd-7ecc-c76a-064b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="40e6-9543-07ee-88b0" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="40e6-9543-07ee-88b0" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1385,7 +1372,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" type="unit">
+    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="e47f-3f54-c8fd-d5b0" name="Repulsive Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -1439,13 +1426,13 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="d97c-ef88-673d-deca" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="df80-2ba2-c282-1e68" name="The Bringer of Despair" hidden="true" collective="false" defaultSelectionEntryId="d66d-b108-1c64-d6ad">
+        <selectionEntryGroup id="df80-2ba2-c282-1e68" name="The Bringer of Despair" hidden="true" collective="false" import="true" defaultSelectionEntryId="d66d-b108-1c64-d6ad">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c592-1abf-6670-b5f7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d3-367c-84a1-fbfb" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2fc8-e66f-cc20-8eb1" name="The Bringer of Despair" hidden="true" collective="false" type="upgrade">
+            <selectionEntry id="2fc8-e66f-cc20-8eb1" name="The Bringer of Despair" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1469,7 +1456,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d66d-b108-1c64-d6ad" name="Regular Repulsive Class Grand Cruiser" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d66d-b108-1c64-d6ad" name="Regular Repulsive Class Grand Cruiser" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93ff-35bf-8718-2dae" type="max"/>
               </constraints>
@@ -1490,7 +1477,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="82fc-9bea-bd1e-8201" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="82fc-9bea-bd1e-8201" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1499,7 +1486,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="a2bd-54c3-8943-f44a" name="Extra Shield" hidden="false" collective="false" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry">
+        <entryLink id="a2bd-54c3-8943-f44a" name="Extra Shield" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry">
           <profiles>
             <profile id="ad17-31c9-3e7b-de02" name="Extra Shield" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
               <characteristics>
@@ -1513,7 +1500,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74b8-8c23-fc12-b300" name="Retaliator Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="38" hidden="true" collective="false" type="unit">
+    <selectionEntry id="74b8-8c23-fc12-b300" name="Retaliator Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="38" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="c364-5cd8-c328-8b65" name="Retaliator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1573,7 +1560,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="ee7f-83a4-2ca8-47c9" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="25f4-784b-0312-36db" name="Foebane" page="0" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="25f4-784b-0312-36db" name="Foebane" page="0" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1593,7 +1580,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="258e-2224-16af-1642" name="Type" hidden="false" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="258e-2224-16af-1642" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1602,7 +1589,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="20e9-7609-121f-4bc5" name="Chaos Ordnance" hidden="false" collective="false" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+        <entryLink id="20e9-7609-121f-4bc5" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1611,7 +1598,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="ce0e-4037-87ac-0826" name="Imperial Ordnance" hidden="false" collective="false" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
+        <entryLink id="ce0e-4037-87ac-0826" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1625,7 +1612,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="23" hidden="true" collective="false" type="unit">
+    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="23" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="504d-e1fd-de85-2bf6" name="Styx Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1671,7 +1658,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="5844-c1a8-3898-4b8c" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3337-e00e-dbd7-ed34" name="Chaos Ordnance" hidden="false" collective="false" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+        <entryLink id="3337-e00e-dbd7-ed34" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1680,20 +1667,11 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="86c0-1210-7f74-7a71" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="86c0-1210-7f74-7a71" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="218c-b43d-bbd2-5c6f" name="Imperial Ordnance" hidden="true" collective="false" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1703,7 +1681,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" type="unit">
+    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="41ef-f4f6-9d66-f030" name="Vengance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1754,7 +1732,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="a799-fab9-46ca-2e50" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c4da-cdf2-005b-ac1f" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="c4da-cdf2-005b-ac1f" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1768,7 +1746,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e59-320c-8ea6-e4e6" name="Extra Shield" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6e59-320c-8ea6-e4e6" name="Extra Shield" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3e-9e2f-c58b-adc4" type="max"/>
       </constraints>
@@ -1776,7 +1754,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3dc9-0fe5-4b33-660e" name="Extra Turret" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3dc9-0fe5-4b33-660e" name="Extra Turret" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea7-0a25-646f-24cc" type="max"/>
       </constraints>
@@ -1784,7 +1762,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="8442-aa7f-a96d-22fa" page="46" hidden="true" collective="false" type="unit">
+    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="8442-aa7f-a96d-22fa" page="46" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="07c4-1d13-8ba0-c2c5" name="Battle Barge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1843,7 +1821,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="fbd4-82ba-dbc7-4f8f" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="91ad-ecd8-2f50-0ece" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="91ad-ecd8-2f50-0ece" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1852,7 +1830,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="8e91-b0e3-06a4-abbb" name="Chaos Ordnance" hidden="true" collective="false" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+        <entryLink id="8e91-b0e3-06a4-abbb" name="Chaos Ordnance" hidden="true" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1866,7 +1844,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="8442-aa7f-a96d-22fa" page="47" hidden="true" collective="false" type="unit">
+    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="8442-aa7f-a96d-22fa" page="47" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ec97-0741-cd8d-4569" name="Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1909,13 +1887,13 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="5c7a-de91-5184-e2ed" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1aff-7d41-c821-81b4" name="Prow Weapon Options" hidden="false" collective="false">
+        <selectionEntryGroup id="1aff-7d41-c821-81b4" name="Prow Weapon Options" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-9f6d-999f-2bee" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d226-a2af-d928-72f2" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a46b-8243-4e26-9857" name="Torpedo Tubes" hidden="true" collective="false" type="upgrade">
+            <selectionEntry id="a46b-8243-4e26-9857" name="Torpedo Tubes" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1942,7 +1920,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4573-3868-03bc-eb18" name="Launch Bays" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4573-3868-03bc-eb18" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a9-03a2-ded5-d5ee" type="max"/>
               </constraints>
@@ -1956,7 +1934,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="94f1-3785-511b-87b9" name="Chaos Ordnance" hidden="true" collective="false" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+                <entryLink id="94f1-3785-511b-87b9" name="Chaos Ordnance" hidden="true" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1974,7 +1952,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="01ce-35ca-d5a1-bd67" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="01ce-35ca-d5a1-bd67" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1988,7 +1966,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="8442-aa7f-a96d-22fa" page="15" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="8442-aa7f-a96d-22fa" page="15" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af48-9fe4-e367-95e4" type="max"/>
       </constraints>
@@ -2040,7 +2018,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <categoryLink id="8648-42b9-1dee-c7c6" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8e3c-6844-2493-1f39" name="Type" hidden="true" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="8e3c-6844-2493-1f39" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2054,7 +2032,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="265.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5818-1ad2-67a6-ede8" name="Space Marine Crew" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5818-1ad2-67a6-ede8" name="Space Marine Crew" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="539c-ee6a-940d-4db2" type="max"/>
       </constraints>
@@ -2081,7 +2059,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75d0-9ec2-c137-894e" name="Long Serpent Battle Cruiser" hidden="true" collective="false" type="unit">
+    <selectionEntry id="75d0-9ec2-c137-894e" name="Long Serpent Battle Cruiser" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="9c93-66a3-68bb-7905" name="Long Serpent Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2144,7 +2122,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d8c6-6423-4acf-949f" name="Escort Carriers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="d8c6-6423-4acf-949f" name="Escort Carriers" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="9416-d570-3ad7-452e" name="Escort Carriers Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2202,7 +2180,7 @@ Bombers: 20cm</characteristic>
         <categoryLink id="a09e-8875-63fa-69de" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="bb9f-1eef-0f92-8d88" name="Shark Assault Boats" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="bb9f-1eef-0f92-8d88" name="Shark Assault Boats" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3549-c23f-ae87-8938" type="max"/>
           </constraints>
@@ -2220,7 +2198,7 @@ Bombers: 20cm</characteristic>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="2d3e-6486-b943-7e81" name="Chaos Ordnance" hidden="false" collective="false" defaultSelectionEntryId="d861-8ef6-b74d-d36b">
+    <selectionEntryGroup id="2d3e-6486-b943-7e81" name="Chaos Ordnance" hidden="false" collective="false" import="true" defaultSelectionEntryId="d861-8ef6-b74d-d36b">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2236,7 +2214,7 @@ Bombers: 20cm</characteristic>
         <categoryLink id="4f13-3e16-45e7-eed0" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d861-8ef6-b74d-d36b" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d861-8ef6-b74d-d36b" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0dc-b83c-8644-0754" type="max"/>
           </constraints>
@@ -2252,7 +2230,7 @@ Bombers: 20cm</characteristic>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f39f-fcdc-38ce-2a60" name="Thunderhawk Gunship" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f39f-fcdc-38ce-2a60" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab8-e811-ca60-bdf4" type="max"/>
           </constraints>
@@ -2268,7 +2246,7 @@ Bombers: 20cm</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Type" hidden="false" collective="false" defaultSelectionEntryId="d921-687f-019e-c39a">
+    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="d921-687f-019e-c39a">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2281,12 +2259,12 @@ Bombers: 20cm</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e36b-1a23-db7a-9cc5" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="d921-687f-019e-c39a" name="Normal" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d921-687f-019e-c39a" name="Normal" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87eb-5471-79f2-0bd2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f4ad-ea85-21d2-c668" name="Chaos Lord" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f4ad-ea85-21d2-c668" name="Chaos Lord" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9e8-6520-6874-cfd9" type="max"/>
               </constraints>
@@ -2307,7 +2285,7 @@ Bombers: 20cm</characteristic>
                 </profile>
               </profiles>
               <selectionEntries>
-                <selectionEntry id="269f-926a-5307-1794" name="Re-roll" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="269f-926a-5307-1794" name="Re-roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf5e-1f01-e63d-d4af" type="max"/>
                   </constraints>
@@ -2317,13 +2295,13 @@ Bombers: 20cm</characteristic>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="62a6-dbcf-ef85-17a9" name="Mark" hidden="false" collective="false" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
+                <entryLink id="62a6-dbcf-ef85-17a9" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2526-6ec4-cb35-c5db" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2526-6ec4-cb35-c5db" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7db3-1f5a-39a1-5d49" type="max"/>
               </constraints>
@@ -2346,7 +2324,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
                 </profile>
               </profiles>
               <selectionEntries>
-                <selectionEntry id="6f92-63df-32dd-1422" name="Terminators" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="6f92-63df-32dd-1422" name="Terminators" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0a7-35e0-8873-866c" type="max"/>
                   </constraints>
@@ -2363,7 +2341,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="c3f3-c246-9369-5bd2" name="Mark" hidden="false" collective="false" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
+                <entryLink id="c3f3-c246-9369-5bd2" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -2374,7 +2352,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bf01-1bfe-40c8-ffa4" name="Daemon" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bf01-1bfe-40c8-ffa4" name="Daemon" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -2405,7 +2383,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="1a51-7edc-d919-7ae4" name="Mark" hidden="false" collective="false" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
+            <entryLink id="1a51-7edc-d919-7ae4" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -2413,12 +2391,12 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="82ec-1ae8-d1e4-4f75" name="Mark" hidden="false" collective="false">
+    <selectionEntryGroup id="82ec-1ae8-d1e4-4f75" name="Mark" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="219c-995b-0495-7fb5" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="302e-a713-5e64-035e" name="Mark of Nurgle" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="302e-a713-5e64-035e" name="Mark of Nurgle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="cdf7-7a8b-f0e4-8cfb" name="Mark of Nurgle" hidden="false" targetId="fd36-a8fe-9c06-f865" type="profile"/>
           </infoLinks>
@@ -2426,7 +2404,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3fa3-a3eb-eacb-721f" name="Mark of Tzeentch" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3fa3-a3eb-eacb-721f" name="Mark of Tzeentch" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="a3ae-9436-b2fa-9a44" name="Mark of Tzeentch" hidden="false" targetId="bb93-4330-8897-435d" type="profile"/>
           </infoLinks>
@@ -2434,7 +2412,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cfd6-7bfb-4f31-85dd" name="Mark of Khorne" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="cfd6-7bfb-4f31-85dd" name="Mark of Khorne" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="edaa-2a1b-b781-cc0c" name="Mark of Khorne" hidden="false" targetId="1936-e963-93d7-fdc3" type="profile"/>
           </infoLinks>
@@ -2442,7 +2420,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bd2b-fcf0-cba4-d9d8" name="Mark of Slaanesh" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bd2b-fcf0-cba4-d9d8" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="bb1d-47e4-5933-04e4" name="Mark of Slaanesh" hidden="false" targetId="850f-870b-e482-4ed3" type="profile"/>
           </infoLinks>
@@ -2450,7 +2428,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4980-f35d-aed5-0594" name="Mark of Chaos Undivided" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4980-f35d-aed5-0594" name="Mark of Chaos Undivided" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="e654-9e19-05a7-57f5" name="Mark of Chaos Undivided" hidden="false" targetId="c466-daa1-aff6-1f6f" type="profile"/>
           </infoLinks>
@@ -2460,7 +2438,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f785-b032-dacc-80a4" name="Thunderhawks" hidden="false" collective="false" defaultSelectionEntryId="2f6e-2def-6c85-9658">
+    <selectionEntryGroup id="f785-b032-dacc-80a4" name="Thunderhawks" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f6e-2def-6c85-9658">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2473,7 +2451,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d0-709b-1b3f-7f69" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2f6e-2def-6c85-9658" name="Thunderhawk Gunship" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2f6e-2def-6c85-9658" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2e-0af0-b878-077c" type="max"/>
           </constraints>
@@ -2484,7 +2462,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="db4a-351c-4859-469f" name="Thunderhawk Annihilator" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="db4a-351c-4859-469f" name="Thunderhawk Annihilator" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2507,7 +2485,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="fd00-ef5e-16d3-dacd" name="Imperial Ordnance" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" defaultSelectionEntryId="38f4-63fc-d988-cdbb">
+    <selectionEntryGroup id="fd00-ef5e-16d3-dacd" name="Imperial Ordnance" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" import="true" defaultSelectionEntryId="38f4-63fc-d988-cdbb">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2520,7 +2498,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fbb-bf11-b56b-6bd4" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="38f4-63fc-d988-cdbb" name="Fury Interceptors, Starhawk Bombers and Shark Assault Boats" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="38f4-63fc-d988-cdbb" name="Fury Interceptors, Starhawk Bombers and Shark Assault Boats" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1040-5d24-ecf6-79fc" type="max"/>
           </constraints>
@@ -2535,14 +2513,14 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="7f88-d2bd-cc8d-05d6" name="Thunderhawks" hidden="false" collective="false" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup">
+        <entryLink id="7f88-d2bd-cc8d-05d6" name="Thunderhawks" hidden="false" collective="false" import="true" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d3-1a74-57d2-7035" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2da3-6f87-b676-1862" name="Imperial Ordnance" hidden="false" collective="false" defaultSelectionEntryId="e56b-4aea-bc8f-93ee">
+    <selectionEntryGroup id="2da3-6f87-b676-1862" name="Imperial Ordnance" hidden="false" collective="false" import="true" defaultSelectionEntryId="e56b-4aea-bc8f-93ee">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2558,7 +2536,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         <categoryLink id="fe42-bedd-804f-e3f4" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters, Starhawk Bombers &amp; Shark Assault Craft" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters, Starhawk Bombers &amp; Shark Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16d9-a561-0fcd-d55d" type="max"/>
           </constraints>
@@ -2571,7 +2549,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <categoryLink id="45d1-ddeb-83b4-6832" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="1c70-3a96-fa3b-eeb0" name="Thunderhawks" hidden="false" collective="false" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup"/>
+            <entryLink id="1c70-3a96-fa3b-eeb0" name="Thunderhawks" hidden="false" collective="false" import="true" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2579,9 +2557,9 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="31d2-20b8-38f3-6048" name="Xenotech Systems (roll a D6)" hidden="false" collective="false">
+    <selectionEntryGroup id="31d2-20b8-38f3-6048" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="b113-0c8a-5840-d7e4" name="1 Long Range Sensors" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b113-0c8a-5840-d7e4" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75db-b090-ee09-53ed" type="max"/>
           </constraints>
@@ -2596,7 +2574,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0cff-976f-7464-1c27" name="2 Targetting Matrix" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0cff-976f-7464-1c27" name="2 Targetting Matrix" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f80-36fd-c397-e821" type="max"/>
           </constraints>
@@ -2611,7 +2589,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="49f0-95fd-c62a-15a5" name="3 Advanced Shielding" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="49f0-95fd-c62a-15a5" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a9-d0be-1ecc-f3fe" type="max"/>
           </constraints>
@@ -2626,7 +2604,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="723a-bb9b-2e6d-74fc" name="4 Ship Defence Grid" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="723a-bb9b-2e6d-74fc" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ab-9d2d-2bf0-bc56" type="max"/>
           </constraints>
@@ -2641,7 +2619,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="16d5-61e9-507d-6516" name="5 Adanced Drive Technology" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="16d5-61e9-507d-6516" name="5 Adanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84af-8843-7e20-576e" type="max"/>
           </constraints>
@@ -2656,7 +2634,7 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="89f1-a023-0e13-b61c" name="6 Pick one of the above" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="89f1-a023-0e13-b61c" name="6 Pick one of the above" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d317-979e-d77a-d9c9" type="max"/>
           </constraints>
