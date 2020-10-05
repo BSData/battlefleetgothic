@@ -954,31 +954,6 @@ Fighters: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="a82c6d18-a780-42c3-8573-ea9004db0495" name="Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="b6d6-db3c-5c1a-a81f" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
-Fighters: 20cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <selectionEntries>
-                    <selectionEntry id="d4e55065-9347-4be1-ae29-8587104ea566" name="Mega-Spore Mines" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="10.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
                     <profile id="2446-e6fe-0caf-a45d" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1000,6 +975,21 @@ Fighters: 20cm</characteristic>
                         <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
                         <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                         <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41af-8173-b893-6d4e" name="Launch Bay" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="120c-9335-f240-57ae" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
+Fighters: 20cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
