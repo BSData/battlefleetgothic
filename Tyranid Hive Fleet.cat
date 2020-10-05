@@ -719,6 +719,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="717f-434d-589b-35f4" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="2dc2-1850-13c5-9fce" name="Synaptic Control" hidden="false" targetId="5961-13c5-31f1-cd22" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="62cebb4c-9c2b-408f-98e1-81b27552b625-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1402,6 +1403,36 @@ Feeder Tentacles: May not be used.
 Massive claws: May not be used.
 Torpedoes &amp; Attack Craft: None may be launched</description>
     </rule>
+    <rule id="0336-3c21-0ec5-ba5c" name="Tyranid Boarding" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+      <description>Tyranids always count double their boarding value, plus they roll 2D6 and use the highest
+result in boarding actions. Tyranids ignore blast marker effects when boarding enemy vessels</description>
+    </rule>
+    <rule id="afac-99d4-6bc9-c08a" name="Tyranid Hit and Run Attacks" hidden="false">
+      <description>Hit-&amp;-run attacks against Tyranid ships roll two D6 and take the lowest result. Tyranid ships can make hit-&amp;-run teleporting attacks just like other ships in the End phase. The Tyranid player adds +1 to the result when making hit-&amp;-run raids</description>
+    </rule>
+    <rule id="fa2d-5c48-3e84-e339" name="All is Lost" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+      <description>Capital ships can attempt to self destruct when boarded by Tyranids by passing a Leadership test in the End phase. If the test is failed the crew must face their terrible fate at the hands of the Tyranids. If
+the test is passed roll a D6; on a 1-3 the ship suffers the catastrophic damage result of plasma drive overload. On a 4-6 the ship suffers the warp drive implosion result instead</description>
+    </rule>
+    <rule id="659c-d841-ccbb-3258" name="Tyranid Navigation" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+      <description>All Tyranid ships are naturally adapted voidswimming organisms and make all Leadership checks to navigate celestial phenomena on a default leadership of 10.</description>
+    </rule>
+    <rule id="b0d8-c99b-4857-5620" name="Tyranid Target Priority" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+      <description>Tyranid ships always target the nearest enemy ship unless a special Vanguard drone ship
+‘highlights’ another enemy within range. No leadership test is allowed for Tyranid ships to
+select a target other than the nearest. Ordnance markers are always ignored and may not be fired
+on at all. 
+Vanguard drone ships highlight all enemies (including ordnance) within 15cm, and these can be targeted freely by any other vessels in the Tyranid fleet which are within range, without requiring a separate command check to ignore closer vessels</description>
+    </rule>
+    <rule id="2563-c83c-03cf-5da5" name="Brace For Impact" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+      <description>During either players’ turn, Tyranid ships/squadrons can go onto Brace for Impact orders by testing against the leadership of the nearest hive ship within 45cm. If no hive ships are within range then bio-ships use a default leadership 7 for the test instead.
+As normal this order is only removed at the end of the Tyranids’ next turn. Ships on Brace For Impact orders which are acting instinctively obey the movement restrictions listed above but do not change their special orders.</description>
+    </rule>
+    <rule id="2b1e-58f7-240a-714b" name="Instinctive Behavior" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+      <description>All Tyranid vessels follow Instinctive Orders unless the Hive Mind (ie, you, the player!) tells a ship or squadron to do something different via the psychic conduit of the hive ships. For ships or squadrons using Instinctive Behaviour, read down the Inspective Behavior table and give the ship/squadron the first appropriate action or special order you come to. No Command check is needed for special orders, but there may be specific activities that must be undertaken in the vessel’s movement.
+
+For example: A Tyranid cruiser wishes to move towards the enemy fleet in support of its hive ship but fails the Ld test. We check the Instinctive Orders table – there are no celestial phenomena or enemy ships close or in range but there is a planet on the table. The cruiser has to move towards the planet even though this actually takes it further away from the enemy fleet it wished to close with.</description>
+    </rule>
   </rules>
   <sharedRules>
     <rule id="3d4f-64b3-fcf4-f155" name="Kraken Durability" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
@@ -1416,6 +1447,13 @@ Torpedoes &amp; Attack Craft: None may be launched</description>
     <rule id="d29b-51ac-1bae-fc5b" name="Seperate Salvos" publicationId="1bc8-5968-21c3-0f27" page="88" hidden="false">
       <comment></comment>
       <description>Prow and thorax torpedoes cannot be combined into a single salvo, they must be launched separately.</description>
+    </rule>
+    <rule id="5961-13c5-31f1-cd22" name="Synaptic Control" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+      <description>Only hive ships have a leadership value, which is purchased at a fixed value from the Hive Fleet list. During the Movement phase, each hive ship can make a Command check to change or ignore Instinctive Behaviour for themselves or another ship/squadron within 45cm. If the test is successful the Tyranid player has control of the ship/squadron and may place it on special orders if desired, without requiring a second command check. 
+
+Attempts to use synaptic control count as a Command check so a hive ship can keep testing until a Command check is failed. However, if one hive ship fails a command check this does not prevent another hive ship attempting to use synaptic control. In effect each hive ship can make at least one attempt to override Instinctive Behaviour.
+
+Tyranid ordnance (fighters, assault boats, torpedoes) is not subject to synaptic control or Instinctive Behaviour – just move them like normal ordnance.</description>
     </rule>
   </sharedRules>
 </catalogue>
