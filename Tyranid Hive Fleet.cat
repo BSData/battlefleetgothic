@@ -826,10 +826,19 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="1937728f-45d2-460b-88bd-59700993b91a" name="Prow Pyro-acid Battery F S8" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1937728f-45d2-460b-88bd-59700993b91a" name="Prow Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="1e53-1c71-5caa-c2e1" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
@@ -838,24 +847,34 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="e2f6-835f-d484-79e0" name="Feeder Tentacles &amp; Massive Claws" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" name="Bio-Plasma Spines F/L/R S4" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" name="Bio-Plasma Spines" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="332a-99bc-075c-e8b7" name="Bio-Plasma Spines" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="63c3ab82-a266-44ad-b116-7f5891b47e03" name="Torpedoes F S8" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -866,26 +885,54 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" name="Thorax Pyro-acid Battery L/R S8" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" name="Thorax Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="53e8-485a-d833-8b65" name="Thorax Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a76d4876-a531-44bb-a951-2d6798b9ed97" name="Thorax Bio-Plasma Discharge F/L/R S4" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a76d4876-a531-44bb-a951-2d6798b9ed97" name="Thorax Bio-Plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="e2c6-4c47-4668-07a4" name="Thorax Bio-Plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9ed1115a-21f5-4693-9051-ca5afc629b3b" name="Thorax Launch Bay L/R S2" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9ed1115a-21f5-4693-9051-ca5afc629b3b" name="Thorax Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="5ea1-0cfd-9446-0108" name="Thorax Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
+Fighters: 20cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <selectionEntries>
                     <selectionEntry id="d6a76e0c-421b-46c0-afac-73ae1467e575" name="Mega-Spore Mines" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -907,10 +954,17 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="a82c6d18-a780-42c3-8573-ea9004db0495" name="Launch Bay L/R S1" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
+                <selectionEntry id="a82c6d18-a780-42c3-8573-ea9004db0495" name="Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="b6d6-db3c-5c1a-a81f" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
+Fighters: 20cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <selectionEntries>
                     <selectionEntry id="d4e55065-9347-4be1-ae29-8587104ea566" name="Mega-Spore Mines" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -925,18 +979,30 @@
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery L/R S4" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
+                <selectionEntry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="2446-e6fe-0caf-a45d" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a98622bb-ac34-4457-9502-d46e4757b175" name="Bio-Plasma Discharge L/R S2" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
+                <selectionEntry id="a98622bb-ac34-4457-9502-d46e4757b175" name="Bio-Plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="874f-3fe3-65bd-ca4b" name="Bio-Plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
