@@ -25,6 +25,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2ae2-346b-4d2b-0471" name="Seperate Salvos" hidden="false" targetId="d29b-51ac-1bae-fc5b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f3f1-de1d-d8f0-4005" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
@@ -652,6 +655,7 @@
         <selectionEntryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" name="Hive Mind Imperative" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <comment>This is a good model for examples of setting up dependant selections</comment>
               <modifiers>
                 <modifier type="set" field="maxSelections" value="1.0">
                   <conditions>
@@ -1294,6 +1298,9 @@ Fighters: 20cm</characteristic>
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <rules>
+    <rule id="bffe-ec6a-ee46-8fb3" name="New Rule" hidden="false"/>
+  </rules>
   <sharedRules>
     <rule id="3d4f-64b3-fcf4-f155" name="Kraken Durability" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
       <description>Kraken have no spore cysts but are amazingly durable and capable of regenerating damage. As such Kraken count as always being on Brace for Impact special orders when they take damage, receiving a 4+ save against each hit sustained, including those sustained when rolling a 6 for moving through blast markers. This ability in no way affects the Kraken and they may use other special orders as normal.</description>
@@ -1303,6 +1310,10 @@ Fighters: 20cm</characteristic>
     </rule>
     <rule id="1fe4-c983-9d25-b1a9" name="Return to the Hive" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
       <description>Escort drones subject to Instinctive Behaviour case 7 (‘must move towards a planet’) may instead move towards the nearest hive ship.</description>
+    </rule>
+    <rule id="d29b-51ac-1bae-fc5b" name="Seperate Salvos" publicationId="1bc8-5968-21c3-0f27" page="88" hidden="false">
+      <comment></comment>
+      <description>Prow and thorax torpedoes cannot be combined into a single salvo, they must be launched separately.</description>
     </rule>
   </sharedRules>
 </catalogue>
