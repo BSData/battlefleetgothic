@@ -1166,6 +1166,44 @@ Fighters: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="669b-537a-ca4c-86b8" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="86b5-44f3-f338-fcf1" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c6b-9156-66b4-d4ed">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83b4-f9a1-0fd4-22cd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="040c-ad52-91c0-45f0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a425-af28-9f1d-4c98" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1eb7-b811-4783-3b2a" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c6b-9156-66b4-d4ed" name="Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f89d-2c28-0763-8a03" name="Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
