@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="29" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="30" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="5766-7751-d146-0800" name="2010 Compendium"/>
     <publication id="789d-522c-ea2d-cbca" name="2010 FAQ"/>
@@ -599,7 +599,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="099b-f119-c753-012b" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="099b-f119-c753-012b" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d8-db5a-f964-a8db" type="max"/>
       </constraints>
@@ -679,11 +679,21 @@ The alien raider will move and shoot at the start of each turn by the player who
       <categoryLinks>
         <categoryLink id="7726-178a-0ffc-95d0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e18e-7251-aab2-aa82" name="Pick Xenotech Without Roll" publicationId="5766-7751-d146-0800" page="89" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a62c-7328-0a29-1639" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="51a0-1f41-930e-1848" name="Xenotech Systems (roll a dice)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d865-c43a-7fe9-851d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eba-b4ff-f596-5555" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eba-b4ff-f596-5555" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="acd6-c6dc-3376-b434" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
@@ -698,7 +708,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dd6b-bb5a-fe97-8d20" name="2 Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
@@ -713,18 +723,23 @@ The alien raider will move and shoot at the start of each turn by the player who
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="98b8-e864-f81b-8b16" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4624-7019-bcba-fe58" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="06a2-82b8-fe4f-9793" name="Extra Shield" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry"/>
-              </entryLinks>
+              <profiles>
+                <profile id="7af0-f2c3-683e-69cc" name="3 Advanced Shielding" hidden="false" typeId="5570677261646523232344415441232323" typeName="Upgrade">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Extra Shield</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2ca4-72dd-4af7-c5e1" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
@@ -735,7 +750,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <entryLink id="b3c6-08e8-a106-0990" name="Extra Turret" hidden="false" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b448-f53e-434b-4930" name="5 Advanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
@@ -743,7 +758,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff12-5aea-568d-8a61" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1a94-72d1-1454-7683" name="6 Pick one at will" hidden="false" collective="false" import="true" type="upgrade">
@@ -751,7 +766,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1685-89b5-8c48-27c2" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -862,9 +877,6 @@ The alien raider will move and shoot at the start of each turn by the player who
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="c6af-7179-7f68-f289" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true" targetId="31d2-20b8-38f3-6048" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
@@ -1750,6 +1762,13 @@ The alien raider will move and shoot at the start of each turn by the player who
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3e-9e2f-c58b-adc4" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="1e74-0233-0038-5dc0" name="Advanced Shielding" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Extra shield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="pts" typeId="points" value="15.0"/>
       </costs>
@@ -1758,6 +1777,13 @@ The alien raider will move and shoot at the start of each turn by the player who
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea7-0a25-646f-24cc" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="f9d8-0d80-cb14-1d71" name="Advanced Target Control" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Extra Turret</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
@@ -2246,7 +2272,7 @@ Bombers: 20cm</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="d921-687f-019e-c39a">
+    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Deamon?" hidden="false" collective="false" import="true" defaultSelectionEntryId="d921-687f-019e-c39a">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2557,93 +2583,6 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="31d2-20b8-38f3-6048" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry id="b113-0c8a-5840-d7e4" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75db-b090-ee09-53ed" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="bc3b-6279-483c-c932" name="1 Long Range Sensors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">This double the Leadership test bonus for enemy contacts (i.e. enemy on special orders from) +1 to +2.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0cff-976f-7464-1c27" name="2 Targetting Matrix" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f80-36fd-c397-e821" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b4fa-faea-cf5e-cc19" name="2 Targetting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel counts all targets as closing when using the gunnery table, and may re-roll a single missed shot each turn when shooting with lances.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="49f0-95fd-c62a-15a5" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a9-d0be-1ecc-f3fe" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e60b-d2f4-f117-fa36" name="Advanced Shielding" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of shields by +1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="723a-bb9b-2e6d-74fc" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ab-9d2d-2bf0-bc56" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="aeee-2a00-4170-3006" name="4 Ship Defence Grid" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of turrets by +1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="16d5-61e9-507d-6516" name="5 Adanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84af-8843-7e20-576e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="04cb-853d-344b-4ad2" name="5 Adanced Drive Technology" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel adds +5cm to its speed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="89f1-a023-0e13-b61c" name="6 Pick one of the above" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d317-979e-d77a-d9c9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b1a1-aead-ea5a-d8d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
@@ -2738,11 +2677,6 @@ Boarding torpedoes attack if they come into contact with an enemy ship&apos;s ba
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">CAN ONLY BE TAKEN BY SPACE MARINE CREWD VESSELS
 Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
 When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6ac8-808f-7451-36ab" name="New Profile" publicationId="11f0-17d1-e4d2-1018" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d"/>
       </characteristics>
     </profile>
     <profile id="843f-ef90-8376-4f0b" name="Thunderhawk Gunship" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
