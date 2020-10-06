@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="30" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="31" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="5766-7751-d146-0800" name="2010 Compendium"/>
     <publication id="789d-522c-ea2d-cbca" name="2010 FAQ"/>
@@ -110,891 +110,9 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="3a5f-2343-ba02-7c44" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b122-b1bc-c40d-23eb" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="623a-f321-565a-4c07" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1cbe-5118-2e2d-f1f8" name="Defence Monitor" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="b642-3742-b4f2-c743" name="Defence Monitor" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">10cm</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="9e6d-8daa-787c-edb1" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cf58-657d-04b4-f1c7" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="82ae-02ca-897a-cad1" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-            <categoryLink id="a916-8fca-2deb-001e" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="60.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7cec-c646-6179-df4d" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="699f-9eea-d62d-79e2" name="Fire Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="55b1-5292-88fb-a51b" name="Detonation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The controling player can detonate a fire ship at any point in its movement phase, inflicting D3 Fire critical hits on every ship within 3D6cm. As with any escort suffering a critical hit, escorts within the fire ship&apos;s blast will be automatically destroyed, as are any Ordnance markers. Remove the detonated fire ship and put a Blast marker in its place.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="743e-dae4-df64-430e" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-            <categoryLink id="886f-0b2f-e6ff-2db4" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ed9e-33db-77e8-0e1e" name="Minefields" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="0f67-c9e9-473e-48a6" name="Minefields" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A minefield covers an area that is D3x5cm by D3x5cm and must be placed with an edge within 15cm of a tabletop feature (such as a planet, moon or asteroid field). A minefield will block line of sight through it and toward friendly vessels behaves as an asteroid field in all respects. Foolhardy enemy vessels may attempt to traverse a minefield as they would an asteroid field using a leadership check against 3D6. In the owning players ordnance phase, roll a dice for each enemy ship within 30cm of the edge of the minefield. On a roll of a 5 or 6 the ship has been detected. Add +1 to the roll if the ship is on All Ahead Full orders and deduct -1 if it is on Burn Retros orders, also subtract -1 if the ship is an Escort. For each ship detected, the player may place one orbital mine anywhere in contact with the edge of the minefield. Once in play, orbital mines follow the rules on the page opposite. It is possible to suppress a minefield with firing, using gun decks and lances to create a swirl of gas and debris to blind the .field&apos;s motion trackers. A minefield may be fired at like an Ordnance marker and has an armour value of 6. Each hit scored allows you to place one Blast marker in contact with the minefield. If a minefield has Blast markers in contact with it, deduct -1 from any dice rolls to detect ships. In each end phase, each minefield will lose D6 Blast markers and these do not count towards the number of other Blast markers that can be removed that turn 
-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="1187-58d2-9f56-c7a7" name="New CategoryLink" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="true"/>
-            <categoryLink id="72e1-5454-d4f3-1f75" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="005a-887c-34b7-c814" name="Orbital Defence Laser Platform" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="a017-1427-b7f1-73ce" name="Orbital Defence Laser Platform" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="2b5c-5921-d9df-fabe" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="3760-fe46-7713-ca2e" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-            <categoryLink id="65ce-a322-2a8d-3ce8" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8b5c-728e-c969-5968" name="Orbital Dock" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="8600-c7b7-5664-63d6" name="Orbital Dock" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="ba43-d3b7-c21f-3ce9" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="4c1b-def5-6397-59e2" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters:30cm
-Bombers: 20cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="3bab-f289-4f92-5f08" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="32ef-2202-4759-64e1" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="82e7-b19b-9215-14dc" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-            <categoryLink id="0ee7-6986-5df4-ca8c" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="90.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6e86-b8d2-3820-a657" name="Orbital Mine" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="ffda-6219-d4b1-912c" name="Orbital Mine" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The orbital mine moves 10cm towards the nearest enemy ship in each ordnance phase. If it moves into contact with the base of an enemy ship it detonates and rolls 8 dice to hit the target vessel. The target vessel may fire its turrets normally. If the mine is hit it rolls 4 attack dice instead of 8. An orbital mine is treated like any other ordnance for the purposes of movement, Blast Markers and shooting. Ecept for fighters, mines are not affected by, and do not affect, any other Ordnance markers they come into contact with. If the mine comes into contact with fighters, both markers are removed as normal. Once mines are in play they are always active until destroyed. Mines purchased separately count for victory points when destroyed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="b8c8-c685-c135-011b" name="New CategoryLink" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="true"/>
-            <categoryLink id="ee97-e3b0-d237-f45d" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="784a-1b1d-4c15-5acc" name="Orbital Torpedo Launcher" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="5591-5226-1b9f-1f40" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="2023-f890-c272-1a0c" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5337-adfd-0bde-6a65" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="bd44-5bf4-eed3-79bf" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-            <categoryLink id="1da4-1788-fc2d-d4f7" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0ba3-733a-de47-6c98" name="Orbital Weapons Platform" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="0d70-890e-ccca-5667" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="4985-d5d7-b757-2b99" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="064a-8568-d652-f0f8" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-            <categoryLink id="70c6-f8fd-4788-dc31" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ceab-ad69-da38-93e9" name="Space Station" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="ab04-7a5f-f5ac-0c6c" name="Space Station" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="5fdb-f50e-b03f-0ca3" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="9255-be69-06e7-f9c8" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters:30cm
-Bombers: 20cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="d18f-a815-7ec7-dc79" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="93b0-309c-1678-b9fe" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="48eb-571f-d5f9-fa80" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="c4ff-891a-97fd-40c1" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-            <categoryLink id="93f8-7be3-ed50-c800" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="145.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a459-577d-54a9-4b64" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eda-100b-86df-b27e" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="9ecf-c03c-66de-9e48" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="abe4-4598-183b-064a" name="Defence Laser Silo" publicationId="11f0-17d1-e4d2-1018" page="145" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="1ccd-bf89-76af-0676" name="Defence Laser Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="c0cd-a1ef-2a79-c072" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="d566-2627-1bee-083e" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-            <categoryLink id="47b7-ee21-780c-91d1" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8163-67b4-245b-03b7" name="Missile Silo" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="2725-1923-3e90-64bb" name="Missile Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="61b5-0e73-7d60-0a6c" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="19b6-1978-72db-919a" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="2ce1-d2cd-1ce1-6451" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-            <categoryLink id="67ad-e9fb-2764-f599" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c62f-f3ca-9deb-4bde" name="Air Base" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="a77e-354b-1aca-97a0" name="Air Base" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-              <characteristics>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
-                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
-                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
-                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0ca6-a6d0-9b52-f775" name="Air BaseLaunch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm
-Bombers: 20cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="b138-14b3-59d7-53d1" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="11f4-b567-867d-4210" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="61b9-6c78-e2bc-adca" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-            <categoryLink id="b3b6-3204-757e-d574" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="82cb-c81e-f648-b362" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd1-e126-1171-a8b2" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="5e79-2b9b-829c-ed7f" name="Imperial Transport" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="356e-9077-295d-d4d0" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a874-6d00-3987-d49d" name="Special Rules" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Transports using All Ahead Full orders only add +3D6cm to their speed.
-Reduce Their Randomly rolled Leadership by 1.
-Usually used as objectives in missions.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="1572-800a-7750-b3c3" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="990e-b7bc-a731-1965" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bcd-fa23-20ac-fadd" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="3af0-4fcf-ef28-f638" name="Alien Raider" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="106d-c91c-69f2-4a38" name="Prow Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c87c-df90-1863-fcb6" name="Starboard Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c24c-8388-482f-2867" name="Port Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9982-9191-1c6b-2257" name="Unknown Intentions" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Placementdecided by a scater die.
-
-Proton Disruptor: acts like a lance but on a roll of 6 all of the targets shields are overloaded and shut down (place blast marks). Any hit will cause an automatic critical but roll a single D6 on the table instead.
-Holofields/shadowfields may save on a 4+
-
-The alien raider will move and shoot at the start of each turn by the player who is not moving his own ships. It may not go on special orders and will always fire at the nearest enemy ship (enemy beeing the player who is not controling the raider). If cripple must always attempt to disengage and failing that the only move it may make is towards the nearest table edge.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="7199-987a-27b1-4124" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="099b-f119-c753-012b" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d8-db5a-f964-a8db" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="3e05-dae5-e637-154c" name="Rogue Trader Cruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <modifiers>
-            <modifier type="increment" field="536869656c647323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98b8-e864-f81b-8b16" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2ca4-72dd-4af7-c5e1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" field="537065656423232344415441232323" value="5cm">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b448-f53e-434b-4930" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e664-c9d3-566a-f81e" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7394-c397-2330-6cd1" name="1s tPort Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e90f-e193-2a78-3f21" name="2nd Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="17c0-5bcd-2cb4-10d2" name="1st Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="500f-1493-b442-ce85" name="2nd Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6019-9577-01c1-3cfa" name="Strange Allies" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Any fleet except Necrons or Tyranids or Space Marines may include a single Rogue Trader Cruiser( and escorts) in their fleet.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="bf2f-a694-9de8-ae48" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="7726-178a-0ffc-95d0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="e18e-7251-aab2-aa82" name="Pick Xenotech Without Roll" publicationId="5766-7751-d146-0800" page="89" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a62c-7328-0a29-1639" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="51a0-1f41-930e-1848" name="Xenotech Systems (roll a dice)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d865-c43a-7fe9-851d" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eba-b4ff-f596-5555" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="acd6-c6dc-3376-b434" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46cc-2ca7-daf5-45f0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a610-33c2-4b52-9655" name="1 Long Range Sensors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Doubles the Leadership test bonus for enemy contacts (i.e. on special orders from +1 to +2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dd6b-bb5a-fe97-8d20" name="2 Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fc-9db5-2f16-ca4b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="2be0-466a-0d36-1361" name="2 Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel counts all targets as closing when using when using the gunnery table and may re-roll a single missed shot each turn when shooting with lances.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="98b8-e864-f81b-8b16" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4624-7019-bcba-fe58" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7af0-f2c3-683e-69cc" name="3 Advanced Shielding" hidden="false" typeId="5570677261646523232344415441232323" typeName="Upgrade">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Extra Shield</characteristic>
-                    <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2ca4-72dd-4af7-c5e1" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5231-5c13-1439-99f4" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="b3c6-08e8-a106-0990" name="Extra Turret" hidden="false" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b448-f53e-434b-4930" name="5 Advanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff12-5aea-568d-8a61" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1a94-72d1-1454-7683" name="6 Pick one at will" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1685-89b5-8c48-27c2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="857c-d836-e880-b759" name="Escorts" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07dd-7904-759c-b32d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c934-071b-995f-8461" name="Xenos Vessel" hidden="false" collective="false" import="true" type="unit">
-              <profiles>
-                <profile id="f3bb-1443-b579-bc3e" name="Xenos Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5e32-f849-6f32-09d0" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0e94-6172-9a1d-1b4f" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="a150-3ce4-2af1-389d" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="60.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="348f-0d5b-8dcb-3b9f" name="Armed Cargo vessel" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="4e05-e485-4a81-7fd7" name="Armed Cargo vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="603f-3ce1-07f3-7ef6" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="4cb7-aa8b-460f-c241" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fce9-80e5-3982-df72" name="Recommissioned VVessel" hidden="false" collective="false" import="true" type="unit">
-              <profiles>
-                <profile id="ee95-b476-599d-6fec" name="Recommissioned VVessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bfad-5325-4456-f6e5" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6909-d999-abc0-550f" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="e3a3-c5a4-ca14-aefe" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="180.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="537b-16aa-4ed3-b5e4" name="Q-Ship" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="d82b-0074-4b33-0107" name="Q-Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3821-42b9-5219-1273" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="20a1-bd6f-8f91-6cc8" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0c94-3e2c-1124-1678" name="Concealed firepower" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Q-ships are not declared as such when deployed onto the table; the owning player must write down which freighters are Qships at the start of the game. The owning player may reveal the ship as a Q-ship at any time during the game; it is, obviously, also revealed as a Q-ship if it is hit twice by enemy fire (thus producing two blast markers.) It is permissible for the owning player to ‘hold back’ one of his Turrets if the Q-ship is attacked by enemy attack craft (to avoid revealing it), but this is a dangerous gamble. Q-ships do not count as freighters for victory conditions.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4663-f3be-5e43-edc5" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="60.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fb34-51b1-ed28-f9e6" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="021d-6e07-6b70-1a70" name="Armed Freighter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fe8c-570b-d7b9-2013" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f02e-f6b9-92b1-5561" name="Weapons in the Cargo Hold" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">An armed freighter reduces its cargo capacity to carry bigger guns and reactors; it therefore counts as only half a freighter in scenarios that involve them. Round fractions down at the end of the game; therefore, if only one armed freighter and nothing else escapes a Convoy scenario, you lose.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="3178-1f55-1e48-22d4" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5eff-c2aa-f669-ecab" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="8722-d7e9-eb5f-9d71" name="Heavy Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c231-5eac-37eb-1822" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9a7b-52ae-2bdd-0ec4" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="60d0-9b63-2c5e-ff94" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="832a-4c04-514f-c119" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
+    <selectionEntry id="9371-fa4d-d130-e0bd" name="Note" hidden="true" collective="false" import="false" type="upgrade">
+      <comment>Nothing goes here or it will be shared across every fleet list.
+If you select import</comment>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -2220,6 +1338,895 @@ Bombers: 20cm</characteristic>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e006-c1f5-8b6f-a380" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b6-69e2-753e-7074" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1bab-0de9-52fd-f65e" name="Alien Raider" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="740e-cd95-a191-582b" name="Prow Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2758-834b-fe16-1bfe" name="Starboard Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a736-6c27-cf4f-a011" name="Port Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8037-8784-4c48-fdb7" name="Unknown Intentions" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Placementdecided by a scater die.
+
+Proton Disruptor: acts like a lance but on a roll of 6 all of the targets shields are overloaded and shut down (place blast marks). Any hit will cause an automatic critical but roll a single D6 on the table instead.
+Holofields/shadowfields may save on a 4+
+
+The alien raider will move and shoot at the start of each turn by the player who is not moving his own ships. It may not go on special orders and will always fire at the nearest enemy ship (enemy beeing the player who is not controling the raider). If cripple must always attempt to disengage and failing that the only move it may make is towards the nearest table edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5296-fe85-f912-e395" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c536-0327-537e-9da9" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="110e-9041-4828-911a" name="Armed Freighter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fdec-b0ed-0775-266f" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d602-21f0-c94a-9bb3" name="Weapons in the Cargo Hold" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">An armed freighter reduces its cargo capacity to carry bigger guns and reactors; it therefore counts as only half a freighter in scenarios that involve them. Round fractions down at the end of the game; therefore, if only one armed freighter and nothing else escapes a Convoy scenario, you lose.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bd3a-6ba2-0874-ccad" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1953-f22a-3bd2-56dc" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0139-e593-4586-ec5f" name="Heavy Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="825d-aef4-e02f-6244" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b52-3444-9998-6602" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="608e-9575-39b0-89d4" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2ca2-6398-4e21-e202" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d54a-9232-6eed-048a" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf8-d39f-5943-4b0f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="900d-c842-5347-8ada" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7c0c-7cb3-4091-822f" name="Defence Monitor" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="630f-8227-2b69-53a4" name="Defence Monitor" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">10cm</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="f1cd-55b1-c4dc-09bf" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c3de-733f-edb4-24f2" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="0bd8-0052-deb7-26ba" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+            <categoryLink id="80ac-5d0b-16f6-4c10" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="257a-900f-1ea2-c1ed" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="904b-9fa4-2ae5-7eb7" name="Fire Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="20d3-b806-36f0-24f6" name="Detonation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+              <characteristics>
+                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The controling player can detonate a fire ship at any point in its movement phase, inflicting D3 Fire critical hits on every ship within 3D6cm. As with any escort suffering a critical hit, escorts within the fire ship&apos;s blast will be automatically destroyed, as are any Ordnance markers. Remove the detonated fire ship and put a Blast marker in its place.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="e809-f932-9f3e-5d4b" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+            <categoryLink id="acee-eccc-50f0-8939" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aff4-bc36-3f77-8c77" name="Minefields" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="4dfa-0f2b-d1eb-511d" name="Minefields" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+              <characteristics>
+                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A minefield covers an area that is D3x5cm by D3x5cm and must be placed with an edge within 15cm of a tabletop feature (such as a planet, moon or asteroid field). A minefield will block line of sight through it and toward friendly vessels behaves as an asteroid field in all respects. Foolhardy enemy vessels may attempt to traverse a minefield as they would an asteroid field using a leadership check against 3D6. In the owning players ordnance phase, roll a dice for each enemy ship within 30cm of the edge of the minefield. On a roll of a 5 or 6 the ship has been detected. Add +1 to the roll if the ship is on All Ahead Full orders and deduct -1 if it is on Burn Retros orders, also subtract -1 if the ship is an Escort. For each ship detected, the player may place one orbital mine anywhere in contact with the edge of the minefield. Once in play, orbital mines follow the rules on the page opposite. It is possible to suppress a minefield with firing, using gun decks and lances to create a swirl of gas and debris to blind the .field&apos;s motion trackers. A minefield may be fired at like an Ordnance marker and has an armour value of 6. Each hit scored allows you to place one Blast marker in contact with the minefield. If a minefield has Blast markers in contact with it, deduct -1 from any dice rolls to detect ships. In each end phase, each minefield will lose D6 Blast markers and these do not count towards the number of other Blast markers that can be removed that turn 
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="0336-10f1-0e64-229e" name="New CategoryLink" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="true"/>
+            <categoryLink id="36e9-0529-5fec-ae44" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a77f-6a50-4a50-73ed" name="Orbital Defence Laser Platform" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="d519-3edf-497b-6999" name="Orbital Defence Laser Platform" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="cbc6-330a-7f53-1e07" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a7e4-8506-eeb0-7c4c" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+            <categoryLink id="ebcf-dbf1-82ee-929a" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9f2e-9730-6d54-2b35" name="Orbital Dock" publicationId="11f0-17d1-e4d2-1018" page="144" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="6b33-e096-cb44-464a" name="Orbital Dock" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c544-101a-9ce6-602a" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="57e2-0bc5-d363-17cd" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters:30cm
+Bombers: 20cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="69b3-be98-5ac5-0f32" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="0960-4177-257d-7924" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5be5-21ee-41d5-8fbc" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+            <categoryLink id="ff2f-583e-330d-6345" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="90.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="05ac-00b9-2c5b-f437" name="Orbital Mine" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="7627-1851-5a3a-22a6" name="Orbital Mine" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+              <characteristics>
+                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The orbital mine moves 10cm towards the nearest enemy ship in each ordnance phase. If it moves into contact with the base of an enemy ship it detonates and rolls 8 dice to hit the target vessel. The target vessel may fire its turrets normally. If the mine is hit it rolls 4 attack dice instead of 8. An orbital mine is treated like any other ordnance for the purposes of movement, Blast Markers and shooting. Ecept for fighters, mines are not affected by, and do not affect, any other Ordnance markers they come into contact with. If the mine comes into contact with fighters, both markers are removed as normal. Once mines are in play they are always active until destroyed. Mines purchased separately count for victory points when destroyed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="5efc-219b-49e7-94aa" name="New CategoryLink" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="true"/>
+            <categoryLink id="a9ab-4aad-56fb-997e" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c594-055f-2686-3334" name="Orbital Torpedo Launcher" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="9b04-df01-e5d0-aaad" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="bc46-224b-bb9e-5b95" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8651-9355-8d0c-1e9c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7719-88c2-8622-e11e" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+            <categoryLink id="e1ca-3499-5908-7985" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e290-0982-a901-a8aa" name="Orbital Weapons Platform" publicationId="11f0-17d1-e4d2-1018" page="142" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="e14b-8395-d6bf-e8ff" name="Orbital Torpedo Launcher" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="85ac-ee10-5603-3e8f" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All round</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="fd71-05e7-bfa4-a4ad" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+            <categoryLink id="3793-1427-127b-1291" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eaa8-8f04-98b5-dc7a" name="Space Station" publicationId="11f0-17d1-e4d2-1018" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="22e5-c538-f06d-9652" name="Space Station" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c1fe-1972-fe1f-94bd" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fa23-f352-802d-e4cd" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters:30cm
+Bombers: 20cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="daa7-9c9d-73ed-9f2a" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="91be-9cfd-117e-0bcc" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
+            <infoLink id="f870-e80e-5ba0-3574" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4dae-f9e2-d6b8-8a74" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+            <categoryLink id="0098-30e8-1dac-98f7" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="145.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f19f-ba4a-9f91-1a4a" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd0-eae1-ad22-80e6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6c19-13cf-2c75-6253" name="Rogue Trader Cruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="536869656c647323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2bd-54c3-8943-f44a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dc9-0fe5-4b33-660e" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="537065656423232344415441232323" value="5cm">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03d0-db64-cb60-7a4f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8950-ba2a-4b21-0eb5" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="263d-8dc8-8e96-c635" name="1s tPort Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c4b-c7f7-d6c9-76d3" name="2nd Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ae4-8048-a426-1d73" name="1st Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a2f-879a-05b9-89e9" name="2nd Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b951-00be-8358-c12b" name="Strange Allies" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Any fleet except Necrons or Tyranids or Space Marines may include a single Rogue Trader Cruiser( and escorts) in their fleet.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0569-065b-9874-d11e" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c0b0-8790-921b-08fe" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1dbe-3496-fd23-fe34" name="Pick Xenotech Without Roll" publicationId="5766-7751-d146-0800" page="89" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d321-f231-1bbb-01f5" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e44d-32ac-da83-0667" name="Xenotech Systems (roll a dice)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="380b-a5a0-70c6-e493" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ede-90e2-ac13-5d63" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a6dc-7d44-00ee-916c" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b12-9d3d-efc3-6bcc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bc9a-e290-69c8-25f0" name="1 Long Range Sensors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Doubles the Leadership test bonus for enemy contacts (i.e. on special orders from +1 to +2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4f8c-4ee5-64ac-8b1c" name="2 Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efca-e1e9-2891-8d38" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ae38-1ab5-81a3-86d1" name="2 Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel counts all targets as closing when using when using the gunnery table and may re-roll a single missed shot each turn when shooting with lances.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf97-51be-7870-cb0c" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f837-00ec-99a9-e13b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5c51-28c4-e9cd-a178" name="3 Advanced Shielding" hidden="false" typeId="5570677261646523232344415441232323" typeName="Upgrade">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Extra Shield</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="e81c-6f4c-6fcb-034e" name="Extra shield" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9925-7036-1b8b-e061" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3098-f0c0-6ab1-1b90" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="4caf-2e75-f933-b5c4" name="Extra Turret" hidden="false" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="03d0-db64-cb60-7a4f" name="5 Advanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36be-5408-8a75-ea00" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c7b9-5f15-4583-faae" name="6 Pick one at will" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a2-8a77-2e6d-938a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4449-69b2-2fa1-ee50" name="Escorts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab0c-2bc1-85ab-c618" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9e11-279c-d1c4-aa6b" name="Xenos Vessel" hidden="false" collective="false" import="true" type="unit">
+              <profiles>
+                <profile id="cdb2-93b2-5eb7-1668" name="Xenos Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a4e3-15ab-4376-e2d2" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="eafe-f0fe-55c7-046f" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2179-94cc-5686-213c" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="991b-2807-b79e-9c2f" name="Armed Cargo vessel" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9a41-7e60-d539-2b2a" name="Armed Cargo vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ff3a-e591-6ee3-a3bc" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="30b0-48b7-c5d2-5316" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cef0-d3c7-a288-3b2a" name="Recommissioned VVessel" hidden="false" collective="false" import="true" type="unit">
+              <profiles>
+                <profile id="49a5-2330-f89a-e3c3" name="Recommissioned VVessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="deff-0042-32f5-e968" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="acca-11cb-e0dc-0ed5" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="b6e9-e617-730f-af50" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7f4-7851-9c6d-0a1b" name="Q-Ship" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1024-3b07-5169-e067" name="Q-Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8cfb-b554-18b6-5112" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ecb-934d-a512-2f13" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9182-659a-7770-52ab" name="Concealed firepower" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Q-ships are not declared as such when deployed onto the table; the owning player must write down which freighters are Qships at the start of the game. The owning player may reveal the ship as a Q-ship at any time during the game; it is, obviously, also revealed as a Q-ship if it is hit twice by enemy fire (thus producing two blast markers.) It is permissible for the owning player to ‘hold back’ one of his Turrets if the Q-ship is attacked by enemy attack craft (to avoid revealing it), but this is a dangerous gamble. Q-ships do not count as freighters for victory conditions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7924-2bc6-78ec-9045" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1ab-a8cf-3067-2d53" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a25b-ae50-ff77-58db" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b7b6-488a-f106-7dad" name="New CategoryLink" hidden="false" targetId="90ac-0bee-0c90-be27" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="123e-909f-506a-3d45" name="Defence Laser Silo" publicationId="11f0-17d1-e4d2-1018" page="145" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="f3ee-f2f1-e584-aea9" name="Defence Laser Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="70eb-c203-30a6-aa1a" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="8188-d29e-eae4-abc4" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+            <categoryLink id="62ac-b8b2-ec3e-42b4" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2e3e-ad7f-2434-50aa" name="Missile Silo" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="0d7d-93b1-b9b4-310c" name="Missile Silo" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3bca-5ce2-90af-738d" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f6f0-f26a-349b-5856" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3b97-e0e0-8bae-f1d5" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+            <categoryLink id="e673-577a-3d44-6a1e" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3647-89cd-9295-b913" name="Air Base" hidden="false" collective="false" import="true" type="unit">
+          <profiles>
+            <profile id="3d2b-6856-f225-53f8" name="Air Base" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Ground</characteristic>
+                <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                <characteristic name="Speed" typeId="537065656423232344415441232323">0</characteristic>
+                <characteristic name="Turns" typeId="5475726e7323232344415441232323">0</characteristic>
+                <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+                <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="29e0-b27b-4825-6052" name="Air BaseLaunch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm
+Bombers: 20cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="61d9-1fca-871b-79eb" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="aabf-4e59-6fd7-8825" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7494-1578-75bf-b82e" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+            <categoryLink id="1cab-1ed3-8731-e220" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b3f-50cd-e167-34ef" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aa6-bb68-b641-7291" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9cff-ba20-108e-a12a" name="Imperial Transport" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9d47-b86c-0b9e-59a1" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d02c-20eb-8cbd-a5d0" name="Special Rules" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Transports using All Ahead Full orders only add +3D6cm to their speed.
+Reduce Their Randomly rolled Leadership by 1.
+Usually used as objectives in missions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="90cb-2065-5ba1-3342" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
