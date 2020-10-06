@@ -113,6 +113,9 @@
     <selectionEntry id="9371-fa4d-d130-e0bd" name="Note" hidden="true" collective="false" import="false" type="upgrade">
       <comment>Nothing goes here or it will be shared across every fleet list.
 If you select import</comment>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -2279,7 +2282,7 @@ Usually used as objectives in missions.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Deamon?" hidden="false" collective="false" import="true" defaultSelectionEntryId="d921-687f-019e-c39a">
+    <selectionEntryGroup id="01b5-5904-9e02-fb87" name="Deamon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d921-687f-019e-c39a">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
