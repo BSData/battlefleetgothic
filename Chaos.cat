@@ -7,7 +7,7 @@
     </publication>
   </publications>
   <forceEntries>
-    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades" publicationId="acb7-35d6-a2c5-f4a5" page="46" hidden="false">
+    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades (Armada)" publicationId="acb7-35d6-a2c5-f4a5" page="46" hidden="false">
       <categoryLinks>
         <categoryLink id="24b2-0d02-aa47-0b72" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="b664-e86d-8635-c22a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -326,7 +326,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="afcb-dd79-979f-6cff" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet" hidden="false">
+    <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet (BBB)" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
       <categoryLinks>
         <categoryLink id="88b9-a2e7-5761-2767" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="3358-739d-036c-0d40" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -1444,7 +1444,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1556,7 +1555,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1844,7 +1842,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1962,7 +1959,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c64c-512b-b7b4-324b" name="Vengeful Spirit (Or Chaos Battlebarge)" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c64c-512b-b7b4-324b" name="Chaos Battlebarge (Vengeful Spirit)" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2203,7 +2200,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d79c-988e-7d3a-cb65" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="d79c-988e-7d3a-cb65" name="Deamon" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="3529-bda0-f2e4-7126" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2219,7 +2216,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
