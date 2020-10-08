@@ -1573,16 +1573,15 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       <categoryLinks>
         <categoryLink id="1ac0-7222-1367-db45" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6491-b441-5965-fa38" name="Escorts" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="e1df-1938-eec6-8aad" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
-            <entryLink id="0445-a07a-6571-9fb2" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
-            <entryLink id="437e-d1b1-db58-2f83" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
-            <entryLink id="e8cd-02e8-f600-7633" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="00cf-9e6f-5c37-9fa0" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+        <entryLink id="924a-e6df-1b03-723f" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
+        <entryLink id="cb4d-67c3-ecfc-cec6" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
+        <entryLink id="26c2-5f2e-68aa-ce5b" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
