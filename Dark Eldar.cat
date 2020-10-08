@@ -3,8 +3,11 @@
   <publications>
     <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
   </publications>
+  <forceEntries>
+    <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Pirate Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false"/>
+  </forceEntries>
   <selectionEntries>
-    <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -62,7 +65,22 @@
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="primary-catalogue" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89f0-691d-7523-f215" type="max"/>
+      </constraints>
       <profiles>
         <profile id="acf8-df63-ef72-a10b" name="Torture Class Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -190,23 +208,55 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
       </costs>
     </selectionEntry>
     <selectionEntry id="0a80-fcd2-0e63-7be3" name="Escort Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="20a6-8a61-01f8-9918" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1c26-ab52-22a6-209a" name="New SelectionEntryGroup" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1c26-ab52-22a6-209a" name="Escorts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ef-9b02-c570-8a91" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83a3-e796-21da-5e0d" type="min"/>
+          </constraints>
           <entryLinks>
             <entryLink id="01e8-dc00-9dd3-6c84" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="1123-73c8-53ee-3674" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
+    <entryLink id="1123-73c8-53ee-3674" name="Dark Eldar Corsair Class Escort" hidden="true" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="3492-1236-f700-f36a" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3492-1236-f700-f36a" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="e18f-914b-4242-da47" name="Corsair Class Escort Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>

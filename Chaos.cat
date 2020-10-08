@@ -3541,7 +3541,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="70cb-9892-ba48-89ef" name="Escort Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="70cb-9892-ba48-89ef" name="Escort Squadron" hidden="false" collective="false" import="true" type="unit">
       <comment>This houses a group of escorts which can be selected within it</comment>
       <categoryLinks>
         <categoryLink id="658c-a838-fd68-e1d8" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
@@ -3556,6 +3556,9 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
