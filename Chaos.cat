@@ -3543,109 +3543,17 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
     </selectionEntry>
     <selectionEntry id="70cb-9892-ba48-89ef" name="Escort Squadron" hidden="false" collective="false" import="true" type="upgrade">
       <comment>This houses a group of escorts which can be selected within it</comment>
+      <categoryLinks>
+        <categoryLink id="658c-a838-fd68-e1d8" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bed2-0515-d7fb-9431" name="Escorts" hidden="false" collective="false" import="true">
           <comment>Escorts</comment>
-          <selectionEntries>
-            <selectionEntry id="3a72-1e5f-297b-680e" name="Iconoclast Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="126" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a5a5-0c7a-4d58-ebd9" name="Iconoclast Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="4621-9a21-7f40-a27d" name="Iconoclast Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="e755-78c5-726c-6582" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ada2-a70e-60fd-8c55" name="Infidel Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6adb-b6b4-8df8-a81a" name="Infidel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bfb8-861f-58bc-03c5" name="Infidel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7a61-91d8-085e-b5ea" name="Infidel Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="d328-18ec-6104-c5ff" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f747-8125-0969-d8a2" name="Idolator Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="unit">
-              <profiles>
-                <profile id="8cb6-c76e-7e1d-87cd" name="Idolator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="195e-35bf-61c3-c5a0" name="Idolator Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="f6a9-a8f7-1e33-579b" name="Idolator Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="40da-5e80-e6bc-7c94" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink id="9d3f-a0d0-391a-2c21" name="Iconoclast Class Destroyer" hidden="false" collective="false" import="true" targetId="a23e-2e23-de49-3663" type="selectionEntry"/>
+            <entryLink id="78d9-38ad-7d0a-f2eb" name="Idolator Class Raider" hidden="false" collective="false" import="true" targetId="8cdc-edab-b278-63d6" type="selectionEntry"/>
+            <entryLink id="e4a1-7672-bac2-568c" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="9c12-e4f6-867e-765b" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -3960,7 +3868,110 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <entryLink id="eeb3-b5c8-6196-b520" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
+    <entryLink id="4b3a-c5a2-e390-83b6" name="Idolator Class Raider" hidden="false" collective="false" import="true" targetId="8cdc-edab-b278-63d6" type="selectionEntry"/>
+    <entryLink id="09e7-40e0-67a4-7489" name="Iconoclast Class Destroyer" hidden="false" collective="false" import="true" targetId="a23e-2e23-de49-3663" type="selectionEntry"/>
+    <entryLink id="71a1-ea6b-45c1-630d" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="9c12-e4f6-867e-765b" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="a23e-2e23-de49-3663" name="Iconoclast Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="126" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="99a1-569e-9fb8-f569" name="Iconoclast Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0823-ae91-07fe-b522" name="Iconoclast Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2f15-77ff-f47b-03b9" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cdc-edab-b278-63d6" name="Idolator Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b113-11b5-787b-e1a6" name="Idolator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="792c-b9fd-ce9d-a9ab" name="Idolator Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5515-eb6d-0ef7-0182" name="Idolator Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b07d-d3e4-4b84-9127" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c12-e4f6-867e-765b" name="Infidel Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ef55-bef8-dbe8-9d4e" name="Infidel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7754-ff67-b8c3-1e14" name="Infidel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44f1-4eb9-a494-47bf" name="Infidel Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b707-9b48-36c9-c4fe" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="38ef-5485-b0e7-ce4d" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
   </sharedRules>
