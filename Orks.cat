@@ -862,39 +862,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="def6d528-6663-43a6-b6aa-2e809efa5a9d" name="Brute Ram Ship" publicationId="cfd250a5--pubN65930" page="139" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="9c98-070e-2bf0-1da7" name="Brute Ram Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4bd6-8080-71e4-26ac" name="Brute Ram Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="5347-0b09-38f5-fa6b" name="Brute Ram Ship" hidden="false">
-          <description>The Brute Ram Ship rolls 4 dice to damage an opposing ship when it rams.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="def6d528-6663-43a6-b6aa-2e809efa5a9d-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="cfd250a5--pubN65930" page="136" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="9a07-79ed-d71e-fbf2" name="Kill Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -1104,69 +1071,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e89f96f0-a7f7-4264-aa7b-6b2baa908367" name="Onslaught Attack Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="2754-03cf-ca6f-9277" name="Onslaught Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="46fe-dec5-96b3-6dad" name="Onslaught Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="e89f96f0-a7f7-4264-aa7b-6b2baa908367-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2fa646e7-b11a-48d1-8867-c227f3438e32" name="Ravager Attack Ship" publicationId="cfd250a5--pubN65930" page="138" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="7a5b-3f87-203a-a3c9" name="Ravager Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4dfe-2aad-fc9a-dce6" name="Ravager Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f98f-eb25-bbac-b315" name="Ravager Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="2fa646e7-b11a-48d1-8867-c227f3438e32-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="82db7662-49b2-44a9-929a-cdc6a31fbaab" name="Ork Rok" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -2023,39 +1927,6 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="95.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bff7-4210-d2ae-0570" name="Grunt Assault Ship" publicationId="cfd250a5--pubN75305" page="153" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0574-3316-a98d-6d40" name="Grunt Assault Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7e19-3d1b-74ea-6ff4" name="Grunt Assault Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="e74e-585c-5b22-5eb4" name="Grunt Assault Ship" hidden="false">
-          <description>Grunt assault ships embark huge crews of Ork boarding parties and are equipped with tractor fields, powerful boarding drills, etc. They roll 2D6 against an opposing ship when ramming and count as 2Hp when determining their boarding value (before other modifiers). These ships are equipped with a Traktor Field and must be mounted on a large base, and due to their poorly distributed mass cannot use Come To New Heading special orders. Grunt assault ships can be equipped with Klaws for +5 points each vessel, not per skwadron.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="592b-7aa5-fa61-9565" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="cfd250a5--pubN75472" page="152" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3054-cb07-539e-396c" name="Ork Lite Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -2237,7 +2108,28 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e774-548d-9436-6e14" name="Escort Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1b13-306c-a136-8a73" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4917-f689-315a-d5b8" name="Escorts" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="79c0-37a1-416d-40b6" name="Grunt Assault Ship" hidden="false" collective="false" import="true" targetId="a91e-87e4-7a52-6b53" type="selectionEntry"/>
+            <entryLink id="3ee8-731c-ce64-c133" name="Ravager Attack Ship" hidden="false" collective="false" import="true" targetId="b5b2-a3cd-3374-9c8d" type="selectionEntry"/>
+            <entryLink id="6464-01cd-ed88-5f58" name="Onslaught Attack Ship" hidden="false" collective="false" import="true" targetId="3e08-c5ed-c2e2-8bce" type="selectionEntry"/>
+            <entryLink id="f1a6-6a2f-e739-a9e4" name="Brute Ram Ship" hidden="false" collective="false" import="true" targetId="97ba-cd37-3b17-7942" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="386a-fb07-9c00-fdde" name="Brute Ram Ship" hidden="false" collective="false" import="true" targetId="97ba-cd37-3b17-7942" type="selectionEntry"/>
+    <entryLink id="10da-35b0-3ebf-b099" name="Grunt Assault Ship" hidden="false" collective="false" import="true" targetId="a91e-87e4-7a52-6b53" type="selectionEntry"/>
+    <entryLink id="447d-92f3-19b8-c800" name="Onslaught Attack Ship" hidden="false" collective="false" import="true" targetId="3e08-c5ed-c2e2-8bce" type="selectionEntry"/>
+    <entryLink id="c012-74e2-31c1-d165" name="Ravager Attack Ship" hidden="false" collective="false" import="true" targetId="b5b2-a3cd-3374-9c8d" type="selectionEntry"/>
+  </entryLinks>
   <rules>
     <rule id="025f-3dcb-76fb-12cf" name="Ork Rules" hidden="false">
       <comment>Remade the orks their own list</comment>
@@ -2377,6 +2269,135 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </constraints>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a91e-87e4-7a52-6b53" name="Grunt Assault Ship" publicationId="cfd250a5--pubN75305" page="153" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="054a-f204-8e91-4b84" name="Grunt Assault Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f896-5d87-8934-84af" name="Grunt Assault Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="354e-f7b7-d8d0-065c" name="Grunt Assault Ship" hidden="false">
+          <description>Grunt assault ships embark huge crews of Ork boarding parties and are equipped with tractor fields, powerful boarding drills, etc. They roll 2D6 against an opposing ship when ramming and count as 2Hp when determining their boarding value (before other modifiers). These ships are equipped with a Traktor Field and must be mounted on a large base, and due to their poorly distributed mass cannot use Come To New Heading special orders. Grunt assault ships can be equipped with Klaws for +5 points each vessel, not per skwadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2f73-b13e-c4c1-3efa" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e08-c5ed-c2e2-8bce" name="Onslaught Attack Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d65f-a18c-a70d-0e8d" name="Onslaught Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4663-b126-f8f0-4013" name="Onslaught Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="58b9-911d-c2bb-12fe" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b5b2-a3cd-3374-9c8d" name="Ravager Attack Ship" publicationId="cfd250a5--pubN65930" page="138" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2b4b-16b9-e9a0-e403" name="Ravager Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e88-5d63-c92d-2b73" name="Ravager Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5628-1d90-fa2a-2630" name="Ravager Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0b85-e099-5f3f-abeb" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97ba-cd37-3b17-7942" name="Brute Ram Ship" publicationId="cfd250a5--pubN65930" page="139" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="79cc-6d08-4d8e-0a6f" name="Brute Ram Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c39-8d18-d43c-0806" name="Brute Ram Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="65fa-a138-28dd-b39d" name="Brute Ram Ship" hidden="false">
+          <description>The Brute Ram Ship rolls 4 dice to damage an opposing ship when it rams.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="31fc-7b4f-4277-4011" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
