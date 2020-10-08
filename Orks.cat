@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="1" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="cfd250a5--pubN65584" name="BFG Rulebook - Armada"/>
+    <publication id="cfd250a5--pubN65930" name="BFG Rulebook"/>
+    <publication id="cfd250a5--pubN66525" name="FAQ"/>
+    <publication id="cfd250a5--pubN73992" name="BFG Ruebook Armada"/>
+    <publication id="cfd250a5--pubN75070" name="BFG_-_Additional_Ships_Compendium_1.4"/>
+    <publication id="cfd250a5--pubN75305" name="2010 Compedium"/>
+    <publication id="cfd250a5--pubN75472" name="2010 Compendium"/>
+  </publications>
+  <forceEntries>
+    <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
+      <categoryLinks>
+        <categoryLink id="26d8-9ad3-06ef-e6d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="e796-2bf8-1100-86f1" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="8894-4e2f-38a0-e69c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="1d40-2bda-92ac-7343" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="2ebe-85e3-39a0-f6ea" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="5244-e261-357e-ee37" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="fb84-139c-f5a4-3dc9" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="814c-d816-c7a4-41d7" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="6a6d-7a83-b99f-363d" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="3394-281a-e895-72bd" name="Ork Waaagh!" publicationId="137d-dbad-5653-19f2" hidden="false">
+      <categoryLinks>
+        <categoryLink id="6919-3813-1339-75d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="d357-6979-5318-e248" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="8dd5-802f-777b-7699" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="c2fb-0013-baeb-5467" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="d43d-a935-747b-3e5a" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="6aea-eaef-3497-8012" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="156f-a8f4-2117-1a9b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="111f-4e0b-c0fc-53f1" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="e66f-6fc9-14f6-8ea3" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="090c65cc-0653-4f4e-a67b-e64854243aa6" name="Dethdeala Ork Battleship" publicationId="cfd250a5--pubN65584" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="db1a-8b28-3b34-b3d7" name="Dethdeala Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/ 6+Front</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2204-281b-5cc8-86fc" name="Dethdeala Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9690-4a11-412b-d39d" name="Dethdeala Prow Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c58-05e4-d2f7-3584" name="Dethdeala Dorsal Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4513-9089-f5a0-773e" name="Dethdeala Port Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a49-0a0f-a469-2489" name="Dethdeala Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="025d-e695-9f6d-3493" name="Dethdeala Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c53c-45d2-89e7-e766" name="Dethdeala Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ce21-0d44-455f-5b1b" name="Soopa Enginez" page="0" hidden="false">
+          <description>4D6 All Ahead Full!</description>
+        </rule>
+        <rule id="2633-c5ec-0764-323b" name="Dethdeala Ork Battleship" hidden="false">
+          <description>When Leadership values are generated for the Ork fleet, Dethdeala can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.</description>
+        </rule>
+        <rule id="7232-c0d4-661b-84c8" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+        </rule>
+        <rule id="6adf-d5b1-1af5-af78" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="0473-b377-69da-16be" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+        <rule id="9427-2615-e6e0-a608" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="090c65cc-0653-4f4e-a67b-e64854243aa6-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="da37-04ba-746e-fb04" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8bd9-9834-44ca-72c0" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="e2b2-4115-aecf-e532" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="32fd-7203-6f50-6e55" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a525-2c72-e76e-3ad5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7ca3-1c46-cbd9-1af6" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ede2-96b1-5511-8d8d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e8c5-b20d-bbf1-5a17" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9273-7fb8-1025-e795" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="74b2-1eec-145f-aab7" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="328a-c910-68c6-9387" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a30b-cff3-fad4-cc02" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b1a6-e30c-b1fe-81b1" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="088d-18ae-c1b5-8e4b" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d960-9ce8-a172-c7ed" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a2bf-1014-7499-1886" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1529-f482-8122-310f" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0015-c4a8-2020-0859" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="dfe8-e6c7-101c-a02a" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3056-4ded-e627-5057" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb13-dcc0-3ece-04bd" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="53b8-8ef7-734d-0495" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6e08-88b6-46a4-1b7f" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-ad52-2a06-e4e2" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="275.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c71d77d-033d-4cf8-a9a1-ba42760816e6" name="Gorbag&apos;s Revenge Ork Battleship" publicationId="cfd250a5--pubN65584" page="065" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="11f7-9f18-201a-1d78" name="Gorbag&apos;s Revenge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/ 6+ Front</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="09d2-999b-d3ed-12cc" name="Gorbag&apos;s Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c38-3f4a-c344-d224" name="Gorbag&apos;s Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e2f1-b038-d88c-5a71" name="Gorbag&apos;s Dorsal Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f6d-9ffc-0f29-8870" name="Gorbag&apos;s Port Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b22-cf01-1f14-a793" name="Gorbag&apos;s Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="079c-9fb5-fffa-d322" name="Gorbag&apos;s Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0335-154c-53eb-4567" name="Gorbag&apos;s Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc67-282e-64b8-51a2" name="Gorbag&apos;s Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9c6-9177-4586-2394" name="Gorbag&apos;s Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2ee7-dd32-3675-0a96" name="Gorbag&apos;s Revenge Ork Battleship" hidden="false">
+          <description>When Leadership values are generated for the Ork fleet, Gorbag’s Revenge can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.</description>
+        </rule>
+        <rule id="afd6-5b13-9b5b-8d70" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1c71d77d-033d-4cf8-a9a1-ba42760816e6-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="299a-b19d-a727-ee51" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2ba1-a9b3-d8af-29a9" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="de58-2fdb-5cff-69c0" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="16bb-13e9-40be-a513" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0caa-9797-088e-8592" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7247-e860-eaf3-b2b1" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a4b-383e-077d-49f9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ffd1-066c-b43f-2bbb" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6897-9336-6997-3ea8" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b9a9-d11b-d599-3994" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7d7d-aaa9-a4a0-655e" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5da6-43a0-cad6-0bd7" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="285f-2d6e-d82c-feb6" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8aa9-db81-9b1f-bdfd" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bf2-9ff8-5349-d85c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d6f8-579d-efdd-bafa" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="21d7-0ac4-9b7a-93d2" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5b9-72af-ce3f-9da4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a706-b8ca-35d9-7092" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="14b7-8fc5-e6f5-a435" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a68-4b6c-658e-e675" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3207-8a8a-9847-0e0e" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3278-dd55-b1c5-cee4" name="Boarding torpedos (speed 20cm strength D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de8e-4df7-7f3f-c62c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="73be-314b-6395-7416" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1e-44c5-1f49-f138" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="80.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="310.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7241b1f-65a5-4358-9328-0665bb9dcd9b" name="Ork Hammer Class Battle Kroozer" publicationId="cfd250a5--pubN65584" page="68" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8195-17aa-caab-617c" name="Hammer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Kroozer</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/ 6+ Front</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a4f-1c45-b652-73db" name="Hammer Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6fb0-0f39-03e0-b2a0" name="Hammer Prow Bombardment Cannon*" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b64-7980-9b2d-2b04" name="Hammer Prow Mounted Torpedos*" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e534-331e-8893-29a9" name="Hammer Dorsal Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d16-0ef6-7b97-b852" name="Hammer Port Gunz Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e256-da92-b5c9-0227" name="Hammer Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="18c3-b5e4-5fbd-a934" name="Hammer Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cb9d-90b2-5a97-8e78" name="Hammer Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fb7e-b849-aa20-d858" name="Ork Hammer Class Battle Kroozer" hidden="false">
+          <description>Leadership:
+When Leadership values are generated for the Ork fleet, Hammer class battle cruisers can opt
+to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.
+
+Special Rules:
+A Hammer Klass cruiser can either fire torpedoes or use bombardment kannon in a turn if the launchas are loaded at the time, but the launchas can only be used if they are loaded using the Reload Ordnance special order after each shot.</description>
+        </rule>
+        <rule id="805d-2800-479a-d383" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5362-5ec0-123e-7b8a" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5d77cdf6-d45b-4a14-b2ed-30efb843e252" name="Extra turret (3)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="784ba8dc-fe3b-4f89-a50d-07483c1b4eeb" name="Boarding torpedos (speed 20cm strength D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="86c8fb4d-04cc-474a-8f29-243dadc60471" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5fbc-cccf-9705-fc56" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fa33-1b95-8a82-5e73" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="ddc7-6e3b-3871-5ba9" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="5fd8-852e-2ff5-18fe" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5811-068a-7ebe-bf61" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2119-9815-cb9d-45cf" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74df-d6ec-8b3e-2d62" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5903-f7db-660e-4772" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c985-1e92-9283-5a95" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="cc19-e223-cd62-6641" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b1f6-7af0-e8d6-baad" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ed5-21a2-ae28-29f4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="c029-d7db-6c90-3501" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8bc3-edbb-ffeb-aece" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e60-1e52-4c40-f380" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6f76-ea54-3b03-20b0" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3aeb-9a90-4322-45ea" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05dd-0a42-b771-843a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5d01-7abe-877d-03ee" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4cd2-40dd-7919-c52a" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e9-1aae-c92b-73c4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2d1b-1955-7d0e-e3a4" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="245.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a89b419-e904-4c28-bfb4-c693f54032af" name="Kroolboy Ork Battleship" publicationId="cfd250a5--pubN65584" page="67" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e9ee-e1ae-ef66-dacd" name="Kroolboy Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/ 6+ Front</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8ba-c807-27be-d875" name="Kroolboy Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e76e-2793-1cea-ed15" name="Kroolboy Prow heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ecfc-e5a6-ab18-d572" name="Kroolboy Dorsal Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef30-c920-388a-612c" name="Kroolboy Port Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0f9-eac8-3ad5-ae65" name="Kroolboy Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3af8-b73b-831a-e225" name="Kroolboy Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb4c-4f09-3fd9-9e9c" name="Kroolboy Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b687-05fb-7452-4ef2" name="Soopa Enginez" hidden="false">
+          <description>4D6 All Ahead Full!</description>
+        </rule>
+        <rule id="0761-a2d5-7d88-8a26" name="Kroolboy Ork Battleship" hidden="false">
+          <description>When Leadership values are generated for the Ork fleet, Kroolboy can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the Warlord dragooning the best crew in the fleet aboard his vessel.</description>
+        </rule>
+        <rule id="073a-ab14-e872-47b4" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5a89b419-e904-4c28-bfb4-c693f54032af-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="35fea1b2-5b14-4de3-8051-33ead7678888" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9653-4212-eb7e-9687" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="48a8-188d-0fa7-1cd9" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="0959-8880-0a6f-3404" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="a627-e6f2-2368-5c25" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4b2-78c4-93d4-d393" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5859-bf40-3ace-ee2f" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="182f-6347-66d2-1921" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2523-870b-0af4-4b45" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07f2-a026-bd4d-4243" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="352d-17b2-d635-4a15" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f274-ad99-f320-ced9" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee9-774c-42b2-5e08" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a43a-7284-a643-afdb" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ac1a-9d1b-5239-0b68" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14aa-6892-e632-8391" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="aa6f-e1e9-4c9c-dad4" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="525c-8efa-6109-bba9" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed5e-654f-ac69-c122" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fb75-f3a7-857e-a44a" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="331f-d689-6a2e-66fd" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8742-a7a9-a232-1ce0" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="88c2-afe0-2fe0-e0c4" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="270.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="def6d528-6663-43a6-b6aa-2e809efa5a9d" name="Brute Ram Ship" publicationId="cfd250a5--pubN65930" page="139" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9c98-070e-2bf0-1da7" name="Brute Ram Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4bd6-8080-71e4-26ac" name="Brute Ram Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5347-0b09-38f5-fa6b" name="Brute Ram Ship" hidden="false">
+          <description>The Brute Ram Ship rolls 4 dice to damage an opposing ship when it rams.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="def6d528-6663-43a6-b6aa-2e809efa5a9d-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="cfd250a5--pubN65930" page="136" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9a07-79ed-d71e-fbf2" name="Kill Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ Front/ 5+Sides/ 4+Rear</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7cd0-1ec0-b96d-7316" name="Kill Kroozer Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84f6-695d-5769-aeaf" name="Kill Kroozer Port Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b9e7-0e38-8253-ea32" name="Kill Kroozer Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="02ec-f2b8-dc3c-8cb7" name="Kill Kroozer Starboard Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="351d-a02c-3230-0997" name="Kill Kroozer Prow Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c2f1-f556-b31d-c6b6" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cb2d-3453-e895-bb2b" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="38d3-058b-22bb-be35" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="3320-8d01-5dab-5e63" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="1b43-9a83-d7a5-60b5" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14b0-58cc-4e44-ed04" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2161-12a6-2fe4-e1ad" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="474d-7fb0-cafa-ebda" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="204c-c48e-3128-3546" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35c2-e8de-bd45-481c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9b34-90b6-0d24-d44f" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a0f9-c96b-f986-3aca" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2433-96b6-4c37-9ff7" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4760-4588-bef4-8f03" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e67-8364-8f3d-418f" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6153-f0c2-98b6-61b8" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8888-fa38-63bb-de8b" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1e9a-c872-91b1-f27c" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f499-256c-8f93-c9d5" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="36eb-50f9-f21b-f20e" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="70ba-9e2e-a5e0-a361" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4fa-4fce-a0b2-d1d0" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9c7d-fe9e-3677-ea85" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bda3-4475-36ee-1f69" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b380-7aa5-338f-1c4a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7b-7936-d2eb-5ffc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f00c-9b1b-0f08-1393" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fa0f-d435-00e5-92d2" name="Torpedo Launcha" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="264d-38ce-ba1e-d008" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ab95-61f8-8a55-fc02" name="Torpedo Launcha" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry id="2c87-c7f2-302b-96aa" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8057-fd5e-2601-27c8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b380-7aa5-338f-1c4a" name="Prow Heavy Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd90-7380-a898-53de" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f153-2b03-3ed1-08e1" name="Kill Kroozer Prow Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="155.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e89f96f0-a7f7-4264-aa7b-6b2baa908367" name="Onslaught Attack Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2754-03cf-ca6f-9277" name="Onslaught Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="46fe-dec5-96b3-6dad" name="Onslaught Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e89f96f0-a7f7-4264-aa7b-6b2baa908367-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2fa646e7-b11a-48d1-8867-c227f3438e32" name="Ravager Attack Ship" publicationId="cfd250a5--pubN65930" page="138" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7a5b-3f87-203a-a3c9" name="Ravager Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dfe-2aad-fc9a-dce6" name="Ravager Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f98f-eb25-bbac-b315" name="Ravager Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2fa646e7-b11a-48d1-8867-c227f3438e32-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82db7662-49b2-44a9-929a-cdc6a31fbaab" name="Ork Rok" page="0" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="65cc-3f72-0140-fb3b" name="Rok Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">10cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="40ce-95ae-4e13-669b" name="Rok Heavy Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4b7a-6c51-a193-fa5a" name="Rok Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="35c8-f961-b34b-c29b" name="Rok Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="97e8-ea72-9ff9-33b2" name="Ork Rok Special Rules" hidden="false">
+          <description>MOVEMENT:
+Because they are basically large lumps of rock with engines studded all over them, Roks don’t move in the same way as normal ships. In their Movement phase Roks travel 10cm forward in a straight line, no more, no less. Roks may not turn or use Burn Retros or Come to New Heading orders.
+
+On All Ahead Full orders Roks move an extra 2D6cm in any direction at the end of their move. If this causes them to move 10cm or more in a different direction to the one they are travelling in, this becomes their new direction of travel. This can be seen more clearly in the diagrams to the right.
+
+Due to their low speed and considerable momentum, Roks which are crippled or moving though Blast markers do not reduce their speed. Roks in the gravity well of a planet or moon may make free turns like an ordinary ship (45°) and/or place themselves in a stationary or low orbit.
+
+CRITICAL HITS:
+Roks lack the complex systems of true space craft, so critical hits are not rolled on the Critical table. Instead each critical hit inflicts +1 point of damage.
+
+CATASTROPHIC DAMAGE:
+When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Damage, instead the Rok is replaced by 4 Blast markers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="82db7662-49b2-44a9-929a-cdc6a31fbaab-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="55f54828-79d4-4e64-a4bd-8521d7f43ef3" name="Ork Terror Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c92c-1273-5c44-7702" name="Terror Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 5+Sides/ 4+ Rear</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ebc-dd9f-10c7-15ad" name="Terror Ship Port Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="06d1-32ba-dc6b-3fb8" name="Terror Ship Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta Bommas:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">n/a</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b25-209b-3c2a-ec7b" name="Terror Ship Starboard Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="740d-339d-3f7b-3ef3" name="Terror Ship Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta Bommas:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">n/a</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cff7-e6db-9e7d-14b3" name="Terror Ship Prow Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bde9-10e8-33e5-80a7" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="d065-8418-bcce-ae23" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+        <rule id="1416-db96-b514-9ed0" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d4a0-ab31-e346-d589" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a22c-d6a6-456d-410f" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="a92e-03b0-ea0d-eefb" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="d458-7049-2fb7-049f" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="6a82-e867-8b90-d9db" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="521f-38cf-cbfe-6996" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3a1b-16cb-0bad-a9db" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d46a-a28c-a7f3-8140" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0c26-1cbb-3e4b-793e" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a146-4c61-b2e2-9d50" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b96c-8d7d-9adb-a8ed" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2ecb-7640-a9f1-1e67" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7dc3-2d88-f96c-3675" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="85d0-1dba-240a-727d" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="06ad-a6bb-b783-89af" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3db1-a350-c858-33a5" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2111-d1a5-2cc9-599d" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c2a9-9cf6-9929-867f" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d6e-dd59-74cb-dc8c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="f197-b3a2-b915-766d" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a7fb-0c76-583f-3024" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1fb-d27f-b586-89ad" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4576-1206-bf01-9ceb" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8973-f965-9a4b-5286" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-90f3-a194-85bd" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0b21-26e3-040c-0106" name="Prow Weapon Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4671-71b7-f905-de81" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b106-ab7b-5fc7-c2ed" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b208-5e99-0f34-2f9a" name="Torpedo Launcha" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a427-dde5-26a6-3c95" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1f38-da5e-474f-344b" name="Torpedo Launcha" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry id="41a9-95c1-f99d-b72a" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac78-c71b-a079-3ee3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5fdd-6530-bc57-eda9" name="Prow Heavy Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2d-cc35-f322-aa55" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3081-8ef1-d136-00fd" name="Terror Ship Prow Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="142badd7-b775-4e2c-8659-211225541e22" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="142badd7-b775-4e2c-8659-211225541e22-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="057fb61e-da93-45d5-b65d-463a49f0f8e3" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b94172c7-d406-4ca1-b6a2-ee619b98d364" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b4f9d2fe-0d5f-41df-9779-4487d7c33caf" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="da704f28-0365-4e9f-abaf-c7f63091cfe1" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="977040e4-a8c3-4478-8901-2047287795e1" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0a9633f2-aae5-4b74-b61d-085f4d82b1a4" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf57cd2e-0286-4a18-a238-4bc23ec984d2" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7db8db4f-3649-4932-9114-598f708bda42" name="Slamblasta Ork Battleship" publicationId="cfd250a5--pubN65584" page="66" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e13f-77ff-15fd-e372" name="Slamblasta Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/ 6+ Front</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec20-a7e3-ad5a-d4f6" name="Slamblasta Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3d0-b8b0-75b1-8c40" name="Slamblasta Prow Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ab4-f857-bd50-d487" name="Slamblasta Dorsal Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="50f0-0aad-1054-db5a" name="Slamblasta Port Gunz Battery" page="" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bff1-a7cf-1647-c801" name="Slamblasta Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df61-13ee-a5dc-ba4e" name="Slamblasta Port Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5a28-e269-cda2-09c0" name="Slamblasta Starboard Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="437f-46c7-002d-d77f" name="Slamblasta Ork Battleship" hidden="false">
+          <description>Due to its poorly distributed mass, Slamblasta may not use Come to New Heading special orders.
+
+When Leadership values are generated for the Ork fleet, Slamblasta can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.</description>
+        </rule>
+        <rule id="3b82-ec66-f2a4-a850" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+        </rule>
+        <rule id="498f-85b6-d1b2-89af" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="ae70-e0a5-35c8-cf3b" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7db8db4f-3649-4932-9114-598f708bda42-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="998b9bfd-8a59-4c21-8106-ecee20c9d79a" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="799f-d88d-907e-bc0b" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f8d8-fd2b-d6ae-f00a" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="cec7-d23d-2ad5-577b" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="51a6-5c32-b6c7-33a6" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fa5-f4b4-4b10-f49c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a0ec-d808-9928-6a56" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e247-29fe-d6d6-11bf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0c2d-9b7d-f4d8-baae" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26b6-c2f5-6e47-c3fd" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6117-22f9-305b-d907" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="19e9-077e-9ce5-7a76" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d1f-2bf6-70a7-d0e2" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="235b-af3c-ecc9-f56f" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d636-29ea-05f0-03cb" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aff0-d3c4-d913-5ec1" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9244-d30f-f90e-581a" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="51c9-5f89-5304-39cb" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95b7-1f65-d6cf-9deb" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ca41-46ad-ad93-f9fa" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="93c5-2e03-a6b1-5941" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a74c-5980-a808-927f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9d88-06d5-877f-7ab5" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="295.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2" name="Ork Hulk" publicationId="cfd250a5--pubN73992" page="60" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b5fe-abb8-37b8-d778" name="Ork Hulk Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Defence</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">40</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">10cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d8a6-bee4-7da2-e565" name="Hulk Prow Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7eb9-f314-ed9f-d43d" name="Hulk Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="394f-a405-d0fd-e08a" name="Hulk Prow Heavy Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f816-5806-4898-3303" name="Hulk Dorsal Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17bd-b08f-5578-dd26" name="Hulk Starboard Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9dd1-e178-e333-19b8" name="Hulk Starboard Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e66-f0b1-62a5-6502" name="Hulk Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="699a-7ec5-4c1a-cc74" name="Hulk Port Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c192-cfff-2e51-12de" name="Hulk Port Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="274f-3baf-1774-53d0" name="Hulk Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighta-Bommerz:25cm Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33d1-9c8f-7f35-c24c" name="Hulk Aft Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2D6+6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Rear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8100-8e2f-1414-48a3" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+        <rule id="55f9-0d51-5852-7690" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="7e64-5442-57a9-f712" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ad832840-13a0-4aaa-b1d7-41af200d5d7a" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f446-2495-b051-bc80" name="Ork Warlord" hidden="false">
+              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="ad832840-13a0-4aaa-b1d7-41af200d5d7a-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="60d372db-9f54-4055-abd5-8e2b419ba27b" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9add89c1-09bc-4641-b47d-23a62f85a9d9" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9749548d-c709-4810-8e63-138ef3e8b4b1" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="e9aa-f9f8-285e-5be6" name="Mega-Armoured Boarding Parties" hidden="false">
+                      <description>+1 modifier on boarding.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e8c7f5f3-a87e-411c-99cf-9b189769bf1d" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="717a-bcb7-ae47-fd01" name="Maniac Gunners" hidden="false">
+                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2fe729a7-47a8-402a-b3d9-ad16f7027388" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="afbe-c9fc-b135-4aad" name="Extra Power Fields" hidden="false">
+                      <description>The ship’s shield value is increased by +1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b2f90e3b-6c82-4260-8373-de41edc764ad" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3ca5-d5b2-684b-9210" name="Looted Torpedoes" hidden="false">
+                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e131b6a3-d721-41cb-a842-7e3978eb3ebb" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ea3b-1711-7268-b4b9" name="Mad Meks" hidden="false">
+                      <description>The ship may re-roll the dice for damage control.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="593f-2018-ddac-776a" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-4b56-3273-ba77" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="160.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="600.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="440d-f1d9-0756-0da4" name="Ork Gouga Class Light Kroozer" publicationId="cfd250a5--pubN75070" page="62" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="078b-05f9-0180-008f" name="Gouga Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 5+Sides/ 4+Rear</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9589-9ec9-4a9b-6713" name="Gouga Port Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2838-6717-0af6-67a9" name="Gouga Starboard Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="399a-56ae-f0ba-59b1" name="Gouga Prow Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="11b9-035f-4461-3351" name="Ork Gouga Class Light Kroozer" hidden="false">
+          <description>When declre a ram, the Gouga, if it successfully hits its target, may choose to grab the enemy ship and perform a devastation boarding action.
+
+The klaws will automatically cause one point of damage on the target ship, ignoring shields, as soon as the Gouga moves into contact. No weapons may be fired in the shooting phase as the Gouga performs this special attack.
+
+In the end phase, the Gouga performs a boarding action with an additional +1 modifier as the attacking Orks will be in the most sensitive parts of the enemy ship. Note that during this manouvre, the Gouga does not cause normal ram damage.
+
+The klaws count as prow armament for the pourpose of critical hits.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7f24-090c-6808-fd53" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="95.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bff7-4210-d2ae-0570" name="Grunt Assault Ship" publicationId="cfd250a5--pubN75305" page="153" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0574-3316-a98d-6d40" name="Grunt Assault Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e19-3d1b-74ea-6ff4" name="Grunt Assault Ship Gunz Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e74e-585c-5b22-5eb4" name="Grunt Assault Ship" hidden="false">
+          <description>Grunt assault ships embark huge crews of Ork boarding parties and are equipped with tractor fields, powerful boarding drills, etc. They roll 2D6 against an opposing ship when ramming and count as 2Hp when determining their boarding value (before other modifiers). These ships are equipped with a Traktor Field and must be mounted on a large base, and due to their poorly distributed mass cannot use Come To New Heading special orders. Grunt assault ships can be equipped with Klaws for +5 points each vessel, not per skwadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="592b-7aa5-fa61-9565" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="cfd250a5--pubN75472" page="152" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3054-cb07-539e-396c" name="Ork Lite Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+Sides/ 4+Rear</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4eaf-5100-e7eb-526e" name="Ork Lite Kroozer Port Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ba7-7adf-2fe0-587a" name="Ork Lite Kroozer Starboard Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D3+1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36bf-380e-11f3-2252" name="Ork Lite Kroozer Prow Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9f29-4264-db08-61a8" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2552-a409-7d27-b6c0" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="ffdf-660b-abed-69d9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b46-06d2-1fec-d507" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca42-0afd-7f1e-117d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ad3a-19df-04e6-62b8" name="Torpedo Launcha" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa2a-7975-c5f2-69ba" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1931-4f4f-f856-d615" name="Torpedo Launcha" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry id="7e25-1b56-57b2-ff2b" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ecc-5392-d209-515e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ffdf-660b-abed-69d9" name="Prow Heavy Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdaf-6a1d-152e-340f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fd1d-f716-e758-7ac9" name="Ork Lite Kroozer Prow Heavy Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="93b2-159b-d7dd-24e5" name="Additional Prow Gunz" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ca2-79fe-3098-ce8c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7464-2ff6-2387-710d" name="Additional Prow Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1421-5d8d-a1d7-4b40" name="Zukov&apos;s Klaw Ork Assault Kroozer" publicationId="cfd250a5--pubN75472" page="151" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2349-78cd-db87-1a25" name="Zukov&apos;s Klaw Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+Sides/ 4+Rear</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0bfd-b565-4fde-de3b" name="Zukov&apos;s Klaw Ork Port Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e19-9534-bf56-820b" name="Zukov&apos;s Klaw Ork Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2/Special</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">N/A</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4fb1-332c-0c08-9bca" name="Zukov&apos;s Klaw Ork Starboard Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f81f-251b-489d-1c0d" name="Zukov&apos;s Klaw Ork Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats:30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2/Special</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">N/A</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9e6e-1e50-8ca2-36de" name="Zukov&apos;s Klaw Ork Prow Gunz" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8bad-cda4-71e1-b66e" name="Zukov&apos;s Klaw Ork Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">D6+2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2397-0d4e-ac96-452c" name="Zukov&apos;s Klaw Ork Assault Kroozer" hidden="false">
+          <description>Zukov’s Klaw is a Terror Ship that can only be used exactly as described in these special rules. It is of the Goff Clan, giving it both a +1 leadership modifier when attempting to ram and an additional +1 modifier during boarding actions. It is upgraded to be an Assault Karrier with boarding torpedoes and may launch one additional assault boat during the ordnance phase any time it launches assault boats normally (even if crippled or braced, but not both), but it may not use any other types of attack craft. It is also equipped with Klaws and a Traktor Field as part of its point cost, which does not affect the number of Gubbins a Warlord can upgrade this vessel with for the appropriate points if used as a Warlord‟s personal ship. Zukov’s Klaw must be mounted on a large base and cannot use Come To New Heading special orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6b49-76db-eae6-7e33" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="210.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="025f-3dcb-76fb-12cf" name="Ork Rules" hidden="false">
+      <comment>Remade the orks their own list</comment>
+      <description>An Ork fleet can include a maximum of one Warlord per 500 points. So if the fleet is worth up to 500 points, it may have one Warlord. If it is worth 500-1,000 points two Warlords may be included, etc.
+
+Orks do not need to pass a Command Check to use All Ahead Full special orders. However, Ork drives are less efficient than those of other races and are often short on fuel, so they only travel an extra 2D6cm on All Ahead Full orders instead of 4D6cm.
+
+Ork ships reduce their Leadership by -1 from whatever they rolled, giving them a Leadership range of 5 to 8.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="d5a1-b82f-cd18-f1f9" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="4c6a-1718-6bbb-bf41" name="Ork Warlord" hidden="false">
+          <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="68f2-5a6a-5399-f125" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="753c-f2e7-1622-64a4" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34bf-6c73-9606-ab9b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7b4e-fbe5-2420-34bf" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12d4-1a0e-d6e8-4534" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="163a-3fce-eef0-2557" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="873d-25ff-b1a0-5d5f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="972e-9632-8d9b-760a" name="Mega-Armoured Boarding Parties" hidden="false">
+                  <description>+1 modifier on boarding.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c517-495a-93e6-3ff1" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6cf-a92c-52ab-38fa" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="1320-71c1-de59-6af1" name="Maniac Gunners" hidden="false">
+                  <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf2c-1092-d7db-5c9b" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43a4-11d4-aa65-8bd9" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3645-5524-57d8-8e5b" name="Extra Power Fields" hidden="false">
+                  <description>The ship’s shield value is increased by +1.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef6e-1149-140e-4233" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="971f-9d1e-1ab2-2e01" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="7494-b677-b7a7-f9f9" name="Looted Torpedoes" hidden="false">
+                  <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="77e4-006c-698d-5bcb" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de04-8b12-e7f5-53bd" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="9b95-324c-2359-02d4" name="Mad Meks" hidden="false">
+                  <description>The ship may re-roll the dice for damage control.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c5d-445b-1077-2681" name="Torpedo Launcha (Speed 30cm, Strenght D6+2)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec3-4381-cb1c-daae" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b6ff-7541-947e-fb53" name="Torpedo Launcha" hidden="false">
+          <description>Replaces the Prow Heavy Gun Battery with a torpedo launcha.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="1121-4623-0476-6d9e" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81a6-90aa-c3b4-9577" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="545f-1ec9-0ced-f060" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="910a-b755-6a5d-f8d9" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d5ae-9a60-248d-0aca" name="Ordnance" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351f-def9-d4d9-e159" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670e-6dd8-0e26-51d3" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5137-5813-8ec2-9fa8" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7a0c-fbc8-3ab3-e384" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
+              <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
+            </rule>
+            <rule id="1ff4-ee71-a355-1e7f" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+              <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+            </rule>
+            <rule id="fa70-84c1-86b0-f556" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+            </rule>
+            <rule id="a6f3-23ed-010f-2c9c" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e85e-1e33-f52a-0657" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3133-2cc8-9491-aa76" name="Thunderhawk Gunship" hidden="false">
+              <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
+
+Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="e580-5744-c4c1-d367" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="16e5-ebae-1443-27f6" name="Improved Thrusters" hidden="false">
+      <description>Moves +1D6 on All Ahead Full special orders.</description>
+    </rule>
+    <rule id="72da-ed6a-e7e5-68e4" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+    </rule>
+    <rule id="b5f0-63ee-b9a7-e467" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+    </rule>
+    <rule id="3e69-3776-92b7-5185" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
