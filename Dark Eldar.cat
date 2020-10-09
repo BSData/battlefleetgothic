@@ -4,10 +4,38 @@
     <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
   </publications>
   <forceEntries>
-    <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Pirate Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false"/>
+    <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Pirate Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false">
+      <categoryLinks>
+        <categoryLink id="02ca-51a1-be6f-da1c" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="9ce0-4567-7988-c00a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="4841-7590-197e-c1d9" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e927-067f-a231-ff37" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f38-25c4-a5c7-6ba2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0e7f-fb5e-2901-20ce" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="39b0-bc87-162c-9e64" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="0f9d-3cec-6600-fb8c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="1b47-e153-86cf-94d2" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="c14c-be74-a5be-4936" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
