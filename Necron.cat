@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necron Harvest Fleet" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necron Harvest Fleet" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="d0a06aad--pubN65876" name="BFG FAQ 2007"/>
   </publications>
+  <forceEntries>
+    <forceEntry id="d1ae-25b1-bb3e-95c3" name="Necron Harvest Fleet" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false"/>
+  </forceEntries>
   <selectionEntries>
-    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="maxInRoster" value="1.0">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5eb3357-d2fd-450e-8ea2-1243d9d12971" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -141,6 +154,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6ee91504-f516-4fef-a74e-a23482e50201" name="Re-rolls" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -180,6 +205,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="6.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -283,6 +320,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -326,7 +375,18 @@
         <cost name="pts" typeId="points" value="155.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a37e-16fe-be1e-c086" name="Cartouche Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a37e-16fe-be1e-c086" name="Cartouche Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="eb26-57d8-9ad5-754f" name="Cartouche Class Light Cruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -404,6 +464,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3bf4-96e7-e296-fb90" name="Kopesh Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4698-4dcd-0452-3db9" type="max"/>
       </constraints>
@@ -484,6 +555,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e38b-d1fd-d726-e05c" name="Escort Squardon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f6ac-6de3-ed5e-36dd" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -491,11 +574,40 @@
         <entryLink id="c4d4-6dce-106c-cd23" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry"/>
         <entryLink id="01c1-869b-2160-ad6d" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="c078-b502-bfc1-32da" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry"/>
-    <entryLink id="5384-72e1-0a9c-657e" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry"/>
+    <entryLink id="c078-b502-bfc1-32da" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="5384-72e1-0a9c-657e" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="a11f-a53c-d44f-4480" name="Leadership (Necron)" hidden="false">
