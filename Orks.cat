@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="1" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="2" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cfd250a5--pubN65584" name="BFG Rulebook - Armada"/>
     <publication id="cfd250a5--pubN65930" name="BFG Rulebook"/>
@@ -36,9 +36,36 @@
         <categoryLink id="e66f-6fc9-14f6-8ea3" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="c605-ecf9-5430-c533" name="Da Ork Clanz Fleet List" hidden="false">
+      <categoryLinks>
+        <categoryLink id="7eeb-f414-e1a9-8c04" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="abbe-9a38-1bf2-7fde" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="612b-64e5-5c3e-20fa" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="a95d-35b7-367a-c672" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="97d4-c9f8-32a6-dcfd" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="97e0-e484-3fde-508e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="0252-e9e5-9656-2bbf" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="8c11-be1f-a665-8088" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="c9b8-9c4c-e8c3-df88" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink id="65da-a28d-37d9-2ca5" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="090c65cc-0653-4f4e-a67b-e64854243aa6" name="Dethdeala Ork Battleship" publicationId="cfd250a5--pubN65584" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="090c65cc-0653-4f4e-a67b-e64854243aa6" name="Dethdeala Ork Battleship" publicationId="cfd250a5--pubN65584" page="64" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -248,7 +275,20 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c71d77d-033d-4cf8-a9a1-ba42760816e6" name="Gorbag&apos;s Revenge Ork Battleship" publicationId="cfd250a5--pubN65584" page="065" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1c71d77d-033d-4cf8-a9a1-ba42760816e6" name="Gorbag&apos;s Revenge Ork Battleship" publicationId="cfd250a5--pubN65584" page="065" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -458,7 +498,20 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="310.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7241b1f-65a5-4358-9328-0665bb9dcd9b" name="Ork Hammer Class Battle Kroozer" publicationId="cfd250a5--pubN65584" page="68" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c7241b1f-65a5-4358-9328-0665bb9dcd9b" name="Ork Hammer Class Battle Kroozer" publicationId="cfd250a5--pubN65584" page="68" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8195-17aa-caab-617c" name="Hammer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -671,7 +724,20 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="245.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5a89b419-e904-4c28-bfb4-c693f54032af" name="Kroolboy Ork Battleship" publicationId="cfd250a5--pubN65584" page="67" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5a89b419-e904-4c28-bfb4-c693f54032af" name="Kroolboy Ork Battleship" publicationId="cfd250a5--pubN65584" page="67" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -862,7 +928,21 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="cfd250a5--pubN65930" page="136" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="cfd250a5--pubN65930" page="136" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9a07-79ed-d71e-fbf2" name="Kill Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1073,7 +1153,20 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="155.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82db7662-49b2-44a9-929a-cdc6a31fbaab" name="Ork Rok" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="82db7662-49b2-44a9-929a-cdc6a31fbaab" name="Ork Rok" publicationId="1bc8-5968-21c3-0f27" page="63" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="65cc-3f72-0140-fb3b" name="Rok Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1131,7 +1224,21 @@ When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Dam
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55f54828-79d4-4e64-a4bd-8521d7f43ef3" name="Ork Terror Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="55f54828-79d4-4e64-a4bd-8521d7f43ef3" name="Ork Terror Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c92c-1273-5c44-7702" name="Terror Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1371,7 +1478,32 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="142badd7-b775-4e2c-8659-211225541e22" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="142badd7-b775-4e2c-8659-211225541e22" name="Ork Warlord" page="0" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="ab80-0fac-8ad3-fd16" value="1.0">
+          <repeats>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab80-0fac-8ad3-fd16" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="142badd7-b775-4e2c-8659-211225541e22-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1438,7 +1570,19 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7db8db4f-3649-4932-9114-598f708bda42" name="Slamblasta Ork Battleship" publicationId="cfd250a5--pubN65584" page="66" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7db8db4f-3649-4932-9114-598f708bda42" name="Slamblasta Ork Battleship" publicationId="cfd250a5--pubN65584" page="66" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -1646,7 +1790,20 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="295.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2" name="Ork Hulk" publicationId="cfd250a5--pubN73992" page="60" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2" name="Ork Hulk" publicationId="cfd250a5--pubN73992" page="60" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="b5fe-abb8-37b8-d778" name="Ork Hulk Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1874,7 +2031,18 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="600.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="440d-f1d9-0756-0da4" name="Ork Gouga Class Light Kroozer" publicationId="cfd250a5--pubN75070" page="62" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="440d-f1d9-0756-0da4" name="Ork Gouga Class Light Kroozer" publicationId="cfd250a5--pubN75070" page="62" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="078b-05f9-0180-008f" name="Gouga Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1927,7 +2095,20 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="95.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="cfd250a5--pubN75472" page="152" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="cfd250a5--pubN75472" page="152" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3054-cb07-539e-396c" name="Ork Lite Kroozer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2040,7 +2221,19 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1421-5d8d-a1d7-4b40" name="Zukov&apos;s Klaw Ork Assault Kroozer" publicationId="cfd250a5--pubN75472" page="151" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1421-5d8d-a1d7-4b40" name="Zukov&apos;s Klaw Ork Assault Kroozer" publicationId="cfd250a5--pubN75472" page="151" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2349-78cd-db87-1a25" name="Zukov&apos;s Klaw Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2108,7 +2301,20 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e774-548d-9436-6e14" name="Escort Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e774-548d-9436-6e14" name="Escort Squadron" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1b13-306c-a136-8a73" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2122,13 +2328,76 @@ The klaws count as prow armament for the pourpose of critical hits.</description
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="386a-fb07-9c00-fdde" name="Brute Ram Ship" hidden="false" collective="false" import="true" targetId="97ba-cd37-3b17-7942" type="selectionEntry"/>
-    <entryLink id="10da-35b0-3ebf-b099" name="Grunt Assault Ship" hidden="false" collective="false" import="true" targetId="a91e-87e4-7a52-6b53" type="selectionEntry"/>
-    <entryLink id="447d-92f3-19b8-c800" name="Onslaught Attack Ship" hidden="false" collective="false" import="true" targetId="3e08-c5ed-c2e2-8bce" type="selectionEntry"/>
-    <entryLink id="c012-74e2-31c1-d165" name="Ravager Attack Ship" hidden="false" collective="false" import="true" targetId="b5b2-a3cd-3374-9c8d" type="selectionEntry"/>
+    <entryLink id="386a-fb07-9c00-fdde" name="Brute Ram Ship" hidden="true" collective="false" import="true" targetId="97ba-cd37-3b17-7942" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="10da-35b0-3ebf-b099" name="Grunt Assault Ship" hidden="true" collective="false" import="true" targetId="a91e-87e4-7a52-6b53" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="447d-92f3-19b8-c800" name="Onslaught Attack Ship" hidden="true" collective="false" import="true" targetId="3e08-c5ed-c2e2-8bce" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c012-74e2-31c1-d165" name="Ravager Attack Ship" hidden="true" collective="false" import="true" targetId="b5b2-a3cd-3374-9c8d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="025f-3dcb-76fb-12cf" name="Ork Rules" hidden="false">
