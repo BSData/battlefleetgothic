@@ -51,7 +51,19 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="55733e1a-4a8a-457d-abfd-50280545579b" name="Pirate Prince" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="55733e1a-4a8a-457d-abfd-50280545579b" name="Pirate Prince" page="0" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f5af-f0af-4874-e144" name="Pirate Prince" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
@@ -92,7 +104,18 @@
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="51" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="51" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="025c-6c6c-1027-8ec5" name="Aurora Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -164,7 +187,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="5766-7751-d146-0800" page="137" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d531-9cc3-a27f-5287" type="max"/>
       </constraints>
@@ -441,7 +464,7 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e120-b2be-8d6b-4940" name="Dragonship" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e120-b2be-8d6b-4940" name="Dragonship" page="0" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="fba5-1346-67db-69e5" name="Dragonship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -606,7 +629,19 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="869e-bef2-6de4-0ca8" name="Eclipse Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -686,7 +721,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="9670-79b6-b335-ed60" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="9670-79b6-b335-ed60" page="48" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c2a-be81-09c1-c2a9" type="max"/>
       </constraints>
@@ -805,7 +840,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="700.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5952-f97f-78e3-8cab" name="Eldar Transport" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5952-f97f-78e3-8cab" name="Eldar Transport" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="80e4-4915-0a81-c15c" name="Eldar Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -838,7 +873,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74cb-a24c-af6a-10c0" name="Eldar Hero" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="74cb-a24c-af6a-10c0" name="Eldar Hero" page="0" hidden="true" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2f6-6e53-8269-3fa7" type="max"/>
       </constraints>
@@ -888,7 +923,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63f4-19a4-4ec9-fc07" name="Farseers" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="63f4-19a4-4ec9-fc07" name="Farseers" page="0" hidden="true" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5dad-61f0-5fda-5721" type="max"/>
       </constraints>
@@ -905,7 +940,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8565-3257-a04c-b7a4" name="Flame Of Asuryan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8565-3257-a04c-b7a4" name="Flame Of Asuryan" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7b-9504-2aaa-37fc" type="max"/>
       </constraints>
@@ -968,7 +1003,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="320.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2fa3-32ff-3976-698a" name="Haven Space Station" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2fa3-32ff-3976-698a" name="Haven Space Station" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="17ed-4a34-93e2-2cfc" name="Haven Space Station Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1021,7 +1056,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="5766-7751-d146-0800" page="137" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be94-d0e2-1bc1-11b6" type="max"/>
       </constraints>
@@ -1051,7 +1086,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="5766-7751-d146-0800" page="137" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="decrement" field="points" value="25">
           <conditions>
@@ -1129,7 +1164,19 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6b7b-971b-3200-45d5" name="Shadow Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1201,7 +1248,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8991-a9bc-6794-8352" name="Shadowhunter " page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8991-a9bc-6794-8352" name="Shadowhunter " page="0" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ee81-07c2-6acd-7de8" name="Shadowhunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1271,7 +1318,19 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="52" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="52" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="6e1d-6a53-8400-4180" name="Solaris Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1336,7 +1395,18 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1470,7 +1540,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4fa-8dc5-340f-f3ea" name="Wraithship" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b4fa-8dc5-340f-f3ea" name="Wraithship" page="0" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ef76-f9d8-8ec5-b313" name="Wraithship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1644,10 +1714,62 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="a4ef-ee6e-4a1e-14dd" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
-    <entryLink id="f101-ca49-ae7c-6e59" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
-    <entryLink id="40a2-361a-e31a-84b8" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
-    <entryLink id="f280-de92-e804-de7d" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+    <entryLink id="f101-ca49-ae7c-6e59" name="Hemlock Class Destroyer" hidden="true" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="40a2-361a-e31a-84b8" name="Hellbore Class Frigate" hidden="true" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f280-de92-e804-de7d" name="Aconite Class Frigate" hidden="true" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f87b-cb8f-1f27-8298" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="944b-2a4a-496c-6b39" name="Hellbore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
