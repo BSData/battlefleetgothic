@@ -4,12 +4,16 @@
     <forceEntry id="3dee-bc4f-5ccb-d781" name="Later Gothic War Eldar Corsairs Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false">
       <categoryLinks>
         <categoryLink id="f899-a33c-1318-71de" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="3df0-4a44-a94d-f310" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="3df0-4a44-a94d-f310" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b69-f926-dd0c-7afa" type="min"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="0462-ef44-129a-67b3" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="ec85-51ca-692c-8462" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="227a-5780-9ee2-66c1" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b344-da5c-5c18-1165" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b344-da5c-5c18-1165" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="25ab-7ff5-c507-3c68" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
@@ -28,30 +32,6 @@
         <categoryLink id="08e1-c8c1-8bc7-6ba5" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="af36-e993-b55e-d80f" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="7628-9051-be12-bf0e" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="4f35-3f72-1160-8048" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="4f35-3f72-1160-8048" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f35-3f72-1160-8048" type="min"/>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="112c-310c-0879-da17" type="max"/>
@@ -504,7 +484,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dffb-c4b2-43a8-0d51" name="Prow Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="dffb-c4b2-43a8-0d51" name="Prow Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1715-3f10-7659-cfe0">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a616-e3b7-af6d-46e1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="318e-2c39-099b-b5d3" type="max"/>
@@ -546,7 +526,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ee24-1a40-691f-0dce" name="Keel Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ee24-1a40-691f-0dce" name="Keel Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="848d-4166-30c0-9394">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34b9-426c-21d1-b9de" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7c2-4f25-3c65-d340" type="max"/>
@@ -1347,16 +1327,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       </costs>
     </selectionEntry>
     <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="decrement" field="255e-03f3-84be-4fc3" value="1.0">
-          <conditions>
-            <condition field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="255e-03f3-84be-4fc3" type="max"/>
-      </constraints>
       <profiles>
         <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
