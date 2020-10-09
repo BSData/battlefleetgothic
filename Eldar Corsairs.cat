@@ -1282,18 +1282,9 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="db04-4ff3-19cd-75dd" name="One Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb12-94c5-0403-62e3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0741-0056-bd23-da09" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d318-d43c-9a93-a596" name="Re-Rolls" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d318-d43c-9a93-a596" name="Re-Rolls" hidden="false" collective="false" import="true" defaultSelectionEntryId="e2f2-06f4-1baa-a48d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1705-ca02-f3e7-e0e2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ae-0858-c9b2-b990" type="min"/>
@@ -1313,6 +1304,14 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e2f2-06f4-1baa-a48d" name="One Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a89e-1507-cb45-e48b" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
