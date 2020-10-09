@@ -1575,7 +1575,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="11a86503-a3ac-4f8c-a36b-34823f833631" name="The Inquisition" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="11a86503-a3ac-4f8c-a36b-34823f833631" name="The Inquisition" page="0" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>these should be selected through a force/detatchment addition</comment>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
