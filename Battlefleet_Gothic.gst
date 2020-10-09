@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="33" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="34" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -91,6 +91,9 @@ Bug report : https://tinyurl.com/gothicbug</readme>
     </categoryEntry>
     <categoryEntry id="e70d-1bf2-7ea2-276a" name="Ordnance" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
     <categoryEntry id="90ac-0bee-0c90-be27" name="Orbital Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false"/>
+    <categoryEntry id="9624-17a2-bfd7-6420" name="Reserves" hidden="false">
+      <comment>It looks like to reserves to work conditions will need to be made for ships to change from crusier to reserves when they are available as reserves in order for them to validate meeting the reserves requirement. </comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7529-da04-0225-31de" name="Unbound" publicationId="137d-dbad-5653-19f2" hidden="false">
@@ -108,6 +111,7 @@ Bug report : https://tinyurl.com/gothicbug</readme>
         <categoryLink id="359d-1511-f4cf-ed70" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="3198-7071-7959-abde" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="2d62-743c-2f16-fcef" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="1cf0-db9c-15dc-cef6" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -122,6 +126,17 @@ If you select import</comment>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3165-ed3d-0db4-ef6b" name="Acheron Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -167,7 +182,7 @@ If you select import</comment>
         <categoryLink id="9397-6b1a-5630-44e0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a321-8743-8710-8421" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="a321-8743-8710-8421" name="Deamon" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -182,6 +197,17 @@ If you select import</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1899-7881-3f57-9944" name="Desolator Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -246,6 +272,17 @@ If you select import</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ef77-d947-5997-b255" name="Despoiler Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -448,6 +485,17 @@ If you select import</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1538-6bb3-a468-160e" name="Hades Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -493,7 +541,7 @@ If you select import</comment>
         <categoryLink id="48dd-7ecc-c76a-064b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="40e6-9543-07ee-88b0" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="40e6-9543-07ee-88b0" name="Deamon" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -508,6 +556,17 @@ If you select import</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc1-e60c-6456-c57a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e47f-3f54-c8fd-d5b0" name="Repulsive Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -612,7 +671,7 @@ If you select import</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="82fc-9bea-bd1e-8201" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="82fc-9bea-bd1e-8201" name="Deamon" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
