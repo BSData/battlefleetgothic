@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="7" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <publications>
-    <publication id="b3939b81--pubN65798" name="BFG Rulebook + 2010 FAQ"/>
-    <publication id="b3939b81--pubN65947" name="BFG Rulebook - Armada"/>
-    <publication id="b3939b81--pubN66299" name="2010 Compendium"/>
-    <publication id="b3939b81--pubN68404" name="BFG Rulebook"/>
-    <publication id="b3939b81--pubN68791" name="BFG_-_Additional_Ships_Compendium_1.4"/>
-  </publications>
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="7" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="3dee-bc4f-5ccb-d781" name="Later Gothic War Eldar Corsairs Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false"/>
+    <forceEntry id="47a7-6c8d-3988-de71" name="Gothic Sector Eldar Corsairs Fleet List" publicationId="11f0-17d1-e4d2-1018" page="134" hidden="false"/>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry id="55733e1a-4a8a-457d-abfd-50280545579b" name="Pirate Prince" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -49,35 +46,7 @@
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c49-3f2d-1e22-a1fd" name="Aconite Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="2475-4082-b207-ee7d" name="Aconite Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">10/20/30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c650-c613-28bd-b1b1" name="Aconite Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="2e4e-4b93-103a-017f" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="55.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="b3939b81--pubN65947" page="51" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3935-d441-55e4-613d" name="Aurora Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="51" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="025c-6c6c-1027-8ec5" name="Aurora Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -149,7 +118,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d531-9cc3-a27f-5287" type="max"/>
       </constraints>
@@ -179,7 +148,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4cd-208f-c063-8d54" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a4cd-208f-c063-8d54" name="Dark Eldar Corsair Class Escort" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="cc7e-e5d2-9eb1-9892" name="Corsair Class Escort Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -299,7 +268,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8ae-884a-a4f5-e727" name="Dark Eldar Torture Class Cruiser" publicationId="b3939b81--pubN65947" page="56" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f8ae-884a-a4f5-e727" name="Dark Eldar Torture Class Cruiser" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7861-0cda-ed00-f568" name="Torture Class Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -591,7 +560,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b4f4-94d5-7c5a-b863" name="Eclipse Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="869e-bef2-6de4-0ca8" name="Eclipse Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -671,7 +640,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="b3939b81--pubN68791" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="673b-504b-3b80-f860" name="Eldar Craftworld" publicationId="9670-79b6-b335-ed60" page="48" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c2a-be81-09c1-c2a9" type="max"/>
       </constraints>
@@ -1006,82 +975,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4618-80a9-8dbc-c735" name="Hellbore Class Frigate" publicationId="b3939b81--pubN65798" page="132" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="c882-b4ea-4b9d-26d3" name="Hellbore Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">10/20/30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6529-aa5f-e674-b610" name="Hellbore Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0a52-1e76-7409-289c" name="Hellbore Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5d84-c843-ac6b-7fee" name="Hellbore Prow Weapons Battery" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">30cm</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="379a-5ff1-e768-29b7" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="65.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="00f1-ca98-2af5-1fa0" name="Hemlock Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3d79-affb-9dd3-7543" name="Hemlock Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15/20/30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a3c8-dd84-6380-28d3" name="Hemlock Prow Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="e437-7b87-312b-cbf9" name="Hemlock Class Destroyer" hidden="false">
-          <description>A Hemlock cannot initiate boarding actions. A ship that boards a Hemlock class destroyer gains a +1 Modifier in addition to any other modifiers.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="9402-2880-9ff6-e110" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6e36-c718-f2cb-33c6" name="Iyanden Bearer of the Flame" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be94-d0e2-1bc1-11b6" type="max"/>
       </constraints>
@@ -1111,42 +1005,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b16-7c2a-ad3b-830f" name="Nightshade Class Destroyer" publicationId="b3939b81--pubN68404" page="133" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3269-2dea-bac3-1e0c" name="Nightshade Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">15/20/30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="861f-4bf7-ec6f-454b" name="Nightshade Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b306-f44f-52f8-c1a1" name="Nightshade Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="29b2-9209-a522-9d73" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="b3939b81--pubN66299" page="137" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b982-0231-722f-4fa6" name="Prince Yriel, Bearer Of The Flame, Autarch Of Iyandea" publicationId="5766-7751-d146-0800" page="137" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="decrement" field="points" value="25">
           <conditions>
@@ -1224,7 +1083,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="b3939b81--pubN68404" page="131" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cb24-7965-fb1b-2dff" name="Shadow Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6b7b-971b-3200-45d5" name="Shadow Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1366,7 +1225,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="b3939b81--pubN65947" page="52" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="694d-e150-688f-79a0" name="Solaris Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="52" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6e1d-6a53-8400-4180" name="Solaris Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1710,5 +1569,165 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="160.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8392-0b57-c8eb-ab28" name="Escort Squardon" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1ac0-7222-1367-db45" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="00cf-9e6f-5c37-9fa0" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+        <entryLink id="924a-e6df-1b03-723f" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
+        <entryLink id="cb4d-67c3-ecfc-cec6" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
+        <entryLink id="26c2-5f2e-68aa-ce5b" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="a4ef-ee6e-4a1e-14dd" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+    <entryLink id="f101-ca49-ae7c-6e59" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
+    <entryLink id="40a2-361a-e31a-84b8" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
+    <entryLink id="f280-de92-e804-de7d" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="944b-2a4a-496c-6b39" name="Hellbore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3e17-25f7-b2b2-7210" name="Hellbore Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">10/20/30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aacb-6dfc-b057-17ca" name="Hellbore Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c76a-e50a-6780-3bd0" name="Hellbore Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9adb-2671-3cb1-6544" name="Hellbore Prow Weapons Battery" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">30cm</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6379-de02-01bd-d141" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a15a-29e4-3776-c9e9" name="Hemlock Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="98b0-e072-1c6a-ebb8" name="Hemlock Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15/20/30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e15-94d0-e5ea-595a" name="Hemlock Prow Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8dfe-3b03-15f5-a3bf" name="Hemlock Class Destroyer" hidden="false">
+          <description>A Hemlock cannot initiate boarding actions. A ship that boards a Hemlock class destroyer gains a +1 Modifier in addition to any other modifiers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9677-ac41-c622-6b83" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0795-5e16-0941-2b59" name="Nightshade Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f942-ff1d-3984-c7da" name="Nightshade Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15/20/30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7561-7ad0-63c8-29f6" name="Nightshade Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8d5-0753-b05a-6c47" name="Nightshade Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4629-3c9f-1286-c38c" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="66ad-f830-00ac-ed2a" name="Aconite Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bd4-ab91-0a93-5e61" name="Aconite Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">10/20/30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">Special</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Holofields</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9831-1b35-d202-da4c" name="Aconite Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ee5b-fdff-e593-4d75" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

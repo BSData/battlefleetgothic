@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="20" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="21" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada</readme>
   <publications>
-    <publication id="824f9aff--pubN65566" name="BFG Rulebook - Armada"/>
-    <publication id="824f9aff--pubN65724" name="BFG Rulebook"/>
-    <publication id="824f9aff--pubN82857" name="2010 FAQ"/>
-    <publication id="824f9aff--pubN83036" name="BFG Rulebook - Armada + 210 FAQ"/>
-    <publication id="824f9aff--pubN86399" name="2010 FAQ cost adjust"/>
-    <publication id="824f9aff--pubN89596" name="BFG_-_Additional_Ships_Compendium_1.4"/>
-    <publication id="824f9aff--pubN95813" name="2010 Compendium"/>
-    <publication id="824f9aff--pubN99144" name="BFGAdditional Ships Compendium"/>
-    <publication id="824f9aff--pubN99933" name="BFGXR - Chaos"/>
-    <publication id="824f9aff--pubN100454" name="BFG Rulebook- Armada"/>
-    <publication id="824f9aff--pubN100830" name="BFG Additional Ships Compendium"/>
-    <publication id="824f9aff--pubN112201" name="Battlefkeet Gothic Magazine 14"/>
-    <publication id="824f9aff--pubN112414" name="Fanatic Magazine issue 60"/>
-    <publication id="824f9aff--pubN113380" name="Fanatic Magazine Issue 62"/>
-    <publication id="824f9aff--pubN114066" name="Fanatic Magazine Issue 96 - Book of Nemesis"/>
-    <publication id="824f9aff--pubN115714" name="Fanatic Magazine Issue 42"/>
+    <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
+      <comment>Be sure to check show imported files to see publications brough in from main BFG.gst file</comment>
+    </publication>
   </publications>
   <forceEntries>
-    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades" hidden="false">
+    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades (Armada)" publicationId="acb7-35d6-a2c5-f4a5" page="46" hidden="false">
       <categoryLinks>
         <categoryLink id="24b2-0d02-aa47-0b72" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="b664-e86d-8635-c22a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -60,7 +48,7 @@
         <categoryLink id="845b-14a1-9583-8b2d" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="ec1b-17c7-71cd-970c" name="All Chaos Vessels (Unofficial)" hidden="false">
+    <forceEntry id="ec1b-17c7-71cd-970c" name="All Chaos Vessels (Unofficial)" hidden="true">
       <categoryLinks>
         <categoryLink id="c265-7f22-5ad3-507b" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="81d7-adf4-d3d1-1ec6" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -97,12 +85,12 @@
           </constraints>
         </categoryLink>
         <categoryLink id="1cb9-d530-772f-2007" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="de9d-39c0-49e0-cc24" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="de9d-39c0-49e0-cc24" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="a4a7-0132-5071-c9fc" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="49a8-2507-d2fe-1a9d" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="20b9-130a-82d9-6696" name="Bezerker Fleet of Khorne" hidden="false">
+    <forceEntry id="20b9-130a-82d9-6696" name="Bezerker Fleet of Khorne" publicationId="5766-7751-d146-0800" page="120" hidden="false">
       <profiles>
         <profile id="6bfd-9efc-d7cd-11b4" name="Bezerker Fleet of Khorne" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -191,7 +179,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="26db-818e-4aac-9f99" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="87a9-5ec1-095c-94db" name="Plague Fleet of Nurgle" hidden="false">
+    <forceEntry id="87a9-5ec1-095c-94db" name="Plague Fleet of Nurgle" publicationId="5766-7751-d146-0800" page="123" hidden="false">
       <profiles>
         <profile id="fc61-e581-c434-11e3" name="Plague Fleet of Nurgle" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -240,7 +228,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="f250-d5da-d4fc-9b33" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="18e1-a7a8-7100-c178" name="Pleasure Fleet of Slanesh" hidden="false">
+    <forceEntry id="18e1-a7a8-7100-c178" name="Pleasure Fleet of Slanesh" publicationId="5766-7751-d146-0800" page="121" hidden="false">
       <profiles>
         <profile id="d409-1f3c-bdcf-ab53" name="Pleasure Fleet of Slaanesh" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -289,7 +277,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="ad42-5ab4-ea16-e8e1" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="24bb-7f39-b3b7-31af" name="Sorcerous Fleet of Tzeentch" hidden="false">
+    <forceEntry id="24bb-7f39-b3b7-31af" name="Sorcerous Fleet of Tzeentch" publicationId="5766-7751-d146-0800" page="122" hidden="false">
       <profiles>
         <profile id="84e5-3b58-dc20-cdbb" name="Sorcerous Fleet of Tzeentch" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -338,7 +326,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="afcb-dd79-979f-6cff" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet" hidden="false">
+    <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet (BBB)" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
       <categoryLinks>
         <categoryLink id="88b9-a2e7-5761-2767" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="3358-739d-036c-0d40" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -382,7 +370,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" publicationId="824f9aff--pubN65566" page="43" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" publicationId="1bc8-5968-21c3-0f27" page="43" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -456,7 +444,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="ddf3-4842-5916-0acb" name="Carnage Profile" publicationId="824f9aff--pubN65724" page="124" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ddf3-4842-5916-0acb" name="Carnage Profile" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -513,7 +501,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" publicationId="824f9aff--pubN65566" page="46" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -578,7 +566,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="824f9aff--pubN65724" page="123" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -652,105 +640,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c71de105-b5c9-4094-8b4d-c3ca1ee31267" name="Iconoclast Class Destroyer" publicationId="824f9aff--pubN65724" page="126" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="c441-ee03-0869-5dd1" name="Iconoclast Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2a7d-97a4-204b-ca79" name="Iconoclast Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="c71de105-b5c9-4094-8b4d-c3ca1ee31267-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e6b61ca4-b5af-4bc9-b207-9e55cca96c24" name="Idolator Class Raider" publicationId="824f9aff--pubN65724" page="125" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="ea29-972b-75e5-49f0" name="Idolator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="af45-d84a-dcd9-e048" name="Idolator Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="afdb-109d-fe38-0a0b" name="Idolator Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="e6b61ca4-b5af-4bc9-b207-9e55cca96c24-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f43bddc9-4d9d-476d-bcb1-695934a875a1" name="Infidel Class Raider" publicationId="824f9aff--pubN65724" page="125" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a369-231f-db95-a6fb" name="Infidel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5d4f-300f-f309-3eed" name="Infidel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="19c2-82d0-2e40-050a" name="Infidel Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="f43bddc9-4d9d-476d-bcb1-695934a875a1-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" publicationId="824f9aff--pubN65724" page="123" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -873,7 +763,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" publicationId="824f9aff--pubN65566" page="36" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" publicationId="1bc8-5968-21c3-0f27" page="36" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="decrement" field="73ef-73c0-4023-9448" value="1">
           <conditions>
@@ -965,7 +855,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="505.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" publicationId="824f9aff--pubN65724" page="124" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1047,7 +937,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="770a-fd8c-3d9f-dcb9" name="Desecrator Class Battleship" publicationId="824f9aff--pubN89596" page="40" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="770a-fd8c-3d9f-dcb9" name="Desecrator Class Battleship" publicationId="9670-79b6-b335-ed60" page="40" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1061,7 +951,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1150,7 +1039,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="350.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7a98-2d2a-b75f-b6c0" name="Hecate Class Heavy Cruiser" publicationId="824f9aff--pubN95813" page="115" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7a98-2d2a-b75f-b6c0" name="Hecate Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="115" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1164,7 +1053,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1236,7 +1124,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e7b-9b19-fae9-d23d" name="Hellfire Class Heavy Cruiser" publicationId="824f9aff--pubN89596" page="44" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4e7b-9b19-fae9-d23d" name="Hellfire Class Heavy Cruiser" publicationId="9670-79b6-b335-ed60" page="44" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1244,13 +1132,11 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1326,7 +1212,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="285.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="824f9aff--pubN99144" page="45" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1334,13 +1220,11 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1404,7 +1288,18 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="824f9aff--pubN100830" page="45" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="23b0-5733-566b-419b" name="Apostate Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1446,7 +1341,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3938-6c09-fc0a-bfee" name="Scion Of Prospero" publicationId="824f9aff--pubN95813" page="106" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3938-6c09-fc0a-bfee" name="Scion Of Prospero" publicationId="5766-7751-d146-0800" page="106" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1456,7 +1351,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1558,7 +1452,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="450.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ce8e-4d09-2cb5-51e6" name="Wage Of Sin" publicationId="824f9aff--pubN95813" page="108" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ce8e-4d09-2cb5-51e6" name="Wage Of Sin" publicationId="5766-7751-d146-0800" page="108" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1568,7 +1462,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1729,7 +1622,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c02d-5c71-07d6-1910" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="ad90-53dc-4ede-5712" name="Chaos Space Marine Crews" publicationId="824f9aff--pubN65566" page="45" hidden="false">
+                    <rule id="ad90-53dc-4ede-5712" name="Chaos Space Marine Crews" publicationId="1bc8-5968-21c3-0f27" page="45" hidden="false">
                       <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
 
 Leadership: A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
@@ -1745,7 +1638,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01b0-5103-087f-c694" type="max"/>
                       </constraints>
                       <rules>
-                        <rule id="3f10-112b-ea09-acc5" name="Terminator Teleport Assault" publicationId="824f9aff--pubN65566" page="45" hidden="false">
+                        <rule id="3f10-112b-ea09-acc5" name="Terminator Teleport Assault" publicationId="1bc8-5968-21c3-0f27" page="45" hidden="false">
                           <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
                         </rule>
                       </rules>
@@ -1798,19 +1691,19 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                 <rule id="b6eb-bace-d111-3052" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
                   <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
                 </rule>
-                <rule id="c70c-4ffa-e1e7-1143" name="Fighter&apos;s Rules" publicationId="824f9aff--pubN65724" page="29" hidden="false">
+                <rule id="c70c-4ffa-e1e7-1143" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
                   <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
                 </rule>
-                <rule id="a41f-1327-aeb4-d1df" name="Bomber&apos;s Rules" publicationId="824f9aff--pubN65724" page="30" hidden="false">
+                <rule id="a41f-1327-aeb4-d1df" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
                   <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
                 </rule>
-                <rule id="c5e9-ed6e-48c8-5ae7" name="Assault Boat&apos;s Rules" publicationId="824f9aff--pubN65724" page="30" hidden="false">
+                <rule id="c5e9-ed6e-48c8-5ae7" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
                   <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
@@ -1846,7 +1739,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d61-ee74-2848-43ec" name="Terminus Est" publicationId="824f9aff--pubN95813" page="109" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="2d61-ee74-2848-43ec" name="Terminus Est" publicationId="5766-7751-d146-0800" page="109" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1856,7 +1749,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1974,7 +1866,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c64c-512b-b7b4-324b" name="Vengeful Spirit (Or Chaos Battlebarge)" publicationId="824f9aff--pubN95813" page="111" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c64c-512b-b7b4-324b" name="Chaos Battlebarge (Vengeful Spirit)" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1982,13 +1874,11 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2215,14 +2105,14 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d79c-988e-7d3a-cb65" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="d79c-988e-7d3a-cb65" name="Deamon" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="3529-bda0-f2e4-7126" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="410.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ca7-5694-70f0-4c12" name="Conqueror" publicationId="824f9aff--pubN95813" page="113" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7ca7-5694-70f0-4c12" name="Conqueror" publicationId="5766-7751-d146-0800" page="113" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2231,7 +2121,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -2387,7 +2276,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72a7-6110-7293-2d49" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="4918-6466-1a30-654a" name="Chaos Space Marine Crews" publicationId="824f9aff--pubN65566" page="45" hidden="false">
+                    <rule id="4918-6466-1a30-654a" name="Chaos Space Marine Crews" publicationId="1bc8-5968-21c3-0f27" page="45" hidden="false">
                       <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
 
 Leadership: A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
@@ -2403,7 +2292,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0152-b114-e506-c90c" type="max"/>
                       </constraints>
                       <rules>
-                        <rule id="56c9-840a-6151-fb98" name="Terminator Teleport Assault" publicationId="824f9aff--pubN65566" page="45" hidden="false">
+                        <rule id="56c9-840a-6151-fb98" name="Terminator Teleport Assault" publicationId="1bc8-5968-21c3-0f27" page="45" hidden="false">
                           <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
                         </rule>
                       </rules>
@@ -2447,7 +2336,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f83f-30ea-8b93-baef" name="Inferno Class Cruiser" publicationId="824f9aff--pubN95813" page="116" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f83f-30ea-8b93-baef" name="Inferno Class Cruiser" publicationId="5766-7751-d146-0800" page="116" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2455,13 +2344,11 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2525,7 +2412,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f00-48bf-e8c7-d32c" name="Activated Blackstone Fortress" publicationId="824f9aff--pubN95813" page="117" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="8f00-48bf-e8c7-d32c" name="Activated Blackstone Fortress" publicationId="5766-7751-d146-0800" page="117" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2579,7 +2466,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="824f9aff--pubN95813" page="118" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="5766-7751-d146-0800" page="118" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2704,7 +2591,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" publicationId="824f9aff--pubN112201" page="31" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" publicationId="31db-354b-7439-4995" page="31" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="c772-4b92-0a6e-24e5" value="0.0">
           <conditions>
@@ -2719,7 +2606,6 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2775,7 +2661,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cba6-94f6-0aaa-cf54" name="Favoured Concubine" publicationId="824f9aff--pubN112414" page="" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="cba6-94f6-0aaa-cf54" name="Favoured Concubine" publicationId="b6b0-a261-40b3-6563" page="" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2948,7 +2834,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="535.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="153b-7542-43cf-815b" name="Light Bringer" publicationId="824f9aff--pubN113380" page="" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="153b-7542-43cf-815b" name="Light Bringer" publicationId="c725-9c27-cf26-b44b" page="" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3060,7 +2946,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8777-e3f4-56a0-843b" name="Heretic Class Light Cruiser" publicationId="824f9aff--pubN114066" page="11" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8777-e3f4-56a0-843b" name="Heretic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3069,7 +2955,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3125,7 +3010,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f9b-6b63-1764-d253" name="Governor Class Grand Cruiser" publicationId="824f9aff--pubN115714" page="" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9f9b-6b63-1764-d253" name="Governor Class Grand Cruiser" publicationId="c8aa-777a-ddc3-1c0a" page="" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3133,13 +3018,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3199,7 +3082,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b19-657c-b771-79cc" name="Blasphemer Class Fast Battleship" publicationId="824f9aff--pubN114066" page="10" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="2b19-657c-b771-79cc" name="Blasphemer Class Fast Battleship" publicationId="d256-2988-72a8-df2f" page="10" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3208,7 +3091,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3277,7 +3159,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="875c-e519-7f30-a257" name="Pagan Class System Control Cruiser" publicationId="824f9aff--pubN114066" page="11" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="875c-e519-7f30-a257" name="Pagan Class System Control Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3285,13 +3167,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3347,7 +3227,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9291-b73c-3db1-eb5c" name="Unbeliever Class Light Cruiser" publicationId="824f9aff--pubN114066" page="12" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9291-b73c-3db1-eb5c" name="Unbeliever Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="12" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3355,13 +3235,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3414,7 +3292,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ce7-6cb7-bce5-beeb" name="Schismatic Class Light Cruiser" publicationId="824f9aff--pubN114066" page="13" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3ce7-6cb7-bce5-beeb" name="Schismatic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="13" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3422,13 +3300,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3485,7 +3361,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b9f7-486e-3db4-e6fe" name="Chaos Fleet Master" publicationId="824f9aff--pubN65566" page="46" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b9f7-486e-3db4-e6fe" name="Chaos Fleet Master" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3545,7 +3421,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="824f9aff--pubN100830" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -3564,7 +3440,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="824f9aff--pubN100830" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -3665,6 +3541,20 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="70cb-9892-ba48-89ef" name="Escort Squadron" hidden="false" collective="false" import="true" type="unit">
+      <comment>This houses a group of escorts which can be selected within it</comment>
+      <categoryLinks>
+        <categoryLink id="658c-a838-fd68-e1d8" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ca5-0372-aabb-5aa5" name="Iconoclast Class Destroyer" hidden="false" collective="false" import="true" targetId="a23e-2e23-de49-3663" type="selectionEntry"/>
+        <entryLink id="7689-0c9b-6ad4-d8c1" name="Idolator Class Raider" hidden="false" collective="false" import="true" targetId="8cdc-edab-b278-63d6" type="selectionEntry"/>
+        <entryLink id="3334-c804-ed30-9239" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="9c12-e4f6-867e-765b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="b248-1462-d9c6-caf9" name="Acheron Class Heavy Cruiser" hidden="true" collective="false" import="true" targetId="3114-6f37-55fa-024d" type="selectionEntry">
@@ -3760,7 +3650,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="9309-0b74-288d-bea6" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="f34b-93d7-c035-be07" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ba30-90f2-af0b-3cd7" name="Hades Class Heavy Cruiser" hidden="true" collective="false" import="true" targetId="5ab1-9f2a-0485-39db" type="selectionEntry">
@@ -3867,14 +3757,13 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3892,13 +3781,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3916,13 +3803,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3940,13 +3825,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3966,13 +3849,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3985,7 +3866,110 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <entryLink id="eeb3-b5c8-6196-b520" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
+    <entryLink id="4b3a-c5a2-e390-83b6" name="Idolator Class Raider" hidden="false" collective="false" import="true" targetId="8cdc-edab-b278-63d6" type="selectionEntry"/>
+    <entryLink id="09e7-40e0-67a4-7489" name="Iconoclast Class Destroyer" hidden="false" collective="false" import="true" targetId="a23e-2e23-de49-3663" type="selectionEntry"/>
+    <entryLink id="71a1-ea6b-45c1-630d" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="9c12-e4f6-867e-765b" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="a23e-2e23-de49-3663" name="Iconoclast Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="126" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="99a1-569e-9fb8-f569" name="Iconoclast Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0823-ae91-07fe-b522" name="Iconoclast Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2f15-77ff-f47b-03b9" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cdc-edab-b278-63d6" name="Idolator Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b113-11b5-787b-e1a6" name="Idolator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="792c-b9fd-ce9d-a9ab" name="Idolator Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5515-eb6d-0ef7-0182" name="Idolator Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b07d-d3e4-4b84-9127" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c12-e4f6-867e-765b" name="Infidel Class Raider" publicationId="11f0-17d1-e4d2-1018" page="125" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ef55-bef8-dbe8-9d4e" name="Infidel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7754-ff67-b8c3-1e14" name="Infidel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44f1-4eb9-a494-47bf" name="Infidel Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b707-9b48-36c9-c4fe" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="38ef-5485-b0e7-ce4d" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
   </sharedRules>
