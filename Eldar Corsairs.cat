@@ -5,8 +5,18 @@
       <categoryLinks>
         <categoryLink id="f899-a33c-1318-71de" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="3df0-4a44-a94d-f310" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="b0ce-978d-01ba-b321" value="1.0">
+              <repeats>
+                <repeat field="points" scope="3dee-bc4f-5ccb-d781" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="points" scope="3dee-bc4f-5ccb-d781" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b69-f926-dd0c-7afa" type="min"/>
+            <constraint field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0ce-978d-01ba-b321" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0462-ef44-129a-67b3" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
@@ -1360,6 +1370,11 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Right</characteristic>
           </characteristics>
         </profile>
+        <profile id="3b8c-c040-6565-b4fb" name="Eldar Battleships" publicationId="1bc8-5968-21c3-0f27" page="58" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Your fleet may include up to one battleship for every full 1,000 points it contains. Therefore, if you have between 0 to 999 points, you cannot field any battleships, while from 1000 to 1,999 points you can include one, and so on.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="4f12-9a2c-fbbf-fc4a" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1400,7 +1415,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6f1d-1404-df9f-99e4" name="Prow Weapons Option" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6f1d-1404-df9f-99e4" name="Prow Weapons Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="1de1-af36-fb3a-2f35">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a84-2f9e-a31c-2c0f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a24-f9b2-83cd-88bc" type="min"/>
