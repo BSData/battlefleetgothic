@@ -1291,6 +1291,16 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       </costs>
     </selectionEntry>
     <selectionEntry id="7e5e-ba10-8e69-6acc" name="Void Stalker Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="decrement" field="255e-03f3-84be-4fc3" value="1.0">
+          <conditions>
+            <condition field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="255e-03f3-84be-4fc3" type="max"/>
+      </constraints>
       <profiles>
         <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1573,12 +1583,20 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       <categoryLinks>
         <categoryLink id="1ac0-7222-1367-db45" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="00cf-9e6f-5c37-9fa0" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
-        <entryLink id="924a-e6df-1b03-723f" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
-        <entryLink id="cb4d-67c3-ecfc-cec6" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
-        <entryLink id="26c2-5f2e-68aa-ce5b" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4341-b938-1494-c9a1" name="Escorts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8615-6f71-a12b-1b8d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="527b-50f1-a3b8-d820" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dada-1cc3-29ae-e1e3" name="Aconite Class Frigate" hidden="false" collective="false" import="true" targetId="66ad-f830-00ac-ed2a" type="selectionEntry"/>
+            <entryLink id="d72a-6921-1b92-6e24" name="Hellbore Class Frigate" hidden="false" collective="false" import="true" targetId="944b-2a4a-496c-6b39" type="selectionEntry"/>
+            <entryLink id="e011-2a0a-20de-96f8" name="Hemlock Class Destroyer" hidden="false" collective="false" import="true" targetId="a15a-29e4-3776-c9e9" type="selectionEntry"/>
+            <entryLink id="41ed-b972-6286-b1be" name="Nightshade Class Destroyer" hidden="false" collective="false" import="true" targetId="0795-5e16-0941-2b59" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

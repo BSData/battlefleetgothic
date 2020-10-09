@@ -220,20 +220,16 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0915-ad4d-16e7-e0e7" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-bd76-e3da-fded" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="20a6-8a61-01f8-9918" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1c26-ab52-22a6-209a" name="Escorts" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ef-9b02-c570-8a91" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83a3-e796-21da-5e0d" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="01e8-dc00-9dd3-6c84" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1b0c-a449-e128-d6aa" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
