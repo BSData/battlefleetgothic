@@ -3,8 +3,10 @@ Battlefleet Gothic
 
 #### Contents ####
 
-* [Overview][]
-* [Links][]
+* [Overview][Select Faction from the list and pick a fleet listing in order to sort to the ships and rules you want to see. Add Allies with a second detachment. Don't trust all the fleet validation yet. Major updates 2020 brought to you by DnDTonight.com]
+
+* [Links]
+[DNDtonight homepage]: http://www.dndtonight.com/
 
 ## Overview ##
 [Overview]: #overview
