@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necron Harvest Fleet" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necrons" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="d0a06aad--pubN65876" name="BFG FAQ 2007"/>
   </publications>
+  <forceEntries>
+    <forceEntry id="d1ae-25b1-bb3e-95c3" name="Necron Harvest Fleet" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false">
+      <categoryLinks>
+        <categoryLink id="aa3e-53d1-f755-217c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="f1d1-4e2f-e9f6-b246" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink id="b6ed-6db0-cd42-ef56" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="8ad3-6900-dca8-9bf4" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="7e91-ae88-2547-6f5c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="729a-3d06-3add-458f" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0db-2e5c-2595-67e3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7400-aec1-f5ef-a36d" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="9765-f7a8-f305-7e8c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="7f4c-7dc9-7bf6-bca9" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="b9a0-3c7b-5a66-c170" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
-    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="maxInRoster" value="1.0">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5eb3357-d2fd-450e-8ea2-1243d9d12971" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -25,6 +55,11 @@
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4+ Save</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a14-92ff-412d-721b" name="Requirements" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Your Fleet can contain 1 Tombship for every Scythe Harvest ship</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -124,8 +159,12 @@
             </profile>
           </profiles>
           <rules>
-            <rule id="e031-8eae-85a6-1623" name="Sepulchre" page="0" hidden="false">
+            <rule id="e031-8eae-85a6-1623" name="Sepulchre Requrements" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false">
               <description>A single tombship may be upgraded to carry a Sepulchre. Note that there is no requirement for a Necron fleet to include a Sepulchre and it is actually quite normal for them to consist of Scythes supported by Jackals. Pg. 78 (Harvest Fleets)</description>
+            </rule>
+            <rule id="7204-b1fc-92b4-35ae" name="Sepulchre Rules" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false">
+              <description>Only utilised by the largest Necron vessel in a fleet, a ship carrying a Sepulchre automatically gains a Leadership of 10. The Sepulchre is used to attack one enemy ship that is within 20cm range. When the Sepulchre is used make a Leadership test for the enemy vessel being attacked, as a wave of palpable psychic force is generated from the Necron ship. The crew are paralysed by visions of horror, and if discipline is lost then the crazed crew are likely to do damage to their own ship as they rampage uncontrollably.
+A ship attacked by the Sepulchre should take a Leadership test. If they pass, the captain cracks some heads and restores order. If it is failed, then the ship’s Leadership is permanently reduced by 1, representing the loss of morale and trust. Also the ship may not use any special orders until after the end of their next turn. This includes Brace for Impact. Any ordnance within 20cm of the Sepulchre (except for non-boarding torpedoes) are destroyed on a 4+. A Necron ship may only unleash its Sepulchre when the ship is not on any special orders or crippled.</description>
             </rule>
           </rules>
           <categoryLinks>
@@ -141,6 +180,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6ee91504-f516-4fef-a74e-a23482e50201" name="Re-rolls" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -180,6 +231,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="6.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -283,6 +346,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -326,7 +401,18 @@
         <cost name="pts" typeId="points" value="155.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a37e-16fe-be1e-c086" name="Cartouche Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a37e-16fe-be1e-c086" name="Cartouche Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="eb26-57d8-9ad5-754f" name="Cartouche Class Light Cruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -404,6 +490,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3bf4-96e7-e296-fb90" name="Kopesh Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4698-4dcd-0452-3db9" type="max"/>
       </constraints>
@@ -484,6 +581,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e38b-d1fd-d726-e05c" name="Escort Squardon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d1ae-25b1-bb3e-95c3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f6ac-6de3-ed5e-36dd" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -491,12 +600,11 @@
         <entryLink id="c4d4-6dce-106c-cd23" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry"/>
         <entryLink id="01c1-869b-2160-ad6d" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
-  <entryLinks>
-    <entryLink id="c078-b502-bfc1-32da" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry"/>
-    <entryLink id="5384-72e1-0a9c-657e" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry"/>
-  </entryLinks>
   <rules>
     <rule id="a11f-a53c-d44f-4480" name="Leadership (Necron)" hidden="false">
       <description>Leadership is determined normally for Necron fleets, except a ship carrying a Sepulchre automatically receives a Leadership of 10. P. 78 (Harvest Fleets)</description>
@@ -508,7 +616,7 @@
   <sharedSelectionEntries>
     <selectionEntry id="f41e-42fc-3733-4efb" name="Dirge Class Raider" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="12.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9822-7e73-2136-4500" type="max"/>
+        <constraint field="selections" scope="primary-catalogue" value="12.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9822-7e73-2136-4500" type="max"/>
       </constraints>
       <profiles>
         <profile id="3f12-4a01-a6df-fb5f" name="Dirge Class Raider" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
