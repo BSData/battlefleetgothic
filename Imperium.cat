@@ -1611,7 +1611,7 @@ Bombers: 20cm</characteristic>
             </selectionEntry>
             <selectionEntry id="643c-5aee-f02a-c240" name="Sword Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="increment" field="points" value="5">
+                <modifier type="increment" field="points" value="5.0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1619,7 +1619,6 @@ Bombers: 20cm</characteristic>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1918,6 +1917,63 @@ Bombers: 20cm</characteristic>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="21ff-543a-0a09-84a0" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eef5-7a13-798f-3214" name="Havoc Class Frigate" publicationId="5766-7751-d146-0800" page="43" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03e7-6be8-18fa-d7e3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="db96-04fe-0a49-733e" name="Havoc Class Frigate" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0633-d0c6-68bf-fa54" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="7d16-a42b-7854-32db" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
