@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="22" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada</readme>
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="23" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada. Incursion fleet matched to Blue Book. </readme>
   <publications>
     <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
       <comment>Be sure to check show imported files to see publications brough in from main BFG.gst file</comment>
@@ -15,7 +15,7 @@
         <categoryLink id="3fc3-7e5f-84c4-218c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="8cd3-2678-46ed-a978" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="5cc8-72e6-de09-c344" value="3">
+            <modifier type="increment" field="5cc8-72e6-de09-c344" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -29,7 +29,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="5cc8-72e6-de09-c344" value="2">
+            <modifier type="increment" field="5cc8-72e6-de09-c344" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
@@ -44,7 +44,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="0f3b-abe6-01db-1a75" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="822e-e1e1-85f7-fa9c" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="822e-e1e1-85f7-fa9c" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="845b-14a1-9583-8b2d" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
       </categoryLinks>
     </forceEntry>
@@ -105,9 +105,13 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="796c-f4ef-740e-7c1c" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="0cb1-00da-7b07-42f3" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="963a-ec0a-8995-28ab" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="1d46-1354-a253-e429" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="57a0-5be5-5c36-a205" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="513c-49ed-b3cc-1159" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="c647-9b90-89e5-d353" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="9893-e769-10b7-8260" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="f4ea-fba4-ce4e-54de" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="a5b5-fc82-1974-274c" value="3">
+            <modifier type="increment" field="62f5-abaa-0a25-5937" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -121,24 +125,20 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="a5b5-fc82-1974-274c" value="2">
+            <modifier type="increment" field="62f5-abaa-0a25-5937" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5b5-fc82-1974-274c" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f5c-a285-37fd-ac78" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f5-abaa-0a25-5937" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca97-1bbe-f192-2ee4" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="57a0-5be5-5c36-a205" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="513c-49ed-b3cc-1159" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="c647-9b90-89e5-d353" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="9893-e769-10b7-8260" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="43dd-64be-df08-1c4e" name="Chaos Space Marine Fleet" hidden="false">
@@ -146,7 +146,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="63ae-4c6e-bca3-3d08" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="fe4a-4796-4cb6-230a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
           <modifiers>
-            <modifier type="increment" field="1b0a-26bf-dbcd-a027" value="1">
+            <modifier type="increment" field="1b0a-26bf-dbcd-a027" value="1.0">
               <conditions>
                 <condition field="points" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="atLeast"/>
               </conditions>
@@ -168,7 +168,6 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         </categoryLink>
         <categoryLink id="16de-e7d6-66e4-2954" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="6359-d7dc-a330-4e7d" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="2485-e162-1a24-d1b5" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="04c4-a65e-00a0-8d74" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="808c-c9d6-90c4-8390" type="max"/>
@@ -177,6 +176,36 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="a0a2-63da-c5c1-5f57" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="12ea-eef8-164b-1554" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="26db-818e-4aac-9f99" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="b1d2-7e46-68c2-dfeb" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+          <modifiers>
+            <modifier type="increment" field="3b89-9688-23c8-08b9" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
+                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="3b89-9688-23c8-08b9" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b89-9688-23c8-08b9" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fa-7154-1e75-a19c" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="87a9-5ec1-095c-94db" name="Plague Fleet of Nurgle" publicationId="5766-7751-d146-0800" page="123" hidden="false">
@@ -192,9 +221,13 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="0ce4-7845-ff94-8076" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="aecd-14c9-e37a-4fd9" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="29eb-45f5-e69a-99b1" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="c0e4-f881-ed45-2075" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="c8dc-843d-ccde-8c9c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="5996-bb30-2b84-6f62" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="e708-1e69-49dc-3a24" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="f250-d5da-d4fc-9b33" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="a002-2848-66fa-9e4c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="bf9d-91e7-4e45-6dcd" value="3">
+            <modifier type="increment" field="1caf-fde9-997d-8cd2" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -202,30 +235,26 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
                     <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
+                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="bf9d-91e7-4e45-6dcd" value="2">
+            <modifier type="increment" field="1caf-fde9-997d-8cd2" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9d-91e7-4e45-6dcd" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c00-1a54-1643-662b" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1caf-fde9-997d-8cd2" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1092-8eb5-96f7-b86f" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c8dc-843d-ccde-8c9c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="5996-bb30-2b84-6f62" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="e708-1e69-49dc-3a24" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="f250-d5da-d4fc-9b33" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="18e1-a7a8-7100-c178" name="Pleasure Fleet of Slanesh" publicationId="5766-7751-d146-0800" page="121" hidden="false">
@@ -241,9 +270,13 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="3daa-bdae-d023-de3e" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="60b0-43f0-dd45-59cd" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="0644-47a6-ffa4-1a0a" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="cfd7-72df-06bc-2c58" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="34e5-235f-66a3-c91f" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="7a57-c0c2-0d8d-e17f" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="90f8-99a0-0236-2e5a" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="ad42-5ab4-ea16-e8e1" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="5bc4-ccbd-a68d-4ff3" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="9c03-87b6-e770-adcf" value="3">
+            <modifier type="increment" field="4a75-dc7d-ae22-d5e0" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -257,24 +290,20 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="9c03-87b6-e770-adcf" value="2">
+            <modifier type="increment" field="4a75-dc7d-ae22-d5e0" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c03-87b6-e770-adcf" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="621e-912e-4a2e-5dba" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a75-dc7d-ae22-d5e0" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9344-0865-ff36-558c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="34e5-235f-66a3-c91f" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="7a57-c0c2-0d8d-e17f" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="90f8-99a0-0236-2e5a" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="ad42-5ab4-ea16-e8e1" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="24bb-7f39-b3b7-31af" name="Sorcerous Fleet of Tzeentch" publicationId="5766-7751-d146-0800" page="122" hidden="false">
@@ -290,9 +319,13 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="79cf-620a-3b26-e072" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="697d-e1ad-ab2a-5071" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="6121-6b58-0088-b74b" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="fabd-93fa-23d2-b0a9" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="fc01-dddf-1b9a-9336" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="14aa-48aa-ef3d-f7ee" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="ae35-f222-1cbe-ab8e" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="afcb-dd79-979f-6cff" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="4ded-6ee9-2d7a-df6b" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="457f-700c-2f93-fac2" value="3">
+            <modifier type="increment" field="c30f-4b55-8a6e-988a" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -306,24 +339,20 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="457f-700c-2f93-fac2" value="2">
+            <modifier type="increment" field="c30f-4b55-8a6e-988a" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="457f-700c-2f93-fac2" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c1-bcca-3740-267a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c30f-4b55-8a6e-988a" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e7d-f6c1-482f-a49a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="fc01-dddf-1b9a-9336" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="14aa-48aa-ef3d-f7ee" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="ae35-f222-1cbe-ab8e" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="afcb-dd79-979f-6cff" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet (BBB)" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
@@ -334,7 +363,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         <categoryLink id="3310-0480-8b2f-0d6c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="4833-e9b9-4543-0b92" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <modifiers>
-            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="3">
+            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="3.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
@@ -348,13 +377,42 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="2">
+            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="2.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="ca9f-9924-a5c0-f1f7" value="2.0">
+              <comment>reduce min required cruisers if battlecruisers have been picked with a battleship or grand cruiser</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
+                        <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="ca9f-9924-a5c0-f1f7" value="3.0">
+              <comment>reduce min required cruisers if battleship picked with a grandcruiser</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
+                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -363,14 +421,14 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
           </constraints>
         </categoryLink>
         <categoryLink id="d774-d014-ec01-083e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="4cd9-e504-fb7a-74cf" name="Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="4cd9-e504-fb7a-74cf" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="1bdf-73a9-990d-86f2" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="1f01-a71f-aed8-2360" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" publicationId="1bc8-5968-21c3-0f27" page="43" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" name="Abaddon the Despolier" publicationId="1bc8-5968-21c3-0f27" page="43" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -428,7 +486,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="195.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage Class Cruiser" page="0" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage Class Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -436,8 +494,9 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -501,7 +560,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -566,7 +625,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -576,6 +635,11 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -640,7 +704,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -684,7 +748,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <categoryLink id="131a-6c16-b9c5-c99b" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b225-85a8-d725-76f6" name="Plague Claw &amp; Despicable Ecstasy" hidden="false" collective="false" import="true" defaultSelectionEntryId="317b-22fc-b883-c69c">
+        <selectionEntryGroup id="b225-85a8-d725-76f6" name="Variant" publicationId="5766-7751-d146-0800" page="23" hidden="false" collective="false" import="true" defaultSelectionEntryId="317b-22fc-b883-c69c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="734b-de6e-afb3-686e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d7e-1238-9fa7-f001" type="min"/>
@@ -763,7 +827,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" publicationId="1bc8-5968-21c3-0f27" page="36" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44" name="Planet Killer" publicationId="1bc8-5968-21c3-0f27" page="36" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="decrement" field="73ef-73c0-4023-9448" value="1">
           <conditions>
@@ -855,7 +919,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="505.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -937,20 +1001,15 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="770a-fd8c-3d9f-dcb9" name="Desecrator Class Battleship" publicationId="9670-79b6-b335-ed60" page="40" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="770a-fd8c-3d9f-dcb9" name="Desecrator Class Battleship" publicationId="9670-79b6-b335-ed60" page="40" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1039,7 +1098,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="350.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7a98-2d2a-b75f-b6c0" name="Hecate Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="115" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7a98-2d2a-b75f-b6c0" name="Hecate Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="115" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1047,7 +1106,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
@@ -1124,19 +1182,15 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e7b-9b19-fae9-d23d" name="Hellfire Class Heavy Cruiser" publicationId="9670-79b6-b335-ed60" page="44" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4e7b-9b19-fae9-d23d" name="Hellfire Class Heavy Cruiser" publicationId="9670-79b6-b335-ed60" page="44" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1212,19 +1266,15 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="285.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1288,13 +1338,14 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1341,7 +1392,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3938-6c09-fc0a-bfee" name="Scion Of Prospero" publicationId="5766-7751-d146-0800" page="106" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3938-6c09-fc0a-bfee" name="Scion Of Prospero" publicationId="5766-7751-d146-0800" page="106" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1452,14 +1503,13 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="450.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ce8e-4d09-2cb5-51e6" name="Wage Of Sin" publicationId="5766-7751-d146-0800" page="108" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ce8e-4d09-2cb5-51e6" name="Wage Of Sin" publicationId="5766-7751-d146-0800" page="108" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
               </conditions>
@@ -1739,14 +1789,13 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d61-ee74-2848-43ec" name="Terminus Est" publicationId="5766-7751-d146-0800" page="109" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="2d61-ee74-2848-43ec" name="Terminus Est" publicationId="5766-7751-d146-0800" page="109" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
@@ -1866,7 +1915,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ca7-5694-70f0-4c12" name="Conqueror" publicationId="5766-7751-d146-0800" page="113" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7ca7-5694-70f0-4c12" name="Conqueror" publicationId="5766-7751-d146-0800" page="113" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2090,7 +2139,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f83f-30ea-8b93-baef" name="Inferno Class Cruiser" publicationId="5766-7751-d146-0800" page="116" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f83f-30ea-8b93-baef" name="Inferno Class Cruiser" publicationId="5766-7751-d146-0800" page="116" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2166,7 +2215,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f00-48bf-e8c7-d32c" name="Activated Blackstone Fortress" publicationId="5766-7751-d146-0800" page="117" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="8f00-48bf-e8c7-d32c" name="Activated Blackstone Fortress" publicationId="5766-7751-d146-0800" page="117" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2175,6 +2224,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2220,7 +2270,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="5766-7751-d146-0800" page="118" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="5766-7751-d146-0800" page="118" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2228,10 +2278,8 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2345,7 +2393,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" publicationId="31db-354b-7439-4995" page="31" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" publicationId="31db-354b-7439-4995" page="31" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="c772-4b92-0a6e-24e5" value="0.0">
           <conditions>
@@ -2415,7 +2463,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cba6-94f6-0aaa-cf54" name="Favoured Concubine" publicationId="b6b0-a261-40b3-6563" page="" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="cba6-94f6-0aaa-cf54" name="Favoured Concubine" publicationId="b6b0-a261-40b3-6563" page="" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2588,7 +2636,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="535.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="153b-7542-43cf-815b" name="Light Bringer" publicationId="c725-9c27-cf26-b44b" page="" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="153b-7542-43cf-815b" name="Light Bringer" publicationId="c725-9c27-cf26-b44b" page="" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2597,6 +2645,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2639,7 +2688,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">8</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+            <characteristic name="Pg." typeId="50672e23232344415441232323">Fanatic Magizine 62 (need opponent permission)</characteristic>
           </characteristics>
         </profile>
         <profile id="3329-8356-f3f0-8cce" name="Light Bringer Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -2700,7 +2749,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8777-e3f4-56a0-843b" name="Heretic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8777-e3f4-56a0-843b" name="Heretic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2708,7 +2757,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2764,19 +2813,15 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f9b-6b63-1764-d253" name="Governor Class Grand Cruiser" publicationId="c8aa-777a-ddc3-1c0a" page="" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9f9b-6b63-1764-d253" name="Governor Class Grand Cruiser" publicationId="c8aa-777a-ddc3-1c0a" page="" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2836,7 +2881,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b19-657c-b771-79cc" name="Blasphemer Class Fast Battleship" publicationId="d256-2988-72a8-df2f" page="10" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="2b19-657c-b771-79cc" name="Blasphemer Class Fast Battleship" publicationId="d256-2988-72a8-df2f" page="10" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2844,7 +2889,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2913,19 +2957,15 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="875c-e519-7f30-a257" name="Pagan Class System Control Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="875c-e519-7f30-a257" name="Pagan Class System Control Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2981,19 +3021,15 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9291-b73c-3db1-eb5c" name="Unbeliever Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="12" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9291-b73c-3db1-eb5c" name="Unbeliever Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="12" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3046,19 +3082,15 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ce7-6cb7-bce5-beeb" name="Schismatic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="13" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3ce7-6cb7-bce5-beeb" name="Schismatic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="13" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3115,7 +3147,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b9f7-486e-3db4-e6fe" name="Chaos Fleet Master" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b9f7-486e-3db4-e6fe" name="Chaos Fleet Master" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3123,8 +3155,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3175,12 +3205,18 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -3194,12 +3230,18 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3216,12 +3258,18 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c76f-dac9-ccd6-af3d" name="Warp Beasts" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c76f-dac9-ccd6-af3d" name="Warp Beasts" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3238,12 +3286,18 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c8c7-2d2f-9f71-3f20" name="Strand of Fortune" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c8c7-2d2f-9f71-3f20" name="Strand of Fortune" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -3261,6 +3315,8 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
           </conditions>
         </modifier>
@@ -3276,12 +3332,18 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8914-5517-6d1b-9e11" name="Ark of Pestilence" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8914-5517-6d1b-9e11" name="Ark of Pestilence" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -3463,7 +3525,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
@@ -3589,7 +3650,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
@@ -3671,6 +3731,12 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3681,18 +3747,14 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
     </entryLink>
     <entryLink id="136b-9c2b-708b-44ae" name="Space Marine Battle Barge" hidden="false" collective="false" import="true" targetId="88e3-93c2-4982-0cb1" type="selectionEntry">
+      <comment>Loyalist Battle Barge ( don&apos;t think these are allowed to traitor legions per compendium 2010)</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3706,18 +3768,14 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </entryLinks>
     </entryLink>
     <entryLink id="19d9-e304-5621-ab33" name="Space Marine Strike Cruiser" hidden="false" collective="false" import="true" targetId="15d2-1699-80d3-3c45" type="selectionEntry">
+      <comment>Loyalist Battle Barge ( don&apos;t think these are allowed to traitor legions per compendium 2010)</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3731,18 +3789,14 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </entryLinks>
     </entryLink>
     <entryLink id="dde8-cdfd-7fd6-a177" name="Furious Class Grand Cruiser" hidden="true" collective="false" import="true" targetId="5da5-68f9-862c-7a0b" type="selectionEntry">
+      <comment>Need source in order to set fleet lists</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3753,6 +3807,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </entryLinks>
     </entryLink>
     <entryLink id="bc4b-4798-6129-f33d" name="Long Serpent Battle Cruiser" hidden="true" collective="false" import="true" targetId="75d0-9ec2-c137-894e" type="selectionEntry">
+      <comment>This is imperial battle cruiser but could be taken as reserves for turning traitor. Not sure why it&apos;s here.</comment>
       <modifiers>
         <modifier type="decrement" field="2439-b813-c74a-c54f" value="2">
           <conditions>
@@ -3764,12 +3819,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>

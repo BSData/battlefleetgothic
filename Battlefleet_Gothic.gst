@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="34" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="35" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -125,7 +125,7 @@ If you select import</comment>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -185,7 +185,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -249,7 +249,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -305,7 +305,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="39" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="39" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="16ab-2405-afa7-a25c" name="Executor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -354,7 +354,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -414,7 +414,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -493,7 +493,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74b8-8c23-fc12-b300" name="Retaliator Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="38" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="74b8-8c23-fc12-b300" name="Retaliator Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="38" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditions>
@@ -549,7 +549,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="23" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="23" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="504d-e1fd-de85-2bf6" name="Styx Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -632,7 +632,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="41ef-f4f6-9d66-f030" name="Vengance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -727,7 +727,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="8442-aa7f-a96d-22fa" page="46" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="8442-aa7f-a96d-22fa" page="46" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="07c4-1d13-8ba0-c2c5" name="Battle Barge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -781,7 +781,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="8442-aa7f-a96d-22fa" page="47" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="8442-aa7f-a96d-22fa" page="47" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="ec97-0741-cd8d-4569" name="Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -903,7 +903,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="8442-aa7f-a96d-22fa" page="15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="8442-aa7f-a96d-22fa" page="15" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af48-9fe4-e367-95e4" type="max"/>
       </constraints>
@@ -985,7 +985,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75d0-9ec2-c137-894e" name="Long Serpent Battle Cruiser" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="75d0-9ec2-c137-894e" name="Long Serpent Battle Cruiser" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -1059,7 +1059,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d8c6-6423-4acf-949f" name="Escort Carriers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d8c6-6423-4acf-949f" name="Escort Carriers" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="9416-d570-3ad7-452e" name="Escort Carriers Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1090,7 +1090,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e006-c1f5-8b6f-a380" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e006-c1f5-8b6f-a380" name="Alien Raider" publicationId="c725-9c27-cf26-b44b" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b6-69e2-753e-7074" type="max"/>
       </constraints>
@@ -1145,7 +1145,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c536-0327-537e-9da9" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c536-0327-537e-9da9" name="Armed Freighter" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="110e-9041-4828-911a" name="Armed Freighter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1178,7 +1178,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1953-f22a-3bd2-56dc" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1953-f22a-3bd2-56dc" name="Heavy Transport" publicationId="1bc8-5968-21c3-0f27" page="160" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="0139-e593-4586-ec5f" name="Heavy Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1220,7 +1220,7 @@ The alien raider will move and shoot at the start of each turn by the player who
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d54a-9232-6eed-048a" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d54a-9232-6eed-048a" name="Hight Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf8-d39f-5943-4b0f" type="max"/>
       </constraints>
@@ -1508,7 +1508,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f19f-ba4a-9f91-1a4a" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f19f-ba4a-9f91-1a4a" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd0-eae1-ad22-80e6" type="max"/>
       </constraints>
@@ -1793,7 +1793,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a7f4-7851-9c6d-0a1b" name="Q-Ship" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a7f4-7851-9c6d-0a1b" name="Q-Ship" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="1024-3b07-5169-e067" name="Q-Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1833,7 +1833,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1ab-a8cf-3067-2d53" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b1ab-a8cf-3067-2d53" name="Low Orbit Defences" publicationId="11f0-17d1-e4d2-1018" page="146" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a25b-ae50-ff77-58db" type="max"/>
       </constraints>
@@ -1941,7 +1941,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b3f-50cd-e167-34ef" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7b3f-50cd-e167-34ef" name="Imperial Transport" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aa6-bb68-b641-7291" type="max"/>
       </constraints>
@@ -1979,7 +1979,7 @@ Usually used as objectives in missions.</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e5f5-c7c0-765e-6d7e" name="Chaos Battlebarge (Vengeful Spirit)" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e5f5-c7c0-765e-6d7e" name="Chaos Battlebarge (Vengeful Spirit)" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c9-a2d1-49be-f108" type="max"/>
       </constraints>
@@ -2208,7 +2208,7 @@ Usually used as objectives in missions.</characteristic>
         <cost name="pts" typeId="points" value="410.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa09-e234-c587-52af" name="Venerable Battlebarge (Despolier)" publicationId="5766-7751-d146-0800" page="112" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fa09-e234-c587-52af" name="Venerable Battlebarge (Despolier)" publicationId="5766-7751-d146-0800" page="112" hidden="true" collective="false" import="true" type="model">
       <comment>This needs to be redone with the one from the Space Marines List</comment>
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4349-0af0-80a5-7451" type="max"/>
