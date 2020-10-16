@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="20" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="21" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -2991,13 +2991,6 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="84b2-0337-640b-0c0d" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-          </characteristics>
-        </profile>
         <profile id="4ada-5acb-116e-0f4a" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
@@ -3005,17 +2998,48 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="c477-5bba-0fcc-6f58" name="Prow Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="16a5-f857-d712-ded2" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="cccb-a619-cb8f-6c77" name="Improved Thrusters" hidden="false" targetId="7040-2596-65fe-10e7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="cbc2-1d48-eb95-1afc" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9f22-9fd3-aa96-3b09" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-20d1-105c-d652">
+          <selectionEntries>
+            <selectionEntry id="f399-20d1-105c-d652" name="Prow Lances (Standard)" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="a2da-a5a1-3642-381d" name="Prow Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="508d-3fd6-405e-43ff" name="Prow Torpedos (Vigilant or Havock)" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="46a3-21c2-d560-bb12" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="110.0"/>
       </costs>
