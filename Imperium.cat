@@ -1260,7 +1260,7 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1643-31b6-3038-81ad" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1643-31b6-3038-81ad" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="c485-0adb-6886-2f38" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
@@ -1282,20 +1282,8 @@ Bombers: 20cm</characteristic>
             <categoryLink id="74ca-01a8-1c8b-19cb" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="0376-f1a7-5fee-7f9a" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="5610-4d14-8ed5-e67e" name="Cobra Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="increment" field="points" value="5">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -1311,12 +1299,24 @@ Bombers: 20cm</characteristic>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="increment" field="points" value="5.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5934-1fa7-fa6f-fc9f" type="max"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="446b-3c71-99fe-dd05" type="max"/>
               </constraints>
               <profiles>
-                <profile id="157e-97e9-3748-282f" name="Cobra Class Destroyer" publicationId="44fa-5ffb-b627-7106" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="7823-2226-4caf-8e52" name="Cobra Class Destroyer" publicationId="44fa-5ffb-b627-7106" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1327,46 +1327,47 @@ Bombers: 20cm</characteristic>
                     <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="c79d-ccd8-3bc8-2608" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="e3ba-7ff1-23ec-95e6" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="a237-c7eb-5337-15b6" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="0d7b-0fc7-045d-4bc0" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+                <categoryLink id="132a-8a6a-f9ce-1f9b" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="4300-689f-0775-b12d" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="10a8-d679-8f54-8d00">
+                <selectionEntryGroup id="883e-e762-1515-9a1e" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ba1-a9af-7272-3509">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c38-2d08-c10f-a1ff" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bc4-9b9b-6c0b-d6c9" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4076-d6d6-3259-9d19" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0d-fca4-9d6e-7b00" type="min"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="10a8-d679-8f54-8d00" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4ba1-a9af-7272-3509" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16ee-091a-13dc-eec5" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0ef-b9ae-82de-d192" type="max"/>
                       </constraints>
+                      <profiles>
+                        <profile id="7438-e957-3560-153e" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="966a-4039-cae9-fc2e" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="0dca-32ea-21ad-46e2" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b589-2601-26d6-288b" type="max"/>
-                        <constraint field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d16-b68f-52bc-72c4" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08f5-95cb-6293-5fbd" type="max"/>
                       </constraints>
                       <profiles>
-                        <profile id="8802-7ad9-aa2b-fb29" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                        <profile id="fd2b-0f12-6d9b-267c" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
                           <characteristics>
                             <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</characteristic>
                           </characteristics>
@@ -1380,75 +1381,7 @@ Bombers: 20cm</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5610-4d14-8ed5-e67e" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
-              <modifiers>
-                <modifier type="increment" field="points" value="5">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2776-a79e-3147-f90c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4efe-7764-b943-bd33" name="Falchion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="4ef7-f320-211b-e9ca" name="Falchion Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="118d-cab7-139f-464d" name="Falchion Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="5c99-aef0-309a-424f" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="132a-8a6a-f9ce-1f9b" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9960-f870-8718-4d1a" name="Firestorm Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -1925,6 +1858,74 @@ Bombers: 20cm</characteristic>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b8c-f9ac-d629-1703" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="increment" field="points" value="5">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df38-042b-e095-886e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="aeaa-21d0-9648-2353" name="Falchion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0b91-7f27-7745-5ef6" name="Falchion Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d66c-c245-52d4-e0fd" name="Falchion Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2995-02d2-0191-d5e3" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="21ff-543a-0a09-84a0" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3047,6 +3048,9 @@ Starhawks: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="3111-b421-d303-d8a9" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="067a-2ce3-5e1c-d384" name="Vigilant (Torpedos)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3062,6 +3066,9 @@ Starhawks: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="307e-a732-65cd-12a7" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
