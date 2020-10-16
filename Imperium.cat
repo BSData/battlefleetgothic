@@ -3013,9 +3013,16 @@ Starhawks: 20cm</characteristic>
         <categoryLink id="cbc2-1d48-eb95-1afc" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9f22-9fd3-aa96-3b09" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-20d1-105c-d652">
+        <selectionEntryGroup id="9f22-9fd3-aa96-3b09" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-20d1-105c-d652">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a145-661c-0e70-cad4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a1b-6c14-da99-f6dd" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="f399-20d1-105c-d652" name="Prow Lances (Standard)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f399-20d1-105c-d652" name="Lances (Standard)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3af0-5c97-5cc7-5601" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="a2da-a5a1-3642-381d" name="Prow Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -3026,9 +3033,28 @@ Starhawks: 20cm</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry id="508d-3fd6-405e-43ff" name="Prow Torpedos (Vigilant or Havock)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="508d-3fd6-405e-43ff" name="Havock (Torpedos)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f66-ca28-cbe0-d4ca" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb83-2733-4d7d-4264" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="46a3-21c2-d560-bb12" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="067a-2ce3-5e1c-d384" name="Vigilant (Torpedos)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecee-62f4-9c55-646d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="531c-4db6-8deb-3d49" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d5fe-8f14-7c8e-7eea" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
@@ -3504,13 +3530,6 @@ Starhawk Bombers: 20cm</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="adcb-2782-2817-f218" name="Lunar Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
         <profile id="9c85-5d59-5df2-191d" name="Lunar Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
@@ -3522,6 +3541,20 @@ Starhawk Bombers: 20cm</characteristic>
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0988-dbbc-eade-ca48" name="Lunar Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7605-8e7a-5a1a-fd5d" name="Lunar Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
@@ -3540,7 +3573,7 @@ Starhawk Bombers: 20cm</characteristic>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c146-206e-4325-2aa8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb8-be24-6d27-df57" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb8-be24-6d27-df57" type="min"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3554,7 +3587,7 @@ Starhawk Bombers: 20cm</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5f6-8cb2-793a-be45" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="37e3-6940-cade-7479" name="Lord Daros" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="37e3-6940-cade-7479" name="Lord Daros (Prow Nova)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3567,7 +3600,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adba-a561-38d4-903f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ab40-238e-8f5e-fc7f" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="ab40-238e-8f5e-fc7f" name="Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
@@ -3579,7 +3612,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="574a-6346-ad91-19a1" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="574a-6346-ad91-19a1" name="Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d84-a67e-108f-18a5" type="max"/>
               </constraints>
@@ -3599,7 +3632,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d785-676e-4c5c-edee" name="Minotaur" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d785-676e-4c5c-edee" name="Minotaur (Nova)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f28-259c-98cb-3cdb" type="max"/>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfc-4f0d-48a9-fdf9" type="max"/>
@@ -3636,62 +3669,6 @@ Starhawk Bombers: 20cm</characteristic>
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a405-aa02-2dad-24c7" name="Weapons Batteries Range" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a358-d149-516c-f994" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9f-c609-4cc7-65a4" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f1b6-6e18-309a-2b2b" name="45cm Weapons Batteries" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8449-70bb-2c8c-5797" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7a79-8ce9-6a5e-9eae" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bf3d-c119-3083-32bc" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2254-ad07-264d-360b" name="30cm Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13b9-3f05-91f1-5b4c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1cc7-f01d-b628-02bd" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c610-6a29-32eb-c125" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3778,7 +3755,7 @@ Starhawk Bombers: 20cm</characteristic>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe76-f64b-9d6c-94b1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0503-e6b0-2d33-0933" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0503-e6b0-2d33-0933" type="min"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
