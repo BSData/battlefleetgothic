@@ -1282,7 +1282,7 @@ Bombers: 20cm</characteristic>
             <categoryLink id="74ca-01a8-1c8b-19cb" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="5610-4d14-8ed5-e67e" name="Cobra Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="5610-4d14-8ed5-e67e" name="Cobra Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1384,7 +1384,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9960-f870-8718-4d1a" name="Firestorm Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="9960-f870-8718-4d1a" name="Firestorm Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <conditionGroups>
@@ -1452,7 +1452,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f119-d902-6256-c50c" name="Gladius Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="f119-d902-6256-c50c" name="Gladius Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1554,7 +1554,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="06b7-37b9-470d-8df9" name="Nova Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="06b7-37b9-470d-8df9" name="Nova Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1609,7 +1609,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="643c-5aee-f02a-c240" name="Sword Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="643c-5aee-f02a-c240" name="Sword Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <conditionGroups>
@@ -1820,7 +1820,6 @@ Bombers: 20cm</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1856,7 +1855,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3b8c-f9ac-d629-1703" name="Falchion Frigate" publicationId="1bc8-5968-21c3-0f27" page="19" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="3b8c-f9ac-d629-1703" name="Falchion Frigate" publicationId="1bc8-5968-21c3-0f27" page="19" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <conditionGroups>
@@ -1922,7 +1921,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="eef5-7a13-798f-3214" name="Havoc Class Frigate" publicationId="5766-7751-d146-0800" page="43" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="eef5-7a13-798f-3214" name="Havoc Class Frigate" publicationId="5766-7751-d146-0800" page="43" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <conditionGroups>
