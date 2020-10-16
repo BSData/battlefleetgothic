@@ -1384,7 +1384,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9960-f870-8718-4d1a" name="Firestorm Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="9960-f870-8718-4d1a" name="Firestorm Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <conditionGroups>
@@ -1449,10 +1449,10 @@ Bombers: 20cm</characteristic>
                 <categoryLink id="97cc-eace-b9ef-7b4e" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f119-d902-6256-c50c" name="Gladius Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="f119-d902-6256-c50c" name="Gladius Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1463,7 +1463,6 @@ Bombers: 20cm</characteristic>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                       </conditions>
@@ -1501,7 +1500,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c6c3-3872-a63b-80ea" name="Hunter Destroyer" page="0" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="c6c3-3872-a63b-80ea" name="Hunter Destroyer" publicationId="1bc8-5968-21c3-0f27" page="24" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1509,10 +1508,8 @@ Bombers: 20cm</characteristic>
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                       </conditions>
@@ -1557,7 +1554,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="06b7-37b9-470d-8df9" name="Nova Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="06b7-37b9-470d-8df9" name="Nova Frigate" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -1568,7 +1565,6 @@ Bombers: 20cm</characteristic>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                       </conditions>
@@ -1613,7 +1609,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="643c-5aee-f02a-c240" name="Sword Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="643c-5aee-f02a-c240" name="Sword Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <conditionGroups>
@@ -1639,6 +1635,7 @@ Bombers: 20cm</characteristic>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1671,17 +1668,17 @@ Bombers: 20cm</characteristic>
                 <categoryLink id="b1d8-5f88-0245-188d" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7a49-a6ad-86ce-b606" name="Viper Class Missile Destroyer" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="7a49-a6ad-86ce-b606" name="Viper Class Destroyer" publicationId="5766-7751-d146-0800" page="43" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1723,13 +1720,13 @@ Bombers: 20cm</characteristic>
               </costs>
             </selectionEntry>
             <selectionEntry id="de24-9634-caa0-632a" name="Iconoclast Class Destroyer" hidden="true" collective="false" import="true" type="unit">
+              <comment>CHAOS</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
@@ -1767,13 +1764,13 @@ Bombers: 20cm</characteristic>
               </costs>
             </selectionEntry>
             <selectionEntry id="4a0d-cee1-7d2e-1f49" name="Idolator Class Raider" hidden="true" collective="false" import="true" type="unit">
+              <comment>CHAOS</comment>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
@@ -1860,7 +1857,7 @@ Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3b8c-f9ac-d629-1703" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="3b8c-f9ac-d629-1703" name="Falchion Frigate" publicationId="1bc8-5968-21c3-0f27" page="19" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <conditionGroups>
@@ -1879,9 +1876,7 @@ Bombers: 20cm</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
@@ -1925,7 +1920,7 @@ Bombers: 20cm</characteristic>
                 <categoryLink id="21ff-543a-0a09-84a0" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
