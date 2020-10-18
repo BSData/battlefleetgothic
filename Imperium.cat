@@ -6795,26 +6795,8 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1d9c-dfcd-23d7-229e" name="Overlord Class Battlecruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <modifiers>
-            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="361f-d9e3-fa63-9e0b" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
         <profile id="fcee-5ff3-0799-38b6" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
@@ -6851,24 +6833,70 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="3fe6-f061-849f-e292" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="361f-d9e3-fa63-9e0b" name="Cypra Probatii (+1 Turret)" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="70ee-fe20-becb-65f8" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0aa-62db-b5a0-4c6b">
           <constraints>
-            <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bab4-7f17-e964-71ea" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081c-42dc-a1e3-11d8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4307-653d-92e6-a00d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da05-bebe-5032-0b64" type="min"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry id="ce21-35fd-212c-6a16" name="Cypra Probatii (+1 Turret)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d647-f823-f57a-50da" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9682-09e8-926f-0c76" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5ca9-0a1f-384e-9dae" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <modifiers>
+                    <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="ce21-35fd-212c-6a16" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c0aa-62db-b5a0-4c6b" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82f3-679f-1f29-2621" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5dce-17a1-329d-5f63" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6050-aefb-7c91-bcbc" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
       </entryLinks>
