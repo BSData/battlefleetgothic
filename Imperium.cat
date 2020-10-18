@@ -6624,24 +6624,37 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="2c02-1607-88b0-94b6" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0e5b-cfd6-4943-bde5" name="Imperious" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="74e4-5ef7-963c-fb0f" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6b5-a889-25ca-9709">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e6b-b1b8-04fa-3b37" type="max"/>
-            <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41e4-6e9b-1f03-247f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c827-494f-fc26-83e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c4e-97ca-a237-8485" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="1d3e-4799-de21-71ef" name="Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Left colum shift on the gunnery table</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry id="c60a-5311-2976-901c" name="Imperious (Targeting Matrix)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6caf-fc39-73ed-b914" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c4-b8e8-efac-f359" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f7e1-c67d-8dce-e9f2" name="Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Left colum shift on the gunnery table</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a6b5-a889-25ca-9709" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd82-2e28-6e2b-2c03" type="max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c796-e534-9ffc-dd8a" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="3e6a-fdde-c6fc-b29d" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
