@@ -2499,7 +2499,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="95ed-7cb1-547e-b6d4" name="Dictator Class Cruiser" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="95ed-7cb1-547e-b6d4" name="Dictator Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -2522,7 +2522,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="f466-af5b-81b7-58b6" name="Dictator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="f466-af5b-81b7-58b6" name="Dictator Profile" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -2623,7 +2623,7 @@ Starhawks: 20cm</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ddc1-2a10-a9db-1d8d" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup"/>
+        <entryLink id="ddc1-2a10-a9db-1d8d" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="d50e-aede-0ae0-4b95" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="924f-2b47-6a4f-720d" name="Refited Torpedoes (p 156 of BFG Armada)" hidden="true" collective="false" import="true" targetId="5d45-6ad5-d4cc-8570" type="selectionEntry">
           <modifiers>
@@ -2649,7 +2649,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c6c4-e97d-9bed-fdfa" name="Dominator Class Cruiser" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="c6c4-e97d-9bed-fdfa" name="Dominator Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2665,7 +2665,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="dbb6-f375-51cb-00f6" name="Dominator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="dbb6-f375-51cb-00f6" name="Dominator Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
