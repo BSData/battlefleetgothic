@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="23" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="23" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -3580,7 +3580,7 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07f4-ad3c-5819-a030" name="Tyrant Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="12" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="07f4-ad3c-5819-a030" name="Tyrant Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -3651,7 +3651,7 @@ Starhawk Bombers: 20cm</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3665,13 +3665,13 @@ Starhawk Bombers: 20cm</characteristic>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5461-3ba9-c701-129b" name="Weapons Batteries Range" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4c1-159f-9020-f1f2">
+        <selectionEntryGroup id="5461-3ba9-c701-129b" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4c1-159f-9020-f1f2">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deab-58ac-e594-63e3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ca0-2ff0-36de-4d15" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="13ba-a064-0fb4-607d" name="Zealous &amp; Dominion" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="13ba-a064-0fb4-607d" name="Dominion (45cm WB)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3681,7 +3681,7 @@ Starhawk Bombers: 20cm</characteristic>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1820-aa5b-cca1-9ae2" type="max"/>
-                <constraint field="selections" scope="primary-catalogue" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-ed3d-4e76-918b" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-ed3d-4e76-918b" type="max"/>
               </constraints>
               <profiles>
                 <profile id="b923-8f37-964f-87ec" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -3699,11 +3699,76 @@ Starhawk Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3d52-f5cd-c437-2934" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="fdc2-f0aa-ef75-8dd3">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db76-d1a7-a0b6-d5e6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="217f-dc42-9845-a46d" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="fdc2-f0aa-ef75-8dd3" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="571d-a245-b413-b70c" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="88ac-2e19-7e2e-37b9" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="3aaa-1f91-26fc-0e2c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="cdd8-7e4c-aa75-7bf9" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ae6-6028-fb1b-bb22" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="764b-f810-5d31-9db1" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="a883-231a-e719-66e6" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d4c1-159f-9020-f1f2" name="30cm Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d4c1-159f-9020-f1f2" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dd-c42f-0152-cb43" type="max"/>
               </constraints>
@@ -3723,19 +3788,76 @@ Starhawk Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="427f-2c41-46f2-3b5b" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="a241-c924-0c94-e72e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8579-882b-f9f2-70e6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7768-fca9-6441-42b9" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a241-c924-0c94-e72e" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="328d-2ad7-6e78-3788" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="8a6a-27f7-850e-d5a6" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="a2e4-86ea-7ea1-b047" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c95c-b452-2bf9-341f" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a73e-5e71-dca1-60cb" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="565e-bde3-a785-e946" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="b15f-3fc7-6470-d5ce" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f66b-98d7-7068-e440" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="33dc-d730-00e1-bc0b">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3a3-3480-5a4d-a7dd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="327a-6f73-26c3-d8af" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ff35-8b7c-2369-e29c" name="Zealous" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6006-f305-9563-5347" name="Zealous (45cm WB and Nova Option)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3744,53 +3866,95 @@ Starhawk Bombers: 20cm</characteristic>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3df-d2f8-fba9-98c4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c321-b684-cdfb-bb0f" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b42-b299-3f09-8f0a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="577d-cd61-013c-e280" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="362a-dae0-5cf2-f235" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="33dc-d730-00e1-bc0b" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a70-5791-e8c4-d173" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="9eae-28e1-aee1-5a34" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b2eb-eafa-7555-9996" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="f55c-4e0a-e31f-dec2" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4e74-6bbb-d222-43dd" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="197b-53e3-c4ee-78e2">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3148-1557-fd8c-bd89" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5faa-d515-1c2e-b77c" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="197b-53e3-c4ee-78e2" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8827-97e0-1377-8e80" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="aa21-6b4a-890e-def6" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="fca0-6192-ded0-1503" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b664-6587-debb-d2ec" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="230a-1f21-5713-9b0b" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="0459-a3c4-64d6-8a6e" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="8f98-912b-6a42-8e41" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="910b-a804-8501-ca9d" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6651,6 +6815,9 @@ Starhawks: 20cm</characteristic>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd82-2e28-6e2b-2c03" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6906,6 +7073,9 @@ Starhawks: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
