@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="22" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="23" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -607,7 +607,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e85f290e-c2d4-4737-ae0d-7b3099a761fe" name="Endeavour Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="e85f290e-c2d4-4737-ae0d-7b3099a761fe" name="Endeavour Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -630,7 +630,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="18b4-9d77-a47e-85bd" name="Endeavour Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="18b4-9d77-a47e-85bd" name="Endeavour Profile" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -693,7 +693,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d65cfd13-349b-42f9-a853-96ff13660399" name="Endurance Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="d65cfd13-349b-42f9-a853-96ff13660399" name="Endurance Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -716,7 +716,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="fba4-35df-685e-a2f2" name="Endurance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="fba4-35df-685e-a2f2" name="Endurance Profile" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -1306,7 +1306,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="446b-3c71-99fe-dd05" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7823-2226-4caf-8e52" name="Cobra Class Destroyer" publicationId="44fa-5ffb-b627-7106" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="7823-2226-4caf-8e52" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1364,7 +1364,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d002-584f-3040-a348" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f291-ec1e-92a4-ee5d" name="Gladius Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="f291-ec1e-92a4-ee5d" name="Gladius Profile" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1411,7 +1411,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91d4-4f91-62aa-53f9" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2359-4534-5ccd-47d2" name="Hunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="2359-4534-5ccd-47d2" name="Hunter Profile" publicationId="1bc8-5968-21c3-0f27" page="24" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1466,7 +1466,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="275b-584b-c6a0-c220" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2008-c8b9-e83d-1f71" name="Nova Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="2008-c8b9-e83d-1f71" name="Nova Profile" publicationId="1bc8-5968-21c3-0f27" page="25" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1516,7 +1516,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61e-9a16-b6be-48c9" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f5b8-c2bd-0710-2429" name="Viper Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="f5b8-c2bd-0710-2429" name="Viper Profile" publicationId="5766-7751-d146-0800" page="43" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1717,7 +1717,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df38-042b-e095-886e" type="max"/>
               </constraints>
               <profiles>
-                <profile id="aeaa-21d0-9648-2353" name="Falchion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="aeaa-21d0-9648-2353" name="Falchion Profile" publicationId="1bc8-5968-21c3-0f27" page="19" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1784,7 +1784,7 @@ Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03e7-6be8-18fa-d7e3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="db96-04fe-0a49-733e" name="Havoc Class Frigate" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="db96-04fe-0a49-733e" name="Havoc Class Frigate" publicationId="5766-7751-d146-0800" page="43" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -2499,7 +2499,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="95ed-7cb1-547e-b6d4" name="Dictator Class Cruiser" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="95ed-7cb1-547e-b6d4" name="Dictator Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -2522,7 +2522,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="f466-af5b-81b7-58b6" name="Dictator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="f466-af5b-81b7-58b6" name="Dictator Profile" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -2623,7 +2623,7 @@ Starhawks: 20cm</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ddc1-2a10-a9db-1d8d" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="fd00-ef5e-16d3-dacd" type="selectionEntryGroup"/>
+        <entryLink id="ddc1-2a10-a9db-1d8d" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="d50e-aede-0ae0-4b95" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="924f-2b47-6a4f-720d" name="Refited Torpedoes (p 156 of BFG Armada)" hidden="true" collective="false" import="true" targetId="5d45-6ad5-d4cc-8570" type="selectionEntry">
           <modifiers>
@@ -2649,7 +2649,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c6c4-e97d-9bed-fdfa" name="Dominator Class Cruiser" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="c6c4-e97d-9bed-fdfa" name="Dominator Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2665,7 +2665,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="dbb6-f375-51cb-00f6" name="Dominator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="dbb6-f375-51cb-00f6" name="Dominator Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -2684,13 +2684,13 @@ Starhawks: 20cm</characteristic>
         <categoryLink id="b7d5-6ea5-7e88-a012" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2b86-8a46-08fb-1996" name="Weapons Battery" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa07-903e-532d-f514">
+        <selectionEntryGroup id="2b86-8a46-08fb-1996" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa07-903e-532d-f514">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e229-a8f4-9199-3019" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d96-174a-7515-c1a0" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5387-2ad9-998f-ec4b" name="Hammer of justice" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5387-2ad9-998f-ec4b" name="Hammer of Justice (45cm WB)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f48-0e77-ff57-a27f" type="max"/>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef48-225d-6b20-6442" type="max"/>
@@ -2715,7 +2715,7 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="-5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fa07-903e-532d-f514" name="Standart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fa07-903e-532d-f514" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d4-039f-1ec2-b093" type="max"/>
               </constraints>
@@ -2867,7 +2867,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="43ce-c441-2432-7f2c" name="Dauntless Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="43ce-c441-2432-7f2c" name="Dauntless Profile" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -3273,7 +3273,7 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be36-cf2d-5993-dbc5" name="Gothic Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="be36-cf2d-5993-dbc5" name="Gothic Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35.0">
           <conditions>
@@ -3296,7 +3296,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0d7f-b8f9-9ae3-14b5" name="Gothic Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0d7f-b8f9-9ae3-14b5" name="Gothic Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -3335,7 +3335,6 @@ Starhawk Bombers: 20cm</characteristic>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2dbb-e9f1-581e-dd89" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4101-3da3-6147-8c99" type="max"/>
           </constraints>
           <costs>
@@ -3391,9 +3390,9 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7cdb-036c-41b6-ca4e" name="Lunar Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="13" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="7cdb-036c-41b6-ca4e" name="Lunar Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="increment" field="points" value="35">
+        <modifier type="increment" field="points" value="35.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
           </conditions>
@@ -3414,7 +3413,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0822-73c1-630e-4f33" name="Lunar Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0822-73c1-630e-4f33" name="Lunar Profile" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -3502,7 +3501,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adba-a561-38d4-903f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ab40-238e-8f5e-fc7f" name="Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="ab40-238e-8f5e-fc7f" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
@@ -3534,7 +3533,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d785-676e-4c5c-edee" name="Minotaur (Nova)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d785-676e-4c5c-edee" name="Minotaur (Prow Nova)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f28-259c-98cb-3cdb" type="max"/>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfc-4f0d-48a9-fdf9" type="max"/>
@@ -3580,7 +3579,7 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07f4-ad3c-5819-a030" name="Tyrant Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="12" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="07f4-ad3c-5819-a030" name="Tyrant Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -3603,7 +3602,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="e469-32f4-cedf-0394" name="Tyrant Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="e469-32f4-cedf-0394" name="Tyrant Profile" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -3651,7 +3650,7 @@ Starhawk Bombers: 20cm</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3665,13 +3664,13 @@ Starhawk Bombers: 20cm</characteristic>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5461-3ba9-c701-129b" name="Weapons Batteries Range" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4c1-159f-9020-f1f2">
+        <selectionEntryGroup id="5461-3ba9-c701-129b" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4c1-159f-9020-f1f2">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deab-58ac-e594-63e3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ca0-2ff0-36de-4d15" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="13ba-a064-0fb4-607d" name="Zealous &amp; Dominion" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="13ba-a064-0fb4-607d" name="Dominion (45cm WB)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3681,7 +3680,7 @@ Starhawk Bombers: 20cm</characteristic>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1820-aa5b-cca1-9ae2" type="max"/>
-                <constraint field="selections" scope="primary-catalogue" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-ed3d-4e76-918b" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-ed3d-4e76-918b" type="max"/>
               </constraints>
               <profiles>
                 <profile id="b923-8f37-964f-87ec" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -3699,11 +3698,76 @@ Starhawk Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3d52-f5cd-c437-2934" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="fdc2-f0aa-ef75-8dd3">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db76-d1a7-a0b6-d5e6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="217f-dc42-9845-a46d" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="fdc2-f0aa-ef75-8dd3" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="571d-a245-b413-b70c" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="88ac-2e19-7e2e-37b9" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="3aaa-1f91-26fc-0e2c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="cdd8-7e4c-aa75-7bf9" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ae6-6028-fb1b-bb22" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="764b-f810-5d31-9db1" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="a883-231a-e719-66e6" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d4c1-159f-9020-f1f2" name="30cm Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d4c1-159f-9020-f1f2" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dd-c42f-0152-cb43" type="max"/>
               </constraints>
@@ -3723,19 +3787,76 @@ Starhawk Bombers: 20cm</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="427f-2c41-46f2-3b5b" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="a241-c924-0c94-e72e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8579-882b-f9f2-70e6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7768-fca9-6441-42b9" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a241-c924-0c94-e72e" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="328d-2ad7-6e78-3788" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="8a6a-27f7-850e-d5a6" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="a2e4-86ea-7ea1-b047" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c95c-b452-2bf9-341f" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a73e-5e71-dca1-60cb" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="565e-bde3-a785-e946" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="b15f-3fc7-6470-d5ce" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f66b-98d7-7068-e440" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="33dc-d730-00e1-bc0b">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3a3-3480-5a4d-a7dd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="327a-6f73-26c3-d8af" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ff35-8b7c-2369-e29c" name="Zealous" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6006-f305-9563-5347" name="Zealous (45cm WB and Nova Option)" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3744,53 +3865,95 @@ Starhawk Bombers: 20cm</characteristic>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3df-d2f8-fba9-98c4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c321-b684-cdfb-bb0f" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b42-b299-3f09-8f0a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="577d-cd61-013c-e280" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="362a-dae0-5cf2-f235" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="33dc-d730-00e1-bc0b" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a70-5791-e8c4-d173" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="9eae-28e1-aee1-5a34" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b2eb-eafa-7555-9996" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="f55c-4e0a-e31f-dec2" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4e74-6bbb-d222-43dd" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="197b-53e3-c4ee-78e2">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3148-1557-fd8c-bd89" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5faa-d515-1c2e-b77c" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="197b-53e3-c4ee-78e2" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8827-97e0-1377-8e80" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="aa21-6b4a-890e-def6" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="fca0-6192-ded0-1503" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b664-6587-debb-d2ec" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="230a-1f21-5713-9b0b" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="0459-a3c4-64d6-8a6e" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="8f98-912b-6a42-8e41" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="910b-a804-8501-ca9d" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5252,7 +5415,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0990-e6d4-73cc-b1a4" name="Siluria Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0990-e6d4-73cc-b1a4" name="Siluria Profile" publicationId="5766-7751-d146-0800" page="43" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -5297,7 +5460,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39be-bda6-60aa-056c" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d93b-9a2c-47cc-d2fc" name="Veteran Captain" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="d93b-9a2c-47cc-d2fc" name="Veteran Captain" publicationId="1bc8-5968-21c3-0f27" page="29" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+1</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
@@ -5470,6 +5633,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee4e-ce4f-11f7-da99" name="Escorts" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7b4-5aeb-402d-14b3">
+          <comment>save references in the profile not on the selection</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5517-d3ca-8901-68ba" type="max"/>
           </constraints>
@@ -5491,7 +5655,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58ca-8898-acae-a63c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7a65-13f4-0793-3895" name="Cobra Class Destroyer" publicationId="44fa-5ffb-b627-7106" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="7a65-13f4-0793-3895" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -5502,7 +5666,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                     <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="71b6-f03c-3720-523c" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="71b6-f03c-3720-523c" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -5904,7 +6068,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           <modifiers>
             <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Shark Assault Boats: 30cm">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5919,7 +6083,7 @@ Bombers: 20cm</characteristic>
           <modifiers>
             <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Shark Assault Boats: 30cm">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6162,7 +6326,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c133-b14e-e57c-cb12" name="Apocalypse Class Battleship" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c133-b14e-e57c-cb12" name="Apocalypse Class Battleship" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="aff3-d347-19df-54fb" name="Apocalypse Profile" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -6216,9 +6380,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="365.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="d78a-164a-843b-659c" name="Armageddon Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="d78a-164a-843b-659c" name="Armageddon Profile" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -6287,7 +6451,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
     </selectionEntry>
     <selectionEntry id="1fda-2b76-b64f-e8d3" name="Avenger Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="c4a0-fa74-8e0d-2a32" name="Avenger Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="c4a0-fa74-8e0d-2a32" name="Avenger Profile" publicationId="1bc8-5968-21c3-0f27" page="15" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -6320,7 +6484,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd03-5f22-b33e-38dc" name="Emperor Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="9" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fd03-5f22-b33e-38dc" name="Emperor Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="106" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -6329,7 +6493,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="027f-9f95-9944-cdf0" name="Emperor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="027f-9f95-9944-cdf0" name="Emperor Profile" publicationId="11f0-17d1-e4d2-1018" page="106" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -6361,46 +6525,6 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="ed13-d7fb-9ee5-1241" name="Emperor Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <modifiers>
-            <modifier type="append" field="46697265706f7765722f53747223232344415441232323" value=" Sharks: 30cm">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
-Starhawks: 20cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b1d2-a708-a44d-e91b" name="Emperor Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <modifiers>
-            <modifier type="append" field="46697265706f7765722f53747223232344415441232323" value=" Sharks: 30cm">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
-Starhawks: 20cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
         <profile id="dafe-4334-5e93-7e3a" name="Emperor Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
@@ -6423,6 +6547,62 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="6b1c-8ab9-4644-8561" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cca8-c5dc-e805-34ca" name="Ordinance" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>this appends correctly</comment>
+          <profiles>
+            <profile id="bc44-e341-d3ba-aeac" name="Emperor Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <modifiers>
+                <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
+                  <conditions>
+                    <condition field="selections" scope="cca8-c5dc-e805-34ca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm
+</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2e57-2d60-7c22-7b85" name="Emperor Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <modifiers>
+                <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
+                  <conditions>
+                    <condition field="selections" scope="cca8-c5dc-e805-34ca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm
+</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="7566-68cd-7323-921d" name="Shark Assault Boats" hidden="false" collective="false" import="true" targetId="0775-2b9d-28d5-c715" type="selectionEntry"/>
+            <entryLink id="6884-c798-a933-4aa6" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="d921-bab8-3429-a528" name="Extra Turret" hidden="true" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry">
           <modifiers>
@@ -6435,12 +6615,6 @@ Starhawks: 20cm</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f11-b937-1ecf-a2f9" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14f7-e04f-431c-9c7e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8e8c-57a6-e274-fe16" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
-        <entryLink id="ab9b-295d-c25a-bb35" name="Shark Assault Boats" hidden="false" collective="false" import="true" targetId="0775-2b9d-28d5-c715" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f49-28a9-dd27-0fd2" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="bdb3-3d23-23e6-ca9c" name="Torpedo Bombers" hidden="true" collective="false" import="true" targetId="beba-9f13-d04b-6ad6" type="selectionEntry">
@@ -6556,9 +6730,9 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="c992-71b0-a514-938e" name="Mars Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="c992-71b0-a514-938e" name="Mars Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -6613,24 +6787,40 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="2c02-1607-88b0-94b6" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0e5b-cfd6-4943-bde5" name="Imperious" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="74e4-5ef7-963c-fb0f" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6b5-a889-25ca-9709">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e6b-b1b8-04fa-3b37" type="max"/>
-            <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41e4-6e9b-1f03-247f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c827-494f-fc26-83e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c4e-97ca-a237-8485" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="1d3e-4799-de21-71ef" name="Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Left colum shift on the gunnery table</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry id="c60a-5311-2976-901c" name="Imperious (Targeting Matrix)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6caf-fc39-73ed-b914" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c4-b8e8-efac-f359" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f7e1-c67d-8dce-e9f2" name="Targeting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Left colum shift on the gunnery table</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a6b5-a889-25ca-9709" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd82-2e28-6e2b-2c03" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c796-e534-9ffc-dd8a" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="3e6a-fdde-c6fc-b29d" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
@@ -6784,26 +6974,8 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1d9c-dfcd-23d7-229e" name="Overlord Class Battlecruiser" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <modifiers>
-            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="361f-d9e3-fa63-9e0b" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
         <profile id="fcee-5ff3-0799-38b6" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
@@ -6840,24 +7012,73 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="3fe6-f061-849f-e292" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="361f-d9e3-fa63-9e0b" name="Cypra Probatii (+1 Turret)" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="70ee-fe20-becb-65f8" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0aa-62db-b5a0-4c6b">
           <constraints>
-            <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bab4-7f17-e964-71ea" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081c-42dc-a1e3-11d8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4307-653d-92e6-a00d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da05-bebe-5032-0b64" type="min"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry id="ce21-35fd-212c-6a16" name="Cypra Probatii (+1 Turret)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d647-f823-f57a-50da" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9682-09e8-926f-0c76" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5ca9-0a1f-384e-9dae" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <modifiers>
+                    <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="ce21-35fd-212c-6a16" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c0aa-62db-b5a0-4c6b" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82f3-679f-1f29-2621" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5dce-17a1-329d-5f63" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+                    <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6050-aefb-7c91-bcbc" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
       </entryLinks>
@@ -6874,7 +7095,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="6f81-d92c-56b4-a8ea" name="Retribution Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="6f81-d92c-56b4-a8ea" name="Retribution Profile" publicationId="11f0-17d1-e4d2-1018" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -7134,6 +7355,7 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="35ea-70f6-8ccc-e4e0" name="Invincible Class Fast Battleship" hidden="true" collective="false" import="true" type="unit">
+      <comment>BFG mag #13</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -7233,7 +7455,7 @@ The ship can use &quot;Come to a New Heading&quot; orders as they have amuch hig
           <modifiers>
             <modifier type="append" field="46697265706f7765722f53747223232344415441232323" value=" Sharks: 30cm">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7248,7 +7470,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="append" field="46697265706f7765722f53747223232344415441232323" value=" Sharks: 30cm">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab9b-295d-c25a-bb35" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7488,7 +7710,7 @@ Starhawks: 20cm</characteristic>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a0c-e137-bdf1-9e5b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ef05-12b5-6172-0e5a" name="Sword Class Frigate" publicationId="44fa-5ffb-b627-7106" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ef05-12b5-6172-0e5a" name="Sword Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -7549,7 +7771,7 @@ Starhawks: 20cm</characteristic>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd5b-4abf-9cac-02ae" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2278-843e-0e95-8cac" name="Firestorm Class Frigate" publicationId="44fa-5ffb-b627-7106" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="2278-843e-0e95-8cac" name="Firestorm Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
