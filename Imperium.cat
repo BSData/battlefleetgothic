@@ -607,7 +607,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e85f290e-c2d4-4737-ae0d-7b3099a761fe" name="Endeavour Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="e85f290e-c2d4-4737-ae0d-7b3099a761fe" name="Endeavour Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -630,7 +630,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="18b4-9d77-a47e-85bd" name="Endeavour Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="18b4-9d77-a47e-85bd" name="Endeavour Profile" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -693,7 +693,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d65cfd13-349b-42f9-a853-96ff13660399" name="Endurance Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="d65cfd13-349b-42f9-a853-96ff13660399" name="Endurance Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -716,7 +716,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="fba4-35df-685e-a2f2" name="Endurance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="fba4-35df-685e-a2f2" name="Endurance Profile" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -2867,7 +2867,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="43ce-c441-2432-7f2c" name="Dauntless Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="43ce-c441-2432-7f2c" name="Dauntless Profile" publicationId="11f0-17d1-e4d2-1018" page="112" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -3273,7 +3273,7 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be36-cf2d-5993-dbc5" name="Gothic Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="be36-cf2d-5993-dbc5" name="Gothic Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="points" value="35.0">
           <conditions>
@@ -3296,7 +3296,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0d7f-b8f9-9ae3-14b5" name="Gothic Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0d7f-b8f9-9ae3-14b5" name="Gothic Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -3390,9 +3390,9 @@ Starhawk Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7cdb-036c-41b6-ca4e" name="Lunar Class Cruiser" publicationId="b161-6b4c-e770-9ab2" page="13" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="7cdb-036c-41b6-ca4e" name="Lunar Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="increment" field="points" value="35">
+        <modifier type="increment" field="points" value="35.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
           </conditions>
@@ -3413,7 +3413,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0822-73c1-630e-4f33" name="Lunar Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0822-73c1-630e-4f33" name="Lunar Profile" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -3602,7 +3602,7 @@ Starhawk Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="e469-32f4-cedf-0394" name="Tyrant Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="e469-32f4-cedf-0394" name="Tyrant Profile" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -5415,7 +5415,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0990-e6d4-73cc-b1a4" name="Siluria Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0990-e6d4-73cc-b1a4" name="Siluria Profile" publicationId="5766-7751-d146-0800" page="43" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -5460,7 +5460,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39be-bda6-60aa-056c" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d93b-9a2c-47cc-d2fc" name="Veteran Captain" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="d93b-9a2c-47cc-d2fc" name="Veteran Captain" publicationId="1bc8-5968-21c3-0f27" page="29" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+1</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
@@ -6326,7 +6326,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c133-b14e-e57c-cb12" name="Apocalypse Class Battleship" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c133-b14e-e57c-cb12" name="Apocalypse Class Battleship" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="aff3-d347-19df-54fb" name="Apocalypse Profile" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -6380,9 +6380,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="365.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="d78a-164a-843b-659c" name="Armageddon Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="d78a-164a-843b-659c" name="Armageddon Profile" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -6451,7 +6451,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
     </selectionEntry>
     <selectionEntry id="1fda-2b76-b64f-e8d3" name="Avenger Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="c4a0-fa74-8e0d-2a32" name="Avenger Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="c4a0-fa74-8e0d-2a32" name="Avenger Profile" publicationId="1bc8-5968-21c3-0f27" page="15" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -6493,7 +6493,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="027f-9f95-9944-cdf0" name="Emperor Profile" publicationId="1bc8-5968-21c3-0f27" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="027f-9f95-9944-cdf0" name="Emperor Profile" publicationId="11f0-17d1-e4d2-1018" page="106" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
@@ -6730,9 +6730,9 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="c992-71b0-a514-938e" name="Mars Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="c992-71b0-a514-938e" name="Mars Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -7095,7 +7095,7 @@ Starhawks: 20cm</characteristic>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="6f81-d92c-56b4-a8ea" name="Retribution Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="6f81-d92c-56b4-a8ea" name="Retribution Profile" publicationId="11f0-17d1-e4d2-1018" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -7355,6 +7355,7 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="35ea-70f6-8ccc-e4e0" name="Invincible Class Fast Battleship" hidden="true" collective="false" import="true" type="unit">
+      <comment>BFG mag #13</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
