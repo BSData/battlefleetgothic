@@ -2684,13 +2684,13 @@ Starhawks: 20cm</characteristic>
         <categoryLink id="b7d5-6ea5-7e88-a012" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2b86-8a46-08fb-1996" name="Weapons Battery" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa07-903e-532d-f514">
+        <selectionEntryGroup id="2b86-8a46-08fb-1996" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa07-903e-532d-f514">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e229-a8f4-9199-3019" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d96-174a-7515-c1a0" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5387-2ad9-998f-ec4b" name="Hammer of justice" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5387-2ad9-998f-ec4b" name="Hammer of Justice (45cm WB)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f48-0e77-ff57-a27f" type="max"/>
                 <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef48-225d-6b20-6442" type="max"/>
@@ -2715,7 +2715,7 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="-5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fa07-903e-532d-f514" name="Standart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fa07-903e-532d-f514" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d4-039f-1ec2-b093" type="max"/>
               </constraints>
