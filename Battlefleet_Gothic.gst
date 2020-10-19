@@ -4,21 +4,22 @@
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
     <publication id="5766-7751-d146-0800" name="2010 Compendium"/>
-    <publication id="789d-522c-ea2d-cbca" name="2010 FAQ"/>
-    <publication id="f00a-0d10-63a7-a856" name="2010 FAQ cost adjust"/>
-    <publication id="31db-354b-7439-4995" name="Battlefkeet Gothic Magazine 14"/>
-    <publication id="8442-aa7f-a96d-22fa" name="BFG Additional Ships Compendium"/>
+    <publication id="31db-354b-7439-4995" name="Battlefleet Gothic Magazine 14"/>
     <publication id="11f0-17d1-e4d2-1018" name="BFG Rulebook"/>
     <publication id="1bc8-5968-21c3-0f27" name="BFG Rulebook - Armada"/>
     <publication id="b161-6b4c-e770-9ab2" name="BFG Rulebook - Armada + 2010 FAQ"/>
-    <publication id="acb7-35d6-a2c5-f4a5" name="BFG Rulebook- Armada"/>
-    <publication id="9670-79b6-b335-ed60" name="BFG - Additional Ships Compendium 1.4"/>
-    <publication id="6025-4ccb-9921-09db" name="BFGAdditional Ships Compendium"/>
+    <publication id="9670-79b6-b335-ed60" name="Additional Ships Compendium 1.4 (fan compiled)">
+      <comment>it is preferred to cite the origional source, but to maintain links this will be left here. </comment>
+    </publication>
     <publication id="c8aa-777a-ddc3-1c0a" name="Fanatic Magazine Issue 42"/>
     <publication id="b6b0-a261-40b3-6563" name="Fanatic Magazine issue 60"/>
     <publication id="c725-9c27-cf26-b44b" name="Fanatic Magazine Issue 62"/>
     <publication id="d256-2988-72a8-df2f" name="Fanatic Magazine Issue 96 - Book of Nemesis"/>
     <publication id="137d-dbad-5653-19f2" name="Unofficial"/>
+    <publication id="0bc0-eb58-eacf-d1b0" name="1 Note">
+      <comment>Note: The main sources for gothic are to be, BFG Rulebook, BFG Rulebook - Armada, and the 2010 compendium.
+The additional ships compendium cites it&apos;s sources so site those instead of the additioanl ships document. </comment>
+    </publication>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -116,16 +117,16 @@ Bug report : https://tinyurl.com/gothicbug</readme>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="9371-fa4d-d130-e0bd" name="Note" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="9371-fa4d-d130-e0bd" name="1 Note" hidden="true" collective="false" import="false" type="upgrade">
       <comment>Nothing goes here or it will be shared across every fleet list.
-If you select import</comment>
+</comment>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="190" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="3114-6f37-55fa-024d" name="Acheron Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="122" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -138,7 +139,7 @@ If you select import</comment>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="3165-ed3d-0db4-ef6b" name="Acheron Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="3165-ed3d-0db4-ef6b" name="Acheron Profile" publicationId="11f0-17d1-e4d2-1018" page="122" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -185,7 +186,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="118" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="7ecf-1d59-fc1a-10ff" name="Desolator Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="118" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -198,7 +199,7 @@ If you select import</comment>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="1899-7881-3f57-9944" name="Desolator Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="1899-7881-3f57-9944" name="Desolator Profile" publicationId="11f0-17d1-e4d2-1018" page="118" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -249,7 +250,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="b161-6b4c-e770-9ab2" page="117" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="48f8-b2a8-d4ce-4888" name="Despoiler Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="117" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -262,7 +263,7 @@ If you select import</comment>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="ef77-d947-5997-b255" name="Despoiler Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ef77-d947-5997-b255" name="Despoiler Profile" publicationId="11f0-17d1-e4d2-1018" page="117" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -305,9 +306,9 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="39" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="05d4-f556-2999-f12d" name="Executor Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="39" hidden="true" collective="false" import="true" type="model">
       <profiles>
-        <profile id="16ab-2405-afa7-a25c" name="Executor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="16ab-2405-afa7-a25c" name="Executor Profile" publicationId="1bc8-5968-21c3-0f27" page="39" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -354,7 +355,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="121" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="5ab1-9f2a-0485-39db" name="Hades Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="121" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -367,7 +368,7 @@ If you select import</comment>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="1538-6bb3-a468-160e" name="Hades Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="1538-6bb3-a468-160e" name="Hades Profile" publicationId="11f0-17d1-e4d2-1018" page="121" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -414,7 +415,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="119" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="236b-8abc-b681-f47b" name="Repulsive Class Grand Cruiser" publicationId="11f0-17d1-e4d2-1018" page="119" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="9624-17a2-bfd7-6420">
           <conditionGroups>
@@ -448,7 +449,7 @@ If you select import</comment>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
-        <profile id="9e4e-137a-115b-6b4d" name="Repulsive Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="9e4e-137a-115b-6b4d" name="Repulsive Profile" publicationId="11f0-17d1-e4d2-1018" page="119" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="536869656c647323232344415441232323" value="1">
               <conditions>
@@ -479,7 +480,7 @@ If you select import</comment>
         <categoryLink id="d97c-ef88-673d-deca" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a2bd-54c3-8943-f44a" name="Extra Shield" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry">
+        <entryLink id="a2bd-54c3-8943-f44a" name="Extra Shield" publicationId="5766-7751-d146-0800" page="23" hidden="false" collective="false" import="true" targetId="6e59-320c-8ea6-e4e6" type="selectionEntry">
           <profiles>
             <profile id="ad17-31c9-3e7b-de02" name="Extra Shield" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
               <characteristics>
@@ -502,7 +503,7 @@ If you select import</comment>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="c364-5cd8-c328-8b65" name="Retaliator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="c364-5cd8-c328-8b65" name="Retaliator Profile" publicationId="1bc8-5968-21c3-0f27" page="38" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -549,9 +550,10 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" page="23" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="da54-1698-df9e-8979" name="Styx Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="120" hidden="true" collective="false" import="true" type="model">
+      <comment>points updated in 2010 FAQ</comment>
       <profiles>
-        <profile id="504d-e1fd-de85-2bf6" name="Styx Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="504d-e1fd-de85-2bf6" name="Styx Profile" publicationId="11f0-17d1-e4d2-1018" page="120" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -632,9 +634,9 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" page="14" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="58eb-48b5-7e42-8bc7" name="Vengeance Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="14" hidden="true" collective="false" import="true" type="model">
       <profiles>
-        <profile id="41ef-f4f6-9d66-f030" name="Vengance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="41ef-f4f6-9d66-f030" name="Vengance Profile" publicationId="1bc8-5968-21c3-0f27" page="14" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -697,7 +699,7 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e59-320c-8ea6-e4e6" name="Extra Shield" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6e59-320c-8ea6-e4e6" name="Extra Shield" publicationId="5766-7751-d146-0800" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3e-9e2f-c58b-adc4" type="max"/>
       </constraints>
@@ -727,9 +729,9 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="8442-aa7f-a96d-22fa" page="46" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="88e3-93c2-4982-0cb1" name="Space Marine Battle Barge" publicationId="1bc8-5968-21c3-0f27" page="22" hidden="true" collective="false" import="true" type="model">
       <profiles>
-        <profile id="07c4-1d13-8ba0-c2c5" name="Battle Barge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="07c4-1d13-8ba0-c2c5" name="Battle Barge Profile" publicationId="1bc8-5968-21c3-0f27" page="22" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -781,9 +783,9 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="8442-aa7f-a96d-22fa" page="47" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="15d2-1699-80d3-3c45" name="Space Marine Strike Cruiser" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="true" collective="false" import="true" type="model">
       <profiles>
-        <profile id="ec97-0741-cd8d-4569" name="Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ec97-0741-cd8d-4569" name="Strike Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -903,12 +905,12 @@ If you select import</comment>
         <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="8442-aa7f-a96d-22fa" page="15" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5da5-68f9-862c-7a0b" name="Furious Class Grand Cruiser" publicationId="9670-79b6-b335-ed60" page="15" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af48-9fe4-e367-95e4" type="max"/>
       </constraints>
       <profiles>
-        <profile id="8ccb-8120-cc84-5629" name="Furious Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="8ccb-8120-cc84-5629" name="Furious Profile" publicationId="9670-79b6-b335-ed60" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Grand Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -1081,7 +1083,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         </profile>
       </profiles>
       <rules>
-        <rule id="ba2e-c85b-bfb9-051a" name="Make &quot;Reload Ordnance Test at -1Ld&quot;" publicationId="acb7-35d6-a2c5-f4a5" page="159" hidden="false"/>
+        <rule id="ba2e-c85b-bfb9-051a" name="Make &quot;Reload Ordnance Test at -1Ld&quot;" publicationId="1bc8-5968-21c3-0f27" page="159" hidden="false"/>
       </rules>
       <categoryLinks>
         <categoryLink id="a09e-8875-63fa-69de" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
@@ -1508,7 +1510,7 @@ Bombers: 20cm</characteristic>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f19f-ba4a-9f91-1a4a" name="Rogue Trader Cruiser" publicationId="8442-aa7f-a96d-22fa" page="83" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f19f-ba4a-9f91-1a4a" name="Rogue Trader Cruiser" publicationId="5766-7751-d146-0800" page="83" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd0-eae1-ad22-80e6" type="max"/>
       </constraints>
@@ -1985,7 +1987,7 @@ Usually used as objectives in missions.</characteristic>
         <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c9-a2d1-49be-f108" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5ffa-d177-df5b-2016" name="Vengeful Spirit Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="5ffa-d177-df5b-2016" name="Vengeful Spirit Profile" publicationId="5766-7751-d146-0800" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -2289,6 +2291,16 @@ Usually used as objectives in missions.</characteristic>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="445.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9934-68dd-4be2-f19f" name="1 Note" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>These shared selection entries are for weapon choices in the 40K battlescribe.
+Weapon profiles are then linked within them from the shared profiles section. 
+
+This is where points should be set.
+also 40k does not put unit&apos;s here. </comment>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2723,6 +2735,14 @@ Bombardment cannons inflict critical hits on a roll of 4 or more, rather than ju
     <profile id="c466-daa1-aff6-1f6f" name="Mark of Chaos Undivided" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The marked vessel has been rewarded for its dedication to Chaos as a whole, not devoting itself to one particular god but instead advancing the greater cause of Chaos in all its forms. Only vessels embarking a Chaos Warmaster or Chaos Lord may be given this mark. Once per game, you may have your entire fleet use the marked vessel’s leadership value until the end of the turn. You may trigger this ability at any time.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fae-7f71-c348-6bfd" name="1 Note" hidden="true" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+      <comment>All common weapon/unit profiles should be stored here and then linked above. </comment>
+      <characteristics>
+        <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323"/>
+        <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323"/>
+        <characteristic name="Pg." typeId="50672e23232344415441232323"/>
       </characteristics>
     </profile>
   </sharedProfiles>
