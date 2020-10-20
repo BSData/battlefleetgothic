@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="13" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <publications>
-    <publication id="2f88b28a--pubN65608" name="BFG Armada"/>
-    <publication id="2f88b28a--pubN71593" name="BFG Rulebook"/>
-  </publications>
   <forceEntries>
     <forceEntry id="0c34-df2d-6332-eb03" name="Tau Kor&apos;Vattra Fleet List (Armada)" publicationId="1bc8-5968-21c3-0f27" page="112" hidden="false">
       <categoryLinks>
@@ -2019,21 +2015,22 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="3190-a619-19a4-9ac6" name="Assault Boat&apos;s Rules" publicationId="2f88b28a--pubN71593" page="30" hidden="false">
+    <rule id="3190-a619-19a4-9ac6" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
+      <comment>these are duplicate and should be removed for the shared profiles from core rules</comment>
       <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
 
 Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
     </rule>
-    <rule id="fd97-2100-3e01-1973" name="Bomber&apos;s Rules" publicationId="2f88b28a--pubN71593" page="30" hidden="false">
+    <rule id="fd97-2100-3e01-1973" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
     </rule>
-    <rule id="f175-da90-69d4-4b9d" name="Fighter&apos;s Rules" publicationId="2f88b28a--pubN71593" page="29" hidden="false">
+    <rule id="f175-da90-69d4-4b9d" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
       <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
