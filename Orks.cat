@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="3" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <publications>
-    <publication id="cfd250a5--pubN65584" name="BFG Rulebook - Armada"/>
-    <publication id="cfd250a5--pubN65930" name="BFG Rulebook"/>
-    <publication id="cfd250a5--pubN66525" name="FAQ"/>
-    <publication id="cfd250a5--pubN73992" name="BFG Ruebook Armada"/>
-    <publication id="cfd250a5--pubN75070" name="BFG_-_Additional_Ships_Compendium_1.4"/>
-    <publication id="cfd250a5--pubN75305" name="2010 Compedium"/>
-    <publication id="cfd250a5--pubN75472" name="2010 Compendium"/>
-  </publications>
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="4" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
       <categoryLinks>
@@ -52,7 +43,7 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="090c65cc-0653-4f4e-a67b-e64854243aa6" name="Dethdeala Ork Battleship" publicationId="cfd250a5--pubN65584" page="64" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="090c65cc-0653-4f4e-a67b-e64854243aa6" name="Dethdeala Ork Battleship" publicationId="1bc8-5968-21c3-0f27" page="64" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -138,21 +129,21 @@
         <rule id="2633-c5ec-0764-323b" name="Dethdeala Ork Battleship" hidden="false">
           <description>When Leadership values are generated for the Ork fleet, Dethdeala can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.</description>
         </rule>
-        <rule id="7232-c0d4-661b-84c8" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="7232-c0d4-661b-84c8" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
 
 Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
         </rule>
-        <rule id="6adf-d5b1-1af5-af78" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="6adf-d5b1-1af5-af78" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
         </rule>
-        <rule id="0473-b377-69da-16be" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+        <rule id="0473-b377-69da-16be" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
           <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
@@ -262,7 +253,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6e08-88b6-46a4-1b7f" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6e08-88b6-46a4-1b7f" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-ad52-2a06-e4e2" type="max"/>
           </constraints>
@@ -275,7 +266,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c71d77d-033d-4cf8-a9a1-ba42760816e6" name="Gorbag&apos;s Revenge Ork Battleship" publicationId="cfd250a5--pubN65584" page="065" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="1c71d77d-033d-4cf8-a9a1-ba42760816e6" name="Gorbag&apos;s Revenge Ork Battleship" publicationId="1bc8-5968-21c3-0f27" page="065" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -485,7 +476,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="73be-314b-6395-7416" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="73be-314b-6395-7416" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1e-44c5-1f49-f138" type="max"/>
           </constraints>
@@ -498,7 +489,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="310.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7241b1f-65a5-4358-9328-0665bb9dcd9b" name="Ork Hammer Class Battle Kroozer" publicationId="cfd250a5--pubN65584" page="68" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c7241b1f-65a5-4358-9328-0665bb9dcd9b" name="Ork Hammer Class Battle Kroozer" publicationId="1bc8-5968-21c3-0f27" page="68" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -724,7 +715,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="245.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5a89b419-e904-4c28-bfb4-c693f54032af" name="Kroolboy Ork Battleship" publicationId="cfd250a5--pubN65584" page="67" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="5a89b419-e904-4c28-bfb4-c693f54032af" name="Kroolboy Ork Battleship" publicationId="1bc8-5968-21c3-0f27" page="67" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -928,7 +919,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="cfd250a5--pubN65930" page="136" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c4547fee-7e4c-49cd-899c-420ad42468ba" name="Ork Kill Kroozer" publicationId="11f0-17d1-e4d2-1018" page="136" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1224,7 +1215,7 @@ When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Dam
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55f54828-79d4-4e64-a4bd-8521d7f43ef3" name="Ork Terror Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="55f54828-79d4-4e64-a4bd-8521d7f43ef3" name="Ork Terror Ship" publicationId="11f0-17d1-e4d2-1018" page="137" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1288,19 +1279,19 @@ When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Dam
         </profile>
       </profiles>
       <rules>
-        <rule id="bde9-10e8-33e5-80a7" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="bde9-10e8-33e5-80a7" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
         </rule>
-        <rule id="d065-8418-bcce-ae23" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+        <rule id="d065-8418-bcce-ae23" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
           <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
         </rule>
-        <rule id="1416-db96-b514-9ed0" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="1416-db96-b514-9ed0" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
@@ -1411,7 +1402,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8973-f965-9a4b-5286" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8973-f965-9a4b-5286" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-90f3-a194-85bd" type="max"/>
           </constraints>
@@ -1570,7 +1561,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7db8db4f-3649-4932-9114-598f708bda42" name="Slamblasta Ork Battleship" publicationId="cfd250a5--pubN65584" page="66" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7db8db4f-3649-4932-9114-598f708bda42" name="Slamblasta Ork Battleship" publicationId="1bc8-5968-21c3-0f27" page="66" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1654,21 +1645,21 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
 
 When Leadership values are generated for the Ork fleet, Slamblasta can opt to swap Leadership ratings with a Kill kroozer or Terror ship to represent the warlord dragooning the best crew in the fleet aboard his vessel.</description>
         </rule>
-        <rule id="3b82-ec66-f2a4-a850" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="3b82-ec66-f2a4-a850" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
 
 Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
         </rule>
-        <rule id="498f-85b6-d1b2-89af" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="498f-85b6-d1b2-89af" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
         </rule>
-        <rule id="ae70-e0a5-35c8-cf3b" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+        <rule id="ae70-e0a5-35c8-cf3b" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
           <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
@@ -1790,7 +1781,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="295.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2" name="Ork Hulk" publicationId="cfd250a5--pubN73992" page="60" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2" name="Ork Hulk" publicationId="1bc8-5968-21c3-0f27" page="60" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1895,19 +1886,19 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         </profile>
       </profiles>
       <rules>
-        <rule id="8100-8e2f-1414-48a3" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+        <rule id="8100-8e2f-1414-48a3" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
           <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
         </rule>
-        <rule id="55f9-0d51-5852-7690" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="55f9-0d51-5852-7690" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
         </rule>
-        <rule id="7e64-5442-57a9-f712" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+        <rule id="7e64-5442-57a9-f712" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
           <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
@@ -2018,7 +2009,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="593f-2018-ddac-776a" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="593f-2018-ddac-776a" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-4b56-3273-ba77" type="max"/>
           </constraints>
@@ -2031,7 +2022,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="600.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="440d-f1d9-0756-0da4" name="Ork Gouga Class Light Kroozer" publicationId="cfd250a5--pubN75070" page="62" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="440d-f1d9-0756-0da4" name="Ork Gouga Class Light Kroozer" publicationId="9670-79b6-b335-ed60" page="62" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2095,7 +2086,7 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="95.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="cfd250a5--pubN75472" page="152" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1741-0ffc-fd8c-79e6" name="Ork Lite Kroozer" publicationId="5766-7751-d146-0800" page="152" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2221,7 +2212,7 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1421-5d8d-a1d7-4b40" name="Zukov&apos;s Klaw Ork Assault Kroozer" publicationId="cfd250a5--pubN75472" page="151" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1421-5d8d-a1d7-4b40" name="Zukov&apos;s Klaw Ork Assault Kroozer" publicationId="5766-7751-d146-0800" page="151" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2532,7 +2523,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="545f-1ec9-0ced-f060" name="Torpedo Bommerz" publicationId="cfd250a5--pubN66525" page="4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="545f-1ec9-0ced-f060" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="910a-b755-6a5d-f8d9" type="max"/>
       </constraints>
@@ -2540,7 +2531,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a91e-87e4-7a52-6b53" name="Grunt Assault Ship" publicationId="cfd250a5--pubN75305" page="153" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a91e-87e4-7a52-6b53" name="Grunt Assault Ship" publicationId="11f0-17d1-e4d2-1018" page="153" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="054a-f204-8e91-4b84" name="Grunt Assault Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2573,7 +2564,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e08-c5ed-c2e2-8bce" name="Onslaught Attack Ship" publicationId="cfd250a5--pubN65930" page="137" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3e08-c5ed-c2e2-8bce" name="Onslaught Attack Ship" publicationId="11f0-17d1-e4d2-1018" page="137" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d65f-a18c-a70d-0e8d" name="Onslaught Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2601,7 +2592,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b5b2-a3cd-3374-9c8d" name="Ravager Attack Ship" publicationId="cfd250a5--pubN65930" page="138" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b5b2-a3cd-3374-9c8d" name="Ravager Attack Ship" publicationId="11f0-17d1-e4d2-1018" page="138" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2b4b-16b9-e9a0-e403" name="Ravager Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2636,7 +2627,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="97ba-cd37-3b17-7942" name="Brute Ram Ship" publicationId="cfd250a5--pubN65930" page="139" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="97ba-cd37-3b17-7942" name="Brute Ram Ship" publicationId="11f0-17d1-e4d2-1018" page="139" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="79cc-6d08-4d8e-0a6f" name="Brute Ram Ship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2682,19 +2673,19 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <rule id="7a0c-fbc8-3ab3-e384" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
               <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
             </rule>
-            <rule id="1ff4-ee71-a355-1e7f" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+            <rule id="1ff4-ee71-a355-1e7f" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
               <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
             </rule>
-            <rule id="fa70-84c1-86b0-f556" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+            <rule id="fa70-84c1-86b0-f556" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
               <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
             </rule>
-            <rule id="a6f3-23ed-010f-2c9c" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+            <rule id="a6f3-23ed-010f-2c9c" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
               <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
@@ -2728,21 +2719,21 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
     <rule id="16e5-ebae-1443-27f6" name="Improved Thrusters" hidden="false">
       <description>Moves +1D6 on All Ahead Full special orders.</description>
     </rule>
-    <rule id="72da-ed6a-e7e5-68e4" name="Assault Boat&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+    <rule id="72da-ed6a-e7e5-68e4" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
 
 Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
     </rule>
-    <rule id="b5f0-63ee-b9a7-e467" name="Bomber&apos;s Rules" publicationId="cfd250a5--pubN65930" page="30" hidden="false">
+    <rule id="b5f0-63ee-b9a7-e467" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
     </rule>
-    <rule id="3e69-3776-92b7-5185" name="Fighter&apos;s Rules" publicationId="cfd250a5--pubN65930" page="29" hidden="false">
+    <rule id="3e69-3776-92b7-5185" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
       <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>

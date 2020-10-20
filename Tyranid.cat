@@ -917,7 +917,9 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min">
+          <comment>nids required to take one escort squad source?</comment>
+        </constraint>
         <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="949b-cf58-611d-bd52" type="max"/>
       </constraints>
       <categoryLinks>
