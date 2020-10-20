@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="6" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="7" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry id="bf37-f25f-be0e-e317" name="Tyranid Hive Fleet List" publicationId="acb7-35d6-a2c5-f4a5" page="91" hidden="false">
+    <forceEntry id="bf37-f25f-be0e-e317" name="Tyranid Hive Fleet List" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false">
       <categoryLinks>
         <categoryLink id="707d-b123-3443-2486" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="9788-d89f-41b4-86ea" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -43,7 +43,7 @@
         <categoryLink id="8c58-92e2-77cb-af30" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="ee10-216e-377e-98e8" name="Tyranid Vanguard Fleet List" publicationId="acb7-35d6-a2c5-f4a5" page="90" hidden="false">
+    <forceEntry id="ee10-216e-377e-98e8" name="Tyranid Vanguard Fleet List" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
       <categoryLinks>
         <categoryLink id="460f-36b5-2988-f203" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="b1fd-a3df-d12b-61b9" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -494,7 +494,7 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="2ab0-93cd-59dc-06cd" name="Hive Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="2ab0-93cd-59dc-06cd" name="Hive Ship" publicationId="1bc8-5968-21c3-0f27" page="87" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -917,7 +917,9 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min">
+          <comment>nids required to take one escort squad source?</comment>
+        </constraint>
         <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="949b-cf58-611d-bd52" type="max"/>
       </constraints>
       <categoryLinks>
@@ -1108,7 +1110,7 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
   <sharedSelectionEntries>
     <selectionEntry id="395a-465a-22c1-e116" name="Tyranid Escort Drone" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="b769-e8a3-0b4b-9f14" name="Tyranid Escort Drone" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="b769-e8a3-0b4b-9f14" name="Tyranid Escort Drone" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1193,7 +1195,7 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
     </selectionEntry>
     <selectionEntry id="8faf-dc28-7e23-996c" name="Tyranid Kraken" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="0c80-9078-a264-fc0c" name="Tyranid Kraken" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="0c80-9078-a264-fc0c" name="Tyranid Kraken" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1283,7 +1285,7 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
     </selectionEntry>
     <selectionEntry id="f39d-43f8-86dc-42c0" name="Tyranid Vanguard Drone Ship" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="be79-d3fd-0b9a-9fd7" name="Tyranid Vanguard Drone Ship" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="be79-d3fd-0b9a-9fd7" name="Tyranid Vanguard Drone Ship" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="9" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="81d0-87dc-b82b-bc57" name="Dragonship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
     <categoryEntry id="a74b-0b9b-07ac-b836" name="Wraithship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
@@ -100,7 +100,8 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="f5af-f0af-4874-e144" name="Pirate Prince" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="f5af-f0af-4874-e144" name="Pirate Prince" publicationId="1bc8-5968-21c3-0f27" page="58" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <comment>same as BFG 134</comment>
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (max of 10)</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
@@ -153,7 +154,7 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="025c-6c6c-1027-8ec5" name="Aurora Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="025c-6c6c-1027-8ec5" name="Aurora Profile" publicationId="1bc8-5968-21c3-0f27" page="51" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">4</characteristic>
@@ -531,7 +532,7 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="fba5-1346-67db-69e5" name="Dragonship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="fba5-1346-67db-69e5" name="Dragonship Profile" publicationId="5766-7751-d146-0800" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -707,7 +708,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -715,7 +716,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="869e-bef2-6de4-0ca8" name="Eclipse Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="869e-bef2-6de4-0ca8" name="Eclipse Profile" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -936,7 +937,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="80e4-4915-0a81-c15c" name="Eldar Transport Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="80e4-4915-0a81-c15c" name="Eldar Transport Profile" publicationId="5766-7751-d146-0800" page="144" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -984,7 +985,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2f6-6e53-8269-3fa7" type="max"/>
       </constraints>
       <rules>
-        <rule id="a3a8-59f3-5393-11a1" name="Eldar Hero" hidden="false">
+        <rule id="a3a8-59f3-5393-11a1" name="Eldar Hero" publicationId="5766-7751-d146-0800" page="137" hidden="false">
           <description>Your fleet may be led by an Eldar Hero, in place of its normal fleet commander. Only a fleet led by an Eldar Hero may take reserves from the Corsair Eldar fleet list. Contrariwise, only when a Corsair Eldar fleet is led by an Eldar Hero in place of its fleet commander may it take reserves form the Craftworld Eldar fleet list.</description>
         </rule>
       </rules>
@@ -1080,7 +1081,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7b-9504-2aaa-37fc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="8e34-a359-92db-cbdf" name="Flame Of Asuryan Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="8e34-a359-92db-cbdf" name="Flame Of Asuryan Profile" publicationId="5766-7751-d146-0800" page="131" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -1336,7 +1337,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="6b7b-971b-3200-45d5" name="Shadow Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="6b7b-971b-3200-45d5" name="Shadow Profile" publicationId="11f0-17d1-e4d2-1018" page="131" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -1421,7 +1422,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="6e1d-6a53-8400-4180" name="Solaris Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="6e1d-6a53-8400-4180" name="Solaris Profile" publicationId="1bc8-5968-21c3-0f27" page="52" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">4</characteristic>
@@ -1498,7 +1499,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="9439-c48d-a8aa-d99c" name="Void Stalker Profile" publicationId="1bc8-5968-21c3-0f27" page="50" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -1649,7 +1650,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="ef76-f9d8-8ec5-b313" name="Wraithship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ef76-f9d8-8ec5-b313" name="Wraithship Profile" publicationId="5766-7751-d146-0800" page="133" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -1946,7 +1947,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
   <sharedSelectionEntries>
     <selectionEntry id="944b-2a4a-496c-6b39" name="Hellbore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3e17-25f7-b2b2-7210" name="Hellbore Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="3e17-25f7-b2b2-7210" name="Hellbore Profile" publicationId="11f0-17d1-e4d2-1018" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -1988,7 +1989,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
     </selectionEntry>
     <selectionEntry id="a15a-29e4-3776-c9e9" name="Hemlock Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="98b0-e072-1c6a-ebb8" name="Hemlock Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="98b0-e072-1c6a-ebb8" name="Hemlock Profile" publicationId="11f0-17d1-e4d2-1018" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -2021,7 +2022,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
     </selectionEntry>
     <selectionEntry id="0795-5e16-0941-2b59" name="Nightshade Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f942-ff1d-3984-c7da" name="Nightshade Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="f942-ff1d-3984-c7da" name="Nightshade Profile" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -2056,7 +2057,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
     </selectionEntry>
     <selectionEntry id="66ad-f830-00ac-ed2a" name="Aconite Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3bd4-ab91-0a93-5e61" name="Aconite Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="3bd4-ab91-0a93-5e61" name="Aconite Profile" publicationId="11f0-17d1-e4d2-1018" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -2095,7 +2096,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="5425-b227-e776-495f" name="Shadowhunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="5425-b227-e776-495f" name="Shadowhunter Profile" publicationId="5766-7751-d146-0800" page="134" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
