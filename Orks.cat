@@ -40,11 +40,31 @@
         <categoryLink id="d357-6979-5318-e248" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="8dd5-802f-777b-7699" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="c2fb-0013-baeb-5467" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="d43d-a935-747b-3e5a" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="6aea-eaef-3497-8012" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="156f-a8f4-2117-1a9b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="111f-4e0b-c0fc-53f1" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="e66f-6fc9-14f6-8ea3" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="2187-031d-733c-52f2" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="5998-3ada-dd08-5e16" value="1.0">
+              <conditions>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2206-a704-f5a1-44ad" value="1.0">
+              <repeats>
+                <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5998-3ada-dd08-5e16" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2206-a704-f5a1-44ad" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="c605-ecf9-5430-c533" name="Da Ork Clanz Fleet List" hidden="false">
@@ -53,12 +73,35 @@
         <categoryLink id="abbe-9a38-1bf2-7fde" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="612b-64e5-5c3e-20fa" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="a95d-35b7-367a-c672" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="97d4-c9f8-32a6-dcfd" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="97e0-e484-3fde-508e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="0252-e9e5-9656-2bbf" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="8c11-be1f-a665-8088" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="c9b8-9c4c-e8c3-df88" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
         <categoryLink id="65da-a28d-37d9-2ca5" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="1652-6d41-ff66-86dc" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="760a-803c-c66d-da54" value="1.0">
+              <repeats>
+                <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="da52-d2dd-c861-1a34" value="1.0">
+              <repeats>
+                <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="760a-803c-c66d-da54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da52-d2dd-c861-1a34" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -2526,13 +2569,15 @@ These roll to hit like ordinary weapons batteries but do not count gunnery modif
           </conditionGroups>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="4503-ebb5-47ff-060d" name="Ork Warlord" hidden="false">
-          <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+      <profiles>
+        <profile id="f074-0b0c-7d27-9ea6" name="Ork Warlord" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
 
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-        </rule>
-      </rules>
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="2556-1e85-9006-8e55" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2548,6 +2593,17 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="46af-4bdb-f76f-8a0c" name="Upgrades" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b497-39cb-cef8-1e0e" type="max"/>
           </constraints>
@@ -2556,6 +2612,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b79b-990c-877e-e13f" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="9d25-bf73-4662-7993" name="Mega Armored Boarding Parties" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">+1 modifier on boarding</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -2564,6 +2627,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a83-20f1-264d-f0e3" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="27c6-3cb6-535f-5781" name="Maniac Gunners" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship may re-roll the dice for the firepower of its gunz when it fires.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
@@ -2572,6 +2642,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40ce-7181-3c5d-4aa8" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="98c3-dd6e-484c-ceab" name="Extra Power Fields" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship’s shield value is increased by +1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -2580,6 +2657,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78b9-833c-5892-c352" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="078b-c4d0-9eaf-1c16" name="Looted Torpedos" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship may re-roll the dice for the strength of torpedo salvoes when it fires</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -2588,6 +2672,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ca-d03c-3abf-55ff" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="f306-35fc-cf96-500a" name="Mad Meks" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship may re-roll the dice for damage control</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -2600,59 +2691,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="d5ae-9a60-248d-0aca" name="Ordnance" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351f-def9-d4d9-e159" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670e-6dd8-0e26-51d3" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="5137-5813-8ec2-9fa8" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="7a0c-fbc8-3ab3-e384" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
-              <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
-            </rule>
-            <rule id="1ff4-ee71-a355-1e7f" name="Fighter&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
-              <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-            </rule>
-            <rule id="fa70-84c1-86b0-f556" name="Bomber&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
-              <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-            </rule>
-            <rule id="a6f3-23ed-010f-2c9c" name="Assault Boat&apos;s Rules" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
-              <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e85e-1e33-f52a-0657" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="3133-2cc8-9491-aa76" name="Thunderhawk Gunship" hidden="false">
-              <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
-
-Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="e580-5744-c4c1-d367" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
     <rule id="16e5-ebae-1443-27f6" name="Improved Thrusters" hidden="false">
