@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="81d0-87dc-b82b-bc57" name="Dragonship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
     <categoryEntry id="a74b-0b9b-07ac-b836" name="Wraithship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
@@ -180,6 +180,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="92da-a2ca-88bb-16bc" name="Eldar Torpedos" hidden="false" targetId="cbf5-cd72-c9b8-9288" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7529-1913-4daf-6dd0" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
@@ -690,6 +693,9 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="7c5d-6ae6-8519-8bed" name="Eldar Torpedos" hidden="false" targetId="cbf5-cd72-c9b8-9288" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -742,19 +748,22 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="ce75-e6a7-6675-7de7" name="Nightwing Fighters / Darkstar" hidden="false">
-          <description>Eldar attack craft benefit greatly from the Eldar‟s grasp of technology and the skills of their crews. To represent this, defensive turrets only hit any Eldar attack craft on a roll of 6, rather than on a roll of 4 to 6 as is normally the case. Nightwing fighters function exactly as Corsair Eldar Darkstars in that they are resilient, meaning they get a 4+ save once per ordnance phase whenever they come in contact with enemy ordnance.</description>
-        </rule>
-        <rule id="0fbd-2702-a0d6-d3b4" name="Phoenix Bombers / Eagles" hidden="false">
-          <description>Phoenix bombers function exactly as Corsair Eldar Eagles. The highly accurate targeting sensors on Phoenix bombers allow you to re-roll the dice to determine the number of attacks they make (the second roll stands). Attack craft carriers may also be equipped with torpedo bombers for +15 points per launch bay, with these functioning the same way as other Eldar torpedoes. Additionally, for the cost listed in their special rules, certain vessels with launch bays may be equipped with Vampire raiders, which serve as assault boats with a speed of 25cm.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="3c6b-b76e-88f2-6eb6" name="Phoenix Bombers / Eagles" hidden="false" targetId="a15c-3bbe-1328-e8dc" type="rule"/>
+        <infoLink id="89b2-876f-440d-0425" name="Nightwing Fighters / Darkstar" hidden="false" targetId="ebe1-8047-6f02-7d7e" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d860-7dd4-c304-538c" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bf45-fa66-346d-c7af" name="Upgrades" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b564-08a4-280a-b823" type="max"/>
           </constraints>
@@ -871,14 +880,11 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="59ef-eef8-a131-593b" name="Nightwing Fighters / Darkstar" hidden="false">
-          <description>Eldar attack craft benefit greatly from the Eldar‟s grasp of technology and the skills of their crews. To represent this, defensive turrets only hit any Eldar attack craft on a roll of 6, rather than on a roll of 4 to 6 as is normally the case. Nightwing fighters function exactly as Corsair Eldar Darkstars in that they are resilient, meaning they get a 4+ save once per ordnance phase whenever they come in contact with enemy ordnance.</description>
-        </rule>
-        <rule id="ff31-5486-3b59-4a97" name="Phoenix Bombers / Eagles" hidden="false">
-          <description>Phoenix bombers function exactly as Corsair Eldar Eagles. The highly accurate targeting sensors on Phoenix bombers allow you to re-roll the dice to determine the number of attacks they make (the second roll stands). Attack craft carriers may also be equipped with torpedo bombers for +15 points per launch bay, with these functioning the same way as other Eldar torpedoes. Additionally, for the cost listed in their special rules, certain vessels with launch bays may be equipped with Vampire raiders, which serve as assault boats with a speed of 25cm.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="149f-55df-974f-794f" name="Eldar Torpedos" hidden="false" targetId="cbf5-cd72-c9b8-9288" type="rule"/>
+        <infoLink id="0b34-397a-bd36-9381" name="Nightwing Fighters / Darkstar" hidden="false" targetId="ebe1-8047-6f02-7d7e" type="rule"/>
+        <infoLink id="d9a0-831d-36cb-fc96" name="Phoenix Bombers / Eagles" hidden="false" targetId="a15c-3bbe-1328-e8dc" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="303d-3cde-22cf-6720" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="9de5-cc59-2b4d-e395" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1363,11 +1369,21 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="0970-6761-4177-0165" name="Eldar Torpedos" hidden="false" targetId="cbf5-cd72-c9b8-9288" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="bd28-8fac-6036-ec5e" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ba2a-384a-050b-1d70" name="Upgrades" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aad-bd8c-dee4-e88f" type="max"/>
           </constraints>
@@ -1413,7 +1429,6 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a7-6c8d-3988-de71" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dee-bc4f-5ccb-d781" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
@@ -1595,14 +1610,10 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="f985-d42c-c30c-e171" name="Nightwing Fighters / Darkstar" hidden="false">
-                  <description>Eldar attack craft benefit greatly from the Eldar‟s grasp of technology and the skills of their crews. To represent this, defensive turrets only hit any Eldar attack craft on a roll of 6, rather than on a roll of 4 to 6 as is normally the case. Nightwing fighters function exactly as Corsair Eldar Darkstars in that they are resilient, meaning they get a 4+ save once per ordnance phase whenever they come in contact with enemy ordnance.</description>
-                </rule>
-                <rule id="9670-354d-3e84-b17e" name="Phoenix Bombers / Eagles" hidden="false">
-                  <description>Phoenix bombers function exactly as Corsair Eldar Eagles. The highly accurate targeting sensors on Phoenix bombers allow you to re-roll the dice to determine the number of attacks they make (the second roll stands). Attack craft carriers may also be equipped with torpedo bombers for +15 points per launch bay, with these functioning the same way as other Eldar torpedoes. Additionally, for the cost listed in their special rules, certain vessels with launch bays may be equipped with Vampire raiders, which serve as assault boats with a speed of 25cm.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="7638-dec2-e1eb-677e" name="Nightwing Fighters / Darkstar" hidden="false" targetId="ebe1-8047-6f02-7d7e" type="rule"/>
+                <infoLink id="1afe-0515-c94c-0940" name="Phoenix Bombers / Eagles" hidden="false" targetId="a15c-3bbe-1328-e8dc" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1728,14 +1739,10 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="62d9-a53a-cf85-44c7" name="Nightwing Fighters" hidden="false">
-                  <description>Eldar attack craft benefit greatly from the Eldar‟s grasp of technology and the skills of their crews. To represent this, defensive turrets only hit any Eldar attack craft on a roll of 6, rather than on a roll of 4 to 6 as is normally the case. Nightwing fighters function exactly as Corsair Eldar Darkstars in that they are resilient, meaning they get a 4+ save once per ordnance phase whenever they come in contact with enemy ordnance.</description>
-                </rule>
-                <rule id="e1cc-cbb3-524b-f0ec" name="Phoenix Bombers" hidden="false">
-                  <description>Phoenix bombers function exactly as Corsair Eldar Eagles. The highly accurate targeting sensors on Phoenix bombers allow you to re-roll the dice to determine the number of attacks they make (the second roll stands). Attack craft carriers may also be equipped with torpedo bombers for +15 points per launch bay, with these functioning the same way as other Eldar torpedoes. Additionally, for the cost listed in their special rules, certain vessels with launch bays may be equipped with Vampire raiders, which serve as assault boats with a speed of 25cm.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="ec30-7412-4952-2dcd" name="Phoenix Bombers / Eagles" hidden="false" targetId="a15c-3bbe-1328-e8dc" type="rule"/>
+                <infoLink id="e495-2589-ad7a-6b95" name="Nightwing Fighters / Darkstar" hidden="false" targetId="ebe1-8047-6f02-7d7e" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1835,7 +1842,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed59-d6ad-7b1e-e2c3" name="Escort Squardon" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ed59-d6ad-7b1e-e2c3" name="Escort Squardon Shadowhunter" hidden="true" collective="false" import="true" type="unit">
       <comment>Iyanden eldar fleet</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1944,6 +1951,48 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       </modifiers>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="fc2d-0f5d-6a43-7ffe" name="Eldar Critical Hits" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>Any hit on an Eldar ship causes critical damange on a D6 roll of 4+, rather than the usual 6. Roll 2D6 following the Eldar Critical Hits table rather than the standard critical hits table.
+https://tinyurl.com/EldarCrit</description>
+    </rule>
+    <rule id="6fdf-b518-d4e7-dc00" name="Eldar Ship Movement" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
+      <description>Eldar Ships move in the movement phase and in the ordinance phase of their own turn. Note that they do not move in the ordinance phase of the enemy&apos;s turn. Before an Eldar ship moves , it may turn to fance any direction. It always turns before it moves and then remains facing in that direction until the start of its next move. 
+Work out the speed an Eldar ship can move at after it has turned. Its speed depends on its facing towards the sunward table edge. All Eldar ships have three speeds (for example, 10/20/30). The first is used if the sunward table edge is in the Eldar ship&apos;s front fire arc; the second is used if the sunward edge is in the Eldar ship&apos;s rear fire arc; and the third is used if the sunward edge lies in it&apos;s left or right fire arcs. If the sunward edge lies on the line between two fire arcs, the Eldar player may choose which they use. 
+Eldar ships have no minimum move distances. They move from zero up to maximum distance allowed by the direction of the sun. After their initial turn they travel in a straight line and may not make additional turns as they move. If under Lock-On special orders, Eldar ships cannot turn for BOTH their movement and Ordinance phases. 
+The Eldar move twice in each of their turns. The second move is made in the ordinance phase after any ordinance is moved, but apart from this all the rules described for Eldar movement will apply. </description>
+    </rule>
+    <rule id="8ee3-bdf2-a1ab-4a8d" name="Sunward Edge" publicationId="11f0-17d1-e4d2-1018" page="44" hidden="false">
+      <description>Roll a D6 to determine the sunward table edge. 
+1: Short Edge Left
+2-3: Long Edge Near
+4-5: Long Edge Far
+6: Short Edge Right</description>
+    </rule>
+    <rule id="1e80-9ceb-4e85-1bf1" name="Eldar Leadership" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
+      <description>All Eldar ships add +1 to the leadership score generated on the Standard Leadership table. This gives them a leadership range between 7 and 10. 1: 7, 2-3: 8, 4-5: 9, 6: 10</description>
+    </rule>
+    <rule id="1b4e-2e68-1b1a-cbb6" name="Movement Note" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
+      <description>Due to their unique method of movement, the Eldar may not used the following Special Orders: All Ahead Full, Burn Retros, Come to New Heading. Note: because Eldar ships cannot use All Ahead Full special orders, they also may not ram. </description>
+    </rule>
+    <rule id="38a3-8188-3e08-c4e3" name="Blast Markers and Gravity Wells" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
+      <description>Eldar are affected by Blast markers in the same way as other ships without shields - they will take a point of damage on a D6 roll of 6 and reduce their speed by 5cm that turn. Eldar have to make a test after each of their two movements in which they encounter blast markers. 
+Graviety wells allow Eldar to curve their normally straight line move around the planet and so the ship may make a free turn towards the planet at the end of its move (since it can turn in any direction at the start of it&apos;s move there is no benifet at the start of its move).</description>
+    </rule>
+    <rule id="97b9-8929-0df6-0495" name="Holofields" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
+      <description>Against attacks the use the Gunnery Table, the holofields cause one column shift to the right, in addition to any other column shifts for range or Blast markers. Against any other form of attack (lances, torpedoes, etc), roll to hit an Eldar ship as normal but the Eldar player may then make a 2+ saving roll for the Holofields. For every save a blast marker is placed in contact with the ship.
+Note: Holofields so not negate hits or the effects from moving through blast markers, area effects, exploding ships and celestial phenomena. They do, however, work against ordnance hits, hit-and-run raids, boarding actions, ramming or Nova Cannon. When saving against Nova Cannon, it rolls once against the hit itself, not the subsequent D6 damage roll if the save fails. </description>
+    </rule>
+    <rule id="e4f3-9647-60e9-3ce0" name="Eldar Weapons Batteries" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>Eldar Weapons Batteries count all targets as &apos;closing&apos; on the gunnery table, no matter what the target&apos;s actual aspect is. This aside, all normal rules apply. </description>
+    </rule>
+    <rule id="7abc-2c59-aede-5161" name="Eldar Pulsar Lance" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>Pulsar Lances count as Lance shots, and hit on a 4+ no matter what the target&apos;s armor is. However, if a pulsar lance shot hits, then you may roll to hit again and you may continue rolling until you miss or the lance has scored a total of 3 hits. </description>
+    </rule>
+    <rule id="b96f-774f-8cd2-0227" name="Boarding" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>An Eldar Vessel intending to board an opponent may do so in either movement phase, but it may not shoot or launch ordnance before doing so. If it boards in its movemenet phase, it may not make its second movement. </description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="944b-2a4a-496c-6b39" name="Hellbore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2007,12 +2056,12 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="3bbd-0f14-f7a8-72d2" name="Hemlock Boarding" publicationId="11f0-17d1-e4d2-1018" page="133" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A Hemlock cannot initiate boarding actions. A ship that boards a Hemlock class destroyer gains a +1 Modifier in addition to any other modifiers.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="8dfe-3b03-15f5-a3bf" name="Hemlock Class Destroyer" hidden="false">
-          <description>A Hemlock cannot initiate boarding actions. A ship that boards a Hemlock class destroyer gains a +1 Modifier in addition to any other modifiers.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="9677-ac41-c622-6b83" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2165,4 +2214,19 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="cbf5-cd72-c9b8-9288" name="Eldar Torpedos" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>Eldar Torpedos use sophisticated targeter scrambling systems to make themselves virtually undetectable until they strike. To represent this, defensive turrets only hit Eldar Torpedos on a roll of 6, rather than 4, 5, or 6, as is normally the case. In addition, the hightly accurate targeting sensors on Eldar Torpedos allow you to re-roll the dice to hit for any torpedo that misses a target on the first attempt. </description>
+    </rule>
+    <rule id="7633-2d0c-5ed3-90f5" name="Craftworld Torpedo Bombers?" hidden="false">
+      <comment>not sure the source for this part. </comment>
+      <description>Attack craft carriers may also be equipped with torpedo bombers for +15 points per launch bay, with these functioning the same way as other Eldar torpedoes. Additionally, for the cost listed in their special rules, certain vessels with launch bays may be equipped with Vampire raiders, which serve as assault boats with a speed of 25cm.</description>
+    </rule>
+    <rule id="ebe1-8047-6f02-7d7e" name="Nightwing Fighters / Darkstar" publicationId="11f0-17d1-e4d2-1018" page="134" hidden="false">
+      <description>Eldar attack craft benefit greatly from the Eldar‟s grasp of technology and the skills of their crews. To represent this, defensive turrets only hit any Eldar attack craft on a roll of 6, rather than on a roll of 4 to 6 as is normally the case. Nightwing fighters and Eldar Darkstars are resilient, meaning they get a 4+ save once per ordnance phase whenever they come in contact with enemy ordnance.</description>
+    </rule>
+    <rule id="a15c-3bbe-1328-e8dc" name="Phoenix Bombers / Eagles" publicationId="11f0-17d1-e4d2-1018" page="134" hidden="false">
+      <description>Phoenix bombers function as Eldar Eagles. The highly accurate targeting sensors on Eldar bombers allow you to re-roll the dice to determine the number of attacks they make (the second roll stands). </description>
+    </rule>
+  </sharedRules>
 </catalogue>
