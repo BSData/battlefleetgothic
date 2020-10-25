@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="36" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="37" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -34,6 +34,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         <characteristicType id="536869656c647323232344415441232323" name="Shields"/>
         <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="5475727265747323232344415441232323" name="Turrets"/>
+        <characteristicType id="76e6-2ec8-a42c-65e6" name="Leadership"/>
       </characteristicTypes>
     </profileType>
     <profileType id="436f6d6d616e64657223232344415441232323" name="Commander">
@@ -148,6 +149,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="e724-82c9-1f89-1e3a" name="Acheron Port Lance" page="" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -208,6 +210,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="5ea2-e35f-8501-b585" name="Desolator Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -272,6 +275,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="0179-f42e-a45f-a74b" name="Despoiler Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -317,6 +321,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="d590-1ee2-03d4-90d7" name="Executor 1st Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -377,6 +382,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="d0f1-78ac-a098-e5c0" name="Hades Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -465,6 +471,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -512,6 +519,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="a44d-ee96-932d-059b" name="Retaliator Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -562,6 +570,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8b8f-39a8-e03a-4e6c" name="Styx Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -645,6 +654,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="faa9-034a-3195-5568" name="Vengance Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -740,6 +750,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="87d8-20c9-22dd-3286" name="Battle Barge Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -794,6 +805,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="4f8b-ee5a-b8c9-f0c8" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -919,6 +931,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ Front/ 5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="6940-4890-8afd-a0ba" name="Furious Port Weapons battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1009,6 +1022,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="649a-204f-03e8-6472" name="1st Port Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1072,6 +1086,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="393b-9a37-dd64-8f7e" name="Dorsal Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1106,6 +1121,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="740e-cd95-a191-582b" name="Prow Proton Disruptor" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1158,6 +1174,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="fdec-b0ed-0775-266f" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1191,6 +1208,7 @@ The alien raider will move and shoot at the start of each turn by the player who
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="825d-aef4-e02f-6244" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1241,6 +1259,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="f1cd-55b1-c4dc-09bf" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1277,6 +1296,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="20d3-b806-36f0-24f6" name="Detonation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -1321,6 +1341,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="cbc6-330a-7f53-1e07" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1350,6 +1371,7 @@ The alien raider will move and shoot at the start of each turn by the player who
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="c544-101a-9ce6-602a" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1407,6 +1429,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="bc46-224b-bb9e-5b95" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1439,6 +1462,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="85ac-ee10-5603-3e8f" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1468,6 +1492,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="c1fe-1972-fe1f-94bd" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1541,6 +1566,7 @@ Bombers: 20cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8950-ba2a-4b21-0eb5" name="Trader Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1702,6 +1728,7 @@ Bombers: 20cm</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                    <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
                   </characteristics>
                 </profile>
                 <profile id="a4e3-15ab-4376-e2d2" name="Xenos Vessel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1737,6 +1764,7 @@ Bombers: 20cm</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                    <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
                   </characteristics>
                 </profile>
                 <profile id="ff3a-e591-6ee3-a3bc" name="Armed Cargo Vessel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1765,6 +1793,7 @@ Bombers: 20cm</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+                    <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
                   </characteristics>
                 </profile>
                 <profile id="deff-0042-32f5-e968" name="Recommissioned Vessel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1807,6 +1836,7 @@ Bombers: 20cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8cfb-b554-18b6-5112" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1855,6 +1885,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="70eb-c203-30a6-aa1a" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1884,6 +1915,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="3bca-5ce2-90af-738d" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1916,6 +1948,7 @@ Bombers: 20cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">0</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
             <profile id="29e0-b27b-4825-6052" name="Air BaseLaunch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1958,6 +1991,7 @@ Bombers: 20cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="9d47-b86c-0b9e-59a1" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1996,6 +2030,7 @@ Usually used as objectives in missions.</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="740f-5aff-0dcf-dccf" name="Vengeful Spirit Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -2226,6 +2261,7 @@ Usually used as objectives in missions.</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8c86-b776-8db2-2daa" name=" Port Launch Bays" publicationId="5766-7751-d146-0800" page="57" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
