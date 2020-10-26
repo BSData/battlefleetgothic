@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="6" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="7" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
       <categoryLinks>
@@ -2431,12 +2431,11 @@ Ork ships reduce their Leadership by -1 from whatever they rolled, giving them a
     <rule id="1bc8-74e2-885c-f396" name="Boarding" publicationId="11f0-17d1-e4d2-1018" page="135" hidden="false">
       <description>Orks is good at fighten&apos; and get +1 in boarding actions. </description>
     </rule>
-    <rule id="b8ab-1603-4bfc-6c69" name="Ork Weaponry" hidden="false">
-      <description>Gunz 
-These funtion as weapons batteries, but will have random firepower determined by the weapon profile and a die roll. 
+    <rule id="b8ab-1603-4bfc-6c69" name="Ork Weaponry" publicationId="11f0-17d1-e4d2-1018" page="135" hidden="false">
+      <description>
+Gunz: These funtion as weapons batteries, but will have random firepower determined by the weapon profile and a die roll. 
 
-Heavy Gunz
-These roll to hit like ordinary weapons batteries but do not count gunnery modifiers for rance. Each hit inflicted by these massive weapons causes 2 damage instead of 1. </description>
+Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count gunnery modifiers for rance. Each hit inflicted by these massive weapons causes 2 damage instead of 1. </description>
     </rule>
   </rules>
   <sharedSelectionEntries>
