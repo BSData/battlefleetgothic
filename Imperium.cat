@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="23" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="24" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -602,6 +602,7 @@ Starhawks: 20cm</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="b801-9154-fe0a-344b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -688,6 +689,7 @@ Starhawks: 20cm</characteristic>
             <modifier type="decrement" field="points" value="10"/>
           </modifiers>
         </entryLink>
+        <entryLink id="1870-a55c-a4f7-2c29" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="120.0"/>
@@ -774,6 +776,7 @@ Starhawks: 20cm</characteristic>
             <modifier type="decrement" field="points" value="10"/>
           </modifiers>
         </entryLink>
+        <entryLink id="b039-e212-6c38-6403" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="120.0"/>
@@ -1041,6 +1044,7 @@ Bombers: 20cm</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="41b4-cb67-81b0-d761" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
+        <entryLink id="c2cb-68d5-eef4-f80a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="875.0"/>
@@ -1104,6 +1108,7 @@ Bombers: 20cm</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c5d9-54f6-7e27-1791" name="Thunderhawks" hidden="false" collective="false" import="true" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup"/>
+        <entryLink id="9942-2c3a-b61a-a316" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165.0"/>
@@ -1246,6 +1251,7 @@ Bombers: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bf59-39c2-b485-3088" name="Thunderhawks" hidden="false" collective="false" import="true" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup"/>
+        <entryLink id="d777-872c-b57a-b8d8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="160.0"/>
@@ -1817,6 +1823,9 @@ Bombers: 20cm</characteristic>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dd7f-69ef-936c-24d2" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1946,6 +1955,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9e1c-423b-2673-36d8" name="Thunderhawks" hidden="false" collective="false" import="true" targetId="f785-b032-dacc-80a4" type="selectionEntryGroup"/>
+        <entryLink id="6629-5b68-5e17-5bc1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="745.0"/>
@@ -2005,6 +2015,9 @@ Scores 3 points in a planetary assault rather than 2.</description>
       <categoryLinks>
         <categoryLink id="cb2c-7f75-c48d-99b4" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="50fc-5927-9379-00f7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
@@ -2494,6 +2507,7 @@ Scores 3 points in a planetary assault rather than 2.</description>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fc32-1531-523a-41cd" name="Honour Guard" hidden="false" collective="false" import="true" targetId="98bf-3be8-c076-97f3" type="selectionEntry"/>
+        <entryLink id="8c12-eabd-a4d4-d506" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
@@ -2644,6 +2658,7 @@ Starhawks: 20cm</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="cc13-360d-3744-1222" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220.0"/>
@@ -2744,6 +2759,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bc3a-e293-5b4d-96be" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="311b-4660-bab6-1d04" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
@@ -2847,6 +2863,9 @@ Starhawks: 20cm</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2039-4eff-686a-5d20" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="75.0"/>
       </costs>
@@ -2968,6 +2987,9 @@ Starhawks: 20cm</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a029-0ce7-312c-fc43" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="110.0"/>
       </costs>
@@ -3113,6 +3135,9 @@ Starhawk Bombers: 20cm</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9cb1-ee6c-3873-6a6d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
@@ -3269,6 +3294,9 @@ Starhawk Bombers: 20cm</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3e11-8235-be7d-84d8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -3385,6 +3413,7 @@ Starhawk Bombers: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b708-9fb3-3d23-4e45" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="a231-73e5-c58e-eb24" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -3574,6 +3603,7 @@ Starhawk Bombers: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8f84-cd63-9d15-5fdb" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="a2a5-1277-8b09-e0cd" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -3958,6 +3988,7 @@ Starhawk Bombers: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8df5-c67e-fa0e-5d9d" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="496a-8aaa-fea0-ec03" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
@@ -4035,6 +4066,9 @@ Starhawk Bombers: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="f0e5-43a0-c025-4ed0" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1681-c83f-03b3-e5a8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="1000.0"/>
       </costs>
@@ -4090,6 +4124,7 @@ Starhawk Bombers: 20cm</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="90f0-dbaf-6d1b-bbc3" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="6ae1-65e2-9c5f-b9da" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="170.0"/>
@@ -4148,6 +4183,7 @@ Furies: 30cm</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2ff1-0445-7f76-c024" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
+        <entryLink id="bca6-a651-a0c8-6e32" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -4209,6 +4245,9 @@ Furies: 30cm</characteristic>
       <categoryLinks>
         <categoryLink id="9d21-c50c-debf-4d41" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ce07-b626-9b40-c56c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
@@ -4296,6 +4335,9 @@ Furies: 30cm</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d3a5-f82a-fd3e-1260" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -4339,6 +4381,9 @@ Furies: 30cm</characteristic>
       <categoryLinks>
         <categoryLink id="a1c8-b2dc-f3d0-8fda" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5460-1faf-04e0-d5b7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
@@ -4378,6 +4423,9 @@ Furies: 30cm</characteristic>
       <categoryLinks>
         <categoryLink id="14e1-4f21-21e9-c6bd" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a559-18bb-d68b-5524" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
@@ -4435,6 +4483,9 @@ Furies: 30cm</characteristic>
       <categoryLinks>
         <categoryLink id="70c9-5724-3d64-9d02" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="af16-dd4d-5b06-19f9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -4478,6 +4529,9 @@ Furies: 30cm</characteristic>
       <categoryLinks>
         <categoryLink id="812a-28e2-8e97-2efa" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="c939-d6cf-452a-2543" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4527,6 +4581,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       <categoryLinks>
         <categoryLink id="834f-e0b6-f1e8-866a" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9181-ccb1-c4f8-bc11" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4703,6 +4760,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       <categoryLinks>
         <categoryLink id="2e04-b0d7-2694-f1c3" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="31e6-8351-3cd8-9b2a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
@@ -4802,6 +4862,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="9bfc-0824-3d09-adc8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
       </costs>
@@ -4925,6 +4988,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e125-c508-6cff-9c2c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
@@ -5010,6 +5076,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       </categoryLinks>
       <entryLinks>
         <entryLink id="dacf-6aa6-0243-b130" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="6e9f-0312-f7fa-4d2c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="300.0"/>
@@ -5157,6 +5224,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9d42-a587-f601-0eb5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
@@ -5309,6 +5379,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="99c1-b0ce-3b60-3571" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
@@ -5348,6 +5421,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       <categoryLinks>
         <categoryLink id="3a0b-7980-5ef7-bc9e" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9f56-afe8-6bfc-37fa" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
@@ -5397,6 +5473,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       <categoryLinks>
         <categoryLink id="b8d4-183a-5f98-12f5" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="7062-e26b-49c2-14e0" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -5444,6 +5523,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       <categoryLinks>
         <categoryLink id="b0fc-d68a-ec68-4ec3" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="b685-c310-5d67-7580" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
@@ -5478,6 +5560,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       <categoryLinks>
         <categoryLink id="0f4c-c32a-2677-2f46" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9466-3d3a-4f81-7c01" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
@@ -5615,6 +5700,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       <categoryLinks>
         <categoryLink id="4bfc-348d-74b0-dc26" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3e6e-d5a4-5590-5b58" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
@@ -5693,6 +5781,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="718c-49ec-5a8c-e7fb" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6375,6 +6466,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </categoryLinks>
       <entryLinks>
         <entryLink id="0ed8-5f29-d5ee-0c81" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="e724-dcfc-65d8-ff51" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="365.0"/>
@@ -6444,6 +6536,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </categoryLinks>
       <entryLinks>
         <entryLink id="77a5-b7be-9b5d-a37a" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="7258-40d4-7399-ab05" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
@@ -6480,6 +6573,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       <categoryLinks>
         <categoryLink id="e387-0b39-0342-7db3" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="6190-4e6c-0586-f959" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
@@ -6627,6 +6723,7 @@ Starhawks: 20cm
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="95d1-9d63-575b-f474" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="365.0"/>
@@ -6725,6 +6822,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="183d-3a03-088d-5a31" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
+        <entryLink id="8227-be63-81ff-a23c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="230.0"/>
@@ -6824,6 +6922,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="c796-e534-9ffc-dd8a" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="3e6a-fdde-c6fc-b29d" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="d64e-1733-e899-d046" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
@@ -6969,6 +7068,7 @@ Starhawks: 20cm</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="08a1-d772-bba8-244a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="335.0"/>
@@ -7081,6 +7181,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6050-aefb-7c91-bcbc" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="7749-9df0-116f-6565" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="235.0"/>
@@ -7189,6 +7290,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b1c9-befc-be34-22a6" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="e826-6339-636d-2700" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="345.0"/>
@@ -7300,6 +7402,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b381-b030-36a1-3826" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="3530-a023-79e5-e3a2" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="360.0"/>
@@ -7350,6 +7453,9 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="fdc2-7024-c987-6e6b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="65cf-07da-d5a1-10b0" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
@@ -7426,12 +7532,13 @@ The ship can use &quot;Come to a New Heading&quot; orders as they have amuch hig
       </categoryLinks>
       <entryLinks>
         <entryLink id="208d-3f9f-d908-2f4b" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="b0c5-5474-a838-972b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e7d-8fbe-f68a-32a8" name="Nemesis Class Fleet Carrier" publicationId="8442-aa7f-a96d-22fa" page="9" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5e7d-8fbe-f68a-32a8" name="Nemesis Class Fleet Carrier" publicationId="44fa-5ffb-b627-7106" page="" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d750-597a-913e-8928" name="Nemesis Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -7497,6 +7604,7 @@ Starhawks: 20cm</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="554b-0197-9c8c-1730" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="7242-371a-9734-6f73" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
@@ -7560,6 +7668,7 @@ Starhawks: 20cm</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="191b-0a31-aaa6-c47a" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="93fb-4ee2-f754-456d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="340.0"/>
@@ -7605,6 +7714,9 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="c6d2-7de6-49e2-e881" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="cbb1-1fce-0f79-50b5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
       </costs>
@@ -7671,6 +7783,9 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="d108-8e3f-c554-5630" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a67f-20d0-f1f4-0cd4" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
       </costs>
@@ -7732,6 +7847,9 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="1326-f559-9837-ab36" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1fc0-5263-a0a7-fb51" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -7800,6 +7918,9 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="8ed8-f655-40dd-f548" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3093-8f00-83d1-373e" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
