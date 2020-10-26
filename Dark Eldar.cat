@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
   </publications>
@@ -254,6 +254,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bc5c-e8d1-73e8-ff28" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
@@ -280,6 +283,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
       </categoryLinks>
       <entryLinks>
         <entryLink id="1b0c-a449-e128-d6aa" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
+        <entryLink id="af14-12f0-f2b5-211a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -300,6 +304,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink id="2700-d5c4-7061-dd2a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <rules>
