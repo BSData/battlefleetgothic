@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="14" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f88b28a-90a2-4338-a037-3ab45c37c1b3" name="Tau Fleet" revision="15" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="0c34-df2d-6332-eb03" name="Tau Kor&apos;Vattra Fleet List (Armada)" publicationId="1bc8-5968-21c3-0f27" page="112" hidden="false">
       <categoryLinks>
@@ -106,6 +106,7 @@ Barracuda: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -188,6 +189,7 @@ Barracuda: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/6+ Prow</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="6ac1-238e-c6ae-79f4" name="Demiurg &apos;Bastion&apos; Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -256,6 +258,7 @@ The dorsal launch bays may launch either attack craft or torpedoes if reloaded b
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/6+ Prow</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="b61e-4b6c-0b5b-9518" name="Demiurg &apos;Stronghold&apos; Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -418,6 +421,7 @@ Demiurg ‘Stronghold’ class vessels cannot employ Come to New Heading orders<
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+/4+Rear</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">5</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="4158-d914-19f6-7c5e" name="Gal&apos;leath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -551,6 +555,7 @@ armada pg 102</comment>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="cd56-3656-3885-3211" name="Il&apos;fannor Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -689,6 +694,7 @@ armada pg 102</comment>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -883,6 +889,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="b158-f15a-d28e-18b5" name="Kir&apos;qath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -933,6 +940,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="e994-761c-0bf6-98e6" name="Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -992,6 +1000,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="1294-3ad1-bdd8-4bee" name="Kroot Warsphere Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1049,6 +1058,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8e49-8b45-859e-a3cf" name="Lar&apos;shi Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1191,6 +1201,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+ (6+ Deflector)</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1306,7 +1317,7 @@ Barracudas: 25cm</characteristic>
                 <profile id="7b13-9531-51ee-b4d4" name="Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
                   </characteristics>
                 </profile>
@@ -1368,6 +1379,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="4e10-9b0d-0fb8-fa72" name="Nicassar Dhow Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1480,6 +1492,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+ (6+ Deflector)</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="0bbb-9076-0393-f3f2" name="Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1551,6 +1564,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="7ecc-1820-6267-5120" name="Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1609,6 +1623,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
         <profile id="8ef8-cb22-13e0-23c4" name="Skether&apos;qan Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -1703,6 +1718,7 @@ Barracudas: 25cm</characteristic>
                 <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                 <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                 <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+                <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1909,6 +1925,7 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1989,6 +2006,7 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2031,6 +2049,7 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Leadership" typeId="76e6-2ec8-a42c-65e6"/>
           </characteristics>
         </profile>
       </profiles>
