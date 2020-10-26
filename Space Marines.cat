@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="9" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e1d46d07--pubN66101" name="BFG Rulebook 1.5"/>
     <publication id="e1d46d07--pubN69324" name="2010 Compendium"/>
@@ -605,12 +605,14 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf6d-2889-24aa-122e" name="Strike Cruiser" page="0" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="cf6d-2889-24aa-122e" name="Strike Cruiser" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="false" collective="false" import="true" type="unit">
+      <comment>2010 compendium 59</comment>
       <constraints>
         <constraint field="selections" scope="roster" value="10.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d1e7-5937-666d-2d65" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a884-02a3-15f7-90b4" name="Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="a884-02a3-15f7-90b4" name="Strike Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <comment>options from 2010 compendium</comment>
           <modifiers>
             <modifier type="increment" field="536869656c647323232344415441232323" value="1">
               <conditions>
@@ -642,32 +644,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="cdf1-1e99-3db2-7f96" name="Strike Cruiser Prow Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9ef1-5e4b-ae10-e838" name="Strike Cruiser Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawls: 20cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="9694-33bf-67a8-7bc9" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5fe3-e711-da99-b71c" name="Additional Shield" page="0" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5fe3-e711-da99-b71c" name="Additional Shield" publicationId="e1d46d07--pubN69324" page="59" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -704,7 +694,93 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7c28-5a18-0f6c-1f68" name="Prow Weapon 1" publicationId="e1d46d07--pubN69324" page="59" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe1-321f-4477-635a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dc00-edb4-7894-7ee1" name="Prow Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="db0d-dafa-5800-f9ea" name="Strike Cruiser Prow Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="f398-397a-8c48-3af0" name="Prow Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="9798-fb88-d094-5144" name="Strike Cruiser Prow Lance" publicationId="e1d46d07--pubN69324" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5a21-8810-4ca4-51ec" name="Prow Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="bbdd-ae36-1e04-fcd9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d957-f207-c41e-c1b0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b711-ed78-6b86-b95c" name="Prow Torpedoes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="ad66-ae62-73fd-c8ea" name="Strike Cruiser Prow Torpedoes" publicationId="5766-7751-d146-0800" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Torpedoes: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="bbdd-ae36-1e04-fcd9" name="Prow Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5d6d-cf53-40f3-881d" name="Strike Cruiser Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawls: 20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8551-377a-309a-ab98" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
