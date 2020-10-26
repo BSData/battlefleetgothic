@@ -94,11 +94,7 @@
         </categoryLink>
         <categoryLink id="511e-63f5-cdcd-82fe" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="b222-df30-6f8b-bee8" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="f632-20f6-244e-14f5" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6945-3034-1127-146b" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="f632-20f6-244e-14f5" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="9eb0-bb37-8903-4ec0" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="1ad1-478b-1605-b77d" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="1427-59e4-5cac-1fa6" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -592,6 +588,18 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="3715-0a46-b5f6-c9fb" name="Terminator Boarding Party" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>this is in the BBB and the 2010 compendium</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4827-4071-f241-af2b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e558-aebd-7c19-b6d0" name="Terminator Boarding Party" hidden="false" targetId="067e-eced-a1c9-78a6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
@@ -680,6 +688,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -731,6 +740,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -2416,11 +2426,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e5e-60aa-4a8a-d3f3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a74-e63b-3826-8ad5" type="min"/>
           </constraints>
-          <rules>
-            <rule id="c8c0-bfa7-f4ae-4218" name="Terminator Boarding Parties" hidden="false">
-              <description>Taken from the elite First Company and wearing the heaviest armor known to man, Terminators are the greatest ship-to-ship fighters in the galaxy. Once per turn a vessel equipped with Terminator boarding parties may use them when conducting a hit and run teleport attack. They roll two dice for its hit and run attack and apply both results, including the normal +1 bonus for being Space Marines. Terminators may be used in addition to a normal teleport attack that turn.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="b66b-f69c-4500-b872" name="Terminator Boarding Parties" hidden="false" targetId="067e-eced-a1c9-78a6" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2430,9 +2438,51 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <cost name="pts" typeId="points" value="1000.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2799-f368-bbf8-32eb" name="Space Marines Captain" publicationId="5766-7751-d146-0800" page="61" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7731-02a0-b63d-e502" name="Space Marines Captain" publicationId="5766-7751-d146-0800" page="61" hidden="false" typeId="5570677261646523232344415441232323" typeName="Upgrade">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Aside from the Space Marine vessels themselves, certain important Imperial Navy vessels within a Dominion Fleet may well have Space Marine commanders assigned to them. Any Imperial Navy battleship, grand cruiser or battlecruiser may have a Space Marine Captain assigned to it. Space Marine Captains roll against the Space Marines leadership table instead of the normal  leadership table. Except for this bonus, Imperial Navy ships led by a  space Marine Captain do not benefit from any of the Space Marines special rules concerning boarding, hit and run attacks, ordnance, etc.
+In addition, a ship led by a Space Marine Captain may carry an Honor Guard for +10 points</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323">2010 Compendium 61</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9561-db65-9ff2-5fd6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6b3d-4115-6dbf-b5ad" name="Honor Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a29-ec1e-c43b-a3b2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="10ab-11e4-df13-5ea9" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <rules>
-    <rule id="e2da-f55c-3a23-eae3" name="Reserves and Allies" publicationId="e1d46d07--pubN69324" page="60" hidden="true">
+    <rule id="e2da-f55c-3a23-eae3" name="Crusade Reserves and Allies" publicationId="e1d46d07--pubN69324" page="60" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2442,6 +2492,16 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
       </modifiers>
       <description>A Space Marine Crusade fleet will not take ships from or provide ships to any other fleet list as reserves or allies, including Imperial Navy, Rogue Trader or Adeptus Mechanicus fleet lists.</description>
     </rule>
+    <rule id="216c-540f-08e3-f32c" name="Domination Reverves and Allies" publicationId="e1d46d07--pubN69324" page="61" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A Space Marine Dominion Fleet has close ties with nearby Imperial Navy forces. Contrary to the normal rules, a dominion fleet can take Imperial Navy vessels as normal reserves and reinforcements, including Adeptus Mechanicus and non-xenos Rogue Trader vessels. For purposes of choosing reserves, battle barges count as battleships, and strike cruisers count as cruisers for the selection of any cruiser (battlecruiser, etc.) type. When reserves are taken in this manner, the fleet can have up to twelve cruisers. However, in the course of a campaign, a Dominion Fleet cannot take reinforcements from the Space Marines table listed on p.157 of the Battlefleet Gothic rulebook.</description>
+    </rule>
   </rules>
   <sharedRules>
     <rule id="0e4a-30d9-1918-f7ac" name="Thunderhawk Annihilator" hidden="false">
@@ -2450,6 +2510,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
     </rule>
     <rule id="2ebb-7250-08df-cdd1" name="Honour Guard" publicationId="5766-7751-d146-0800" page="54" hidden="false">
       <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
+    </rule>
+    <rule id="067e-eced-a1c9-78a6" name="Terminator Boarding Party" publicationId="e1d46d07--pubN69324" page="54" hidden="false">
+      <description>Taken from the elite First Company and wearing the heaviest armor known to man, Terminators are the greatest ship-to-ship fighters in the galaxy. Once per turn a vessel equipped with Terminator boarding parties may use them when conducting a hit and run teleport attack. They roll two dice for its hit and run attack and apply both results, including the normal +1 bonus for being Space Marines. Terminators may be used in addition to a normal teleport attack that turn.</description>
     </rule>
   </sharedRules>
 </catalogue>
