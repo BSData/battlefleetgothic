@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="8" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="9" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e1d46d07--pubN66101" name="BFG Rulebook 1.5"/>
     <publication id="e1d46d07--pubN69324" name="2010 Compendium"/>
@@ -174,6 +174,8 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -182,11 +184,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cb0-7fae-ea8e-c72b" type="max"/>
           </constraints>
-          <rules>
-            <rule id="bc19-742e-0f97-82d8" name="Honour Guard" hidden="false">
-              <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="63ba-df0f-1986-0db1" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -235,7 +235,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39a6-3c3b-ce36-6766" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6998-3170-db2e-a587" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="6998-3170-db2e-a587" name="Cobra Destroyer" page="0" hidden="true" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8da6-1b5b-8907-f669" type="max"/>
               </constraints>
@@ -273,7 +286,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b170-856a-5c7c-6663" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="b170-856a-5c7c-6663" name="Falchion Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02e8-b44f-ecc2-f9f1" type="max"/>
               </constraints>
@@ -311,7 +337,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0ba1-27c9-2e82-4b31" name="Firestorm Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="0ba1-27c9-2e82-4b31" name="Firestorm Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="800e-d1eb-f79e-a2fa" type="max"/>
               </constraints>
@@ -456,7 +495,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9dc6-853a-2332-9990" name="Sword Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="9dc6-853a-2332-9990" name="Sword Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c3f-9d95-0fde-bb13" type="max"/>
               </constraints>
@@ -502,7 +554,8 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="71d5-169e-8550-2dc8" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3ebc-911f-d011-b93b" name="Master of the Fleet" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="3ebc-911f-d011-b93b" name="Master of the Fleet" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <comment>also in the 2010 compendium fleet lists</comment>
           <modifiers>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
               <conditions>
@@ -626,6 +679,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -634,11 +688,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5287-db4f-eb5b-44b7" type="max"/>
           </constraints>
-          <rules>
-            <rule id="933d-409c-6c71-1cb7" name="Honour Guard" hidden="false">
-              <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="fe4c-6713-f286-dc17" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -657,7 +709,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -670,10 +724,25 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <categoryLink id="79ce-0dec-a488-c075" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e1d4-3504-795b-b732" name="Honour Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e1d4-3504-795b-b732" name="Honour Guard" page="0" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1295-6901-9911-e4bb" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="cffd-f3f0-08ec-d5c6" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -2207,87 +2276,180 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="53e7-373a-b04e-037b" name="Marshal" page="0" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="bb4b-6197-46d0-f85b" name="Fortress Monastery" page="0" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="a65e-16ae-7a5a-71b3" value="0.0">
+          <conditions>
+            <condition field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a018-19fb-628d-e608" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a65e-16ae-7a5a-71b3" type="max"/>
       </constraints>
       <profiles>
-        <profile id="dedb-cf18-d8c2-75cf" name="Marshal" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <modifiers>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="484d-f978-aa9b-c01d" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="484d-f978-aa9b-c01d" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="3">
-              <conditions>
-                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="484d-f978-aa9b-c01d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <profile id="5c80-4dbf-e945-48d4" name="Fortress Monastery Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Defense</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12 (quadrant)</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">0cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">0°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4 (quadrant)</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">4 (quadrant)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="62a5-bf17-f306-c18c" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+        <categoryLink id="077b-ee8b-ead0-b3ab" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f0e4-6a83-c923-ec1c" name="Extra Re-Rolls (Max 3)" page="0" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="eddd-5128-b49d-0f9a" name="Extra Re-Rolls (Max 3)" page="0" hidden="false" collective="false" import="true" type="unit">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b2c-5850-6b6d-3ad2" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a518-7571-3ead-cda6" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b15-f5c9-fd9d-b08c" name="Sword Bretheren" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9cd8-695e-cae4-2ec9" name="Quadrant Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8249-78ca-498e-cdcc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0290-4039-70d4-53ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd2a-2269-0db1-a56a" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="6a32-6230-644a-1b61" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">18</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0d08-91d0-a8e7-528c" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0f22-42e5-f3d2-bb91" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons*</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Quadrant</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="a2ec-1239-631b-e5c1" name="Thunderhawks" hidden="false">
+              <description>Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
+            </rule>
+          </rules>
           <selectionEntries>
-            <selectionEntry id="116c-2fe9-5ecc-2743" name="Terminator Teleport Assault" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddf-6245-a5f9-5ab3" type="max"/>
-              </constraints>
+            <selectionEntry id="0337-a667-0335-148d" name="Thunderhawk Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="2c25-4f5c-ce71-e120" name="Thunderhawk Annihilator" hidden="false">
+                  <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+                </rule>
+              </rules>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e1b9-80c5-4f9b-bede" name="Basilica Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a6-b635-43fe-4ef3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9110-b5e2-3f9f-a777" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="65d0-29aa-0aee-13aa" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e6ca-36ef-9f13-8710" name="Torpedo Silos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All Round</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5731-f01c-2c05-92c6" name="Honour Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a7d-0715-058f-55c2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d16f-2a88-393f-b3c0" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8cea-64c8-5335-1cbf" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="88dd-ca3c-c090-3235" name="Terminator Boarding Parties" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e5e-60aa-4a8a-d3f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a74-e63b-3826-8ad5" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="c8c0-bfa7-f4ae-4218" name="Terminator Boarding Parties" hidden="false">
+              <description>Taken from the elite First Company and wearing the heaviest armor known to man, Terminators are the greatest ship-to-ship fighters in the galaxy. Once per turn a vessel equipped with Terminator boarding parties may use them when conducting a hit and run teleport attack. They roll two dice for its hit and run attack and apply both results, including the normal +1 bonus for being Space Marines. Terminators may be used in addition to a normal teleport attack that turn.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="pts" typeId="points" value="1000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <rules>
+    <rule id="e2da-f55c-3a23-eae3" name="Reserves and Allies" publicationId="e1d46d07--pubN69324" page="60" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>A Space Marine Crusade fleet will not take ships from or provide ships to any other fleet list as reserves or allies, including Imperial Navy, Rogue Trader or Adeptus Mechanicus fleet lists.</description>
+    </rule>
+  </rules>
   <sharedRules>
     <rule id="0e4a-30d9-1918-f7ac" name="Thunderhawk Annihilator" hidden="false">
       <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
 When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
+    </rule>
+    <rule id="2ebb-7250-08df-cdd1" name="Honour Guard" publicationId="5766-7751-d146-0800" page="54" hidden="false">
+      <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
     </rule>
   </sharedRules>
 </catalogue>
