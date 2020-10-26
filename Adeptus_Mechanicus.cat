@@ -914,7 +914,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="247f-0335-9c9c-3f2b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6aa-102c-4a1b-49bb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a53f-8581-1ce8-d8d6" type="max"/>
@@ -1383,9 +1383,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="be16-01e0-cade-a900" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
