@@ -182,6 +182,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="9397-6b1a-5630-44e0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e43c-7aae-c3b5-353b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
       </costs>
@@ -246,6 +249,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="f9cb-16c6-9867-9ff6" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a7fe-9e4e-0e85-47cb" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
@@ -302,6 +308,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="ad8c-6f4d-6292-9456" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="7792-659f-3e38-a269" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
@@ -351,6 +360,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="65c9-599e-f524-3be8" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a804-3f90-68ef-1b56" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
@@ -411,6 +423,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="48dd-7ecc-c76a-064b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1d19-7130-7fe9-fe5f" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
@@ -489,6 +504,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             </profile>
           </profiles>
         </entryLink>
+        <entryLink id="63e1-46b9-fdee-5acc" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="230.0"/>
@@ -546,6 +562,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="ee7f-83a4-2ca8-47c9" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="2076-d894-063c-60ff" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="260.0"/>
       </costs>
@@ -629,6 +648,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="2d2b-abee-2a05-8e25" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="260.0"/>
@@ -694,6 +714,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="8da8-abd4-86d3-774d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="230.0"/>
@@ -779,6 +800,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="fbd4-82ba-dbc7-4f8f" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5bdb-4008-3b07-7ab1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="425.0"/>
       </costs>
@@ -900,6 +924,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="cc4e-e3bb-828b-070a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="145.0"/>
@@ -956,6 +981,9 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <categoryLinks>
         <categoryLink id="8648-42b9-1dee-c7c6" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9276-da26-aada-d2f9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="265.0"/>
       </costs>
@@ -1057,6 +1085,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       <categoryLinks>
         <categoryLink id="74e8-9c5a-6a84-6260" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="8daf-cb7e-a3a7-b7c9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1088,6 +1119,9 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       <categoryLinks>
         <categoryLink id="a09e-8875-63fa-69de" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="441c-7ffa-0014-66c6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
@@ -1143,6 +1177,9 @@ The alien raider will move and shoot at the start of each turn by the player who
       <categoryLinks>
         <categoryLink id="5296-fe85-f912-e395" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="77c0-5ba4-d8a3-d3bc" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1176,6 +1213,9 @@ The alien raider will move and shoot at the start of each turn by the player who
       <categoryLinks>
         <categoryLink id="bd3a-6ba2-0874-ccad" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3d68-984b-97d0-bfc6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
@@ -2206,6 +2246,7 @@ Usually used as objectives in missions.</characteristic>
       <entryLinks>
         <entryLink id="e120-fbaf-df50-0ad7" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="28f9-99d1-2b1c-8b8b" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="0596-2d67-4971-0849" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="410.0"/>
@@ -2289,6 +2330,9 @@ Usually used as objectives in missions.</characteristic>
       <categoryLinks>
         <categoryLink id="9d8c-46b7-a29f-0b59" name="New CategoryLink" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="c18c-0bfb-9094-121c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="445.0"/>
       </costs>
