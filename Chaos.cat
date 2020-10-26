@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="23" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="24" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada. Incursion fleet matched to Blue Book. </readme>
   <publications>
     <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
@@ -7,7 +7,7 @@
     </publication>
   </publications>
   <forceEntries>
-    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades (Armada)" publicationId="acb7-35d6-a2c5-f4a5" page="46" hidden="false">
+    <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades (Armada)" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="false">
       <categoryLinks>
         <categoryLink id="24b2-0d02-aa47-0b72" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="b664-e86d-8635-c22a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -555,6 +555,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </categoryLinks>
       <entryLinks>
         <entryLink id="e5d8-4141-2e56-d678" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="f875-f43c-f173-bb1b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -699,6 +700,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       <entryLinks>
         <entryLink id="b64e-58b5-bd3e-367c" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
         <entryLink id="1af0-cd0a-988c-b05b" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="1d3b-b72c-c03f-c725" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
@@ -822,6 +824,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="eee0-ef45-1b39-76fd" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="2de3-5383-9444-d7e3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="170.0"/>
@@ -914,6 +917,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </categoryLinks>
       <entryLinks>
         <entryLink id="af70-bc2a-5d98-95b2" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="721e-8ef0-5e31-2670" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="505.0"/>
@@ -996,6 +1000,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </categoryLinks>
       <entryLinks>
         <entryLink id="e3c6-ce03-c262-a787" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="ada4-1fb9-7907-abea" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165.0"/>
@@ -1093,6 +1098,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       <entryLinks>
         <entryLink id="3384-ce01-ffef-9c5c" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="be45-b764-8a03-3d27" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="4aea-883b-cce3-2af6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="350.0"/>
@@ -1177,6 +1183,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       <entryLinks>
         <entryLink id="8cd2-e798-02fc-f75f" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
         <entryLink id="1893-559b-21d7-5d3d" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="35fa-d9c2-e40c-b923" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="230.0"/>
@@ -1261,12 +1268,13 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </categoryLinks>
       <entryLinks>
         <entryLink id="770e-2f0d-e936-7a58" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="b3ab-bad0-cd87-d7e7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="285.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="137d-dbad-5653-19f2" page="45" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1333,12 +1341,13 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </categoryLinks>
       <entryLinks>
         <entryLink id="a9a9-73eb-4e57-b1f8" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="ed63-a819-5e53-fd07" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="8442-aa7f-a96d-22fa" page="45" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="137d-dbad-5653-19f2" page="45" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1388,6 +1397,9 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       <categoryLinks>
         <categoryLink id="a6fa-d46d-928b-b928" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a703-8008-efe7-04cf" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
@@ -1498,6 +1510,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       <entryLinks>
         <entryLink id="37ba-5c72-0300-9f91" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="48fc-4b65-7450-29e2" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="542d-c1b2-d5e0-0c72" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="450.0"/>
@@ -1785,6 +1798,9 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="db07-3777-3184-b0b1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="430.0"/>
       </costs>
@@ -1910,6 +1926,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <entryLinks>
         <entryLink id="36b1-f023-7d60-7ebb" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
         <entryLink id="07af-99ca-1814-8867" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="ff4c-a247-9957-7194" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="430.0"/>
@@ -2135,6 +2152,9 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7edb-bc72-f7a2-21a7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
@@ -2210,6 +2230,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
       </categoryLinks>
       <entryLinks>
         <entryLink id="7085-a6f2-6ede-6fc8" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="e629-f529-ec38-e537" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -2388,6 +2409,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
       <entryLinks>
         <entryLink id="848d-9221-f71f-07ee" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="5bfd-fd96-8181-cb8b" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="8899-5a3a-5f8e-2642" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="650.0"/>
@@ -2631,6 +2653,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="00b3-1577-7389-866f" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="1176-6671-54dc-8022" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="535.0"/>
@@ -2744,6 +2767,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a068-dff1-0d4b-e5de" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
+        <entryLink id="eb3b-e68d-0905-ca4d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="300.0"/>
@@ -2808,6 +2832,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="e462-6a97-25fc-d5a2" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="d5da-0eb8-3503-7336" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -2876,6 +2901,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="1b63-8e73-a617-9efe" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="7c33-bf46-89f5-8896" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="250.0"/>
@@ -2952,6 +2978,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="952c-5c31-dc90-e095" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="6c1b-3d4d-6036-caa1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="290.0"/>
@@ -3016,6 +3043,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       <entryLinks>
         <entryLink id="e294-8d8b-6d04-f0a9" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
         <entryLink id="6316-ccbf-5dbd-8d6f" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="b16e-e905-8b88-1d1e" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="135.0"/>
@@ -3077,6 +3105,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="9b93-dd64-4fb4-c158" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="a370-22b3-ecbf-f4a6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="120.0"/>
@@ -3142,6 +3171,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="2d5e-7659-669b-2ffe" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="f16a-6393-d6bf-faf1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -3205,7 +3235,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="5766-7751-d146-0800" page="123" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3220,7 +3250,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="9142-0d7c-7cc0-4358" name="Veil of Lust" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+        <profile id="9142-0d7c-7cc0-4358" name="Veil of Lust" publicationId="5766-7751-d146-0800" page="123" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
             <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Any ships with the Mark of Slaanesh may take and be obscured by a Veil of Lust. Ship firing on this vessel using the gunnery table suffers a right-column shift before any other modifiers are applied.</characteristic>
           </characteristics>
@@ -3230,7 +3260,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="6025-4ccb-9921-09db" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="7b33-9d42-7625-80ad" name="Siren&apos;s Summon" publicationId="5766-7751-d146-0800" page="123" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3248,7 +3278,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <constraint field="selections" scope="18e1-a7a8-7100-c178" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fdc-1837-e535-6d23" type="max"/>
       </constraints>
       <profiles>
-        <profile id="97e8-2f3c-5270-805a" name="Siren&apos;s Summon" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+        <profile id="97e8-2f3c-5270-805a" name="Siren&apos;s Summon" publicationId="5766-7751-d146-0800" page="123" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
             <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Up to two capital ships with the Mark of Slaanesh (including the flagship) may take the Siren‟s Summon. While within 15cm of a vessel with Siren‟s Summon, enemy ships cannot take special orders or make leadership checks of any type, including Brace For Impact.</characteristic>
           </characteristics>
@@ -3301,7 +3331,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="94f4-8ba6-5aaa-579f" name="Strand of Fortune" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+        <profile id="94f4-8ba6-5aaa-579f" name="Strand of Fortune" publicationId="5766-7751-d146-0800" page="120" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
             <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Any ship led by a Lord of Tzeentch (and not the Warmaster!) may be granted a Strand of Fortune. Once per battle it automatically passes a command check or leadership test- no roll required.</characteristic>
           </characteristics>
@@ -3353,6 +3383,9 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink id="1c8f-84aa-d59d-5482" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
@@ -3366,6 +3399,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <entryLink id="3ca5-0372-aabb-5aa5" name="Iconoclast Class Destroyer" hidden="false" collective="false" import="true" targetId="a23e-2e23-de49-3663" type="selectionEntry"/>
         <entryLink id="7689-0c9b-6ad4-d8c1" name="Idolator Class Raider" hidden="false" collective="false" import="true" targetId="8cdc-edab-b278-63d6" type="selectionEntry"/>
         <entryLink id="3334-c804-ed30-9239" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="9c12-e4f6-867e-765b" type="selectionEntry"/>
+        <entryLink id="f5d6-6a94-b551-0991" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -3542,6 +3576,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </categoryLinks>
       <entryLinks>
         <entryLink id="e42b-2a28-f096-9cae" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="453b-f547-ff00-30c6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink id="ba30-90f2-af0b-3cd7" name="Hades Class Heavy Cruiser" hidden="true" collective="false" import="true" targetId="5ab1-9f2a-0485-39db" type="selectionEntry">

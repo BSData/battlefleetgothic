@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="8" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="10" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -190,6 +190,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e669-ca2c-b3c2-77d5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
@@ -296,6 +299,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b91b-a2d9-da07-6b20" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
@@ -472,6 +478,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bd82-d0dd-768c-47f8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="255.0"/>
       </costs>
@@ -572,6 +581,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="00a4-79bb-899e-6fd3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
@@ -764,6 +776,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ed34-a04a-488c-107c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
       </costs>
@@ -899,7 +914,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="247f-0335-9c9c-3f2b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6aa-102c-4a1b-49bb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a53f-8581-1ce8-d8d6" type="max"/>
@@ -944,6 +959,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d800-8e99-5c48-8c61" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
       </costs>
@@ -986,6 +1004,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5c18-23fe-e03e-fa0a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1098,6 +1119,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d553-e5c9-e81a-68b3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
       </costs>
@@ -1266,6 +1290,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1ab9-fac6-34af-e733" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
       </costs>
@@ -1462,6 +1489,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="e615-4d33-6ab6-a75a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="370.0"/>
       </costs>
@@ -1575,6 +1605,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f765-bf3d-9d4b-e297" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
@@ -1648,6 +1681,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <categoryLinks>
             <categoryLink id="238f0b9c-62df-4a00-b213-74909f85900a-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="d1ee-7edc-09f0-7c27" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="440.0"/>
           </costs>
@@ -1759,6 +1795,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="a99d-3f3a-d3fb-9197" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="165.0"/>
           </costs>
@@ -1823,6 +1862,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <categoryLinks>
             <categoryLink id="52b5327b-9c2a-458d-a710-e244a7a1d527-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="7c3e-c761-15f7-c401" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="300.0"/>
           </costs>
@@ -2032,6 +2074,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="d75a-fa39-2fa0-2032" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="270.0"/>
           </costs>
@@ -2205,6 +2250,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2332-3e73-a810-4ee6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
@@ -2274,81 +2322,27 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="863d-dcb0-b87f-53ca" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="53fd-1948-776e-57b4" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="cde5-baf6-2440-459f" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4e08-9655-6f22-0322" name="Prow Torpedos (30/2)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69f7-125d-2b16-a676" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13f8-127a-8b0e-b45d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0966-b141-a082-1296" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7d60-512f-61c9-a1ac" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc89-0baf-62cb-0db4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4d3-7ceb-2719-c373" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9d1-f480-4f42-ff5c" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="fc89-0baf-62cb-0db4" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2f0-7d5e-9260-7632" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="ab33-d2e2-9cf8-606d" name="Weapons Battery" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2ba-081f-0e8d-eca8" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="922b-d906-f27f-54dc" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="0875-1ed6-d895-8f55" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="722e-64b7-c16c-49d7" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f93b-c9b6-cb71-dc5f" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="d964-da40-6c04-815a" name="Long Range Detection Gear" hidden="false">
-                  <description>Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a8d4-cf8a-a1f3-a566" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -2387,6 +2381,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       <categoryLinks>
         <categoryLink id="4411-1025-f522-2ac5" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="33e8-e57c-8110-e007" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -2449,6 +2446,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="97ad-c213-6a7c-54af" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -2480,6 +2480,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       <categoryLinks>
         <categoryLink id="7a14-e843-214e-15c7" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1134-ce50-543f-2d30" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -2518,6 +2521,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       <categoryLinks>
         <categoryLink id="663d-beba-fd91-fe92" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ea89-fcf0-6348-724d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -2556,6 +2562,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       <categoryLinks>
         <categoryLink id="6506-7127-b369-9b40" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="6072-26ab-2514-dfe5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45.0"/>
       </costs>
@@ -2600,6 +2609,9 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="3057-4dfd-4586-f007" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
