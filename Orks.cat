@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="5" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="6" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
       <categoryLinks>
@@ -325,6 +325,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7a83-2c04-fc7c-ec37" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
@@ -548,6 +551,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7d93-50aa-40f2-5422" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="310.0"/>
       </costs>
@@ -774,6 +780,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="ba36-4454-f445-2cc8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
       </costs>
@@ -978,6 +987,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="a761-2251-5fe1-4cd8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
@@ -1203,6 +1215,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7b1d-ff8c-b3dd-c963" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
       </costs>
@@ -1274,6 +1289,9 @@ When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Dam
       <categoryLinks>
         <categoryLink id="82db7662-49b2-44a9-929a-cdc6a31fbaab-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="cb9b-470f-4379-3354" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
@@ -1466,6 +1484,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
         <selectionEntry id="8973-f965-9a4b-5286" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-90f3-a194-85bd" type="max"/>
           </constraints>
@@ -1528,6 +1553,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="155f-a4df-edc3-1723" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
       </costs>
@@ -1748,6 +1776,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="3475-49e3-6492-4774" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="295.0"/>
       </costs>
@@ -1989,6 +2020,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="f90f-7ae6-02fd-8fab" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="600.0"/>
       </costs>
@@ -2053,6 +2087,9 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       <categoryLinks>
         <categoryLink id="7f24-090c-6808-fd53" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3fb6-dbf7-09c2-312a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="95.0"/>
       </costs>
@@ -2179,6 +2216,9 @@ The klaws count as prow armament for the pourpose of critical hits.</description
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="59cb-57e9-e382-fd98" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
@@ -2259,6 +2299,9 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       <categoryLinks>
         <categoryLink id="6b49-76db-eae6-7e33" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="8077-8a6b-af17-951d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
@@ -2291,6 +2334,9 @@ The klaws count as prow armament for the pourpose of critical hits.</description
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="60c3-2cf4-9b51-cd9c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -2454,6 +2500,9 @@ These roll to hit like ordinary weapons batteries but do not count gunnery modif
       <categoryLinks>
         <categoryLink id="2f73-b13e-c4c1-3efa" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="714a-a81d-250e-a294" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -2482,6 +2531,9 @@ These roll to hit like ordinary weapons batteries but do not count gunnery modif
       <categoryLinks>
         <categoryLink id="58b9-911d-c2bb-12fe" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3d93-bd6c-16ed-ec88" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -2517,6 +2569,9 @@ These roll to hit like ordinary weapons batteries but do not count gunnery modif
       <categoryLinks>
         <categoryLink id="0b85-e099-5f3f-abeb" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5c43-6f8c-d535-b04b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -2550,6 +2605,9 @@ These roll to hit like ordinary weapons batteries but do not count gunnery modif
       <categoryLinks>
         <categoryLink id="31fc-7b4f-4277-4011" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5852-3673-cc9c-7aee" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
