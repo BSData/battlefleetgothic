@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="8" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
+    <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="11f0-17d1-e4d2-1018" page="139" hidden="false">
       <categoryLinks>
         <categoryLink id="26d8-9ad3-06ef-e6d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="e796-2bf8-1100-86f1" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -50,11 +50,14 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f1-cb7d-1218-18d9" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40d9-a77f-f02a-eac8" type="max">
+              <comment></comment>
+            </constraint>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="3394-281a-e895-72bd" name="Ork Waaagh!" publicationId="137d-dbad-5653-19f2" hidden="false">
+    <forceEntry id="3394-281a-e895-72bd" name="Ork Waaagh!" publicationId="1bc8-5968-21c3-0f27" page="59" hidden="false">
       <categoryLinks>
         <categoryLink id="6919-3813-1339-75d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="d357-6979-5318-e248" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -77,6 +80,7 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03a-d935-3621-fbb8" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ba-674f-2001-4a4b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c2fb-0013-baeb-5467" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
