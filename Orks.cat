@@ -5,13 +5,12 @@
       <categoryLinks>
         <categoryLink id="26d8-9ad3-06ef-e6d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="e796-2bf8-1100-86f1" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="8894-4e2f-38a0-e69c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="1d40-2bda-92ac-7343" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="2ebe-85e3-39a0-f6ea" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <modifiers>
             <modifier type="increment" field="1b5e-aa30-e0d8-6676" value="1.0">
               <conditions>
-                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="5a31-5269-458e-546b" value="1.0">
@@ -19,26 +18,67 @@
                 <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b5e-aa30-e0d8-6676" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a31-5269-458e-546b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a31-5269-458e-546b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5244-e261-357e-ee37" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="fb84-139c-f5a4-3dc9" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="814c-d816-c7a4-41d7" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="6a6d-7a83-b99f-363d" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="81d9-1eee-8147-b86b" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+          <modifiers>
+            <modifier type="increment" field="e0f1-cb7d-1218-18d9" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="cf79-82ee-ebe9-7ea3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="equalTo"/>
+                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f1-cb7d-1218-18d9" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3394-281a-e895-72bd" name="Ork Waaagh!" publicationId="137d-dbad-5653-19f2" hidden="false">
       <categoryLinks>
         <categoryLink id="6919-3813-1339-75d5" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="d357-6979-5318-e248" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="8dd5-802f-777b-7699" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="8dd5-802f-777b-7699" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+          <modifiers>
+            <modifier type="increment" field="c03a-d935-3621-fbb8" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="cf79-82ee-ebe9-7ea3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="equalTo"/>
+                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03a-d935-3621-fbb8" type="min"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="c2fb-0013-baeb-5467" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="6aea-eaef-3497-8012" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="156f-a8f4-2117-1a9b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -48,7 +88,7 @@
           <modifiers>
             <modifier type="increment" field="5998-3ada-dd08-5e16" value="1.0">
               <conditions>
-                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="2206-a704-f5a1-44ad" value="1.0">
@@ -56,13 +96,13 @@
                 <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
-                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5998-3ada-dd08-5e16" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2206-a704-f5a1-44ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2206-a704-f5a1-44ad" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -71,7 +111,6 @@
       <categoryLinks>
         <categoryLink id="7eeb-f414-e1a9-8c04" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="abbe-9a38-1bf2-7fde" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="612b-64e5-5c3e-20fa" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="a95d-35b7-367a-c672" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="97e0-e484-3fde-508e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="0252-e9e5-9656-2bbf" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -102,6 +141,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da52-d2dd-c861-1a34" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="0d9b-5f79-104d-7bb8" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -216,110 +256,10 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       <categoryLinks>
         <categoryLink id="090c65cc-0653-4f4e-a67b-e64854243aa6-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="da37-04ba-746e-fb04" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="8bd9-9834-44ca-72c0" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="e2b2-4115-aecf-e532" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="32fd-7203-6f50-6e55" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a525-2c72-e76e-3ad5" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7ca3-1c46-cbd9-1af6" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ede2-96b1-5511-8d8d" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="e8c5-b20d-bbf1-5a17" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9273-7fb8-1025-e795" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="74b2-1eec-145f-aab7" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="328a-c910-68c6-9387" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a30b-cff3-fad4-cc02" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="b1a6-e30c-b1fe-81b1" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="088d-18ae-c1b5-8e4b" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d960-9ce8-a172-c7ed" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="a2bf-1014-7499-1886" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1529-f482-8122-310f" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0015-c4a8-2020-0859" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="dfe8-e6c7-101c-a02a" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3056-4ded-e627-5057" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb13-dcc0-3ece-04bd" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="53b8-8ef7-734d-0495" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="7a83-2c04-fc7c-ec37" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink id="5097-3267-40dc-761a" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
+        <entryLink id="ad4d-4420-89e9-976f" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
@@ -569,109 +509,11 @@ A Hammer Klass cruiser can either fire torpedoes or use bombardment kannon in a 
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5fbc-cccf-9705-fc56" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="fa33-1b95-8a82-5e73" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="ddc7-6e3b-3871-5ba9" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="5fd8-852e-2ff5-18fe" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5811-068a-7ebe-bf61" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2119-9815-cb9d-45cf" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74df-d6ec-8b3e-2d62" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="5903-f7db-660e-4772" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c985-1e92-9283-5a95" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="cc19-e223-cd62-6641" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b1f6-7af0-e8d6-baad" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ed5-21a2-ae28-29f4" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="c029-d7db-6c90-3501" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8bc3-edbb-ffeb-aece" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e60-1e52-4c40-f380" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="6f76-ea54-3b03-20b0" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3aeb-9a90-4322-45ea" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05dd-0a42-b771-843a" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="5d01-7abe-877d-03ee" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4cd2-40dd-7919-c52a" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e9-1aae-c92b-73c4" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="2d1b-1955-7d0e-e3a4" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="ba36-4454-f445-2cc8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink id="ddbc-19ae-6985-6805" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
+        <entryLink id="d81a-951f-edd4-795b" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
@@ -768,110 +610,10 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       <categoryLinks>
         <categoryLink id="5a89b419-e904-4c28-bfb4-c693f54032af-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9653-4212-eb7e-9687" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="48a8-188d-0fa7-1cd9" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="0959-8880-0a6f-3404" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="a627-e6f2-2368-5c25" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4b2-78c4-93d4-d393" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5859-bf40-3ace-ee2f" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="182f-6347-66d2-1921" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="2523-870b-0af4-4b45" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07f2-a026-bd4d-4243" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="352d-17b2-d635-4a15" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f274-ad99-f320-ced9" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee9-774c-42b2-5e08" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="a43a-7284-a643-afdb" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ac1a-9d1b-5239-0b68" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14aa-6892-e632-8391" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="aa6f-e1e9-4c9c-dad4" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="525c-8efa-6109-bba9" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed5e-654f-ac69-c122" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="fb75-f3a7-857e-a44a" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="331f-d689-6a2e-66fd" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8742-a7a9-a232-1ce0" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="88c2-afe0-2fe0-e0c4" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="a761-2251-5fe1-4cd8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink id="77bf-1910-a1f3-3628" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
+        <entryLink id="bf62-3263-30c8-bf6b" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
@@ -943,107 +685,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       <categoryLinks>
         <categoryLink id="c2f1-f556-b31d-c6b6" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="cb2d-3453-e895-bb2b" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="38d3-058b-22bb-be35" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="3320-8d01-5dab-5e63" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="1b43-9a83-d7a5-60b5" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14b0-58cc-4e44-ed04" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2161-12a6-2fe4-e1ad" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="474d-7fb0-cafa-ebda" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="204c-c48e-3128-3546" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35c2-e8de-bd45-481c" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="9b34-90b6-0d24-d44f" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a0f9-c96b-f986-3aca" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2433-96b6-4c37-9ff7" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="4760-4588-bef4-8f03" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7e67-8364-8f3d-418f" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6153-f0c2-98b6-61b8" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="8888-fa38-63bb-de8b" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1e9a-c872-91b1-f27c" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f499-256c-8f93-c9d5" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="36eb-50f9-f21b-f20e" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="70ba-9e2e-a5e0-a361" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4fa-4fce-a0b2-d1d0" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="9c7d-fe9e-3677-ea85" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="bda3-4475-36ee-1f69" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b380-7aa5-338f-1c4a">
           <constraints>
@@ -1069,6 +710,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="2c87-c7f2-302b-96aa" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8057-fd5e-2601-27c8" type="max"/>
                   </constraints>
@@ -1103,6 +751,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7b1d-ff8c-b3dd-c963" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="0fe0-d2e3-ae4b-43a7" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
@@ -1180,6 +829,7 @@ When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Dam
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb9b-470f-4379-3354" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="3ea5-f497-d63f-6a21" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80.0"/>
@@ -1272,107 +922,6 @@ Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly co
       <categoryLinks>
         <categoryLink id="d4a0-ab31-e346-d589" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a22c-d6a6-456d-410f" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="a92e-03b0-ea0d-eefb" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="d458-7049-2fb7-049f" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="6a82-e867-8b90-d9db" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="521f-38cf-cbfe-6996" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3a1b-16cb-0bad-a9db" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d46a-a28c-a7f3-8140" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0c26-1cbb-3e4b-793e" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a146-4c61-b2e2-9d50" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="b96c-8d7d-9adb-a8ed" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2ecb-7640-a9f1-1e67" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7dc3-2d88-f96c-3675" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="85d0-1dba-240a-727d" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="06ad-a6bb-b783-89af" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3db1-a350-c858-33a5" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="2111-d1a5-2cc9-599d" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c2a9-9cf6-9929-867f" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d6e-dd59-74cb-dc8c" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="f197-b3a2-b915-766d" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a7fb-0c76-583f-3024" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1fb-d27f-b586-89ad" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="4576-1206-bf01-9ceb" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0b21-26e3-040c-0106" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b208-5e99-0f34-2f9a">
           <constraints>
@@ -1398,6 +947,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="41a9-95c1-f99d-b72a" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac78-c71b-a079-3ee3" type="max"/>
                   </constraints>
@@ -1432,7 +988,16 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="155f-a4df-edc3-1723" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="3aff-7242-8eb2-b462" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
+        <entryLink id="3aff-7242-8eb2-b462" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d656-062f-0818-c90a" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
@@ -1545,110 +1110,10 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       <categoryLinks>
         <categoryLink id="7db8db4f-3649-4932-9114-598f708bda42-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="799f-d88d-907e-bc0b" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="f8d8-fd2b-d6ae-f00a" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="cec7-d23d-2ad5-577b" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="51a6-5c32-b6c7-33a6" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fa5-f4b4-4b10-f49c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a0ec-d808-9928-6a56" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e247-29fe-d6d6-11bf" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0c2d-9b7d-f4d8-baae" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26b6-c2f5-6e47-c3fd" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="6117-22f9-305b-d907" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="19e9-077e-9ce5-7a76" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d1f-2bf6-70a7-d0e2" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="235b-af3c-ecc9-f56f" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d636-29ea-05f0-03cb" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aff0-d3c4-d913-5ec1" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="9244-d30f-f90e-581a" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="51c9-5f89-5304-39cb" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95b7-1f65-d6cf-9deb" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="ca41-46ad-ad93-f9fa" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="93c5-2e03-a6b1-5941" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a74c-5980-a808-927f" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="9d88-06d5-877f-7ab5" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="3475-49e3-6492-4774" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink id="b44e-59a5-ed4c-238a" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
+        <entryLink id="0697-e556-dc2f-a144" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="295.0"/>
@@ -1785,117 +1250,14 @@ Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly co
       <categoryLinks>
         <categoryLink id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ad832840-13a0-4aaa-b1d7-41af200d5d7a" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="f446-2495-b051-bc80" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="ad832840-13a0-4aaa-b1d7-41af200d5d7a-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="60d372db-9f54-4055-abd5-8e2b419ba27b" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9add89c1-09bc-4641-b47d-23a62f85a9d9" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="9749548d-c709-4810-8e63-138ef3e8b4b1" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="e9aa-f9f8-285e-5be6" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e8c7f5f3-a87e-411c-99cf-9b189769bf1d" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="717a-bcb7-ae47-fd01" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2fe729a7-47a8-402a-b3d9-ad16f7027388" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="afbe-c9fc-b135-4aad" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b2f90e3b-6c82-4260-8373-de41edc764ad" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="3ca5-d5b2-684b-9210" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e131b6a3-d721-41cb-a842-7e3978eb3ebb" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="ea3b-1711-7268-b4b9" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="593f-2018-ddac-776a" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-4b56-3273-ba77" type="max"/>
-          </constraints>
+      <entryLinks>
+        <entryLink id="f90f-7ae6-02fd-8fab" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="b8ff-fc99-f0ea-0867" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
+        <entryLink id="2334-965b-f557-a8f4" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="160.0"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="f90f-7ae6-02fd-8fab" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="600.0"/>
@@ -1963,6 +1325,7 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       </categoryLinks>
       <entryLinks>
         <entryLink id="3fb6-dbf7-09c2-312a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="8324-64a7-3837-4d36" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="95.0"/>
@@ -2175,6 +1538,7 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       </categoryLinks>
       <entryLinks>
         <entryLink id="8077-8a6b-af17-951d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="fbb6-8c04-acb7-1a6d" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="210.0"/>
@@ -2214,6 +1578,19 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="7097-1466-41fb-f27b" name="Validation Warlord" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Just for validation</comment>
+      <profiles>
+        <profile id="5f49-4874-ffe2-00a3" name="Ork Warlord Validation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Duplicate warlords here for list validation, Select on ship for marking ship upgrades.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2f29-fd42-e657-64c7" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2281,7 +1658,6 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="08c6-4bc1-18e2-62a4" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="025f-3dcb-76fb-12cf" name="Ork Rules" hidden="false">
@@ -2497,7 +1873,7 @@ Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count g
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d30c-f00e-a740-a066" name="Ork Warlord" page="0" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="d30c-f00e-a740-a066" name="Ork Warlord" page="0" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2513,7 +1889,7 @@ Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count g
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7b-61c6-0610-567c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e656-4b91-4bea-87f8" type="max"/>
       </constraints>
       <profiles>
         <profile id="f074-0b0c-7d27-9ea6" name="Ork Warlord" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2660,6 +2036,26 @@ Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hi
       <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+    <rule id="050c-e0f3-2f5d-b234" name="Ork Warlord" hidden="false">
+      <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
+
+A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
+    </rule>
+    <rule id="02ae-2896-bc82-2480" name="Mega-Armoured Boarding Parties" hidden="false">
+      <description>+1 modifier on boarding.</description>
+    </rule>
+    <rule id="76e0-291d-81d7-b9fb" name="Maniac Gunners" hidden="false">
+      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
+    </rule>
+    <rule id="c304-4f3e-ebaf-4c4c" name="Mad Meks" hidden="false">
+      <description>The ship may re-roll the dice for damage control.</description>
+    </rule>
+    <rule id="1a58-a6e9-3191-180a" name="Looted Torpedoes" hidden="false">
+      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
+    </rule>
+    <rule id="490a-aaae-1e18-3195" name="Extra Power Fields" hidden="false">
+      <description>The ship’s shield value is increased by +1.</description>
     </rule>
   </sharedRules>
 </catalogue>
