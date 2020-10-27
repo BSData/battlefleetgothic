@@ -1408,14 +1408,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="69b3-be98-5ac5-0f32" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="0960-4177-257d-7924" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="5be5-21ee-41d5-8fbc" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
             <categoryLink id="ff2f-583e-330d-6345" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="4a24-afbf-b42e-3acc" name="Ordnance" hidden="true" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="90.0"/>
           </costs>
@@ -1533,14 +1532,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="91be-9cfd-117e-0bcc" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="f870-e80e-5ba0-3574" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="4dae-f9e2-d6b8-8a74" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
             <categoryLink id="0098-30e8-1dac-98f7" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="dcfb-460b-d790-98ab" name="Ordnance" hidden="false" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="145.0"/>
           </costs>
@@ -1967,14 +1965,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="61d9-1fca-871b-79eb" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="aabf-4e59-6fd7-8825" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="7494-1578-75bf-b82e" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
             <categoryLink id="1cab-1ed3-8731-e220" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="012f-0605-10d8-4240" name="Ordnance" hidden="false" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
@@ -2370,9 +2367,9 @@ also 40k does not put unit&apos;s here. </comment>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0dc-b83c-8644-0754" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="dc40-53e4-944f-44e6" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="e0a3-c4ee-86d5-96d4" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="c6ed-a923-c688-50df" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="dc40-53e4-944f-44e6" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="e0a3-c4ee-86d5-96d4" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+            <infoLink id="c6ed-a923-c688-50df" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="4134-0738-3f2d-080f" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -2624,9 +2621,9 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1040-5d24-ecf6-79fc" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="9f6b-225c-cbc1-a5b3" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="e544-338d-fbe9-3eb0" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="ada9-de9f-24be-4eaf" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
+            <infoLink id="9f6b-225c-cbc1-a5b3" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+            <infoLink id="e544-338d-fbe9-3eb0" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="ada9-de9f-24be-4eaf" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2648,9 +2645,9 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
       <selectionEntries>
         <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters, Starhawk Bombers &amp; Shark Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="932d-81a0-184f-ca6a" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="3f88-24cc-209c-667c" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="96f2-2b0d-3c17-ea55" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="3f88-24cc-209c-667c" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="96f2-2b0d-3c17-ea55" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="2194-fa91-30c4-15b2" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="45d1-ddeb-83b4-6832" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -2701,9 +2698,48 @@ no default</comment>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="ae4d-3d03-3f56-254f" name="Ordnance" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-0ff5-e998-d2ef" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c4c-ec57-0521-e92c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b7c0-f6e4-70af-5340" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2965-23ad-fd00-2646" name="Fighters, Bombers &amp; Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1bcb-6da0-0ce9-64a0" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="ee54-4a93-82c3-355d" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="1bb2-a860-680c-fcea" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2cee-bc72-13f5-c1c6" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b1a1-aead-ea5a-d8d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="187e-bb8f-bd53-e0eb" name="Assault Boats" hidden="false">
+      <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.</description>
+    </rule>
+    <rule id="84e9-b24b-cad4-00c0" name="Bombers" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+    </rule>
+    <rule id="2851-5e71-284b-f953" name="Fighters" hidden="false">
+      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="6d95-c6a5-6acf-398b" name="Chaos Space Marines Boarding Torpedos" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2719,31 +2755,6 @@ no default</comment>
     <profile id="6b68-58a4-e894-fae9" name="Ponderous" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">May not use the &quot;come to new heading&quot; special order.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="bc3f-2f60-4878-e22f" name="Fighters" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2eee-f224-270a-3711" name="Bombers" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2501-dd63-2077-0361" name="Assault Boats" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="1936-e963-93d7-fdc3" name="Mark of Khorne" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
