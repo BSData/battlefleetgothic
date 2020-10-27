@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="7" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="8" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="137d-dbad-5653-19f2" hidden="false">
       <categoryLinks>
@@ -316,17 +316,10 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6e08-88b6-46a4-1b7f" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-ad52-2a06-e4e2" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="7a83-2c04-fc7c-ec37" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="5097-3267-40dc-761a" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
@@ -431,109 +424,13 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         </rule>
         <rule id="afd6-5b13-9b5b-8d70" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
       </rules>
+      <infoLinks>
+        <infoLink id="9de0-6a55-8e48-7429" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1c71d77d-033d-4cf8-a9a1-ba42760816e6-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="299a-b19d-a727-ee51" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="2ba1-a9b3-d8af-29a9" name="Ork Warlord" hidden="false">
-              <description>Warlords get one re-roll. They can have up to two more re-rolls for the additional cost noted below.
-
-A vessel carrying a Warlord doubles its boarding value and may include up to one of the upgrades shown below, at the additional cost indicated.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="de58-2fdb-5cff-69c0" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="16bb-13e9-40be-a513" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0caa-9797-088e-8592" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7247-e860-eaf3-b2b1" name="Upgrades" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a4b-383e-077d-49f9" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="ffd1-066c-b43f-2bbb" name="Mega Armored Boarding Parties" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6897-9336-6997-3ea8" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="b9a9-d11b-d599-3994" name="Mega-Armoured Boarding Parties" hidden="false">
-                      <description>+1 modifier on boarding.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7d7d-aaa9-a4a0-655e" name="Maniac Gunners" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5da6-43a0-cad6-0bd7" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="285f-2d6e-d82c-feb6" name="Maniac Gunners" hidden="false">
-                      <description>The ship may re-roll the dice for the firepower of its gunz when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8aa9-db81-9b1f-bdfd" name="Extra Power Fields" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bf2-9ff8-5349-d85c" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="d6f8-579d-efdd-bafa" name="Extra Power Fields" hidden="false">
-                      <description>The ship’s shield value is increased by +1.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="21d7-0ac4-9b7a-93d2" name="Looted Torpedos" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5b9-72af-ce3f-9da4" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="a706-b8ca-35d9-7092" name="Looted Torpedoes" hidden="false">
-                      <description>The ship may re-roll the dice for the strength of torpedo salvoes when it fires.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="14b7-8fc5-e6f5-a435" name="Mad Meks" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a68-4b6c-658e-e675" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="3207-8a8a-9847-0e0e" name="Mad Meks" hidden="false">
-                      <description>The ship may re-roll the dice for damage control.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="3278-dd55-b1c5-cee4" name="Boarding torpedos (speed 20cm strength D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de8e-4df7-7f3f-c62c" type="max"/>
@@ -542,17 +439,17 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="73be-314b-6395-7416" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1e-44c5-1f49-f138" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="80.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="7d93-50aa-40f2-5422" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="d591-8923-d63a-467a" name="Ordnance" hidden="false" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+        <entryLink id="5510-5411-1d5f-ca10" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry">
+          <comment>override 80 pts not 40 per 2010 compendium pg 27</comment>
+          <costs>
+            <cost name="pts" typeId="points" value="80.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3327-43d7-bec5-a045" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="310.0"/>
@@ -672,14 +569,6 @@ A Hammer Klass cruiser can either fire torpedoes or use bombardment kannon in a 
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="86c8fb4d-04cc-474a-8f29-243dadc60471" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5fbc-cccf-9705-fc56" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="fa33-1b95-8a82-5e73" name="Ork Warlord" hidden="false">
@@ -782,6 +671,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntries>
       <entryLinks>
         <entryLink id="ba36-4454-f445-2cc8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="ddbc-19ae-6985-6805" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
@@ -879,14 +769,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <categoryLink id="5a89b419-e904-4c28-bfb4-c693f54032af-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="35fea1b2-5b14-4de3-8051-33ead7678888" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="9653-4212-eb7e-9687" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="48a8-188d-0fa7-1cd9" name="Ork Warlord" hidden="false">
@@ -989,6 +871,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntries>
       <entryLinks>
         <entryLink id="a761-2251-5fe1-4cd8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="77bf-1910-a1f3-3628" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="270.0"/>
@@ -1181,6 +1064,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="904d-06c6-d425-624f" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+              </infoLinks>
               <selectionEntries>
                 <selectionEntry id="2c87-c7f2-302b-96aa" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1286,6 +1172,9 @@ CATASTROPHIC DAMAGE:
 When a Rok is reduced to 0 Damage it breaks up. Do not roll for Catastrophic Damage, instead the Rok is replaced by 4 Blast markers.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="71d5-5c1d-37c9-8bbd" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="82db7662-49b2-44a9-929a-cdc6a31fbaab-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1483,21 +1372,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8973-f965-9a4b-5286" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-90f3-a194-85bd" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0b21-26e3-040c-0106" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b208-5e99-0f34-2f9a">
@@ -1519,6 +1393,9 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="74b6-aed8-dc2c-5d96" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+              </infoLinks>
               <selectionEntries>
                 <selectionEntry id="41a9-95c1-f99d-b72a" name="Boarding torpedos (Speed 30cm, Strenght D6+2)" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1555,6 +1432,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="155f-a4df-edc3-1723" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="3aff-7242-8eb2-b462" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
@@ -1668,14 +1546,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <categoryLink id="7db8db4f-3649-4932-9114-598f708bda42-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="998b9bfd-8a59-4c21-8106-ecee20c9d79a" name="Torpedo Bommerz" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="799f-d88d-907e-bc0b" name="Ork Warlord" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="f8d8-fd2b-d6ae-f00a" name="Ork Warlord" hidden="false">
@@ -1778,6 +1648,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
       </selectionEntries>
       <entryLinks>
         <entryLink id="3475-49e3-6492-4774" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="b44e-59a5-ed4c-238a" name="Torpedo Bommerz" hidden="false" collective="false" import="true" targetId="545f-1ec9-0ced-f060" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="295.0"/>
@@ -1908,6 +1779,9 @@ Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the 
 Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="6c6a-6d93-7e67-8d4c" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="73dcba50-1fcb-4e82-9cbb-1f6ffd6766d2-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2462,12 +2336,21 @@ Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count g
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="545f-1ec9-0ced-f060" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="545f-1ec9-0ced-f060" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="26" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>torpedo bommas are 10 pts per launch bay at max strength. except battleships deathdeala, slambasta, kroolboy and hammer battle krooza price is 40. gorbag revenge is 80</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="910a-b755-6a5d-f8d9" type="max"/>
       </constraints>
+      <rules>
+        <rule id="dad5-1dde-04a1-6ccc" name="Torpedo Bommerz" publicationId="5766-7751-d146-0800" page="26" hidden="false">
+          <description>Torpedo Bommas do NOT retain the ability to behave as fighters and cannot intercept other ordnance or provide a bonus attack for turret suppression. In addition, their speed is reduced to 20cm. Torpedo Bommas always cost +10 points per launch bay based on the MAXIMUM launch bay strength of a given vessel. This means a Terror Ship must pay +40 points and a Space Hulk must pay +160 points to use Torpedo Bommas.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="aa45-ac98-c152-5042" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+      </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a91e-87e4-7a52-6b53" name="Grunt Assault Ship" publicationId="11f0-17d1-e4d2-1018" page="153" hidden="false" collective="false" import="true" type="upgrade">
@@ -2565,6 +2448,9 @@ Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count g
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="00cb-303c-7019-4a6e" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0b85-e099-5f3f-abeb" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2626,6 +2512,9 @@ Heavy Gunz: These roll to hit like ordinary weapons batteries but do not count g
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7b-61c6-0610-567c" type="max"/>
+      </constraints>
       <profiles>
         <profile id="f074-0b0c-7d27-9ea6" name="Ork Warlord" publicationId="1bc8-5968-21c3-0f27" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
