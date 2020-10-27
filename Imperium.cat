@@ -6831,6 +6831,13 @@ Starhawks: 20cm</characteristic>
     <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="c992-71b0-a514-938e" name="Mars Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="39f6-6f2c-bcea-b22b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d10d-9781-66d7-073e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -6885,6 +6892,23 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="2c02-1607-88b0-94b6" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d10d-9781-66d7-073e" name="+1 Turret" publicationId="5766-7751-d146-0800" page="19" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2607-6b22-9e68-6ea6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="df2e-cc79-a18d-3357" name="+1 Turret" publicationId="5766-7751-d146-0800" page="19" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+              <characteristics>
+                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A Mars battlecruiser may purchase a third turret for an additional +10 points</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="74e4-5ef7-963c-fb0f" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6b5-a889-25ca-9709">
           <constraints>
@@ -7104,6 +7128,11 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="7495-3a79-d55c-c28a" name="Overlord Class Battlecruiser" publicationId="5766-7751-d146-0800" page="19" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Points reduction from 235</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="f4d9-7dbc-b329-31bf" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
@@ -7184,7 +7213,7 @@ Starhawks: 20cm</characteristic>
         <entryLink id="7749-9df0-116f-6565" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="235.0"/>
+        <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c4a0-4f0a-bc98-0cfe" name="Retribution Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="107" hidden="false" collective="false" import="true" type="unit">
