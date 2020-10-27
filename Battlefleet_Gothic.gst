@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="37" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="38" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -243,7 +243,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="6f6a-fab9-e900-1aa9" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="6f6a-fab9-e900-1aa9" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
         <infoLink id="4c71-8052-7203-e213" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -489,7 +489,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a6fe-869f-0508-3139" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="a6fe-869f-0508-3139" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d97c-ef88-673d-deca" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -794,7 +794,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <infoLinks>
         <infoLink id="5b09-17f7-9908-81be" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink id="54fb-360c-b126-af8d" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="54fb-360c-b126-af8d" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
         <infoLink id="ee84-443b-35d6-c0eb" name="Bombardment Cannon" hidden="false" targetId="698d-cccb-0d27-f1b1" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -877,7 +877,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="315a-75b0-fc58-e501" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                <infoLink id="315a-75b0-fc58-e501" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -976,7 +976,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a0ea-3af7-cf21-21cc" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="a0ea-3af7-cf21-21cc" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8648-42b9-1dee-c7c6" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -1457,7 +1457,7 @@ Bombers: 20cm</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8651-9355-8d0c-1e9c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+            <infoLink id="8651-9355-8d0c-1e9c" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="7719-88c2-8622-e11e" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -1623,7 +1623,7 @@ Bombers: 20cm</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0569-065b-9874-d11e" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="0569-065b-9874-d11e" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c0b0-8790-921b-08fe" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
@@ -1933,7 +1933,7 @@ Bombers: 20cm</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="f6f0-f26a-349b-5856" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+            <infoLink id="f6f0-f26a-349b-5856" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3b97-e0e0-8bae-f1d5" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
@@ -2172,7 +2172,7 @@ Usually used as objectives in missions.</characteristic>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="a704-8804-f50b-450c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                <infoLink id="a704-8804-f50b-450c" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -2725,20 +2725,31 @@ no default</comment>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b1a1-aead-ea5a-d8d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-    <rule id="187e-bb8f-bd53-e0eb" name="Assault Boats" hidden="false">
+    <rule id="187e-bb8f-bd53-e0eb" name="Assault Boats" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.</description>
     </rule>
-    <rule id="84e9-b24b-cad4-00c0" name="Bombers" hidden="false">
+    <rule id="84e9-b24b-cad4-00c0" name="Bombers" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
 Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
 
 Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
     </rule>
-    <rule id="2851-5e71-284b-f953" name="Fighters" hidden="false">
+    <rule id="2851-5e71-284b-f953" name="Fighters" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
       <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
 Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+    <rule id="8103-25d2-5412-2542" name="Torpedoes" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false">
+      <description>If the torpedo marker contacts a ship&apos;s base (friend or foe) it attacks. Roll a D6 for every point of Strenght in the torpedo salvo. Each dice which equals or beats the ship&apos;s Armour value scores one point of damage. Torpedos will pass through shields before they impact, so ignore any shields when applying damage. The torpedo salvo continues moving after the attack but its Strength is reduced by 1 for every hit inflicted. Replace the marker with a smaller one as necessary. Torpedoes that can re-roll misses must do so, even if the target is already destroyed.
+
+Premature Detonation:
+An entire salvo of torpedoes can be triggered prematurely by the following circumstances:
+*On a D6 roll of 6 if it moves through any blast markers.
+*If the salvo is fired on by direct fire weapons and any hits are scored.
+*If it hits another Torpedo marker.
+
+If a torpedo Marker is prematurely detonated it is removed from play.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2780,19 +2791,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
     <profile id="b75c-180f-abe0-73bd" name="*DAMAGE" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">☐ Dorsal Armament - ☐ Port Armament - ☐ Starboard Armament - ☐ Prow Armament - ☐ Engine Room - ☐ Fire!! - ☐ Thrusters Damaged - ☐ Bridge Smashed - ☐ Shields Collapse - ☐ Hull Breach - ☐ Bulkhead Collapse</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="26c4-bc19-6c92-c331" name="Torpedos" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">If the torpedo marker contacts a ship&apos;s base (friend or foe) it attacks. Roll a D6 for every point of Strenght in the torpedo salvo. Each dice which equals or beats the ship&apos;s Armour value scores one point of damage. Torpedos will pass through shields before they impact, so ignore any shields when applying damage. The torpedo salvo continues moving after the attack but its Strength is reduced by 1 for every hit inflicted. Replace the marker with a smaller one as necessary. Torpedoes that can re-roll misses must do so, even if the target is already destroyed.
-
-Premature Detonation:
-An entire salvo of torpedoes can be triggered prematurely by the following circumstances:
-*On a D6 roll of 6 if it moves through any blast markers.
-*If the salvo is fired on by direct fire weapons and any hits are scored.
-*If it hits another Torpedo marker.
-
-If a torpedo Marker is prematurely detonated it is removed from play.</characteristic>
       </characteristics>
     </profile>
     <profile id="3a11-b3b6-d529-ac1f" name="Boarding Torpedoes" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
