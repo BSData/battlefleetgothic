@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="24" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="25" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada. Incursion fleet matched to Blue Book. </readme>
   <publications>
     <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
@@ -10,42 +10,60 @@
     <forceEntry id="b6ad-ef41-9fd4-07d3" name="Abbadon&apos;s 12th &amp; 13th Black Crusades (Armada)" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="false">
       <categoryLinks>
         <categoryLink id="24b2-0d02-aa47-0b72" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="b664-e86d-8635-c22a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="3849-ddfc-308d-0a66" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="3fc3-7e5f-84c4-218c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="8cd3-2678-46ed-a978" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="5cc8-72e6-de09-c344" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="5cc8-72e6-de09-c344" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cc8-72e6-de09-c344" type="min"/>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d6-561b-7ce0-16e2" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0f3b-abe6-01db-1a75" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="822e-e1e1-85f7-fa9c" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="845b-14a1-9583-8b2d" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="b654-3f27-affe-aaa3" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="c581-f0b6-ddbd-7ac9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c581-f0b6-ddbd-7ac9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="42d8-acdc-1b7c-8ecd" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+          <modifiers>
+            <modifier type="increment" field="6ab6-248d-06c4-c0cd" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab6-248d-06c4-c0cd" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="769a-823f-c3fa-d5fc" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
+          <modifiers>
+            <modifier type="increment" field="97f1-57ae-d140-2802" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f1-57ae-d140-2802" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="ec1b-17c7-71cd-970c" name="All Chaos Vessels (Unofficial)" hidden="true">
@@ -54,36 +72,7 @@
         <categoryLink id="81d7-adf4-d3d1-1ec6" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="6fdc-9d6e-86f6-0c2d" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="281b-a377-37c7-c514" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="f028-7555-dc01-2f28" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="2745-29e5-962c-b6f3" value="3">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="2745-29e5-962c-b6f3" value="2">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2745-29e5-962c-b6f3" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a346-e47f-9802-44a6" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="f028-7555-dc01-2f28" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="1cb9-d530-772f-2007" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="de9d-39c0-49e0-cc24" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="a4a7-0132-5071-c9fc" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -358,72 +347,61 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
     <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet (BBB)" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
       <categoryLinks>
         <categoryLink id="88b9-a2e7-5761-2767" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="3358-739d-036c-0d40" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="b753-8fd0-bf30-bbc2" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="3310-0480-8b2f-0d6c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="4833-e9b9-4543-0b92" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="ca9f-9924-a5c0-f1f7" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" field="ca9f-9924-a5c0-f1f7" value="2.0">
-              <comment>reduce min required cruisers if battlecruisers have been picked with a battleship or grand cruiser</comment>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                        <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="ca9f-9924-a5c0-f1f7" value="3.0">
-              <comment>reduce min required cruisers if battleship picked with a grandcruiser</comment>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca9f-9924-a5c0-f1f7" type="min"/>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb41-bd23-7736-adeb" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="d774-d014-ec01-083e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="4cd9-e504-fb7a-74cf" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="d774-d014-ec01-083e" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
+          <modifiers>
+            <modifier type="increment" field="65b7-2ed6-c978-4c03" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65b7-2ed6-c978-4c03" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4cd9-e504-fb7a-74cf" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+          <modifiers>
+            <modifier type="increment" field="92bb-e30c-e9da-744e" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92bb-e30c-e9da-744e" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="1bdf-73a9-990d-86f2" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="1f01-a71f-aed8-2360" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="4a85-000e-cd12-c6fb" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="a263-ba53-17a9-3a84" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a263-ba53-17a9-3a84" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -552,6 +530,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </profiles>
       <categoryLinks>
         <categoryLink id="4bcb-d84d-ed83-9344" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="07b8-24f5-269a-665d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e5d8-4141-2e56-d678" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -607,7 +586,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+        <categoryLink id="02ed-58f7-6b56-42b6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5cd83a7c-add5-4536-b9f0-6ae517c07613" name="Extra re-roll" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -696,10 +675,11 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <categoryLinks>
         <categoryLink id="58e4-8f49-0145-c523" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="24ae-063b-29e4-86dc" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b64e-58b5-bd3e-367c" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="1af0-cd0a-988c-b05b" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="1af0-cd0a-988c-b05b" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="1d3b-b72c-c03f-c725" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -748,6 +728,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <categoryLinks>
         <categoryLink id="131a-6c16-b9c5-c99b" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="5f52-87e2-b0f8-cb07" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b225-85a8-d725-76f6" name="Variant" publicationId="5766-7751-d146-0800" page="23" hidden="false" collective="false" import="true" defaultSelectionEntryId="317b-22fc-b883-c69c">
@@ -909,8 +890,8 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="eb69-3e44-2512-f8fe" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="45ba-3357-cdf3-b98a" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="eb69-3e44-2512-f8fe" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="45ba-3357-cdf3-b98a" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fbcd07c9-95e0-41f0-aad2-2cb9ea32ce44-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -997,6 +978,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6974-c043-2f51-36cb" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="086a-86e4-abe9-3066" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e3c6-ce03-c262-a787" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -1089,8 +1071,8 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="98f2-90c7-d4bc-a98a" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="0be5-6f45-086b-03b3" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="98f2-90c7-d4bc-a98a" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="0be5-6f45-086b-03b3" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9696-ee78-0ddb-1c29" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1179,6 +1161,8 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <categoryLinks>
         <categoryLink id="6ea7-712f-39d0-d9a0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="0a69-4b31-4d81-3492" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="64a1-21c7-4f36-b18e" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8cd2-e798-02fc-f75f" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
@@ -1265,6 +1249,8 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <categoryLinks>
         <categoryLink id="c860-dc62-45c9-d60f" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="0ce0-e71b-81a8-b0f0" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="cee2-3646-976d-62ed" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="770e-2f0d-e936-7a58" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -1338,6 +1324,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <categoryLinks>
         <categoryLink id="1e33-bc4b-ccf9-0ad8" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="cd0a-3517-625e-4b96" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a9a9-73eb-4e57-b1f8" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -1501,8 +1488,8 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <infoLinks>
         <infoLink id="6e07-7492-e5db-5a29" name="Mark of Tzeentch" hidden="false" targetId="bb93-4330-8897-435d" type="profile"/>
-        <infoLink id="d0ca-dfd0-daa9-9137" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="f494-cd68-9bb2-ea30" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="d0ca-dfd0-daa9-9137" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="f494-cd68-9bb2-ea30" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="eadc-fbb6-b4d5-65c5" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1600,9 +1587,9 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
       </profiles>
       <infoLinks>
         <infoLink id="7c28-35df-0454-f3da" name="Mark of Slaanesh" hidden="false" targetId="850f-870b-e482-4ed3" type="profile"/>
-        <infoLink id="db98-8f9d-b071-f7e9" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
-        <infoLink id="f800-4a9d-e065-34a2" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="d6ce-9402-09f1-1f51" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="db98-8f9d-b071-f7e9" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+        <infoLink id="f800-4a9d-e065-34a2" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="d6ce-9402-09f1-1f51" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="17c7-7da6-58bc-de0e" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1901,7 +1888,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       </profiles>
       <infoLinks>
         <infoLink id="9624-a0a5-dbd4-53e8" name="Mark of Nurgle" hidden="false" targetId="fd36-a8fe-9c06-f865" type="profile"/>
-        <infoLink id="8441-1962-3cde-63d2" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
+        <infoLink id="8441-1962-3cde-63d2" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="74d8-2963-9913-ba04" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -2019,9 +2006,9 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="b730-82dc-2150-c3b5" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
+        <infoLink id="b730-82dc-2150-c3b5" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
         <infoLink id="68ae-b121-3a3c-cebd" name="Mark of Khorne" hidden="false" targetId="1936-e963-93d7-fdc3" type="profile"/>
-        <infoLink id="99b0-44c8-6869-1b65" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="99b0-44c8-6869-1b65" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="82a9-7d49-b59c-40ab" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -2227,6 +2214,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
       </profiles>
       <categoryLinks>
         <categoryLink id="e1f7-ed6f-18fe-2e6c" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="041d-d0e8-3b64-9fca" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7085-a6f2-6ede-6fc8" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -2400,8 +2388,8 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ebf2-5ecf-71c9-44ac" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="423b-ed03-bf9d-3791" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="ebf2-5ecf-71c9-44ac" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="423b-ed03-bf9d-3791" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6bf5-9dd8-2b83-01c5" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -2570,8 +2558,8 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="18fe-9025-d848-2f8d" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
-        <infoLink id="963d-33b8-4e01-6963" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="18fe-9025-d848-2f8d" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink id="963d-33b8-4e01-6963" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f241-1194-c0f0-e756" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -2737,7 +2725,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d460-06f6-03ba-dad7" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="38ef-5485-b0e7-ce4d" type="rule"/>
+        <infoLink id="d460-06f6-03ba-dad7" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="985c-5188-6d0e-9813" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -2829,6 +2817,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0daf-72b5-1a2e-ab52" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="f87c-b8a0-4fbe-3877" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e462-6a97-25fc-d5a2" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -2894,7 +2883,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="65b6-e7a0-7b9d-9e18" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="65b6-e7a0-7b9d-9e18" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1a0e-c40a-ac1b-4415" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -3039,6 +3028,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </profiles>
       <categoryLinks>
         <categoryLink id="aa6d-0a3f-24f6-b70b" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="1e63-f5ee-50de-1da9" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e294-8d8b-6d04-f0a9" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
@@ -3102,6 +3092,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </infoLinks>
       <categoryLinks>
         <categoryLink id="edb6-aad2-274c-e2f4" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="f3b0-b084-e3d0-b18d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9b93-dd64-4fb4-c158" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -3164,10 +3155,11 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </profiles>
       <infoLinks>
         <infoLink id="e640-e1b0-5484-3826" name="Improved Thrusters" hidden="false" targetId="c019-2bd2-8f0d-3703" type="profile"/>
-        <infoLink id="cd6a-60a0-2630-c719" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="cd6a-60a0-2630-c719" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dd6e-631f-5223-32e6" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="5b52-1e95-bc84-b3a7" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2d5e-7659-669b-2ffe" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
@@ -3362,7 +3354,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8914-5517-6d1b-9e11" name="Ark of Pestilence" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="8914-5517-6d1b-9e11" name="Ark of Pestilence" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3521,7 +3513,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="15ff-a531-8cd0-8011" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                <infoLink id="15ff-a531-8cd0-8011" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -3991,7 +3983,4 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedRules>
-    <rule id="38ef-5485-b0e7-ce4d" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-  </sharedRules>
 </catalogue>

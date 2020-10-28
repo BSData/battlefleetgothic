@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="38" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="39" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -63,37 +63,49 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="466c65657420436f6d6d616e6465727323232344415441232323" name="Fleet Commanders" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
-    <categoryEntry id="4361706974616c20536869707323232344415441232323" name="Battleships" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="466c65657420436f6d6d616e6465727323232344415441232323" name="Fleet Commander" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
+    <categoryEntry id="4361706974616c20536869707323232344415441232323" name="Battleship" publicationId="b161-6b4c-e770-9ab2" hidden="false">
       <infoLinks>
         <infoLink id="4060-83a5-ec70-4915" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="4573636f72747323232344415441232323" name="Escorts" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
+    <categoryEntry id="4573636f72747323232344415441232323" name="Escort" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
     <categoryEntry id="5370656369616c23232344415441232323" name="Special" publicationId="b161-6b4c-e770-9ab2" hidden="false">
       <infoLinks>
-        <infoLink id="8694-169f-3fb8-a107" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+        <infoLink id="8694-169f-3fb8-a107" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="1042-e458-4e02-a537" name="Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="1042-e458-4e02-a537" name="Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>cruisers are cruisers and CV&apos;s to differentiate them from battle cruisers which are both cruisers and battlecruisers. They can&apos;t count for themselves</comment>
       <infoLinks>
         <infoLink id="f19d-82a9-3db2-d412" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="46e2-c9eb-27e7-172a" name="Grand Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="46e2-c9eb-27e7-172a" name="Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>Grand Cruisers are not cruisers. They do not count towards battleship or other grand cruiser purchases</comment>
       <infoLinks>
         <infoLink id="2b7e-fc5f-8d53-158f" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="cf79-82ee-ebe9-7ea3" name="Battlecruisers &amp; Heavy Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="cf79-82ee-ebe9-7ea3" name="Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>Heavy Cruisers which are both cruisers and battlecruisers, but they can&apos;t count for themselves</comment>
       <infoLinks>
-        <infoLink id="5557-a0ad-2d97-bf30" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+        <infoLink id="5557-a0ad-2d97-bf30" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="e70d-1bf2-7ea2-276a" name="Ordnance" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
-    <categoryEntry id="90ac-0bee-0c90-be27" name="Orbital Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false"/>
+    <categoryEntry id="90ac-0bee-0c90-be27" name="Orbital Defence" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false"/>
     <categoryEntry id="9624-17a2-bfd7-6420" name="Reserves" hidden="false">
       <comment>It looks like to reserves to work conditions will need to be made for ships to change from crusier to reserves when they are available as reserves in order for them to validate meeting the reserves requirement. </comment>
+    </categoryEntry>
+    <categoryEntry id="e0c6-bde4-7055-1e6e" name="CV" hidden="false">
+      <comment>This is for force validataion on the imperium and chaos lists. to handle heavy and battle cruisers</comment>
+    </categoryEntry>
+    <categoryEntry id="b041-ef69-0039-d535" name="Battlecruiser" hidden="false">
+      <comment>Battle cruisers which are both cruisers and battlecruisers, but they can&apos;t count for themselves</comment>
+      <infoLinks>
+        <infoLink id="44cc-a911-6cff-b47a" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+      </infoLinks>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -181,6 +193,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="9397-6b1a-5630-44e0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="4fb3-9902-6241-b795" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e43c-7aae-c3b5-353b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -422,6 +435,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="48dd-7ecc-c76a-064b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="e91c-f824-75f6-51c9" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1d19-7130-7fe9-fe5f" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -628,6 +642,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="5844-c1a8-3898-4b8c" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="26ea-22e5-3d20-4b18" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="febc-273d-6411-9805" name="Chaos Capital Ship Options" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
@@ -848,6 +863,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5c7a-de91-5184-e2ed" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="1ea5-1274-4adb-522d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1aff-7d41-c821-81b4" name="Prow Weapon Options" hidden="false" collective="false" import="true">
@@ -1084,6 +1100,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </profiles>
       <categoryLinks>
         <categoryLink id="74e8-9c5a-6a84-6260" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="84fc-2cc9-21d4-9b9f" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8daf-cb7e-a3a7-b7c9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
