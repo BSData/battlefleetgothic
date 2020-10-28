@@ -6,14 +6,14 @@
   <forceEntries>
     <forceEntry id="24a3-f4ab-d475-1a63" name="Armaggedon Sector Fleet List, Segmentum Solar" hidden="false">
       <categoryLinks>
-        <categoryLink id="9374-68a8-0bb9-1c6f" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
+        <categoryLink id="9374-68a8-0bb9-1c6f" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="2ae0-9c08-6ab6-e728" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="f7a7-f5ad-6536-7fc2" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="f7a7-f5ad-6536-7fc2" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="19b2-4045-60b0-dbe4" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="fe11-d831-bf9e-44e6" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="fe11-d831-bf9e-44e6" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0230-705d-7089-7d68" type="max"/>
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f44-154d-5a95-f2cb" type="min"/>
@@ -37,7 +37,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="ba1f-b624-bae8-5374" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="37c5-5f82-70eb-b367" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+        <categoryLink id="37c5-5f82-70eb-b367" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
             <modifier type="increment" field="b05e-6024-741e-1596" value="1.0">
               <repeats>
@@ -84,8 +84,8 @@
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd9d-900f-ee6f-a81c" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e204-e945-e9ce-7a1d" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="2f17-2dbe-d576-6514" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+        <categoryLink id="e204-e945-e9ce-7a1d" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="2f17-2dbe-d576-6514" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
             <modifier type="increment" field="a959-2f5b-92dd-2a32" value="1.0">
               <repeats>
@@ -151,7 +151,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de81-75d2-c24b-f840" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0dc7-4121-57c5-217f" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+        <categoryLink id="0dc7-4121-57c5-217f" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
             <modifier type="increment" field="3e50-ab52-b23c-126d" value="1.0">
               <repeats>
@@ -366,7 +366,7 @@
         </categoryLink>
         <categoryLink id="2ea0-473d-7901-e797" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="7495-b8d1-89c6-e734" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-        <categoryLink id="e8f8-c363-1f78-552b" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
+        <categoryLink id="e8f8-c363-1f78-552b" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
           <modifiers>
             <modifier type="increment" field="a3b9-6c4e-b72e-98b0" value="1.0">
               <repeats>
@@ -381,7 +381,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b9-6c4e-b72e-98b0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b565-afdf-3580-4362" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+        <categoryLink id="b565-afdf-3580-4362" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
             <modifier type="increment" field="fca8-986f-b3a9-51af" value="1.0">
               <repeats>
@@ -528,7 +528,7 @@
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7319-38d0-4022-2fe7" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9972-99b3-bb96-f4f0" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="9972-99b3-bb96-f4f0" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="aa32-9f4f-b3d6-9963" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="e718-0c52-24cc-7199" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="82ac-4037-ce85-9e17" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
@@ -546,7 +546,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a3-8cde-d045-97f0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="fb68-cba3-35d1-53fa" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false">
+        <categoryLink id="fb68-cba3-35d1-53fa" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
             <modifier type="increment" field="7690-c59e-a382-c598" value="1.0">
               <repeats>
@@ -2067,8 +2067,6 @@ Scores 3 points in a planetary assault rather than 2.</description>
       </rules>
       <categoryLinks>
         <categoryLink id="cb2c-7f75-c48d-99b4" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
-        <categoryLink id="0835-7657-b02f-dfd9" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="38a5-3e7c-9475-07a2" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="50fc-5927-9379-00f7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
