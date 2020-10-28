@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="37" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="39" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -63,37 +63,49 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="466c65657420436f6d6d616e6465727323232344415441232323" name="Fleet Commanders" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
-    <categoryEntry id="4361706974616c20536869707323232344415441232323" name="Battleships" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="466c65657420436f6d6d616e6465727323232344415441232323" name="Fleet Commander" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
+    <categoryEntry id="4361706974616c20536869707323232344415441232323" name="Battleship" publicationId="b161-6b4c-e770-9ab2" hidden="false">
       <infoLinks>
         <infoLink id="4060-83a5-ec70-4915" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="4573636f72747323232344415441232323" name="Escorts" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
+    <categoryEntry id="4573636f72747323232344415441232323" name="Escort" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
     <categoryEntry id="5370656369616c23232344415441232323" name="Special" publicationId="b161-6b4c-e770-9ab2" hidden="false">
       <infoLinks>
-        <infoLink id="8694-169f-3fb8-a107" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+        <infoLink id="8694-169f-3fb8-a107" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="1042-e458-4e02-a537" name="Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="1042-e458-4e02-a537" name="Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>cruisers are cruisers and CV&apos;s to differentiate them from battle cruisers which are both cruisers and battlecruisers. They can&apos;t count for themselves</comment>
       <infoLinks>
         <infoLink id="f19d-82a9-3db2-d412" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="46e2-c9eb-27e7-172a" name="Grand Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="46e2-c9eb-27e7-172a" name="Grand Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>Grand Cruisers are not cruisers. They do not count towards battleship or other grand cruiser purchases</comment>
       <infoLinks>
         <infoLink id="2b7e-fc5f-8d53-158f" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="cf79-82ee-ebe9-7ea3" name="Battlecruisers &amp; Heavy Cruisers" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+    <categoryEntry id="cf79-82ee-ebe9-7ea3" name="Heavy Cruiser" publicationId="b161-6b4c-e770-9ab2" hidden="false">
+      <comment>Heavy Cruisers which are both cruisers and battlecruisers, but they can&apos;t count for themselves</comment>
       <infoLinks>
-        <infoLink id="5557-a0ad-2d97-bf30" name="DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+        <infoLink id="5557-a0ad-2d97-bf30" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="e70d-1bf2-7ea2-276a" name="Ordnance" publicationId="b161-6b4c-e770-9ab2" hidden="false"/>
-    <categoryEntry id="90ac-0bee-0c90-be27" name="Orbital Defences" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false"/>
+    <categoryEntry id="90ac-0bee-0c90-be27" name="Orbital Defence" publicationId="11f0-17d1-e4d2-1018" page="141" hidden="false"/>
     <categoryEntry id="9624-17a2-bfd7-6420" name="Reserves" hidden="false">
       <comment>It looks like to reserves to work conditions will need to be made for ships to change from crusier to reserves when they are available as reserves in order for them to validate meeting the reserves requirement. </comment>
+    </categoryEntry>
+    <categoryEntry id="e0c6-bde4-7055-1e6e" name="CV" hidden="false">
+      <comment>This is for force validataion on the imperium and chaos lists. to handle heavy and battle cruisers</comment>
+    </categoryEntry>
+    <categoryEntry id="b041-ef69-0039-d535" name="Battlecruiser" hidden="false">
+      <comment>Battle cruisers which are both cruisers and battlecruisers, but they can&apos;t count for themselves</comment>
+      <infoLinks>
+        <infoLink id="44cc-a911-6cff-b47a" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+      </infoLinks>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -181,6 +193,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="9397-6b1a-5630-44e0" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="4fb3-9902-6241-b795" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e43c-7aae-c3b5-353b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -243,7 +256,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="6f6a-fab9-e900-1aa9" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="6f6a-fab9-e900-1aa9" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
         <infoLink id="4c71-8052-7203-e213" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -422,6 +435,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="48dd-7ecc-c76a-064b" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="e91c-f824-75f6-51c9" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1d19-7130-7fe9-fe5f" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -489,7 +503,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a6fe-869f-0508-3139" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="a6fe-869f-0508-3139" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d97c-ef88-673d-deca" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -628,6 +642,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <categoryLinks>
         <categoryLink id="5844-c1a8-3898-4b8c" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="26ea-22e5-3d20-4b18" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="febc-273d-6411-9805" name="Chaos Capital Ship Options" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
@@ -794,7 +809,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </profiles>
       <infoLinks>
         <infoLink id="5b09-17f7-9908-81be" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink id="54fb-360c-b126-af8d" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="54fb-360c-b126-af8d" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
         <infoLink id="ee84-443b-35d6-c0eb" name="Bombardment Cannon" hidden="false" targetId="698d-cccb-0d27-f1b1" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -848,6 +863,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5c7a-de91-5184-e2ed" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="1ea5-1274-4adb-522d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1aff-7d41-c821-81b4" name="Prow Weapon Options" hidden="false" collective="false" import="true">
@@ -877,7 +893,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="315a-75b0-fc58-e501" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                <infoLink id="315a-75b0-fc58-e501" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -976,7 +992,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a0ea-3af7-cf21-21cc" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="a0ea-3af7-cf21-21cc" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8648-42b9-1dee-c7c6" name="New CategoryLink" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
@@ -1084,6 +1100,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </profiles>
       <categoryLinks>
         <categoryLink id="74e8-9c5a-6a84-6260" name="New CategoryLink" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
+        <categoryLink id="84fc-2cc9-21d4-9b9f" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8daf-cb7e-a3a7-b7c9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -1408,14 +1425,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="69b3-be98-5ac5-0f32" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="0960-4177-257d-7924" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="5be5-21ee-41d5-8fbc" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
             <categoryLink id="ff2f-583e-330d-6345" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="4a24-afbf-b42e-3acc" name="Ordnance" hidden="true" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="90.0"/>
           </costs>
@@ -1458,7 +1474,7 @@ Bombers: 20cm</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8651-9355-8d0c-1e9c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+            <infoLink id="8651-9355-8d0c-1e9c" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="7719-88c2-8622-e11e" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -1533,14 +1549,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="91be-9cfd-117e-0bcc" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="f870-e80e-5ba0-3574" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="4dae-f9e2-d6b8-8a74" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
             <categoryLink id="0098-30e8-1dac-98f7" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="dcfb-460b-d790-98ab" name="Ordnance" hidden="false" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="145.0"/>
           </costs>
@@ -1625,7 +1640,7 @@ Bombers: 20cm</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0569-065b-9874-d11e" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+        <infoLink id="0569-065b-9874-d11e" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c0b0-8790-921b-08fe" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
@@ -1935,7 +1950,7 @@ Bombers: 20cm</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="f6f0-f26a-349b-5856" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+            <infoLink id="f6f0-f26a-349b-5856" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3b97-e0e0-8bae-f1d5" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
@@ -1967,14 +1982,13 @@ Bombers: 20cm</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="61d9-1fca-871b-79eb" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="aabf-4e59-6fd7-8825" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-          </infoLinks>
           <categoryLinks>
             <categoryLink id="7494-1578-75bf-b82e" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
             <categoryLink id="1cab-1ed3-8731-e220" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="012f-0605-10d8-4240" name="Ordnance" hidden="false" collective="false" import="true" targetId="ae4d-3d03-3f56-254f" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
@@ -2175,7 +2189,7 @@ Usually used as objectives in missions.</characteristic>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="a704-8804-f50b-450c" name="Torpedos" hidden="false" targetId="26c4-bc19-6c92-c331" type="profile"/>
+                <infoLink id="a704-8804-f50b-450c" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -2370,9 +2384,9 @@ also 40k does not put unit&apos;s here. </comment>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0dc-b83c-8644-0754" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="dc40-53e4-944f-44e6" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="e0a3-c4ee-86d5-96d4" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="c6ed-a923-c688-50df" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="dc40-53e4-944f-44e6" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="e0a3-c4ee-86d5-96d4" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+            <infoLink id="c6ed-a923-c688-50df" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="4134-0738-3f2d-080f" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -2624,9 +2638,9 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1040-5d24-ecf6-79fc" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="9f6b-225c-cbc1-a5b3" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="e544-338d-fbe9-3eb0" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
-            <infoLink id="ada9-de9f-24be-4eaf" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
+            <infoLink id="9f6b-225c-cbc1-a5b3" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+            <infoLink id="e544-338d-fbe9-3eb0" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="ada9-de9f-24be-4eaf" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2648,9 +2662,9 @@ Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torped
       <selectionEntries>
         <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters, Starhawk Bombers &amp; Shark Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="932d-81a0-184f-ca6a" name="Fighters" hidden="false" targetId="bc3f-2f60-4878-e22f" type="profile"/>
-            <infoLink id="3f88-24cc-209c-667c" name="Assault Boats" hidden="false" targetId="2501-dd63-2077-0361" type="profile"/>
-            <infoLink id="96f2-2b0d-3c17-ea55" name="Bombers" hidden="false" targetId="2eee-f224-270a-3711" type="profile"/>
+            <infoLink id="3f88-24cc-209c-667c" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="96f2-2b0d-3c17-ea55" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="2194-fa91-30c4-15b2" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="45d1-ddeb-83b4-6832" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -2701,9 +2715,59 @@ no default</comment>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="ae4d-3d03-3f56-254f" name="Ordnance" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-0ff5-e998-d2ef" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c4c-ec57-0521-e92c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b7c0-f6e4-70af-5340" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2965-23ad-fd00-2646" name="Fighters, Bombers &amp; Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1bcb-6da0-0ce9-64a0" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+            <infoLink id="ee54-4a93-82c3-355d" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+            <infoLink id="1bb2-a860-680c-fcea" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2cee-bc72-13f5-c1c6" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b1a1-aead-ea5a-d8d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="187e-bb8f-bd53-e0eb" name="Assault Boats" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.</description>
+    </rule>
+    <rule id="84e9-b24b-cad4-00c0" name="Bombers" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+    </rule>
+    <rule id="2851-5e71-284b-f953" name="Fighters" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
+      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+    <rule id="8103-25d2-5412-2542" name="Torpedoes" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false">
+      <description>If the torpedo marker contacts a ship&apos;s base (friend or foe) it attacks. Roll a D6 for every point of Strenght in the torpedo salvo. Each dice which equals or beats the ship&apos;s Armour value scores one point of damage. Torpedos will pass through shields before they impact, so ignore any shields when applying damage. The torpedo salvo continues moving after the attack but its Strength is reduced by 1 for every hit inflicted. Replace the marker with a smaller one as necessary. Torpedoes that can re-roll misses must do so, even if the target is already destroyed.
+
+Premature Detonation:
+An entire salvo of torpedoes can be triggered prematurely by the following circumstances:
+*On a D6 roll of 6 if it moves through any blast markers.
+*If the salvo is fired on by direct fire weapons and any hits are scored.
+*If it hits another Torpedo marker.
+
+If a torpedo Marker is prematurely detonated it is removed from play.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="6d95-c6a5-6acf-398b" name="Chaos Space Marines Boarding Torpedos" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2719,31 +2783,6 @@ no default</comment>
     <profile id="6b68-58a4-e894-fae9" name="Ponderous" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">May not use the &quot;come to new heading&quot; special order.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="bc3f-2f60-4878-e22f" name="Fighters" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2eee-f224-270a-3711" name="Bombers" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2501-dd63-2077-0361" name="Assault Boats" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="1936-e963-93d7-fdc3" name="Mark of Khorne" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2769,19 +2808,6 @@ Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly co
     <profile id="b75c-180f-abe0-73bd" name="*DAMAGE" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">☐ Dorsal Armament - ☐ Port Armament - ☐ Starboard Armament - ☐ Prow Armament - ☐ Engine Room - ☐ Fire!! - ☐ Thrusters Damaged - ☐ Bridge Smashed - ☐ Shields Collapse - ☐ Hull Breach - ☐ Bulkhead Collapse</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="26c4-bc19-6c92-c331" name="Torpedos" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">If the torpedo marker contacts a ship&apos;s base (friend or foe) it attacks. Roll a D6 for every point of Strenght in the torpedo salvo. Each dice which equals or beats the ship&apos;s Armour value scores one point of damage. Torpedos will pass through shields before they impact, so ignore any shields when applying damage. The torpedo salvo continues moving after the attack but its Strength is reduced by 1 for every hit inflicted. Replace the marker with a smaller one as necessary. Torpedoes that can re-roll misses must do so, even if the target is already destroyed.
-
-Premature Detonation:
-An entire salvo of torpedoes can be triggered prematurely by the following circumstances:
-*On a D6 roll of 6 if it moves through any blast markers.
-*If the salvo is fired on by direct fire weapons and any hits are scored.
-*If it hits another Torpedo marker.
-
-If a torpedo Marker is prematurely detonated it is removed from play.</characteristic>
       </characteristics>
     </profile>
     <profile id="3a11-b3b6-d529-ac1f" name="Boarding Torpedoes" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">

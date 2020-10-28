@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="10" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <publications>
-    <publication id="e1d46d07--pubN66101" name="BFG Rulebook 1.5"/>
-    <publication id="e1d46d07--pubN69324" name="2010 Compendium"/>
-    <publication id="e1d46d07--pubN73059" name="BFG Rulebook"/>
-    <publication id="e1d46d07--pubN75403" name="BFG Rulebook - Armada"/>
-    <publication id="e1d46d07--pubN76322" name="2010 FAQ"/>
-    <publication id="e1d46d07--pubN76501" name="BFG Rulebook - Armada + 210 FAQ"/>
-    <publication id="e1d46d07--pubN76944" name="2010 FAQ cost adjust"/>
-  </publications>
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="a2b7-61cb-e479-de43" name="Codex Astartes Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
       <categoryLinks>
@@ -42,7 +33,7 @@
         <categoryLink id="e5d8-ec4c-f977-f31e" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="5401-792b-71dc-1a0d" name="Crusade Fleet List" publicationId="e1d46d07--pubN69324" page="60" hidden="false">
+    <forceEntry id="5401-792b-71dc-1a0d" name="Crusade Fleet List" publicationId="5766-7751-d146-0800" page="60" hidden="false">
       <categoryLinks>
         <categoryLink id="9db4-a059-7447-db44" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="f497-fee2-6909-10aa" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
@@ -193,6 +184,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -249,10 +241,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8da6-1b5b-8907-f669" type="max"/>
               </constraints>
               <profiles>
-                <profile id="685e-4474-ee8a-be52" name="Cobra Class Destroyer" publicationId="e1d46d07--pubN66101" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="685e-4474-ee8a-be52" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
                     <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
@@ -351,10 +343,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="800e-d1eb-f79e-a2fa" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4ab0-7bc8-9b3e-f639" name="Firestorm Class Frigate" publicationId="e1d46d07--pubN66101" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="4ab0-7bc8-9b3e-f639" name="Firestorm Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
                     <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
@@ -509,10 +501,10 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c3f-9d95-0fde-bb13" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9b80-f4a9-7ef2-c0bc" name="Sword Class Frigate" publicationId="e1d46d07--pubN66101" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="9b80-f4a9-7ef2-c0bc" name="Sword Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
                     <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
@@ -649,7 +641,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <categoryLink id="9694-33bf-67a8-7bc9" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5fe3-e711-da99-b71c" name="Additional Shield" publicationId="e1d46d07--pubN69324" page="59" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5fe3-e711-da99-b71c" name="Additional Shield" publicationId="5766-7751-d146-0800" page="59" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -725,21 +717,30 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="bbdd-ae36-1e04-fcd9" name="Prow Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="5d6d-cf53-40f3-881d" name="Strike Cruiser Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawls: 20cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="32e0-3347-0812-1fb4" name="Thunderhawk Annihilator" hidden="false" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f8fc-7df3-a5c6-b5b4" name="Prow Weapon 1" publicationId="e1d46d07--pubN69324" page="59" hidden="false" collective="false" import="true" defaultSelectionEntryId="2db4-55cf-c4d7-3454">
+        <selectionEntryGroup id="f8fc-7df3-a5c6-b5b4" name="Prow Weapon 1" publicationId="5766-7751-d146-0800" page="59" hidden="false" collective="false" import="true" defaultSelectionEntryId="2db4-55cf-c4d7-3454">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0321-d23d-71c9-d600" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5f1-6e60-88ca-6863" type="min"/>
@@ -760,7 +761,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 </modifier>
               </modifiers>
               <profiles>
-                <profile id="7da8-fec6-cabb-81cb" name="Strike Cruiser Prow Lance" publicationId="e1d46d07--pubN69324" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="7da8-fec6-cabb-81cb" name="Strike Cruiser Prow Lance" publicationId="5766-7751-d146-0800" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
@@ -768,6 +769,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2db4-55cf-c4d7-3454" name="Prow Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -779,6 +783,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -807,6 +814,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a60c-620c-7772-7780" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="60f4-a7fc-61b6-3fa7" name="Thunderhawk Annihilator" hidden="false" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="79ce-0dec-a488-c075" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1187,7 +1197,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="450.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1403-b508-c96a-fc84" name="Acheron Class Heavy Cruiser" publicationId="e1d46d07--pubN73059" page="190" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1403-b508-c96a-fc84" name="Acheron Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="190" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="200f-a7e6-3f56-688e" name="Acheron Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1237,7 +1247,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="225.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c87-7440-89ad-a81e" name="Desolator Class Battleship" publicationId="e1d46d07--pubN73059" page="118" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="4c87-7440-89ad-a81e" name="Desolator Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="118" hidden="false" collective="false" import="true" type="unit">
               <profiles>
                 <profile id="a45c-9211-d8bc-8f69" name="Desolator Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1292,7 +1302,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="335.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bc37-c187-f798-d09a" name="Despoiler Class Battleship" publicationId="e1d46d07--pubN73059" page="117" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="bc37-c187-f798-d09a" name="Despoiler Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="117" hidden="false" collective="false" import="true" type="unit">
               <profiles>
                 <profile id="32a0-27c4-243b-3eb8" name="Despoiler Profile" page="" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1661,7 +1671,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="435.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2d5d-5fde-3724-625e" name="Executor Class Grand Cruiser" publicationId="e1d46d07--pubN75403" page="39" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2d5d-5fde-3724-625e" name="Executor Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e458-155f-3a01-b4f0" name="Executor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1711,7 +1721,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="245.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aa3d-5530-8fa4-b578" name="Hades Class Heavy Cruiser" publicationId="e1d46d07--pubN73059" page="121" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="aa3d-5530-8fa4-b578" name="Hades Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="121" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3993-73e3-4d92-f5ad" name="Hades Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1761,7 +1771,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="235.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2b2e-d2b9-9bbb-0537" name="Repulsive Class Grand Cruiser" publicationId="e1d46d07--pubN73059" page="119" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="2b2e-d2b9-9bbb-0537" name="Repulsive Class Grand Cruiser" publicationId="11f0-17d1-e4d2-1018" page="119" hidden="false" collective="false" import="true" type="unit">
               <profiles>
                 <profile id="1a03-0980-6363-26c2" name="Repulsive Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
@@ -1845,7 +1855,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                         </profile>
                       </profiles>
                       <rules>
-                        <rule id="06ea-59b8-249c-ceee" name="Extra Shield" publicationId="e1d46d07--pubN76322" page="23" hidden="false">
+                        <rule id="06ea-59b8-249c-ceee" name="Extra Shield" publicationId="5766-7751-d146-0800" page="23" hidden="false">
                           <description>The Chaos Repulsive Grand Cruiser can be modelled on a large base. If so mounted, it may have a third shield for +15pts. It must be modelled on a large base to have this this refit available for the cost indicated. This is not a normal refit and can be used in one-off games or in addition to any other refits earned normally in the course of a campaign.</description>
                         </rule>
                       </rules>
@@ -1881,7 +1891,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="265.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ce15-c5f5-0b43-9538" name="Retaliator Class Grand Cruiser" publicationId="e1d46d07--pubN76501" page="38" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ce15-c5f5-0b43-9538" name="Retaliator Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="38" hidden="false" collective="false" import="true" type="upgrade">
+              <comment>2010 compendium adjustment</comment>
               <profiles>
                 <profile id="96ec-3121-1e4c-6d74" name="Retaliator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -1973,7 +1984,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="295.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ae70-a2ff-df63-20c0" name="Styx Class Heavy Cruiser" publicationId="e1d46d07--pubN76944" page="23" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ae70-a2ff-df63-20c0" name="Styx Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="23" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="0d88-0624-7f1f-0215" name="Styx Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -2051,7 +2062,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="295.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e9ae-f678-94d9-7681" name="Vengeance Class Grand Cruiser" publicationId="e1d46d07--pubN75403" page="14" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e9ae-f678-94d9-7681" name="Vengeance Class Grand Cruiser" publicationId="1bc8-5968-21c3-0f27" page="14" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3af2-cc38-759f-76fc" name="Vengeance Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -2094,7 +2105,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
               </profiles>
               <rules>
-                <rule id="a30f-00bd-c469-1159" name="Vengeance Class Grand Cruiser" publicationId="e1d46d07--pubN76322" page="23" hidden="false">
+                <rule id="a30f-00bd-c469-1159" name="Vengeance Class Grand Cruiser" publicationId="5766-7751-d146-0800" page="23" hidden="false">
                   <description>All Chaos Vengeance grand cruiser variants listed in Armada on pp.38-39 completely ignore prow critical damage, regardless of the cause. If any critical damage rolled against the table results in a Prow Armament Damaged critical hit, it is assumed the critical damage did not take place, and it does not move up to the next higher critical damage. If the critical damage is caused by the ship taking a hit, the hit itself still counts normally.</description>
                 </rule>
               </rules>
@@ -2106,7 +2117,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="265.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="abf3-e676-af42-123f" name="Loyalist Venerable Battlebarge" publicationId="e1d46d07--pubN69324" page="111" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="abf3-e676-af42-123f" name="Loyalist Venerable Battlebarge" publicationId="5766-7751-d146-0800" page="111" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="8936-9dd3-f133-cb4e" name="Vengeful Spirit Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -2560,7 +2571,7 @@ In addition, a ship led by a Space Marine Captain may carry an Honor Guard for +
     </selectionEntry>
   </selectionEntries>
   <rules>
-    <rule id="e2da-f55c-3a23-eae3" name="Crusade Reserves and Allies" publicationId="e1d46d07--pubN69324" page="60" hidden="true">
+    <rule id="e2da-f55c-3a23-eae3" name="Crusade Reserves and Allies" publicationId="5766-7751-d146-0800" page="60" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2570,7 +2581,7 @@ In addition, a ship led by a Space Marine Captain may carry an Honor Guard for +
       </modifiers>
       <description>A Space Marine Crusade fleet will not take ships from or provide ships to any other fleet list as reserves or allies, including Imperial Navy, Rogue Trader or Adeptus Mechanicus fleet lists.</description>
     </rule>
-    <rule id="216c-540f-08e3-f32c" name="Domination Reverves and Allies" publicationId="e1d46d07--pubN69324" page="61" hidden="false">
+    <rule id="216c-540f-08e3-f32c" name="Domination Reverves and Allies" publicationId="5766-7751-d146-0800" page="61" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2580,16 +2591,53 @@ In addition, a ship led by a Space Marine Captain may carry an Honor Guard for +
       </modifiers>
       <description>A Space Marine Dominion Fleet has close ties with nearby Imperial Navy forces. Contrary to the normal rules, a dominion fleet can take Imperial Navy vessels as normal reserves and reinforcements, including Adeptus Mechanicus and non-xenos Rogue Trader vessels. For purposes of choosing reserves, battle barges count as battleships, and strike cruisers count as cruisers for the selection of any cruiser (battlecruiser, etc.) type. When reserves are taken in this manner, the fleet can have up to twelve cruisers. However, in the course of a campaign, a Dominion Fleet cannot take reinforcements from the Space Marines table listed on p.157 of the Battlefleet Gothic rulebook.</description>
     </rule>
+    <rule id="2cf7-9611-7775-1cbc" name="Space Marine Leadership" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>1-2: Ldr 8, 3-4: Ldr9, 5-6: Ldr10</description>
+    </rule>
+    <rule id="0bb3-b7e8-cca6-4c46" name="Boarding Actions and Hit &amp; Run Attacks" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Space Marines are the supreme fighting force of theImperium, and excel at ship-to-ship  boarding actions, where their skill is paramount and their lack of numbers irrelevant. To represent this, Space Marine ships add +2 to their D6 roll when they fight in a boarding action and +1 when they make any hit and run attack. 
+Enemy hit and run attacks against a Space Marine ship deduct 1 from their dice rolls (and so will fail on a roll of 1 or 2 before modification)</description>
+    </rule>
+    <rule id="6b5c-b5e6-f52c-1295" name="Planetary Assaults and Exterminatus" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Space Marines excel at planetary landings and attacking enemy-held systems. Their entire organisation and the weapons and ships at their disposal are designed solely for the purpose of reclaiming or destroying planets that have fallen into enemy hands. 
+In a Planetary Assault scenario, Space Marine strike cruisers and battle barges earn 2 Assault points for every turn they spend landing troops or bombarding the planet, rather than 1 point as is normal. In an Exterminatus scenario, a battle barge can be used as an Exterminator, unchanged from the following data sheet (battle barges are equipped with virus bombs and cyclotronic warheads as standard). In addition, once a battle barge is in position to exterminate the planet, you need to roll a 3+ to do so rather than a 4+.</description>
+    </rule>
+    <rule id="5dd5-4c10-6f79-338d" name="Bombardment Cannons" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Space Marine battle barges carry a heavyweight battery of bombardment cannons as part of their main armament. Bombardment cannons are huge, turret-mounted linear accelerators, capable of launching a salvo of heavy magma bomb warheads. As their name implies, bombardment cannons are used primarily for pounding planetary defences into rubble and giving devastating orbital support to Space Marine landing forces. Bombardment cannons are equally devastating in ship-to-ship combat, capable of blasting apart any capital ship in just a few salvoes.
+Bombardment cannons fire in the same way as weapon batteries with two exceptions: 
+I) Bombardment cannons always hit on a 4 or more, regardless of the target’s armour (even vs ordnance).
+II) Bombardment cannons inflict critical hits on a roll of 4 or more, rather than just on a roll of 6</description>
+    </rule>
+    <rule id="db2d-1719-5c08-ef6d" name="Ordinance" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Rather than the bombers and fighters employed by Imperial Naval forces, the Adeptus Astartes make exclusive use of the Thunderhawk gunship. They also make use of other types of ordnance not widely used in the Imperial Fleet.
+Space Marine vessels may fire boarding torpedoes instead of ordinary torpedoes, as detailed in the Ordnance rules in Battlefleet Gothic. Remember that as these are Space Marines, they will have a +1 bonus to their hit and run attacks if they hit an enemy ship.
+Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can
+stay in place and attempt to remove their enemy again.
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated  exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines).  using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play</description>
+    </rule>
+    <rule id="d9fb-e3a6-1242-d7db" name="Drop Pods" publicationId="5766-7751-d146-0800" page="54" hidden="false">
+      <description>All Space Marine capital ships are equipped with drop pods. These add nothing to their profile and are not treated as ordnance in any respect. Drop pods enable Space Marine capital ships to quickly deploy Space Marines to the surface and impart +2 assault points for each capital ship during a planetary assault instead of +1.</description>
+    </rule>
   </rules>
   <sharedRules>
-    <rule id="0e4a-30d9-1918-f7ac" name="Thunderhawk Annihilator" hidden="false">
-      <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and follow all special rules for Thunderhawks described on p.21 of Armada.
+    <rule id="0e4a-30d9-1918-f7ac" name="Thunderhawk Annihilator" publicationId="5766-7751-d146-0800" page="54" hidden="false">
+      <comment>Only for crusading chapters because they get no allies</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Thunderhawk Annihilators combine the abilities of bombers and fighters, and they move like any other attack craft with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy marker exactly the same way fighters would. However, they are extremely resilient and once per ordinace phase can make a 4+ save. 
 When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, they attack it like bombers as described for bombers on p.30 of the Rulebook, even if they have used their resilience to remain in play. Once they complete their attack, they are removed normally. Thunderhawk Annihilators cannot be used as assault boats.</description>
     </rule>
     <rule id="2ebb-7250-08df-cdd1" name="Honour Guard" publicationId="5766-7751-d146-0800" page="54" hidden="false">
       <description>Most Chapters maintain special bodies of honored Space Marines with extraordinary experience, given over to form the personal retinue of company captains, great heroes within the Chapter or even the Chapter Master himself. Once per turn you may use the Honor Guard, if your fleet list includes them. All the normal rules for teleport attacks apply, except that they may be used in addition to a normal teleport attack that turn. The player may roll two dice and choose which one to use as the result, including the normal +1 bonus for being Space Marines.</description>
     </rule>
-    <rule id="067e-eced-a1c9-78a6" name="Terminator Boarding Party" publicationId="e1d46d07--pubN69324" page="54" hidden="false">
+    <rule id="067e-eced-a1c9-78a6" name="Terminator Boarding Party" publicationId="5766-7751-d146-0800" page="54" hidden="false">
+      <comment>changed from once a game to once a turn in 2010 compendium</comment>
       <description>Taken from the elite First Company and wearing the heaviest armor known to man, Terminators are the greatest ship-to-ship fighters in the galaxy. Once per turn a vessel equipped with Terminator boarding parties may use them when conducting a hit and run teleport attack. They roll two dice for its hit and run attack and apply both results, including the normal +1 bonus for being Space Marines. Terminators may be used in addition to a normal teleport attack that turn.</description>
     </rule>
   </sharedRules>
