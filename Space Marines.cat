@@ -184,6 +184,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -724,12 +725,15 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <profiles>
                 <profile id="5d6d-cf53-40f3-881d" name="Strike Cruiser Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawls: 20cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="32e0-3347-0812-1fb4" name="Thunderhawk Annihilator" hidden="false" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -810,6 +814,9 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a60c-620c-7772-7780" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="60f4-a7fc-61b6-3fa7" name="Thunderhawk Annihilator" hidden="false" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="79ce-0dec-a488-c075" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -2619,6 +2626,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="notInstanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
