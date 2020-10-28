@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="a2b7-61cb-e479-de43" name="Codex Astartes Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
       <categoryLinks>
@@ -2590,6 +2590,23 @@ In addition, a ship led by a Space Marine Captain may carry an Honor Guard for +
     <rule id="0bb3-b7e8-cca6-4c46" name="Boarding Actions and Hit &amp; Run Attacks" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
       <description>Space Marines are the supreme fighting force of theImperium, and excel at ship-to-ship  boarding actions, where their skill is paramount and their lack of numbers irrelevant. To represent this, Space Marine ships add +2 to their D6 roll when they fight in a boarding action and +1 when they make any hit and run attack. 
 Enemy hit and run attacks against a Space Marine ship deduct 1 from their dice rolls (and so will fail on a roll of 1 or 2 before modification)</description>
+    </rule>
+    <rule id="6b5c-b5e6-f52c-1295" name="Planetary Assaults and Exterminatus" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Space Marines excel at planetary landings and attacking enemy-held systems. Their entire organisation and the weapons and ships at their disposal are designed solely for the purpose of reclaiming or destroying planets that have fallen into enemy hands. 
+In a Planetary Assault scenario, Space Marine strike cruisers and battle barges earn 2 Assault points for every turn they spend landing troops or bombarding the planet, rather than 1 point as is normal. In an Exterminatus scenario, a battle barge can be used as an Exterminator, unchanged from the following data sheet (battle barges are equipped with virus bombs and cyclotronic warheads as standard). In addition, once a battle barge is in position to exterminate the planet, you need to roll a 3+ to do so rather than a 4+.</description>
+    </rule>
+    <rule id="5dd5-4c10-6f79-338d" name="Bombardment Cannons" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Space Marine battle barges carry a heavyweight battery of bombardment cannons as part of their main armament. Bombardment cannons are huge, turret-mounted linear accelerators, capable of launching a salvo of heavy magma bomb warheads. As their name implies, bombardment cannons are used primarily for pounding planetary defences into rubble and giving devastating orbital support to Space Marine landing forces. Bombardment cannons are equally devastating in ship-to-ship combat, capable of blasting apart any capital ship in just a few salvoes.
+Bombardment cannons fire in the same way as weapon batteries with two exceptions: 
+I) Bombardment cannons always hit on a 4 or more, regardless of the target’s armour (even vs ordnance).
+II) Bombardment cannons inflict critical hits on a roll of 4 or more, rather than just on a roll of 6</description>
+    </rule>
+    <rule id="db2d-1719-5c08-ef6d" name="Ordinance" publicationId="1bc8-5968-21c3-0f27" page="21" hidden="false">
+      <description>Rather than the bombers and fighters employed by Imperial Naval forces, the Adeptus Astartes make exclusive use of the Thunderhawk gunship. They also make use of other types of ordnance not widely used in the Imperial Fleet.
+Space Marine vessels may fire boarding torpedoes instead of ordinary torpedoes, as detailed in the Ordnance rules in Battlefleet Gothic. Remember that as these are Space Marines, they will have a +1 bonus to their hit and run attacks if they hit an enemy ship.
+Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can
+stay in place and attempt to remove their enemy again.
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated  exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines).  using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play</description>
     </rule>
   </rules>
   <sharedRules>
