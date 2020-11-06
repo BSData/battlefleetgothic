@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="39" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="40" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -2739,6 +2739,61 @@ no default</comment>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="80dd-a34e-9d3c-9a03" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa90-4782-ecab-686c">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b59-fa0d-4f0c-ea58" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="247b-4d6b-ef38-72db" name="6. Vortex Torpedoes (single use)" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="48ff-086d-dfcd-220b" name="Vortex Torpedoes" hidden="false" targetId="372f-f28a-8277-c8f1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7643-01f9-14a3-697f" name="5. Melta Torpedoes (single use)" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="5d8d-e830-6f2b-f971" name="Melta Torpedoes" hidden="false" targetId="80da-64d9-6b0a-4d5c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aa90-4782-ecab-686c" name="1. Short Burn Torpedoes" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="666e-f7cc-3bf0-b6fc" name="Short Burn Torpedoes" hidden="false" targetId="4330-e219-dc34-076f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0671-4442-a6cc-ea58" name="2. Guided Torpedoes" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="f1dc-3972-5351-dc22" name="Guided Torpedoes" hidden="false" targetId="48de-7ab7-0fbb-2304" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ffb3-7640-8417-0fa4" name="3.Seeking Torpedoes" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="c467-876e-9e9d-cf49" name="Seeking Torpedoes" hidden="false" targetId="f6f2-2698-196c-a550" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3311-7cfd-9856-dc65" name="4. Barrage Bombs" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="00f6-4ab3-9209-3778" name="Barrage Bombs" hidden="false" targetId="5e9d-b53b-344b-5d2b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b1a1-aead-ea5a-d8d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
@@ -2853,6 +2908,36 @@ Bombardment cannons inflict critical hits on a roll of 4 or more, rather than ju
         <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323"/>
         <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323"/>
         <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+      </characteristics>
+    </profile>
+    <profile id="4330-e219-dc34-076f" name="Short Burn Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Short burn torpedoes have an increased speed of 40cm. However, to represent the chance of them burning out, roll a D6 for each salvo of short burn torpedoes after they have moved and made any attacks – on a roll of 6 the torpedoes run out of fuel and are replaced with a blast marker.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5e9d-b53b-344b-5d2b" name="Barrage Bombs" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Barrage bombs can be launched while a ship is in low orbit, where they will move just like ordinary torpedoes in deep space (they are unaffected by the gravitic pull of the planet). Barrage bombs may also be launched in space, like ordinary torpedoes. Each salvo of  arrage bombs which strikes a planet during a planetary assault scenario earns 1 assault point if it is strength 6 or less, 2 assault points if it is strength 7 or greater. Barrage bombs which attack ships do not ignore shields like other ordnance; instead they knock down shields and place blast markers for hits just like a direct fire attack (which can be pretty useful in its own right) </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f6f2-2698-196c-a550" name="Seeking Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A seeking torpedo salvo will make a turn of up to 45° at the start of the  ordnance phase, so that it is pointing towards the nearest enemy ship. If several enemy ships are an equal distance away, the seeking torpedoes will turn to attack the largest enemy ship. Seeking torpedoes which move through blast markers will detonate on a D6 roll of 5 or 6, instead of a 6 as is the case with ordinary torpedoes. Unlike ordinary torpedoes, the superior logic engines on board seeking torpedoes mean they will not attack friendly ships that they move into contact with </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="48de-7ab7-0fbb-2304" name="Guided Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Guided torpedoes can make a turn of up to 45° at the beginning of the ordnance phase, if the ship which launched them passes a Leadership test. If the Leadership test is failed, one enemy ship can attempt to give the torpedo salvo false instructions by passing a Leadership test. If the enemy ship is successful, the enemy player is allowed to turn the torpedoes instead!</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="80da-64d9-6b0a-4d5c" name="Melta Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Hits from melta torpedoes inflict no damage points, instead each hit causes an automatic Fire critical. If a ship which is carrying unused melta torpedoes suffers a critical hit to its prow (or wherever the torpedoes are launched from) it suffers an extra D3 Fire criticals as the torpedoes detonate!</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="372f-f28a-8277-c8f1" name="Vortex Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="157" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Hits inflicted by vortex torpedoes will automatically cause critical damage. If a ship which is carrying unused vortex torpedoes suffers a critical hit to its prow (or wherever the torpedoes are launched from) it suffers an extra D3 points of damage and an automatic critical hit as the torpedoes detonate!</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
