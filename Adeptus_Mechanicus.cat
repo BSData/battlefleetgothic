@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="10" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="11" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -95,23 +95,11 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="Mechanicum Upgrades###DATA###" name="Mechanicum Upgrades" page="0" hidden="false">
-          <description>Gifts of the Omnissiah:
-Repulsor Shields
-Augmented Weapon Relays
-Can take no other refits*
-
-Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard Launch Bays</description>
-        </rule>
-        <rule id="143f-3ab5-9c3e-4f19" name="Repulsor Shielding" hidden="false">
-          <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
-        </rule>
-        <rule id="8fe4-dd2d-9071-7eea" name="Augmented Weapon Relays" hidden="false">
-          <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
-        </rule>
-        <rule id="eae4-c8ab-b976-73cb" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-      </rules>
+      <infoLinks>
+        <infoLink id="da14-1ad9-eb4d-b958" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
+        <infoLink id="a1ed-9400-7d25-4708" name="Augmented Weapon Relays" hidden="false" targetId="6a3a-e1c7-e884-2341" type="profile"/>
+        <infoLink id="a0e8-876e-5f49-6e5d" name="Repulsor Shielding" hidden="false" targetId="a9b0-f397-996b-e6fa" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="92f9cee9-cf3f-4e7c-b51f-3a152e158e48-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -127,7 +115,8 @@ Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7213-59a4-3c69-0de9" name="Ark Mechanicus Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="7213-59a4-3c69-0de9" name="Ark Mechanicus Launch Bays" publicationId="5766-7751-d146-0800" page="66" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <comment>this appears correct. not supposed to be port and starbord launch bays just Str 2 launch bays. </comment>
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fury Interceptors: 30cm Starhawk Bombers: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
@@ -135,20 +124,10 @@ Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard La
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="62d4-7978-1c49-984f" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-                  <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-                </rule>
-                <rule id="f0bb-bed1-7991-349b" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
-                  <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="5bb8-0062-65c5-1503" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+                <infoLink id="83d1-9af6-aa99-42f6" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+              </infoLinks>
               <selectionEntries>
                 <selectionEntry id="a400d20f-25b7-4475-a3fd-88391c11e0ea" name="Torpedo Bombers" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -545,20 +524,12 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <rule id="9601-5d6b-ae2c-0da9" name="Mechanicus Emperor Class Battleship" hidden="false">
           <description>The Emperor class dispenses with the normal armoured prow and instead carries a mass of sensor probes and forward turrets, giving it +1 to its Leadership rating.. This profile for the Emperor Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
         </rule>
-        <rule id="3e8b-0612-90c9-211e" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-        <rule id="036a-321d-83c1-163f" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="af83-b84e-cfc0-e6ed" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="6203-8622-11fb-6bf4" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+        <infoLink id="ff59-e85c-bf3a-db94" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+        <infoLink id="be17-bcbe-01fd-37e1" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="43962396-985c-422f-b087-fe7dd3631214-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1051,6 +1022,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <description>If desired the Prow Torpedoes can be replaced by a Nova Cannon at an additional cost of +20 pts or refitted torpedoes from p.156 of ARMADA can be used for an additional cost of +20pts. This profile for the Gothic class cruiser already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="864d-34a8-8cca-649d" name="Gifts of the Omnissiah (unused)" hidden="false" targetId="a3e2-1b93-1d65-1037" type="infoGroup"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="73bd-fc01-8859-60b8" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
@@ -1121,6 +1095,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d553-e5c9-e81a-68b3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="d506-80c3-44eb-1dea" name="Gifts of the Omnissiah" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
@@ -2269,28 +2244,8 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
   </entryLinks>
   <rules>
     <rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" page="0" hidden="false">
-      <description>Leadership
-1: Ld 7
-2-3: Ld 8
-4-6: Ld 9
-
-Attack Rating 
-The AM have an attack rating of 2.
-
-Quest for Knowledge
+      <description>Quest for Knowledge
 AM capital ships get 1 more repair dice than normal. A fleet that includes AM ships must use an AM sub-plot (see AM pdf for details), in addition to any other sub-plots that would be normally used.
-
-Gifts of the Omnissiah
-All AM capital ships gain +1 turret and get a randomly chosen Mechanicus Gift (see AM pdf for details). If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly.
-
-Civillian Crew
-Any ship involved in a boarding action against an AM vessel or conducting a Hit &amp; Run attack against an AM vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, re Tyranids). AM ships don&apos;t use a-boats or boarding torpedoes.
-
-Exclusive Tech
-AM vessels may take a leadership check in order to fire upon their own hulked vessels.
-
-Fleet Commander
-In an AM fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the one ship gets the same gift twice it may elect to keep this arrangement (presumably the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.
 
 Reserve &amp; Allies
 AM vessels may be used as reserves in SM/IN fleets. IN ships may be used as reserves in an AM fleet. IN CGs and CBs included in an AM fleet as reserves use up cruiser slots. Xenos vessels that can ally with the IN, such as Rogue Traders and Demiurg can likewise ally with the AM.
@@ -2303,6 +2258,29 @@ Note: the Omnissiah&apos;s Victory may not be taken as a reserve.
 Campaigns
 AM fleets get +1 repair point for every 10 points, or part, of renown of the commander. AM get a +1 modifier when rolling to earn a refit, but a -1 modifier when rolling to appeal for reinforcements or Space Marines. Space Marines may be used as reinforcements only if the AM fleet contains no Xenos vessels.
 Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don&apos;t follow the Fleet Commander from one ship to another (though they can still add the amount of refits they&apos;ve gained to their new flagship, rolled randomly).</description>
+    </rule>
+    <rule id="d445-77c8-21fa-277c" name="Gifts of the Omnissiah" publicationId="5766-7751-d146-0800" page="64" hidden="false">
+      <comment></comment>
+      <description>All Mechanicus capital ships gain +1 turret (included in profile) and must have a randomly chosen Mechanicus Gift from the table in the ship profile. </description>
+    </rule>
+    <rule id="7027-7975-aa98-62c7" name="Leadership" publicationId="5766-7751-d146-0800" page="64" hidden="false">
+      <description>To determine base leadership for a given vessel, roll a D6 against the following table:
+1: Ld 7
+2-3: Ld 8
+4-6: Ld 9
+If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly. (this does not mean you get an extra one!). This option cannot be used if the vessel embarks an Archmagos Veneratus</description>
+    </rule>
+    <rule id="1dba-23e9-cdb9-a6cf" name="Hit and Run Attacks and Boarding Actions" publicationId="5766-7751-d146-0800" page="64" hidden="false">
+      <description>Any ship involved in a boarding action against a Mechanicus vessel or conducting a Hit &amp; Run attack against a Mechanicus vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, ie Tyranids). Mechanicus ships don&apos;t use assault boats or boarding torpedoes.</description>
+    </rule>
+    <rule id="fb33-5e14-1e04-859f" name="Attack Rating " publicationId="5766-7751-d146-0800" page="64" hidden="false">
+      <description>The Adeptus Mechanicus have an attack rating of 2.</description>
+    </rule>
+    <rule id="6be4-410f-aaa5-8c4e" name="Sacred Tech" hidden="false">
+      <description>Every attempt will be made to recover a Mechanicus vessel that is lost. However, they will not allow their holy technology and precious knowledge fall into enemy hands. Unlike other fleets, Mechanicus vessels can take a leadership check to fire upon their own vessels that have been hulked to deny them to the enemy. This rule only applies to Mechanicus vessels shooting at Mechanicus drifting hulks, and not Imperial Navy, reserve or allied vessels in the fleet. </description>
+    </rule>
+    <rule id="f103-27d0-0b60-ba70" name="Fleet Commander" hidden="false">
+      <description>In an Adeptus Mechanicus fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the Magos gets the same gift as the ship they may elect to keep this arrangement (the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2618,89 +2596,98 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="5e54-af60-5851-fa90" name="Ordnance" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c7c8-6fbb-e427-efa5" name="Gifts of the Omnissiah (D6)" publicationId="5766-7751-d146-0800" page="64" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e75-d199-f283-21db" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb1-93ff-11d7-232c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d187-cc4c-8912-a746" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="6137-54a8-a799-d802" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="b7fe-b1d2-1039-2bb3" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
-              <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
-            </rule>
-            <rule id="2847-d521-7d7b-dc3c" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
-              <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-            </rule>
-            <rule id="13ef-8c8d-047e-eaf0" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-              <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-            </rule>
-            <rule id="6b66-81fd-f641-eacb" name="Assault Boat&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-              <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
-
-Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
+        <selectionEntry id="6933-8c90-9936-eab4" name="6. Augmented Weapon Relays" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="dccd-08ac-f265-3346" name="Augmented Weapon Relays" hidden="false" targetId="6a3a-e1c7-e884-2341" type="profile"/>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry id="fa64-2c74-4b72-f590" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="18f6-5207-7fdb-6458" name="Thunderhawk Gunship" hidden="false">
-              <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
-
-Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
+        <selectionEntry id="b1a1-1a2f-f52d-0307" name="3. Repulsor Shielding" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="af1f-e194-ef3e-ea7a" name="Repulsor Shielding" hidden="false" targetId="a9b0-f397-996b-e6fa" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="8801-235d-e3d5-3f4c" name="1. Emergency Energy Reserves" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="dc37-ceb3-a7c1-0f16" name="Emergency Energy Reserves" hidden="false" targetId="65b7-dba4-23a1-8c1c" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="6f78-ac62-9bbc-2e4a" name="2. Advanced Engines" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="f86f-badc-d02d-befc" name="Advanced Engines" hidden="false" targetId="793b-17d7-8cc4-7884" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="d6bb-02d5-c88a-e20e" name="4. Fleet Defense Turrets" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="9de0-7dc6-a185-eeb2" name="Fleet Defense Turrets" hidden="false" targetId="2a5c-1d0e-e592-1fb8" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="273e-4b2f-3e45-4050" name="5. Gyro-Stabilized Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="fcaf-f51d-0993-4f25" name="Gyro-Stabilized Targeting Matrix" hidden="false" targetId="e513-9cdc-0126-8456" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <sharedRules>
-    <rule id="7e43-261d-2c02-3b51" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-    </rule>
-    <rule id="831f-628b-ea8f-5836" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
-      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-    </rule>
-    <rule id="cccf-8a59-b209-6dcb" name="Improved Thrusters" hidden="false">
-      <description>Moves +1D6 on All Ahead Full special orders.</description>
-    </rule>
-    <rule id="156d-b30d-ae22-cd2a" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-    <rule id="6abc-93dd-8e19-8136" name="Emergency Energy Reserves" hidden="false">
-      <description>When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</description>
-    </rule>
-    <rule id="6c13-fda8-048f-826c" name="Repulsor Shielding" hidden="false">
-      <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
-    </rule>
-    <rule id="c7c2-23a0-1dac-392a" name="Fleet Defense Turrets" hidden="false">
-      <description>Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</description>
-    </rule>
-    <rule id="6d9f-bc87-c0a6-87f5" name="Gyro-stabilized Targeting Matrix" hidden="false">
-      <description>Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</description>
-    </rule>
-    <rule id="73d3-9672-b28b-87d2" name="Augmented Weapon Relays" hidden="false">
-      <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
-    </rule>
-  </sharedRules>
+  <sharedProfiles>
+    <profile id="6a3a-e1c7-e884-2341" name="Augmented Weapon Relays" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="65b7-dba4-23a1-8c1c" name="Emergency Energy Reserves" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2a5c-1d0e-e592-1fb8" name="Fleet Defense Turrets" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e513-9cdc-0126-8456" name="Gyro-Stabilized Targeting Matrix" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="793b-17d7-8cc4-7884" name="Advanced Engines" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Moves +1D6 on All Ahead Full special orders.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9b0-f397-996b-e6fa" name="Repulsor Shielding" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="a3e2-1b93-1d65-1037" name="Gifts of the Omnissiah (unused)" publicationId="5766-7751-d146-0800" page="64" hidden="true">
+      <rules>
+        <rule id="838f-025a-51d7-f57a" name="Advanced Engines" hidden="false">
+          <description>Moves +1D6 on All Ahead Full special orders.</description>
+        </rule>
+        <rule id="5280-d398-8cc7-84e3" name="Repulsor Shielding" hidden="false">
+          <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+        </rule>
+        <rule id="00a0-e61e-c6a5-d774" name="Gyro-stabilized Targeting Matrix" hidden="false">
+          <description>Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</description>
+        </rule>
+        <rule id="0d8e-58d9-20ed-00ce" name="Fleet Defense Turrets" hidden="false">
+          <description>Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</description>
+        </rule>
+        <rule id="3777-d941-cbe7-aa35" name="Emergency Energy Reserves" hidden="false">
+          <description>When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</description>
+        </rule>
+        <rule id="eb7b-2d14-bd94-39ef" name="Augmented Weapon Relays" hidden="false">
+          <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
+        </rule>
+      </rules>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
