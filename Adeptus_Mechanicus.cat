@@ -391,7 +391,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="1033-9f22-7a29-bf35" name="Refit Torpedoes" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                    <entryLink id="1fe7-3628-dd17-c095" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
@@ -671,6 +671,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="2e70-d903-d8e0-4883" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -839,6 +842,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f31f-dd06-6d9d-66ff" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="fd83-2b68-2638-896b" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -1089,6 +1095,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a37a-de26-77b9-49ad" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="4200-0dd2-0e90-c10a" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -1205,6 +1214,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab73-bf67-3498-8820" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="34c8-b329-96a1-fae5" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -1588,6 +1600,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="8605-4669-65ec-5f69" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
@@ -2234,6 +2249,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51e8-3816-cf3f-4ae9" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="4ac3-6c72-1549-2ac2" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -2312,8 +2330,8 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <profiles>
         <profile id="33eb-eff5-3e48-c79a" name="Cobra Class Destroyer" publicationId="ffc39854--pubN70386" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
             <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
