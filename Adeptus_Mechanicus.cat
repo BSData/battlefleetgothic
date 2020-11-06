@@ -280,6 +280,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b91b-a2d9-da07-6b20" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="9073-4d88-478f-4110" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -459,6 +460,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bd82-d0dd-768c-47f8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="61e3-e9fd-d418-94ba" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="255.0"/>
@@ -554,6 +556,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntries>
       <entryLinks>
         <entryLink id="00a4-79bb-899e-6fd3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="214f-1c7e-be7a-9339" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
@@ -749,6 +752,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ed34-a04a-488c-107c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="f3ea-ad93-d44a-87c4" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
@@ -932,6 +936,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d800-8e99-5c48-8c61" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="4ec8-3ac9-38e6-35f4" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
@@ -1267,6 +1272,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1ab9-fac6-34af-e733" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="aa37-8955-0589-ae82" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
@@ -1284,6 +1290,13 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="03b3-cbf1-dc10-934b" name="Blessing of Omnissiah" publicationId="5766-7751-d146-0800" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A Mechanicus Archmagos can elect up to any one desired item from the Adeptus Mechanicus refit table (Gift) for their own ship as part of their point cost, in addition to (and before) the refit the ship rolls for normally. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="59cd178d-0101-4822-95e0-5c2a2f05f281-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1358,6 +1371,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4ff7-92d3-6654-4f22" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1466,6 +1482,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntries>
       <entryLinks>
         <entryLink id="e615-4d33-6ab6-a75a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="cc7c-4c62-2600-116c" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="370.0"/>
@@ -1582,6 +1599,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f765-bf3d-9d4b-e297" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="d818-d870-5556-b3f6" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="380.0"/>
@@ -2227,6 +2245,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2332-3e73-a810-4ee6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="571e-d0c0-0be7-7dc7" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220.0"/>
