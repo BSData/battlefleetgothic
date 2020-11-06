@@ -524,12 +524,12 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Right/Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="dd34-145f-2855-f364" name="Mechanicus Emperor Battleship" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Emperor class dispenses with the normal armoured prow and instead carries a mass of sensor probes and forward turrets, giving it +1 to its Leadership rating.. This profile for the Emperor Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="9601-5d6b-ae2c-0da9" name="Mechanicus Emperor Class Battleship" hidden="false">
-          <description>The Emperor class dispenses with the normal armoured prow and instead carries a mass of sensor probes and forward turrets, giving it +1 to its Leadership rating.. This profile for the Emperor Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="6203-8622-11fb-6bf4" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
         <infoLink id="ff59-e85c-bf3a-db94" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
@@ -1462,25 +1462,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
+        <profile id="2ab6-dfc7-7a65-3c10" name="Mechanicus Oberon Battleship" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Like the Emperor class, the Oberon dispenses with the normal armoured prow and instead carries a mass of sensor probes that it uses to direct its attack craft to the enemy. This also adds +1 to its Leadership rating. This profile for the Oberon Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="6299-6814-56ca-8a35" name="Oberon Class Battleship" hidden="false">
-          <description>Like the Emperor class, the Oberon dispenses with the normal armoured prow and instead carries a mass of sensor probes that it uses to direct its attack craft to the enemy. This also adds +1 to its Leadership rating. This profile for the Oberon Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
-        </rule>
-        <rule id="7aac-ac29-3891-7809" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
-        <rule id="4a96-e25f-f8fe-08be" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
-          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
-
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
-
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
-        </rule>
-        <rule id="af65-f4e6-6e25-808e" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
-          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
-
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="3cde-76c7-570a-19a2" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
+        <infoLink id="9345-4d12-2883-d5f5" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
+        <infoLink id="56e3-182c-3cc2-6b81" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a9328ba6-afa6-4410-896a-ca8684ac98cf-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
