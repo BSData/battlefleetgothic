@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="11" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="11" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -390,6 +390,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="1033-9f22-7a29-bf35" name="Refit Torpedoes" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -2279,7 +2282,6 @@ AM fleets get +1 repair point for every 10 points, or part, of renown of the com
 Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don&apos;t follow the Fleet Commander from one ship to another (though they can still add the amount of refits they&apos;ve gained to their new flagship, rolled randomly).</description>
     </rule>
     <rule id="d445-77c8-21fa-277c" name="Gifts of the Omnissiah" publicationId="5766-7751-d146-0800" page="64" hidden="false">
-      <comment></comment>
       <description>All Mechanicus capital ships gain +1 turret (included in profile) and must have a randomly chosen Mechanicus Gift from the table in the ship profile. </description>
     </rule>
     <rule id="7027-7975-aa98-62c7" name="Leadership" publicationId="5766-7751-d146-0800" page="64" hidden="false">
@@ -2624,31 +2626,49 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
           <infoLinks>
             <infoLink id="dccd-08ac-f265-3346" name="Augmented Weapon Relays" hidden="false" targetId="6a3a-e1c7-e884-2341" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b1a1-1a2f-f52d-0307" name="3. Repulsor Shielding" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="af1f-e194-ef3e-ea7a" name="Repulsor Shielding" hidden="false" targetId="a9b0-f397-996b-e6fa" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8801-235d-e3d5-3f4c" name="1. Emergency Energy Reserves" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="dc37-ceb3-a7c1-0f16" name="Emergency Energy Reserves" hidden="false" targetId="65b7-dba4-23a1-8c1c" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6f78-ac62-9bbc-2e4a" name="2. Advanced Engines" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="f86f-badc-d02d-befc" name="Advanced Engines" hidden="false" targetId="793b-17d7-8cc4-7884" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d6bb-02d5-c88a-e20e" name="4. Fleet Defense Turrets" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="9de0-7dc6-a185-eeb2" name="Fleet Defense Turrets" hidden="false" targetId="2a5c-1d0e-e592-1fb8" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="273e-4b2f-3e45-4050" name="5. Gyro-Stabilized Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="fcaf-f51d-0993-4f25" name="Gyro-Stabilized Targeting Matrix" hidden="false" targetId="e513-9cdc-0126-8456" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
