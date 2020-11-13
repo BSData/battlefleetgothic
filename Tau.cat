@@ -877,60 +877,6 @@ Barracudas: 25cm</characteristic>
         <cost name="pts" typeId="points" value="110.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9f37ad1-f234-4e93-8cae-91fcb01a71cb" name="Defender (Kir&apos;qath) Class Starship" publicationId="1bc8-5968-21c3-0f27" page="104" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="4a45-a1e4-8bad-ef1b" name="Defender (Kir&apos;qath) Class Starship" publicationId="1bc8-5968-21c3-0f27" page="104" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b158-f15a-d28e-18b5" name="Kir&apos;qath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f374-8aa0-5672-2c7a" name="Kir&apos;qath Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20-40cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="6510-d1d4-34f6-13b5" name="Tau Ordnance" hidden="false" targetId="6297-13c5-6e97-451f" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c9f37ad1-f234-4e93-8cae-91fcb01a71cb-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0816-7150-65f1-97aa" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="72ea18aa-9387-4130-b6f9-147d6b4bd3da" name="Kroot Warsphere" publicationId="1bc8-5968-21c3-0f27" page="108" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1424,6 +1370,11 @@ Barracudas: 25cm</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="9cc5-8ba5-378a-9dc8" name="Custodian Tracking System" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Tracking System range is 20cm for the Custodian</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="9da8-ae7a-61ad-f8f1" name="Prow Deflector" page="0" hidden="false">
@@ -1432,11 +1383,7 @@ Barracudas: 25cm</characteristic>
       </rules>
       <infoLinks>
         <infoLink id="1e1d-ca9c-6627-24b4" name="Tau Ordnance" hidden="false" targetId="6297-13c5-6e97-451f" type="rule"/>
-        <infoLink id="013a-d23f-de43-c625" name="Tracking Systems" hidden="false" targetId="9cc2-4d7c-452d-e206" type="profile">
-          <modifiers>
-            <modifier type="append" field="description" value="Custodian battleship Tracking system have 20cm range instead"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="013a-d23f-de43-c625" name="Tracking Systems" hidden="true" targetId="9cc2-4d7c-452d-e206" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ea813263-ef6f-4327-a611-53f736ce0a81-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
@@ -1819,6 +1766,8 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
             <entryLink id="bb63-8904-672f-bb2a" name="Orca (Kass&apos;l) Class Gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry"/>
             <entryLink id="2079-d919-88dc-aa39" name="Warden (Kir&apos;la) Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry"/>
             <entryLink id="4691-bb1d-bfe4-bf4e" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry"/>
+            <entryLink id="0005-58b8-375e-5baa" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry"/>
+            <entryLink id="dfa7-a3c1-6b45-6f9a" name="Nicassar Dhow" hidden="false" collective="false" import="true" targetId="5b0e-74f3-9fec-c969" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1875,6 +1824,8 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="7fcb-8322-cb7a-b784" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry"/>
+    <entryLink id="fb09-27e9-6ac0-9152" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7287-5f52-246b-c649" name="Orca (Kass&apos;l) Class Gunship" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="false" collective="false" import="true" type="unit">
@@ -2133,6 +2084,60 @@ You may only take 1 Messenger Starship per 500 points in the fleet. </characteri
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ac3-2d49-f7e0-a848" name="Defender (Kir&apos;qath) Class Starship" publicationId="1bc8-5968-21c3-0f27" page="104" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4e04-cfa8-d424-190d" name="Defender (Kir&apos;qath) Class Starship" publicationId="1bc8-5968-21c3-0f27" page="104" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4fa-716d-fcf5-cf36" name="Kir&apos;qath Prow Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b58-1eed-8ca5-6271" name="Kir&apos;qath Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20-40cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5787-a6aa-96ff-cf6c" name="Tau Ordnance" hidden="false" targetId="6297-13c5-6e97-451f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f61e-75a0-cf5b-1181" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1f38-584b-8ef9-896f" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
