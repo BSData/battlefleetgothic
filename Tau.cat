@@ -4,7 +4,7 @@
     <forceEntry id="0c34-df2d-6332-eb03" name="Tau Kor&apos;Vattra Fleet List (Armada)" publicationId="1bc8-5968-21c3-0f27" page="112" hidden="false">
       <categoryLinks>
         <categoryLink id="8ce4-2813-fc5f-77e0" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="fd19-7928-459a-65d0" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+        <categoryLink id="fd19-7928-459a-65d0" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
           <modifiers>
             <modifier type="decrement" field="bb7d-774d-2d7b-e31a" value="1.0">
               <conditions>
@@ -33,7 +33,7 @@
     <forceEntry id="2139-67f5-6911-86b4" name="Tau Kor&apos;Or&apos;Vesh: Commerce Protection Fleet (Compendium)" publicationId="5766-7751-d146-0800" page="169" hidden="false">
       <categoryLinks>
         <categoryLink id="24e0-cd76-dc4c-aa62" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="a734-1631-0c4c-2325" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+        <categoryLink id="a734-1631-0c4c-2325" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
           <modifiers>
             <modifier type="decrement" field="996f-dee9-0201-0fd4" value="1.0">
               <conditions>
@@ -931,59 +931,6 @@ Barracudas: 25cm</characteristic>
         <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01b2067d-4a01-44a8-b5ba-e4bc85460610" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="4a24-180c-6052-1b16" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e994-761c-0bf6-98e6" name="Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Missles: 20-40cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a3f0-665f-7a36-1b8a" name="Prow Railgun battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="5b31-66bc-59fd-603f" name="Tau Ordnance" hidden="false" targetId="6297-13c5-6e97-451f" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="01b2067d-4a01-44a8-b5ba-e4bc85460610-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="5f16-eb86-ba07-62a7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="72ea18aa-9387-4130-b6f9-147d6b4bd3da" name="Kroot Warsphere" publicationId="1bc8-5968-21c3-0f27" page="108" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1375,62 +1322,6 @@ Barracudas: 25cm</characteristic>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cca97652-6ba8-446a-8949-5fbd3dff1c41" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="a665-70be-3a87-aedb" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">180°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4e10-9b0d-0fb8-fa72" name="Nicassar Dhow Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a2ae-4941-be84-c655" name="Nicassar Dhow Starboard Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="9637-4e43-378f-ac1a" name="Nicassar Dhow" hidden="false">
-          <description>Tau fleets may bring Dhows to battle on gravitic hooks instead of Orcas. Any ship equipped with Dhows can only be equipped with Dhows and may not have Orcas. These then form a squadron but for battle purposes can deploy separately and perform different orders. Their Leadership is the same as their parent ship +1 as the Nicassar are natural spacefarers.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="cca97652-6ba8-446a-8949-5fbd3dff1c41-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="1a3c-a23e-adb4-40be" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea813263-ef6f-4327-a611-53f736ce0a81" name="Custodian (Or&apos;es El&apos;leath) Class Battleship" publicationId="5766-7751-d146-0800" page="160" hidden="true" collective="false" import="true" type="unit">
@@ -1918,9 +1809,22 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
       </costs>
     </selectionEntry>
     <selectionEntry id="24bf-5876-2fc1-d213" name="Escort Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="de31-e55e-16f8-bd0a" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b987-7aa7-c3b2-8a73" name="New SelectionEntryGroup" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="b987-7aa7-c3b2-8a73" name="Escorts" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="687e-7c0a-286c-4788" name="Messenger (Skether&apos;qan) Class Starship" hidden="false" collective="false" import="true" targetId="ac75-25ce-b8d8-358e" type="selectionEntry"/>
+            <entryLink id="bb63-8904-672f-bb2a" name="Orca (Kass&apos;l) Class Gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry"/>
+            <entryLink id="2079-d919-88dc-aa39" name="Warden (Kir&apos;la) Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry"/>
+            <entryLink id="4691-bb1d-bfe4-bf4e" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2117,6 +2021,115 @@ You may only take 1 Messenger Starship per 500 points in the fleet. </characteri
       </categoryLinks>
       <entryLinks>
         <entryLink id="26e2-f64b-a186-9fb5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b0e-74f3-9fec-c969" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="27a3-f1ba-3f2e-9bb7" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">180°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4371-dc25-007e-b109" name="Nicassar Dhow Port Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="542c-4223-4b9f-5ce7" name="Nicassar Dhow Starboard Railgun Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9291-f52a-38a5-2df9" name="Nicassar Dhow" hidden="false">
+          <description>Tau fleets may bring Dhows to battle on gravitic hooks instead of Orcas. Any ship equipped with Dhows can only be equipped with Dhows and may not have Orcas. These then form a squadron but for battle purposes can deploy separately and perform different orders. Their Leadership is the same as their parent ship +1 as the Nicassar are natural spacefarers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fc1c-f99d-5c72-8642" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="24a4-62ee-7987-0f17" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="04f6-da8e-bc68-a534" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7aea-5538-e4cf-f906" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9f55-318e-948f-e7e2" name="Prow Gravitic Launcher" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Missles: 20-40cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c99f-9fde-c67f-640f" name="Prow Railgun battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9d44-d829-0314-2e81" name="Tau Ordnance" hidden="false" targetId="6297-13c5-6e97-451f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="05da-2ce9-6211-34e4" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a857-711f-68d8-d4a8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
