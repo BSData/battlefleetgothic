@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="11" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="12" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -2266,6 +2266,21 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8ffb-06a9-273f-e882" name="Subplot" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b103-292b-6a1f-569f" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="9042-c5f3-fdd7-b0b8" name="Quest for Knowledge Subplot" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">As part of Mechanicus every fleet must roll on this table. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="59de-dae0-3c5e-ed4d" name="Quest for Knowledge Subplot" hidden="false" collective="false" import="true" targetId="3bd7-3fd9-02d4-8c01" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="c2dc-df65-613d-6d22" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="7761-0b46-fce1-8821" type="selectionEntry"/>
@@ -2684,6 +2699,182 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="3bd7-3fd9-02d4-8c01" name="Quest for Knowledge Subplot" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fad-7cda-c911-cb6c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db1-9845-faf8-b445" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="a134-9f41-cc8f-9dc4" name="1. Extended Duty" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="099b-3f00-1762-a98c" name="Extended Duty" hidden="false" targetId="a37a-c66f-3320-a0c7" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e05-b34f-637a-67c4" name="2. Xenos Logic" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="fe09-ec2b-d7f0-dd9b" name="Xenos Logic" hidden="false" targetId="ba05-11b2-b25c-fca5" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e441-2b24-e3e4-39c0" name="3. Mimic Drive" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="8bd2-d450-16aa-87fe" name="Mimic Drive" hidden="false" targetId="27d7-c05c-c16c-8308" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="af73-6960-fff4-4d89" name="4. Sacred Vessel" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1433-02fe-d5d4-3391" name="Sacred Vessel" hidden="false" targetId="df63-db0d-f99f-f82c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a15d-8225-fdd3-23e1" name="6. Experimental Ship" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="752a-e518-d64e-7b83" name="Experimental Ship" hidden="false" targetId="ea5b-4917-3417-d4a4" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5999-363c-16d3-48c5" name="Improvement Table" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f3-57fb-e1cb-bd46" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e360-6525-0374-d446" name="1. Increase Weapon Range" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="9cca-6e4c-dc51-dafb" name="1 Increase Weapon Range" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All weapons (except ordnance) increase maximum range by +15cm</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="c9ab-8471-639d-a1cf" name="2. +1 Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="8d77-fd6f-357d-08af" name="+1 Shield" hidden="false" targetId="2879-9030-3b5a-2d5b" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry id="8117-ede8-fccf-bdca" name="3. ReRoll Turrets" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="82f4-4b1e-5a4c-c286" name="3. ReRoll Turrets" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All turrets re-roll misses when defending against ordnance.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="fb7e-2dba-c0f2-e324" name="4. Advanced Lateral Thrusters" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="a4af-fc8e-9dcb-504f" name="4. Advanced Lateral Thrusters" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship can turn an additional +45 degrees.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="9d63-3b9f-a624-7dca" name="5. Advanced Communicators" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="cf1d-678e-1159-1e2f" name="5. Advanced Communicators" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All friendly vessels within 15cm gain an additional +1 leadership when the enemy is on special orders (max 10).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="ece5-f2c2-2fff-d2ce" name="6. Modulate Wavelengths" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="8a00-e746-862a-ada4" name="6. Modulate Wavelengths" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Dorsal or prow lances ignore shields on a roll of 6</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b921-3030-fb16-0d4c" name="Side Effect Table" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089e-fa53-5fef-fc1b" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="07ea-b03b-d3da-4689" name="1. Firepower Reduction" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="26f7-17bc-1318-7483" name="1. Firepower Reduction" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Weapons battery firepower and lance strength reduced by 50% (rounding up)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="4a2b-e44d-a9d9-0001" name="2. Structure Compromised" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="ceb5-7b38-44a1-2186" name="2. Structure Compromised" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship loses 2 hull points</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="f16b-f982-c805-8fa8" name="3. Close Proximity Weakness" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="86e6-13ac-6683-d5a5" name="3. Close Proximity Weakness" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship loses 2 turrets (this is after adding the +1 turret all Mechanicus capital ships are equipped with)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="1472-e9d7-9eda-1986" name="4. Slow Controls" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="aa48-1395-d951-9763" name="4. Slow Controls" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship must move an additional 5 cm before it may turn</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="d4ad-8f8a-1daa-78a4" name="5. Thruster Reduction" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="6d18-2ec7-a28c-da6b" name="5. Thruster Reduction" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship loses 5cm max speed</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="437d-7924-d9be-fbba" name="6. Targeting Bugs" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="56b6-6760-c51a-6415" name="6. Targeting Bugs" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                      <characteristics>
+                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Dorsal or prow lances can only hit targets on a roll of 6</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d908-c7e2-ec35-de3f" name="5. The Prize" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="9723-8411-cb1d-4442" name="The Prize" hidden="false" targetId="befc-3411-af99-357d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="6a3a-e1c7-e884-2341" name="Augmented Weapon Relays" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2714,6 +2905,41 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
     <profile id="a9b0-f397-996b-e6fa" name="Repulsor Shielding" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a37a-c66f-3320-a0c7" name="Extended Duty" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Quest for Knowledge can be long and arduous, sometimes seeing the fleet deep in unexplored space far away from logistical support for exceedingly long periods. Roll a D6 for each Mechanicus capital ship. On a 1 it takes D3 damage, on a 2 it suffers -1 Ld to take Lock-on or Reload special orders. Rolls of 3+ have no effect. You must destroy or cripple more enemy ships than you lose. (+1/0 Renown)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba05-11b2-b25c-fca5" name="Xenos Logic" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Due to unforeseen phenomena, the complex workings within the capital ships of the Adeptus Mechanicus have become unreliable at best and catastrophic at worst. Roll a D6 for each Mechanicus capital ship in the fleet. On a 1, 2 or 3, roll against the critical damage table. (+2/-1 renown)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="27d7-c05c-c16c-8308" name="Mimic Drive" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Adeptus Mechanicus encounter partial STC plans for a drive capable of imitating the signature of a capital ship. Add a cruiser to the fleet, keeping its identity a secret. This vessel actually has all the characteristics of a transport ship and is worth zero victory points. If it is fired upon by the enemy, then the mimic drive is proven to be effective. (+1/-1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df63-db0d-f99f-f82c" name="Sacred Vessel" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship is an example of or contains much valued archaeotech and must be protected at any cost. Choose one Mechanicus capital ship in your fleet. This vessel cannot be crippled or destroyed. (+1/-1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="befc-3411-af99-357d" name="The Prize" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Reliable sources have confirmed that an enemy ship contains an extremely valuable example of archaeotech, or possibly remnants of a working STC system! Even if the ship is only crippled, it will grant an easier venture to capture it. Nominate one enemy capital ship. You must cripple or destroy it. If the ship explodes, no renown is gained or lost. (+1/-2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea5b-4917-3417-d4a4" name="Experimental Ship" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Recovered ancient technology or alien artefacts are sometimes retrofitted to a ship to change its performance in one way or another. Sometimes the results are beneficial, but very rarely can such devices be accommodated without significant cost or sacrifice to the vessel. Pick one cruiser in the fleet. This vessel has been recently fitted with an experimental system that has not yet been tested operationally. These modifications are in addition to any refits taken normally by a Mechanicus vessel. Roll a D6 on the following two tables to see how the ship has been altered (Re-roll any result that cannot be applied to the vessel). This ship must not be crippled or destroyed so that it can be examined to review its performance. (+1/-1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2879-9030-3b5a-2d5b" name="+1 Shield" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship gains +1 Shield</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
