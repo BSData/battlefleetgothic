@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="25" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="26" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada. Incursion fleet matched to Blue Book. </readme>
   <publications>
     <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
@@ -346,7 +346,12 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
     </forceEntry>
     <forceEntry id="2e5b-4744-eb33-19d2" name="Chaos Incursion Fleet (BBB)" publicationId="11f0-17d1-e4d2-1018" page="129" hidden="false">
       <categoryLinks>
-        <categoryLink id="88b9-a2e7-5761-2767" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="88b9-a2e7-5761-2767" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba08-1e80-2ec2-af11" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036e-5087-9ecf-c3eb" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="b753-8fd0-bf30-bbc2" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="3310-0480-8b2f-0d6c" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="4833-e9b9-4543-0b92" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
@@ -540,7 +545,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Incursion Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Incursion Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -559,9 +564,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
       <profiles>
         <profile id="5231-bd1d-02a6-0f46" name="Chaos Incursion Warmaster" publicationId="11f0-17d1-e4d2-1018" page="128" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -573,10 +575,13 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <categoryLink id="02ed-58f7-6b56-42b6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6666-b306-8727-05fb" name="Rank" hidden="false" collective="false" import="true" defaultSelectionEntryId="f1ff-c57b-ee7b-687e">
+        <selectionEntryGroup id="6666-b306-8727-05fb" name="Rank" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="false" collective="false" import="true" defaultSelectionEntryId="f1ff-c57b-ee7b-687e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba3-b8d2-f9d5-246a" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="1c32-64ca-4be9-e645" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="f1ff-c57b-ee7b-687e" name="Leadership 8" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
