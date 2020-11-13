@@ -1960,7 +1960,15 @@ Gravtic Launchers - Fire  Tau Missiles (torpedoes)
 Gravtic Hooks - Gravitic Hooks are large, suspensory arms which create a gravitic sheath in which a small vessel can be transported by a larger one. However, gravitic hooks have no effect in game terms – ships do not start a game attached to their parent ship, and can never be docked during a game.
 Likewise, the number of gravitic hooks is unimportant when calculating victory points (your opponent does not get VPs for surviving escorts just because there aren’t enough gravitic hooks to notionally transport them to safety)</description>
     </rule>
-    <rule id="0ebf-a7be-5ecb-d304" name="Tau Systems" hidden="false"/>
+    <rule id="0ebf-a7be-5ecb-d304" name="Tau Systems" hidden="false">
+      <description>Shields - Behave as normal shields
+Tau use the standard Critical Hits Table
+Leadership uses normal Leadership Table D6: LRD (1: 6, 2-3: 7, 4-5: 8, 6: 9)
+Telport attacks - Tau may not conduct teleport attacks
+Boarding Value - Tau count boarding strength as half normal for the size of the ship.
+
+</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="7287-5f52-246b-c649" name="Orca (Kass&apos;l) Class Gunship" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="true" collective="false" import="true" type="unit">
