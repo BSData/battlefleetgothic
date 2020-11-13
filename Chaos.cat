@@ -573,40 +573,43 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <categoryLink id="02ed-58f7-6b56-42b6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6666-b306-8727-05fb" name="Rank" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6666-b306-8727-05fb" name="Rank" hidden="false" collective="false" import="true" defaultSelectionEntryId="f1ff-c57b-ee7b-687e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba3-b8d2-f9d5-246a" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="f1ff-c57b-ee7b-687e" name="Leadership 8" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="7e3a-83f0-4de6-de09" name="Chaos Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+                <profile id="7e3a-83f0-4de6-de09" name="Chaos Warmaster" publicationId="11f0-17d1-e4d2-1018" page="128" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
                   <modifiers>
                     <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
+                        <condition field="selections" scope="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">8</characteristic>
                     <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-                    <characteristic name="Pg." typeId="50672e23232344415441232323">128 BBB</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323">128</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
             <selectionEntry id="8a58-14dc-fe42-030b" name="Leadership 9" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="a55f-3f51-0176-934b" name="Chaos Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+                <profile id="a55f-3f51-0176-934b" name="Chaos Warmaster" publicationId="11f0-17d1-e4d2-1018" page="128" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
                   <modifiers>
                     <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
+                        <condition field="selections" scope="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">9</characteristic>
                     <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-                    <characteristic name="Pg." typeId="50672e23232344415441232323">128 BBB</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323">128</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
