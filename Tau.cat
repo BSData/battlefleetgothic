@@ -1762,15 +1762,97 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
       <selectionEntryGroups>
         <selectionEntryGroup id="b987-7aa7-c3b2-8a73" name="Escorts" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="687e-7c0a-286c-4788" name="Messenger (Skether&apos;qan) Class Starship" hidden="false" collective="false" import="true" targetId="ac75-25ce-b8d8-358e" type="selectionEntry"/>
-            <entryLink id="bb63-8904-672f-bb2a" name="Orca (Kass&apos;l) Class Gunship" hidden="false" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry"/>
-            <entryLink id="2079-d919-88dc-aa39" name="Warden (Kir&apos;la) Class Gunship" hidden="false" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry"/>
-            <entryLink id="4691-bb1d-bfe4-bf4e" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry"/>
-            <entryLink id="0005-58b8-375e-5baa" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry"/>
-            <entryLink id="dfa7-a3c1-6b45-6f9a" name="Nicassar Dhow" hidden="false" collective="false" import="true" targetId="5b0e-74f3-9fec-c969" type="selectionEntry"/>
+            <entryLink id="fe12-32e0-d529-82f9" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4e2d-01cd-f7bf-6af4" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="61bb-a644-76d3-a9d6" name="Messenger (Skether&apos;qan) Class Starship" hidden="true" collective="false" import="true" targetId="ac75-25ce-b8d8-358e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <comment>filter fleet list</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2a76-713e-94de-7c75" name="Nicassar Dhow" hidden="false" collective="false" import="true" targetId="5b0e-74f3-9fec-c969" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="913b-68e7-9d49-48d8" name="Orca (Kass&apos;l) Class Gunship" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="true" collective="false" import="true" targetId="7287-5f52-246b-c649" type="selectionEntry">
+              <comment>no points needed should come from shared profile (must have &apos;0&apos; to link points)</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="56ef-a8fc-a1ef-2722" name="Warden (Kir&apos;la) Class Gunship" hidden="true" collective="false" import="true" targetId="b117-d104-bf32-d956" type="selectionEntry">
+              <comment>Points in linked profile (must have &apos;0&apos; to link)</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="379f-a817-0961-43b0" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1797,6 +1879,16 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
       <comment>Points in linked profile (must have &apos;0&apos; to link)</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="32b5-ff90-f684-ea58" name="Messenger (Skether&apos;qan) Class Starship" hidden="true" collective="false" import="true" targetId="ac75-25ce-b8d8-358e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>filter fleet list</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1809,7 +1901,21 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="32b5-ff90-f684-ea58" name="Messenger (Skether&apos;qan) Class Starship" hidden="true" collective="false" import="true" targetId="ac75-25ce-b8d8-358e" type="selectionEntry">
+    <entryLink id="7fcb-8322-cb7a-b784" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="fb09-27e9-6ac0-9152" name="Nicassar Dhow" hidden="false" collective="false" import="true" targetId="5b0e-74f3-9fec-c969" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1824,11 +1930,23 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="7fcb-8322-cb7a-b784" name="Defender (Kir&apos;qath) Class Starship" hidden="false" collective="false" import="true" targetId="7ac3-2d49-f7e0-a848" type="selectionEntry"/>
-    <entryLink id="fb09-27e9-6ac0-9152" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry"/>
+    <entryLink id="79cd-5cd4-42ab-e568" name="Castellan (Kir&apos;shasvre) Escort" hidden="false" collective="false" import="true" targetId="04f6-da8e-bc68-a534" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="7287-5f52-246b-c649" name="Orca (Kass&apos;l) Class Gunship" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7287-5f52-246b-c649" name="Orca (Kass&apos;l) Class Gunship" publicationId="1bc8-5968-21c3-0f27" page="105" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="be56-f0ee-7aa6-ac45" name="Orca Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -1867,13 +1985,6 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
       </costs>
     </selectionEntry>
     <selectionEntry id="b117-d104-bf32-d956" name="Warden (Kir&apos;la) Class Gunship" publicationId="5766-7751-d146-0800" page="161" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="b6c2-2dc5-1170-96d2" name="Warden Prow Ion Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -1913,18 +2024,6 @@ replaced with Il‟fannor “Merchant” heavy transports if desired, each for t
     </selectionEntry>
     <selectionEntry id="ac75-25ce-b8d8-358e" name="Messenger (Skether&apos;qan) Class Starship" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <comment>filter fleet list</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="increment" field="6171-11c2-fd4e-b476" value="1.0">
           <comment>add requirement of 500 pts per messenger</comment>
           <repeats>
@@ -1978,19 +2077,6 @@ You may only take 1 Messenger Starship per 500 points in the fleet. </characteri
       </costs>
     </selectionEntry>
     <selectionEntry id="5b0e-74f3-9fec-c969" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c34-df2d-6332-eb03" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="27a3-f1ba-3f2e-9bb7" name="Nicassar Dhow" publicationId="1bc8-5968-21c3-0f27" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2034,18 +2120,6 @@ You may only take 1 Messenger Starship per 500 points in the fleet. </characteri
       </costs>
     </selectionEntry>
     <selectionEntry id="04f6-da8e-bc68-a534" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2139-67f5-6911-86b4" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="7aea-5538-e4cf-f906" name="Castellan (Kir&apos;shasvre) Escort" publicationId="5766-7751-d146-0800" page="165" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
