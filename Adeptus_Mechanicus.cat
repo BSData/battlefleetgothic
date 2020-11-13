@@ -2268,7 +2268,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
     </selectionEntry>
     <selectionEntry id="8ffb-06a9-273f-e882" name="Subplot" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b103-292b-6a1f-569f" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b103-292b-6a1f-569f" type="min"/>
       </constraints>
       <profiles>
         <profile id="9042-c5f3-fdd7-b0b8" name="Quest for Knowledge Subplot" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -2277,6 +2277,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="fddd-27a6-20b1-91da" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="59de-dae0-3c5e-ed4d" name="Quest for Knowledge Subplot" hidden="false" collective="false" import="true" targetId="3bd7-3fd9-02d4-8c01" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2699,7 +2702,7 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3bd7-3fd9-02d4-8c01" name="Quest for Knowledge Subplot" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3bd7-3fd9-02d4-8c01" name="Quest for Knowledge Subplot (D6)" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fad-7cda-c911-cb6c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db1-9845-faf8-b445" type="min"/>
