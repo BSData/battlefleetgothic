@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="25" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="824f9aff-29ca-4220-81ce-60725a6011c5" name="Chaos" revision="25" battleScribeVersion="2.03" authorName="Tomakokkamikaze" authorContact="@Tomakokamikaze @Mont_Fox" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Use Force Org Unbound for all ships. 13th crusade fleet matched to Armada. Incursion fleet matched to Blue Book. </readme>
   <publications>
     <publication id="824f9aff--pubN99933" name="BFGXR - Chaos">
@@ -540,69 +540,85 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" name="Chaos Incursion Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="points" value="50.0">
+          <conditions>
+            <condition field="selections" scope="d6d6de78-bea0-4c41-8c16-7abbd71f66d2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a58-14dc-fe42-030b" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d1f4-a8eb-dd26-a9c1" name="Chaos Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <modifiers>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5cd83a7c-add5-4536-b9f0-6ae517c07613" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <profile id="5231-bd1d-02a6-0f46" name="Chaos Incursion Warmaster" publicationId="11f0-17d1-e4d2-1018" page="128" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (max of 9)</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">You must include a Chaos Warmaster in your fleet no matter its size. They must be assigned to the biggest (most expensive) ship in the fleet. Its leadership improves to the match theirs. The warmaster may take up to 4 marks of chaos with no duplicates. </characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="c17f-b45b-a51d-67a0" name="Chaos Warmaster" hidden="false">
-          <description>You can only include a Chaos Warmaster in your fleet if it includes any capital ships. He must be assigned to the most expensive ship and improves its rolled Leadership by +2, to a maximum of 9.
-
-Chaos Warmasters get one re-roll. In addition they may be given a single Mark of Chaos.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="02ed-58f7-6b56-42b6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5cd83a7c-add5-4536-b9f0-6ae517c07613" name="Extra re-roll" page="0" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6666-b306-8727-05fb" name="Rank" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="f1ff-c57b-ee7b-687e" name="Leadership 8" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7e3a-83f0-4de6-de09" name="Chaos Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+                  <modifiers>
+                    <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">8</characteristic>
+                    <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323">128 BBB</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="8a58-14dc-fe42-030b" name="Leadership 9" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="a55f-3f51-0176-934b" name="Chaos Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+                  <modifiers>
+                    <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">9</characteristic>
+                    <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
+                    <characteristic name="Pg." typeId="50672e23232344415441232323">128 BBB</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1efd-8202-eb9f-c263" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
+        <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="model">
@@ -3191,12 +3207,12 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <modifiers>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5cd83a7c-add5-4536-b9f0-6ae517c07613" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5cd83a7c-add5-4536-b9f0-6ae517c07613" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c1e-a2f8-07f6-0ebd" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3395,6 +3411,75 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="243d-b87b-a98d-a368" name="Chaos 13th Warmaster" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac1c-9ec9-9c43-26c9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="67a4-79c1-5474-51c7" name="Chaos 13th Warmaster" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <modifiers>
+            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="243d-b87b-a98d-a368" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="243d-b87b-a98d-a368" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="51e3-2b02-3564-874f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (max of 9)</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+          </characteristics>
+        </profile>
+        <profile id="a565-bc12-8a7a-335a" name="Chaos 13th Warmaster" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">You can only include a Chaos Warmaster in your fleet if it includes any capital ships. He must be assigned to the most expensive ship and improves its rolled Leadership by +2, to a maximum of 9.
+
+Chaos Warmasters get one re-roll. In addition they may be given a single Mark of Chaos.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="eedf-c518-64ea-8e2c" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="51e3-2b02-3564-874f" name="Extra re-roll" page="0" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="822d-ba6d-e3ec-a6e1" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d7c4-61d8-832b-b862" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
