@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="26" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="27" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -4653,9 +4653,9 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="935e-991e-f1df-8706" name="Pirate Chief" page="" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="935e-991e-f1df-8706" name="Pirate Captain" page="" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="increment" field="c5a3-1633-8e2b-1240" value="1">
+        <modifier type="increment" field="ea9d-9b95-9365-d858" value="1.0">
           <conditions>
             <condition field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
           </conditions>
@@ -4670,28 +4670,33 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="increment" field="c5a3-1633-8e2b-1240" value="1.0">
+          <conditions>
+            <condition field="points" scope="force" value="750.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea9d-9b95-9365-d858" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5a3-1633-8e2b-1240" type="min"/>
       </constraints>
       <profiles>
-        <profile id="ec6b-347b-e315-75e1" name="Pirate Chief" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="ec6b-347b-e315-75e1" name="Pirate Captain" publicationId="5766-7751-d146-0800" page="91" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <modifiers>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf8c-8b7b-bcec-1598" type="instanceOf"/>
+                <condition field="selections" scope="935e-991e-f1df-8706" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf8c-8b7b-bcec-1598" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="2">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="baef-123a-2721-a814" type="instanceOf"/>
+                <condition field="selections" scope="935e-991e-f1df-8706" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="baef-123a-2721-a814" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+1 (max of 9)</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+1</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
             <characteristic name="Pg." typeId="50672e23232344415441232323"/>
           </characteristics>
         </profile>
@@ -5777,7 +5782,19 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e2ce-6cd4-788a-27bc" name="Cobra &quot;Widowmaker&quot; Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e2ce-6cd4-788a-27bc" name="Cobra &quot;Widowmaker&quot; Squadron" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db42-cfe4-ffdf-1754" type="max"/>
       </constraints>
@@ -7950,9 +7967,6 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="1326-f559-9837-ab36" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1fc0-5263-a0a7-fb51" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -8021,9 +8035,6 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink id="8ed8-f655-40dd-f548" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3093-8f00-83d1-373e" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
