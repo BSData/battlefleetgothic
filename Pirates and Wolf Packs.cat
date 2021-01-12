@@ -8,7 +8,21 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b90-7186-e682-fc95" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="caa3-bfda-ce9c-9cbb" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="caa3-bfda-ce9c-9cbb" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d299-f2f2-e1bf-cc02" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d299-f2f2-e1bf-cc02" type="min"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="c0ca-d249-246c-a651" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="5cec-6a32-19f4-7a87" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="968d-2c3a-df1a-e2aa" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -1267,7 +1281,6 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="2f97-6b90-3d94-9416" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fcfa-ccc8-4251-aeff" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="1f86-3235-bd9e-65af" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1339,9 +1352,8 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="95e9-7b62-44f1-41fd" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d9fd-d793-b238-9619" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="38da-5498-60dd-ca02" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="260b-b471-fb33-9180" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="c8a6-a3f1-e63d-e697" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
@@ -1425,7 +1437,6 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="5fae-5ec6-d6ff-6c02" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3fbf-3297-fc73-7404" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="03a8-01ee-7b48-91e5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1505,8 +1516,7 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="7d8e-c5c5-f109-dc8d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="198f-eb3a-7d53-1f20" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="35b4-97e9-249e-f21d" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
+        <entryLink id="198f-eb3a-7d53-1f20" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
         <entryLink id="2d2c-9d1d-d74f-2fcd" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1579,7 +1589,6 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="2c6a-5053-f347-282f" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c041-c59b-208e-ee5b" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="1cd4-eed0-146c-a670" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1658,7 +1667,6 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8341-db64-8555-474b" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="76c6-4b96-8134-f2e4" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1735,11 +1743,134 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         <categoryLink id="99d9-ab72-ff9a-7bb6" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5426-12b6-d5cf-91ff" name="Type" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
         <entryLink id="5bd7-f7fd-4590-f000" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="107a-20d9-be9c-5cdf" name="Space Marine Strike Cruiser" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="true" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7d4a-48b2-90b3-f3eb" name="Strike Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9eb2-86cc-2a65-6f51" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="30af-e4a9-7897-4683" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="599a-7f71-2a69-90c8" name="Dorsall Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="760d-25c9-934b-9467" name="Bombardment Cannon" hidden="false" targetId="698d-cccb-0d27-f1b1" type="profile"/>
+        <infoLink id="e541-6659-7b7f-b283" name="Bombardment Cannon" hidden="false" targetId="698d-cccb-0d27-f1b1" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6e76-6b1b-8a95-e4fc" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="3b19-929b-887a-95d3" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="df68-cabc-e58c-263e" name="Prow Weapon Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec3e-23ec-1267-bc10" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e7-beb5-5355-a7c8" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="83ae-2405-33a4-0974" name="Torpedo Tubes" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b4e-c95c-38ed-f828" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="92f9-2883-47b1-dc08" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="527a-95ef-87f2-7f65" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f444-3ca9-dbe9-8520" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="204d-298a-e2b9-f2c6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="94b7-9db5-6f75-a928" name="Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths:30cm Dreadclaws:20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="d4ad-6fae-982e-6738" name="Chaos Ordnance" hidden="true" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="aa93-bfa8-7325-06ac" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="a585-ccf8-103b-58ef" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1771,8 +1902,10 @@ When included in a Rogue Trader escort squadron and not being used as a transpor
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="10a3-d1a8-e464-7577" name="Space Marine Strike Cruiser" hidden="false" collective="false" import="true" targetId="15d2-1699-80d3-3c45" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="d9cf-d944-185e-1ddd" name="New Rule" hidden="false"/>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="412e-7045-599e-17a4" name="Cobra Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
