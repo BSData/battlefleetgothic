@@ -567,7 +567,7 @@
   <selectionEntries>
     <selectionEntry id="56cb8f0d-fd9f-40a2-9ee5-9353341ab66b" name="Defiant Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="increment" field="points" value="35">
+        <modifier type="increment" field="points" value="35.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
           </conditions>
@@ -576,7 +576,11 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
