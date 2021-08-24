@@ -59,7 +59,7 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" name="Tyranid Cruiser" page="0" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" name="Tyranid Cruiser" publicationId="1bc8-5968-21c3-0f27" page="88" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="maxInRoster" value="2.0">
           <repeats>
@@ -412,7 +412,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="322e0064-1643-4b0d-ae4c-1313d5448223" name="Hive Mind" page="0" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="322e0064-1643-4b0d-ae4c-1313d5448223" name="Hive Mind" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -429,7 +429,7 @@
         <categoryLink id="322e0064-1643-4b0d-ae4c-1313d5448223-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" name="Hive Mind Imperative" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <comment>This is a good model for examples of setting up dependant selections</comment>
@@ -917,9 +917,7 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min">
-          <comment>nids required to take one escort squad source?</comment>
-        </constraint>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min"/>
         <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="949b-cf58-611d-bd52" type="max"/>
       </constraints>
       <categoryLinks>
