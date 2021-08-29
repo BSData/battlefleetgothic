@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necrons" revision="13" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d0a06aad-4c1d-49bb-9286-b094e6b3fd8c" name="Necrons" revision="14" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="d1ae-25b1-bb3e-95c3" name="Necron Harvest Fleet" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false">
       <categoryLinks>
@@ -15,13 +15,27 @@
         </categoryLink>
         <categoryLink id="7400-aec1-f5ef-a36d" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="9765-f7a8-f305-7e8c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="7f4c-7dc9-7bf6-bca9" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="7f4c-7dc9-7bf6-bca9" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="increment" field="a2e1-c9cc-7b16-8d29" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5eb3357-d2fd-450e-8ea2-1243d9d12971" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5eb3357-d2fd-450e-8ea2-1243d9d12971" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2e1-c9cc-7b16-8d29" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="b9a0-3c7b-5a66-c170" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" publicationId="1bc8-5968-21c3-0f27" page="75" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="8b768a17-acfc-4fca-87a5-8ce016ba3226" name="Cairn Class Tombship" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="maxInRoster" value="1.0">
           <repeats>
@@ -88,7 +102,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8f23-5997-35a4-a68f" name="Star pulse generator (Cairn)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+            <profile id="8f23-5997-35a4-a68f" name="Star pulse generator" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">20cm</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">(1 per enemy)</characteristic>
@@ -96,11 +110,9 @@
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="cd94-d42c-3fab-7d78" name="Star pulse generator" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false">
-              <description>Rolls 1D6 to hit against the nearest facing armor value separately against every ship in range. This cannot be saved against by holofields. It rolls 4+ against every separate ordnance marker in range (as opposed to against ordnance waves).</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="f52f-0ac1-6d90-d075" name="Star pulse generator" hidden="false" targetId="3450-bf75-dbec-89e2" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -119,6 +131,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="326e-0132-db98-90ad" name="Portal" hidden="false" targetId="9660-1c79-b8af-3363" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -172,6 +187,9 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="873e-da43-2587-9516" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="500.0"/>
       </costs>
@@ -227,7 +245,7 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" publicationId="1bc8-5968-21c3-0f27" page="76" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e5eb3357-d2fd-450e-8ea2-1243d9d12971" name="Scythe Class Harvest Ship" page="0" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -302,7 +320,7 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a918-3785-3402-82b3" name="Portal (Scythe)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+            <profile id="a918-3785-3402-82b3" name="Portal" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">10cm</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -310,6 +328,9 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="f34e-22bc-53a8-a8aa" name="Portal" hidden="false" targetId="9660-1c79-b8af-3363" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -330,6 +351,7 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </profiles>
           <rules>
             <rule id="c2f9-2916-f5fa-35e4" name="Star pulse generator" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false">
+              <comment>changes per 2010 compendium?</comment>
               <description>Rolls 1D6 to hit against the nearest facing armor value separately against every ship in range. This cannot be saved against by holofields. It rolls 4+ against every separate ordnance marker in range (as opposed to against ordnance waves).</description>
             </rule>
           </rules>
@@ -338,11 +360,14 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="89cc-1c1a-e035-5d9a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="77" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c1938fe3-5a9f-4c9e-90a9-8b8f701d2008" name="Shroud Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -394,6 +419,9 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="eb05-a093-59bf-9659" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
       </costs>
@@ -482,11 +510,14 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="3492-7acf-269d-6a40" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3bf4-96e7-e296-fb90" name="Kopesh Class Light Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3bf4-96e7-e296-fb90" name="Kopesh Class Light Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -573,6 +604,9 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="4cea-6600-87bc-10c1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
       </costs>
@@ -596,6 +630,7 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
       <entryLinks>
         <entryLink id="c4d4-6dce-106c-cd23" name="Dirge Class Raider" hidden="false" collective="false" import="true" targetId="f41e-42fc-3733-4efb" type="selectionEntry"/>
         <entryLink id="01c1-869b-2160-ad6d" name="Jackal Class Raider" hidden="false" collective="false" import="true" targetId="7110-fe73-ee4a-5fc8" type="selectionEntry"/>
+        <entryLink id="547d-20e6-8c05-1bfa" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -609,9 +644,38 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
     <rule id="1ce1-8537-5a59-eda7" name="Re-rolls (Necron)" hidden="false">
       <description>The necron fleet gets one re-roll and can purchase extra re-rolls. Necron re-rolls are purchased by the fleet as a whole, rather than being considered Fleet Commander re-rolls. Pg. 78 (Harvest Fleets)</description>
     </rule>
+    <rule id="7ebb-ed45-2e9f-4df4" name="Lightning Arc" publicationId="1bc8-5968-21c3-0f27" page="72" hidden="false">
+      <description>Stored solar energy is released as a forest of living energy tendrils which envelop targets probing for weaknesses. Lightning arcs function as weapon batteries with two differences. Firstly, they don’t suffer the normal column shift to the right when attacking vessels who have holofields or shadowfields (the bolts do not need to see) and all targets are treated as closing.
+Lightning arcs with multiple fire arcs can divide their total Firepower. A lightning arc can be split between its fire arcs in any way the player desires. So for a tombship, it’ s Strength 20 lightning arc can fire 5 Firepower to the front, 12 to the left and 3 to the right. Next turn it could fire 20 Firepower to the right, and none elsewhere.</description>
+    </rule>
+    <rule id="b9f0-9fe7-ead0-a841" name="Gauss Particle Whip" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false">
+      <description>This is the preferred ranged weapon of the Necron Raiders. A particle beam is projected along a magnetic field across a short (at source) arc, the arc is sufficient to crack the particle beam like a whip. When a target is hit the beam is energised focusing power similar to the lightning arc batteries, but on a much smaller target area. The particle whip is treated like a lance except any rolls to hit of 6 bypass shields and affect the target ship directly - these (6&apos;s) are unsaveable by holofields.</description>
+    </rule>
+    <rule id="9ca7-c173-402f-2fb4" name="Necron Critical Hits" publicationId="1bc8-5968-21c3-0f27" page="74" hidden="false">
+      <description>Necrons use a special critical hits table, as presented at https://tinyurl.com/necroncrit</description>
+    </rule>
+    <rule id="9c3f-b15d-790a-155b" name="Reactive Hulls" publicationId="1bc8-5968-21c3-0f27" page="74" hidden="false">
+      <description>Necron ships are made of a unique sentient metal. To represent these factors all Necron ships with a reactive hull are immune to Damage, Leadership and Movement modifiers from solar flares, radiation, gas clouds and blast markers. All Necron ships are Armour 6, representing the difficulty of targeting them, and in addition receive a special save against each hit to represent the hull’s adaptive qualities. The save is 6+ for Raiders, 5+ for harvesters and Scythes and 4+ for tombships. If the Necron vessel uses Brace for Impact then the save is modified to 2+ but its stealth properties are instantly compromised. A Necron ship on Brace for Impact orders is reduced to Armour 4. Last, but by no means least, all Necron Critical repairs are made on 4 or more as the sentient metal attempts to self repair.</description>
+    </rule>
+    <rule id="3763-5b6b-737f-d367" name="Inertialess Drive (All Ahead Full)" publicationId="1bc8-5968-21c3-0f27" page="74" hidden="false">
+      <description>Necron drives are capable of interstellar travel without the need to enter the Warp. The drive is fired whenever All Ahead Full orders are issued; instead of obeying the normal rules for this order the ship gains D6 x 10cm additional movement and can make a turn for every 20cm it travels.</description>
+    </rule>
+    <rule id="65a7-4aec-0e83-f90d" name="Disengaging" publicationId="1bc8-5968-21c3-0f27" page="74" hidden="false">
+      <description>Necrons will always prefer to disengage than fight to the end. They do this by ‘fading out’, the vessel in question dematerialises and drops out of normal space. At the end of its Movement phase any Necron ship may perform a fade out disengage automatically.
+At the end of a game, including normal Victory points, count up the Necron losses using the following modifiers:
+• Any capital ship that disengages with no damage whatsoever counts as 10% destroyed.
+• Any capital ship that disengages with any damage at all or any raider that disengages counts as 25% destroyed.
+• Any capital ship that is crippled counts as 50% destroyed.
+• Any capital ship that is destroyed but not left as a drifting hulk counts as 200% destroyed.
+• Any capital ship that is destroyed and left as a drifting hulk counts as 300% destroyed.
+Necron vessels may ignore the rule preventing them from firing upon or boarding friendly drifting/blazing hulks. (2010 Compendium)</description>
+    </rule>
+    <rule id="a22d-86a6-e972-b827" name="Repair Points" publicationId="1bc8-5968-21c3-0f27" page="74" hidden="false">
+      <description>Due to advanced nature of Necron technology all Necron ships must expend double the normal amount of repair points to repair hits and buy new ships when playing in a campaign. </description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="f41e-42fc-3733-4efb" name="Dirge Class Raider" publicationId="1bc8-5968-21c3-0f27" page="78" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f41e-42fc-3733-4efb" name="Dirge Class Raider" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="primary-catalogue" value="12.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9822-7e73-2136-4500" type="max"/>
       </constraints>
@@ -627,35 +691,22 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="2ab5-104b-0936-6728" name="Dirge Lightning Arc" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="cd59-dea1-e474-4cd2" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="781f-53f3-c12c-f119" name="Lightning arc" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a15-9b0b-a15f-eae2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ecb-5c99-344c-8a5f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="851d-7682-f11b-0541" name="Lightning arc (Dirge)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7110-fe73-ee4a-5fc8" name="Jackal Class Raider" publicationId="1bc8-5968-21c3-0f27" page="77" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7110-fe73-ee4a-5fc8" name="Jackal Class Raider" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="12.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3763-2614-0aa1-aaf0" type="max"/>
       </constraints>
@@ -671,51 +722,39 @@ A ship attacked by the Sepulchre should take a Leadership test. If they pass, th
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="516b-00d4-80fa-7544" name="Jackal Lightning Arc" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="21d5-d8df-e433-75c1" name="Jackal Portal" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">10cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All around</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="21c4-193b-2e17-de50" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0257-b2fd-5505-128f" name="Lightning Arc" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f55e-c4d0-a3c6-4287" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95ce-de87-ba31-b85a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2b3f-a7dd-baf3-4356" name="Lightning Arc (Jackal)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c9fd-f06a-bd0c-1e23" name="Portal" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f557-35dd-b428-fd23" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07ef-2231-5aec-3a3a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="77fb-0df8-a9a9-613c" name="Portal (Jackal)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">10cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">All around</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="3450-bf75-dbec-89e2" name="Star pulse generator" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false">
+      <description>Rolls 1D6 to hit against the nearest facing armor value separately against every enemy ship in range. This cannot be saved against by holofields. It rolls 4+ against every separate ordnance marker in range (as opposed to against ordnance waves). A star pulse cannot be generated while the vessel is using any special order or crippled as it requires precise control.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="9660-1c79-b8af-3363" name="Portal" publicationId="1bc8-5968-21c3-0f27" page="73" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Portals are more precise than conventional teleporters and are able to flood enemy ships with a relentless host of Necron Warriors and swarms of Scarabs. Each portal confers an additional hit and run attack to the Necron vessel. These have a range of 10cm and, as normal, can only be made against ships whose shields are down. The usual restriction that teleport attacks can only be made against ships with less remaining Hull Points is waived, with the exception that Necron Raider class vessels do not carry enough Warriors to board anything with more than 6 Hull Points remaining.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
