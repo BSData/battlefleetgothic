@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
   </publications>
@@ -158,6 +158,7 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Reduced in 2010 FAQ from 40 to 20 pts</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be82-41c4-09e6-b129" type="max"/>
           </constraints>
@@ -169,7 +170,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -249,6 +250,36 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f6f1-3174-c757-65dd" name="Second Impailer" hidden="false" collective="false" import="true">
+          <comment>option added in 2010 FAQ for 20 pts</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024b-c214-365d-9143" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7427-01b4-501c-ee40" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c412-eca8-3e42-00cf" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="81ec-39a2-8237-d883" name="Impaler" hidden="false">
+                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="8170-730b-8389-9553" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -368,6 +399,7 @@ https://tinyurl.com/DECritical</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4d2f-6dfc-126b-f80d" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>cost reduction for mimic from 20 to 5 per 2010 FAQ</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a5-e075-4c8a-60e7" type="max"/>
           </constraints>
@@ -379,7 +411,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
