@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @ Mont_fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
+  </publications>
   <forceEntries>
     <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Pirate Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false">
       <categoryLinks>
@@ -114,7 +117,7 @@
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -154,8 +157,7 @@
         <categoryLink id="4229-c3d7-3ea4-1602" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" publicationId="b161-6b4c-e770-9ab2" page="25" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>cost changed from 40 pts to 20 pts in 2010 FAQ page 25</comment>
+        <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be82-41c4-09e6-b129" type="max"/>
           </constraints>
@@ -167,30 +169,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="658e-1910-d162-0131" name="Impaler" publicationId="b161-6b4c-e770-9ab2" page="25" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>second impaler added at a cost of 20 Pts in 2010 faq</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44d9-472c-81d6-a24b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="696a-071f-a5f8-874c" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="f335-2483-e2d7-6b0d" name="Impaler" hidden="false">
-              <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -210,11 +189,11 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="49d4-b991-fd44-746b" name="Prow Torpedo Tubes" hidden="false">
-                  <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="b736-dd97-d7ed-52ed" name="Eldar Torpedos" hidden="false" targetId="b1cf-3c3e-2f72-a429" type="rule"/>
+                <infoLink id="33a5-459a-7585-e315" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="7616-6e65-6718-2962" name="Dark Eldar Torpedo Tubes" hidden="false" targetId="52e5-69ff-0f55-1b73" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -248,6 +227,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink id="072f-4427-15b7-4b93" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -262,13 +244,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="0413-4c1e-2277-13a0" name="Launch Bays" hidden="false">
-                  <description>Ships with launch bays may launch any mix of Raptor fighters, Razorwing bombers and Slavebringer assault boats.
-
-Raptor fighters have a speed of 30cm and need a 4+ to remain in play after removing ordnance as with Eldar fighters. Razorwing bombers have a speed of 20cm and are hit by turrets only on a D6 roll of 6. Slavebringer assault boats have a speed of 30cm and are hit by turrets only on a D6 roll of 6.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="d283-2f47-e95d-1ecb" name="Dark Eldar Attack Craft" hidden="false" targetId="25d3-8c1e-3993-05e4" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
@@ -276,6 +254,9 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bc5c-e8d1-73e8-ff28" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="210.0"/>
       </costs>
@@ -295,13 +276,14 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0915-ad4d-16e7-e0e7" type="max"/>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-bd76-e3da-fded" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-bd76-e3da-fded" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="20a6-8a61-01f8-9918" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1b0c-a449-e128-d6aa" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
+        <entryLink id="af14-12f0-f2b5-211a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -322,8 +304,43 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink id="2700-d5c4-7061-dd2a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="f641-c393-2ef5-82b2" name="Dark Eldar Movement" publicationId="1bc8-5968-21c3-0f27" page="53" hidden="false">
+      <description>Dark Eldar vessels are incredibly sleek and agile, bearing arrays of delicate fins and operating sophisticated manoeuvring systems which allow them to turn with an ease horrifying to the crews of Imperial vessels, leaden by comparison. Because of this, Dark Eldar ships do not need to pass a Command check in order to use Come to New Heading special orders and count as automatically passing any Command check to do so. In addition, Dark Eldar cruisers have no minimum required movement before turning but are unable to use the Burn Retros special order</description>
+    </rule>
+    <rule id="32ac-5597-4bbe-f426" name="Dark Eldar Leadership" publicationId="1bc8-5968-21c3-0f27" page="53" hidden="false">
+      <description>All Dark Eldar ships add +1 to the Leadership score generated on page the Leadership able on page 10 of the Battlefleet Gothic Rulebook, giving them a leadership value of between 7 and 10 1:7, 2 or 3:8, 4 or 5:9, 6:10</description>
+    </rule>
+    <rule id="0328-a0ff-f800-5a99" name="Dark Eldar Boarding Actions" publicationId="1bc8-5968-21c3-0f27" page="53" hidden="false">
+      <description>The Dark Eldar are furious and brutal pirates, fanatical in the pursuit of violence and the hunt for captives. Their all-consuming blood lust can often overcome them, leaving them in an uncontrolled frenzy. Dark Eldar receive a bonus +1 modifier in the first round of any boarding action and a -1 modifier in any subsequent rounds.</description>
+    </rule>
+    <rule id="802d-2d17-d129-74fc" name="Shadowfields" hidden="false">
+      <description>Dark Eldar ships are not protected by the vast energy shields which surround the vessels of other races, but rather employ the form-altering shadowfields. These create an eerie and uncertain fog around Dark Eldar vessels through which little information can be ascertained. Pinpointing the exact location or speed of a Dark Eldar vessel behind shadowfields can prove very tricky indeed. Against attacks that use the Gunnery table, the shadowfields cause one column shift to the right, in addition to any other column shifts for range or Blast markers. Against any other form of attack (lances, torpedoes, etc), roll to hit an Dark Eldar ship as normal, but the Eldar player may then make a saving roll for his shadowfields:
+Save roll 2+, place a Blast Marker in contact with the ship
+Note: Shadowfields do not negate hits from moving through blast markers, exploding ships and celestial phenomena. They do, however, work against ordnance hits, hit-and-run raids, boarding actions, teleport attacks, ramming or nova cannon.</description>
+    </rule>
+    <rule id="b826-4f44-27d4-02d7" name="Slave Taking" publicationId="1bc8-5968-21c3-0f27" page="53" hidden="false">
+      <description>The Dark Eldar receive a +1 on Hit &amp; Run attacks (meaning they will normally succeed (automatically) but may forgo rolling on the Hit &amp; Run Critical Hit table in return for +10 Victory points. This reflects the desire of the Dark Eldar to take captives, often when to do so is tactically foolish. The +1 on Hit &amp; Run attacks applies only to Slavebringer assault boats, not Impaler attacks.</description>
+    </rule>
+    <rule id="6903-d86d-3ed9-c062" name="Dark Eldar Critical Hits" publicationId="1bc8-5968-21c3-0f27" page="54" hidden="false">
+      <description>When a Dark Eldar ship suffers a critical hit, roll 2D6 on the Dark Eldar Critical Hits table, rather than the normal Critical Hits table. Note: Dark Eldar suffer a critical hit only on a roll of a 6, as is normal for all other fleets, not on a 4+ as is the case with Eldar Corsairs.
+https://tinyurl.com/DECritical</description>
+    </rule>
+    <rule id="a861-8776-a22c-a6b2" name="Dark Eldar Weapons Batteries" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
+      <description>As pirates adept at striking with the utmost speed, Dark Eldar specialise in rapid, ultraaccurate attacks before their relative fragility forces them to withdraw. Because of this, Dark Eldar rely on sophisticated targeting technology which allows them to count all targets as ‘closing’ on the Gunnery table, no matter what the target’s actual aspect is. Other than this, the weapons batteries fire as normal.</description>
+    </rule>
+    <rule id="2120-876e-214f-cd0a" name="Dark Eldar Phantom Lance" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
+      <description>This is the Dark Eldar equivalent of the pulsar, using dark matter powered lasers. Roll a D6 for each point of the Phantom lance’s strength when firing, with the following effects: 
+1-3: No hits
+4: 1 hit
+5-6: 2 hits</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="3492-1236-f700-f36a" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -350,8 +367,7 @@ Raptor fighters have a speed of 30cm and need a 4+ to remain in play after remov
         <categoryLink id="ddc2-8983-a0e4-deca" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4d2f-6dfc-126b-f80d" name="Mimic Engines" publicationId="b161-6b4c-e770-9ab2" page="25" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>mimic engines droped from 20 pts to 5 pts in 2010 FAQ</comment>
+        <selectionEntry id="4d2f-6dfc-126b-f80d" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a5-e075-4c8a-60e7" type="max"/>
           </constraints>
@@ -363,7 +379,7 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -383,11 +399,11 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="2747-0ae0-d0b9-3154" name="Prow Torpedo Tubes" hidden="false">
-                  <description>Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="6537-b877-608c-405a" name="Eldar Torpedos" hidden="false" targetId="b1cf-3c3e-2f72-a429" type="rule"/>
+                <infoLink id="2ce3-bd08-9e8d-3a9b" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="3d23-1cf9-2ebe-55c3" name="Dark Eldar Torpedo Tubes" hidden="false" targetId="52e5-69ff-0f55-1b73" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -421,6 +437,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink id="b4a3-5b9b-26d0-2736" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -447,4 +466,33 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="d432-677f-3f95-5f02" name="Impailer Assault Module" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
+      <description>The Impaler is a specialised form of prow mounted attack craft, a little like an assault boat, but large enough to carry enough Dark Eldar assault troops to potentially overwhelm an entire ship. An Impaler is launched like an assault boat, and moves in the same way during the ordnance phase. Fighters which attack the Impaler do not automatically remove it from play,. Instead the Impaler rolls a D6 and remains in play on a 4+. The Impaler can only use this save once per ordnance phase, but if it does so against a fighter in base contact with a ship and subsequently survives turret fire, it may then attack that ship normally. Turrets may fire at the Impaler, in the same way as against ordnance, but require a 6 to hit. 
+When the Impaler successfully moves into contact with an enemy ship, it makes a Hit &amp; Run attack. Roll a D6 as normal. On a score of a 1 the Impaler’s boarders are defeated and the module may not be used for the remainder of
+the game. On a 2-6 the Impaler causes a critical hit. However, unlike assault boats, roll 2D6 and look up the score on the critical hits table (as opposed to just looking up the score of the Hit &amp; Run attack). 
+If the Impaler is removed (either by turrets, enemy ordnance, attack craft and so on), the Dark Eldar vessel must reload ordnance as normal before being able to fire it again (it is assumed that a damaged module limps back to its parent vessel and must await hurried repairs or else take time for its crew to transfer to a replacement). An Impaler can only be completely destroyed by a failed Hit &amp; Run attack, which would leave it useless due to the loss of its crew. 
+However, Impalers are far larger than most attack craft, and hence require substantial amounts of fuel. Because of this, their range is somewhat shorter than that of smaller attack craft. At the beginning of each of the Dark Eldar player’s turn he must remove any Impalers from the table (these are assumed to have been forced to return to their parent ship due to lack of fuel). He may of course attempt to  reload ordnance during the turn in order to relaunch said Impalers (i.e. he reloads ordnance as quickly as possible to ‘turn around’ the Impalers and their crew just as soon as they arrive back at their parent ship). 
+You may not launch additional Impalers if you already have a number of Impalers in play equal to the number of Impaler armed vessels in the fleet. Impalers are not deployed from launch bays in any way, shape or form, so the overall number of launch bays in a fleet does not affect the number of Impalers which you are permitted to launch or have in play.</description>
+    </rule>
+    <rule id="13e8-e2ec-7521-75d2" name="Leech torpedos" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
+      <description>Dark Eldar ships armed with torpedoes may use leech torpedoes at no extra cost. These must be loaded with a specific Reload Ordnance roll, although a ship may start the scenario with them in the tubes by writing a note on the ship sheet. Leech torpedoes cause no damage other than a single, automatic critical hit. Do not roll for the effect of this critical hit, instead the leech torpedo causes a -10cm speed reduction on its target. A leech torpedo hit also prevents the target from executing any All Ahead Full special orders. Only one -10cm speed penalty applies regardless of the number attached – the effect is not cumulative. However, all leech hits on a ship must be repaired before the movement penalty is removed (e.g. if a ship suffers 5 leech hits, it remains at a reduced speed until all 5 hits have been repaired).
+When not firing leeches, Dark Eldar ships equipped with torpedo tubes use the rules for Eldar torpedoes from the Battlefleet Gothic rulebook instead.
+</description>
+    </rule>
+    <rule id="b1cf-3c3e-2f72-a429" name="Eldar Torpedos" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
+      <description>Eldar Torpedos use sophisticated targeter scrambling systems to make themselves virtually undetectable until they strike. To represent this, defensive turrets only hit Eldar Torpedos on a roll of 6, rather than 4, 5, or 6, as is normally the case. In addition, the hightly accurate targeting sensors on Eldar Torpedos allow you to re-roll the dice to hit for any torpedo that misses a target on the first attempt. </description>
+    </rule>
+    <rule id="25d3-8c1e-3993-05e4" name="Dark Eldar Attack Craft" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
+      <description>Dark Eldar attack craft consist of Raptor fighters,Razorwing bombers and Slavebringer assault
+boats. Raptor fighters have a speed of 30cm and need a 4+ to remain in play after removing ordnance as with Eldar fighters. Razorwing bombers have a speed of 20cm and are hit by turrets only on a D6 roll of 6. Slavebringer assault boats have a speed of 30cm and are hit by turrets only on a D6 roll of 6.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="52e5-69ff-0f55-1b73" name="Dark Eldar Torpedo Tubes" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
