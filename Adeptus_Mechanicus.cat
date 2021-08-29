@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="12" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="8" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -95,11 +95,23 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="da14-1ad9-eb4d-b958" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
-        <infoLink id="a1ed-9400-7d25-4708" name="Augmented Weapon Relays" hidden="false" targetId="6a3a-e1c7-e884-2341" type="profile"/>
-        <infoLink id="a0e8-876e-5f49-6e5d" name="Repulsor Shielding" hidden="false" targetId="a9b0-f397-996b-e6fa" type="profile"/>
-      </infoLinks>
+      <rules>
+        <rule id="Mechanicum Upgrades###DATA###" name="Mechanicum Upgrades" page="0" hidden="false">
+          <description>Gifts of the Omnissiah:
+Repulsor Shields
+Augmented Weapon Relays
+Can take no other refits*
+
+Lose Port &amp; Starboard Lance Batteries for Strength 2 Port &amp; Starboard Launch Bays</description>
+        </rule>
+        <rule id="143f-3ab5-9c3e-4f19" name="Repulsor Shielding" hidden="false">
+          <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+        </rule>
+        <rule id="8fe4-dd2d-9071-7eea" name="Augmented Weapon Relays" hidden="false">
+          <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
+        </rule>
+        <rule id="eae4-c8ab-b976-73cb" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
       <categoryLinks>
         <categoryLink id="92f9cee9-cf3f-4e7c-b51f-3a152e158e48-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -115,8 +127,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7213-59a4-3c69-0de9" name="Ark Mechanicus Launch Bays" publicationId="5766-7751-d146-0800" page="66" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <comment>this appears correct. not supposed to be port and starbord launch bays just Str 2 launch bays. </comment>
+                <profile id="7213-59a4-3c69-0de9" name="Ark Mechanicus Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fury Interceptors: 30cm Starhawk Bombers: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
@@ -124,10 +135,20 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="5bb8-0062-65c5-1503" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
-                <infoLink id="83d1-9af6-aa99-42f6" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
-              </infoLinks>
+              <rules>
+                <rule id="62d4-7978-1c49-984f" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+                  <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+                </rule>
+                <rule id="f0bb-bed1-7991-349b" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
+                  <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+                </rule>
+              </rules>
               <selectionEntries>
                 <selectionEntry id="a400d20f-25b7-4475-a3fd-88391c11e0ea" name="Torpedo Bombers" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -169,9 +190,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="e669-ca2c-b3c2-77d5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
@@ -278,10 +296,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="b91b-a2d9-da07-6b20" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="9073-4d88-478f-4110" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
       </costs>
@@ -390,9 +404,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="1fe7-3628-dd17-c095" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -461,10 +472,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="bd82-d0dd-768c-47f8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="61e3-e9fd-d418-94ba" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="255.0"/>
       </costs>
@@ -524,17 +531,25 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Right/Front</characteristic>
           </characteristics>
         </profile>
-        <profile id="dd34-145f-2855-f364" name="Mechanicus Emperor Battleship" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Emperor class dispenses with the normal armoured prow and instead carries a mass of sensor probes and forward turrets, giving it +1 to its Leadership rating.. This profile for the Emperor Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="6203-8622-11fb-6bf4" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
-        <infoLink id="ff59-e85c-bf3a-db94" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
-        <infoLink id="be17-bcbe-01fd-37e1" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
-      </infoLinks>
+      <rules>
+        <rule id="9601-5d6b-ae2c-0da9" name="Mechanicus Emperor Class Battleship" hidden="false">
+          <description>The Emperor class dispenses with the normal armoured prow and instead carries a mass of sensor probes and forward turrets, giving it +1 to its Leadership rating.. This profile for the Emperor Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
+        </rule>
+        <rule id="3e8b-0612-90c9-211e" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+        <rule id="036a-321d-83c1-163f" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="af83-b84e-cfc0-e6ed" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="43962396-985c-422f-b087-fe7dd3631214-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -557,10 +572,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="00a4-79bb-899e-6fd3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="214f-1c7e-be7a-9339" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
@@ -671,9 +682,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="2e70-d903-d8e0-4883" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -756,10 +764,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="ed34-a04a-488c-107c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="f3ea-ad93-d44a-87c4" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
       </costs>
@@ -842,9 +846,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f31f-dd06-6d9d-66ff" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="fd83-2b68-2638-896b" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -898,7 +899,7 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="247f-0335-9c9c-3f2b">
+        <selectionEntryGroup id="ad83-bfcd-26eb-db1a" name="Armour Options" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6aa-102c-4a1b-49bb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a53f-8581-1ce8-d8d6" type="max"/>
@@ -943,10 +944,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="d800-8e99-5c48-8c61" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="4ec8-3ac9-38e6-35f4" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
       </costs>
@@ -989,9 +986,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5c18-23fe-e03e-fa0a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1036,9 +1030,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <description>If desired the Prow Torpedoes can be replaced by a Nova Cannon at an additional cost of +20 pts or refitted torpedoes from p.156 of ARMADA can be used for an additional cost of +20pts. This profile for the Gothic class cruiser already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="864d-34a8-8cca-649d" name="Gifts of the Omnissiah (unused)" hidden="false" targetId="a3e2-1b93-1d65-1037" type="infoGroup"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="73bd-fc01-8859-60b8" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
@@ -1095,9 +1086,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a37a-de26-77b9-49ad" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="4200-0dd2-0e90-c10a" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -1110,10 +1098,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="d553-e5c9-e81a-68b3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="d506-80c3-44eb-1dea" name="Gifts of the Omnissiah" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
       </costs>
@@ -1214,9 +1198,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab73-bf67-3498-8820" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="34c8-b329-96a1-fae5" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -1285,10 +1266,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1ab9-fac6-34af-e733" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="aa37-8955-0589-ae82" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
       </costs>
@@ -1305,13 +1282,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="03b3-cbf1-dc10-934b" name="Blessing of Omnissiah" publicationId="5766-7751-d146-0800" page="69" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A Mechanicus Archmagos can elect up to any one desired item from the Adeptus Mechanicus refit table (Gift) for their own ship as part of their point cost, in addition to (and before) the refit the ship rolls for normally. </characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="59cd178d-0101-4822-95e0-5c2a2f05f281-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1386,9 +1356,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="4ff7-92d3-6654-4f22" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1462,17 +1429,25 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="2ab6-dfc7-7a65-3c10" name="Mechanicus Oberon Battleship" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Like the Emperor class, the Oberon dispenses with the normal armoured prow and instead carries a mass of sensor probes that it uses to direct its attack craft to the enemy. This also adds +1 to its Leadership rating. This profile for the Oberon Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3cde-76c7-570a-19a2" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
-        <infoLink id="9345-4d12-2883-d5f5" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
-        <infoLink id="56e3-182c-3cc2-6b81" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="6299-6814-56ca-8a35" name="Oberon Class Battleship" hidden="false">
+          <description>Like the Emperor class, the Oberon dispenses with the normal armoured prow and instead carries a mass of sensor probes that it uses to direct its attack craft to the enemy. This also adds +1 to its Leadership rating. This profile for the Oberon Class Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
+        </rule>
+        <rule id="7aac-ac29-3891-7809" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+        <rule id="4a96-e25f-f8fe-08be" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+          <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+        </rule>
+        <rule id="af65-f4e6-6e25-808e" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
+          <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="a9328ba6-afa6-4410-896a-ca8684ac98cf-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1487,10 +1462,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="e615-4d33-6ab6-a75a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="cc7c-4c62-2600-116c" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="370.0"/>
       </costs>
@@ -1529,15 +1500,13 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="61a2-8ade-c276-fc60" name="Mechanicus Retribution Rules" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">If desired the Prow Torpedoes can be replaced by a Nova Cannon at an additional cost of +10 pts or refitted torpedoes from p.156 of ARMADA can be used for an additional cost of +10pts. This profile for the Retribution Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3b06-8b73-0521-7cec" name="Ponderous" hidden="false" targetId="6b68-58a4-e894-fae9" type="profile"/>
-      </infoLinks>
+      <rules>
+        <rule id="ca1b-22c2-031f-eb7d" name="Retribution Class Battleship" hidden="false">
+          <description>If desired the Prow Torpedoes can be replaced by a Nova Cannon at an additional cost of +10 pts or refitted torpedoes from p.156 of ARMADA can be used for an additional cost of +10pts. This profile for the Retribution Battleship already reflects the rule changes for an Adeptus Mechanicus vessel and in addition requires a roll on the Mechanicus Gift Table.</description>
+        </rule>
+        <rule id="61fa-bfba-9cc9-e4fa" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+      </rules>
       <categoryLinks>
         <categoryLink id="033f21a1-b92f-49cf-88ea-5504d7452cdd-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1594,9 +1563,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="8605-4669-65ec-5f69" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
@@ -1609,10 +1575,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f765-bf3d-9d4b-e297" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="d818-d870-5556-b3f6" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
@@ -1686,9 +1648,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <categoryLinks>
             <categoryLink id="238f0b9c-62df-4a00-b213-74909f85900a-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink id="d1ee-7edc-09f0-7c27" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="440.0"/>
           </costs>
@@ -1800,9 +1759,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="a99d-3f3a-d3fb-9197" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="165.0"/>
           </costs>
@@ -1867,9 +1823,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           <categoryLinks>
             <categoryLink id="52b5327b-9c2a-458d-a710-e244a7a1d527-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink id="7c3e-c761-15f7-c401" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="300.0"/>
           </costs>
@@ -2079,9 +2032,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="d75a-fa39-2fa0-2032" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="270.0"/>
           </costs>
@@ -2243,9 +2193,6 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51e8-3816-cf3f-4ae9" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="4ac3-6c72-1549-2ac2" name="Refit Torpedoes (D6)" hidden="false" collective="false" import="true" targetId="80dd-a34e-9d3c-9a03" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
@@ -2258,31 +2205,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="2332-3e73-a810-4ee6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-        <entryLink id="571e-d0c0-0be7-7dc7" name="Gifts of the Omnissiah (D6)" hidden="false" collective="false" import="true" targetId="c7c8-6fbb-e427-efa5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="8ffb-06a9-273f-e882" name="Subplot" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b103-292b-6a1f-569f" type="min"/>
-      </constraints>
-      <profiles>
-        <profile id="9042-c5f3-fdd7-b0b8" name="Quest for Knowledge Subplot" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">As part of Mechanicus every fleet must roll on this table. </characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="fddd-27a6-20b1-91da" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="59de-dae0-3c5e-ed4d" name="Quest for Knowledge Subplot" hidden="false" collective="false" import="true" targetId="3bd7-3fd9-02d4-8c01" type="selectionEntryGroup"/>
-      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2296,8 +2221,28 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
   </entryLinks>
   <rules>
     <rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" page="0" hidden="false">
-      <description>Quest for Knowledge
+      <description>Leadership
+1: Ld 7
+2-3: Ld 8
+4-6: Ld 9
+
+Attack Rating 
+The AM have an attack rating of 2.
+
+Quest for Knowledge
 AM capital ships get 1 more repair dice than normal. A fleet that includes AM ships must use an AM sub-plot (see AM pdf for details), in addition to any other sub-plots that would be normally used.
+
+Gifts of the Omnissiah
+All AM capital ships gain +1 turret and get a randomly chosen Mechanicus Gift (see AM pdf for details). If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly.
+
+Civillian Crew
+Any ship involved in a boarding action against an AM vessel or conducting a Hit &amp; Run attack against an AM vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, re Tyranids). AM ships don&apos;t use a-boats or boarding torpedoes.
+
+Exclusive Tech
+AM vessels may take a leadership check in order to fire upon their own hulked vessels.
+
+Fleet Commander
+In an AM fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the one ship gets the same gift twice it may elect to keep this arrangement (presumably the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.
 
 Reserve &amp; Allies
 AM vessels may be used as reserves in SM/IN fleets. IN ships may be used as reserves in an AM fleet. IN CGs and CBs included in an AM fleet as reserves use up cruiser slots. Xenos vessels that can ally with the IN, such as Rogue Traders and Demiurg can likewise ally with the AM.
@@ -2311,28 +2256,6 @@ Campaigns
 AM fleets get +1 repair point for every 10 points, or part, of renown of the commander. AM get a +1 modifier when rolling to earn a refit, but a -1 modifier when rolling to appeal for reinforcements or Space Marines. Space Marines may be used as reinforcements only if the AM fleet contains no Xenos vessels.
 Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don&apos;t follow the Fleet Commander from one ship to another (though they can still add the amount of refits they&apos;ve gained to their new flagship, rolled randomly).</description>
     </rule>
-    <rule id="d445-77c8-21fa-277c" name="Gifts of the Omnissiah" publicationId="5766-7751-d146-0800" page="64" hidden="false">
-      <description>All Mechanicus capital ships gain +1 turret (included in profile) and must have a randomly chosen Mechanicus Gift from the table in the ship profile. </description>
-    </rule>
-    <rule id="7027-7975-aa98-62c7" name="Leadership" publicationId="5766-7751-d146-0800" page="64" hidden="false">
-      <description>To determine base leadership for a given vessel, roll a D6 against the following table:
-1: Ld 7
-2-3: Ld 8
-4-6: Ld 9
-If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly. (this does not mean you get an extra one!). This option cannot be used if the vessel embarks an Archmagos Veneratus</description>
-    </rule>
-    <rule id="1dba-23e9-cdb9-a6cf" name="Hit and Run Attacks and Boarding Actions" publicationId="5766-7751-d146-0800" page="64" hidden="false">
-      <description>Any ship involved in a boarding action against a Mechanicus vessel or conducting a Hit &amp; Run attack against a Mechanicus vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, ie Tyranids). Mechanicus ships don&apos;t use assault boats or boarding torpedoes.</description>
-    </rule>
-    <rule id="fb33-5e14-1e04-859f" name="Attack Rating " publicationId="5766-7751-d146-0800" page="64" hidden="false">
-      <description>The Adeptus Mechanicus have an attack rating of 2.</description>
-    </rule>
-    <rule id="6be4-410f-aaa5-8c4e" name="Sacred Tech" hidden="false">
-      <description>Every attempt will be made to recover a Mechanicus vessel that is lost. However, they will not allow their holy technology and precious knowledge fall into enemy hands. Unlike other fleets, Mechanicus vessels can take a leadership check to fire upon their own vessels that have been hulked to deny them to the enemy. This rule only applies to Mechanicus vessels shooting at Mechanicus drifting hulks, and not Imperial Navy, reserve or allied vessels in the fleet. </description>
-    </rule>
-    <rule id="f103-27d0-0b60-ba70" name="Fleet Commander" hidden="false">
-      <description>In an Adeptus Mechanicus fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the Magos gets the same gift as the ship they may elect to keep this arrangement (the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.</description>
-    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="7761-0b46-fce1-8821" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -2342,8 +2265,8 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <profiles>
         <profile id="33eb-eff5-3e48-c79a" name="Cobra Class Destroyer" publicationId="ffc39854--pubN70386" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
             <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
@@ -2351,27 +2274,81 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="863d-dcb0-b87f-53ca" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="53fd-1948-776e-57b4" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="cde5-baf6-2440-459f" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="a8d4-cf8a-a1f3-a566" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="4e08-9655-6f22-0322" name="Prow Torpedos (30/2)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69f7-125d-2b16-a676" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13f8-127a-8b0e-b45d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0966-b141-a082-1296" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7d60-512f-61c9-a1ac" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc89-0baf-62cb-0db4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4d3-7ceb-2719-c373" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9d1-f480-4f42-ff5c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fc89-0baf-62cb-0db4" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2f0-7d5e-9260-7632" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ab33-d2e2-9cf8-606d" name="Weapons Battery" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2ba-081f-0e8d-eca8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="922b-d906-f27f-54dc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="0875-1ed6-d895-8f55" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="722e-64b7-c16c-49d7" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f93b-c9b6-cb71-dc5f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="d964-da40-6c04-815a" name="Long Range Detection Gear" hidden="false">
+                  <description>Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
       </costs>
@@ -2410,9 +2387,6 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <categoryLinks>
         <categoryLink id="4411-1025-f522-2ac5" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="33e8-e57c-8110-e007" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -2475,9 +2449,6 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="97ad-c213-6a7c-54af" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -2509,9 +2480,6 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <categoryLinks>
         <categoryLink id="7a14-e843-214e-15c7" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1134-ce50-543f-2d30" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -2550,9 +2518,6 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <categoryLinks>
         <categoryLink id="663d-beba-fd91-fe92" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="ea89-fcf0-6348-724d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
@@ -2591,9 +2556,6 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       <categoryLinks>
         <categoryLink id="6506-7127-b369-9b40" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="6072-26ab-2514-dfe5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45.0"/>
       </costs>
@@ -2638,240 +2600,57 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="3057-4dfd-4586-f007" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="c7c8-6fbb-e427-efa5" name="Gifts of the Omnissiah (D6)" publicationId="5766-7751-d146-0800" page="64" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5e54-af60-5851-fa90" name="Ordnance" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d187-cc4c-8912-a746" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e75-d199-f283-21db" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb1-93ff-11d7-232c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="6933-8c90-9936-eab4" name="6. Augmented Weapon Relays" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="dccd-08ac-f265-3346" name="Augmented Weapon Relays" hidden="false" targetId="6a3a-e1c7-e884-2341" type="profile"/>
-          </infoLinks>
+        <selectionEntry id="6137-54a8-a799-d802" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b7fe-b1d2-1039-2bb3" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
+              <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
+            </rule>
+            <rule id="2847-d521-7d7b-dc3c" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
+              <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+            </rule>
+            <rule id="13ef-8c8d-047e-eaf0" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+            </rule>
+            <rule id="6b66-81fd-f641-eacb" name="Assault Boat&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b1a1-1a2f-f52d-0307" name="3. Repulsor Shielding" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="af1f-e194-ef3e-ea7a" name="Repulsor Shielding" hidden="false" targetId="a9b0-f397-996b-e6fa" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8801-235d-e3d5-3f4c" name="1. Emergency Energy Reserves" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="dc37-ceb3-a7c1-0f16" name="Emergency Energy Reserves" hidden="false" targetId="65b7-dba4-23a1-8c1c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6f78-ac62-9bbc-2e4a" name="2. Advanced Engines" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="f86f-badc-d02d-befc" name="Advanced Engines" hidden="false" targetId="793b-17d7-8cc4-7884" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d6bb-02d5-c88a-e20e" name="4. Fleet Defense Turrets" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="9de0-7dc6-a185-eeb2" name="Fleet Defense Turrets" hidden="false" targetId="2a5c-1d0e-e592-1fb8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="273e-4b2f-3e45-4050" name="5. Gyro-Stabilized Targeting Matrix" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="fcaf-f51d-0993-4f25" name="Gyro-Stabilized Targeting Matrix" hidden="false" targetId="e513-9cdc-0126-8456" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="3bd7-3fd9-02d4-8c01" name="Quest for Knowledge Subplot (D6)" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fad-7cda-c911-cb6c" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db1-9845-faf8-b445" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="a134-9f41-cc8f-9dc4" name="1. Extended Duty" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="099b-3f00-1762-a98c" name="Extended Duty" hidden="false" targetId="a37a-c66f-3320-a0c7" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8e05-b34f-637a-67c4" name="2. Xenos Logic" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="fe09-ec2b-d7f0-dd9b" name="Xenos Logic" hidden="false" targetId="ba05-11b2-b25c-fca5" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e441-2b24-e3e4-39c0" name="3. Mimic Drive" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="8bd2-d450-16aa-87fe" name="Mimic Drive" hidden="false" targetId="27d7-c05c-c16c-8308" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="af73-6960-fff4-4d89" name="4. Sacred Vessel" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="1433-02fe-d5d4-3391" name="Sacred Vessel" hidden="false" targetId="df63-db0d-f99f-f82c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a15d-8225-fdd3-23e1" name="6. Experimental Ship" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="752a-e518-d64e-7b83" name="Experimental Ship" hidden="false" targetId="ea5b-4917-3417-d4a4" type="profile"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5999-363c-16d3-48c5" name="Improvement Table" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f3-57fb-e1cb-bd46" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="e360-6525-0374-d446" name="1. Increase Weapon Range" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="9cca-6e4c-dc51-dafb" name="1 Increase Weapon Range" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All weapons (except ordnance) increase maximum range by +15cm</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="c9ab-8471-639d-a1cf" name="2. +1 Shield" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="8d77-fd6f-357d-08af" name="+1 Shield" hidden="false" targetId="2879-9030-3b5a-2d5b" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry id="8117-ede8-fccf-bdca" name="3. ReRoll Turrets" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="82f4-4b1e-5a4c-c286" name="3. ReRoll Turrets" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All turrets re-roll misses when defending against ordnance.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="fb7e-2dba-c0f2-e324" name="4. Advanced Lateral Thrusters" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="a4af-fc8e-9dcb-504f" name="4. Advanced Lateral Thrusters" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship can turn an additional +45 degrees.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="9d63-3b9f-a624-7dca" name="5. Advanced Communicators" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="cf1d-678e-1159-1e2f" name="5. Advanced Communicators" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All friendly vessels within 15cm gain an additional +1 leadership when the enemy is on special orders (max 10).</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="ece5-f2c2-2fff-d2ce" name="6. Modulate Wavelengths" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="8a00-e746-862a-ada4" name="6. Modulate Wavelengths" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Dorsal or prow lances ignore shields on a roll of 6</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="b921-3030-fb16-0d4c" name="Side Effect Table" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089e-fa53-5fef-fc1b" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="07ea-b03b-d3da-4689" name="1. Firepower Reduction" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="26f7-17bc-1318-7483" name="1. Firepower Reduction" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Weapons battery firepower and lance strength reduced by 50% (rounding up)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="4a2b-e44d-a9d9-0001" name="2. Structure Compromised" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="ceb5-7b38-44a1-2186" name="2. Structure Compromised" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship loses 2 hull points</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="f16b-f982-c805-8fa8" name="3. Close Proximity Weakness" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="86e6-13ac-6683-d5a5" name="3. Close Proximity Weakness" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship loses 2 turrets (this is after adding the +1 turret all Mechanicus capital ships are equipped with)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="1472-e9d7-9eda-1986" name="4. Slow Controls" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="aa48-1395-d951-9763" name="4. Slow Controls" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship must move an additional 5 cm before it may turn</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="d4ad-8f8a-1daa-78a4" name="5. Thruster Reduction" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="6d18-2ec7-a28c-da6b" name="5. Thruster Reduction" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship loses 5cm max speed</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="437d-7924-d9be-fbba" name="6. Targeting Bugs" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="56b6-6760-c51a-6415" name="6. Targeting Bugs" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                      <characteristics>
-                        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Dorsal or prow lances can only hit targets on a roll of 6</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d908-c7e2-ec35-de3f" name="5. The Prize" publicationId="5766-7751-d146-0800" page="65" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="9723-8411-cb1d-4442" name="The Prize" hidden="false" targetId="befc-3411-af99-357d" type="profile"/>
-          </infoLinks>
+        <selectionEntry id="fa64-2c74-4b72-f590" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="18f6-5207-7fdb-6458" name="Thunderhawk Gunship" hidden="false">
+              <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
+
+Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2879,95 +2658,37 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <sharedProfiles>
-    <profile id="6a3a-e1c7-e884-2341" name="Augmented Weapon Relays" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="65b7-dba4-23a1-8c1c" name="Emergency Energy Reserves" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2a5c-1d0e-e592-1fb8" name="Fleet Defense Turrets" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="e513-9cdc-0126-8456" name="Gyro-Stabilized Targeting Matrix" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="793b-17d7-8cc4-7884" name="Advanced Engines" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Moves +1D6 on All Ahead Full special orders.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="a9b0-f397-996b-e6fa" name="Repulsor Shielding" publicationId="5766-7751-d146-0800" page="64" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="a37a-c66f-3320-a0c7" name="Extended Duty" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Quest for Knowledge can be long and arduous, sometimes seeing the fleet deep in unexplored space far away from logistical support for exceedingly long periods. Roll a D6 for each Mechanicus capital ship. On a 1 it takes D3 damage, on a 2 it suffers -1 Ld to take Lock-on or Reload special orders. Rolls of 3+ have no effect. You must destroy or cripple more enemy ships than you lose. (+1/0 Renown)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ba05-11b2-b25c-fca5" name="Xenos Logic" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Due to unforeseen phenomena, the complex workings within the capital ships of the Adeptus Mechanicus have become unreliable at best and catastrophic at worst. Roll a D6 for each Mechanicus capital ship in the fleet. On a 1, 2 or 3, roll against the critical damage table. (+2/-1 renown)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="27d7-c05c-c16c-8308" name="Mimic Drive" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Adeptus Mechanicus encounter partial STC plans for a drive capable of imitating the signature of a capital ship. Add a cruiser to the fleet, keeping its identity a secret. This vessel actually has all the characteristics of a transport ship and is worth zero victory points. If it is fired upon by the enemy, then the mimic drive is proven to be effective. (+1/-1)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="df63-db0d-f99f-f82c" name="Sacred Vessel" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship is an example of or contains much valued archaeotech and must be protected at any cost. Choose one Mechanicus capital ship in your fleet. This vessel cannot be crippled or destroyed. (+1/-1)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="befc-3411-af99-357d" name="The Prize" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Reliable sources have confirmed that an enemy ship contains an extremely valuable example of archaeotech, or possibly remnants of a working STC system! Even if the ship is only crippled, it will grant an easier venture to capture it. Nominate one enemy capital ship. You must cripple or destroy it. If the ship explodes, no renown is gained or lost. (+1/-2)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ea5b-4917-3417-d4a4" name="Experimental Ship" publicationId="5766-7751-d146-0800" page="65" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Recovered ancient technology or alien artefacts are sometimes retrofitted to a ship to change its performance in one way or another. Sometimes the results are beneficial, but very rarely can such devices be accommodated without significant cost or sacrifice to the vessel. Pick one cruiser in the fleet. This vessel has been recently fitted with an experimental system that has not yet been tested operationally. These modifications are in addition to any refits taken normally by a Mechanicus vessel. Roll a D6 on the following two tables to see how the ship has been altered (Re-roll any result that cannot be applied to the vessel). This ship must not be crippled or destroyed so that it can be examined to review its performance. (+1/-1)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2879-9030-3b5a-2d5b" name="+1 Shield" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship gains +1 Shield</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
-  <sharedInfoGroups>
-    <infoGroup id="a3e2-1b93-1d65-1037" name="Gifts of the Omnissiah (unused)" publicationId="5766-7751-d146-0800" page="64" hidden="true">
-      <rules>
-        <rule id="838f-025a-51d7-f57a" name="Advanced Engines" hidden="false">
-          <description>Moves +1D6 on All Ahead Full special orders.</description>
-        </rule>
-        <rule id="5280-d398-8cc7-84e3" name="Repulsor Shielding" hidden="false">
-          <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
-        </rule>
-        <rule id="00a0-e61e-c6a5-d774" name="Gyro-stabilized Targeting Matrix" hidden="false">
-          <description>Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</description>
-        </rule>
-        <rule id="0d8e-58d9-20ed-00ce" name="Fleet Defense Turrets" hidden="false">
-          <description>Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</description>
-        </rule>
-        <rule id="3777-d941-cbe7-aa35" name="Emergency Energy Reserves" hidden="false">
-          <description>When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</description>
-        </rule>
-        <rule id="eb7b-2d14-bd94-39ef" name="Augmented Weapon Relays" hidden="false">
-          <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
-        </rule>
-      </rules>
-    </infoGroup>
-  </sharedInfoGroups>
+  <sharedRules>
+    <rule id="7e43-261d-2c02-3b51" name="Bomber&apos;s Rules" publicationId="ffc39854--pubN65994" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+    </rule>
+    <rule id="831f-628b-ea8f-5836" name="Fighter&apos;s Rules" publicationId="ffc39854--pubN65994" page="29" hidden="false">
+      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+    <rule id="cccf-8a59-b209-6dcb" name="Improved Thrusters" hidden="false">
+      <description>Moves +1D6 on All Ahead Full special orders.</description>
+    </rule>
+    <rule id="156d-b30d-ae22-cd2a" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="6abc-93dd-8e19-8136" name="Emergency Energy Reserves" hidden="false">
+      <description>When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</description>
+    </rule>
+    <rule id="6c13-fda8-048f-826c" name="Repulsor Shielding" hidden="false">
+      <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+    </rule>
+    <rule id="c7c2-23a0-1dac-392a" name="Fleet Defense Turrets" hidden="false">
+      <description>Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</description>
+    </rule>
+    <rule id="6d9f-bc87-c0a6-87f5" name="Gyro-stabilized Targeting Matrix" hidden="false">
+      <description>Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</description>
+    </rule>
+    <rule id="73d3-9672-b28b-87d2" name="Augmented Weapon Relays" hidden="false">
+      <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
