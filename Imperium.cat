@@ -3329,7 +3329,7 @@ Starhawk Bombers: 20cm</characteristic>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="600a-e5b5-ad38-8b5f" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
+            <entryLink id="600a-e5b5-ad38-8b5f" name="Prow Nova Cannon" hidden="true" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -6444,13 +6444,6 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="dfc9-6085-71f0-efa6" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
         <profile id="7271-fe65-b6ae-0983" name="Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
@@ -6466,8 +6459,39 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <categoryLink id="e440-2202-3faa-8287" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="5b9c-2631-6f17-3b18" name="Battle Cruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9223-bfc2-a565-c757" name="Prow Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="a696-026d-ca3f-77df">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="734e-2357-4fb0-f16e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5a-518b-57a8-976b" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b601-1fe2-631a-0e67" name="Prow Nova Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="bad9-1c35-6570-aa8c" name="Prow Nova Cannon" hidden="false" targetId="af91-33ff-94d6-44f4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a696-026d-ca3f-77df" name="Prow Torpedos" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8de9-27d9-736c-17b1" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5273-c753-59b2-e69a" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="77a5-b7be-9b5d-a37a" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="7258-40d4-7399-ab05" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -7239,15 +7263,8 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="932e-6f5b-65cc-38e7" name="Prow Nova Cannon" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
-        <infoLink id="1aef-725f-8ed1-c800" name="Prow Nova Cannon" hidden="false" targetId="af91-33ff-94d6-44f4" type="profile"/>
+        <infoLink id="1aef-725f-8ed1-c800" name="Prow Nova Cannon" hidden="true" targetId="af91-33ff-94d6-44f4" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
