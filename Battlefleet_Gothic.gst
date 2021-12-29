@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="43" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="44" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -828,32 +828,39 @@ The additional ships compendium cites it&apos;s sources so site those instead of
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
           </characteristics>
         </profile>
         <profile id="4f8b-ee5a-b8c9-f0c8" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
         <profile id="6f2c-6057-8d74-86aa" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
           </characteristics>
         </profile>
-        <profile id="dfc8-3c5b-e341-05e9" name="Dorsall Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="dfc8-3c5b-e341-05e9" name="Prow Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="50a9-1cde-0c71-0f8c" name="Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -865,73 +872,8 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         <categoryLink id="5c7a-de91-5184-e2ed" name="New CategoryLink" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink id="1ea5-1274-4adb-522d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1aff-7d41-c821-81b4" name="Prow Weapon Options" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d8-9f6d-999f-2bee" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d226-a2af-d928-72f2" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a46b-8243-4e26-9857" name="Torpedo Tubes" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01eb-9112-3b7b-ebcf" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cfff-56fa-a788-7122" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="315a-75b0-fc58-e501" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4573-3868-03bc-eb18" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a9-03a2-ded5-d5ee" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="df92-a809-4181-7619" name="Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths:30cm Dreadclaws:20cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink id="94f1-3785-511b-87b9" name="Chaos Ordnance" hidden="true" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="824f9aff-29ca-4220-81ce-60725a6011c5" type="instanceOf"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="01ce-35ca-d5a1-bd67" name="Type" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
+        <entryLink id="01ce-35ca-d5a1-bd67" name="Chaos Capital Ship Options" hidden="true" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
