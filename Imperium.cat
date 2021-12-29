@@ -3529,11 +3529,24 @@ Starhawk Bombers: 20cm</characteristic>
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="38a9-3866-3b54-e946" name="Power Ram + Torp" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry">
+              <profiles>
+                <profile id="d5c7-d999-59db-ed5c" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d434-9dfa-df10-4aad" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8f84-cd63-9d15-5fdb" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="a2a5-1277-8b09-e0cd" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
