@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="10" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="11" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="dndtonight.com @mont_fox @Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="11f0-17d1-e4d2-1018" page="139" hidden="false">
       <categoryLinks>
@@ -1582,8 +1582,21 @@ The klaws count as prow armament for the pourpose of critical hits.</description
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7097-1466-41fb-f27b" name="Validation Warlord" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7097-1466-41fb-f27b" name="Validation Warlord" hidden="true" collective="false" import="true" type="upgrade">
       <comment>Just for validation</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3efa-b57a-8226-2e47" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5f49-4874-ffe2-00a3" name="Ork Warlord Validation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -1593,6 +1606,34 @@ The klaws count as prow armament for the pourpose of critical hits.</description
       </profiles>
       <categoryLinks>
         <categoryLink id="2f29-fd42-e657-64c7" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a3c-c8cc-6c39-5b7f" name="Validation Warlord" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>Just for validation</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7e24-5490-924e-752d" name="Ork Warlord Validation" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Duplicate warlords here for list validation, Select on ship for marking ship upgrades.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="fb1f-0098-7682-4909" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -1926,7 +1967,7 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
         <categoryLink id="2556-1e85-9006-8e55" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0b23-7145-fd40-a02b" name="Warlord Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0b23-7145-fd40-a02b" name="Warlord Extra Re-Rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57ac-f362-17e7-2841" type="max"/>
           </constraints>
@@ -2030,9 +2071,6 @@ A vessel carrying a Warlord doubles its boarding value and may include up to one
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="4a6d-c067-5041-1ff0" name="Savage Gunship" publicationId="11f0-17d1-e4d2-1018" page="138" hidden="false" collective="false" import="true" type="unit">
       <comment>pts reduced in 2010 FAQ page 27 to 30 pts</comment>
