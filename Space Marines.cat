@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="11" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="a2b7-61cb-e479-de43" name="Codex Astartes Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
       <categoryLinks>
@@ -597,8 +597,8 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf6d-2889-24aa-122e" name="Strike Cruiser" publicationId="1bc8-5968-21c3-0f27" page="23" hidden="false" collective="false" import="true" type="unit">
-      <comment>2010 compendium 59</comment>
+    <selectionEntry id="cf6d-2889-24aa-122e" name="Strike Cruiser" publicationId="5766-7751-d146-0800" page="59" hidden="false" collective="false" import="true" type="unit">
+      <comment>2010 compendium 59 all strike cruser profiles are replaced with this profile. Old profile in aramada 23</comment>
       <constraints>
         <constraint field="selections" scope="roster" value="10.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d1e7-5937-666d-2d65" type="max"/>
       </constraints>
@@ -649,6 +649,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -694,24 +695,12 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91f-767d-f16b-6052" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b711-ed78-6b86-b95c" name="Prow Torpedoes" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="b711-ed78-6b86-b95c" name="Prow Torpedoes" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="ad66-ae62-73fd-c8ea" name="Strike Cruiser Prow Torpedoes" publicationId="5766-7751-d146-0800" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Torpedoes: 30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Torpedoes: 30cm
+Boarding: 30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
                   </characteristics>
@@ -738,6 +727,20 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="4a08-516d-1c07-1086" name="Prow Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8681-bede-fa09-b56a" name="Strike Cruiser Prow Bombardment Cannons" publicationId="5766-7751-d146-0800" page="59" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="f8fc-7df3-a5c6-b5b4" name="Prow Weapon 1" publicationId="5766-7751-d146-0800" page="59" hidden="false" collective="false" import="true" defaultSelectionEntryId="2db4-55cf-c4d7-3454">
@@ -754,6 +757,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
@@ -770,7 +774,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2db4-55cf-c4d7-3454" name="Prow Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
