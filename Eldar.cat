@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="13" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="81d0-87dc-b82b-bc57" name="Dragonship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
     <categoryEntry id="a74b-0b9b-07ac-b836" name="Wraithship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
@@ -230,7 +230,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch" publicationId="5766-7751-d146-0800" page="137" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ded8-27cb-ef54-c036" name="Autarch Ldr 9" publicationId="5766-7751-d146-0800" page="137" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -256,7 +256,7 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="3a1e-d05d-a960-eee6" name="New CategoryLink" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+        <categoryLink id="d5dc-e928-849d-461a" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="04bb-1896-a417-a071" name="One Re-Roll" hidden="false" collective="false" import="true" type="upgrade">
@@ -1127,14 +1127,14 @@ Aspect Warrior Fighting Crews as chosen from the fleet list, adding +2 to their 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
           </characteristics>
         </profile>
-        <profile id="1672-463e-b01b-927c" name="Flame Of Asuryan Keel Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="1672-463e-b01b-927c" name="Flame Of Asuryan L Keel Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front/Left</characteristic>
           </characteristics>
         </profile>
-        <profile id="7df7-b13b-6047-8be6" name="Flame Of Asuryan Keel Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="7df7-b13b-6047-8be6" name="Flame Of Asuryan R Keel Pulsar Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
@@ -2030,6 +2030,9 @@ Note: Holofields so not negate hits or the effects from moving through blast mar
     </rule>
     <rule id="b96f-774f-8cd2-0227" name="Boarding" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
       <description>An Eldar Vessel intending to board an opponent may do so in either movement phase, but it may not shoot or launch ordnance before doing so. If it boards in its movemenet phase, it may not make its second movement. </description>
+    </rule>
+    <rule id="2d83-d3ad-a32e-3ac2" name="Fleet Commander" hidden="false">
+      <description>See Page 137 of the 2010 FAQ for fleet commander rules https://tinyurl.com/BFGrules</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
