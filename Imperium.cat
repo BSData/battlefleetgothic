@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="30" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="31" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -953,7 +953,9 @@ Starhawks: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -973,27 +975,37 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" field="4c65616465727368697023232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f63e8ff-5632-43eb-9434-d6749e7115a0" type="instanceOf"/>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f63e8ff-5632-43eb-9434-d6749e7115a0" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="4c65616465727368697023232344415441232323" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bb453fc8-379f-49ca-8030-2c3456c729a0" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bb453fc8-379f-49ca-8030-2c3456c729a0" type="equalTo"/>
+                    <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="375c-4f20-011c-693d" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="035e-33cd-0111-9ac2" type="instanceOf"/>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="035e-33cd-0111-9ac2" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="2">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3306-d205-6a51-6546" type="instanceOf"/>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3306-d205-6a51-6546" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="3">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b86-8b3f-9839-a009" type="instanceOf"/>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b86-8b3f-9839-a009" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="375c-4f20-011c-693d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1014,7 +1026,7 @@ Starhawks: 20cm</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2f63e8ff-5632-43eb-9434-d6749e7115a0" name="Fleet Admiral" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="2f63e8ff-5632-43eb-9434-d6749e7115a0" name="Fleet Admiral Ldr 9" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
               </constraints>
@@ -1025,7 +1037,7 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bb453fc8-379f-49ca-8030-2c3456c729a0" name="Solar Admiral" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="bb453fc8-379f-49ca-8030-2c3456c729a0" name="Solar Admiral Ldr 10" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
               </constraints>
@@ -1036,7 +1048,7 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1a1ebb83-bf55-4fc3-8aca-e3b3c733369d" name="Admiral" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="1a1ebb83-bf55-4fc3-8aca-e3b3c733369d" name="Admiral Ldr 8" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
               </constraints>
@@ -1050,9 +1062,14 @@ Starhawks: 20cm</characteristic>
             <selectionEntry id="8ff6f2a1-fc73-4742-a7d0-02b5d984c443" name="Master of the Fleet" page="0" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -1063,6 +1080,39 @@ Starhawks: 20cm</characteristic>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="375c-4f20-011c-693d" name="Lord Admiral Rath Ldr 10" publicationId="5766-7751-d146-0800" page="36" hidden="true" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="0a10-cbdd-a0ae-ea8e" value="1.0">
+                  <conditions>
+                    <condition field="points" scope="roster" value="1499.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-cbdd-a0ae-ea8e" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="ea79-84d2-e1fc-e95e" name="Lord Zaccarius Rath Ldr 10" publicationId="5766-7751-d146-0800" page="36" hidden="false">
+                  <description>Lord Admiral Rath is Ld-10 and comes with two rerolls as part of his point cost. His crew is honored and inspired by the great man‟s presence and will fight with great courage and pride; they add +1 to their roll when defending against boarding actions. Respect for him extends to the forge world of Bakka itself, and his flagship receives one ship refit and weapon refit (rolled randomly) as part of his point cost. In a campaign, a ship so refitted must remain his flagship unless it is destroyed.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="f7b2-316a-00fd-f4ec" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="200.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3353,6 +3403,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3472,6 +3523,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3676,6 +3728,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3713,13 +3766,6 @@ Starhawk Bombers: 20cm</characteristic>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f021-78d4-f508-d308" name="Tyrant Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
