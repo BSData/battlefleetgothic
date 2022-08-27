@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="7" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="8" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="bf37-f25f-be0e-e317" name="Tyranid Hive Fleet List" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false">
       <categoryLinks>
@@ -685,6 +685,24 @@
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="95f5-2a76-021d-fcdc" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b85a-43ad-6f1c-fdd3" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="bdea-54c4-2e46-76a9" name="Prow Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <comment>Notes torpedos are listed on page 19 but they are missing from the profile. this is corrected on page 30 of the 2010 FAQ</comment>
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
