@@ -7007,7 +7007,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">6</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">5</characteristic>
           </characteristics>
         </profile>
         <profile id="b623-d958-538d-5a14" name="Emperor Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -7038,6 +7038,48 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Right/Front</characteristic>
           </characteristics>
         </profile>
+        <profile id="d216-8065-09a1-5e93" name="Emperor Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <modifiers>
+            <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
+              <conditions>
+                <condition field="selections" scope="fd03-5f22-b33e-38dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm
+</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76b2-41bd-7328-bb8f" name="Emperor Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <modifiers>
+            <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
+              <conditions>
+                <condition field="selections" scope="fd03-5f22-b33e-38dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm
+</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="625c-3733-dee7-a1d3" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
@@ -7046,62 +7088,6 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       <categoryLinks>
         <categoryLink id="6b1c-8ab9-4644-8561" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="cca8-c5dc-e805-34ca" name="Ordinance" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>this appends correctly</comment>
-          <profiles>
-            <profile id="bc44-e341-d3ba-aeac" name="Emperor Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <modifiers>
-                <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
-                  <conditions>
-                    <condition field="selections" scope="cca8-c5dc-e805-34ca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
-Starhawks: 20cm
-</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="2e57-2d60-7c22-7b85" name="Emperor Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-              <modifiers>
-                <modifier type="append" field="52616e67652f537065656423232344415441232323" value="Torpedo Bomber: 20cm (STR 2)">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="beba-9f13-d04b-6ad6" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="52616e67652f537065656423232344415441232323" value=" Sharks: 30cm">
-                  <conditions>
-                    <condition field="selections" scope="cca8-c5dc-e805-34ca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0775-2b9d-28d5-c715" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
-Starhawks: 20cm
-</characteristic>
-                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <entryLinks>
-            <entryLink id="7566-68cd-7323-921d" name="Shark Assault Boats" hidden="false" collective="false" import="true" targetId="0775-2b9d-28d5-c715" type="selectionEntry"/>
-            <entryLink id="6884-c798-a933-4aa6" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="d921-bab8-3429-a528" name="Extra Turret" hidden="true" collective="false" import="true" targetId="3dc9-0fe5-4b33-660e" type="selectionEntry">
           <modifiers>
@@ -7127,6 +7113,7 @@ Starhawks: 20cm
           </modifiers>
         </entryLink>
         <entryLink id="95d1-9d63-575b-f474" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="34e9-c16d-1d5d-4943" name="Shark Assault Boats" hidden="false" collective="false" import="true" targetId="0775-2b9d-28d5-c715" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="365.0"/>
