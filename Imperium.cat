@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="31" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="32" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -975,7 +975,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" field="4c65616465727368697023232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f63e8ff-5632-43eb-9434-d6749e7115a0" type="equalTo"/>
+                <condition field="selections" scope="e670be5a-3aad-4eba-9e5e-2b79130c13b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a1ebb83-bf55-4fc3-8aca-e3b3c733369d" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="4c65616465727368697023232344415441232323" value="2">
@@ -1026,7 +1026,7 @@ Starhawks: 20cm</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2f63e8ff-5632-43eb-9434-d6749e7115a0" name="Fleet Admiral Ldr 9" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="2f63e8ff-5632-43eb-9434-d6749e7115a0" name="Fleet Admiral Ldr 8" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
               </constraints>
@@ -1048,7 +1048,7 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1a1ebb83-bf55-4fc3-8aca-e3b3c733369d" name="Admiral Ldr 8" page="0" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="1a1ebb83-bf55-4fc3-8aca-e3b3c733369d" name="Admiral Ldr 9" page="0" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
               </constraints>
