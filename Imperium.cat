@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="32" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="33" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -121,7 +121,7 @@
         </categoryLink>
         <categoryLink id="6b82-4f7b-62b0-9c9c" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="eba0-139c-1262-bdc5" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="2328-5807-9104-c69d" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
+        <categoryLink id="2328-5807-9104-c69d" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
           <modifiers>
             <modifier type="increment" field="63f0-c3d3-ae52-6557" value="1.0">
               <repeats>
@@ -153,7 +153,7 @@
         </categoryLink>
         <categoryLink id="0dc7-4121-57c5-217f" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
           <modifiers>
-            <modifier type="increment" field="3e50-ab52-b23c-126d" value="1.0">
+            <modifier type="increment" field="bea3-10f7-b422-ece2" value="1.0">
               <repeats>
                 <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" repeats="1" roundUp="false"/>
               </repeats>
@@ -163,7 +163,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e50-ab52-b23c-126d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bea3-10f7-b422-ece2" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -513,54 +513,17 @@
         <categoryLink id="fa32-3fea-4866-f482" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="78eb-6eac-84b5-ccfd" name="Battlefleet Bakka, Saviors of Maccrage" publicationId="5766-7751-d146-0800" page="32" hidden="false">
+    <forceEntry id="e874-e62b-1c36-7aec" name="Battlefleet Bakka, Saviors of Maccrage" publicationId="5766-7751-d146-0800" page="32" hidden="false">
       <categoryLinks>
-        <categoryLink id="4d0e-443e-df3a-4dae" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="d9d6-7825-c2f3-76e1" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="1a9d-3e97-a7cc-b17e" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="c51e-63e3-4068-e8cc" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="8e2d-384b-0358-c23c" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eee2-fab9-03da-447a" type="max"/>
-            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7319-38d0-4022-2fe7" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="9972-99b3-bb96-f4f0" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="aa32-9f4f-b3d6-9963" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="e718-0c52-24cc-7199" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-        <categoryLink id="82ac-4037-ce85-9e17" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
-          <modifiers>
-            <modifier type="increment" field="62a3-8cde-d045-97f0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a3-8cde-d045-97f0" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="fb68-cba3-35d1-53fa" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
-          <modifiers>
-            <modifier type="increment" field="7690-c59e-a382-c598" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7690-c59e-a382-c598" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b4d6-160e-fad8-8a9d" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="6efe-d796-a7f3-360e" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="da63-1233-5447-df84" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="e872-a921-8e0d-cab6" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink id="7baa-5f86-f6a4-32aa" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
+        <categoryLink id="2eed-c603-9ef1-d7c3" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="85d2-5a28-081e-f791" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="f902-969d-ab64-9ed2" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="bc9a-33d9-71b5-b282" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -830,7 +793,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -990,7 +953,7 @@ Starhawks: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1124,7 +1087,7 @@ Starhawks: 20cm</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1842,7 +1805,7 @@ Bombers: 20cm</characteristic>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                         <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2789,7 +2752,7 @@ Starhawks: 20cm</characteristic>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
@@ -3438,7 +3401,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3558,7 +3521,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3763,7 +3726,7 @@ Starhawk Bombers: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -5591,7 +5554,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5928,7 +5891,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6053,7 +6016,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6079,7 +6042,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6204,7 +6167,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6391,7 +6354,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6480,7 +6443,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6746,6 +6711,38 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="ea84-29b5-0ed2-a3bb" name="Dominion Class Battlecruiser" hidden="false" collective="false" import="true" targetId="9e60-dcbc-5fe8-e8e0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9f58-af54-e90a-81b8" name="Mercury Class Battlecruiser" hidden="false" collective="false" import="true" targetId="31a2-b84a-598f-e15a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="59ab-5c9e-2fbe-26a2" name="Mechanicus Fleet Rules" page="0" hidden="true">
@@ -6916,8 +6913,24 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
         <cost name="pts" typeId="points" value="365.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" publicationId="b161-6b4c-e770-9ab2" page="17" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" publicationId="b161-6b4c-e770-9ab2" page="17" hidden="true" collective="false" import="true" type="unit">
       <comment>2010 FAQ pg 19 changed points to 235</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d78a-164a-843b-659c" name="Armageddon Profile" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -7330,7 +7343,24 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="39f6-6f2c-bcea-b22b" name="Mars Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c992-71b0-a514-938e" name="Mars Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
@@ -7396,17 +7426,10 @@ Starhawks: 20cm</characteristic>
         <categoryLink id="2d11-95ec-a8b7-78ae" name="Battle Cruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d10d-9781-66d7-073e" name="+1 Turret" publicationId="5766-7751-d146-0800" page="19" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d10d-9781-66d7-073e" name="+1 Turret" publicationId="5766-7751-d146-0800" page="19" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2607-6b22-9e68-6ea6" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="df2e-cc79-a18d-3357" name="+1 Turret" publicationId="5766-7751-d146-0800" page="19" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-              <characteristics>
-                <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">A Mars battlecruiser may purchase a third turret for an additional +10 points</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -7580,7 +7603,24 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5041-7088-764d-51b7" name="Overlord Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="109" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="fcee-5ff3-0799-38b6" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
@@ -7619,11 +7659,6 @@ Starhawks: 20cm</characteristic>
                 <condition field="selections" scope="5041-7088-764d-51b7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce21-35fd-212c-6a16" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
@@ -7640,7 +7675,6 @@ Starhawks: 20cm</characteristic>
         <infoLink id="f4d9-7dbc-b329-31bf" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="30e1-1bcb-7dea-615e" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="4e8f-3e98-7d0f-9b86" name="New CategoryLink" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8175,7 +8209,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="340.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="481c-4670-972c-f69d" name="Jovian Class Battlecruiser" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="481c-4670-972c-f69d" name="Jovian Class Battlecruiser" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="30e4-0071-1e21-3af4" name="Jovian Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -8188,7 +8222,7 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="6d19-5170-d65c-91d8" name="Dorsal Lance Battery" page="2" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="6d19-5170-d65c-91d8" name="Dorsal Lance Battery" page="" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -8211,18 +8245,41 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
           </characteristics>
         </profile>
+        <profile id="f42a-9d3a-f42d-8744" name="Jovian  (Reserve Vessel)" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Jovian was fitted with an improved sensor array during its conversion to accurately control its prodigious squadrons of attack craft. It gains a +2 bonus when the enemy is on special orders instead of +1. Its prow Nova Cannon was never replaced after the Stabulo Campaign; if the ship suffers prow critical damage, it may ignore the result entirely instead of moving up the table to Engine Room Damaged. 
+The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It is a reserve vessel of Battlefleet Bakka and can only be used as such by Bakka fleets and not with other fleet lists.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="f07b-f2e7-1fd5-6a3b" name="Battle Cruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false"/>
+        <categoryLink id="f07b-f2e7-1fd5-6a3b" name="Battle Cruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cbb1-1fce-0f79-50b5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="5dad-3fcb-6ff5-145b" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a332-3718-ef1b-57f3" name="Orion Class Battlecruiser" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a332-3718-ef1b-57f3" name="Orion Class Battlecruiser" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d813-246b-edd9-a31a" name="Orion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -8317,7 +8374,7 @@ Starhawks: 20cm</characteristic>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8563,7 +8620,7 @@ Starhawks: 20cm</characteristic>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78eb-6eac-84b5-ccfd" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -8612,6 +8669,230 @@ Starhawks: 20cm</characteristic>
     <selectionEntry id="032c-e71b-b86c-acdf" name="Extra Turret" hidden="true" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e60-dcbc-5fe8-e8e0" name="Dominion Class Battlecruiser" publicationId="5766-7751-d146-0800" page="40" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3d06-25cf-9bd7-28cd" name="Dominion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b3a4-a2e1-cded-0864" name="Dorsal Lance Battery" page="" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63f1-9de9-975c-9357" name="Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="38d5-90dd-fb9c-a733" name="Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30cm
+Starhawks: 20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0024-6d96-2604-0dd7" name="Dominion Port Lance Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0714-a481-86da-dfa1" name="Dominion Starbord Lance Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb2b-fa3c-d13f-1c0e" name="Dominion Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Speed: 30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="86f9-4980-6003-1b32" name="New CategoryLink" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
+        <categoryLink id="a6aa-1470-9ee0-9a24" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a090-6c11-e1b6-dcc9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="0e79-2ee7-ee86-feee" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="260.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31a2-b84a-598f-e15a" name="Mercury Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0893-f0be-0eaf-b6b5" name="Mercury Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e88-0398-8736-4d7e" name="Port Main Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="477a-8b4a-eb43-3ebd" name="Starboard Main Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4e7-bd2d-2b6f-2e33" name="Port Weapons battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <modifiers>
+            <modifier type="set" field="52616e67652f537065656423232344415441232323" value="60cm">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e47e-c5ed-8b31-3217" type="equalTo"/>
+                    <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a00d-09e5-4ef0-d6b6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb20-faef-bc2e-81d6" name="Starboard Weapons battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <modifiers>
+            <modifier type="set" field="52616e67652f537065656423232344415441232323" value="60cm">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e47e-c5ed-8b31-3217" type="equalTo"/>
+                    <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a00d-09e5-4ef0-d6b6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1beb-7309-0978-667e" name="Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1c98-4a6f-7835-b6f5" name="Unstable Reactor" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Mercury class battlecruisers are fitted with up-rated engineering plants that increase its speed and provide it with greater firepower at the expense of survivability. When reduced to zero hits, it rolls 3D6 for catastrophic damage and adds the result (any roll greater than 12 counts as 12).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="07b1-ad0e-d121-3d10" name="Prow Nova Cannon" hidden="false" targetId="af91-33ff-94d6-44f4" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e25e-bb08-f98c-c061" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e2ee-ae1a-d79f-a070" name="New CategoryLink" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
+        <categoryLink id="6518-6646-8f24-5b81" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bdde-04a9-6d2e-d828" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="3380-270b-8c0b-feaa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1038-b377-5864-026e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d03c-41fc-2f0e-7164" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a00d-09e5-4ef0-d6b6" name="Medusa (Improved Range)" publicationId="5766-7751-d146-0800" page="41" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10cc-e6a2-e671-6483" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b1-f3ae-cebe-8d16" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3380-270b-8c0b-feaa" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62cf-8d11-5e80-63bb" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e25e-bb08-f98c-c061" name="Gorgon (Torpedos)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c0a-301a-ee72-76e8" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f40a-88d6-5bf3-eae4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f590-da7b-b4a7-df14" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="-20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e47e-c5ed-8b31-3217" name="Nemesis (Improved Range)" publicationId="5766-7751-d146-0800" page="41" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cc3-5118-ff7a-1546" type="max"/>
+                <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6704-8b88-bb02-e14c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="24bb-1d3f-5432-be50" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="255.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
