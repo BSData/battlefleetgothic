@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="33" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="34" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -2763,6 +2763,13 @@ Starhawks: 20cm</characteristic>
       </modifiers>
       <profiles>
         <profile id="dbb6-f375-51cb-00f6" name="Dominator Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="c6c4-e97d-9bed-fdfa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -2843,6 +2850,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="bc3a-e293-5b4d-96be" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="311b-4660-bab6-1d04" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="1dd7-56a2-2fab-b037" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190.0"/>
@@ -3410,6 +3418,13 @@ Starhawk Bombers: 20cm</characteristic>
       </modifiers>
       <profiles>
         <profile id="0d7f-b8f9-9ae3-14b5" name="Gothic Profile" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="be36-cf2d-5993-dbc5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -3500,6 +3515,7 @@ Starhawk Bombers: 20cm</characteristic>
       <entryLinks>
         <entryLink id="b708-9fb3-3d23-4e45" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="a231-73e5-c58e-eb24" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="9d70-9863-9bcc-4395" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -3534,6 +3550,11 @@ Starhawk Bombers: 20cm</characteristic>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b6b-2f04-0be9-7e1e" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="7cdb-036c-41b6-ca4e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3705,6 +3726,7 @@ Starhawk Bombers: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a2a5-1277-8b09-e0cd" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="2043-75a4-0832-71ac" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180.0"/>
@@ -3739,6 +3761,11 @@ Starhawk Bombers: 20cm</characteristic>
             <modifier type="increment" field="5475727265747323232344415441232323" value="1">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aefd-bfd2-2dbf-0318" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="07f4-ad3c-5819-a030" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4093,6 +4120,7 @@ Starhawk Bombers: 20cm</characteristic>
           </modifiers>
         </entryLink>
         <entryLink id="496a-8aaa-fea0-ec03" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="5969-10db-1ead-ac05" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="185.0"/>
@@ -5562,6 +5590,13 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       </modifiers>
       <profiles>
         <profile id="0990-e6d4-73cc-b1a4" name="Siluria Profile" publicationId="5766-7751-d146-0800" page="43" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="d7fb-7ac7-538a-0a86" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
@@ -5603,6 +5638,7 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
       </categoryLinks>
       <entryLinks>
         <entryLink id="b685-c310-5d67-7580" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="1271-4ec6-9315-1512" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="100.0"/>
@@ -6367,6 +6403,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -6933,6 +6970,13 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </modifiers>
       <profiles>
         <profile id="d78a-164a-843b-659c" name="Armageddon Profile" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="35af-bdab-91ca-40fb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -7033,6 +7077,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7258-40d4-7399-ab05" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="3d9d-4239-3744-c8f3" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="235.0"/>
@@ -7738,6 +7783,13 @@ Starhawks: 20cm</characteristic>
       </modifiers>
       <profiles>
         <profile id="6f81-d92c-56b4-a8ea" name="Retribution Profile" publicationId="11f0-17d1-e4d2-1018" page="107" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="c4a0-4f0a-bc98-0cfe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -7832,6 +7884,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="b1c9-befc-be34-22a6" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="e826-6339-636d-2700" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="d2d2-8448-79c2-6bcd" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="345.0"/>
@@ -7858,9 +7911,17 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d8b-7a00-a7f5-06a2" name="Victory Class Battleship" publicationId="9670-79b6-b335-ed60" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7d8b-7a00-a7f5-06a2" name="Victory Class Battleship" publicationId="5766-7751-d146-0800" hidden="false" collective="false" import="true" type="unit">
+      <comment>points are listed differently from page to page fleet list page (44) is 345</comment>
       <profiles>
         <profile id="afa0-aaaa-5bbc-1c7a" name="Victory Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="7d8b-7a00-a7f5-06a2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -7920,10 +7981,10 @@ Starhawks: 20cm</characteristic>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="-10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8c2f-c5fe-8327-0bb8" name="Standart" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8c2f-c5fe-8327-0bb8" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="7da3-702e-3a9a-1036" name="Prow Nova Cannon" hidden="false" targetId="af91-33ff-94d6-44f4" type="profile"/>
               </infoLinks>
@@ -7937,9 +7998,14 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="b381-b030-36a1-3826" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="3530-a023-79e5-e3a2" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="590e-87fc-703e-b348" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="360.0"/>
+        <cost name="pts" typeId="points" value="345.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f9b0-bc6a-0bc3-55de" name="Cardinal Class Heavy Cruiser" hidden="false" collective="false" import="true" type="unit">
@@ -8148,6 +8214,13 @@ Starhawks: 20cm</characteristic>
     <selectionEntry id="4385-6d34-b150-51d5" name="Vanquisher Class Battleship" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="b508-5fdb-35a0-5403" name="Vanquisher Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="4385-6d34-b150-51d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
@@ -8204,6 +8277,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="191b-0a31-aaa6-c47a" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
         <entryLink id="93fb-4ee2-f754-456d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="b72d-256a-5d49-e1aa" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="340.0"/>
@@ -8674,6 +8748,13 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
     <selectionEntry id="9e60-dcbc-5fe8-e8e0" name="Dominion Class Battlecruiser" publicationId="5766-7751-d146-0800" page="40" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="3d06-25cf-9bd7-28cd" name="Dominion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="9e60-dcbc-5fe8-e8e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -8736,6 +8817,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink id="a090-6c11-e1b6-dcc9" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink id="0e79-2ee7-ee86-feee" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry"/>
+        <entryLink id="88f7-7bd2-637b-9c66" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="260.0"/>
@@ -8744,6 +8826,13 @@ Starhawks: 20cm</characteristic>
     <selectionEntry id="31a2-b84a-598f-e15a" name="Mercury Class Battlecruiser" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="0893-f0be-0eaf-b6b5" name="Mercury Profile" publicationId="11f0-17d1-e4d2-1018" page="108" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="31a2-b84a-598f-e15a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
@@ -8890,9 +8979,28 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="24bb-1d3f-5432-be50" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="1a6e-4462-e98b-fac5" name="Bakka Turret" hidden="false" collective="false" import="true" targetId="8025-e5ea-9b7b-7f59" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="255.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8025-e5ea-9b7b-7f59" name="Bakka Turret" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7a-d4c0-7269-6693" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="1f7d-986d-7a83-ea45" name="Bakka Turret" hidden="false" targetId="b473-f084-d220-f2c8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -8981,6 +9089,12 @@ Starhawks: 20cm</characteristic>
     <profile id="ad35-5fda-fa0b-e885" name="Defensive Corridors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">+1 to its dice roll when defending against boarding action.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b473-f084-d220-f2c8" name="Bakka Turret" publicationId="5766-7751-d146-0800" page="34" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <comment>it&apos;s not with the fleet register but the fleet defence turret gets a whole section on page 34 of 2010 faq</comment>
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">+1 Turret (included in profile)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
