@@ -4064,14 +4064,7 @@ Starhawk Bombers: 20cm</characteristic>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="b664-6587-debb-d2ec" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="b664-6587-debb-d2ec" name="Zealous Prow Nova" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="230a-1f21-5713-9b0b" type="max"/>
                       </constraints>
@@ -6218,21 +6211,6 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="1548-5ea5-6679-8736" name="Space Marine Strike Cruiser" hidden="true" collective="false" import="true" targetId="15d2-1699-80d3-3c45" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink id="a9bb-4591-eb45-2059" name="Vengeance Class Grand Cruiser" hidden="true" collective="false" import="true" targetId="58eb-48b5-7e42-8bc7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -6667,33 +6645,6 @@ Bombers: 20cm</characteristic>
       <entryLinks>
         <entryLink id="961d-dd58-6aca-cf43" name="Imperial Ordnance" hidden="false" collective="false" import="true" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
       </entryLinks>
-    </entryLink>
-    <entryLink id="7e33-ce75-6e35-639c" name="Space Marine Battle Barge" hidden="true" collective="false" import="true" targetId="88e3-93c2-4982-0cb1" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="2c84-6683-0b1f-69d2" name="Battle Barge Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e426-27a2-f520-71ef" name="Thunderhawk Gunship" hidden="false" targetId="843f-ef90-8376-4f0b" type="profile"/>
-      </infoLinks>
     </entryLink>
     <entryLink id="da56-34b2-d32c-3221" name="Styx Class Heavy Cruiser" hidden="false" collective="false" import="true" targetId="da54-1698-df9e-8979" type="selectionEntry">
       <modifiers>
