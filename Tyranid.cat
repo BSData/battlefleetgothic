@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="8" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="9" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="bf37-f25f-be0e-e317" name="Tyranid Hive Fleet List" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false">
       <categoryLinks>
@@ -20,21 +20,7 @@
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f025-ebad-6a3d-ed78" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0ea3-7cf0-f3d1-dd17" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false">
-          <modifiers>
-            <modifier type="increment" field="b7b5-97c3-edf3-fc14" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="4361706974616c20536869707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7b5-97c3-edf3-fc14" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="0ea3-7cf0-f3d1-dd17" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="94b1-0249-2d26-3854" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="2561-6dcb-2401-5478" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="9498-8093-caae-b77a" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -626,6 +612,22 @@
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="8694-5e4d-5aaa-fd9e" name="Mega-Spore Mines" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ab-2f43-6f51-d034" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a47e-901f-ee25-85e4" name="No of Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="points" value="10.0">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="064f37d2-b9cf-42ae-bd0d-8a0e331b8d8e" name="Weapons" hidden="false" collective="false" import="true">
@@ -693,7 +695,7 @@
                   </constraints>
                   <profiles>
                     <profile id="bdea-54c4-2e46-76a9" name="Prow Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <comment>Notes torpedos are listed on page 19 but they are missing from the profile. this is corrected on page 30 of the 2010 FAQ</comment>
+                      <comment>Notes torpedos are listed on page 29 but they are missing from the profile. this is corrected on page 30 of the 2010 FAQ</comment>
                       <characteristics>
                         <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
                         <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
@@ -922,6 +924,7 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
       </costs>
     </selectionEntry>
     <selectionEntry id="a14b-d9bd-4c47-887a" name="Escort Squadron" page="0" hidden="true" collective="false" import="true" type="unit">
+      <comment>max 12 comes from page 91 under Squadrons</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -934,20 +937,22 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="380d-8fcf-5393-d8b7" type="min">
-          <comment>nids required to take one escort squad source?</comment>
-        </constraint>
-        <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="949b-cf58-611d-bd52" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="6a71-6650-2beb-bddf" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3026-a58d-a44a-89e8" name="Tyranid Escort Drone" hidden="false" collective="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry"/>
-        <entryLink id="762b-4a3f-6568-1f73" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry"/>
-        <entryLink id="17ec-7b69-e719-9c33" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7a4e-e8d4-0bd5-610c" name="Tyranid Escorts (12 max)" hidden="false" collective="false" import="true">
+          <comment>max 12 comes from page 91 under Squadrons</comment>
+          <constraints>
+            <constraint field="selections" scope="a14b-d9bd-4c47-887a" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b95-7052-59ec-9b49" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b720-953f-a1e0-36d2" name="Tyranid Escort Drone" hidden="false" collective="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry"/>
+            <entryLink id="c7a5-bac4-e081-ca1a" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry"/>
+            <entryLink id="3586-5220-a25f-d539" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1204,6 +1209,14 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="9588-da84-5470-54fa" name="Fire ship" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="eef6-7686-c639-57ae" name="Fire Ship" hidden="false" targetId="6c8e-f847-1a85-6f6a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1287,6 +1300,20 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="909c-6644-e617-388e" name="Bio Plasma Discharge" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0f55-170a-bb70-001c" name="Bio Plasma Discharge" publicationId="5766-7751-d146-0800" page="29" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1385,4 +1412,11 @@ Attempts to use synaptic control count as a Command check so a hive ship can kee
 Tyranid ordnance (fighters, assault boats, torpedoes) is not subject to synaptic control or Instinctive Behaviour – just move them like normal ordnance.</description>
     </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile id="6c8e-f847-1a85-6f6a" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The controlling player can detonate a fire ship at any point in its movement phase, inflicting D3 Fire critical hits on every ship within 3D6cm. As with any escort suffering a critical hit, escorts within the fire ship blast will be automatically destoryed, as are any ordinance markers. Remove the detonated fire ship and put a blast marker in it&apos;s place. (Only 10% of the fleet&apos;s escort drones may select this)</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
