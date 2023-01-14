@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="12" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffc39854-af9f-49f7-aae4-1af7b0d52818" name="Adeptus Mechanicus" revision="14" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -231,6 +231,24 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a705-2359-0e95-3320" name="Power Ram" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="07f7-cb31-548c-b2f7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41e2-efbe-7b79-f645" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f5b2-b275-4ee8-7103" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="33aa-a016-c30c-8163" name="Armour Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="07f7-cb31-548c-b2f7">
@@ -345,6 +363,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3acb-fc9e-94cf-186a" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cbd-982c-a86e-7983" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5e95-07b9-26d9-4ee2" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -584,6 +613,24 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="b9ab-580f-338b-310a" name="Power Ram" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65ae7d5a-30e6-4791-b0d5-399a22c11019" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="039d-6c53-0ad9-b3df" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6c90-7d8c-fd7d-7c21" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6e171872-8e9f-4b8f-9892-1e31b290dd35" name="Armour Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ae7d5a-30e6-4791-b0d5-399a22c11019">
@@ -797,6 +844,24 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a19-53ea-1750-e1e8" name="Power Ram" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="247f-0335-9c9c-3f2b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089b-560f-8e35-a0fc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4d2f-5caa-507e-f1b7" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1052,6 +1117,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a177-7a30-4584-81a7" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c7-db7b-c00b-621e" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3729-f5e7-7e5e-c96e" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="e2e0-c493-c9c3-4737" name="Prow Weapons Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="88c7-e307-b37b-2e4a">
@@ -1169,6 +1245,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="90ab-b3b9-2678-7cd2" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f291-49d5-cbe8-e3f3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="62fc-5be9-69c5-090e" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1549,6 +1636,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dd88-5f14-3e87-f3c8" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0e0-dad0-8c61-c8b0" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4940-9c9f-1f2b-9bb4" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2144,6 +2242,17 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d4f6-8a36-e4ac-6aff" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c60-0037-b0cd-28a9" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1fbc-6125-f98b-6eb2" name="Power Ram" hidden="false" targetId="f65b-3080-c446-4ed9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ef50-e7b1-9da1-5432" name="Weapons Batteries Range" hidden="false" collective="false" import="true" defaultSelectionEntryId="2d16-04b4-ee11-0d16">
@@ -2283,6 +2392,9 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       <entryLinks>
         <entryLink id="59de-dae0-3c5e-ed4d" name="Quest for Knowledge Subplot" hidden="false" collective="false" import="true" targetId="3bd7-3fd9-02d4-8c01" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2495,7 +2607,7 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
           </characteristics>
         </profile>
         <profile id="b77c-e537-cb48-65c9" name="Gladius Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
@@ -2758,11 +2870,17 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="c9ab-8471-639d-a1cf" name="2. +1 Shield" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="8d77-fd6f-357d-08af" name="+1 Shield" hidden="false" targetId="2879-9030-3b5a-2d5b" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="8117-ede8-fccf-bdca" name="3. ReRoll Turrets" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2772,6 +2890,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="fb7e-2dba-c0f2-e324" name="4. Advanced Lateral Thrusters" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2781,6 +2902,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="9d63-3b9f-a624-7dca" name="5. Advanced Communicators" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2790,6 +2914,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="ece5-f2c2-2fff-d2ce" name="6. Modulate Wavelengths" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2799,6 +2926,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -2815,6 +2945,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="4a2b-e44d-a9d9-0001" name="2. Structure Compromised" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2824,6 +2957,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="f16b-f982-c805-8fa8" name="3. Close Proximity Weakness" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2833,6 +2969,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="1472-e9d7-9eda-1986" name="4. Slow Controls" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2842,6 +2981,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="d4ad-8f8a-1daa-78a4" name="5. Thruster Reduction" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2851,6 +2993,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="437d-7924-d9be-fbba" name="6. Targeting Bugs" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
@@ -2860,6 +3005,9 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -2943,6 +3091,12 @@ If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there i
     <profile id="2879-9030-3b5a-2d5b" name="+1 Shield" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
       <characteristics>
         <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The ship gains +1 Shield</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f65b-3080-c446-4ed9" name="Power Ram" publicationId="5766-7751-d146-0800" page="19" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <comment>better wording here than in the book. may be on all ships with 6+ prow for 5 pts</comment>
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Deals +1HP damage in addition to any other hits rolled when ramming.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

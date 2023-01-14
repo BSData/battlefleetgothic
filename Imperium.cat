@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="34" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="35" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -807,6 +807,7 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="d65cfd13-349b-42f9-a853-96ff13660399" name="Imperial Endurance Class Light Cruiser" publicationId="1bc8-5968-21c3-0f27" page="18" hidden="true" collective="false" import="true" type="model">
+      <comment>points update per page 19 2010 compendium</comment>
       <modifiers>
         <modifier type="increment" field="points" value="35">
           <conditions>
@@ -939,7 +940,7 @@ Starhawks: 20cm</characteristic>
         <entryLink id="b039-e212-6c38-6403" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="115.0"/>
+        <cost name="pts" typeId="points" value="110.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e670be5a-3aad-4eba-9e5e-2b79130c13b6" name="Fleet Commander" page="0" hidden="true" collective="false" import="true" type="upgrade">
