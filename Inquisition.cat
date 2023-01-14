@@ -1,45 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="4" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="5" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
   </publications>
   <forceEntries>
     <forceEntry id="278c-51b5-3260-c524" name="Emperor&apos;s Inquisition Fleet List" publicationId="5766-7751-d146-0800" page="51" hidden="false">
       <categoryLinks>
-        <categoryLink id="e9c1-ace5-a67e-c269" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="3768-a666-1871-3637" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="e9c1-ace5-a67e-c269" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="3768-a666-1871-3637" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="2d5c-77f4-14d4-ddb4" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="02f9-9d96-53c3-eab9" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="c0c7-db0f-338b-c684" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="e4cd-dc0f-94e1-532e" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="e4cd-dc0f-94e1-532e" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cd-dc0f-94e1-532e" type="min"/>
-            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3669-f25b-6954-07b0" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="c0c7-db0f-338b-c684" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
         <categoryLink id="e607-8393-2a80-9b20" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
         <categoryLink id="800b-b475-1169-20be" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="1c52-52f6-31ff-428b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
@@ -166,8 +137,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3528-d35b-78b5-69ee" name="Grey Knights Strike Cruiser" publicationId="5766-7751-d146-0800" page="50" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="bd16-9280-9f5b-7867" value="1.0">
+          <repeats>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="points" scope="force" value="499.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c566-beb0-4e0f-29dc" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd16-9280-9f5b-7867" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbcd-0d20-778c-193c" type="min"/>
       </constraints>
       <profiles>
         <profile id="650a-e634-f415-889c" name="Grey Knights Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -195,6 +177,13 @@
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
           </characteristics>
         </profile>
+        <profile id="4108-cce5-6a34-0307" name="Grey Knights Strike Cruiser Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left / Front / Right</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="677b-bb2f-5f39-a2e5" name="Grey Knights Strike Cruiser" hidden="false">
@@ -205,7 +194,7 @@
         <categoryLink id="9f7a-b5c3-3c1e-2897" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1d71-7dfa-8b84-1caf" name="Armament Option" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1d71-7dfa-8b84-1caf" name="Prow Armament Option" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca2c-d9ce-894a-b2f7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b7-50cf-d9d6-a986" type="max"/>
@@ -274,7 +263,7 @@
     </selectionEntry>
     <selectionEntry id="49ef-6bd9-2c1b-8e54" name="Inquisition Blackship" publicationId="5766-7751-d146-0800" page="48" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f5b-f3f6-06b2-6eec" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e844-a440-d59d-4c72" type="max"/>
       </constraints>
       <profiles>
         <profile id="a14a-ac58-b4ab-d2d3" name="Blackship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -421,7 +410,7 @@ used for any ship in the fleet.</characteristic>
     </selectionEntry>
     <selectionEntry id="d0a9-0752-5347-271a" name="Inquisitorial Cruiser" publicationId="5766-7751-d146-0800" page="50" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e96-359b-9331-3eab" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271a-1a44-ad48-493d" type="max"/>
       </constraints>
       <profiles>
         <profile id="7771-379b-0861-8836" name="Inquisitorial Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -627,44 +616,6 @@ used for any ship in the fleet.</characteristic>
       </modifiers>
     </entryLink>
   </entryLinks>
-  <rules>
-    <rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" page="0" hidden="false">
-      <description>Leadership
-1: Ld 7
-2-3: Ld 8
-4-6: Ld 9
-
-Attack Rating 
-The AM have an attack rating of 2.
-
-Quest for Knowledge
-AM capital ships get 1 more repair dice than normal. A fleet that includes AM ships must use an AM sub-plot (see AM pdf for details), in addition to any other sub-plots that would be normally used.
-
-Gifts of the Omnissiah
-All AM capital ships gain +1 turret and get a randomly chosen Mechanicus Gift (see AM pdf for details). If a natural &apos;6&apos; is rolled for the ships&apos; leadership, and there is no fleet commander aboard, the gift may be chosen instead of selected randomly.
-
-Civillian Crew
-Any ship involved in a boarding action against an AM vessel or conducting a Hit &amp; Run attack against an AM vessel may re-roll the attack dice (Note: you cannot re-roll a re-roll, re Tyranids). AM ships don&apos;t use a-boats or boarding torpedoes.
-
-Exclusive Tech
-AM vessels may take a leadership check in order to fire upon their own hulked vessels.
-
-Fleet Commander
-In an AM fleet you may include up to one Mechanicus Archmagos as your fleet commander. One must be included to lead the fleet if it is worth 1000 points or more. An upgrade from the Mechanicus Gift table may be chosen for the ship hosting the Mechanicus Archmagos (capital ship only), in addition to the normal randomly rolled gift. This upgrade must be chosen before determining the ships&apos; normal gift. If the one ship gets the same gift twice it may elect to keep this arrangement (presumably the alternative is to allow a re-roll on the table), gaining all additive benefits such an action would allow, ie, getting 2 left column shifts on the gunnery table for having 2 of the Augmented Weapon Relays gifts.
-
-Reserve &amp; Allies
-AM vessels may be used as reserves in SM/IN fleets. IN ships may be used as reserves in an AM fleet. IN CGs and CBs included in an AM fleet as reserves use up cruiser slots. Xenos vessels that can ally with the IN, such as Rogue Traders and Demiurg can likewise ally with the AM.
-SMs may be included as reserves, but only so long as there are no IN/Xenos vessels included in the fleet and only by using the following inclusion criterion: upto 1 SC can be included for every 3 AM capital ships, and 1 SM BB can be included for every 3 SCs.
-AM vessels may not be placed in squadron with non-AM vessels and AM re-rolls cannot be used on non-AM ships and vice versa. An AM fleet commander must be embarked on an AM ship.
-When used as reserves in other fleets, single AM ships will attempt to disengage when crippled, failing that they will move towards the closest table edge. Capital ship squadrons will only do this when half or more of the ships in the squadron are crippled.
-Escort reserves in an AM fleet are taken without the usual 3:1 ratio restriction, though they must be drawn from the same fleet that any reserve capital ships are drawn from. SM escort reserves also follow the inclusion rules regarding Xenos vessels given above.
-Note: the Omnissiah&apos;s Victory may not be taken as a reserve.
-
-Campaigns
-AM fleets get +1 repair point for every 10 points, or part, of renown of the commander. AM get a +1 modifier when rolling to earn a refit, but a -1 modifier when rolling to appeal for reinforcements or Space Marines. Space Marines may be used as reinforcements only if the AM fleet contains no Xenos vessels.
-Mechanicus fleet commanders gain refits as they increase in renown (see the AM pdf for the progression), which may be taken from the Mechanicus Gift table or the normal IN refit table. These are rolled randomly and the actual refits don&apos;t follow the Fleet Commander from one ship to another (though they can still add the amount of refits they&apos;ve gained to their new flagship, rolled randomly).</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="042b-3669-8215-bf20" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
