@@ -6337,6 +6337,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6360,7 +6361,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
     <entryLink id="d1b8-4239-d881-7f72" name="Imperial Transport" hidden="false" collective="false" import="true" targetId="7b3f-50cd-e167-34ef" type="selectionEntry"/>
     <entryLink id="be0d-2b0c-6d5f-957d" name="Low Orbit Defences" hidden="false" collective="false" import="true" targetId="b1ab-a8cf-3067-2d53" type="selectionEntry"/>
     <entryLink id="088a-2181-b322-e93e" name="Q-Ship" hidden="false" collective="false" import="true" targetId="a7f4-7851-9c6d-0a1b" type="selectionEntry"/>
-    <entryLink id="cb6c-f20a-38ee-98b2" name="Escort Carriers" hidden="false" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
+    <entryLink id="cb6c-f20a-38ee-98b2" name="Escort Carriers" hidden="true" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6510,7 +6511,7 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="ea84-29b5-0ed2-a3bb" name="Dominion Class Battlecruiser" hidden="false" collective="false" import="true" targetId="9e60-dcbc-5fe8-e8e0" type="selectionEntry">
+    <entryLink id="ea84-29b5-0ed2-a3bb" name="Dominion Class Battlecruiser" hidden="true" collective="false" import="true" targetId="9e60-dcbc-5fe8-e8e0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6526,7 +6527,7 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="9f58-af54-e90a-81b8" name="Mercury Class Battlecruiser" hidden="false" collective="false" import="true" targetId="31a2-b84a-598f-e15a" type="selectionEntry">
+    <entryLink id="9f58-af54-e90a-81b8" name="Mercury Class Battlecruiser" hidden="true" collective="false" import="true" targetId="31a2-b84a-598f-e15a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -8171,7 +8172,6 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
@@ -8288,7 +8288,6 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
               </conditions>
