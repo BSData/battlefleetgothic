@@ -1897,19 +1897,166 @@ Bombers: 20cm</characteristic>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="09ac-dc1d-b1d0-ad73" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="eb31-03ad-c769-4fe6" type="selectionEntry"/>
-            <entryLink id="0dec-7620-6f75-5064" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry"/>
-            <entryLink id="e783-5abe-e5a9-88ec" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="fd70-2a36-263f-1ab7" type="selectionEntry"/>
+            <entryLink id="09ac-dc1d-b1d0-ad73" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="eb31-03ad-c769-4fe6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Rapid Strike Firestorm Frigate">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="points" value="45.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="ccee-49e6-3c96-9b99" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="0dec-7620-6f75-5064" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Rapid Strike SwordFrigate">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="points" value="40.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="80d0-004a-322c-120b" name="Rapid Strike Vessels" hidden="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>Space Marine Vessels may not be squadroned with Non-Space Marine Vessels. Rapid Strike Vessels count as Space Marine Vessels and have the associated benifets.</description>
+                </rule>
+              </rules>
+            </entryLink>
+            <entryLink id="e783-5abe-e5a9-88ec" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="fd70-2a36-263f-1ab7" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="35.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Rapid Strike Cobra Destroyer">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="c5df-6b69-980f-c3d9" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+              </infoLinks>
+            </entryLink>
             <entryLink id="c6cb-b63f-4803-985e" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="2466-9136-a2e0-ee08" type="selectionEntry"/>
             <entryLink id="4b3c-0de8-22ad-f5a5" name="Viper Class Destroyer" hidden="false" collective="false" import="true" targetId="be17-9b09-4b35-2f65" type="selectionEntry"/>
-            <entryLink id="9e88-bd14-f3ea-4682" name="Escort Carriers" hidden="false" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry"/>
-            <entryLink id="f64e-23df-6b82-4453" name="Q-Ship" hidden="false" collective="false" import="true" targetId="a7f4-7851-9c6d-0a1b" type="selectionEntry"/>
-            <entryLink id="913a-3251-a43d-c1a1" name="Xenos Vessel" hidden="false" collective="false" import="true" targetId="3c40-c6be-29e9-75d8" type="selectionEntry"/>
-            <entryLink id="5566-066c-c585-ff88" name="Infidel Class Raider" hidden="false" collective="false" import="true" targetId="f069-2dd7-ec57-ac51" type="selectionEntry"/>
-            <entryLink id="cb94-d20d-dd3f-6528" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="2466-9136-a2e0-ee08" type="selectionEntry"/>
-            <entryLink id="31bf-e808-1feb-3b1f" name="Armed Freighter" hidden="false" collective="false" import="true" targetId="c536-0327-537e-9da9" type="selectionEntry"/>
-            <entryLink id="3fa6-993d-4046-a53e" name="Cargo Transport" hidden="false" collective="false" import="true" targetId="e79b-d6c9-99ca-4565" type="selectionEntry"/>
-            <entryLink id="98d9-2b14-2eaf-bb59" name="Cargo Vessel" hidden="false" collective="false" import="true" targetId="eff8-dbf4-5ac6-ddb9" type="selectionEntry"/>
+            <entryLink id="9e88-bd14-f3ea-4682" name="Escort Carriers" hidden="true" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f64e-23df-6b82-4453" name="Q-Ship" hidden="true" collective="false" import="true" targetId="a7f4-7851-9c6d-0a1b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="913a-3251-a43d-c1a1" name="Xenos Vessel" hidden="true" collective="false" import="true" targetId="3c40-c6be-29e9-75d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5566-066c-c585-ff88" name="Infidel Class Raider" hidden="true" collective="false" import="true" targetId="f069-2dd7-ec57-ac51" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="31bf-e808-1feb-3b1f" name="Armed Freighter" hidden="true" collective="false" import="true" targetId="c536-0327-537e-9da9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="3fa6-993d-4046-a53e" name="Cargo Transport" hidden="true" collective="false" import="true" targetId="e79b-d6c9-99ca-4565" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="98d9-2b14-2eaf-bb59" name="Cargo Vessel" hidden="true" collective="false" import="true" targetId="eff8-dbf4-5ac6-ddb9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8172,9 +8319,10 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8203,6 +8351,9 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6aac-ddbe-657e-ba49" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1326-f559-9837-ab36" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -8287,9 +8438,10 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8885,6 +9037,18 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="eff8-dbf4-5ac6-ddb9" name="Cargo Vessel" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3785-19c6-3e6c-2ade" name="Cargo Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -8910,6 +9074,18 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="e79b-d6c9-99ca-4565" name="Cargo Transport" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="16ad-d2b5-8c8c-e80b" name="Cargo Transport" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -9002,6 +9178,16 @@ Starhawks: 20cm</characteristic>
     </rule>
     <rule id="033a-8392-d8c8-a7bf" name="Repulsor Shielding admec" hidden="false">
       <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+    </rule>
+    <rule id="3c73-8a2f-5cbd-932b" name="Rapid Strike Vessels" publicationId="1bc8-5968-21c3-0f27" page="27" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Space Marine Vessels may not be squadroned with Non-Space Marine Vessels. Rapid Strike Vessels count as Space Marine Vessels and have the associated benifets.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
