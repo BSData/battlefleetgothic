@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="12" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="dndtonight.com @mont_fox @Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e2e6-c633-dc83-216b" name="Orks" revision="12" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="dndtonight.com @mont_fox @Tomakokamikaze" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3efa-b57a-8226-2e47" name="Ork Pirates" publicationId="11f0-17d1-e4d2-1018" page="139" hidden="false">
       <categoryLinks>
@@ -432,6 +432,13 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
       </modifiers>
       <profiles>
         <profile id="8195-17aa-caab-617c" name="Hammer Profile" publicationId="1bc8-5968-21c3-0f27" page="68" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="2">
+              <conditions>
+                <condition field="selections" scope="c7241b1f-65a5-4358-9328-0665bb9dcd9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea6a-9727-5806-0495" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Kroozer</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">10</characteristic>
@@ -537,6 +544,7 @@ A Hammer Klass cruiser can either fire torpedoes or use bombardment kannon in a 
         <entryLink id="d81a-951f-edd4-795b" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
         <entryLink id="bdbf-6904-ad98-5160" name="More Gubbins" hidden="false" collective="false" import="true" targetId="fe02-22bf-3f1a-2ecc" type="selectionEntry"/>
         <entryLink id="5409-33bb-e431-35b3" name="Ork Clan" hidden="false" collective="false" import="true" targetId="724e-14bf-e67d-13db" type="selectionEntry"/>
+        <entryLink id="898d-53a3-c2a0-e841" name="More Dakka Dakka" hidden="false" collective="false" import="true" targetId="ea6a-9727-5806-0495" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="245.0"/>
@@ -794,7 +802,7 @@ A Hammer Klass cruiser can either fire torpedoes or use bombardment kannon in a 
         <entryLink id="0fe0-d2e3-ae4b-43a7" name="Ork Warlord" hidden="false" collective="false" import="true" targetId="d30c-f00e-a740-a066" type="selectionEntry"/>
         <entryLink id="432d-6e00-249d-abd3" name="More Gubbins" hidden="false" collective="false" import="true" targetId="fe02-22bf-3f1a-2ecc" type="selectionEntry"/>
         <entryLink id="70db-91f5-4c3a-58db" name="Ork Clan" hidden="false" collective="false" import="true" targetId="724e-14bf-e67d-13db" type="selectionEntry"/>
-        <entryLink id="643e-22aa-ba37-32c2" name="Dakka Dakka" hidden="false" collective="false" import="true" targetId="ea6a-9727-5806-0495" type="selectionEntry"/>
+        <entryLink id="643e-22aa-ba37-32c2" name="More Dakka Dakka" hidden="false" collective="false" import="true" targetId="ea6a-9727-5806-0495" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
@@ -1405,7 +1413,6 @@ The klaws count as prow armament for the pourpose of critical hits.</description
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3394-281a-e895-72bd" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c605-ecf9-5430-c533" type="instanceOf"/>
               </conditions>
             </conditionGroup>

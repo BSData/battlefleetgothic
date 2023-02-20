@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="35" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="36" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -1897,11 +1897,166 @@ Bombers: 20cm</characteristic>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="09ac-dc1d-b1d0-ad73" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="eb31-03ad-c769-4fe6" type="selectionEntry"/>
-            <entryLink id="0dec-7620-6f75-5064" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry"/>
-            <entryLink id="e783-5abe-e5a9-88ec" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="fd70-2a36-263f-1ab7" type="selectionEntry"/>
+            <entryLink id="09ac-dc1d-b1d0-ad73" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="eb31-03ad-c769-4fe6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Rapid Strike Firestorm Frigate">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="points" value="45.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="ccee-49e6-3c96-9b99" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="0dec-7620-6f75-5064" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Rapid Strike SwordFrigate">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="points" value="40.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="80d0-004a-322c-120b" name="Rapid Strike Vessels" hidden="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>Space Marine Vessels may not be squadroned with Non-Space Marine Vessels. Rapid Strike Vessels count as Space Marine Vessels and have the associated benifets.</description>
+                </rule>
+              </rules>
+            </entryLink>
+            <entryLink id="e783-5abe-e5a9-88ec" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="fd70-2a36-263f-1ab7" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="35.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Rapid Strike Cobra Destroyer">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="c5df-6b69-980f-c3d9" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+              </infoLinks>
+            </entryLink>
             <entryLink id="c6cb-b63f-4803-985e" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="2466-9136-a2e0-ee08" type="selectionEntry"/>
             <entryLink id="4b3c-0de8-22ad-f5a5" name="Viper Class Destroyer" hidden="false" collective="false" import="true" targetId="be17-9b09-4b35-2f65" type="selectionEntry"/>
+            <entryLink id="9e88-bd14-f3ea-4682" name="Escort Carriers" hidden="true" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f64e-23df-6b82-4453" name="Q-Ship" hidden="true" collective="false" import="true" targetId="a7f4-7851-9c6d-0a1b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="913a-3251-a43d-c1a1" name="Xenos Vessel" hidden="true" collective="false" import="true" targetId="3c40-c6be-29e9-75d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5566-066c-c585-ff88" name="Infidel Class Raider" hidden="true" collective="false" import="true" targetId="f069-2dd7-ec57-ac51" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="31bf-e808-1feb-3b1f" name="Armed Freighter" hidden="true" collective="false" import="true" targetId="c536-0327-537e-9da9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="3fa6-993d-4046-a53e" name="Cargo Transport" hidden="true" collective="false" import="true" targetId="e79b-d6c9-99ca-4565" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="98d9-2b14-2eaf-bb59" name="Cargo Vessel" hidden="true" collective="false" import="true" targetId="eff8-dbf4-5ac6-ddb9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5329,161 +5484,6 @@ When rolling on the Catastrophic Damage table also add +2 tothe dice roll. The m
         <cost name="pts" typeId="points" value="270.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="989b-8a78-786d-c022" name="Xenos Vessel" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="28ae-5211-f939-e3ff" name="Xenos Vessel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <modifiers>
-            <modifier type="append" field="537065656423232344415441232323" value="+5cm">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ec8-ffc0-facd-df38" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="924c-487e-ec19-e58a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="536869656c647323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="37b1-27ff-c7c6-a22c" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2a1c-5752-319c-99aa" name="Weapons battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e88a-f911-1970-823d" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="3ed1-2b5d-eb92-654f" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="332b-3afe-695c-1179" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="a676-675e-7abd-0af0" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="967f-2d11-fc51-19f0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="782a-68c4-ad0d-5b73" name="1 Long Range Sensors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">This double the Leadership test bonus for enemy contacts (i.e. enemy on special orders from) +1 to +2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3e91-77f0-c651-578b" name="2 Targetting Matrix" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b07-55f7-7336-867c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8546-0d70-d69b-a091" name="2 Targetting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel counts all targets as closing when using the gunnery table, and may re-roll a single missed shot each turn when shooting with lances.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="37b1-27ff-c7c6-a22c" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5c-3f9d-5c49-1b45" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="df59-a6cf-fdac-6fc2" name="Advanced Shielding" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of shields by +1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="924c-487e-ec19-e58a" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f40-0596-4187-c9ba" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="76cc-7d7a-746a-2883" name="4 Ship Defence Grid" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of turrets by +1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8ec8-ffc0-facd-df38" name="5 Adanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9493-7112-97f4-8dcf" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3334-e393-74fe-b96b" name="5 Adanced Drive Technology" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel adds +5cm to its speed.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8b14-1c03-e135-6c29" name="6 Pick one of the above" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f81-f17d-465e-abcf" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="99c1-b0ce-3b60-3571" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="60.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2a40-84fd-e18d-298b" name="Armed Cargo Vessel" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -6484,6 +6484,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6507,7 +6508,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
     <entryLink id="d1b8-4239-d881-7f72" name="Imperial Transport" hidden="false" collective="false" import="true" targetId="7b3f-50cd-e167-34ef" type="selectionEntry"/>
     <entryLink id="be0d-2b0c-6d5f-957d" name="Low Orbit Defences" hidden="false" collective="false" import="true" targetId="b1ab-a8cf-3067-2d53" type="selectionEntry"/>
     <entryLink id="088a-2181-b322-e93e" name="Q-Ship" hidden="false" collective="false" import="true" targetId="a7f4-7851-9c6d-0a1b" type="selectionEntry"/>
-    <entryLink id="cb6c-f20a-38ee-98b2" name="Escort Carriers" hidden="false" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
+    <entryLink id="cb6c-f20a-38ee-98b2" name="Escort Carriers" hidden="true" collective="false" import="true" targetId="d8c6-6423-4acf-949f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6657,7 +6658,7 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="ea84-29b5-0ed2-a3bb" name="Dominion Class Battlecruiser" hidden="false" collective="false" import="true" targetId="9e60-dcbc-5fe8-e8e0" type="selectionEntry">
+    <entryLink id="ea84-29b5-0ed2-a3bb" name="Dominion Class Battlecruiser" hidden="true" collective="false" import="true" targetId="9e60-dcbc-5fe8-e8e0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6673,7 +6674,7 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="9f58-af54-e90a-81b8" name="Mercury Class Battlecruiser" hidden="false" collective="false" import="true" targetId="31a2-b84a-598f-e15a" type="selectionEntry">
+    <entryLink id="9f58-af54-e90a-81b8" name="Mercury Class Battlecruiser" hidden="true" collective="false" import="true" targetId="31a2-b84a-598f-e15a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -7614,7 +7615,7 @@ Starhawks: 20cm</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup id="70ee-fe20-becb-65f8" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0aa-62db-b5a0-4c6b">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4307-653d-92e6-a00d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4307-653d-92e6-a00d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da05-bebe-5032-0b64" type="min"/>
           </constraints>
           <selectionEntries>
@@ -8172,7 +8173,7 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="340.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="481c-4670-972c-f69d" name="Jovian Class Battlecruiser" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="481c-4670-972c-f69d" name="Jovian Class Battlecruiser" publicationId="5766-7751-d146-0800" page="39" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="30e4-0071-1e21-3af4" name="Jovian Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -8319,9 +8320,9 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8350,6 +8351,9 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6aac-ddbe-657e-ba49" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1326-f559-9837-ab36" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -8434,10 +8438,10 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0335-3148-5471-abe3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8799,7 +8803,7 @@ Starhawks: 20cm</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup id="bdde-04a9-6d2e-d828" name="Varient" hidden="false" collective="false" import="true" defaultSelectionEntryId="3380-270b-8c0b-feaa">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1038-b377-5864-026e" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1038-b377-5864-026e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d03c-41fc-2f0e-7164" type="min"/>
           </constraints>
           <selectionEntries>
@@ -8876,6 +8880,236 @@ Starhawks: 20cm</characteristic>
         <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3c40-c6be-29e9-75d8" name="Xenos Vessel" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7435-e8dc-fb2e-267e" name="Xenos Vessel Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="append" field="537065656423232344415441232323" value="+5cm">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03d0-db64-cb60-7a4f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5475727265747323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbac-40dd-b1d7-11b0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="536869656c647323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ead5-ee32-7ba3-5622" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4fa9-9e24-aa98-c355" name="Weapons battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59da-f615-ea9b-466d" name="Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="818f-a8ef-1bc1-f250" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c1a4-4983-d282-8c43" name="Xenotech Systems (roll a D6)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="f55a-f1b1-ef91-42cc" name="1 Long Range Sensors" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9f-6ee3-bdcb-a7a9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dd92-7f83-f68a-e3f5" name="1 Long Range Sensors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">This double the Leadership test bonus for enemy contacts (i.e. enemy on special orders from) +1 to +2.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2ae1-93d9-c95b-94f2" name="2 Targetting Matrix" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-f1f2-a89f-504b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1aec-6fc0-9630-2bbf" name="2 Targetting Matrix" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel counts all targets as closing when using the gunnery table, and may re-roll a single missed shot each turn when shooting with lances.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ead5-ee32-7ba3-5622" name="3 Advanced Shielding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a2-bec5-15ca-a320" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b9ab-681d-8c4b-2fe7" name="Advanced Shielding" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of shields by +1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bbac-40dd-b1d7-11b0" name="4 Ship Defence Grid" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f05-dfc0-7070-679b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5c88-df82-3561-8c55" name="4 Ship Defence Grid" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel increases its number of turrets by +1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="59f4-4276-8264-6176" name="5 Adanced Drive Technology" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e9d-575d-aaed-6a9e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e572-3ccf-5672-51ae" name="5 Adanced Drive Technology" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+                  <characteristics>
+                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The vessel adds +5cm to its speed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="670c-8537-9854-63e8" name="6 Pick one of the above" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cadb-70d4-54e7-11b8" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="da19-3fcd-9e42-acc8" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eff8-dbf4-5ac6-ddb9" name="Cargo Vessel" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3785-19c6-3e6c-2ade" name="Cargo Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f093-fd32-c7c9-7634" name="Cargo Vessel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e79b-d6c9-99ca-4565" name="Cargo Transport" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70d0-c8dc-b8b6-a258" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="16ad-d2b5-8c8c-e80b" name="Cargo Transport" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">15</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a9f-8cec-e241-6ed8" name="Cargo Transport Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0fa9-847e-cb53-9990" name="Thunderhawks" hidden="false" collective="false" import="true">
@@ -8944,6 +9178,16 @@ Starhawks: 20cm</characteristic>
     </rule>
     <rule id="033a-8392-d8c8-a7bf" name="Repulsor Shielding admec" hidden="false">
       <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+    </rule>
+    <rule id="3c73-8a2f-5cbd-932b" name="Rapid Strike Vessels" publicationId="1bc8-5968-21c3-0f27" page="27" hidden="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Space Marine Vessels may not be squadroned with Non-Space Marine Vessels. Rapid Strike Vessels count as Space Marine Vessels and have the associated benifets.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

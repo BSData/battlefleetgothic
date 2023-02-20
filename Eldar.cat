@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="14" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b3939b81-abc0-4839-983e-9c03bc79f72b" name="Eldar Corsairs" revision="15" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @mont_fox dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="81d0-87dc-b82b-bc57" name="Dragonship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
     <categoryEntry id="a74b-0b9b-07ac-b836" name="Wraithship" publicationId="5766-7751-d146-0800" page="137" hidden="false"/>
@@ -2043,9 +2043,9 @@ Note: Holofields so not negate hits or the effects from moving through blast mar
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="944b-2a4a-496c-6b39" name="Hellbore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="944b-2a4a-496c-6b39" name="Hellebore Class Frigate" publicationId="b161-6b4c-e770-9ab2" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3e17-25f7-b2b2-7210" name="Hellbore Profile" publicationId="11f0-17d1-e4d2-1018" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="3e17-25f7-b2b2-7210" name="Hellebore Profile" publicationId="11f0-17d1-e4d2-1018" page="132" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
             <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -2056,21 +2056,21 @@ Note: Holofields so not negate hits or the effects from moving through blast mar
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="aacb-6dfc-b057-17ca" name="Hellbore Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="aacb-6dfc-b057-17ca" name="Hellebore Prow Pulsar Lances" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
-        <profile id="c76a-e50a-6780-3bd0" name="Hellbore Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="c76a-e50a-6780-3bd0" name="Hellebore Keel Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
           </characteristics>
         </profile>
-        <profile id="9adb-2671-3cb1-6544" name="Hellbore Prow Weapons Battery" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="9adb-2671-3cb1-6544" name="Hellebore Prow Weapons Battery" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">30cm</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
