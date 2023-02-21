@@ -151,21 +151,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de81-75d2-c24b-f840" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0dc7-4121-57c5-217f" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false">
-          <modifiers>
-            <modifier type="increment" field="bea3-10f7-b422-ece2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0c6-bde4-7055-1e6e" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bea3-10f7-b422-ece2" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="0dc7-4121-57c5-217f" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7346-ab43-9438-149f" name="Space Marine Fleet List, Codex Astartes (unsupported)" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
