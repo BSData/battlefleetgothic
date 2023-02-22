@@ -4103,14 +4103,7 @@ Starhawk Bombers: 20cm</characteristic>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="c95c-b452-2bf9-341f" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="c95c-b452-2bf9-341f" name="Prow Nova" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a73e-5e71-dca1-60cb" type="max"/>
                       </constraints>
