@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="37" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="38" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -1954,8 +1954,23 @@ Bombers: 20cm</characteristic>
                 </modifier>
               </modifiers>
               <infoLinks>
-                <infoLink id="c5df-6b69-980f-c3d9" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+                <infoLink id="c5df-6b69-980f-c3d9" name="Rapid Strike Vessels" hidden="true" targetId="3c73-8a2f-5cbd-932b" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="7b63-bd55-7c2c-c044" name="Widowmaker Cobra" hidden="false" collective="false" import="true" targetId="dc88-f7ed-8352-4f11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cd1-e8dd-1d21-e91b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </entryLink>
             <entryLink id="c6cb-b63f-4803-985e" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="2466-9136-a2e0-ee08" type="selectionEntry"/>
             <entryLink id="4b3c-0de8-22ad-f5a5" name="Viper Class Destroyer" hidden="false" collective="false" import="true" targetId="be17-9b09-4b35-2f65" type="selectionEntry"/>
@@ -4088,14 +4103,7 @@ Starhawk Bombers: 20cm</characteristic>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="c95c-b452-2bf9-341f" name="Zealous Prow Nova" page="0" hidden="true" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6006-f305-9563-5347" type="instanceOf"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="c95c-b452-2bf9-341f" name="Prow Nova" page="0" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a73e-5e71-dca1-60cb" type="max"/>
                       </constraints>
@@ -5772,99 +5780,6 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
         <cost name="pts" typeId="points" value="290.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e2ce-6cd4-788a-27bc" name="Cobra &quot;Widowmaker&quot; Squadron" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db42-cfe4-ffdf-1754" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="6bb8-3979-d4bb-4597" name="Cobra &quot;Widowmaker&quot; Squadron" publicationId="5766-7751-d146-0800" page="19" hidden="false">
-          <description>More than half of this squadron must be Widowmaker Cobras. eg 5 escorts must have 3 widowmaker cobras</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="2461-c01d-85d0-cad4" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ee4e-ce4f-11f7-da99" name="Escorts" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7b4-5aeb-402d-14b3">
-          <comment>save references in the profile not on the selection</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5517-d3ca-8901-68ba" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a7b4-5aeb-402d-14b3" name="Cobra Destroyer &quot;24th Destroyer Squadron - Widowmaker&quot;" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="true" collective="false" import="true" type="unit">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58ca-8898-acae-a63c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7a65-13f4-0793-3895" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-                    <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-                    <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="71b6-f03c-3720-523c" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="ef15-196e-b027-37ce" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-                  <characteristics>
-                    <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="fa7c-2cf3-7ca4-9149" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="94f1-93fb-5ad6-687e" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry"/>
-            <entryLink id="8389-0a44-956f-373c" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="eb31-03ad-c769-4fe6" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="718c-49ec-5a8c-e7fb" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="f099-70b7-133c-557c" name="Endeavour Class Light Cruiser" publicationId="5766-7751-d146-0800" page="42" hidden="true" collective="false" import="true" type="model">
       <comment>different from imperial endeavor see armada for imperial version and 2010 for points adjust</comment>
       <modifiers>
@@ -6704,6 +6619,38 @@ Bombers: 20cm</characteristic>
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="0d5d-ccde-4bc9-b828" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="fd70-2a36-263f-1ab7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="name" value="Rapid Strike Cobra Destroyer">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="points" value="35.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb0-5f33-c0c3-bb1b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0a5a-1462-f785-7a8e" name="Rapid Strike Vessels" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0312-e2f0-842e-bc1f" name="Widowmaker Cobra" hidden="false" collective="false" import="true" targetId="dc88-f7ed-8352-4f11" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c8-e3f0-0dee-522a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="59ab-5c9e-2fbe-26a2" name="Mechanicus Fleet Rules" page="0" hidden="true">
@@ -6820,6 +6767,7 @@ In a Planetary Assault scenario, Space Marine strike cruisers and battle barges 
       </costs>
     </selectionEntry>
     <selectionEntry id="c133-b14e-e57c-cb12" name="Apocalypse Class Battleship" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" collective="false" import="true" type="unit">
+      <comment>blah</comment>
       <profiles>
         <profile id="aff3-d347-19df-54fb" name="Apocalypse Profile" publicationId="1bc8-5968-21c3-0f27" page="12" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -8446,18 +8394,6 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="points" value="5.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7346-ab43-9438-149f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-f360-d49f-cb84" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b8b-7613-df6a-8977" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6577-54b5-e6c6-11c5" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a12-a17e-f21b-0631" type="max"/>
@@ -8482,13 +8418,37 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
           </characteristics>
         </profile>
         <profile id="2cb7-838e-ae3b-6392" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <modifiers>
+            <modifier type="set" field="46697265706f7765722f53747223232344415441232323" value="0.0">
+              <conditions>
+                <condition field="selections" scope="fd70-2a36-263f-1ab7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc88-f7ed-8352-4f11" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
             <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
+        <profile id="32d5-ab38-34ca-8805" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="true" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="fd70-2a36-263f-1ab7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc88-f7ed-8352-4f11" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <rules>
+        <rule id="b87f-4572-d5b8-36c6" name="Cobra &quot;Widowmaker&quot; Squadron" publicationId="5766-7751-d146-0800" page="19" hidden="true">
+          <description>More than half of this squadron must be Widowmaker Cobras. eg 5 escorts must have 3 widowmaker cobras</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="8813-194c-1f7e-a601" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
       </infoLinks>
@@ -8863,6 +8823,7 @@ Starhawks: 20cm</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="8025-e5ea-9b7b-7f59" name="Bakka Turret" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>blah</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -9109,6 +9070,26 @@ Starhawks: 20cm</characteristic>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="dc88-f7ed-8352-4f11" name="Widowmaker Cobra" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed8-4a6a-2f2b-833d" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02c6-8a9e-e53a-3a55" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

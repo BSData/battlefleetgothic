@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="13" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e1d46d07-b8eb-45a7-b222-5412767d2ff8" name="Space Marines" revision="13" battleScribeVersion="2.03" authorName="BSData" authorContact="@DndTonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="a2b7-61cb-e479-de43" name="Codex Astartes Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
       <categoryLinks>
@@ -223,7 +223,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39a6-3c3b-ce36-6766" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6998-3170-db2e-a587" name="Cobra Destroyer" page="0" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="6998-3170-db2e-a587" name="Cobra Rapid Strike Vessel" page="0" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -241,7 +241,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8da6-1b5b-8907-f669" type="max"/>
               </constraints>
               <profiles>
-                <profile id="685e-4474-ee8a-be52" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="685e-4474-ee8a-be52" name="Cobra Rapid Strike Vessel" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -274,7 +274,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b170-856a-5c7c-6663" name="Falchion Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="b170-856a-5c7c-6663" name="Falchion Rapid Strike Vessel" page="0" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -291,7 +291,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02e8-b44f-ecc2-f9f1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8700-dcc3-e9f5-19bb" name="Falchion Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="8700-dcc3-e9f5-19bb" name="Falchion Rapid Strike Vessel" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -324,7 +324,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0ba1-27c9-2e82-4b31" name="Firestorm Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="0ba1-27c9-2e82-4b31" name="Firestorm Rapid Strike Vessel" page="0" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -342,7 +342,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="800e-d1eb-f79e-a2fa" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4ab0-7bc8-9b3e-f639" name="Firestorm Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="4ab0-7bc8-9b3e-f639" name="Firestorm Rapid Strike Vessel" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
@@ -372,7 +372,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <categoryLink id="9fa4-034c-87bf-6d32" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="97cb-5bc2-00b1-10dd" name="Gladius Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -482,7 +482,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9dc6-853a-2332-9990" name="Sword Frigate" page="0" hidden="true" collective="false" import="true" type="unit">
+            <selectionEntry id="9dc6-853a-2332-9990" name="Sword Rapid Strike Vessel" page="0" hidden="true" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -500,7 +500,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c3f-9d95-0fde-bb13" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9b80-f4a9-7ef2-c0bc" name="Sword Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                <profile id="9b80-f4a9-7ef2-c0bc" name="Sword Rapid Strike Vessel" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
                     <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>

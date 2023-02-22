@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="45" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" name="Battlefleet Gothic" revision="46" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox dndtonight.com" authorUrl="https://github.com/BSData/battlefleetgothic#battlefleet-gothic" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Join us on the battlefleet gothic reddit to discuss more gothic.
 Bug report : https://tinyurl.com/gothicbug</readme>
   <publications>
@@ -2310,7 +2310,7 @@ Usually used as objectives in missions.</characteristic>
 Weapon profiles are then linked within them from the shared profiles section. 
 
 This is where points should be set.
-also 40k does not put unit&apos;s here. </comment>
+also 40k does not put unit&apos;s here. (weapons systems in gothic dont work like 40K though.)</comment>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
