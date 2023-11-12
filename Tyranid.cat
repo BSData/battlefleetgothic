@@ -1109,15 +1109,15 @@ For example: A Tyranid cruiser wishes to move towards the enemy fleet in support
     </rule>
     <rule id="ed83-5f64-f34e-db44" name="Instinctive Behavior Table" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
       <description>Proceed to next option if condition doesn&apos;t match
-1 - Normal Movement will take ships into celestial phenomina 
+1 - Normal Movement will take ships into celestial phenomina?
 Burn Retros and evade it
-2 - Nearest Enemy in front fire arc but outside 15cm (may skip if armed with bio plasma)
+2 - Nearest Enemy in front fire arc and less than 15cm? (may skip if armed with bio plasma)
 No special orders Move into contact and initiate boarding
-3 - Nearest enemy in front arc but more than 90cm away
+3 - Nearest enemy in front arc but more than 90cm away?
 All Ahead Full (+2d6 instead of +4d6)
 4 - Nearest enemy is in rear fire arc (only applies to escorts)
 Come to new heading
-5 - Enemy in front arc and within shooting distance
+5 - Enemy in front arc and within shooting distance of operational weapons?
 Lock on
 6 - Ordinance Needs Reloading
 Reload Ordinance
@@ -1255,7 +1255,7 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
             <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90º</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">Special</characteristic>
           </characteristics>
         </profile>
