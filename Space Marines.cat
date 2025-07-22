@@ -1011,7 +1011,7 @@ New Heading special order.</description>
                 <categoryLink id="3276-0715-b348-390b" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="270"/>
+                <cost name="pts" typeId="points" value="255"/>
               </costs>
               <profiles>
                 <profile name="Overlord Class Battlecruiser" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="38d6-0efa-bfdf-0c79">
@@ -1169,7 +1169,7 @@ attack do not affect this number.</description>
                 <categoryLink id="b9f2-a94b-cb1d-cd70" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="335"/>
+                <cost name="pts" typeId="points" value="400"/>
               </costs>
               <profiles>
                 <profile name="Apocalypse Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="90dd-475c-e79a-0c55">
@@ -1243,7 +1243,7 @@ attack do not affect this number.</description>
                 <categoryLink id="d74a-829f-7f6d-b209" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="335"/>
+                <cost name="pts" typeId="points" value="370"/>
               </costs>
               <profiles>
                 <profile name="Oberon Class Battleship" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="22ff-555f-c19e-8fd6">
@@ -1349,7 +1349,7 @@ attack do not affect this number.</description>
                 <categoryLink id="f451-231c-dca2-b0b3" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="265"/>
+                <cost name="pts" typeId="points" value="235"/>
               </costs>
               <profiles>
                 <profile name="Avenger Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="926f-0888-18f4-2be9">
@@ -1438,7 +1438,7 @@ attack do not affect this number.</description>
                 <categoryLink id="10b5-bf89-0a72-ee3b" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="280"/>
+                <cost name="pts" typeId="points" value="270"/>
               </costs>
               <profiles>
                 <profile name="Armageddon Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="399a-6ecd-dff2-246c">
@@ -1602,6 +1602,9 @@ attack do not affect this number.</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="c5f4-a9e9-73c1-1391" name="Venerable Battlebarge Seditio Opprimere" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c8ac-2d82-a45f-20f5" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="1375-becc-23e5-2ff0" name="Seditio Opprimere Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
