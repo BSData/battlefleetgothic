@@ -844,59 +844,216 @@ Boarding: 30cm</characteristic>
           </constraints>
           <selectionEntries>
             <selectionEntry id="baee-a0d4-b2b9-9480" name="Retribution Class Battleship" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="788d-e186-cf7b-aeff" type="max"/>
-              </constraints>
               <categoryLinks>
                 <categoryLink id="b14f-6180-1b9d-59b7" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="380"/>
               </costs>
+              <profiles>
+                <profile name="Retribution Class Battleship" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="6c78-8efb-8406-a507">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ front / 5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="269c-d2c5-0841-dc88">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="1b45-2959-c66f-a285">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="cd86-275e-ba64-5482">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="506a-5b70-a4bc-74a3" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7464-04a0-d1a1-8423"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0d8-88e2-dc18-3f6c"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="a014-ac7e-329d-171c">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="4a8d-bd7e-038f-011d">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="7029-ded1-b4a9-1b1a">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d778-0536-6b7a-5bd0">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <rules>
+                <rule name="Special Rule" id="4971-e5bd-8e0a-d1f0" hidden="false">
+                  <description>The Retribution class battleship is heavy to manoeuvre and cannot use the Come to
+New Heading special order.</description>
+                </rule>
+              </rules>
             </selectionEntry>
             <selectionEntry id="6411-7c5c-d982-0329" name="Mars Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a76-1060-510c-1234" type="max"/>
-              </constraints>
               <categoryLinks>
                 <categoryLink id="4fad-f6fc-3c0a-1781" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
                 <categoryLink id="680f-eca3-af5a-b625" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="7137-9f5e-c0da-7c04" name="Left Column Shift" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="222a-3bfd-a233-02bc" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="305"/>
               </costs>
+              <profiles>
+                <profile name="Mars Class Battlecruiser" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="7607-943e-5317-406c">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ front / 6+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3318-ceee-a3cc-f4a0">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="072c-fa4b-125f-bc53">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3046-aede-6a06-f99f">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Starboard Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="063c-2133-192c-58a7">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="8944-009b-b95b-1e35" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67af-b19e-a745-94fd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e27c-7ed9-c713-1643"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="1df6-9a87-d1fc-eac8">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="6513-d06f-427e-292f">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="c356-2f44-433b-0ed7">
+                      <profiles>
+                        <profile name="Prow Nova Cannon" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="8466-1d45-cb57-2853">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="24d5-fd4f-7133-816b" name="Overlord Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d334-6be3-0629-5477" type="max"/>
-              </constraints>
               <categoryLinks>
                 <categoryLink id="130d-4a79-4e39-6eac" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
                 <categoryLink id="3276-0715-b348-390b" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="ae02-2297-2b00-0cf8" name="Additional Turret" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ea-fb54-49b0-5737" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="270"/>
               </costs>
+              <profiles>
+                <profile name="Overlord Class Battlecruiser" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="38d6-0efa-bfdf-0c79">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ front / 5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="08bc-c4dd-c2d9-6c1b">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="1027-3b08-cb99-d5e4">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="225b-8783-c67a-5054">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="09e4-25cc-139c-4a3e">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="4274-f029-a854-046e" name="Emperor Class Battleship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -932,13 +1089,6 @@ Boarding: 30cm</characteristic>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7b2d-a3cb-4dd6-2e66">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3d2d-a11b-e7b2-ed94">
@@ -978,6 +1128,38 @@ Ships massing turrets with the one under
 attack do not affect this number.</description>
                 </rule>
               </rules>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="fa10-0b1e-ed36-e502" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2679-3674-c385-9273"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07fd-f511-4534-79f1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="198a-e170-f468-1c76">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="76e9-c4e5-6c22-3b3c">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="960d-b3e0-38c5-9b16">
+                      <profiles>
+                        <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7b2d-a3cb-4dd6-2e66">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="8df2-86a0-593b-93d6" name="Apocalypse Class Battleship" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1015,13 +1197,6 @@ attack do not affect this number.</description>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Prow Nova Cannon" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="a1e6-6d64-0564-aea7">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150 cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="090c-8c3a-d1ee-1aa7">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
@@ -1030,17 +1205,140 @@ attack do not affect this number.</description>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="3d9b-1274-9fe3-53e7" hidden="false" defaultSelectionEntryId="111a-eec9-ac5b-dd60">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c456-96b1-0a78-3904"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d9e-1e3f-7c73-42d5"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="9f3f-5c8c-924f-5d1a">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3dc7-cb34-b224-7d9b">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Nova Cannon" hidden="false" id="111a-eec9-ac5b-dd60">
+                      <profiles>
+                        <profile name="Prow Nova Cannon" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="a1e6-6d64-0564-aea7">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="5b33-a75e-39c4-b944" name="Oberon Class Battleship" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="267d-427d-8979-f171" type="max"/>
-              </constraints>
               <categoryLinks>
                 <categoryLink id="d74a-829f-7f6d-b209" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="335"/>
               </costs>
+              <profiles>
+                <profile name="Oberon Class Battleship" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="22ff-555f-c19e-8fd6">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">15 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">5</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d003-12a9-de02-780e">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="4bcf-0367-546d-54ee">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="2227-d1c7-3f3b-6ccb">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="5a8e-5ef8-d3d7-524a">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="abb2-94fc-6d92-de1e">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left\front\right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3008-219f-dbd5-9f6a">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7a49-50eb-b9bd-9564">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="edbb-cc50-e76b-7ac6" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f108-c02e-ef3c-916c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c20f-818f-c942-50fb"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="a928-2ee7-97d5-c146">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0811-16e9-9f0b-b763">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="f610-805e-b0db-1d55">
+                      <profiles>
+                        <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3a96-1146-bf22-9c9c">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="2d4d-44ab-05fc-aaf2" name="Avenger Class Grand Cruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1053,44 +1351,83 @@ attack do not affect this number.</description>
               <costs>
                 <cost name="pts" typeId="points" value="265"/>
               </costs>
+              <profiles>
+                <profile name="Avenger Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="926f-0888-18f4-2be9">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0e30-eb0e-c4b0-bb8f">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">16</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="a044-845c-bd79-6d9f">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">16</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="7c1d-73e9-1d54-64a4" name="Exorcist Class Grand Cruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d8b-ab39-c130-1ef5" type="max"/>
-              </constraints>
               <categoryLinks>
                 <categoryLink id="8eb9-3432-34ae-1345" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
                 <categoryLink id="ed0e-0352-85dc-3c0c" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="695a-7742-5c22-958b" name="Weapons Batteries" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae3a-19d9-6325-e481" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f36-1e70-8f42-5c15" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="d081-44cc-c11f-f16f" name="Range 45cm S8" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcb6-5084-eb13-b95b" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="a700-a319-b80a-8874" name="Range 30cm S10" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f32-2ac9-1c39-6a24" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="265"/>
               </costs>
+              <profiles>
+                <profile name="Exorcist Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a93c-675e-f932-4952">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="ab15-675f-94b9-5875">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="5564-6d0c-729e-2fb9">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="f1ef-d3b6-c1fb-d550">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="8856-9264-01a1-9aa9">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="b534-890f-19ea-1b07" name="Armageddon Class Battlecruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1103,8 +1440,63 @@ attack do not affect this number.</description>
               <costs>
                 <cost name="pts" typeId="points" value="280"/>
               </costs>
+              <profiles>
+                <profile name="Armageddon Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="399a-6ecd-dff2-246c">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+ front /5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="80fa-fd69-91e8-0fd5">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="a86e-45a5-b279-08f6">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="334e-b2c9-1b84-4fc2">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="6a5e-bf15-920f-faaf">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7826-c68e-c6e6-9ad4">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="60a8-9a87-f88f-53c6">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
-            <selectionEntry id="be9b-9bbc-d569-3e5e" name="Hellgate Class Heavy Cruiser" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="be9b-9bbc-d569-3e5e" name="Hellgate Class Heavy Cruiser" page="0" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c595-46e2-fef0-6699" type="max"/>
               </constraints>
@@ -1116,7 +1508,7 @@ attack do not affect this number.</description>
                 <cost name="pts" typeId="points" value="310"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5542-5528-cde7-81f8" name="Crusade-Era Battlebarge" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5542-5528-cde7-81f8" name="Crusade-Era Battlebarge" page="0" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f531-dfb6-22e6-26ed" type="max"/>
               </constraints>
@@ -1218,44 +1610,44 @@ attack do not affect this number.</description>
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9dd8-17a3-e2ad-9142" name="Seditio Opprimere Port Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="9dd8-17a3-e2ad-9142" name="Port Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="1965-2971-f7f1-39b3" name="Seditio Opprimere Starboard Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="1965-2971-f7f1-39b3" name="Starboard Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="725c-7701-a718-41fa" name="Seditio Opprimere Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="725c-7701-a718-41fa" name="Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="b68c-7dbb-5294-3865" name="Seditio Opprimere Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="b68c-7dbb-5294-3865" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="43ec-4c31-7bab-0588" name="Seditio Opprimere Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="43ec-4c31-7bab-0588" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
@@ -1268,7 +1660,7 @@ attack do not affect this number.</description>
                 <categoryLink id="3085-3161-d0c3-a63f" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry id="f6b0-dda7-009b-c075" name="Thunderhawk Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f6b0-dda7-009b-c075" name="Thunderhawk Annihilator" hidden="true" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd4-619d-5bf1-5180" type="max"/>
                   </constraints>
@@ -1281,6 +1673,13 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="5401-792b-71dc-1a0d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1321,13 +1720,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ac32-42b3-079d-7302" name="Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
               <categoryLinks>
                 <categoryLink id="7eb3-2526-8318-5e77" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
@@ -1336,6 +1728,38 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <costs>
                 <cost name="pts" typeId="points" value="225"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="fe8b-e524-0a49-c034" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="174d-4ba4-c086-5933"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ed5-23bb-b5a9-2555"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="588f-17fa-649f-ca96">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="4be3-18b2-8cdf-ba1a">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="b8d3-1c40-364c-abd1">
+                      <profiles>
+                        <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="ac32-42b3-079d-7302">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="4c87-7440-89ad-a81e" name="Desolator Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="118" hidden="false" collective="false" import="true" type="unit">
               <profiles>
@@ -1350,32 +1774,25 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4b13-0750-d1a2-6a0e" name="Desolator Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="4b13-0750-d1a2-6a0e" name="Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="5cb3-ba4a-601a-738a" name="Desolator Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="5cb3-ba4a-601a-738a" name="Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4a33-2948-b150-f563" name="Desolator Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="4a33-2948-b150-f563" name="Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7afa-b430-c2b4-8e10" name="Desolator Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1391,6 +1808,38 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <costs>
                 <cost name="pts" typeId="points" value="335"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Prow Weapons" id="f667-7322-6562-ea6f" hidden="false" defaultSelectionEntryId="2d44-c7ce-a0a9-bcf5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="576c-95b7-969b-157e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="440f-63f5-749a-98ac"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="46d7-5bc1-bd14-d2a5">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="b165-f123-fb9a-d442">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="2d44-c7ce-a0a9-bcf5">
+                      <profiles>
+                        <profile name="Prow Torpedos" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7afa-b430-c2b4-8e10">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="bc37-c187-f798-d09a" name="Despoiler Class Battleship" publicationId="11f0-17d1-e4d2-1018" page="117" hidden="false" collective="false" import="true" type="unit">
               <profiles>
@@ -1407,28 +1856,28 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 </profile>
                 <profile id="cb40-981d-b1a9-a40d" name="Despoiler Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="37d7-50c7-7465-ae82" name="Despoiler Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks 20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="3201-26bf-d748-ce44" name="Despoiler Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks 20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="fad4-8b68-8470-47f9" name="Despoiler Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
@@ -1437,7 +1886,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1448,311 +1897,33 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <categoryLink id="4f84-a3f4-89f5-3d41" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="1528-4765-31c7-9204" name="Type" hidden="false" collective="false" import="true">
+                <selectionEntryGroup name="Prow Weapons" id="543c-8d6c-85fa-7959" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d427-21e9-7718-071d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="879d-d6cc-172b-7897" type="max"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a2c-1dfc-d011-a084"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ec-9e29-9fbe-576d"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="f238-4e9b-412f-6e93" name="Normal" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc22-6912-3a18-86ff" type="max"/>
-                      </constraints>
-                      <selectionEntries>
-                        <selectionEntry id="7bd3-cd68-771a-42fe" name="Chaos Lord" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a80b-0278-234e-a7bb" type="max"/>
-                          </constraints>
-                          <rules>
-                            <rule id="f31c-550e-3ef8-9ee6" name="Chaos Lord" hidden="false">
-                              <description>Any capital ship, apart from that of the Warmaster, may be captained by a Chaos Lord. If so then add +1 to the Leadership rolled for the ship at the start of the game subject to a maximum of 9.
-
-A Lord may be given a re-roll (which he can use for his own ship or squadron only) at +25 points. A ship commanded by a Lord may be given a single Mark of Chaos from the list above.</description>
-                            </rule>
-                          </rules>
-                          <selectionEntries>
-                            <selectionEntry id="5710-240b-9019-e4e2" name="Re-roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7a0-1972-3a8f-2081" type="max"/>
-                              </constraints>
-                              <costs>
-                                <cost name="pts" typeId="points" value="25"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup id="828c-c10b-25e1-590b" name="Mark" hidden="false" collective="false" import="true">
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fd7-52c9-1e2e-731c" type="max"/>
-                              </constraints>
-                              <selectionEntries>
-                                <selectionEntry id="f4c8-f78a-1cf4-5ffa" name="Mark of Nurgle" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="596d-bde0-c7d3-a396" name="Mark of Nurgle" hidden="false">
-                                      <description>The vessel is rank with putrescence and the many plagues of the Lord of Decay. It gains 1 Damage Point and may not be boarded.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="35"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="a9a1-4a0d-b7e0-8056" name="Mark of Tzeentch" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="28f6-4c8c-1e3c-202d" name="Mark of Tzeentch" hidden="false">
-                                      <description>The Captain can call upon the power of precognition as well as formidable magics to control his vessel. This ship has an extra re-roll.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="25"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="b4dc-131f-a772-2d6e" name="Mark of Khorne" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="f533-7aac-c387-ca94" name="Mark of Khorne" hidden="false">
-                                      <description>Crewed by the homicidal followers of Khorne, the ship is extremely dangerous in boarding actions. It doubles its value in boarding actions.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="20"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="13dd-d5ab-19cb-5386" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="271e-9ae9-66d9-ec6c" name="Mark of Slaanesh" hidden="false">
-                                      <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="25"/>
-                                  </costs>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
-                          <costs>
-                            <cost name="pts" typeId="points" value="25"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="443c-9bcb-1dc0-7ece" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0d5-4570-5d41-e239" type="max"/>
-                          </constraints>
-                          <rules>
-                            <rule id="3ece-37cd-4486-4cea" name="Chaos Space Marine Crew" hidden="false">
-                              <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
-
-Leadership:
-A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
-
-Boarding &amp; Hit-&amp;-run:
-The superior fighting skills of the Chaos Space Marines are most apparent in boarding actions. A ship with a Chaos Space Marine crew adds two to its roll when performing boarding actions and enemy conducting hit &amp; run attacks against them subtract one from their hit &amp; run result. Hit and run attacks launched by boarding torpedoes, Dreadclaws, Thunderhawks or teleportation originating from such a ship add 1 to their result.
-
-Planetary Assault:
-Ships with Chaos Space Marine crews in a Planetary Assault mission score two Assault Points for every turn they spend landing troops.</description>
-                            </rule>
-                          </rules>
-                          <selectionEntries>
-                            <selectionEntry id="9f5f-dec6-0911-8e14" name="Terminators" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c37f-18c0-bc9d-b017" type="max"/>
-                              </constraints>
-                              <rules>
-                                <rule id="d258-b284-0eba-379f" name="Terminators" hidden="false">
-                                  <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
-                                </rule>
-                              </rules>
-                              <costs>
-                                <cost name="pts" typeId="points" value="10"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup id="5363-c66f-42a6-6edf" name="Mark" hidden="false" collective="false" import="true">
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6361-4a77-b5a6-1995" type="max"/>
-                              </constraints>
-                              <selectionEntries>
-                                <selectionEntry id="a3ac-5d16-5fda-65f3" name="Mark of Nurgle" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="a41d-b4a4-d326-cbea" name="Mark of Nurgle" hidden="false">
-                                      <description>The vessel is rank with putrescence and the many plagues of the Lord of Decay. It gains 1 Damage Point and may not be boarded.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="35"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="e8d0-6bbd-b635-702c" name="Mark of Tzeentch" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="9fd3-d29a-6770-7ad6" name="Mark of Tzeentch" hidden="false">
-                                      <description>The Captain can call upon the power of precognition as well as formidable magics to control his vessel. This ship has an extra re-roll.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="25"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="a6c2-b271-8cb4-46fd" name="Mark of Khorne" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="7504-e40e-4e6e-1700" name="Mark of Khorne" hidden="false">
-                                      <description>Crewed by the homicidal followers of Khorne, the ship is extremely dangerous in boarding actions. It doubles its value in boarding actions.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="20"/>
-                                  </costs>
-                                </selectionEntry>
-                                <selectionEntry id="8cf4-94cc-f527-1b14" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                                  <rules>
-                                    <rule id="930c-850f-a30c-fb38" name="Mark of Slaanesh" hidden="false">
-                                      <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                                    </rule>
-                                  </rules>
-                                  <costs>
-                                    <cost name="pts" typeId="points" value="25"/>
-                                  </costs>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
-                          <costs>
-                            <cost name="pts" typeId="points" value="35"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="90af-eb52-fcfe-e0ac" name="Daemon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4044-e0a7-87e9-9e47" type="max"/>
-                      </constraints>
-                      <rules>
-                        <rule id="28a8-d56f-68f3-5488" name="Daemon" hidden="false">
-                          <description>See Deamonships Special Rules.</description>
-                        </rule>
-                      </rules>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="70e2-d71c-48e9-8d59" name="Mark" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45f6-3859-3e3f-794e" type="max"/>
-                          </constraints>
-                          <selectionEntries>
-                            <selectionEntry id="19ee-592d-2f74-7c4f" name="Mark of Nurgle" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <rules>
-                                <rule id="44d7-af17-7e71-7836" name="Mark of Nurgle" hidden="false">
-                                  <description>The vessel is rank with putrescence and the many plagues of the Lord of Decay. It gains 1 Damage Point and may not be boarded.</description>
-                                </rule>
-                              </rules>
-                              <costs>
-                                <cost name="pts" typeId="points" value="35"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="28b5-fbad-369a-d7a0" name="Mark of Tzeentch" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <rules>
-                                <rule id="94ee-7e77-2dfd-7631" name="Mark of Tzeentch" hidden="false">
-                                  <description>The Captain can call upon the power of precognition as well as formidable magics to control his vessel. This ship has an extra re-roll.</description>
-                                </rule>
-                              </rules>
-                              <costs>
-                                <cost name="pts" typeId="points" value="25"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="8b2b-9654-c4d5-f607" name="Mark of Khorne" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <rules>
-                                <rule id="e764-70ab-9b97-9092" name="Mark of Khorne" hidden="false">
-                                  <description>Crewed by the homicidal followers of Khorne, the ship is extremely dangerous in boarding actions. It doubles its value in boarding actions.</description>
-                                </rule>
-                              </rules>
-                              <costs>
-                                <cost name="pts" typeId="points" value="20"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="02a9-92c1-3490-368e" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                              <rules>
-                                <rule id="8694-5acc-618e-6a4d" name="Mark of Slaanesh" hidden="false">
-                                  <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                                </rule>
-                              </rules>
-                              <costs>
-                                <cost name="pts" typeId="points" value="25"/>
-                              </costs>
-                            </selectionEntry>
-                          </selectionEntries>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <costs>
-                        <cost name="pts" typeId="points" value="50"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="2ede-98f1-a8db-80de" name="Ordnance" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b92b-469f-5c93-fe5d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="491f-42f1-ed13-2fcd" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="cacd-0ee5-5877-5deb" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fd6-b3b2-097f-a373" type="max"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7356-0e23-e99d-0f09" type="min"/>
-                      </constraints>
-                      <rules>
-                        <rule id="8f1d-6b12-5eb5-604e" name="Thunderhawk Gunship" hidden="false">
-                          <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
-
-Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-                        </rule>
-                      </rules>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="052c-3658-465f-9859" name="The Damnation&apos;s Fury" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68b5-a968-105f-a736" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6051-5ed2-3bfd-069c" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="8648-725e-d385-a588" name="The Damnation&apos;s Fury" hidden="false" collective="false" import="true" type="unit">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4efc-c488-0bd7-ba3a" type="max"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="c553-78ad-306c-28cd">
                       <profiles>
-                        <profile id="ff15-66ce-8198-749c" name="Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="93b2-109d-0c39-aeeb">
                           <characteristics>
-                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                             <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="10"/>
-                      </costs>
                     </selectionEntry>
-                    <selectionEntry id="8993-28b8-88e3-1524" name="Regular Despoiler Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="046a-1b69-e339-0a28" type="max"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Prow Lance Battery" hidden="false" id="78da-9092-1ab4-4b88">
                       <profiles>
-                        <profile id="a0b8-a7c1-74fe-658e" name="Despoiler Prow Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                        <profile name="Prow Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d93d-d285-07b5-dd5a">
                           <characteristics>
-                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -1774,30 +1945,30 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="e773-8ca0-3768-5278" name="Executor 1st Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="e773-8ca0-3768-5278" name="Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ef9d-8c94-a5d0-b299" name="Executor 2nd Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="ef9d-8c94-a5d0-b299" name="Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="7b91-7f33-d836-08f0" name="Executor 1st Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="7b91-7f33-d836-08f0" name="Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4cd7-ca68-44fe-5022" name="Executor 2st Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="4cd7-ca68-44fe-5022" name="Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
@@ -1810,6 +1981,15 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <costs>
                 <cost name="pts" typeId="points" value="245"/>
               </costs>
+              <rules>
+                <rule name="Special Rule" id="80b2-5a25-9bbb-2419" hidden="false">
+                  <description>The Executor class grand cruiser completely ignores prow critical damage, regardless
+of the cause. If any critical damage rolled against the table results in a Prow
+Armament Damaged critical hit, it is assumed the critical damage did not take place,
+and it does not move up to the next higher critical damage. If the critical damage is
+caused by the ship taking a hit, the hit itself still counts normally.</description>
+                </rule>
+              </rules>
             </selectionEntry>
             <selectionEntry id="aa3d-5530-8fa4-b578" name="Hades Class Heavy Cruiser" publicationId="11f0-17d1-e4d2-1018" page="121" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -1826,30 +2006,23 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 </profile>
                 <profile id="1b64-a357-ec44-c334" name="Hades Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="be2f-30cb-6bb2-102e" name="Hades Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="26f6-062d-758e-a2f8" name="Hades Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0840-bab1-94dc-a82f" name="Hades Prow Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1860,123 +2033,85 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <costs>
                 <cost name="pts" typeId="points" value="235"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="2b2e-d2b9-9bbb-0537" name="Repulsive Class Grand Cruiser" publicationId="11f0-17d1-e4d2-1018" page="119" hidden="false" collective="false" import="true" type="unit">
-              <profiles>
-                <profile id="1a03-0980-6363-26c2" name="Repulsive Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="f3b3-3b44-bc2c-a59e" name="Repulsive Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7d1b-9751-ad40-ad11" name="Repulsive Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c865-149d-22f7-313e" name="Chaos Space Marines Boarding Torpedos" hidden="false">
-                  <description>Chaos Space Marine vessels may fire boarding torpedos instead of ordinary torpedos, as detailed in the Ordnance rules in Battlefleet Gothic. Remember that as these are Space Marines, they will have a +1 bonus to their hit and run attacks if they hit an enemy ship. There are no specific rules for drop pods - they have been taken into account with the Space Marines&apos; special rules for planetary assaults.</description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="63f6-a7da-494c-35d4" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-                <categoryLink id="f0ef-6bf6-ba89-bffa" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-              </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="c44e-9a44-9b3d-53a3" name="The Bringer of Despair" hidden="false" collective="false" import="true">
+                <selectionEntryGroup name="Prow Weapons" id="1a99-95f6-3e96-d919" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ab-b3ba-050d-ceff" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d5-de61-3e03-2c04" type="min"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="918d-2db0-5b96-c5cb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d63a-0824-69b5-3c12"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="ebb1-b1b2-baaf-e9ee" name="Regular Repulsive Class Grand Cruiser" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="950d-c889-adba-bcf2" type="max"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5d-c7c2-de7f-2b4b" type="min"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="7ca1-4c11-d795-d318">
                       <profiles>
-                        <profile id="eb7e-8f18-716c-b9a1" name="Repulsive Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="dca9-64fb-abbf-8a17">
                           <characteristics>
-                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
                     </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="04fc-0dd7-8ca7-7725" name="Extra Shield" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="612d-6e53-458f-4134" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a37-32df-662a-3130" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="5669-a365-42ab-0053" name="Extra Shield" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f221-8305-4b3d-79f6" type="max"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Prow Lance Battery" hidden="false" id="c0f9-54e4-b4a7-0345">
                       <profiles>
-                        <profile id="8000-ac8a-5f70-33fe" name="Repulsive Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                        <profile name="Prow Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0840-bab1-94dc-a82f">
                           <characteristics>
-                            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-                            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-                            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-                            <characteristic name="Turns" typeId="5475726e7323232344415441232323">14</characteristic>
-                            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
-                            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                            <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <rules>
-                        <rule id="06ea-59b8-249c-ceee" name="Extra Shield" publicationId="5766-7751-d146-0800" page="23" hidden="false">
-                          <description>The Chaos Repulsive Grand Cruiser can be modelled on a large base. If so mounted, it may have a third shield for +15pts. It must be modelled on a large base to have this this refit available for the cost indicated. This is not a normal refit and can be used in one-off games or in addition to any other refits earned normally in the course of a campaign.</description>
-                        </rule>
-                      </rules>
-                      <costs>
-                        <cost name="pts" typeId="points" value="15"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="73d0-4015-f25f-b21d" name="Regular Profile" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c6-c6ec-9c27-cc5c" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="0f63-6225-e161-8da9" name="Repulsive Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-                          <characteristics>
-                            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-                            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-                            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-                            <characteristic name="Turns" typeId="5475726e7323232344415441232323">14</characteristic>
-                            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-                            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                            <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="2b2e-d2b9-9bbb-0537" name="Repulsive Class Grand Cruiser" publicationId="11f0-17d1-e4d2-1018" page="119" hidden="false" collective="false" import="true" type="unit">
+              <profiles>
+                <profile id="1a03-0980-6363-26c2" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="f3b3-3b44-bc2c-a59e" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7d1b-9751-ad40-ad11" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="ef0a-dc93-032b-05c6">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Repulsive Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="dbf5-be4a-5f79-5fde">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="63f6-a7da-494c-35d4" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
+                <categoryLink id="f0ef-6bf6-ba89-bffa" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="265"/>
               </costs>
@@ -1988,52 +2123,52 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Grand cruiser</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="b193-6913-d777-4dca" name="Retaliator Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="b193-6913-d777-4dca" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="dbe5-4dc7-0db2-fc53" name="Retaliator Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="dbe5-4dc7-0db2-fc53" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="12f8-6cb5-2b93-f6e0" name="RetaliatorPort Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="12f8-6cb5-2b93-f6e0" name="Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="16e7-aee1-9e99-c3b2" name="RetaliatorStarboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="16e7-aee1-9e99-c3b2" name="Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2a64-0c83-38d0-b15f" name="Retaliator Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="2a64-0c83-38d0-b15f" name="Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="8ec1-ef49-b7d2-3277" name="Retaliator Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Starboard Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="c3d8-1c1f-e3a8-f783">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
@@ -2042,37 +2177,18 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <categoryLink id="4ad4-05ee-3df5-aa64" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
                 <categoryLink id="0621-458d-2d7f-6a88" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
               </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="bb36-e060-0dd3-7154" name="Ordnance" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6325-aa85-57b8-3fa9" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b724-4634-9228-470d" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="cf60-a395-9d40-820b" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3625-ae84-a542-6a14" type="min"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd2-524c-592d-e013" type="max"/>
-                      </constraints>
-                      <rules>
-                        <rule id="504e-1f25-bd2f-254d" name="Thunderhawk Gunship" hidden="false">
-                          <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
-
-Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-                        </rule>
-                      </rules>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="295"/>
               </costs>
+              <rules>
+                <rule name="Special Rule" id="506e-7779-4d99-8a88" hidden="false">
+                  <description>The Retaliator class grand cruiser completely ignores prow critical damage,
+regardless of the cause. If any critical damage rolled against the table results in a Prow
+Armament Damaged critical hit, it is assumed the critical damage did not take place,
+and it does not move up to the next higher critical damage. If the critical damage is
+caused by the ship taking a hit, the hit itself still counts normally.</description>
+                </rule>
+              </rules>
             </selectionEntry>
             <selectionEntry id="ae70-a2ff-df63-20c0" name="Styx Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="23" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -2080,38 +2196,31 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">25 cm</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="6ab1-6527-dc85-3e29" name="Styx Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="6ab1-6527-dc85-3e29" name="Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="cfeb-cf38-66d5-e893" name="Styx Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="813c-5cd4-8541-d18c" name="Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="beb8-94d0-bcfe-365c" name="Styx Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="813c-5cd4-8541-d18c" name="Styx Port Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="7ee1-9d69-5563-b637" name="Starboard Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
@@ -2121,29 +2230,33 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <categoryLink id="3a13-2709-b210-da14" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="8a00-4806-3502-cf46" name="Ordnance" hidden="false" collective="false" import="true">
+                <selectionEntryGroup name="Prow Weapons" id="c1d4-36f0-6665-4043" hidden="false" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3885-c952-c878-a885" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f811-2f64-ce98-2496" type="max"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4490-8402-b831-41fd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc3a-20f4-99f7-9244"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="599b-b430-e6c8-57bd" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b5c-0ce3-e032-ed32" type="min"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="947b-a518-e326-d77a" type="max"/>
-                      </constraints>
-                      <rules>
-                        <rule id="28d9-585b-a6cb-e56d" name="Thunderhawk Gunship" hidden="false">
-                          <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
-
-Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
-
-When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
-                        </rule>
-                      </rules>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
+                    <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="9760-e488-c1b5-b804">
+                      <profiles>
+                        <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="7018-23f7-2d82-6171">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="f03c-294f-8a15-6570">
+                      <profiles>
+                        <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="1f02-0d78-2608-8fe7">
+                          <characteristics>
+                            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+                            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -2158,35 +2271,35 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
                     <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="0ef2-fc99-de9c-f68e" name="Vengeance Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="0ef2-fc99-de9c-f68e" name="Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="8b76-65cc-d9cb-b40e" name="Vengeance Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="8b76-65cc-d9cb-b40e" name="Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="a1dc-68a9-5e3a-e372" name="Vengeance Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="a1dc-68a9-5e3a-e372" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9dad-8f75-5f2e-7501" name="Vengeance Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="9dad-8f75-5f2e-7501" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
@@ -2196,7 +2309,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               </profiles>
               <rules>
                 <rule id="a30f-00bd-c469-1159" name="Vengeance Class Grand Cruiser" publicationId="5766-7751-d146-0800" page="23" hidden="false">
-                  <description>All Chaos Vengeance grand cruiser variants listed in Armada on pp.38-39 completely ignore prow critical damage, regardless of the cause. If any critical damage rolled against the table results in a Prow Armament Damaged critical hit, it is assumed the critical damage did not take place, and it does not move up to the next higher critical damage. If the critical damage is caused by the ship taking a hit, the hit itself still counts normally.</description>
+                  <description>The Vengeance class grand cruiser completely ignores prow critical damage, regardless of the cause. If any critical damage rolled against the table results in a Prow Armament Damaged critical hit, it is assumed the critical damage did not take place, and it does not move up to the next higher critical damage. If the critical damage is caused by the ship taking a hit, the hit itself still counts normally.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -2207,7 +2320,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <cost name="pts" typeId="points" value="265"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="abf3-e676-af42-123f" name="Loyalist Venerable Battlebarge" publicationId="5766-7751-d146-0800" page="111" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="abf3-e676-af42-123f" name="Loyalist Venerable Battlebarge" publicationId="5766-7751-d146-0800" page="111" hidden="true" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="8936-9dd3-f133-cb4e" name="Vengeful Spirit Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
                   <characteristics>
@@ -2454,6 +2567,36 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
               <costs>
                 <cost name="pts" typeId="points" value="445"/>
               </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Prow Weapons" id="0bdb-9706-6b23-35d3" hidden="true" defaultSelectionEntryId="b8d3-1c40-364c-abd1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99ef-03cd-4a86-3267"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6456-0ca2-b282-e520"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Prow Torpedoes" hidden="false" id="da4a-8924-b780-1c3d">
+              <profiles>
+                <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="9a41-2de2-ca00-5869">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Prow Weapons Battery" hidden="false" id="a465-72ed-2ebb-1cc8">
+              <profiles>
+                <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="34fc-c513-cc98-9849">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
