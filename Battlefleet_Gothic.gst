@@ -458,21 +458,21 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <profiles>
         <profile id="e47f-3f54-c8fd-d5b0" name="Repulsive Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
             <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
           </characteristics>
         </profile>
         <profile id="153d-5c85-501f-e981" name="Repulsive Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">14</characteristic>
             <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
           </characteristics>
         </profile>
         <profile id="2297-8149-b9aa-98a1" name="Repulsive Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
             <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
           </characteristics>
@@ -488,8 +488,8 @@ The additional ships compendium cites it&apos;s sources so site those instead of
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
             <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">14</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
