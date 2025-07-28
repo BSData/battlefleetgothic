@@ -1319,11 +1319,11 @@ Starhawks: 20cm</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="cbcd-e54b-ad8d-cffb">
+                <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="cbcd-e54b-ad8d-cffb">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4224,7 +4224,8 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="f07b-f2e7-1fd5-6a3b" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="true"/>
+        <categoryLink id="f07b-f2e7-1fd5-6a3b" name="Battlecruiser" hidden="false" targetId="b041-ef69-0039-d535" primary="false"/>
+        <categoryLink targetId="9624-17a2-bfd7-6420" id="3323-b268-90bf-39e4" primary="true" name="Cruiser Reserves"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cbb1-1fce-0f79-50b5" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
