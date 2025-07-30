@@ -65,7 +65,7 @@
         <categoryLink id="9ede-dc12-ec80-d62c" name="Cruiser Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="6018-55bf-7466-ed8a" name="Domination Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
+    <forceEntry id="6018-55bf-7466-ed8a" name="Dominion Fleet List" publicationId="1bc8-5968-21c3-0f27" page="30" hidden="false">
       <categoryLinks>
         <categoryLink id="ab4c-4360-f037-309a" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="6672-b11a-66b5-7aad" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
@@ -805,7 +805,7 @@ Boarding: 30cm</characteristic>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a60c-620c-7772-7780" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="60f4-a7fc-61b6-3fa7" name="Thunderhawk Annihilator" hidden="false" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
+        <infoLink id="60f4-a7fc-61b6-3fa7" name="Thunderhawk Annihilator" hidden="true" targetId="0e4a-30d9-1918-f7ac" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="79ce-0dec-a488-c075" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
@@ -2817,10 +2817,10 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
     <rule id="0e4a-30d9-1918-f7ac" name="Thunderhawk Annihilator" publicationId="5766-7751-d146-0800" page="54" hidden="false">
       <comment>Only for crusading chapters because they get no allies</comment>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="notInstanceOf"/>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2b7-61cb-e479-de43" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>

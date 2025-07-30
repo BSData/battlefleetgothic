@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cdc1-e60c-6456-c57a" name="Imperium" revision="38" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="cdc1-e60c-6456-c57a" name="Imperial Navy" revision="38" battleScribeVersion="2.03" authorName="BSData" authorContact="@dndtonight @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
@@ -359,6 +359,11 @@
                 <condition field="selections" scope="56cb8f0d-fd9f-40a2-9ee5-9353341ab66b" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ef3d-da2a-cd0d-7e75" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
@@ -410,6 +415,7 @@ Starhawks: 20cm</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="d704-8333-63fb-437e" name="Defensive Corridors" hidden="false" targetId="ad35-5fda-fa0b-e885" type="profile"/>
+        <infoLink name="Mechanicus Fleet Rules" id="57da-68ae-2454-6e15" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e02b-f595-f396-1b7c" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
@@ -1546,6 +1552,7 @@ Starhawks: 20cm</characteristic>
       </costs>
       <infoLinks>
         <infoLink name="Torpedoes" id="601d-a8ae-97fb-ede7" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+        <infoLink name="Mechanicus Fleet Rules" id="62c1-e388-a5ae-5570" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="c6c4-e97d-9bed-fdfa" name="Dominator Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="111" hidden="true" collective="false" import="true" type="model">
@@ -1855,6 +1862,7 @@ Starhawks: 20cm</characteristic>
       </costs>
       <infoLinks>
         <infoLink name="Torpedoes" id="9334-9bb4-8b8f-3242" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+        <infoLink name="Mechanicus Fleet Rules" id="7adf-1558-8545-e0f6" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="7cdb-036c-41b6-ca4e" name="Lunar Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
@@ -1879,12 +1887,12 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" field="5.475727265747323e+33" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b6b-2f04-0be9-7e1e" type="instanceOf"/>
+                <condition field="selections" scope="7cdb-036c-41b6-ca4e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5.475727265747323e+33" value="1">
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition field="selections" scope="7cdb-036c-41b6-ca4e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8025-e5ea-9b7b-7f59" type="atLeast"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1985,6 +1993,9 @@ Starhawks: 20cm</characteristic>
       <costs>
         <cost name="pts" typeId="points" value="180"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Mechanicus Fleet Rules" id="8325-3af9-b7ac-a32e" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="07f4-ad3c-5819-a030" name="Tyrant Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="110" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -2262,6 +2273,9 @@ Starhawks: 20cm</characteristic>
       <costs>
         <cost name="pts" typeId="points" value="185"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Mechanicus Fleet Rules" id="872d-8bf5-da66-180a" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="0dd5-721a-7c40-137d" name="Defender Class Escort Cruiser" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -2611,6 +2625,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       <infoLinks>
         <infoLink id="4629-0e3d-40f3-9b15" name="Defensive Corridors" hidden="false" targetId="ad35-5fda-fa0b-e885" type="profile"/>
         <infoLink id="7cae-ccb1-be49-a3a4" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+        <infoLink name="Mechanicus Fleet Rules" id="6d00-5826-e9c0-d4d2" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aad8-0226-becf-c44a" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
@@ -2747,6 +2762,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       <infoLinks>
         <infoLink id="50c9-5ecb-5890-41d3" name="Defensive Corridors" hidden="false" targetId="ad35-5fda-fa0b-e885" type="profile"/>
         <infoLink id="f5ba-fda4-c65a-ee06" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+        <infoLink name="Mechanicus Fleet Rules" id="a689-1772-ed6c-7a51" hidden="false" type="rule" targetId="59ab-5c9e-2fbe-26a2"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9111-2f9e-28b4-7f01" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
