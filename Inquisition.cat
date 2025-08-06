@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="5" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="5" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
   </publications>
@@ -8,42 +8,42 @@
       <categoryLinks>
         <categoryLink id="e9c1-ace5-a67e-c269" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
         <categoryLink id="3768-a666-1871-3637" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="2d5c-77f4-14d4-ddb4" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="2d5c-77f4-14d4-ddb4" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="02f9-9d96-53c3-eab9" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="c0c7-db0f-338b-c684" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="e607-8393-2a80-9b20" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="800b-b475-1169-20be" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="1c52-52f6-31ff-428b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="e607-8393-2a80-9b20" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
+        <categoryLink id="800b-b475-1169-20be" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="1c52-52f6-31ff-428b" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="516b0b06-c831-4e9f-96b8-7930234c85a1" name="Escort Squadron" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="516b0b06-c831-4e9f-96b8-7930234c85a1-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="516b0b06-c831-4e9f-96b8-7930234c85a1-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="18b9ea8c-d239-470d-a091-bd4d39c3ce74" name="+1 Turret" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="increment" field="points" value="5.0">
+            <modifier type="increment" field="points" value="5">
               <repeats>
-                <repeat field="selections" scope="516b0b06-c831-4e9f-96b8-7930234c85a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="516b0b06-c831-4e9f-96b8-7930234c85a1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="de8c-89b1-c27e-4227" name="Escorts" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c25-ef5f-0953-1ffc" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dffa-64d0-c17e-a8d9" type="min"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c25-ef5f-0953-1ffc" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dffa-64d0-c17e-a8d9" type="min"/>
           </constraints>
           <rules>
             <rule id="e967-488e-cced-6628" name="Escorts" publicationId="5766-7751-d146-0800" page="51" hidden="false">
@@ -65,58 +65,58 @@
         <entryLink id="e7a0-1572-d74b-4bc0" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8cf-e35d-7c01-a3e3" name="Grey Knights Battlebarge" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ef0-4ea9-c5be-a5b7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ef0-4ea9-c5be-a5b7" type="max"/>
       </constraints>
       <profiles>
         <profile id="8fe3-6dad-dad6-eceb" name="Grey Knights Battlebarge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
           </characteristics>
         </profile>
-        <profile id="b6c6-69b1-7713-182f" name="Grey Knights Battlebarge Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="b6c6-69b1-7713-182f" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
           </characteristics>
         </profile>
-        <profile id="2f72-ab05-9460-80e9" name="Grey Knights Battlebarge Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="2f72-ab05-9460-80e9" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="1171-8251-655a-f200" name="Grey Knights Battlebarge Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="1171-8251-655a-f200" name="Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawk: 20cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
           </characteristics>
         </profile>
-        <profile id="b3eb-409d-e37a-7e23" name="Grey Knights Battlebarge Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="b3eb-409d-e37a-7e23" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
           </characteristics>
         </profile>
-        <profile id="6a5a-29d8-b98d-e25b" name="Grey Knights Battlebarge Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="6a5a-29d8-b98d-e25b" name="Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -127,61 +127,61 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="ec0e-ea42-092b-07ac" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+        <categoryLink id="ec0e-ea42-092b-07ac" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fd7a-329c-a6dc-1e7b" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="440.0"/>
+        <cost name="pts" typeId="points" value="440"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3528-d35b-78b5-69ee" name="Grey Knights Strike Cruiser" publicationId="5766-7751-d146-0800" page="50" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="bd16-9280-9f5b-7867" value="1.0">
+        <modifier type="increment" field="bd16-9280-9f5b-7867" value="1">
           <repeats>
-            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+            <repeat field="points" scope="force" value="500" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
           <conditions>
-            <condition field="points" scope="force" value="499.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+            <condition field="points" scope="force" value="499" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd16-9280-9f5b-7867" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbcd-0d20-778c-193c" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd16-9280-9f5b-7867" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbcd-0d20-778c-193c" type="min"/>
       </constraints>
       <profiles>
         <profile id="650a-e634-f415-889c" name="Grey Knights Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="8691-4615-39c0-beeb" name="Grey Knights Strike Cruiser Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="8691-4615-39c0-beeb" name="Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
           </characteristics>
         </profile>
-        <profile id="5801-4443-d080-cb10" name="Grey Knights Strike Cruiser Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="5801-4443-d080-cb10" name="Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
           </characteristics>
         </profile>
-        <profile id="4108-cce5-6a34-0307" name="Grey Knights Strike Cruiser Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="4108-cce5-6a34-0307" name="Prow Bombardment cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left / Front / Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -191,64 +191,64 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="9f7a-b5c3-3c1e-2897" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="9f7a-b5c3-3c1e-2897" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1d71-7dfa-8b84-1caf" name="Prow Armament Option" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca2c-d9ce-894a-b2f7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b7-50cf-d9d6-a986" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca2c-d9ce-894a-b2f7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b7-50cf-d9d6-a986" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4dd3-8918-9ec1-bc4f" name="Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d4a-794d-aef7-f3f8" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d4a-794d-aef7-f3f8" type="max"/>
               </constraints>
               <profiles>
                 <profile id="7165-b083-3a20-b706" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawk: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2bf6-f97f-8feb-4057" name="Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9fe-65a5-05b0-707b" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9fe-65a5-05b0-707b" type="max"/>
               </constraints>
               <profiles>
                 <profile id="8b1a-6b00-9414-0ffc" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a308-60a5-d2cf-f25f" name="Bombardment Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="52c1-c311-4738-dbe1" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="52c1-c311-4738-dbe1" type="max"/>
               </constraints>
               <profiles>
                 <profile id="3859-57fc-629f-29d8" name="Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -258,51 +258,51 @@
         <entryLink id="2335-68b6-0c6b-00ea" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="165.0"/>
+        <cost name="pts" typeId="points" value="165"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="49ef-6bd9-2c1b-8e54" name="Inquisition Blackship" publicationId="5766-7751-d146-0800" page="48" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e844-a440-d59d-4c72" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e844-a440-d59d-4c72" type="max"/>
       </constraints>
       <profiles>
         <profile id="a14a-ac58-b4ab-d2d3" name="Blackship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">5</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">5</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">5</characteristic>
           </characteristics>
         </profile>
         <profile id="7a6c-311d-0bd7-29c7" name="Blackship Dorsal Lance Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
         <profile id="6175-4db3-70de-6a63" name="Blackship Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
           </characteristics>
         </profile>
         <profile id="f802-11cc-5150-1ed9" name="Blackship Starboard Weappons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
           </characteristics>
         </profile>
         <profile id="54cf-c9df-69cb-71d9" name="Blackship Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -319,21 +319,21 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="f4c5-388a-bb80-ff9e" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+        <categoryLink id="f4c5-388a-bb80-ff9e" hidden="false" targetId="5370656369616c23232344415441232323" primary="true" name="Special"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="06a7-8d96-4007-1a32" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="300"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="65ed-c4a4-ad28-0300" name="Inquisitor Lord" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="383b-4b16-597d-9ee8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="383b-4b16-597d-9ee8" type="max"/>
       </constraints>
       <profiles>
-        <profile id="e788-fd8f-00ea-601b" name="Inquisitor Lord" publicationId="5766-7751-d146-0800" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+        <profile id="e788-fd8f-00ea-601b" name="Inquisitor Lord" publicationId="5766-7751-d146-0800" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
           <characteristics>
             <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">Ldr 9</characteristic>
             <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">An Inquisitor Lord gets one re-roll, which may be
@@ -343,99 +343,99 @@ used for any ship in the fleet.</characteristic>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="97fa-599c-f6ed-8213" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+        <categoryLink id="97fa-599c-f6ed-8213" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true" name="Fleet Commander"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="93b0-684d-4457-688f" name="Additional Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74cb-6ba2-c620-86be" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74cb-6ba2-c620-86be" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a3c2-d283-bce3-ac5c" name="Ordo" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c235-59db-4a25-6564" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c235-59db-4a25-6564" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="5399-3b2f-dc4c-4115" name="Ordo Xenos" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="438e-9d8e-d3eb-35ca" name="Select Refit" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e67-e0de-d03a-1dfd" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e67-e0de-d03a-1dfd" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
+                    <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
+                <cost name="pts" typeId="points" value="30"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="af10-b8db-6474-46b5" name="Ordo Hereticus" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
+                <cost name="pts" typeId="points" value="25"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3b82-07d8-5b8c-6da2" name="Ordo Malleus" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="5884-c6d4-9fcf-c39b" name="Grey Knights Terminator Boarding Party" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d10-e236-586f-2b59" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d10-e236-586f-2b59" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="50"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="375d-f578-9c79-0a7b" name="Grey Knights Honour Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="pts" typeId="points" value="10.0"/>
+                    <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
+                <cost name="pts" typeId="points" value="25"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="75.0"/>
+        <cost name="pts" typeId="points" value="75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d0a9-0752-5347-271a" name="Inquisitorial Cruiser" publicationId="5766-7751-d146-0800" page="50" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271a-1a44-ad48-493d" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271a-1a44-ad48-493d" type="max"/>
       </constraints>
       <profiles>
         <profile id="7771-379b-0861-8836" name="Inquisitorial Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
         </profile>
         <profile id="9216-fc53-7f4c-b226" name="Inquisitorial Cruiser Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
           </characteristics>
         </profile>
         <profile id="4870-8139-e1ef-4a79" name="Inquisitorial Cruiser Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -445,25 +445,25 @@ used for any ship in the fleet.</characteristic>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="4045-55ff-0571-6436" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+        <categoryLink id="4045-55ff-0571-6436" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1fc9-e4c8-8862-2d68" name="Prow Weapons Options" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd74-48ef-00f3-9436" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf6-267c-9265-a9cb" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd74-48ef-00f3-9436" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf6-267c-9265-a9cb" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="49f3-0b80-f993-3522" name="Prow Launch Bay" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eeb-fcf9-ad9d-a6bd" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eeb-fcf9-ad9d-a6bd" type="max"/>
               </constraints>
               <profiles>
                 <profile id="da07-630f-14ff-fe57" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -473,19 +473,19 @@ used for any ship in the fleet.</characteristic>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="48a2-6909-d7ed-4a28" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba4-46ea-b06b-5161" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba4-46ea-b06b-5161" type="max"/>
               </constraints>
               <profiles>
                 <profile id="9bad-7d7d-bfb3-b0da" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -495,49 +495,49 @@ used for any ship in the fleet.</characteristic>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="44c7-d10c-3176-a6e8" name="Dorsal Weapons Options" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b7-e605-9abb-6f0c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0575-5087-f5a0-5453" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b7-e605-9abb-6f0c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0575-5087-f5a0-5453" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="0143-673b-8b8b-359f" name="Dorsal Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d6-0992-da94-0a0d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d6-0992-da94-0a0d" type="max"/>
               </constraints>
               <profiles>
                 <profile id="04fb-f052-38bd-8206" name="Inquisitorial Cruiser Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6f3a-d526-c5c5-91c5" name="Dorsal Lance Battery" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d0a-159b-d1b5-0833" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d0a-159b-d1b5-0833" type="max"/>
               </constraints>
               <profiles>
                 <profile id="2e54-31dd-6eb8-13a1" name="Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
+                <cost name="pts" typeId="points" value="15"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -547,7 +547,7 @@ used for any ship in the fleet.</characteristic>
         <entryLink id="ee53-8722-f080-0a3c" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="270.0"/>
+        <cost name="pts" typeId="points" value="270"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -556,7 +556,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -565,7 +565,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -574,7 +574,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -583,7 +583,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -592,7 +592,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -601,7 +601,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -610,7 +610,7 @@ used for any ship in the fleet.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -619,82 +619,82 @@ used for any ship in the fleet.</characteristic>
   <sharedSelectionEntries>
     <selectionEntry id="042b-3669-8215-bf20" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73b7-acb5-41b6-7dd3" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73b7-acb5-41b6-7dd3" type="max"/>
       </constraints>
       <profiles>
         <profile id="73f1-0c41-a9d5-a76e" name="Cobra Class Destroyer" publicationId="11f0-17d1-e4d2-1018" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">30</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="8759-3037-f146-024b" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="8759-3037-f146-024b" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="38f2-c191-bbb8-236a" name="Prow Torpedos" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d07c-7df4-0ccf-4e30" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3a4-646e-670e-cc9d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d07c-7df4-0ccf-4e30" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3a4-646e-670e-cc9d" type="max"/>
           </constraints>
           <profiles>
             <profile id="1154-8f3d-d52a-846b" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6379-8c6d-9b50-bf73" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="af6f-adfc-f34a-4db7">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a31f-3417-fdb8-464d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cf8-5ff4-76fe-4286" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a31f-3417-fdb8-464d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cf8-5ff4-76fe-4286" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="af6f-adfc-f34a-4db7" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9ba-1bfa-01dd-7ac3" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9ba-1bfa-01dd-7ac3" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="d2e3-de08-44c4-9a8a" name="Weapons Battery" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b30d-3a74-d358-0429" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8667-6c6e-6748-7ddb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b30d-3a74-d358-0429" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8667-6c6e-6748-7ddb" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="527a-e0f8-69d9-b637" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                       <characteristics>
                         <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                         <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8a36-7044-b804-f087" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a57e-362b-e471-f246" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a57e-362b-e471-f246" type="max"/>
               </constraints>
               <rules>
                 <rule id="f412-2808-0ddc-ee1a" name="Long Range Detection Gear" hidden="false">
@@ -702,7 +702,7 @@ used for any ship in the fleet.</characteristic>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -712,105 +712,105 @@ used for any ship in the fleet.</characteristic>
         <entryLink id="d19b-6ce1-a25d-d1f4" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="30"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7095-447c-65a6-0032" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c55-82d4-d68f-2e7b" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c55-82d4-d68f-2e7b" type="max"/>
       </constraints>
       <profiles>
         <profile id="bd73-20a4-33ac-c1bf" name="Falchion Class Escort" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
           </characteristics>
         </profile>
         <profile id="6e12-eb02-2ff7-b8b2" name="Falchion Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
         <profile id="6114-0310-ad92-e4d7" name="Falchion Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a6e3-d799-26bf-b18c" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="a6e3-d799-26bf-b18c" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ed0a-bd68-4a28-f791" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="35"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29f2-2dc1-eff2-3101" name="Firestorm Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b536-742f-16e7-a911" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b536-742f-16e7-a911" type="max"/>
       </constraints>
       <profiles>
         <profile id="0e85-134d-3b43-031a" name="Firestorm Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">☐</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">25</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="de79-ad17-502f-51ed" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="de79-ad17-502f-51ed" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9cba-8112-a3d5-1357" name="Prow Lance" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd25-fa5b-75d2-568a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4645-ef95-78f5-a8e9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd25-fa5b-75d2-568a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4645-ef95-78f5-a8e9" type="max"/>
           </constraints>
           <profiles>
             <profile id="0e0a-447a-c30d-af6f" name="Prow Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7d37-736d-5798-ee4b" name="Weapons Battery (30/2)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f68b-68c7-dbe7-3265" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b4-fa49-5508-cc5e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f68b-68c7-dbe7-3265" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b4-fa49-5508-cc5e" type="max"/>
           </constraints>
           <profiles>
             <profile id="bfaa-e8ad-8de4-b935" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -818,121 +818,121 @@ used for any ship in the fleet.</characteristic>
         <entryLink id="6a5c-7f4e-2aef-ad00" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7fba-98fc-ee7f-8daf" name="Gladius Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5bfd-bc5e-e8a4-8e0d" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5bfd-bc5e-e8a4-8e0d" type="max"/>
       </constraints>
       <profiles>
         <profile id="be43-b08f-72ac-8e9f" name="Gladius Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">30cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
           </characteristics>
         </profile>
         <profile id="f0f9-1694-6287-c2c9" name="Gladius Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="9f42-99d3-6a80-6a58" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="9f42-99d3-6a80-6a58" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="db2b-e23f-4eb0-3ff7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8632-2465-51e5-b7af" name="Hunter Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b836-57ec-1ed5-67a7" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b836-57ec-1ed5-67a7" type="max"/>
       </constraints>
       <profiles>
         <profile id="ef6c-796a-df77-5d73" name="Hunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">35cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
           </characteristics>
         </profile>
         <profile id="5969-8bcf-b8b6-6442" name="Hunter Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
           </characteristics>
         </profile>
         <profile id="c0a5-e5b1-baea-ad7c" name="Hunter Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="1bfd-83b1-a26d-2007" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="1bfd-83b1-a26d-2007" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0863-8347-6d19-1990" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="35"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f7c-8c41-a7e8-40ad" name="Sword Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d853-40fb-0596-a154" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d853-40fb-0596-a154" type="max"/>
       </constraints>
       <profiles>
         <profile id="5257-6a01-c181-c839" name="Sword Class Frigate" publicationId="11f0-17d1-e4d2-1018" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">☐</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">25</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="40c7-bfef-df79-dc51" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="40c7-bfef-df79-dc51" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="80e0-aaf7-998d-26a7" name="Weapons Battery (30/4)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd40-35ed-4257-fb7e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73f3-5290-8c35-8b45" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd40-35ed-4257-fb7e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73f3-5290-8c35-8b45" type="max"/>
           </constraints>
           <profiles>
             <profile id="e32a-ed6d-26a3-4090" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
               <characteristics>
                 <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
                 <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -940,56 +940,56 @@ used for any ship in the fleet.</characteristic>
         <entryLink id="dba3-a3e7-265c-addb" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="35"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fea6-6864-64f7-bd50" name="Nova Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdc4-a29e-aa43-2f99" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdc4-a29e-aa43-2f99" type="max"/>
       </constraints>
       <profiles>
         <profile id="aeab-5d34-ce0e-394b" name="Nova Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">35cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
             <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
           </characteristics>
         </profile>
         <profile id="8816-0218-0069-9cdd" name="Nova Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
         <profile id="5729-2021-d278-1797" name="Nova Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="4bfa-30ce-a6cc-861e" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+        <categoryLink id="4bfa-30ce-a6cc-861e" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="60d1-2740-7125-78bd" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
+        <cost name="pts" typeId="points" value="45"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5e54-af60-5851-fa90" name="Ordnance" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e75-d199-f283-21db" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb1-93ff-11d7-232c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e75-d199-f283-21db" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb1-93ff-11d7-232c" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="6137-54a8-a799-d802" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
@@ -1018,7 +1018,7 @@ Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly co
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fa64-2c74-4b72-f590" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
@@ -1032,7 +1032,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
