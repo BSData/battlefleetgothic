@@ -2639,7 +2639,7 @@ Starhawks: 20 cm</characteristic>
           <modifiers>
             <modifier type="append" value=" Sharks: 30cm" field="52616e67652f537065656423232344415441232323">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="0444-6158-b12c-2d4c" childId="2086-b03a-97b6-094c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2086-b03a-97b6-094c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
             <modifier type="append" value="Torpedo Bomber: 20cm (STR 2)" field="52616e67652f537065656423232344415441232323">
@@ -4258,6 +4258,110 @@ Starhawks: 20cm</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe50-1b0d-038e-ace2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exorcist Grand Cruiser" hidden="false" id="b9a2-4033-44e1-bb8f">
+      <costs>
+        <cost name="pts" typeId="points" value="230"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="46e2-c9eb-27e7-172a" id="24dc-9acc-9777-3f3f" primary="true" name="Grand Cruiser"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Exorcist Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="558b-306a-0d7c-8064" publicationId="11f0-17d1-e4d2-1018" page="106">
+          <characteristics>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20 cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Port Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="a281-6ee6-429d-dacc">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30 cm
+Starhawks: 20 cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value=" Sharks: 30cm" field="52616e67652f537065656423232344415441232323">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e078-79bf-e608-3d65" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Torpedo Bomber: 20cm (STR 2)" field="52616e67652f537065656423232344415441232323">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="parent" childId="beba-9f13-d04b-6ad6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Ignores Prow Damage" id="c335-012e-e710-79bd" hidden="false">
+          <description>The Exorcist class grand cruiser completely ignores prow critical damage, regardless of the cause. If any critical damage rolled against the table results in a Prow Armament Damaged critical hit, it is assumed the critical damage did not take place, and it does not move up to the next higher critical damage. If the critical damage is caused by the ship taking a hit, the hit itself still counts normally.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Shark Assault Boats" hidden="false" id="41aa-f434-07b0-c17e" collective="false" targetId="e078-79bf-e608-3d65" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" value="5" field="points"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Torpedo Bombers" hidden="false" id="de2f-524a-b3e3-a087" collective="false" targetId="c69e-6a55-2724-bb95" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" value="30" field="points"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gun Batteries" hidden="false" id="61e0-6fc7-7686-ff6b">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Long Range" hidden="false" id="1f59-ec05-4c62-ee1f">
+              <profiles>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="47a9-691e-434f-42f2">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="24e1-a4a6-0aef-c378">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Short Range" hidden="false" id="4a9f-5539-ac40-a742">
+              <profiles>
+                <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="1138-f0f1-3849-5807">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starboard Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="042c-4a55-f680-48bc">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7aa-982e-83db-e52c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f13-a502-4731-4c40" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
