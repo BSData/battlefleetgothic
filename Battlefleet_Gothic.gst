@@ -1307,6 +1307,26 @@ Starhawks: 20 cm</characteristic>
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Starboard Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="06b1-fbf6-415a-d989">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Furies: 30 cm
+Starhawks: 20 cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value=" Sharks: 30cm" field="52616e67652f537065656423232344415441232323">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e078-79bf-e608-3d65" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Torpedo Bomber: 20cm (STR 2)" field="52616e67652f537065656423232344415441232323">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="parent" childId="beba-9f13-d04b-6ad6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <rules>
         <rule name="Ignores Prow Damage" id="c335-012e-e710-79bd" hidden="false">
