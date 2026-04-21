@@ -4,7 +4,7 @@
     <publication id="44fa-5ffb-b627-7106" name="New Publication"/>
   </publications>
   <forceEntries>
-    <forceEntry id="24a3-f4ab-d475-1a63" name="Armageddon Sector Fleet List, Segmentum Solar" hidden="false">
+    <forceEntry id="24a3-f4ab-d475-1a63" name="Armageddon Sector" hidden="false">
       <categoryLinks>
         <categoryLink id="9374-68a8-0bb9-1c6f" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <constraints>
@@ -54,7 +54,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="8ed8-4a6a-2f2b-833d" name="Gothic Sector Fleet List, Segmentum Obscurus" publicationId="11f0-17d1-e4d2-1018" page="115" hidden="false">
+    <forceEntry id="8ed8-4a6a-2f2b-833d" name="Gothic Sector" publicationId="11f0-17d1-e4d2-1018" page="115" hidden="false">
       <categoryLinks>
         <categoryLink id="53fb-c3f8-5f56-41cc" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <constraints>
@@ -104,7 +104,7 @@
         <categoryLink id="6002-4f34-7564-7ca8" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="c52d-5b11-b7cd-f654" name="Bastion Fleets List, Segmentum Obscurus" publicationId="1bc8-5968-21c3-0f27" page="28" hidden="false">
+    <forceEntry id="c52d-5b11-b7cd-f654" name="Bastion Fleets" publicationId="1bc8-5968-21c3-0f27" page="28" hidden="false">
       <categoryLinks>
         <categoryLink id="675e-cab6-6248-d13e" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <constraints>
@@ -1671,7 +1671,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
                 <condition type="equalTo" value="1" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="758a-f009-f45e-9871" shared="true"/>
@@ -1785,7 +1784,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1800,7 +1798,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -1871,7 +1868,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1928,7 +1924,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
