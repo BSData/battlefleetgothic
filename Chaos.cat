@@ -2193,7 +2193,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="380"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Acheron Class Heavy Cruiser" hidden="false" id="71c5-635e-3b8d-4466">
+    <selectionEntry type="model" import="true" name="Acheron Class Heavy Cruiser" hidden="false" id="71c5-635e-3b8d-4466">
       <profiles>
         <profile name="Acheron Class Heavy Cruiser profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="b500-d664-d0d9-c0d8">
           <characteristics>
@@ -2245,7 +2245,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="cf79-82ee-ebe9-7ea3" id="938d-cb76-53e6-83b6" primary="true" name="Heavy Cruiser"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chaos Battle Barge" hidden="false" id="a9b8-574d-756d-1255">
+    <selectionEntry type="model" import="true" name="Chaos Battle Barge" hidden="false" id="a9b8-574d-756d-1255">
       <costs>
         <cost name="pts" typeId="points" value="410"/>
       </costs>
@@ -2322,7 +2322,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <infoLink name="May not use the &quot;come to new heading&quot; special order" id="3cf4-2f03-5b0d-da1d" hidden="false" type="rule" targetId="b1a1-aead-ea5a-d8d3"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Desolator Class Battleship" hidden="false" id="b456-9411-c20a-3060">
+    <selectionEntry type="model" import="true" name="Desolator Class Battleship" hidden="false" id="b456-9411-c20a-3060">
       <entryLinks>
         <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="97bb-ef29-aa99-db91" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2374,7 +2374,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="af76-55dc-8035-8a7e" primary="true" name="Battleship"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Despoiler Class Battleship" hidden="false" id="7b1a-54b5-12f2-4750">
+    <selectionEntry type="model" import="true" name="Despoiler Class Battleship" hidden="false" id="7b1a-54b5-12f2-4750">
       <costs>
         <cost name="pts" typeId="points" value="400"/>
       </costs>
@@ -2481,7 +2481,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="d6d0-57e3-954a-0aa9" primary="true" name="Battleship"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Repulsive Class Grand Cruiser" hidden="false" id="b5f2-dc98-c203-c6d3">
+    <selectionEntry type="model" import="true" name="Repulsive Class Grand Cruiser" hidden="false" id="b5f2-dc98-c203-c6d3">
       <entryLinks>
         <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="916c-fedc-0e62-91ac" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2594,7 +2594,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Executor Class Grand Cruiser" hidden="true" id="729e-db94-3a9e-3d9b">
+    <selectionEntry type="model" import="true" name="Executor Class Grand Cruiser" hidden="true" id="729e-db94-3a9e-3d9b">
       <costs>
         <cost name="pts" typeId="points" value="210"/>
       </costs>
@@ -2662,7 +2662,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="46e2-c9eb-27e7-172a" id="3a1e-38df-fc78-7643" primary="true" name="Grand Cruiser"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hades Class Heavy Cruiser" hidden="false" id="c59a-b2fe-81e6-93e6">
+    <selectionEntry type="model" import="true" name="Hades Class Heavy Cruiser" hidden="false" id="c59a-b2fe-81e6-93e6">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -2715,7 +2715,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="1042-e458-4e02-a537" id="c2a8-a6ca-ae0e-ab59" primary="false" name="Cruiser"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Retaliator Class Grand Cruiser" hidden="true" id="7581-51de-2d96-5f48">
+    <selectionEntry type="model" import="true" name="Retaliator Class Grand Cruiser" hidden="true" id="7581-51de-2d96-5f48">
       <costs>
         <cost name="pts" typeId="points" value="260"/>
       </costs>
@@ -2878,7 +2878,6 @@ Dreadclaws: 30 cm</characteristic>
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>

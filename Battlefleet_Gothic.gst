@@ -1771,8 +1771,7 @@ Starhawks: 20cm</characteristic>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Gothic Sector"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
@@ -1880,7 +1879,6 @@ Starhawks: 20cm</characteristic>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2478,7 +2476,6 @@ Starhawks: 20cm</characteristic>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2552,7 +2549,6 @@ Starhawks: 20cm</characteristic>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2748,7 +2744,6 @@ Starhawks: 20cm</characteristic>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
