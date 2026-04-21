@@ -160,8 +160,6 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -675,9 +673,7 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -824,9 +820,7 @@ Boarding: 30cm</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6018-55bf-7466-ed8a" type="instanceOf" childName="Dominion Fleet List"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2582,7 +2576,6 @@ attack do not affect this number.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5401-792b-71dc-1a0d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -2695,18 +2688,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5731-f01c-2c05-92c6" name="Honour Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a7d-0715-058f-55c2" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d16f-2a88-393f-b3c0" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="8cea-64c8-5335-1cbf" name="Honour Guard" hidden="false" targetId="2ebb-7250-08df-cdd1" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
