@@ -224,6 +224,13 @@ also 40k does not put unit&apos;s here. (weapons systems in gothic dont work lik
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">5</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="0444-6158-b12c-2d4c" childId="ddd6-8dbd-fd37-3d5d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="3e28-55f4-0048-a805">
           <characteristics>
@@ -309,6 +316,7 @@ Starhawks: 20 cm</characteristic>
         </entryLink>
         <entryLink import="true" name="Leadership" hidden="false" id="4711-7888-1ccc-5fce" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink import="true" name="Shark Assault Boats" hidden="false" id="2086-b03a-97b6-094c" collective="false" targetId="e078-79bf-e608-3d65" type="selectionEntry"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="ddd6-8dbd-fd37-3d5d" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="365"/>
@@ -483,6 +491,7 @@ Starhawks: 20 cm</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink name="Grand Cruiser" hidden="false" id="5bc3-9a2e-c32a-f9a3" targetId="46e2-c9eb-27e7-172a" primary="true"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="8dc7-2d96-7d38-921f" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Leadership" hidden="false" id="ae29-8a6a-89d5-bd63" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
@@ -508,6 +517,13 @@ Starhawks: 20 cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="5085-985b-3153-bca2" childId="e232-c6ce-0500-253f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="adcc-9a9b-d0d1-7a50">
           <characteristics>
@@ -557,11 +573,13 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink name="Battlecruiser" hidden="false" id="4414-d8d4-8d53-7012" targetId="b041-ef69-0039-d535" primary="true"/>
         <categoryLink name="Cruiser" hidden="false" id="2ffc-f548-6897-f269" targetId="1042-e458-4e02-a537" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="8f8a-05e9-c63d-6dd3" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Leadership" hidden="false" id="978b-c760-188c-c3df" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
         <entryLink import="true" name="Power Ram" hidden="false" id="efd0-d2d4-1122-d88f" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
         <entryLink import="true" name="Torpedo Bombers" hidden="false" id="0979-a8cc-4f53-f0c8" type="selectionEntry" targetId="c69e-6a55-2724-bb95"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="e232-c6ce-0500-253f" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="260"/>
@@ -701,6 +719,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="308c-e39b-7cb6-5824" childId="754b-358c-c020-e688" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port Main Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d0c6-b571-ee53-7a70">
           <characteristics>
@@ -838,6 +863,7 @@ Starhawks: 20cm</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Leadership" hidden="false" id="8489-414c-b3cb-2927" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="754b-358c-c020-e688" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="255"/>
@@ -855,6 +881,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">5</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="eaaa-5886-aaae-81b1" childId="08a4-f36a-7856-b80e" shared="true" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port Launch Bays" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0981-c212-9aa6-a37a">
           <characteristics>
@@ -927,6 +960,7 @@ Starhawks: 20cm</characteristic>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Leadership" hidden="false" id="158d-ace7-311a-ce9f" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="08a4-f36a-7856-b80e" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="335"/>
@@ -1074,6 +1108,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="0a88-351f-e43d-cbc7" childId="32e6-3e77-3ca9-cbc7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Retribution Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="33d7-7b4d-a70c-9e98">
           <characteristics>
@@ -1114,6 +1155,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink import="true" name="Power Ram" hidden="false" id="1d0b-4651-8c49-ee40" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
         <entryLink import="true" name="Leadership" hidden="false" id="fdd7-6f5d-da12-d9d6" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="32e6-3e77-3ca9-cbc7" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="345"/>
@@ -1131,6 +1173,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="0481-f103-e102-1a11" childId="d3f2-253b-bae1-2679" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="2d38-af3f-f280-bf0a">
           <characteristics>
@@ -1178,6 +1227,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink import="true" name="Power Ram" hidden="false" id="f3c3-6a2e-59fa-38ec" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
         <entryLink import="true" name="Leadership" hidden="false" id="78e5-09fe-ce80-6947" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="d3f2-253b-bae1-2679" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="300"/>
@@ -1196,6 +1246,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="57a1-2e93-6fa3-7846" childId="81b2-6f0f-aa7c-2c1e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="bd70-f230-7382-8195">
           <characteristics>
@@ -1263,6 +1320,7 @@ Starhawks: 20cm</characteristic>
       <entryLinks>
         <entryLink import="true" name="Power Ram" hidden="false" id="30c3-5e47-6ad6-a849" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
         <entryLink import="true" name="Leadership" hidden="false" id="f737-7552-4af6-1f98" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="81b2-6f0f-aa7c-2c1e" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="345"/>
@@ -1423,6 +1481,7 @@ Starhawks: 20 cm</characteristic>
       <categoryLinks>
         <categoryLink name="Cruiser" hidden="false" id="cae4-c9aa-1e3a-3dc9" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink name="CV" hidden="false" id="887f-f6bd-470d-96e0" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="1ae4-d0ea-aaab-dc30" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Prow Weapon Options" id="f2f6-6244-9a4f-cd9f" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-20d1-105c-d652">
@@ -1586,6 +1645,7 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink name="Cruiser" hidden="false" id="176b-d514-5f19-9ca0" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink name="CV" hidden="false" id="c953-ee1f-ec56-f888" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="b3c5-8a87-da2b-fd4b" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="7139-ed37-ecf0-4cbe" hidden="false" collective="false" import="true">
@@ -1669,6 +1729,7 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink name="Cruiser" hidden="false" id="5072-ad8b-b669-4e89" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink name="CV" hidden="false" id="97cc-f311-c1b0-809d" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="52c5-6b4d-9598-fc3c" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Starboard Weapons" id="7843-a59f-12b9-744a" hidden="false" collective="false" import="true">
@@ -1796,6 +1857,13 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="d953-cda8-66a1-1003" childId="9d5b-776b-40b7-6a8c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="c24f-12b8-8a27-4bfa">
           <characteristics>
@@ -1852,6 +1920,7 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink name="Cruiser" hidden="false" id="65f3-6f6d-7b29-8f9d" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink name="CV" hidden="false" id="1577-6468-8ee4-033b" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="2b01-34f0-8f1a-ade2" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Imperial Ordnance" hidden="false" id="b1a2-0d4c-c26a-3e84" collective="false" targetId="2da3-6f87-b676-1862" type="selectionEntryGroup"/>
@@ -1862,6 +1931,7 @@ Starhawks: 20cm</characteristic>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Leadership" hidden="false" id="c881-c8e3-5f71-9729" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="9d5b-776b-40b7-6a8c" type="selectionEntry" targetId="e08c-8ec9-4a9a-7c9e"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="220"/>
@@ -1898,7 +1968,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="6fb0-5550-63c2-b5a4" childId="e119-ae33-0e54-c6ae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="6fb0-5550-63c2-b5a4" childId="cdd3-4842-2cef-b3f1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1910,6 +1980,7 @@ Starhawks: 20cm</characteristic>
       <categoryLinks>
         <categoryLink name="Cruiser" hidden="false" id="8c1a-1451-5629-67ef" targetId="1042-e458-4e02-a537" primary="true"/>
         <categoryLink name="CV" hidden="false" id="cefb-143e-aab2-2413" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
+        <categoryLink name="Cruiser Reserves" hidden="false" id="0cc9-e78c-b385-a03b" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Varient" id="12e9-67f3-007e-4ddf" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa07-903e-532d-f514">
@@ -2138,7 +2209,7 @@ Starhawks: 20cm</characteristic>
             </modifier>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="78ee-e5d4-a3f5-c30c" childId="cdd3-4842-2cef-b3f1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="78ee-e5d4-a3f5-c30c" childId="cecb-917f-762e-2e0f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2383,7 +2454,7 @@ Starhawks: 20cm</characteristic>
             </modifier>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="8d8b-e0ae-1daa-f6ab" childId="cdd3-4842-2cef-b3f1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="8d8b-e0ae-1daa-f6ab" childId="3fbb-b976-8e84-6d83" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2499,7 +2570,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="7004-e1c8-a2b1-6fce" childId="e119-ae33-0e54-c6ae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="7004-e1c8-a2b1-6fce" childId="60b7-acb8-c35e-67fc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2572,12 +2643,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="fd6d-d4b0-dd4a-a44a" childId="e7d5-8168-d125-7953" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="fd6d-d4b0-dd4a-a44a" childId="e7d5-8168-d125-7953" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2653,6 +2719,42 @@ Starhawks: 20cm</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power Ram and Torpedoes" hidden="false" id="547b-10cd-7ed4-a220">
+              <comment>Power Ram and Torpedoes</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Torpedoes" hidden="false" id="5d46-e1b7-6e70-28ac" page="0" collective="false">
+                  <profiles>
+                    <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="e003-2429-08a5-ad24">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torpedoes" id="4668-ac4b-f4e6-137f" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2b37-21d1-16fe-eb4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b4ae-b9b3-0642-799f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Power Ram" hidden="false" id="bdfc-2fa9-80f7-2d85" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="Torpedoes" id="61d1-298b-58b7-c9fe" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a3b1-507d-5f59-e4cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Power Ram" hidden="false" id="2a93-272c-2c3d-f3fc" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry">
@@ -2698,7 +2800,7 @@ Starhawks: 20cm</characteristic>
           <modifiers>
             <modifier type="increment" value="1" field="5.475727265747323e+33">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="60b5-c127-2469-8e90" childId="9be1-677e-924e-f72e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="60b5-c127-2469-8e90" childId="9be1-677e-924e-f72e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
               </conditions>
             </modifier>
           </modifiers>

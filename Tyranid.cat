@@ -26,7 +26,7 @@
         <categoryLink id="9498-8093-caae-b77a" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="2595-d0f8-1613-90d6" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="6f20-646d-4365-8391" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="8c58-92e2-77cb-af30" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink id="8c58-92e2-77cb-af30" name="Cruiser Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="ee10-216e-377e-98e8" name="Tyranid Vanguard Fleet List" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
@@ -40,7 +40,7 @@
         <categoryLink id="69dc-079e-e580-9cd3" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
         <categoryLink id="ecb6-d829-aa92-de34" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
         <categoryLink id="cf8c-43ce-4766-8646" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="01ec-b2ce-d10c-ee72" name="Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink id="01ec-b2ce-d10c-ee72" name="Cruiser Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -969,9 +969,21 @@ Ordnance may be formed up into waves which are treated as squadrons for the purp
             <constraint field="selections" scope="a14b-d9bd-4c47-887a" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b95-7052-59ec-9b49" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b720-953f-a1e0-36d2" name="Tyranid Escort Drone" hidden="false" collective="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry"/>
-            <entryLink id="c7a5-bac4-e081-ca1a" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry"/>
-            <entryLink id="3586-5220-a25f-d539" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry"/>
+            <entryLink id="b720-953f-a1e0-36d2" name="Tyranid Escort Drone" hidden="false" collective="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c7a5-bac4-e081-ca1a" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3586-5220-a25f-d539" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

@@ -335,6 +335,13 @@
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="481c-4670-972c-f69d" childId="ec97-b932-1758-c6d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bakka Turret"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="6d19-5170-d65c-91d8">
           <characteristics>
@@ -1638,9 +1645,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
       <costs>
         <cost name="pts" typeId="points" value="365"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Bakka Turret" hidden="false" id="2e41-996c-4803-6028" type="selectionEntry" targetId="8025-e5ea-9b7b-7f59"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="2b34-54ba-ca7c-3919" primary="true" name="Battleship"/>
       </categoryLinks>
@@ -1705,9 +1709,6 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Armageddon Class Battlecruiser" hidden="true" id="50f2-73c4-8cf3-48dc" type="selectionEntry" targetId="78d4-aec1-2208-e9e2">
-      <entryLinks>
-        <entryLink import="true" name="Bakka Turret" hidden="false" id="88f7-4d2d-2b2d-57d9" type="selectionEntry" targetId="8025-e5ea-9b7b-7f59"/>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -2100,9 +2101,6 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7a-d4c0-7269-6693" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="1f7d-986d-7a83-ea45" name="Bakka Turret" hidden="false" targetId="b473-f084-d220-f2c8" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="5"/>
       </costs>
