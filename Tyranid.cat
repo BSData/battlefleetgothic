@@ -1,1002 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="344dc65b-2a64-40f3-ba32-74b3921acdd8" name="Tyranid Hive Fleet List" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData @Mont_Fox DnDTonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue name="Tyranid Hive Fleet List" id="344dc65b-2a64-40f3-ba32-74b3921acdd8" authorContact="@BSData @Mont_Fox DnDTonight.com" authorName="BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" battleScribeVersion="2.03" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="45" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry id="bf37-f25f-be0e-e317" name="Tyranid Hive Fleet List" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false">
+    <forceEntry name="Tyranid Hive Fleet List" id="bf37-f25f-be0e-e317" hidden="false" page="91" publicationId="1bc8-5968-21c3-0f27">
       <categoryLinks>
-        <categoryLink id="707d-b123-3443-2486" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="9788-d89f-41b4-86ea" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="95be-ef36-7689-329c" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink name="Heavy Cruiser" id="707d-b123-3443-2486" hidden="false" primary="false" targetId="cf79-82ee-ebe9-7ea3"/>
+        <categoryLink name="Battleship" id="9788-d89f-41b4-86ea" hidden="false" primary="false" targetId="4361706974616c20536869707323232344415441232323"/>
+        <categoryLink name="Cruiser" id="95be-ef36-7689-329c" hidden="false" primary="false" targetId="1042-e458-4e02-a537">
+          <constraints>
+            <constraint id="f025-ebad-6a3d-ed78" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="max" value="0"/>
+          </constraints>
           <modifiers>
-            <modifier type="increment" field="f025-ebad-6a3d-ed78" value="2">
-              <repeats>
-                <repeat field="selections" scope="4361706974616c20536869707323232344415441232323" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier field="f025-ebad-6a3d-ed78" type="increment" value="2">
               <conditions>
-                <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" type="greaterThan"/>
+                <condition childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="4361706974616c20536869707323232344415441232323" shared="true" type="greaterThan" value="0"/>
               </conditions>
+              <repeats>
+                <repeat childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="4361706974616c20536869707323232344415441232323" shared="true" value="1"/>
+              </repeats>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f025-ebad-6a3d-ed78" type="max"/>
-          </constraints>
         </categoryLink>
-        <categoryLink id="0ea3-7cf0-f3d1-dd17" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="94b1-0249-2d26-3854" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="2561-6dcb-2401-5478" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="9498-8093-caae-b77a" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="2595-d0f8-1613-90d6" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-        <categoryLink id="6f20-646d-4365-8391" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="8c58-92e2-77cb-af30" name="Cruiser Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink name="Escort" id="0ea3-7cf0-f3d1-dd17" hidden="false" primary="false" targetId="4573636f72747323232344415441232323"/>
+        <categoryLink name="Fleet Commander" id="94b1-0249-2d26-3854" hidden="false" primary="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323"/>
+        <categoryLink name="Grand Cruiser" id="2561-6dcb-2401-5478" hidden="false" primary="false" targetId="46e2-c9eb-27e7-172a"/>
+        <categoryLink name="Orbital Defence" id="9498-8093-caae-b77a" hidden="false" primary="false" targetId="90ac-0bee-0c90-be27"/>
+        <categoryLink name="Ordnance" id="2595-d0f8-1613-90d6" hidden="false" primary="false" targetId="e70d-1bf2-7ea2-276a"/>
+        <categoryLink name="Special" id="6f20-646d-4365-8391" hidden="false" primary="false" targetId="5370656369616c23232344415441232323"/>
+        <categoryLink name="Cruiser Reserves" id="8c58-92e2-77cb-af30" hidden="false" primary="false" targetId="9624-17a2-bfd7-6420"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="ee10-216e-377e-98e8" name="Tyranid Vanguard Fleet List" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
+    <forceEntry name="Tyranid Vanguard Fleet List" id="ee10-216e-377e-98e8" hidden="false" page="90" publicationId="1bc8-5968-21c3-0f27">
       <categoryLinks>
-        <categoryLink id="460f-36b5-2988-f203" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="b1fd-a3df-d12b-61b9" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="0879-0ef3-5d01-b978" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="fa77-f569-652a-0def" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="873d-c479-3140-d4c4" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="217f-7775-7497-875e" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="69dc-079e-e580-9cd3" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="ecb6-d829-aa92-de34" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-        <categoryLink id="cf8c-43ce-4766-8646" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="01ec-b2ce-d10c-ee72" name="Cruiser Reserves" hidden="false" targetId="9624-17a2-bfd7-6420" primary="false"/>
+        <categoryLink name="Heavy Cruiser" id="460f-36b5-2988-f203" hidden="false" primary="false" targetId="cf79-82ee-ebe9-7ea3"/>
+        <categoryLink name="Battleship" id="b1fd-a3df-d12b-61b9" hidden="false" primary="false" targetId="4361706974616c20536869707323232344415441232323"/>
+        <categoryLink name="Cruiser" id="0879-0ef3-5d01-b978" hidden="false" primary="false" targetId="1042-e458-4e02-a537"/>
+        <categoryLink name="Escort" id="fa77-f569-652a-0def" hidden="false" primary="false" targetId="4573636f72747323232344415441232323"/>
+        <categoryLink name="Fleet Commander" id="873d-c479-3140-d4c4" hidden="false" primary="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323"/>
+        <categoryLink name="Grand Cruiser" id="217f-7775-7497-875e" hidden="false" primary="false" targetId="46e2-c9eb-27e7-172a"/>
+        <categoryLink name="Orbital Defence" id="69dc-079e-e580-9cd3" hidden="false" primary="false" targetId="90ac-0bee-0c90-be27"/>
+        <categoryLink name="Ordnance" id="ecb6-d829-aa92-de34" hidden="false" primary="false" targetId="e70d-1bf2-7ea2-276a"/>
+        <categoryLink name="Special" id="cf8c-43ce-4766-8646" hidden="false" primary="false" targetId="5370656369616c23232344415441232323"/>
+        <categoryLink name="Cruiser Reserves" id="01ec-b2ce-d10c-ee72" hidden="false" primary="false" targetId="9624-17a2-bfd7-6420"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <selectionEntries>
-    <selectionEntry id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" name="Tyranid Cruiser" page="0" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="maxInRoster" value="2">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf37-f25f-be0e-e317" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="0fb9-24b4-0563-d2b9" name="Tyranid Cruiser" publicationId="1bc8-5968-21c3-0f27" page="88" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Crusier</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45º</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2 (Spores)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2ae2-346b-4d2b-0471" name="Seperate Salvos" hidden="false" targetId="d29b-51ac-1bae-fc5b" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f3f1-de1d-d8f0-4005" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="bbcf44df-c676-41c8-8c2d-748097fecfb4" name="Bio-Enhancements" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1">
-              <conditions>
-                <condition field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a259e27-1df1-4e39-858f-d095fd30adb3" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="1">
-              <repeats>
-                <repeat field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2eba113-71ba-49db-96df-8e8890d81f65" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1">
-              <conditions>
-                <condition field="selections" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2eba113-71ba-49db-96df-8e8890d81f65" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="955f3d6b-ed69-4914-a9ba-551ea810e7aa" name="Solar Vanes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="24ccdff6-3003-4148-aa53-4a536f02f582" name="Adrenaline Sacs" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8a259e27-1df1-4e39-858f-d095fd30adb3" name="Extra Spore Cyst" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ccff99c0-c1c6-4988-85ae-6e6760f5ebc8" name="Mucous Membrane" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b0275b5f-46eb-4c27-ae48-9c1cc721b88f" name="Drone Link" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="38d7efb7-454b-4dc2-beae-54c40c988216" name="Tenacity" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8b311786-c5c8-444e-a08a-b63f114f7735" name="More Discharge Vents" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c2eba113-71ba-49db-96df-8e8890d81f65" name="Reinforced Carapace" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="95efb502-d711-4fd0-9667-5c5250430eb5" name="Accelerated Healing" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="046fcf34-b742-44d7-9f4a-9b08c3516b5b" name="Weapons" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e0ef158a-1d80-4717-8c60-35ac1c546287" name="Prow" hidden="false" collective="false" import="true" defaultSelectionEntryId="6ff7fe59-0d65-45c2-808b-ed233c52227c">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="85bce03f-290f-4e79-9d0d-e221f4187bd9" name="Prow Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="9092-47ae-9ad8-3318" name="Prow Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f3abe1d7-a921-47c9-94b2-696a259207f8" name="Prow Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="5288-8b80-1c83-39e5" name="Prow Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f2ad27bf-4b55-4b90-87b2-f4ffb3478889" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="49f9-9520-5951-d44f" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6ff7fe59-0d65-45c2-808b-ed233c52227c" name="Prow Massive Claws" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="603c-a1f0-1f55-2c5d" name="Prow Massive Claws" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="0b9623c3-19d9-4491-bbd4-71ca2d4c883c" name="Thorax" hidden="false" collective="false" import="true" defaultSelectionEntryId="17ff7700-2c57-4b7c-9c06-9a1048c3f21f">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="17ff7700-2c57-4b7c-9c06-9a1048c3f21f" name="Thorax Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="88aa-72b8-f495-f7ec" name="Thorax Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0df12d64-b864-43a7-a074-c9b068f40ba1" name="Thorax Massive Claws" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f4f3-6ad9-1b69-a71e" name="Thorax Massive Claws" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0c2955da-86a5-4618-a7b7-8ff63e09da72" name="Thorax Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="99b8-3c1a-d167-b06c" name="Thorax Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="c216e2cf-b26f-43d8-bb8b-064dc820ac0b" name="Port/Starboard" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="85e8fa62-462b-4575-b15c-431a59625bc5" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f7e3-13b8-3e97-0a31" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <modifiers>
-                        <modifier type="increment" field="46697265706f7765722f53747223232344415441232323" value="4">
-                          <conditions>
-                            <condition field="selections" scope="50148e04-c8d0-4ed4-af73-d5a7c72e317a" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85e8fa62-462b-4575-b15c-431a59625bc5" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" name="Bio-Plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="2926-50c4-a8f6-ff7e" name="Bio-Plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <modifiers>
-                        <modifier type="increment" field="46697265706f7765722f53747223232344415441232323" value="2">
-                          <conditions>
-                            <condition field="selections" scope="50148e04-c8d0-4ed4-af73-d5a7c72e317a" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="80"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46" name="Vanguard Escort Squadron" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee10-216e-377e-98e8" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46-4573636f72747323232344415441232323" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6a19b54b-5004-4eb6-bb06-2b297f9fce11" name="Escorts" hidden="false" collective="false" import="true" defaultSelectionEntryId="f455-b107-571f-6dfe">
-          <constraints>
-            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="12" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="adcc-459a-44c3-3b2b" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry"/>
-            <entryLink id="f455-b107-571f-6dfe" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="322e0064-1643-4b0d-ae4c-1313d5448223" name="Hive Mind" page="0" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf37-f25f-be0e-e317" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="322e0064-1643-4b0d-ae4c-1313d5448223-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true" name="Fleet Commander"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="dab699f5-b5fc-402f-8562-9047bdda3304" name="Hive Mind" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" name="Hive Mind Imperative" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <comment>This is a good model for examples of setting up dependant selections</comment>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="1">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="maxSelections" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true" name="Fleet Commander"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="40"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8df3fbed-a991-45a6-859b-d85c51302393" name="Hive Mind Influence (re-roll)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62cebb4c-9c2b-408f-98e1-81b27552b625" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="8df3fbed-a991-45a6-859b-d85c51302393-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true" name="Fleet Commander"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="30"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="62cebb4c-9c2b-408f-98e1-81b27552b625" name="Hive Ship" page="0" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf37-f25f-be0e-e317" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="2ab0-93cd-59dc-06cd" name="Hive Ship" publicationId="1bc8-5968-21c3-0f27" page="87" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45º</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4 (Spores)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="717f-434d-589b-35f4" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink id="2dc2-1850-13c5-9fce" name="Synaptic Control" hidden="false" targetId="5961-13c5-31f1-cd22" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="62cebb4c-9c2b-408f-98e1-81b27552b625-4361706974616c20536869707323232344415441232323" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4247d750-1a98-40a8-8a2a-2dfd5a2474d9" name="Ld 9" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" name="Bio-Enhancements" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1">
-              <conditions>
-                <condition field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f97cabc2-5511-413e-ae08-609163dd6184" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="1">
-              <repeats>
-                <repeat field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44c04c77-cf45-4111-99b3-9552dfefee7f" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1">
-              <conditions>
-                <condition field="selections" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44c04c77-cf45-4111-99b3-9552dfefee7f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f0e3ab67-f988-402a-bfcb-7e3963c16eef" name="Solar Vanes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="99c04a75-42e5-4250-a5ae-f53bc5a62166" name="Adrenaline Sacs" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f97cabc2-5511-413e-ae08-609163dd6184" name="Extra Spore Cyst" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cf67f62b-9594-4fd0-824d-9611654de82c" name="Mucous Membrane" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f84cbb65-fa92-419e-8486-43031377ffac" name="Drone Link" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9739a26f-5a15-412d-b078-8b4bdf367f36" name="Tenacity" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d098a9a9-cbca-41f9-9c53-e4d8ce97c016" name="Psychic Scream" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="04bc8715-9a8a-4ccd-8127-b22a9f80dcf2" name="More Discharge Vents" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="44c04c77-cf45-4111-99b3-9552dfefee7f" name="Reinforced Carapace" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b21951ad-46d3-430d-92f9-c4711dec5bc7" name="Accelerated Healing" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8694-5e4d-5aaa-fd9e" name="Mega-Spore Mines" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ab-2f43-6f51-d034" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="a47e-901f-ee25-85e4" name="No of Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="increment" field="points" value="10">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="064f37d2-b9cf-42ae-bd0d-8a0e331b8d8e" name="Weapons" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="c982df66-b070-44bc-bc7c-c2457aec50aa" name="Prow" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="1937728f-45d2-460b-88bd-59700993b91a" name="Prow Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1e53-1c71-5caa-c2e1" name="Prow Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff" name="Feeder Tentacles &amp; Massive Claws" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e2f6-835f-d484-79e0" name="Prow Feeder Tentacles &amp; Massive Claws" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" name="Bio-Plasma Spines (Discharge)" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="332a-99bc-075c-e8b7" name="Prow Bio-Plasma Spines (Discharge)" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="95f5-2a76-021d-fcdc" name="Prow Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b85a-43ad-6f1c-fdd3" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="bdea-54c4-2e46-76a9" name="Prow Torpedoes" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <comment>Notes torpedos are listed on page 29 but they are missing from the profile. this is corrected on page 30 of the 2010 FAQ</comment>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="25"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="9746cd00-6ea9-4ae7-8a70-5adc499c50cf" name="Thorax" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" name="Thorax Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="53e8-485a-d833-8b65" name="Thorax Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a76d4876-a531-44bb-a951-2d6798b9ed97" name="Thorax Bio-Plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e2c6-4c47-4668-07a4" name="Thorax Bio-Plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9ed1115a-21f5-4693-9051-ca5afc629b3b" name="Thorax Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="5ea1-0cfd-9446-0108" name="Thorax Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
-Fighters: 20cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <selectionEntries>
-                    <selectionEntry id="d6a76e0c-421b-46c0-afac-73ae1467e575" name="Mega-Spore Mines" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="10"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="016d2627-c685-4c4c-b1a5-101442c27cce" name="Port/Starboard" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="2446-e6fe-0caf-a45d" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <comment>Page 29 FAQ says Fire Arc Correction</comment>
-                      <modifiers>
-                        <modifier type="increment" field="46697265706f7765722f53747223232344415441232323" value="4">
-                          <repeats>
-                            <repeat field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd1b44a9-d6fd-4668-94e0-1f26227a3790" repeats="1" roundUp="false"/>
-                          </repeats>
-                          <conditions>
-                            <condition field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd1b44a9-d6fd-4668-94e0-1f26227a3790" type="greaterThan"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="15"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a98622bb-ac34-4457-9502-d46e4757b175" name="Bio-Plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="874f-3fe3-65bd-ca4b" name="Bio-Plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <comment>Page 29 FAQ says Fire Arc Correction</comment>
-                      <modifiers>
-                        <modifier type="increment" field="46697265706f7765722f53747223232344415441232323" value="2">
-                          <repeats>
-                            <repeat field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a98622bb-ac34-4457-9502-d46e4757b175" repeats="1" roundUp="false"/>
-                          </repeats>
-                          <conditions>
-                            <condition field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a98622bb-ac34-4457-9502-d46e4757b175" type="greaterThan"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="41af-8173-b893-6d4e" name="Launch Bay" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="120c-9335-f240-57ae" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                      <modifiers>
-                        <modifier type="increment" field="46697265706f7765722f53747223232344415441232323" value="2">
-                          <repeats>
-                            <repeat field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41af-8173-b893-6d4e" repeats="1" roundUp="false"/>
-                          </repeats>
-                          <conditions>
-                            <condition field="selections" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41af-8173-b893-6d4e" type="greaterThan"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
-Fighters: 20cm</characteristic>
-                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
-                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="20"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="200"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c" name="Ordnance Wave" publicationId="1bc8-5968-21c3-0f27" page="91" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf37-f25f-be0e-e317" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="points" scope="force" value="10" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="eda9-5b43-f5b5-f059" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="9226-04b7-a78b-e223" name="Ordnance Wave" hidden="false">
-          <description>Up to 10% of the fleet’s points allowance may be spent on Ordnance markers as long as at least one hive ship is chosen.
-
-Ordnance may be formed up into waves which are treated as squadrons for the purposes of deployment. In a campaign, ordnance does not form a permanent part of the fleet and is ‘used up’ in a battle.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="false" name="Special"/>
-        <categoryLink id="d687-5fbe-95a9-ecbd" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="02e29716-8e62-4bef-ac3c-6d7859c83589" name="Assault boats" page="0" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="02e29716-8e62-4bef-ac3c-6d7859c83589-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true" name="Special"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="8"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6508bd91-e59c-41fb-94c8-814db7bfc911" name="S4 Boarding Torpedoes" page="0" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="6508bd91-e59c-41fb-94c8-814db7bfc911-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true" name="Special"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="12"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="033b2628-6071-42cf-bd5a-ff3608aa20c8" name="Fighters" page="0" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="033b2628-6071-42cf-bd5a-ff3608aa20c8-5370656369616c23232344415441232323" hidden="false" targetId="5370656369616c23232344415441232323" primary="true" name="Special"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="7"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a14b-d9bd-4c47-887a" name="Escort Squadron" page="0" hidden="true" collective="false" import="true" type="unit">
-      <comment>max 12 comes from page 91 under Squadrons</comment>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf37-f25f-be0e-e317" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="6a71-6650-2beb-bddf" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7a4e-e8d4-0bd5-610c" name="Tyranid Escorts (12 max)" hidden="false" collective="false" import="true">
-          <comment>max 12 comes from page 91 under Squadrons</comment>
-          <constraints>
-            <constraint field="selections" scope="a14b-d9bd-4c47-887a" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b95-7052-59ec-9b49" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b720-953f-a1e0-36d2" name="Tyranid Escort Drone" hidden="false" collective="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c7a5-bac4-e081-ca1a" name="Tyranid Kraken" hidden="false" collective="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </entryLink>
-            <entryLink id="3586-5220-a25f-d539" name="Tyranid Vanguard Drone Ship" hidden="false" collective="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <rules>
-    <rule id="bffe-ec6a-ee46-8fb3" name="Bio-Plasma" publicationId="1bc8-5968-21c3-0f27" page="84" hidden="false">
+    <rule name="Bio-Plasma" id="bffe-ec6a-ee46-8fb3" hidden="false" page="84" publicationId="1bc8-5968-21c3-0f27">
       <description>Bio-plasma is treated like a lance shot – roll one dice per point of Strength, and it hits on a 4+ regardless of armour. Because it is a relatively slow moving attack, like that of a bomber squadron, bio-plasma ignores shields. Unfortunately, this factor also limits the range of bio-plasma to 15cm. Bio-plasma is affected by special orders and crippling just like ordinary lance batteries.</description>
     </rule>
-    <rule id="ac4d-2388-d50e-7e49" name="Feeder Tentacles" publicationId="1bc8-5968-21c3-0f27" page="84" hidden="false">
+    <rule name="Feeder Tentacles" id="ac4d-2388-d50e-7e49" hidden="false" page="84" publicationId="1bc8-5968-21c3-0f27">
       <description>Many Tyranid ships have huge tentacles which they use to ‘feed’ on planetary atmospheres, and
 which can also be used to punch through the hull of a ship allowing the Tyranid organisms
 inside to assault the enemy. When the ship moves into contact with an enemy ship, it
@@ -1016,7 +68,7 @@ ship. It rolls a D6 and scores a 4, inflicting a point of damage and a hit-and-r
 target ship. In addition the Tyranid vessel may continue moving and still fire its weapons in
 the Shooting phase</description>
     </rule>
-    <rule id="7c5e-a076-112a-4b49" name="Massive Claws" publicationId="1bc8-5968-21c3-0f27" page="84" hidden="false">
+    <rule name="Massive Claws" id="7c5e-a076-112a-4b49" hidden="false" page="84" publicationId="1bc8-5968-21c3-0f27">
       <description>Tyranid vessels are terrifying in combat at close quarters. Not only are they packed full of bioengineered killing machines, often the ships themselves have specially evolved claws
 designed to rip through the armour of its target, or crushing mandibles that latch onto the ship’s
 prey and then slowly but inevitably tear through decks and gantries. When the Tyranid ship
@@ -1036,7 +88,7 @@ conduct boarding actions as normal. Massive claw attacks can cause critical hits
 Massive claws are unaffected by special orders of any kind. If a bio-ship becomes crippled its
 massive claws may no longer attack</description>
     </rule>
-    <rule id="7a51-bb2c-5465-7228" name="Pyro-acidic Batteries" publicationId="1bc8-5968-21c3-0f27" page="84" hidden="false">
+    <rule name="Pyro-acidic Batteries" id="7a51-bb2c-5465-7228" hidden="false" page="84" publicationId="1bc8-5968-21c3-0f27">
       <description>These Tyranid weapons work by launching compact organic shells containing virulent
 toxins and pyro-acids. These can cause considerable damage on impact, but it is the
 release of their ravening payloads into the confines of a ship that can prove the most
@@ -1047,7 +99,7 @@ weapon automatically receive an additional fire critical result as well (it’s 
 the long-term effect is comparable). Pyro-acid batteries are affected by special orders and
 crippling just like ordinary weapon batteries</description>
     </rule>
-    <rule id="7f21-e6f9-c875-315e" name="Spores" publicationId="1bc8-5968-21c3-0f27" page="85" hidden="false">
+    <rule name="Spores" id="7f21-e6f9-c875-315e" hidden="false" page="85" publicationId="1bc8-5968-21c3-0f27">
       <description>Tyranid vessels at the beginning of their turn have a number of spore clouds equal to their number
 of spore cysts, which are specified in the bioship’s characteristics. Spores are automatically
 regenerated at the beginning of a player’s turn in the same manner as shields. Spore clouds are not cumulative and never exceed the spore cyst strength of a given vessel, they are also unaffected by the ship’s special orders. If a Tyranid ship is crippled, its spore cyst strength is not affected as the vessel’s self-defence organisms go into overtime to try to protect their host creature.
@@ -1071,7 +123,7 @@ to bear. Each Blast marker in contact with the ship will reduce one spore cloud 
 by the spores in the same turn. 
 Bio-ships can mass their spore cysts in close formation against ordnance as described for other ships, but they do not gain any shielding benefits by doing so. Tyranid spore clouds will NOT intercept Tyranid ordnance</description>
     </rule>
-    <rule id="aa53-67dd-004c-9daa" name="Tyranid Ordinance Limits" publicationId="1bc8-5968-21c3-0f27" page="85" hidden="false">
+    <rule name="Tyranid Ordinance Limits" id="aa53-67dd-004c-9daa" hidden="false" page="85" publicationId="1bc8-5968-21c3-0f27">
       <description>Tyranid bio-ships are virtual living factories, spawning their ordnance as needed.
 Furthermore their broods are virtually autonomous and do not require maintenance or
 refuelling and rearming in the same way as conventional craft. As such bio-ships have no
@@ -1079,7 +131,7 @@ restrictions on the number of ordnance they can launch during a game and do not 
 ordnance. However, if a bio-ship becomes crippled its generative capacities will be turned
 completely to self preservation and it may no longer launch ordnance.</description>
     </rule>
-    <rule id="5caf-6ebf-14c4-c0f0" name="Crippled Tyranid Ships" publicationId="1bc8-5968-21c3-0f27" page="85" hidden="false">
+    <rule name="Crippled Tyranid Ships" id="5caf-6ebf-14c4-c0f0" hidden="false" page="85" publicationId="1bc8-5968-21c3-0f27">
       <description>To summarise, Tyranid ships suffer the following penalties when crippled:
 Speed: -5cm.
 Spore cysts: Unchanged.
@@ -1089,37 +141,37 @@ Feeder Tentacles: May not be used.
 Massive claws: May not be used.
 Torpedoes &amp; Attack Craft: None may be launched</description>
     </rule>
-    <rule id="0336-3c21-0ec5-ba5c" name="Tyranid Boarding" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+    <rule name="Tyranid Boarding" id="0336-3c21-0ec5-ba5c" hidden="false" page="83" publicationId="1bc8-5968-21c3-0f27">
       <description>Tyranids always count double their boarding value, plus they roll 2D6 and use the highest
 result in boarding actions. Tyranids ignore blast marker effects when boarding enemy vessels</description>
     </rule>
-    <rule id="afac-99d4-6bc9-c08a" name="Tyranid Hit and Run Attacks" hidden="false">
+    <rule name="Tyranid Hit and Run Attacks" id="afac-99d4-6bc9-c08a" hidden="false">
       <description>Hit-&amp;-run attacks against Tyranid ships roll two D6 and take the lowest result. Tyranid ships can make hit-&amp;-run teleporting attacks just like other ships in the End phase. The Tyranid player adds +1 to the result when making hit-&amp;-run raids</description>
     </rule>
-    <rule id="fa2d-5c48-3e84-e339" name="All is Lost" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+    <rule name="All is Lost" id="fa2d-5c48-3e84-e339" hidden="false" page="83" publicationId="1bc8-5968-21c3-0f27">
       <description>Capital ships can attempt to self destruct when boarded by Tyranids by passing a Leadership test in the End phase. If the test is failed the crew must face their terrible fate at the hands of the Tyranids. If
 the test is passed roll a D6; on a 1-3 the ship suffers the catastrophic damage result of plasma drive overload. On a 4-6 the ship suffers the warp drive implosion result instead</description>
     </rule>
-    <rule id="659c-d841-ccbb-3258" name="Tyranid Navigation" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+    <rule name="Tyranid Navigation" id="659c-d841-ccbb-3258" hidden="false" page="83" publicationId="1bc8-5968-21c3-0f27">
       <description>All Tyranid ships are naturally adapted voidswimming organisms and make all Leadership checks to navigate celestial phenomena on a default leadership of 10.</description>
     </rule>
-    <rule id="b0d8-c99b-4857-5620" name="Tyranid Target Priority" publicationId="1bc8-5968-21c3-0f27" page="83" hidden="false">
+    <rule name="Tyranid Target Priority" id="b0d8-c99b-4857-5620" hidden="false" page="83" publicationId="1bc8-5968-21c3-0f27">
       <description>Tyranid ships always target the nearest enemy ship unless a special Vanguard drone ship
 ‘highlights’ another enemy within range. No leadership test is allowed for Tyranid ships to
 select a target other than the nearest. Ordnance markers are always ignored and may not be fired
 on at all. 
 Vanguard drone ships highlight all enemies (including ordnance) within 15cm, and these can be targeted freely by any other vessels in the Tyranid fleet which are within range, without requiring a separate command check to ignore closer vessels</description>
     </rule>
-    <rule id="2563-c83c-03cf-5da5" name="Brace For Impact" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+    <rule name="Brace For Impact" id="2563-c83c-03cf-5da5" hidden="false" page="82" publicationId="1bc8-5968-21c3-0f27">
       <description>During either players’ turn, Tyranid ships/squadrons can go onto Brace for Impact orders by testing against the leadership of the nearest hive ship within 45cm. If no hive ships are within range then bio-ships use a default leadership 7 for the test instead.
 As normal this order is only removed at the end of the Tyranids’ next turn. Ships on Brace For Impact orders which are acting instinctively obey the movement restrictions listed above but do not change their special orders.</description>
     </rule>
-    <rule id="2b1e-58f7-240a-714b" name="Instinctive Behavior" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+    <rule name="Instinctive Behavior" id="2b1e-58f7-240a-714b" hidden="false" page="82" publicationId="1bc8-5968-21c3-0f27">
       <description>All Tyranid vessels follow Instinctive Orders unless the Hive Mind (ie, you, the player!) tells a ship or squadron to do something different via the psychic conduit of the hive ships. For ships or squadrons using Instinctive Behaviour, read down the Inspective Behavior table and give the ship/squadron the first appropriate action or special order you come to. No Command check is needed for special orders, but there may be specific activities that must be undertaken in the vessel’s movement.
 
 For example: A Tyranid cruiser wishes to move towards the enemy fleet in support of its hive ship but fails the Ld test. We check the Instinctive Orders table – there are no celestial phenomena or enemy ships close or in range but there is a planet on the table. The cruiser has to move towards the planet even though this actually takes it further away from the enemy fleet it wished to close with.</description>
     </rule>
-    <rule id="ed83-5f64-f34e-db44" name="Instinctive Behavior Table" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
+    <rule name="Instinctive Behavior Table" id="ed83-5f64-f34e-db44" hidden="false" page="82" publicationId="1bc8-5968-21c3-0f27">
       <description>Proceed to next option if condition doesn&apos;t match
 1 - Normal Movement will take ships into celestial phenomina 
 Burn Retros and evade it
@@ -1136,27 +188,27 @@ Reload Ordinance
 7- None above apply
 No special orders. if there&apos;s a planet ships must end turn closer towards it if possible. Otherwise move straight ahead at half speed.</description>
     </rule>
-    <rule id="076f-6d20-fdfd-90f5" name="Vanguard Leadership" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee10-216e-377e-98e8" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <rule name="Vanguard Leadership" id="076f-6d20-fdfd-90f5" hidden="true" page="90" publicationId="1bc8-5968-21c3-0f27">
       <description>Vanguard fleets contain no hive ships and instead are acting on a heightened form of instinct, moving ahead of the main fleet in order to scout out new worlds ripe for conquest. Escort squadrons in a Tyranid Vanguard fleet each have a Leadership value equal to the number of vessels remaining in the squadron (up to a maximum of 10).</description>
-    </rule>
-    <rule id="68c4-b79d-42e4-9a28" name="Vanguard Instinctive Behavior" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="true">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier field="hidden" type="set" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee10-216e-377e-98e8" type="instanceOf"/>
+            <condition childId="ee10-216e-377e-98e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
           </conditions>
         </modifier>
       </modifiers>
-      <description>Escort squadrons in a Tyranid Vanguard fleet may take a Leadership test at the start of each turn in order to override their Instinctive Behaviour, just as if they were in range of a hive ship. Each squadron uses their own Leadership for the test (you can’t use that of a nearby ship or squadron) and if failed, uses Instinctive behaviour as normal.</description>
     </rule>
-    <rule id="4d77-67f5-4b03-cf83" name="Tyranid Squadrons" hidden="false">
+    <rule name="Vanguard Instinctive Behavior" id="68c4-b79d-42e4-9a28" hidden="true" page="90" publicationId="1bc8-5968-21c3-0f27">
+      <description>Escort squadrons in a Tyranid Vanguard fleet may take a Leadership test at the start of each turn in order to override their Instinctive Behaviour, just as if they were in range of a hive ship. Each squadron uses their own Leadership for the test (you can’t use that of a nearby ship or squadron) and if failed, uses Instinctive behaviour as normal.</description>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="ee10-216e-377e-98e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="Tyranid Squadrons" id="4d77-67f5-4b03-cf83" hidden="false">
       <description>The first escort squadron in a hive fleet must contain 6 escorts.
 
 You may include between 6 and 12 escort class ships for each hive ship. If no hive ships are chosen, only Kraken and Vanguard drone ships may be included in the fleet
@@ -1164,10 +216,995 @@ You may include between 6 and 12 escort class ships for each hive ship. If no hi
 Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are individuals and may not deploy in squadrons.</description>
     </rule>
   </rules>
-  <sharedSelectionEntries>
-    <selectionEntry id="395a-465a-22c1-e116" name="Tyranid Escort Drone" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false" collective="false" import="true" type="unit">
+  <selectionEntries>
+    <selectionEntry name="Tyranid Cruiser" id="50148e04-c8d0-4ed4-af73-d5a7c72e317a" collective="false" hidden="true" import="true" page="0" type="unit">
+      <categoryLinks>
+        <categoryLink name="Cruiser" id="f3f1-de1d-d8f0-4005" hidden="false" primary="true" targetId="1042-e458-4e02-a537"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="maxInRoster" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="false" type="max" value="0"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="80"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Seperate Salvos" id="2ae2-346b-4d2b-0471" hidden="false" targetId="d29b-51ac-1bae-fc5b" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="maxInRoster" type="increment" value="2">
+          <repeats>
+            <repeat childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="bf37-f25f-be0e-e317" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+                <condition childId="7529-da04-0225-31de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
-        <profile id="b769-e8a3-0b4b-9f14" name="Tyranid Escort Drone" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile name="Tyranid Cruiser" id="0fb9-24b4-0563-d2b9" hidden="false" page="88" publicationId="1bc8-5968-21c3-0f27" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Crusier</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2 (Spores)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bio-Enhancements" id="bbcf44df-c676-41c8-8c2d-748097fecfb4" collective="false" hidden="false" import="true">
+          <constraints>
+            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+          </constraints>
+          <modifiers>
+            <modifier field="maxSelections" type="increment" value="1">
+              <conditions>
+                <condition childId="8a259e27-1df1-4e39-858f-d095fd30adb3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="maxSelections" type="increment" value="1">
+              <repeats>
+                <repeat childId="c2eba113-71ba-49db-96df-8e8890d81f65" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+            <modifier field="maxSelections" type="decrement" value="1">
+              <conditions>
+                <condition childId="c2eba113-71ba-49db-96df-8e8890d81f65" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="bbcf44df-c676-41c8-8c2d-748097fecfb4" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry name="Solar Vanes" id="955f3d6b-ed69-4914-a9ba-551ea810e7aa" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Adrenaline Sacs" id="24ccdff6-3003-4148-aa53-4a536f02f582" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Extra Spore Cyst" id="8a259e27-1df1-4e39-858f-d095fd30adb3" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Mucous Membrane" id="ccff99c0-c1c6-4988-85ae-6e6760f5ebc8" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Drone Link" id="b0275b5f-46eb-4c27-ae48-9c1cc721b88f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Tenacity" id="38d7efb7-454b-4dc2-beae-54c40c988216" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="More Discharge Vents" id="8b311786-c5c8-444e-a08a-b63f114f7735" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Reinforced Carapace" id="c2eba113-71ba-49db-96df-8e8890d81f65" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="3"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Accelerated Healing" id="95efb502-d711-4fd0-9667-5c5250430eb5" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="046fcf34-b742-44d7-9f4a-9b08c3516b5b" collective="false" hidden="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Prow" id="e0ef158a-1d80-4717-8c60-35ac1c546287" collective="false" defaultSelectionEntryId="6ff7fe59-0d65-45c2-808b-ed233c52227c" hidden="false" import="true">
+              <constraints>
+                <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Prow Pyro-acid Battery" id="85bce03f-290f-4e79-9d0d-e221f4187bd9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Pyro-acid Battery" id="9092-47ae-9ad8-3318" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Prow Feeder Tentacles" id="f3abe1d7-a921-47c9-94b2-696a259207f8" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Feeder Tentacles" id="5288-8b80-1c83-39e5" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Prow Torpedoes" id="f2ad27bf-4b55-4b90-87b2-f4ffb3478889" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Torpedoes" id="49f9-9520-5951-d44f" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Prow Massive Claws" id="6ff7fe59-0d65-45c2-808b-ed233c52227c" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Massive Claws" id="603c-a1f0-1f55-2c5d" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Thorax" id="0b9623c3-19d9-4491-bbd4-71ca2d4c883c" collective="false" defaultSelectionEntryId="17ff7700-2c57-4b7c-9c06-9a1048c3f21f" hidden="false" import="true">
+              <constraints>
+                <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Thorax Feeder Tentacles" id="17ff7700-2c57-4b7c-9c06-9a1048c3f21f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Feeder Tentacles" id="88aa-72b8-f495-f7ec" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Thorax Massive Claws" id="0df12d64-b864-43a7-a074-c9b068f40ba1" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Massive Claws" id="f4f3-6ad9-1b69-a71e" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Thorax Torpedoes" id="0c2955da-86a5-4618-a7b7-8ff63e09da72" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Torpedoes" id="99b8-3c1a-d167-b06c" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Port/Starboard" id="c216e2cf-b26f-43d8-bb8b-064dc820ac0b" collective="false" hidden="false" import="true">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Pyro-acid Battery" id="85e8fa62-462b-4575-b15c-431a59625bc5" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Pyro-acid Battery" id="f7e3-13b8-3e97-0a31" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier field="46697265706f7765722f53747223232344415441232323" type="increment" value="4">
+                          <conditions>
+                            <condition childId="85e8fa62-462b-4575-b15c-431a59625bc5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="50148e04-c8d0-4ed4-af73-d5a7c72e317a" shared="true" type="equalTo" value="2"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Bio-Plasma Discharge" id="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Bio-Plasma Discharge" id="2926-50c4-a8f6-ff7e" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier field="46697265706f7765722f53747223232344415441232323" type="increment" value="2">
+                          <conditions>
+                            <condition childId="c079d4af-de03-4bd9-9eb6-91ccf454d4ab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="50148e04-c8d0-4ed4-af73-d5a7c72e317a" shared="true" type="equalTo" value="2"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Vanguard Escort Squadron" id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46" collective="false" hidden="true" import="true" page="90" publicationId="1bc8-5968-21c3-0f27" type="unit">
+      <categoryLinks>
+        <categoryLink name="Escort" id="e4fd4ab2-2cfd-487f-8434-d3f2c7776b46-4573636f72747323232344415441232323" hidden="false" primary="true" targetId="4573636f72747323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="ee10-216e-377e-98e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Escorts" id="6a19b54b-5004-4eb6-bb06-2b297f9fce11" collective="false" defaultSelectionEntryId="f455-b107-571f-6dfe" hidden="false" import="true">
+          <constraints>
+            <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="6"/>
+            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="12"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Tyranid Kraken" id="adcc-459a-44c3-3b2b" collective="false" hidden="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry"/>
+            <entryLink name="Tyranid Vanguard Drone Ship" id="f455-b107-571f-6dfe" collective="false" hidden="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Hive Mind" id="322e0064-1643-4b0d-ae4c-1313d5448223" collective="false" hidden="true" import="true" page="0" type="unit">
+      <categoryLinks>
+        <categoryLink name="Fleet Commander" id="322e0064-1643-4b0d-ae4c-1313d5448223-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" primary="true" targetId="466c65657420436f6d6d616e6465727323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="bf37-f25f-be0e-e317" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+                <condition childId="7529-da04-0225-31de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hive Mind" id="dab699f5-b5fc-402f-8562-9047bdda3304" collective="false" hidden="false" import="true">
+          <selectionEntries>
+            <selectionEntry name="Hive Mind Imperative" id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <comment>This is a good model for examples of setting up dependant selections</comment>
+              <categoryLinks>
+                <categoryLink name="Fleet Commander" id="7bb50cd8-27a6-4613-8c6d-b486b5f66f21-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" primary="true" targetId="466c65657420436f6d6d616e6465727323232344415441232323"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="0"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+              </costs>
+              <modifiers>
+                <modifier field="maxSelections" type="set" value="1">
+                  <conditions>
+                    <condition childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="equalTo" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="maxSelections" type="increment" value="1">
+                  <repeats>
+                    <repeat childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="2"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry name="Hive Mind Influence (re-roll)" id="8df3fbed-a991-45a6-859b-d85c51302393" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="Fleet Commander" id="8df3fbed-a991-45a6-859b-d85c51302393-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" primary="true" targetId="466c65657420436f6d6d616e6465727323232344415441232323"/>
+              </categoryLinks>
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="0"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier field="maxSelections" type="increment" value="1">
+                  <repeats>
+                    <repeat childId="62cebb4c-9c2b-408f-98e1-81b27552b625" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Hive Ship" id="62cebb4c-9c2b-408f-98e1-81b27552b625" collective="false" hidden="true" import="true" page="0" type="unit">
+      <categoryLinks>
+        <categoryLink name="Battleship" id="62cebb4c-9c2b-408f-98e1-81b27552b625-4361706974616c20536869707323232344415441232323" hidden="false" primary="true" targetId="4361706974616c20536869707323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="200"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="May not use the &quot;come to new heading&quot; special order" id="717f-434d-589b-35f4" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
+        <infoLink name="Synaptic Control" id="2dc2-1850-13c5-9fce" hidden="false" targetId="5961-13c5-31f1-cd22" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="bf37-f25f-be0e-e317" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+                <condition childId="7529-da04-0225-31de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Hive Ship" id="2ab0-93cd-59dc-06cd" hidden="false" page="87" publicationId="1bc8-5968-21c3-0f27" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">15cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45º</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">-</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">4 (Spores)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Ld 9" id="4247d750-1a98-40a8-8a2a-2dfd5a2474d9" collective="false" hidden="false" import="true" page="0" type="upgrade">
+          <constraints>
+            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bio-Enhancements" id="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" collective="false" hidden="false" import="true">
+          <constraints>
+            <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="3"/>
+          </constraints>
+          <modifiers>
+            <modifier field="maxSelections" type="increment" value="1">
+              <conditions>
+                <condition childId="f97cabc2-5511-413e-ae08-609163dd6184" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+            <modifier field="maxSelections" type="increment" value="1">
+              <repeats>
+                <repeat childId="44c04c77-cf45-4111-99b3-9552dfefee7f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+            <modifier field="maxSelections" type="decrement" value="1">
+              <conditions>
+                <condition childId="44c04c77-cf45-4111-99b3-9552dfefee7f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="4ce3e2fa-ca67-4438-8f75-9cffd4885ef5" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry name="Solar Vanes" id="f0e3ab67-f988-402a-bfcb-7e3963c16eef" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Adrenaline Sacs" id="99c04a75-42e5-4250-a5ae-f53bc5a62166" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Extra Spore Cyst" id="f97cabc2-5511-413e-ae08-609163dd6184" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Mucous Membrane" id="cf67f62b-9594-4fd0-824d-9611654de82c" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Drone Link" id="f84cbb65-fa92-419e-8486-43031377ffac" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Tenacity" id="9739a26f-5a15-412d-b078-8b4bdf367f36" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Psychic Scream" id="d098a9a9-cbca-41f9-9c53-e4d8ce97c016" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="More Discharge Vents" id="04bc8715-9a8a-4ccd-8127-b22a9f80dcf2" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Reinforced Carapace" id="44c04c77-cf45-4111-99b3-9552dfefee7f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="4"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Accelerated Healing" id="b21951ad-46d3-430d-92f9-c4711dec5bc7" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry name="Mega-Spore Mines" id="8694-5e4d-5aaa-fd9e" collective="false" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="05ab-2f43-6f51-d034" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry name="No of Launch Bays" id="a47e-901f-ee25-85e4" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier field="points" type="increment" value="10">
+                      <conditions>
+                        <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="equalTo" value="0"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="064f37d2-b9cf-42ae-bd0d-8a0e331b8d8e" collective="false" hidden="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Prow" id="c982df66-b070-44bc-bc7c-c2457aec50aa" collective="false" defaultSelectionEntryId="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff" hidden="false" import="true">
+              <constraints>
+                <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Prow Pyro-acid Battery" id="1937728f-45d2-460b-88bd-59700993b91a" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Pyro-acid Battery" id="1e53-1c71-5caa-c2e1" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Feeder Tentacles &amp; Massive Claws" id="9ab10c87-499c-4b1b-b1c0-3baabc5f22ff" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Feeder Tentacles &amp; Massive Claws" id="e2f6-835f-d484-79e0" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Bio-Plasma Spines (Discharge)" id="4344822e-2c36-4d9c-bdd6-f504d3db4ae2" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Bio-Plasma Spines (Discharge)" id="332a-99bc-075c-e8b7" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Prow Torpedoes" id="95f5-2a76-021d-fcdc" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="b85a-43ad-6f1c-fdd3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Prow Torpedoes" id="bdea-54c4-2e46-76a9" hidden="false" page="91" publicationId="1bc8-5968-21c3-0f27" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <comment>Notes torpedos are listed on page 29 but they are missing from the profile. this is corrected on page 30 of the 2010 FAQ</comment>
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Thorax" id="9746cd00-6ea9-4ae7-8a70-5adc499c50cf" collective="false" defaultSelectionEntryId="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" hidden="false" import="true">
+              <constraints>
+                <constraint id="minSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Thorax Pyro-acid Battery" id="c3efe17d-8bed-4fa2-bc8c-01848ffa2c6a" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Pyro-acid Battery" id="53e8-485a-d833-8b65" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Thorax Bio-Plasma Discharge" id="a76d4876-a531-44bb-a951-2d6798b9ed97" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Bio-Plasma Discharge" id="e2c6-4c47-4668-07a4" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front/Left/Right</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Thorax Launch Bay" id="9ed1115a-21f5-4693-9051-ca5afc629b3b" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <constraints>
+                    <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thorax Launch Bay" id="5ea1-0cfd-9446-0108" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
+Fighters: 20cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry name="Mega-Spore Mines" id="d6a76e0c-421b-46c0-afac-73ae1467e575" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                      <constraints>
+                        <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Port/Starboard" id="016d2627-c685-4c4c-b1a5-101442c27cce" collective="false" hidden="false" import="true">
+              <constraints>
+                <constraint id="maxSelections" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="3"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Pyro-acid Battery" id="fd1b44a9-d6fd-4668-94e0-1f26227a3790" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Pyro-acid Battery" id="2446-e6fe-0caf-a45d" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <comment>Page 29 FAQ says Fire Arc Correction</comment>
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier field="46697265706f7765722f53747223232344415441232323" type="increment" value="4">
+                          <conditions>
+                            <condition childId="fd1b44a9-d6fd-4668-94e0-1f26227a3790" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" type="greaterThan" value="0"/>
+                          </conditions>
+                          <repeats>
+                            <repeat childId="fd1b44a9-d6fd-4668-94e0-1f26227a3790" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" value="1"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Bio-Plasma Discharge" id="a98622bb-ac34-4457-9502-d46e4757b175" collective="false" hidden="false" import="true" page="0" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Bio-Plasma Discharge" id="874f-3fe3-65bd-ca4b" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <comment>Page 29 FAQ says Fire Arc Correction</comment>
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier field="46697265706f7765722f53747223232344415441232323" type="increment" value="2">
+                          <conditions>
+                            <condition childId="a98622bb-ac34-4457-9502-d46e4757b175" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" type="greaterThan" value="0"/>
+                          </conditions>
+                          <repeats>
+                            <repeat childId="a98622bb-ac34-4457-9502-d46e4757b175" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" value="1"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Launch Bay" id="41af-8173-b893-6d4e" collective="false" hidden="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Launch Bay" id="120c-9335-f240-57ae" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Assault Boats: 15cm
+Fighters: 20cm</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">0</characteristic>
+                        <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Right</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier field="46697265706f7765722f53747223232344415441232323" type="increment" value="2">
+                          <conditions>
+                            <condition childId="41af-8173-b893-6d4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" type="greaterThan" value="0"/>
+                          </conditions>
+                          <repeats>
+                            <repeat childId="41af-8173-b893-6d4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="62cebb4c-9c2b-408f-98e1-81b27552b625" shared="true" value="1"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Ordnance Wave" id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c" collective="false" hidden="true" import="true" page="91" publicationId="1bc8-5968-21c3-0f27" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Special" id="d0b65bfa-2fc4-4c1b-ab8f-a2086f0fff3c-5370656369616c23232344415441232323" hidden="false" primary="false" targetId="5370656369616c23232344415441232323"/>
+        <categoryLink name="Ordnance" id="d687-5fbe-95a9-ecbd" hidden="false" primary="true" targetId="e70d-1bf2-7ea2-276a"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="eda9-5b43-f5b5-f059" field="points" includeChildForces="false" includeChildSelections="false" percentValue="true" scope="force" shared="true" type="max" value="10"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="7529-da04-0225-31de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+                <condition childId="bf37-f25f-be0e-e317" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Ordnance Wave" id="9226-04b7-a78b-e223" hidden="false">
+          <description>Up to 10% of the fleet’s points allowance may be spent on Ordnance markers as long as at least one hive ship is chosen.
+
+Ordnance may be formed up into waves which are treated as squadrons for the purposes of deployment. In a campaign, ordnance does not form a permanent part of the fleet and is ‘used up’ in a battle.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry name="Assault boats" id="02e29716-8e62-4bef-ac3c-6d7859c83589" collective="false" hidden="false" import="true" page="0" type="unit">
+          <categoryLinks>
+            <categoryLink name="Special" id="02e29716-8e62-4bef-ac3c-6d7859c83589-5370656369616c23232344415441232323" hidden="false" primary="true" targetId="5370656369616c23232344415441232323"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="8"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry name="S4 Boarding Torpedoes" id="6508bd91-e59c-41fb-94c8-814db7bfc911" collective="false" hidden="false" import="true" page="0" type="unit">
+          <categoryLinks>
+            <categoryLink name="Special" id="6508bd91-e59c-41fb-94c8-814db7bfc911-5370656369616c23232344415441232323" hidden="false" primary="true" targetId="5370656369616c23232344415441232323"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="12"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry name="Fighters" id="033b2628-6071-42cf-bd5a-ff3608aa20c8" collective="false" hidden="false" import="true" page="0" type="unit">
+          <categoryLinks>
+            <categoryLink name="Special" id="033b2628-6071-42cf-bd5a-ff3608aa20c8-5370656369616c23232344415441232323" hidden="false" primary="true" targetId="5370656369616c23232344415441232323"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="7"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Escort Squadron" id="a14b-d9bd-4c47-887a" collective="false" hidden="true" import="true" page="0" type="unit">
+      <comment>max 12 comes from page 91 under Squadrons</comment>
+      <categoryLinks>
+        <categoryLink name="Escort" id="6a71-6650-2beb-bddf" hidden="false" primary="true" targetId="4573636f72747323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="bf37-f25f-be0e-e317" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+                <condition childId="7529-da04-0225-31de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="instanceOf" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tyranid Escorts (12 max)" id="7a4e-e8d4-0bd5-610c" collective="false" hidden="false" import="true">
+          <comment>max 12 comes from page 91 under Squadrons</comment>
+          <constraints>
+            <constraint id="4b95-7052-59ec-9b49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="a14b-d9bd-4c47-887a" shared="true" type="max" value="12"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Tyranid Escort Drone" id="b720-953f-a1e0-36d2" collective="false" hidden="false" import="true" targetId="395a-465a-22c1-e116" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Tyranid Kraken" id="c7a5-bac4-e081-ca1a" collective="false" hidden="false" import="true" targetId="8faf-dc28-7e23-996c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Tyranid Vanguard Drone Ship" id="3586-5220-a25f-d539" collective="false" hidden="false" import="true" targetId="f39d-43f8-86dc-42c0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Fire Ship" id="6c8e-f847-1a85-6f6a" hidden="false" page="143" publicationId="11f0-17d1-e4d2-1018" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The controlling player can detonate a fire ship at any point in its movement phase, inflicting D3 Fire critical hits on every ship within 3D6cm. As with any escort suffering a critical hit, escorts within the fire ship blast will be automatically destoryed, as are any ordinance markers. Remove the detonated fire ship and put a blast marker in it&apos;s place. (Only 10% of the fleet&apos;s escort drones may select this)</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="Kraken Durability" id="3d4f-64b3-fcf4-f155" hidden="false" page="89" publicationId="1bc8-5968-21c3-0f27">
+      <description>Kraken have no spore cysts but are amazingly durable and capable of regenerating damage. As such Kraken count as always being on Brace for Impact special orders when they take damage, receiving a 4+ save against each hit sustained, including those sustained when rolling a 6 for moving through blast markers. This ability in no way affects the Kraken and they may use other special orders as normal.</description>
+    </rule>
+    <rule name="Vanguard Senses" id="6067-57e3-8fa2-9032" hidden="false" page="89" publicationId="1bc8-5968-21c3-0f27">
+      <description>Enemy within 15cm of a Vanguard drone ship can always be targeted by other Tyranid vessels.</description>
+    </rule>
+    <rule name="Return to the Hive" id="1fe4-c983-9d25-b1a9" hidden="false" page="90" publicationId="1bc8-5968-21c3-0f27">
+      <description>Escort drones subject to Instinctive Behaviour case 7 (‘must move towards a planet’) may instead move towards the nearest hive ship.</description>
+    </rule>
+    <rule name="Seperate Salvos" id="d29b-51ac-1bae-fc5b" hidden="false" page="88" publicationId="1bc8-5968-21c3-0f27">
+      <description>Prow and thorax torpedoes cannot be combined into a single salvo, they must be launched separately.</description>
+    </rule>
+    <rule name="Synaptic Control" id="5961-13c5-31f1-cd22" hidden="false" page="82" publicationId="1bc8-5968-21c3-0f27">
+      <description>Only hive ships have a leadership value, which is purchased at a fixed value from the Hive Fleet list. During the Movement phase, each hive ship can make a Command check to change or ignore Instinctive Behaviour for themselves or another ship/squadron within 45cm. If the test is successful the Tyranid player has control of the ship/squadron and may place it on special orders if desired, without requiring a second command check. 
+
+Attempts to use synaptic control count as a Command check so a hive ship can keep testing until a Command check is failed. However, if one hive ship fails a command check this does not prevent another hive ship attempting to use synaptic control. In effect each hive ship can make at least one attempt to override Instinctive Behaviour.
+
+Tyranid ordnance (fighters, assault boats, torpedoes) is not subject to synaptic control or Instinctive Behaviour – just move them like normal ordnance.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry name="Tyranid Escort Drone" id="395a-465a-22c1-e116" collective="false" hidden="false" import="true" page="90" publicationId="1bc8-5968-21c3-0f27" type="unit">
+      <categoryLinks>
+        <categoryLink name="Escort" id="ef36-0bf5-d59f-7b72" hidden="false" primary="true" targetId="4573636f72747323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Return to the Hive" id="0421-f8c2-864a-6e64" hidden="false" targetId="1fe4-c983-9d25-b1a9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Tyranid Escort Drone" id="b769-e8a3-0b4b-9f14" hidden="false" page="90" publicationId="1bc8-5968-21c3-0f27" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
             <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
@@ -1179,25 +1216,22 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="0421-f8c2-864a-6e64" name="Return to the Hive" hidden="false" targetId="1fe4-c983-9d25-b1a9" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="ef36-0bf5-d59f-7b72" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9eaf-0053-ea1f-c64b" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0de5-eb45-acf6-3df6">
+        <selectionEntryGroup name="Weapon" id="9eaf-0053-ea1f-c64b" collective="false" defaultSelectionEntryId="0de5-eb45-acf6-3df6" hidden="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="feb1-178b-d1ff-b80c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08a9-6815-a702-3d20" type="max"/>
+            <constraint id="feb1-178b-d1ff-b80c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+            <constraint id="08a9-6815-a702-3d20" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e890-7a2a-6359-ea73" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Pyro-acid Battery" id="e890-7a2a-6359-ea73" collective="false" hidden="false" import="true" page="0" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec09-5304-daad-8ead" type="max"/>
+                <constraint id="ec09-5304-daad-8ead" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
               <profiles>
-                <profile id="6d06-eb71-8473-5eed" name="Prow Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Prow Pyro-acid Battery" id="6d06-eb71-8473-5eed" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
@@ -1205,16 +1239,16 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="0de5-eb45-acf6-3df6" name="Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Feeder Tentacles" id="0de5-eb45-acf6-3df6" collective="false" hidden="false" import="true" page="0" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0f3-5977-9658-a021" type="max"/>
+                <constraint id="b0f3-5977-9658-a021" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
               <profiles>
-                <profile id="7dd9-dd8b-998e-5b73" name="Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Feeder Tentacles" id="7dd9-dd8b-998e-5b73" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
@@ -1222,16 +1256,16 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry name="Bio-plasma Discharge" id="fe53-d1ff-2c93-8496" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <constraints>
+                <constraint id="2da8-2574-0569-ed0f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="fe53-d1ff-2c93-8496" name="Bio-plasma Discharge" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2da8-2574-0569-ed0f" type="max"/>
-              </constraints>
               <profiles>
-                <profile id="250f-4939-44bc-2f71" name="Bio-plasma Discharge" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Bio-plasma Discharge" id="250f-4939-44bc-2f71" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -1239,28 +1273,31 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="9588-da84-5470-54fa" name="Fire ship" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="eef6-7686-c639-57ae" name="Fire Ship" hidden="false" targetId="6c8e-f847-1a85-6f6a" type="profile"/>
-              </infoLinks>
+            <selectionEntry name="Fire ship" id="9588-da84-5470-54fa" collective="false" hidden="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Fire Ship" id="eef6-7686-c639-57ae" hidden="false" targetId="6c8e-f847-1a85-6f6a" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="10"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="8faf-dc28-7e23-996c" name="Tyranid Kraken" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry name="Tyranid Kraken" id="8faf-dc28-7e23-996c" collective="false" hidden="false" import="true" page="89" publicationId="1bc8-5968-21c3-0f27" type="unit">
+      <categoryLinks>
+        <categoryLink name="Escort" id="f749-0767-7b76-de48" hidden="false" primary="true" targetId="4573636f72747323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Kraken Durability" id="3843-eeac-c0d2-2623" hidden="false" targetId="3d4f-64b3-fcf4-f155" type="rule"/>
+      </infoLinks>
       <profiles>
-        <profile id="0c80-9078-a264-fc0c" name="Tyranid Kraken" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile name="Tyranid Kraken" id="0c80-9078-a264-fc0c" hidden="false" page="89" publicationId="1bc8-5968-21c3-0f27" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
             <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
@@ -1272,22 +1309,19 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3843-eeac-c0d2-2623" name="Kraken Durability" hidden="false" targetId="3d4f-64b3-fcf4-f155" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f749-0767-7b76-de48" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4318-1d8b-0d2c-cf15" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4acd-e4ff-babd-fa48">
+        <selectionEntryGroup name="Weapon" id="4318-1d8b-0d2c-cf15" collective="false" defaultSelectionEntryId="4acd-e4ff-babd-fa48" hidden="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d459-928d-3c75-5bc3" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b47-6bd6-58f5-7afe" type="max"/>
+            <constraint id="d459-928d-3c75-5bc3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+            <constraint id="6b47-6bd6-58f5-7afe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b930-2a32-ef54-e44f" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Pyro-acid Battery" id="b930-2a32-ef54-e44f" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
               <profiles>
-                <profile id="5990-2faa-af10-57d2" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Pyro-acid Battery" id="5990-2faa-af10-57d2" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
@@ -1295,13 +1329,13 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="4acd-e4ff-babd-fa48" name="Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Feeder Tentacles" id="4acd-e4ff-babd-fa48" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
               <profiles>
-                <profile id="a9e8-4aaa-64ab-77ab" name="Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Feeder Tentacles" id="a9e8-4aaa-64ab-77ab" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
@@ -1309,13 +1343,13 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="6bc6-b9e1-02fc-4db3" name="Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Torpedoes" id="6bc6-b9e1-02fc-4db3" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
               <profiles>
-                <profile id="8e86-ad1e-d663-9d46" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Prow Torpedoes" id="8e86-ad1e-d663-9d46" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -1323,13 +1357,13 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="ff84-5502-f0f7-a749" name="Massive Claws" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Massive Claws" id="ff84-5502-f0f7-a749" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
               <profiles>
-                <profile id="c3e5-2ab2-0e5b-8545" name="Massive Claws" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Massive Claws" id="c3e5-2ab2-0e5b-8545" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
@@ -1337,13 +1371,13 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry name="Bio Plasma Discharge" id="909c-6644-e617-388e" collective="false" hidden="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="909c-6644-e617-388e" name="Bio Plasma Discharge" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="0f55-170a-bb70-001c" name="Bio Plasma Discharge" publicationId="5766-7751-d146-0800" page="29" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Bio Plasma Discharge" id="0f55-170a-bb70-001c" hidden="false" page="29" publicationId="5766-7751-d146-0800" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">15 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -1351,20 +1385,23 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="25"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="f39d-43f8-86dc-42c0" name="Tyranid Vanguard Drone Ship" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry name="Tyranid Vanguard Drone Ship" id="f39d-43f8-86dc-42c0" collective="false" hidden="false" import="true" page="89" publicationId="1bc8-5968-21c3-0f27" type="unit">
+      <categoryLinks>
+        <categoryLink name="Escort" id="9813-7c47-6231-5c62" hidden="false" primary="true" targetId="4573636f72747323232344415441232323"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Vanguard Senses" id="09c3-6d62-f56c-020c" hidden="false" targetId="6067-57e3-8fa2-9032" type="rule"/>
+      </infoLinks>
       <profiles>
-        <profile id="be79-d3fd-0b9a-9fd7" name="Tyranid Vanguard Drone Ship" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile name="Tyranid Vanguard Drone Ship" id="be79-d3fd-0b9a-9fd7" hidden="false" page="89" publicationId="1bc8-5968-21c3-0f27" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
             <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
@@ -1376,22 +1413,19 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="09c3-6d62-f56c-020c" name="Vanguard Senses" hidden="false" targetId="6067-57e3-8fa2-9032" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9813-7c47-6231-5c62" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
-      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0dc8-40a2-9814-b564" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="54bf-5b9e-a1ad-f4ad">
+        <selectionEntryGroup name="Weapon" id="0dc8-40a2-9814-b564" collective="false" defaultSelectionEntryId="54bf-5b9e-a1ad-f4ad" hidden="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4824-cf3f-92f9-df51" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ca8-4a6d-d933-8e3f" type="max"/>
+            <constraint id="4824-cf3f-92f9-df51" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="min" value="1"/>
+            <constraint id="3ca8-4a6d-d933-8e3f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="false" type="max" value="1"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1f6e-5e93-c8fa-3830" name="Pyro-acid Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry name="Pyro-acid Battery" id="1f6e-5e93-c8fa-3830" collective="false" hidden="false" import="true" page="0" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
               <profiles>
-                <profile id="a2a0-e359-4349-b59a" name="Pyro-acid Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Pyro-acid Battery" id="a2a0-e359-4349-b59a" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -1399,13 +1433,13 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry name="Feeder Tentacles" id="54bf-5b9e-a1ad-f4ad" collective="false" hidden="false" import="true" page="0" type="upgrade">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="54bf-5b9e-a1ad-f4ad" name="Feeder Tentacles" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="1fb9-7da3-2ee1-e836" name="Feeder Tentacles" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Feeder Tentacles" id="1fb9-7da3-2ee1-e836" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
                     <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Contact</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
@@ -1413,44 +1447,10 @@ Tyranid Escorts come as squadrons of 1 to 12 vessels, while all other types are 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="20"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedRules>
-    <rule id="3d4f-64b3-fcf4-f155" name="Kraken Durability" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
-      <description>Kraken have no spore cysts but are amazingly durable and capable of regenerating damage. As such Kraken count as always being on Brace for Impact special orders when they take damage, receiving a 4+ save against each hit sustained, including those sustained when rolling a 6 for moving through blast markers. This ability in no way affects the Kraken and they may use other special orders as normal.</description>
-    </rule>
-    <rule id="6067-57e3-8fa2-9032" name="Vanguard Senses" publicationId="1bc8-5968-21c3-0f27" page="89" hidden="false">
-      <description>Enemy within 15cm of a Vanguard drone ship can always be targeted by other Tyranid vessels.</description>
-    </rule>
-    <rule id="1fe4-c983-9d25-b1a9" name="Return to the Hive" publicationId="1bc8-5968-21c3-0f27" page="90" hidden="false">
-      <description>Escort drones subject to Instinctive Behaviour case 7 (‘must move towards a planet’) may instead move towards the nearest hive ship.</description>
-    </rule>
-    <rule id="d29b-51ac-1bae-fc5b" name="Seperate Salvos" publicationId="1bc8-5968-21c3-0f27" page="88" hidden="false">
-      <description>Prow and thorax torpedoes cannot be combined into a single salvo, they must be launched separately.</description>
-    </rule>
-    <rule id="5961-13c5-31f1-cd22" name="Synaptic Control" publicationId="1bc8-5968-21c3-0f27" page="82" hidden="false">
-      <description>Only hive ships have a leadership value, which is purchased at a fixed value from the Hive Fleet list. During the Movement phase, each hive ship can make a Command check to change or ignore Instinctive Behaviour for themselves or another ship/squadron within 45cm. If the test is successful the Tyranid player has control of the ship/squadron and may place it on special orders if desired, without requiring a second command check. 
-
-Attempts to use synaptic control count as a Command check so a hive ship can keep testing until a Command check is failed. However, if one hive ship fails a command check this does not prevent another hive ship attempting to use synaptic control. In effect each hive ship can make at least one attempt to override Instinctive Behaviour.
-
-Tyranid ordnance (fighters, assault boats, torpedoes) is not subject to synaptic control or Instinctive Behaviour – just move them like normal ordnance.</description>
-    </rule>
-  </sharedRules>
-  <sharedProfiles>
-    <profile id="6c8e-f847-1a85-6f6a" name="Fire Ship" publicationId="11f0-17d1-e4d2-1018" page="143" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The controlling player can detonate a fire ship at any point in its movement phase, inflicting D3 Fire critical hits on every ship within 3D6cm. As with any escort suffering a critical hit, escorts within the fire ship blast will be automatically destoryed, as are any ordinance markers. Remove the detonated fire ship and put a blast marker in it&apos;s place. (Only 10% of the fleet&apos;s escort drones may select this)</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
 </catalogue>
